@@ -44,3 +44,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Cowork planning docs — authoritative copy lives in iCloud
+# (see /Users/angeloorru/Library/Mobile Documents/com~apple~CloudDocs/dispatched.finance).
+# The local mirror at cowork.dispatched.finance/ is a convenience for
+# tools that want to see the docs next to the code; do not track it.
+# Untracked from b1ad1b5 onward; those files remain in history.
+cowork.dispatched.finance/
