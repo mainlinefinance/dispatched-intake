@@ -1,15 +1,24 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # dependencies
 /node_modules
 /.pnp
 .pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
 
 # next.js
 /.next/
 /out/
-/build
 
-# testing
-/coverage
+# production
+/build
 
 # misc
 .DS_Store
@@ -21,13 +30,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env
+# env files (.env.example is checked in)
 .env*
 !.env.example
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
 
 # editor
 .vscode/
@@ -35,3 +40,7 @@ next-env.d.ts
 
 # vercel/render
 .vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
