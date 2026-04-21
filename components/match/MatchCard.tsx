@@ -16,7 +16,11 @@ export default function MatchCard({
   onAnimationComplete,
 }: Props) {
   return (
-    <div className="match-card">
+    <div
+      className="match-card"
+      role="region"
+      aria-label="Soft match preview, no credit impact"
+    >
       <div className="eyebrow">{SCREEN7.eyebrow}</div>
       <div className="lenders">
         <span className="count">{match.lenderCount} lenders</span>{" "}

@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: dispatched-intake
+    runtime: node
+    plan: starter
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NEXT_TELEMETRY_DISABLED
+        value: 1
+      # Injected from the Render dashboard when real backends come online:
+      # NEXT_PUBLIC_SITE_URL
+      # SENTRY_DSN
+      # DATABASE_URL
+    autoDeploy: true
+    healthCheckPath: /healthz

@@ -273,3 +273,40 @@ export const PROGRESS_BY_SCREEN: Record<number, number> = {
   7: 100,
   8: 100,
 };
+
+export const TRUST_RAIL = {
+  whySafeLabel: "Why this is safe",
+  whySafeBody:
+    "Dispatched does a soft inquiry to find matches. Nothing hits your credit until you pick a lender and sign an application.",
+  stats: [
+    {
+      value: "$47M",
+      label: "funded to truckers in the last 30 days",
+      footnote: 1,
+    },
+    {
+      value: "31 hours",
+      label: "average time from application to funds",
+      footnote: 2,
+    },
+  ] as { value: string; label: string; footnote: number }[],
+  preferLabel: "Prefer to talk?",
+};
+
+export const DISCLOSURES = {
+  title: "Disclosures & methodology",
+  subtitle:
+    "Details behind the numbers we quote on Dispatched marketing surfaces.",
+  items: [
+    {
+      footnote: 1,
+      heading: "$47M funded to truckers in the last 30 days",
+      body: "Illustrative placeholder for v1. Final figure pulls from signed-application totals across all matched lender partners, rolling 30-day window, USD gross. Independently verified monthly.",
+    },
+    {
+      footnote: 2,
+      heading: "31 hours average time from signed application to funds",
+      body: "Illustrative placeholder for v1. Final figure measures median elapsed time from the lender-signed application event to ACH-settled funding event. Excludes weekends and federal holidays.",
+    },
+  ],
+};

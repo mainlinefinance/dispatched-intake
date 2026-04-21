@@ -17,6 +17,7 @@ import Screen06Credit from "@/components/screens/Screen06Credit";
 import Screen07MatchPreview from "@/components/screens/Screen07MatchPreview";
 import Screen08Contact from "@/components/screens/Screen08Contact";
 import ScreenSubmitted from "@/components/screens/ScreenSubmitted";
+import TrustRail from "@/components/trust-rail/TrustRail";
 import { PROGRESS_BY_SCREEN, SCREEN1, VERTICAL_TAG } from "@/lib/copy";
 import { intakeMachine, type IntakeStateValue } from "@/lib/machine";
 import type { IntakeContext } from "@/lib/types";
@@ -48,26 +49,29 @@ export default function Intake() {
   }, [send]);
 
   return (
-    <div className="phone">
-      <StatusBar />
-      <Topbar
-        showBack={showBack}
-        onBack={() => send({ type: "GO_BACK" })}
-        verticalTag={verticalTag}
-      />
-      <ProgressBar pct={progressPct} />
-      {n === 1 && (
-        <div className="hero-intro">
-          <div className="kicker">{SCREEN1.kicker}</div>
-          <div className="title">{SCREEN1.heroTitle}</div>
+    <div className="desktop-shell">
+      <main className="phone" aria-label="Dispatched capital advisor intake">
+        <StatusBar />
+        <Topbar
+          showBack={showBack}
+          onBack={() => send({ type: "GO_BACK" })}
+          verticalTag={verticalTag}
+        />
+        <ProgressBar pct={progressPct} />
+        {n === 1 && (
+          <header className="hero-intro">
+            <p className="kicker">{SCREEN1.kicker}</p>
+            <h1 className="title">{SCREEN1.heroTitle}</h1>
+          </header>
+        )}
+        <div className="chat">
+          <PrevPair screen={n} ctx={ctx} />
+          {renderScreen(value, ctx, send, handleMatchSeen)}
         </div>
-      )}
-      <div className="chat">
-        <PrevPair screen={n} ctx={ctx} />
-        {renderScreen(value, ctx, send, handleMatchSeen)}
-      </div>
-      {renderBottomActions(value, send)}
-      <HomeIndicator />
+        {renderBottomActions(value, send)}
+        <HomeIndicator />
+      </main>
+      <TrustRail />
     </div>
   );
 }

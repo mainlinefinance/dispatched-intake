@@ -47,11 +47,20 @@ All seven confirmed by the founder before Checkpoint 1.
 
 Review loop after each, before the next starts.
 
-- **Checkpoint 1 — Scaffold only.** Next.js app, tokens imported, fonts loaded, one placeholder route renders. ✅ Landed [`87a81c7`](https://github.com/aondaai/dispatched-intake/commit/87a81c7).
-- **Checkpoint 2 — Pure logic + tests green.** `estimateMatch`, `copy.ts`, `validation.ts`, XState machine. No UI. **← current, closing now.**
-- **Checkpoint 3 — Screens 1–4 wired.** Opener, vertical selector, amount, revenue. Walkable locally.
-- **Checkpoint 4 — Screens 5–8 wired.** Credit, match preview (count-up + data-flow strip + reassure line), contact capture, submitted thank-you.
-- **Checkpoint 5 — Desktop trust rail + a11y pass + `render.yaml`.** Ready to deploy.
+- **Checkpoint 1 — Scaffold only.** Next.js app, tokens imported, fonts loaded, one placeholder route renders. ✅ [`87a81c7`](https://github.com/aondaai/dispatched-intake/commit/87a81c7).
+- **Checkpoint 2 — Pure logic + tests green.** `estimateMatch`, `copy.ts`, `validation.ts`, XState machine. No UI. ✅ [`ef0d64e`](https://github.com/aondaai/dispatched-intake/commit/ef0d64e).
+- **Checkpoint 3 — Screens 1–4 wired.** Opener, vertical selector, amount, revenue. Walkable locally. ✅ [`693cb22`](https://github.com/aondaai/dispatched-intake/commit/693cb22).
+- **Checkpoint 4 — Screens 5–8 wired.** Credit, match preview (count-up + data-flow strip + reassure line), contact capture, submitted thank-you, `/api/intake/submit`, `/healthz`. ✅ [`0ab00c4`](https://github.com/aondaai/dispatched-intake/commit/0ab00c4).
+- **Checkpoint 5 — Desktop trust rail + a11y pass + `render.yaml`.** Ready to deploy. **← current, closing now.**
+
+## Checkpoint 5 inventory
+
+- `components/trust-rail/TrustRail.tsx` — desktop-only aside (≥1024px) with "Why this is safe" prose, the `$47M` / `31 hours` stats with footnote links into `/disclosures`, and the tap-to-call "Prefer to talk?" block.
+- `app/disclosures/page.tsx` — server-rendered methodology page with anchor IDs (`#fn-1`, `#fn-2`) that the trust-rail footnote markers link to. Content in `lib/copy.ts` under `DISCLOSURES` so marketing can revise without touching the component.
+- A11y markup upgrades: `<main>` on the phone, `<h1>` on the hero title, `<header>` on the hero block, `role="region"` + `aria-label` on the match card, `aria-label` on the trust rail, phone-number links have `aria-label` on every surface, typing indicator keeps its `aria-live="polite"`.
+- `render.yaml` — `healthCheckPath: /healthz` from day one (no post-deploy flip), `NODE_VERSION: 20` pinned, `autoDeploy: true`, `starter` plan.
+- `README.md` — replaced the create-next-app boilerplate with actual local-dev / deploy / project-structure / animation / testing docs.
+- `lucide-react` removed from dependencies — hand-drawn bundle SVGs are the source of truth for iconography.
 
 ## Checkpoint 2 inventory
 
