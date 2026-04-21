@@ -408,3 +408,223 @@
 @media (prefers-reduced-motion: reduce) {
   .bubble-enter { animation: none; }
 }
+
+/* ===== Match card (Screen 7) — the only 2px hi-viz border in the system ===== */
+.match-card {
+  background: var(--color-bg-surface);
+  border: 2px solid var(--color-hiviz-400);
+  border-radius: 12px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-left: 38px;
+  margin-right: 0;
+}
+.match-card .eyebrow {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-hiviz-800);
+}
+.match-card .lenders {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.3;
+  color: var(--color-ink-primary);
+}
+.match-card .lenders .count { color: var(--color-hiviz-400); }
+.match-card .amount-label,
+.match-card .row-label {
+  font-size: 12px;
+  color: var(--color-ink-tertiary);
+  margin-bottom: -6px;
+}
+.match-card .amount {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-ink-primary);
+}
+.match-card .amount .dash { color: var(--color-ink-tertiary); padding: 0 2px; }
+.match-card .divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 2px 0;
+}
+.match-card .tfund {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.match-card .tfund .lbl { font-size: 12px; color: var(--color-ink-tertiary); }
+.match-card .tfund .val {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-ink-primary);
+}
+.match-card .tfund .val .mono { font-family: var(--font-mono); font-weight: 500; }
+
+/* ===== Data-flow strip (Screen 7, and later reusable on landing) ===== */
+.dataflow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 38px;
+  margin-top: 2px;
+}
+.dataflow .df-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--color-ink-secondary);
+}
+.dataflow .df-row strong { color: var(--color-ink-primary); font-weight: 600; }
+.dataflow .df-n {
+  flex-shrink: 0;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--color-hiviz-50);
+  color: var(--color-hiviz-800);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 1px;
+}
+
+/* ===== Reassurance line with lock icon (Screen 7) ===== */
+.reassure-line {
+  padding: 0 4px 0 38px;
+  font-size: 12px;
+  color: var(--color-ink-tertiary);
+  line-height: 1.45;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+.reassure-line svg { color: var(--color-ok-600); flex-shrink: 0; margin-top: 1px; }
+
+/* ===== Bottom action bar (Screens 7 + 8) ===== */
+.bottom-actions {
+  padding: 12px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--color-bg-paper);
+  border-top: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+.btn {
+  height: 52px;
+  border-radius: 8px;
+  border: 0;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: background var(--motion-hover) var(--ease-out),
+              border-color var(--motion-hover) var(--ease-out);
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-primary {
+  background: var(--color-hiviz-400);
+  color: var(--color-steel-900);
+}
+.btn-primary:hover:not(:disabled) { background: var(--color-hiviz-600); }
+.btn-secondary {
+  background: transparent;
+  color: var(--color-steel-800);
+  border: 1px solid var(--color-steel-600);
+}
+.btn-secondary:hover { border-color: var(--color-steel-800); }
+.btn:focus-visible {
+  outline: 2px solid var(--color-hiviz-400);
+  outline-offset: 2px;
+}
+.btn svg { width: 16px; height: 16px; }
+
+/* ===== Form fields (Screen 8) ===== */
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 4px 0 0 38px;
+}
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field .lbl {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--color-ink-secondary);
+}
+.field .input {
+  height: 52px;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0 14px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-ink-primary);
+  display: flex;
+  align-items: center;
+  outline: none;
+  transition: border-color var(--motion-hover) var(--ease-out),
+              box-shadow var(--motion-hover) var(--ease-out);
+}
+.field .input:focus,
+.field .input:focus-within {
+  border-color: var(--color-hiviz-400);
+  box-shadow: 0 0 0 3px var(--color-hiviz-50);
+}
+.field .input.mono { font-family: var(--font-mono); font-weight: 500; letter-spacing: -0.02em; }
+.field .input::placeholder { color: var(--color-ink-tertiary); }
+.field .input.error { border-color: var(--color-err-600); }
+.field .input.error:focus,
+.field .input.error:focus-within {
+  box-shadow: 0 0 0 3px var(--color-err-100);
+}
+.field .help {
+  font-size: 12px;
+  color: var(--color-ink-tertiary);
+}
+.field .help.error { color: var(--color-err-600); }
+
+.micro-copy {
+  padding: 8px 4px 0 0;
+  font-size: 11px;
+  color: var(--color-ink-tertiary);
+  line-height: 1.5;
+  text-align: center;
+}
+.micro-copy a { color: var(--color-steel-600); text-decoration: underline; }
+
+/* ===== Submitted (thank-you) ===== */
+.submitted {
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.submitted .eyebrow {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ok-600);
+}
