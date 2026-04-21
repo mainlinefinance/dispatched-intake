@@ -62,6 +62,32 @@ Review loop after each, before the next starts.
 - `README.md` — replaced the create-next-app boilerplate with actual local-dev / deploy / project-structure / animation / testing docs.
 - `lucide-react` removed from dependencies — hand-drawn bundle SVGs are the source of truth for iconography.
 
+## V2 candidates (do not re-litigate)
+
+Two questions surfaced at CP5 close. Both have founder rulings on record. Neither is a v1 fix. Future sessions should read this before proposing changes.
+
+### 1. Topbar vertical tag visibility on screens 2–8
+
+**Current behavior (v1, ship as-is):** The vertical tag shows only on Screen 1 alongside the brand (`Dispatched · Trucking`). Once the back button appears on Screens 2+, the tag is hidden to leave room for the back-chevron + brand + phone-CTA on a 360px viewport without wrapping.
+
+**V2 ruling:** Show the tag on Screens 2–8 *only when the selected vertical is not the default (`trucking`)*. A contractor who picks "Contractor / GC" on Screen 2 sees "Contractor" persist across 3–8, reinforcing the vertical-specific copy they're reading. A trucker sees nothing new because Trucking is already implicit from the landing page, the URL, and surrounding chrome. Showing the default tag adds noise without adding information.
+
+**Why this is v2, not v1:** the topbar is tight on 360px. Every added element is a wrap-risk. Shipping v1 without the conditional tag eliminates the wrap-risk class entirely. The conditional show is a small feature with non-zero visual-regression risk on specific device widths (iPhone SE, older Androids). Worth testing properly, not tacking on.
+
+**Implementation sketch for the future session:** `Topbar.tsx` already accepts `verticalTag`. Add a `hideIfDefault` prop (default `true`) that suppresses the tag when value equals `"Trucking"` (hardcoded check against `VERTICAL_TAG["owner-operator"]`). Extend `VERTICAL_TAG` with an `isDefault: boolean` field if multi-vertical defaults emerge. Regression-test at 320px, 360px, 390px, 414px.
+
+### 2. Trust rail behavior on Screen 7 (match preview)
+
+**Current behavior (v1, ship as-is):** The desktop trust rail renders statically across all screens including Screen 7. It does not dim. It does not reflect the match result. It does not hide.
+
+**V2 ruling:** Leave it this way. Do not dim. Do not reflect. Do not hide.
+
+**Reasoning:** The trust rail's job is "reassurance always visible, regardless of where the user is in the funnel." Dimming it on Screen 7 would visually confirm that the match screen is a different *kind* of moment — which primes the user to read the match numbers more skeptically, not less. A trust rail is working hardest when it's *ignorable and present*, not when it's reactive.
+
+**Why this is a "do not re-litigate" decision, not a deferred feature:** making the rail reactive sounds smart on paper and quietly undermines what it exists for. A future session reading this plan should not re-open the question unless user research shows the static rail actively hurts conversion on Screen 7.
+
+**What *could* change in v2 without re-litigating:** the rail's *content* on landing pages vs. geo pages vs. intake. Each surface may want different copy in the "Why this is safe" block. That's content strategy, not reactive behavior. Fine to explore.
+
 ## Checkpoint 2 inventory
 
 ### Files landed

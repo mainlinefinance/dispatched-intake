@@ -1,0 +1,30 @@
+{
+  "$schema": "./cities.schema.json",
+  "_comment": "Seed file. Populate one entry per market as city content is authored under /markets/{state}/{city}.md. 45-variable contract governed by /03_build/handoff_prompt_geo.md.",
+  "cities": [
+    {
+      "slug": "houston-tx",
+      "state": "TX",
+      "city": "Houston",
+      "status": "example-fill",
+      "panelLenderCount": null,
+      "notes": "Example fill from geo template design pass. Replace with real fields once schema is locked."
+    },
+    {
+      "slug": "jacksonville-fl",
+      "state": "FL",
+      "city": "Jacksonville",
+      "status": "example-fill",
+      "panelLenderCount": null,
+      "notes": "Example fill."
+    },
+    {
+      "slug": "fresno-ca",
+      "state": "CA",
+      "city": "Fresno",
+      "status": "example-fill",
+      "panelLenderCount": null,
+      "notes": "Example fill."
+    }
+  ]
+}
