@@ -88,6 +88,28 @@ Two questions surfaced at CP5 close. Both have founder rulings on record. Neithe
 
 **What *could* change in v2 without re-litigating:** the rail's *content* on landing pages vs. geo pages vs. intake. Each surface may want different copy in the "Why this is safe" block. That's content strategy, not reactive behavior. Fine to explore.
 
+## Handoff discipline for flagship + geo (future surfaces)
+
+When the flagship landing page and the geo template get handed off to Claude Code as their own projects (same repo, separate handoff prompts), the prompts must include this reuse constraint explicitly. Without it, a fresh session will recreate surface-specific copies of trust-critical components "because it's simpler there," and six months later there will be three data-flow strips drifting independently with nobody sure which is canonical.
+
+**Constraint paragraph to paste into each handoff prompt verbatim:**
+
+> Reuse the existing components from `components/match/DataFlowStrip.tsx`, `components/chrome/Topbar.tsx`, and the token file at `app/styles/tokens.css`. Do not re-implement. If you need to modify these components, flag it — we'll decide whether to fork or extend rather than silently duplicate.
+
+**Three anchors that must stay singular across every surface:**
+
+| Component | Why it can't drift |
+|---|---|
+| `DataFlowStrip` | Trust-critical 3-step reassurance. Identical on every surface that asks the user to trust the process (intake Screen 7, flagship hero, geo template, eventually emails and the lender deck). Drift here is the highest-consequence drift in the whole product. |
+| `Topbar` | Brand, optional vertical tag, tap-to-call. The phone number changes in one file or it's wrong everywhere. |
+| `app/styles/tokens.css` | Color, type, spacing, radius, motion tokens. Hardcoding hex values or font sizes in new component files is the entry point for every design-system erosion. |
+
+**Safe to re-implement per surface:** page-level layouts, hero sections, FAQ accordions, testimonial cards, section backgrounds, calculators, anything that's intrinsically marketing-voice rather than trust-voice. The flagship wants its own hero. The geo pages want their own city-specific copy. That's fine.
+
+**Shared lib files that the flagship/geo may also want:** `lib/format.ts` (money formatters, phone masking), `lib/validation.ts` (if either surface inlines a mini contact form), `lib/copy.ts` (any string that already lives there). `estimateMatch` is specific to the intake and does not belong on a landing page.
+
+**Cross-surface routing:** the intake currently lives at `/apply` per the Section-9 Decision-8 resolution (Root-URL architecture = Option A). Flagship eventually at `/`, construction flagship at `/construction`, medical at `/medical`, etc. Geo pages at `/trucking-loans/[state]/[city]/`. CTAs from flagship and geo funnel to `/apply`. One canonical intake, many surfaces that route into it.
+
 ## Checkpoint 2 inventory
 
 ### Files landed
