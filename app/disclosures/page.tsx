@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function DisclosuresPage() {
   return (
     <div className="disclosures">
-      <Link href="/" className="back-link">
+      <Link href="/apply" className="back-link">
         ← Back to intake
       </Link>
       <h1>{DISCLOSURES.title}</h1>
