@@ -1,7 +1,13 @@
 "use client";
 
-import { animate, useReducedMotion } from "framer-motion";
-import { useEffect, useState } from "react";
+import {
+  animate,
+  motion,
+  useMotionValue,
+  useReducedMotion,
+  useTransform,
+} from "framer-motion";
+import { useEffect } from "react";
 import { formatMoney } from "@/lib/format";
 
 type Props = {
@@ -11,7 +17,12 @@ type Props = {
 };
 
 /* 400ms count-up from $0 to target, ease-out, IBM Plex Mono inherited
-   from the .amount class. Respects prefers-reduced-motion. */
+   from the .amount class. Respects prefers-reduced-motion.
+
+   Uses framer-motion's MotionValue to keep the animating value outside
+   React's state so the React Compiler rule against setState-in-effect
+   doesn't bite. The MotionValue is driven by `animate()` which updates
+   it directly; motion.span subscribes and re-renders imperatively. */
 export default function CountUpAmount({
   target,
   animateOnMount,
@@ -19,21 +30,22 @@ export default function CountUpAmount({
 }: Props) {
   const reduceMotion = useReducedMotion();
   const shouldAnimate = animateOnMount && !reduceMotion;
-  const [v, setV] = useState(shouldAnimate ? 0 : target);
+  const value = useMotionValue(shouldAnimate ? 0 : target);
+  const display = useTransform(value, (v) => formatMoney(Math.round(v)));
 
   useEffect(() => {
     if (!shouldAnimate) {
-      setV(target);
+      value.set(target);
       return;
     }
-    const controls = animate(0, target, {
+    value.set(0);
+    const controls = animate(value, target, {
       duration: 0.4,
       ease: [0.2, 0.6, 0.2, 1],
-      onUpdate: (n) => setV(Math.round(n)),
       onComplete,
     });
     return () => controls.stop();
-  }, [shouldAnimate, target, onComplete]);
+  }, [shouldAnimate, target, value, onComplete]);
 
-  return <span>{formatMoney(v)}</span>;
+  return <motion.span>{display}</motion.span>;
 }

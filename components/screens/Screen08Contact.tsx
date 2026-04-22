@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { AsYouType } from "libphonenumber-js";
 import { useState } from "react";
-import { useForm, type SubmitHandler } from "react-hook-form";
+import { useForm, useWatch, type SubmitHandler } from "react-hook-form";
 import QaPair from "@/components/chat/QaPair";
 import SystemBubble from "@/components/chat/SystemBubble";
 import TypingIndicator from "@/components/chat/TypingIndicator";
@@ -29,15 +29,16 @@ export default function Screen08Contact({ payloadBase, onSubmitted }: Props) {
     handleSubmit,
     formState: { errors, touchedFields, isSubmitting },
     setValue,
-    watch,
+    control,
   } = useForm<ContactInput>({
     resolver: zodResolver(ContactSchema),
     mode: "onBlur",
     defaultValues: { name: "", mobile: "", email: "" },
   });
 
-  const mobileValue = watch("mobile") ?? "";
-  const mobileReg = register("mobile");
+  /* useWatch returns a memoizable value; the raw `watch()` function
+     does not and fails React Compiler's incompatible-library check. */
+  const mobileValue = useWatch({ control, name: "mobile" }) ?? "";
 
   const onSubmit: SubmitHandler<ContactInput> = async (data) => {
     setSubmitError(null);
@@ -106,9 +107,7 @@ export default function Screen08Contact({ payloadBase, onSubmitted }: Props) {
             autoComplete="tel"
             className={`input mono${mobileHasError ? " error" : ""}`}
             value={mobileValue}
-            name={mobileReg.name}
-            ref={mobileReg.ref}
-            onBlur={mobileReg.onBlur}
+            {...register("mobile")}
             onChange={(e) => {
               const formatted = new AsYouType("US").input(e.target.value);
               setValue("mobile", formatted, { shouldValidate: false });
