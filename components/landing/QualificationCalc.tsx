@@ -104,14 +104,17 @@ export default function QualificationCalc() {
             See which lenders will consider your file.
           </div>
         </div>
-        <div className="safe" title="No credit check at this step">
+        <div className="safe">
           <IconLock />
           No pull
         </div>
       </div>
 
       <div className="field">
-        <label htmlFor="revenue">Monthly revenue</label>
+        <label htmlFor="revenue">
+          Monthly revenue <span aria-hidden="true" className="req">*</span>
+          <span className="sr-only">(required)</span>
+        </label>
         <select
           id="revenue"
           className="select"
@@ -130,7 +133,10 @@ export default function QualificationCalc() {
       </div>
 
       <div className="field">
-        <label htmlFor="yrs">Time in business</label>
+        <label htmlFor="yrs">
+          Time in business <span aria-hidden="true" className="req">*</span>
+          <span className="sr-only">(required)</span>
+        </label>
         <select
           id="yrs"
           className="select"
