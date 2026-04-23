@@ -99,18 +99,28 @@ export default function FAQ() {
         <div className="faq-wrap">
           {faqs.map((f, i) => {
             const isOpen = open === i;
+            const buttonId = `faq-btn-${i}`;
+            const panelId = `faq-panel-${i}`;
             return (
               <div className={`faq-item ${isOpen ? "open" : ""}`} key={i}>
                 <button
                   type="button"
+                  id={buttonId}
                   className="faq-button"
                   aria-expanded={isOpen}
+                  aria-controls={panelId}
                   onClick={() => setOpen(isOpen ? -1 : i)}
                 >
                   <span>{f.q}</span>
                   <IconChevronDown className="chev" />
                 </button>
-                <div className="faq-answer">
+                <div
+                  id={panelId}
+                  className="faq-answer"
+                  role="region"
+                  aria-labelledby={buttonId}
+                  hidden={!isOpen}
+                >
                   <div className="faq-answer-inner">{f.a}</div>
                 </div>
               </div>

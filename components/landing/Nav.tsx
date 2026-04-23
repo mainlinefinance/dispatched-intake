@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
 import { IconClose, IconMenu, IconPhone } from "./icons";
 
@@ -11,7 +11,20 @@ export const CTA_LABEL = "Find my capital";
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const close = () => setMobileOpen(false);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setMobileOpen(false);
+        triggerRef.current?.focus();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [mobileOpen]);
 
   return (
     <>
@@ -37,10 +50,12 @@ export default function Nav() {
               {CTA_LABEL}
             </Link>
             <button
+              ref={triggerRef}
               type="button"
               className="mobile-menu-btn"
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
+              aria-controls="mobile-menu"
               onClick={() => setMobileOpen((v) => !v)}
             >
               {mobileOpen ? <IconClose /> : <IconMenu />}
@@ -48,7 +63,14 @@ export default function Nav() {
           </div>
         </div>
       </nav>
-      <div className={`mobile-menu ${mobileOpen ? "open" : ""}`}>
+      <div
+        id="mobile-menu"
+        className={`mobile-menu ${mobileOpen ? "open" : ""}`}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile navigation"
+        hidden={!mobileOpen}
+      >
         <a href="#" onClick={close} aria-current="page">
           Trucking
         </a>
