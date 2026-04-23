@@ -591,11 +591,6 @@
 .landing .faq-item.open .faq-button .chev {
   transform: rotate(180deg); color: var(--color-hiviz-400);
 }
-.landing .faq-answer {
-  max-height: 0; overflow: hidden;
-  transition: max-height var(--motion-page) var(--ease-out);
-}
-.landing .faq-item.open .faq-answer { max-height: 400px; }
 .landing .faq-answer-inner {
   padding: 0 48px 24px 0;
   font-size: 16px; line-height: 1.6;
@@ -680,7 +675,7 @@
 
 /* ---------- MOBILE MENU ---------- */
 .landing .mobile-menu {
-  display: none;
+  display: flex;
   position: fixed; inset: 72px 0 0 0;
   background: var(--color-bg-paper);
   z-index: 40;
@@ -688,7 +683,7 @@
   flex-direction: column;
   gap: 4px;
 }
-.landing .mobile-menu.open { display: flex; }
+.landing .mobile-menu[hidden] { display: none; }
 .landing .mobile-menu a,
 .landing .mobile-menu .soon {
   padding: 14px 0;
