@@ -16,14 +16,14 @@ export default function BottomActions(props: Props) {
       <div className="bottom-actions">
         <button
           type="button"
-          className="btn btn-primary"
+          className="btn btn--primary"
           onClick={props.onContinue}
         >
           {SCREEN7.primaryCta} <IconArrowRight size={16} />
         </button>
         <a
           href={`tel:${BRAND.phone.replace(/\D/g, "")}`}
-          className="btn btn-secondary"
+          className="btn btn--secondary"
         >
           <IconPhone size={14} /> {SCREEN7.secondaryCta}
         </a>
@@ -36,7 +36,7 @@ export default function BottomActions(props: Props) {
       <button
         type="submit"
         form="contact-form"
-        className="btn btn-primary"
+        className="btn btn--primary"
         disabled={props.isSubmitting}
       >
         {SCREEN8.submitCta} <IconArrowRight size={16} />

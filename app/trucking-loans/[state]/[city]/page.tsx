@@ -112,7 +112,7 @@ function SiteNav() {
           <a href="tel:+15550104477" className="geo-nav-phone">
             (555) 010‑4477
           </a>
-          <a href="/apply" className="geo-btn geo-btn-primary">
+          <a href="/apply" className="btn btn--primary">
             Get started
           </a>
         </div>
@@ -145,13 +145,13 @@ function Hero({ entry }: { entry: City }) {
               in the last 90 days.
             </p>
             <div className="geo-hero-cta-row">
-              <a href="/apply" className="geo-btn geo-btn-primary geo-btn-lg">
+              <a href="/apply" className="btn btn--primary btn--lg">
                 Start — 6 to 9 minutes
                 <ArrowRight />
               </a>
               <a
                 href="/how-it-works"
-                className="geo-btn geo-btn-secondary geo-btn-lg"
+                className="btn btn--secondary btn--lg"
               >
                 How it works
               </a>
@@ -718,7 +718,7 @@ function FinalCTABand({ entry }: { entry: City }) {
             the scenes.
           </p>
         </div>
-        <a href="/apply" className="geo-btn geo-btn-primary geo-btn-lg">
+        <a href="/apply" className="btn btn--primary btn--lg">
           Start my application
           <ArrowRight />
         </a>

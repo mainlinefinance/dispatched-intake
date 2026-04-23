@@ -523,40 +523,6 @@
   border-top: 1px solid var(--color-border);
   flex-shrink: 0;
 }
-.btn {
-  height: 52px;
-  border-radius: 8px;
-  border: 0;
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 15px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-decoration: none;
-  transition: background var(--motion-hover) var(--ease-out),
-              border-color var(--motion-hover) var(--ease-out);
-}
-.btn:disabled { opacity: 0.5; cursor: not-allowed; }
-.btn-primary {
-  background: var(--color-hiviz-400);
-  color: var(--color-steel-900);
-}
-.btn-primary:hover:not(:disabled) { background: var(--color-hiviz-600); }
-.btn-secondary {
-  background: transparent;
-  color: var(--color-steel-800);
-  border: 1px solid var(--color-steel-600);
-}
-.btn-secondary:hover { border-color: var(--color-steel-800); }
-.btn:focus-visible {
-  outline: 2px solid var(--color-hiviz-400);
-  outline-offset: 2px;
-}
-.btn svg { width: 16px; height: 16px; }
-
 /* ===== Form fields (Screen 8) ===== */
 .form-stack {
   display: flex;

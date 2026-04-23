@@ -79,7 +79,7 @@ export default function QualificationCalc() {
           </ul>
         </div>
 
-        <Link href="/apply" className="btn-primary qual-cta">
+        <Link href="/apply" className="btn btn--primary qual-cta">
           Continue to application
           <IconArrowRight />
         </Link>
@@ -156,7 +156,7 @@ export default function QualificationCalc() {
 
       <button
         type="submit"
-        className="btn-primary qual-cta"
+        className="btn btn--primary qual-cta"
         disabled={!canSubmit}
       >
         See my lender match count

@@ -58,13 +58,13 @@ export default async function StatePage({
           <div className="geo-hero-cta-row">
             <Link
               href="/apply"
-              className="geo-btn geo-btn-primary geo-btn-lg"
+              className="btn btn--primary btn--lg"
             >
               Start a soft match
             </Link>
             <Link
               href="/trucking"
-              className="geo-btn geo-btn-secondary geo-btn-lg"
+              className="btn btn--secondary btn--lg"
             >
               See how it works
             </Link>
@@ -87,7 +87,7 @@ export default async function StatePage({
               <li key={c.citySlug} style={{ padding: "12px 0" }}>
                 <Link
                   href={`/trucking-loans/${info.slug}/${c.citySlug}/`}
-                  className="geo-btn geo-btn-secondary"
+                  className="btn btn--secondary"
                   style={{ textDecoration: "none" }}
                 >
                   {c.city}, {info.abbr} →
