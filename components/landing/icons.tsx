@@ -9,6 +9,7 @@ const common = {
   stroke: "currentColor" as const,
   strokeLinecap: "round" as const,
   strokeLinejoin: "round" as const,
+  "aria-hidden": true,
 };
 
 export function IconPhone({ size = 15, className, strokeWidth = 2 }: IconProps) {
