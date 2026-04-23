@@ -237,7 +237,7 @@ export const SCREEN7 = {
   reassure:
     "Your info stays private until you pick a lender. No brokers will cold-call you.",
   primaryCta: "See my matches",
-  secondaryCta: "Talk to someone first",
+  secondaryCta: "Talk to an advisor",
 };
 
 export const SCREEN8 = {
@@ -250,7 +250,7 @@ export const SCREEN8 = {
   emailLabel: "Email",
   emailHelp:
     "Where we send the match list after you complete the application.",
-  submitCta: "Show my matches",
+  submitCta: "Send my match list",
   microcopyLead: "By continuing you agree to our",
   microcopyLink: "terms",
   microcopyTail: ". This does not affect your credit.",

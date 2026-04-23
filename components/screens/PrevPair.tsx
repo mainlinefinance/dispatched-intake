@@ -7,7 +7,6 @@ import {
   REVENUE_COPY,
   SCREEN1,
   SCREEN2,
-  SCREEN7,
   TIME_IN_BUSINESS_COPY,
   USE_CASE_OPTIONS,
   VERTICAL_OPTIONS,
@@ -91,9 +90,7 @@ function resolvePair(
     const count = ctx.matchEstimate.lenderCount;
     return {
       question: `${count} lenders matched your profile.`,
-      answer: SCREEN7.primaryCta.replace("See my", "Show").toLowerCase().startsWith("show")
-        ? "Show me"
-        : "Show me",
+      answer: "Show me",
     };
   }
   return null;
