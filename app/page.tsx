@@ -19,12 +19,14 @@ export default function LandingPage() {
   return (
     <div className="landing">
       <Nav />
-      <Hero />
-      <DeclineSection />
-      <HowItWorks />
-      <ProofSection />
-      <LenderStrip />
-      <FAQ />
+      <main id="main-content">
+        <Hero />
+        <DeclineSection />
+        <HowItWorks />
+        <ProofSection />
+        <LenderStrip />
+        <FAQ />
+      </main>
       <Footer />
     </div>
   );
