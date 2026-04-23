@@ -753,3 +753,36 @@
 .landing ::selection {
   background: var(--color-hiviz-100); color: var(--color-ink-primary);
 }
+
+/* ---------- FOCUS VISIBLE (a11y) ----------
+   Scoped under .landing so the intake flow (intake.css) keeps its own rules.
+   Anything focusable inside .landing that doesn't override this inherits it. */
+.landing a:focus-visible,
+.landing button:focus-visible,
+.landing [role="button"]:focus-visible,
+.landing summary:focus-visible {
+  outline: 2px solid var(--color-hiviz-600);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Preserve rounded-corner shape on pill-ish components */
+.landing .btn-primary:focus-visible,
+.landing .btn-secondary:focus-visible {
+  outline-offset: 3px;
+  border-radius: var(--radius-md);
+}
+
+/* Footer dark-background focus: flip ring to hiviz-400 for contrast */
+.landing .footer a:focus-visible,
+.landing .footer button:focus-visible,
+.landing .feat-card.median :focus-visible {
+  outline-color: var(--color-hiviz-400);
+}
+
+/* Inputs already have a focus style (border + halo) — keep it, but add a
+   fallback outline for forced-colors / high-contrast mode users. */
+.landing .input:focus-visible,
+.landing .select:focus-visible {
+  outline: 2px solid transparent; /* visible under forced-colors only */
+}
