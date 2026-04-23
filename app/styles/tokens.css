@@ -1,6 +1,11 @@
 /* Dispatched — design tokens (from Claude Design handoff bundle v1.0).
    Fonts are loaded via next/font/local in app/layout.tsx and exposed
-   here as --font-archivo, --font-plex-sans, --font-plex-mono. */
+   here as --font-archivo, --font-plex-sans, --font-plex-mono.
+
+   Dispatched does not currently support prefers-color-scheme: dark.
+   The token system is single-theme. If dark mode lands, expand this
+   file with :root[data-theme="dark"] overrides rather than media
+   queries so the theme is explicit and scriptable. */
 
 :root {
   /* Surfaces */
