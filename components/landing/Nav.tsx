@@ -7,7 +7,7 @@ import { IconClose, IconMenu, IconPhone } from "./icons";
 
 export const PHONE_DISPLAY = "(555) 555-0100";
 export const PHONE_TEL = "tel:+15555550100";
-export const CTA_LABEL = "See what I qualify for";
+export const CTA_LABEL = "Find my capital";
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
