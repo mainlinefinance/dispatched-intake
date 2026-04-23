@@ -19,12 +19,12 @@ export default function Nav() {
         <div className="container nav-inner">
           <Logo />
           <div className="nav-links">
-            <a href="#" className="active">
+            <a href="#" className="active" aria-current="page">
               Trucking
             </a>
-            <a href="#" className="soon">
+            <span className="soon" aria-disabled="true">
               Construction <span className="soon-tag">Soon</span>
-            </a>
+            </span>
             <a href="#how-it-works">How it works</a>
             <a href="#faq">FAQ</a>
           </div>
@@ -49,12 +49,12 @@ export default function Nav() {
         </div>
       </nav>
       <div className={`mobile-menu ${mobileOpen ? "open" : ""}`}>
-        <a href="#" onClick={close}>
+        <a href="#" onClick={close} aria-current="page">
           Trucking
         </a>
-        <a href="#" onClick={close}>
-          Construction — soon
-        </a>
+        <span className="soon" aria-disabled="true">
+          Construction <span className="soon-tag">Soon</span>
+        </span>
         <a href="#how-it-works" onClick={close}>
           How it works
         </a>

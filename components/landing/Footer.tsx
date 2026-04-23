@@ -1,3 +1,6 @@
+// TODO(a11y): href="#" placeholder links below — wire to real routes or
+// convert to <span aria-disabled="true"> per
+// docs/accessibility-audit-2026-04-23.md finding #11.
 import Logo from "./Logo";
 import { IconPhone } from "./icons";
 import { PHONE_DISPLAY, PHONE_TEL } from "./Nav";

@@ -37,10 +37,8 @@ export default function Hero() {
               {CTA_LABEL}
               <IconArrowRight />
             </Link>
-            <a href="#how-it-works">
-              <button type="button" className="btn-secondary">
-                How it works
-              </button>
+            <a href="#how-it-works" className="btn-secondary">
+              How it works
             </a>
           </div>
           <HeroDataFlow />

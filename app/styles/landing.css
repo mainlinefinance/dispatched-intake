@@ -73,11 +73,11 @@
 }
 .landing .nav-links a:hover { color: var(--color-ink-primary); }
 .landing .nav-links a.active { color: var(--color-ink-primary); }
-.landing .nav-links a.soon {
+.landing .nav-links .soon {
   color: var(--color-ink-tertiary);
   display: inline-flex; align-items: baseline; gap: 8px;
 }
-.landing .nav-links a.soon .soon-tag {
+.landing .nav-links .soon .soon-tag {
   font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--color-ink-tertiary);
   padding: 2px 6px; border: 1px solid var(--color-border-field); border-radius: 4px;
@@ -689,7 +689,8 @@
   gap: 4px;
 }
 .landing .mobile-menu.open { display: flex; }
-.landing .mobile-menu a {
+.landing .mobile-menu a,
+.landing .mobile-menu .soon {
   padding: 14px 0;
   font-family: var(--font-body); font-weight: 500; font-size: 18px;
   color: var(--color-ink-primary);
