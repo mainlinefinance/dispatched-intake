@@ -11,7 +11,9 @@
   /* Ink */
   --color-ink-primary:   #0E1A22;
   --color-ink-secondary: #3B4750;
-  --color-ink-tertiary:  #6F7A82;
+  /* Tertiary darkened from #6F7A82 → #5A6369 to pass WCAG AA (4.5:1) on
+     bg-paper (5.74:1), bg-surface (6.13:1), and bg-sunken (5.30:1). */
+  --color-ink-tertiary:  #5A6369;
   --color-ink-inverse:   #FAF7F2;
 
   /* Steel — primary brand scale */
@@ -39,8 +41,13 @@
   --color-err-600:  #A8241D;
 
   /* Borders */
-  --color-border:        #E0D8CA;
-  --color-border-strong: #C8BDA7;
+  /* Cosmetic hairline — keeps the warm putty tone for card outlines where
+     3:1 is not required (decorative boundary against large fills). */
+  --color-border:          #E0D8CA;
+  --color-border-strong:   #C8BDA7;
+  /* Interactive-field boundary — darkened to meet 1.4.11 (3:1) so input,
+     select, and pressable components have a perceivable edge. */
+  --color-border-field:    #8F7F64; /* 3.90:1 on white, 3.65:1 on paper */
 
   /* Type — families (fall back chain if next/font variable missing) */
   --font-display: var(--font-archivo, "Archivo"), system-ui, sans-serif;
