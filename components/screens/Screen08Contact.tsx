@@ -89,6 +89,7 @@ export default function Screen08Contact({ payloadBase, onSubmitted }: Props) {
             type="text"
             autoComplete="name"
             className={`input${nameHasError ? " error" : ""}`}
+            aria-invalid={Boolean(nameHasError)}
             {...register("name")}
           />
           <span className={`help${nameHasError ? " error" : ""}`}>
@@ -106,6 +107,7 @@ export default function Screen08Contact({ payloadBase, onSubmitted }: Props) {
             inputMode="tel"
             autoComplete="tel"
             className={`input mono${mobileHasError ? " error" : ""}`}
+            aria-invalid={Boolean(mobileHasError)}
             value={mobileValue}
             {...register("mobile")}
             onChange={(e) => {
@@ -127,6 +129,7 @@ export default function Screen08Contact({ payloadBase, onSubmitted }: Props) {
             type="email"
             autoComplete="email"
             className={`input${emailHasError ? " error" : ""}`}
+            aria-invalid={Boolean(emailHasError)}
             {...register("email")}
           />
           <span className={`help${emailHasError ? " error" : ""}`}>
