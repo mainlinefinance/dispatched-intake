@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./styles/tokens.css";
+@import "./styles/components/button.css";
 @import "./styles/intake.css";
 @import "./styles/geo.css";
 @import "./styles/landing.css";

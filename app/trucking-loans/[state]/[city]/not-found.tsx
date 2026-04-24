@@ -15,10 +15,10 @@ export default function GeoNotFound() {
             to 9-minute intake, same panel.
           </p>
           <div className="geo-hero-cta-row">
-            <Link href="/trucking" className="geo-btn geo-btn-primary geo-btn-lg">
+            <Link href="/trucking" className="btn btn--primary btn--lg">
               Go to the trucking page
             </Link>
-            <Link href="/" className="geo-btn geo-btn-secondary geo-btn-lg">
+            <Link href="/" className="btn btn--secondary btn--lg">
               Home
             </Link>
           </div>

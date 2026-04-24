@@ -33,11 +33,11 @@ export default function Hero() {
             pulls your credit.
           </p>
           <div className="hero-ctas">
-            <Link href="/apply" className="btn-primary lg">
+            <Link href="/apply" className="btn btn--primary btn--lg">
               {CTA_LABEL}
               <IconArrowRight />
             </Link>
-            <a href="#how-it-works" className="btn-secondary">
+            <a href="#how-it-works" className="btn btn--secondary">
               How it works
             </a>
           </div>

@@ -106,41 +106,8 @@
 }
 @media (max-width: 720px) {
   .landing .mobile-menu-btn { display: inline-flex; }
-  .landing .btn-primary.nav-cta { display: none; }
+  .landing .btn--primary.nav-cta { display: none; }
 }
-
-/* ---------- BUTTONS ---------- */
-.landing .btn-primary {
-  background: var(--color-hiviz-400);
-  color: var(--color-steel-900);
-  font-family: var(--font-body); font-weight: 600;
-  font-size: 15px;
-  padding: 14px 22px;
-  border-radius: var(--radius-md);
-  border: 0;
-  cursor: pointer;
-  transition: background var(--motion-hover) var(--ease-out);
-  display: inline-flex; align-items: center; gap: 8px;
-  white-space: nowrap;
-}
-.landing .btn-primary:hover { background: var(--color-hiviz-600); color: var(--color-ink-inverse); }
-.landing .btn-primary:disabled { opacity: 0.55; cursor: not-allowed; }
-.landing .btn-primary.sm { padding: 11px 16px; font-size: 14px; }
-.landing .btn-primary.lg { padding: 16px 26px; font-size: 16px; }
-.landing .btn-primary svg { width: 16px; height: 16px; }
-
-.landing .btn-secondary {
-  background: transparent;
-  color: var(--color-steel-800);
-  font-family: var(--font-body); font-weight: 600;
-  font-size: 15px;
-  padding: 13px 22px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-steel-600);
-  cursor: pointer;
-  transition: background var(--motion-hover) var(--ease-out);
-}
-.landing .btn-secondary:hover { background: var(--color-steel-50); }
 
 /* ---------- TYPE HELPERS ---------- */
 .landing .eyebrow {
@@ -796,8 +763,7 @@
 }
 
 /* Preserve rounded-corner shape on pill-ish components */
-.landing .btn-primary:focus-visible,
-.landing .btn-secondary:focus-visible {
+.landing .btn:focus-visible {
   outline-offset: 3px;
   border-radius: var(--radius-md);
 }

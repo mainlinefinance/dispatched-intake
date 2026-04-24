@@ -111,50 +111,6 @@
 }
 
 /* ============================================================
-   BUTTONS
-   ============================================================ */
-.geo-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 15px;
-  padding: 14px 22px;
-  border-radius: var(--radius-md);
-  border: 0;
-  cursor: pointer;
-  text-decoration: none;
-  transition:
-    background var(--motion-hover) var(--ease-out),
-    border-color var(--motion-hover) var(--ease-out);
-}
-.geo-btn-lg {
-  padding: 16px 26px;
-  font-size: 16px;
-}
-.geo-btn-primary {
-  background: var(--color-hiviz-400);
-  color: var(--color-steel-900);
-}
-.geo-btn-primary:hover {
-  background: var(--color-hiviz-600);
-}
-.geo-btn-secondary {
-  background: transparent;
-  color: var(--color-steel-800);
-  border: 1px solid var(--color-steel-600);
-}
-.geo-btn-secondary:hover {
-  background: var(--color-steel-50);
-}
-.geo-btn svg {
-  width: 18px;
-  height: 18px;
-}
-
-/* ============================================================
    HERO
    ============================================================ */
 .geo-hero-grid {

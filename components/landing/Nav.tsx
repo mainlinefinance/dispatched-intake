@@ -46,7 +46,7 @@ export default function Nav() {
               <IconPhone />
               {PHONE_DISPLAY}
             </a>
-            <Link href="/apply" className="btn-primary nav-cta sm">
+            <Link href="/apply" className="btn btn--primary btn--sm nav-cta">
               {CTA_LABEL}
             </Link>
             <button
@@ -87,7 +87,7 @@ export default function Nav() {
           <a href={PHONE_TEL} className="mobile-phone" onClick={close}>
             Call {PHONE_DISPLAY}
           </a>
-          <Link href="/apply" className="btn-primary" onClick={close}>
+          <Link href="/apply" className="btn btn--primary" onClick={close}>
             {CTA_LABEL}
           </Link>
         </div>

@@ -1,0 +1,96 @@
+/* Dispatched — Button primitive.
+   One source of truth across intake, landing, and geo. Size/variant via
+   BEM-style modifiers. Context-specific width classes (.nav-cta, .qual-cta)
+   layer on top and remain in their consumer stylesheets.
+
+   Dimensions preserved from the prior .landing .btn-primary / .geo-btn
+   rules (padding-based, not height-based). Intake buttons previously used
+   height: 52px with no padding; they live inside .bottom-actions which
+   is flex-direction: column, so horizontal padding is cosmetic on a
+   full-width button. */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border: 0;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background var(--motion-hover) var(--ease-out),
+    border-color var(--motion-hover) var(--ease-out),
+    color var(--motion-hover) var(--ease-out);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-hiviz-400);
+  outline-offset: 2px;
+}
+
+.btn svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Size modifiers */
+.btn--sm {
+  padding: 11px 16px;
+  font-size: 14px;
+}
+
+.btn--lg {
+  padding: 16px 26px;
+  font-size: 16px;
+}
+
+/* Variant: primary — hiviz on steel ink */
+.btn--primary {
+  background: var(--color-hiviz-400);
+  color: var(--color-steel-900);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: var(--color-hiviz-600);
+}
+
+.btn--primary:active:not(:disabled) {
+  background: var(--color-hiviz-800);
+}
+
+/* Variant: secondary — bordered ghost.
+   Vertical padding is -1px to compensate for the 1px border so total height
+   matches primary. */
+.btn--secondary {
+  padding: 13px 22px;
+  background: transparent;
+  color: var(--color-steel-800);
+  border: 1px solid var(--color-steel-600);
+}
+
+.btn--secondary.btn--sm {
+  padding: 10px 16px;
+}
+
+.btn--secondary.btn--lg {
+  padding: 15px 26px;
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background: var(--color-steel-50);
+  border-color: var(--color-steel-800);
+}
