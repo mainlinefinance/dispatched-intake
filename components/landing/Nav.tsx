@@ -1,17 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 import Logo from "@/components/site/Logo";
 import { IconClose, IconMenu, IconPhone } from "./icons";
 
-export const PHONE_DISPLAY = "(555) 555-0100";
-export const PHONE_TEL = "tel:+15555550100";
 export const CTA_LABEL = "Find my capital";
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
+  const pathname = usePathname();
+  const truckingActive = pathname === "/" || pathname === "/trucking";
   const close = () => setMobileOpen(false);
 
   useEffect(() => {
@@ -32,9 +34,13 @@ export default function Nav() {
         <div className="container nav-inner">
           <Logo />
           <div className="nav-links">
-            <a href="#" className="active" aria-current="page">
+            <Link
+              href="/trucking"
+              className={truckingActive ? "active" : undefined}
+              aria-current={truckingActive ? "page" : undefined}
+            >
               Trucking
-            </a>
+            </Link>
             <span className="soon" aria-disabled="true">
               Construction <span className="soon-tag">Soon</span>
             </span>
@@ -71,9 +77,14 @@ export default function Nav() {
         aria-label="Mobile navigation"
         hidden={!mobileOpen}
       >
-        <a href="#" onClick={close} aria-current="page">
+        <Link
+          href="/trucking"
+          onClick={close}
+          className={truckingActive ? "active" : undefined}
+          aria-current={truckingActive ? "page" : undefined}
+        >
           Trucking
-        </a>
+        </Link>
         <span className="soon" aria-disabled="true">
           Construction <span className="soon-tag">Soon</span>
         </span>

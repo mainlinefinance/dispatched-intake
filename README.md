@@ -74,6 +74,7 @@ All optional for v1 — `.env.example` documents placeholders:
 | Name | Purpose | Required? |
 |---|---|---|
 | `NEXT_PUBLIC_SITE_URL` | Canonical site origin for metadata and absolute URLs | No (v2) |
+| `NEXT_PUBLIC_SUPPORT_PHONE` | Support phone in E.164 (`+13073170801`). Consumed by `lib/contact.ts`; falls back to the compiled-in default if unset. | No — default ships in code |
 | `SENTRY_DSN` | Sentry ingestion, client + server | No (v2) |
 | `DATABASE_URL` | Real lead persistence (currently stdout logging only) | No (v2) |
 | `PORT` | Port the production server binds to | No — Render sets it |

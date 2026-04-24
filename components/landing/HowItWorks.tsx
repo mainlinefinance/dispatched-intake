@@ -49,11 +49,7 @@ const flowSteps: FlowStep[] = [
 
 export default function HowItWorks() {
   return (
-    <section
-      className="section"
-      id="how-it-works"
-      data-screen-label="03 How the money moves"
-    >
+    <section className="section" id="how-it-works">
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">How Dispatched works</span>
@@ -62,6 +58,9 @@ export default function HowItWorks() {
             Five steps, in order. One soft check. One hard pull, and only from
             the lender you pick. The mechanism is the reason we&rsquo;re not a
             broker.
+          </p>
+          <p className="flow-subhead">
+            <span className="mono">24 lenders</span> on our panel.
           </p>
         </div>
 

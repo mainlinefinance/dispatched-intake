@@ -4,7 +4,6 @@ import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
 import Hero from "@/components/landing/Hero";
 import HowItWorks from "@/components/landing/HowItWorks";
-import LenderStrip from "@/components/landing/LenderStrip";
 import Nav from "@/components/landing/Nav";
 import ProofSection from "@/components/landing/ProofSection";
 
@@ -24,7 +23,6 @@ export default function LandingPage() {
         <DeclineSection />
         <HowItWorks />
         <ProofSection />
-        <LenderStrip />
         <FAQ />
       </main>
       <Footer />

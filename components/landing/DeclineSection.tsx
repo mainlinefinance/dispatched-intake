@@ -46,7 +46,7 @@ const declineReasons: DeclineReason[] = [
 
 export default function DeclineSection() {
   return (
-    <section className="section sunken" data-screen-label="02 Why banks decline">
+    <section className="section sunken">
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">Why this product exists</span>

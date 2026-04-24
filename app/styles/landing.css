@@ -1,5 +1,6 @@
 /* Landing page styles — ported from the Claude Design handoff bundle.
-   Scoped under `.landing` so they cannot leak into the intake flow. */
+   Scoped under `.landing` so they cannot leak into the intake flow.
+   No raw px font-sizes or rgba color literals. Add tokens to tokens.css first. */
 
 .landing {
   background: var(--color-bg-paper);
@@ -109,6 +110,20 @@
   .landing .btn--primary.nav-cta { display: none; }
 }
 
+.landing .hero-how-link {
+  display: inline-block;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-family: var(--font-body); font-weight: 500;
+  font-size: 15px;
+  color: var(--color-ink-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color var(--motion-hover) var(--ease-out);
+}
+.landing .hero-how-link:hover { color: var(--color-ink-primary); }
+
 /* ---------- TYPE HELPERS ---------- */
 .landing .eyebrow {
   font-family: var(--font-body); font-weight: 600;
@@ -149,7 +164,7 @@
 }
 .landing .hero h1 {
   font-family: var(--font-display); font-weight: 700;
-  font-size: 64px; line-height: 1.03; letter-spacing: -0.024em;
+  font-size: var(--fs-display); line-height: 1.03; letter-spacing: -0.024em;
   margin: 0 0 24px; color: var(--color-ink-primary);
 }
 .landing .hero .subhead {
@@ -176,15 +191,17 @@
   color: var(--color-ink-primary);
 }
 .landing .trust-bar .lbl { font-size: 13px; color: var(--color-ink-secondary); }
+.landing .trust-bar .lbl sup { font-size: 12px; color: var(--color-ink-secondary); }
 .landing .trust-note {
-  font-size: 11px; color: var(--color-ink-tertiary);
-  margin-top: 8px; line-height: 1.5; max-width: 560px;
+  font-size: 12px; color: var(--color-ink-secondary);
+  margin-top: 8px; line-height: 1.5; max-width: 620px;
 }
+.landing .trust-note sup { font-size: 12px; font-weight: 600; }
 
 @media (max-width: 960px) {
   .landing .hero-grid { grid-template-columns: 1fr; gap: 48px; }
   .landing .hero { padding: 56px 0 56px; }
-  .landing .hero h1 { font-size: 44px; letter-spacing: -0.02em; }
+  .landing .hero h1 { font-size: var(--fs-h1); letter-spacing: -0.02em; }
   .landing .hero .subhead { font-size: 18px; }
   .landing .trust-bar { flex-direction: column; align-items: flex-start; gap: 10px; }
   .landing .trust-bar .divider { display: none; }
@@ -283,10 +300,12 @@
   line-height: 1.55;
 }
 
-.landing .qual-result .dataflow {
+.landing .qual-result .qual-dataflow-line {
   border-top: 1px solid var(--color-border);
   padding-top: 18px;
-  margin-bottom: 18px;
+  margin: 0 0 14px;
+  font-size: 13px; line-height: 1.55;
+  color: var(--color-ink-secondary);
 }
 .landing .qual-result .dataflow-title {
   font-family: var(--font-body); font-weight: 600; font-size: 13px;
@@ -294,20 +313,12 @@
   color: var(--color-ink-tertiary);
   margin-bottom: var(--space-3);
 }
-.landing .qual-result .dataflow-grid {
-  list-style: none; padding: 0; margin: 0;
-  display: grid; grid-template-columns: 64px 1fr;
-  row-gap: 12px; column-gap: 14px;
+.landing .qual-result .qual-dataflow-line a {
+  color: var(--color-ink-primary); text-decoration: underline;
+  text-underline-offset: 3px; white-space: nowrap;
 }
-.landing .qual-result .dataflow-grid .when {
-  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
-  letter-spacing: 0.04em; text-transform: uppercase; padding-top: 2px;
-}
-.landing .qual-result .dataflow-grid .when.now   { color: var(--color-ok-600); }
-.landing .qual-result .dataflow-grid .when.next  { color: var(--color-ok-600); }
-.landing .qual-result .dataflow-grid .when.later { color: var(--color-hiviz-600); }
-.landing .qual-result .dataflow-grid .what {
-  font-size: 13px; color: var(--color-ink-primary); line-height: 1.5;
+.landing .qual-result .qual-illustrative-note {
+  margin: 0 0 18px;
 }
 
 .landing .qual-result .back-link {
@@ -325,7 +336,7 @@
 .landing .section-head .eyebrow { margin-bottom: 12px; display: block; }
 .landing .section-head h2 {
   font-family: var(--font-display); font-weight: 700;
-  font-size: 44px; line-height: 1.08; letter-spacing: -0.018em;
+  font-size: var(--fs-h1); line-height: 1.08; letter-spacing: -0.018em;
   margin: 0 0 16px;
 }
 .landing .section-head p {
@@ -356,7 +367,8 @@
   display: flex; flex-direction: column; gap: 14px;
   transition: border-color var(--motion-hover) var(--ease-out);
 }
-.landing .decline-card:hover { border-color: var(--color-border-strong); }
+.landing .decline-card:hover,
+.landing .decline-card:focus-within { border-color: var(--color-border-strong); }
 .landing .decline-card .num {
   font-family: var(--font-mono); font-weight: 500; font-size: 12px;
   color: var(--color-ink-tertiary); letter-spacing: 0.05em;
@@ -431,6 +443,7 @@
 .landing .feat-card.median {
   background: var(--color-steel-800);
   color: var(--color-ink-inverse);
+  border-right-color: var(--color-steel-800);
 }
 .landing .feat-card.median h3 { color: var(--color-ink-inverse); }
 .landing .feat-card.median .lede { color: var(--color-ink-inverse-70); }
@@ -513,25 +526,12 @@
 }
 
 /* ---------- LENDER STRIP ---------- */
-.landing .lender-strip {
-  padding: 56px 0;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-  background: var(--color-bg-paper);
-  text-align: center;
+.landing .flow-subhead {
+  margin-top: 8px;
+  font-size: 15px;
+  color: var(--color-ink-secondary);
 }
-.landing .lender-strip .headline {
-  font-family: var(--font-display); font-weight: 600;
-  font-size: 22px; letter-spacing: -0.005em;
-  color: var(--color-ink-primary);
-  margin-bottom: 10px;
-}
-.landing .lender-strip .headline .mono { color: var(--color-steel-600); }
-.landing .lender-strip .cta-link {
-  font-size: 15px; color: var(--color-steel-600);
-  text-decoration: underline; text-underline-offset: 3px;
-  font-weight: 500;
-}
+.landing .flow-subhead .mono { color: var(--color-steel-600); font-weight: 500; }
 
 /* ---------- FAQ ---------- */
 .landing .faq-wrap {
@@ -625,6 +625,17 @@
   transition: color var(--motion-hover) var(--ease-out);
 }
 .landing .footer .col a:hover { color: var(--color-hiviz-400); }
+.landing .footer .col .soon {
+  font-size: 14px; color: var(--color-ink-inverse-50);
+  padding: 4px 0;
+  display: inline-flex; align-items: baseline; gap: 8px;
+}
+.landing .footer .col .soon .soon-tag {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--color-ink-inverse-50);
+  padding: 2px 6px; border: 1px solid var(--color-ink-inverse-25); border-radius: 4px;
+  line-height: 1;
+}
 .landing .footer .bottom {
   padding-top: 28px;
   display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap;
@@ -673,32 +684,6 @@
   border-bottom: 0;
 }
 
-/* ---------- HERO DATA FLOW (single line under CTAs) ---------- */
-.landing .hero-dataflow {
-  margin-top: 28px;
-  display: flex; align-items: center; flex-wrap: wrap;
-  gap: 10px 14px;
-  padding: 14px 16px;
-  background: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  max-width: 620px;
-}
-.landing .hdf-step {
-  display: inline-flex; align-items: center; gap: 8px;
-  font-size: 13.5px; color: var(--color-ink-secondary);
-}
-.landing .hdf-step strong { color: var(--color-ink-primary); font-weight: 600; }
-.landing .hdf-dot {
-  width: 20px; height: 20px; border-radius: 999px;
-  display: inline-flex; align-items: center; justify-content: center;
-  font-family: var(--font-mono); font-size: 11px; font-weight: 600;
-  color: #fff; flex-shrink: 0;
-}
-.landing .hdf-dot-steel { background: var(--color-steel-600); }
-.landing .hdf-dot-hiviz { background: var(--color-hiviz-600); }
-.landing .hdf-arrow { color: var(--color-ink-tertiary); font-size: 14px; }
-
 /* ---------- FLOW DIAGRAM (how the money moves) ---------- */
 .landing .flow-diagram {
   display: flex; align-items: stretch; justify-content: space-between;
@@ -715,7 +700,7 @@
   padding: 0 4px;
 }
 .landing .flow-n {
-  width: 28px; height: 28px; border-radius: 999px; color: #fff;
+  width: 28px; height: 28px; border-radius: var(--radius-pill); color: #fff;
   font-family: var(--font-mono); font-size: 13px; font-weight: 600;
   display: inline-flex; align-items: center; justify-content: center;
   margin-bottom: var(--space-1);
@@ -779,7 +764,9 @@
    fallback outline for forced-colors / high-contrast mode users. */
 .landing .input:focus-visible,
 .landing .select:focus-visible {
-  outline: 2px solid transparent; /* visible under forced-colors only */
+  outline: 2px solid var(--color-hiviz-600);
+  outline-offset: 2px;
+  border-color: var(--color-hiviz-600);
 }
 
 /* ---------- FORM POLISH (a11y) ---------- */

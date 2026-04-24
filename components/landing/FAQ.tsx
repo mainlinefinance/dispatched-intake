@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 import { IconChevronDown } from "./icons";
-import { PHONE_DISPLAY, PHONE_TEL } from "./Nav";
 
 type FaqItem = { q: string; a: ReactNode };
 
@@ -86,7 +86,7 @@ const faqs: FaqItem[] = [
 export default function FAQ() {
   const [open, setOpen] = useState<number>(0);
   return (
-    <section className="section sunken" id="faq" data-screen-label="06 FAQ">
+    <section className="section sunken" id="faq">
       <div className="container">
         <div className="section-head centered">
           <span className="eyebrow">Questions we get asked</span>

@@ -48,7 +48,7 @@ const proofs: Proof[] = [
 
 export default function ProofSection() {
   return (
-    <section className="section" data-screen-label="04 Funded borrowers">
+    <section className="section">
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">Funded this month</span>

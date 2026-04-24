@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import { IconArrowRight, IconLock } from "./icons";
+import { CTA_LABEL } from "./Nav";
 
 type Revenue = "" | "under-20" | "20-50" | "50-100" | "100-plus";
 type Years = "" | "under 6 months" | "6–12 months" | "1–3 years" | "3+ years";
@@ -41,7 +42,7 @@ export default function QualificationCalc() {
   if (submitted) {
     const match = computeMatch(revenue, yrs);
     return (
-      <div className="qual-result" id="qual">
+      <div className="qual-result" id="qual" data-illustrative="true">
         <div className="estimated-label">Based on your answers</div>
         <div className="range">
           {match.lenderCount} lenders on our panel will look at your file
@@ -58,26 +59,17 @@ export default function QualificationCalc() {
           not by us.
         </div>
 
-        <div className="dataflow">
-          <div className="dataflow-title">What happens with your data</div>
-          <ul className="dataflow-grid">
-            <li className="when now">Now</li>
-            <li className="what">
-              Dispatched holds your answers. No lender sees your name, EIN, or
-              phone yet.
-            </li>
-            <li className="when next">Next</li>
-            <li className="what">
-              You finish the application. We send a redacted profile (not your
-              contact info) to up to 5 matched lenders.
-            </li>
-            <li className="when later">Later</li>
-            <li className="what">
-              You pick one lender. That lender — and only that lender — runs a
-              hard pull. No one else.
-            </li>
-          </ul>
-        </div>
+        <p className="qual-dataflow-line">
+          Your answers stay with us until you finish the application. Then a
+          redacted profile (no name or contact) goes to up to 5 matched
+          lenders. One hard pull only happens after you pick one.{" "}
+          <a href="#how-it-works">See the full 5-step flow →</a>
+        </p>
+
+        <p className="qual-foot qual-illustrative-note">
+          Estimate based on your two answers. Final lender count and APR
+          depend on your full application.
+        </p>
 
         <Link href="/apply" className="btn btn--primary qual-cta">
           Continue to application
@@ -100,9 +92,7 @@ export default function QualificationCalc() {
       <div className="qual-header">
         <div>
           <div className="qual-steps">2 QUESTIONS · NO CREDIT CHECK</div>
-          <div className="title">
-            See which lenders will consider your file.
-          </div>
+          <div className="title">Two questions, no credit check.</div>
         </div>
         <div className="safe">
           <IconLock />
@@ -159,7 +149,7 @@ export default function QualificationCalc() {
         className="btn btn--primary qual-cta"
         disabled={!canSubmit}
       >
-        See my lender match count
+        {CTA_LABEL}
         <IconArrowRight />
       </button>
 

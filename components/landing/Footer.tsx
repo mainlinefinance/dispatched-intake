@@ -1,13 +1,11 @@
-// TODO(a11y): href="#" placeholder links below — wire to real routes or
-// convert to <span aria-disabled="true"> per
-// docs/accessibility-audit-2026-04-23.md finding #11.
+import Link from "next/link";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 import Logo from "@/components/site/Logo";
 import { IconPhone } from "./icons";
-import { PHONE_DISPLAY, PHONE_TEL } from "./Nav";
 
 export default function Footer() {
   return (
-    <footer className="footer" data-screen-label="07 Footer">
+    <footer className="footer">
       <div className="container">
         <div className="top">
           <div className="brand-col">
@@ -26,19 +24,27 @@ export default function Footer() {
             <h4>Product</h4>
             <ul>
               <li>
-                <a href="#">Trucking capital</a>
+                <Link href="/trucking">Trucking capital</Link>
               </li>
               <li>
-                <a href="#">Fuel advances</a>
+                <span className="soon" aria-disabled="true">
+                  Fuel advances <span className="soon-tag">Soon</span>
+                </span>
               </li>
               <li>
-                <a href="#">Truck repair loans</a>
+                <span className="soon" aria-disabled="true">
+                  Truck repair loans <span className="soon-tag">Soon</span>
+                </span>
               </li>
               <li>
-                <a href="#">Equipment loans</a>
+                <span className="soon" aria-disabled="true">
+                  Equipment loans <span className="soon-tag">Soon</span>
+                </span>
               </li>
               <li>
-                <a href="#">Construction (soon)</a>
+                <span className="soon" aria-disabled="true">
+                  Construction <span className="soon-tag">Soon</span>
+                </span>
               </li>
             </ul>
           </div>
@@ -46,19 +52,27 @@ export default function Footer() {
             <h4>Company</h4>
             <ul>
               <li>
-                <a href="#">About Dispatched</a>
+                <span className="soon" aria-disabled="true">
+                  About Dispatched <span className="soon-tag">Soon</span>
+                </span>
               </li>
               <li>
                 <a href="#how-it-works">How it works</a>
               </li>
               <li>
-                <a href="#">Lender partners</a>
+                <span className="soon" aria-disabled="true">
+                  Lender partners <span className="soon-tag">Soon</span>
+                </span>
               </li>
               <li>
-                <a href="#">Press &amp; newsroom</a>
+                <span className="soon" aria-disabled="true">
+                  Press &amp; newsroom <span className="soon-tag">Soon</span>
+                </span>
               </li>
               <li>
-                <a href="#">Careers</a>
+                <span className="soon" aria-disabled="true">
+                  Careers <span className="soon-tag">Soon</span>
+                </span>
               </li>
             </ul>
           </div>
@@ -69,16 +83,22 @@ export default function Footer() {
                 <a href="#faq">FAQ</a>
               </li>
               <li>
-                <a href="#">Contact us</a>
+                <a href={PHONE_TEL}>Contact us</a>
               </li>
               <li>
-                <a href="#">Application status</a>
+                <span className="soon" aria-disabled="true">
+                  Application status <span className="soon-tag">Soon</span>
+                </span>
               </li>
               <li>
-                <a href="#">Complaints</a>
+                <span className="soon" aria-disabled="true">
+                  Complaints <span className="soon-tag">Soon</span>
+                </span>
               </li>
               <li>
-                <a href="#">Accessibility</a>
+                <span className="soon" aria-disabled="true">
+                  Accessibility <span className="soon-tag">Soon</span>
+                </span>
               </li>
             </ul>
           </div>
@@ -114,10 +134,10 @@ export default function Footer() {
             </p>
           </div>
           <div className="legal-links">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Licenses</a>
-            <a href="#">Do not sell</a>
+            <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms</Link>
+            <Link href="/licenses">Licenses</Link>
+            <Link href="/do-not-sell">Do not sell</Link>
           </div>
         </div>
       </div>

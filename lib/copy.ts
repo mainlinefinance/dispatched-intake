@@ -1,3 +1,4 @@
+import { PHONE_DISPLAY } from "./contact";
 import type {
   AmountBand,
   BandTier,
@@ -8,7 +9,7 @@ import type {
 
 export const BRAND = {
   name: "Dispatched",
-  phone: "(555) 555-0100",
+  phone: PHONE_DISPLAY,
   hoursNote: "Mon–Fri, 7am–7pm Central. A real person, not a bot.",
 };
 
@@ -307,6 +308,16 @@ export const DISCLOSURES = {
       footnote: 2,
       heading: "31 hours average time from signed application to funds",
       body: "Illustrative placeholder for v1. Final figure measures median elapsed time from the lender-signed application event to ACH-settled funding event. Excludes weekends and federal holidays.",
+    },
+    {
+      footnote: 3,
+      heading: "$25K–$250K working capital range",
+      body: "Range reflects offers issued by panel lenders to qualified trucking borrowers. Actual approval amount depends on monthly revenue, time in business, credit band, and lender underwriting. Some borrowers qualify for less than $25K or more than $250K via separate products not shown on the landing page.",
+    },
+    {
+      footnote: 4,
+      heading: "Typically funded in 24–48 hours",
+      body: "Illustrative placeholder for v1. Reflects the span between a lender-signed application and wire-out event across trucking borrowers funded in the trailing 90 days. Individual timing depends on documentation completeness, lender underwriting queue, and banking-partner cutoff times. Weekend and holiday wires settle the next banking day.",
     },
   ],
 };
