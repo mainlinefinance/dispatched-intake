@@ -80,3 +80,19 @@ Scored by variants + state coverage + accessibility + in-code documentation.
 - Component coverage for the trust-rail, screens 1–8, and disclosure page — analyzed structurally but not visually scored.
 - Empty-state, loading-state, and error-boundary inventory across screens — worth a dedicated pass.
 - Cross-browser focus-ring audit (Safari's focus-visible heuristic differs from Firefox/Chrome).
+
+## Resolution status (updated 2026-04-23)
+
+Priority actions tracked against the phased plan in [`docs/plans/2026-04-23-design-system-adjustments.md`](plans/2026-04-23-design-system-adjustments.md):
+
+| # | Action | Status | Landed in |
+|---|---|---|---|
+| 1 | Unify the button system | ✅ Done | [#10](https://github.com/aondaai/dispatched-intake/pull/10) |
+| 2 | Make token consumption mandatory | 🟡 Partial | Stylelint backstop in warning mode: [#9](https://github.com/aondaai/dispatched-intake/pull/9). Mechanical `padding/margin/gap/font-size` migration deferred — lands alongside the next landing.css touch once in-flight refactors settle. Flip Stylelint to error mode at that point. |
+| 3 | Tokenize the transparent-ink-inverse pattern | ✅ Done | [#11](https://github.com/aondaai/dispatched-intake/pull/11) |
+| 4 | Add focus-visible to landing/geo buttons and decline cards | ✅ Done | Landing/geo buttons covered by #10. Decline cards are non-interactive `<div>`s — no change needed ([DeclineSection.tsx](../components/landing/DeclineSection.tsx)). FAQ `aria-expanded`/`aria-controls` was already wired in [#6](https://github.com/aondaai/dispatched-intake/pull/6). `aria-invalid` on intake inputs: [#12](https://github.com/aondaai/dispatched-intake/pull/12). |
+| 5 | Decide on `.t-*` utility classes | ⏸ Kept | `.t-h1` is consumed by two geo-city headings (city page tsx). Utility suite retained as-is; the full adopt-or-delete call is deferred to a design-review pass. |
+| 6 | Reconcile Nav/Logo/Footer between landing and geo | ⏸ Deferred | Blocked in the current session by an in-flight refactor touching Nav/Footer/landing components. Lands once that work is committed. |
+| 7 | Document the color scale skip-stops | ✅ Done | Steel, Hi-Vis, and semantic ramps now carry inline skip-stop comments in [tokens.css](../app/styles/tokens.css). Dark-mode assumption also documented ([#12](https://github.com/aondaai/dispatched-intake/pull/12)). |
+
+Token additions: `--radius-pill: 999px`, `--color-ink-inverse-{90,70,50,12}`, `--color-ok-glow-{12,04}`.
