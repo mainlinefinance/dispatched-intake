@@ -19,7 +19,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 12px 16px;
+  padding: var(--space-3) var(--space-4);
   background: var(--color-ink-primary);
   color: var(--color-ink-inverse);
   font-family: var(--font-body);
@@ -130,12 +130,12 @@
 .landing .hero-grid {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
-  gap: 64px;
+  gap: var(--space-16);
   align-items: start;
 }
 .landing .hero-eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
-  margin-bottom: 24px;
+  margin-bottom: var(--space-6);
 }
 .landing .hero-eyebrow .dot {
   width: 8px; height: 8px; border-radius: 50%;
@@ -292,7 +292,7 @@
   font-family: var(--font-body); font-weight: 600; font-size: 13px;
   letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--color-ink-tertiary);
-  margin-bottom: 12px;
+  margin-bottom: var(--space-3);
 }
 .landing .qual-result .dataflow-grid {
   list-style: none; padding: 0; margin: 0;
@@ -346,7 +346,7 @@
 .landing .decline-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: var(--space-6);
 }
 .landing .decline-card {
   background: var(--color-bg-surface);
@@ -458,7 +458,7 @@
 .landing .proof-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: var(--space-4);
 }
 .landing .proof-card {
   background: var(--color-bg-surface);
@@ -584,8 +584,8 @@
 .landing .footer .top {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1fr;
-  gap: 48px;
-  padding-bottom: 48px;
+  gap: var(--space-12);
+  padding-bottom: var(--space-12);
   border-bottom: 1px solid var(--color-ink-inverse-12);
 }
 .landing .footer .brand-col .logo {
@@ -598,7 +598,7 @@
 }
 .landing .footer .phone-cta {
   display: inline-flex; align-items: center; gap: 10px;
-  padding: 12px 16px;
+  padding: var(--space-3) var(--space-4);
   background: var(--color-steel-800);
   border: 1px solid var(--color-ink-inverse-12);
   border-radius: var(--radius-md);
@@ -655,7 +655,7 @@
   z-index: 40;
   padding: 32px var(--gutter-mobile);
   flex-direction: column;
-  gap: 4px;
+  gap: var(--space-1);
 }
 .landing .mobile-menu[hidden] { display: none; }
 .landing .mobile-menu a,
@@ -718,7 +718,7 @@
   width: 28px; height: 28px; border-radius: 999px; color: #fff;
   font-family: var(--font-mono); font-size: 13px; font-weight: 600;
   display: inline-flex; align-items: center; justify-content: center;
-  margin-bottom: 4px;
+  margin-bottom: var(--space-1);
 }
 .landing .flow-who {
   font-family: var(--font-mono); font-size: 10.5px;
