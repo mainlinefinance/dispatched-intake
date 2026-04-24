@@ -1,4 +1,4 @@
-import { LogoMark } from "./icons";
+import { LogoMark } from "../landing/icons";
 
 type Props = { color?: string; className?: string };
 

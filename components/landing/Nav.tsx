@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import Logo from "./Logo";
+import Logo from "@/components/site/Logo";
 import { IconClose, IconMenu, IconPhone } from "./icons";
 
 export const PHONE_DISPLAY = "(555) 555-0100";
