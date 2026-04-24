@@ -16,6 +16,15 @@
   --color-ink-tertiary:  #5A6369;
   --color-ink-inverse:   #FAF7F2;
 
+  /* Ink-inverse alpha variants — for text/borders on dark surfaces
+     (footer, median feat-card). Use instead of rgba(250, 247, 242, α)
+     ad-hoc. Rounded to four steps; add more only if a new dark surface
+     actually needs them. */
+  --color-ink-inverse-90: rgba(250, 247, 242, 0.9);
+  --color-ink-inverse-70: rgba(250, 247, 242, 0.7);
+  --color-ink-inverse-50: rgba(250, 247, 242, 0.5);
+  --color-ink-inverse-12: rgba(250, 247, 242, 0.12);
+
   /* Steel — primary brand scale.
      Skip stops: 300, 500, 700 are intentionally omitted. The current scale
      covers the contrast ratios the product needs; adding intermediates
@@ -44,6 +53,10 @@
      enough that two stops cover every need. */
   --color-ok-100:   #D6E8D8;
   --color-ok-600:   #1E6642;
+  /* Pulse glow — the animated halo on .hero-eyebrow .dot. Tied to
+     --color-ok-600 (#1E6642); if that hex changes, update these too. */
+  --color-ok-glow-12: rgba(30, 102, 66, 0.12);
+  --color-ok-glow-04: rgba(30, 102, 66, 0.04);
   --color-warn-100: #F5E3B8;
   --color-warn-600: #8B6510;
   --color-err-100:  #F3D2CE;

@@ -173,12 +173,12 @@
 .landing .hero-eyebrow .dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: var(--color-ok-600);
-  box-shadow: 0 0 0 4px rgba(30, 102, 66, 0.12);
+  box-shadow: 0 0 0 4px var(--color-ok-glow-12);
   animation: landing-pulse 2.4s var(--ease-out) infinite;
 }
 @keyframes landing-pulse {
-  0%, 100% { box-shadow: 0 0 0 4px rgba(30, 102, 66, 0.12); }
-  50%      { box-shadow: 0 0 0 7px rgba(30, 102, 66, 0.04); }
+  0%, 100% { box-shadow: 0 0 0 4px var(--color-ok-glow-12); }
+  50%      { box-shadow: 0 0 0 7px var(--color-ok-glow-04); }
 }
 .landing .hero h1 {
   font-family: var(--font-display); font-weight: 700;
@@ -466,8 +466,8 @@
   color: var(--color-ink-inverse);
 }
 .landing .feat-card.median h3 { color: var(--color-ink-inverse); }
-.landing .feat-card.median .lede { color: rgba(250, 247, 242, 0.7); }
-.landing .feat-card.median li { color: rgba(250, 247, 242, 0.9); }
+.landing .feat-card.median .lede { color: var(--color-ink-inverse-70); }
+.landing .feat-card.median li { color: var(--color-ink-inverse-90); }
 .landing .feat-card.median .big {
   font-family: var(--font-mono); font-weight: 500;
   font-size: 56px; line-height: 1; color: var(--color-hiviz-400);
@@ -475,7 +475,7 @@
 }
 .landing .feat-card.median .big sub {
   font-family: var(--font-body); font-weight: 500;
-  font-size: 16px; color: rgba(250, 247, 242, 0.7); margin-left: 8px;
+  font-size: 16px; color: var(--color-ink-inverse-70); margin-left: 8px;
 }
 
 @media (max-width: 900px) {
@@ -619,21 +619,21 @@
   grid-template-columns: 1.4fr 1fr 1fr 1fr;
   gap: 48px;
   padding-bottom: 48px;
-  border-bottom: 1px solid rgba(250, 247, 242, 0.12);
+  border-bottom: 1px solid var(--color-ink-inverse-12);
 }
 .landing .footer .brand-col .logo {
   color: var(--color-ink-inverse); margin-bottom: 16px;
 }
 .landing .footer .brand-col p {
   font-size: 14px; line-height: 1.6;
-  color: rgba(250, 247, 242, 0.7);
+  color: var(--color-ink-inverse-70);
   margin: 0 0 20px; max-width: 320px;
 }
 .landing .footer .phone-cta {
   display: inline-flex; align-items: center; gap: 10px;
   padding: 12px 16px;
   background: var(--color-steel-800);
-  border: 1px solid rgba(250, 247, 242, 0.14);
+  border: 1px solid var(--color-ink-inverse-12);
   border-radius: var(--radius-md);
   font-family: var(--font-mono); font-size: 15px; font-weight: 500;
   color: var(--color-ink-inverse);
@@ -644,7 +644,7 @@
 .landing .footer .col h4 {
   font-family: var(--font-body); font-weight: 600;
   font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
-  color: rgba(250, 247, 242, 0.5);
+  color: var(--color-ink-inverse-50);
   margin: 0 0 16px;
 }
 .landing .footer .col ul {
@@ -652,7 +652,7 @@
   display: flex; flex-direction: column; gap: 10px;
 }
 .landing .footer .col a {
-  font-size: 14px; color: rgba(250, 247, 242, 0.85);
+  font-size: 14px; color: var(--color-ink-inverse-90);
   padding: 4px 0;
   display: inline-block;
   transition: color var(--motion-hover) var(--ease-out);
@@ -661,7 +661,7 @@
 .landing .footer .bottom {
   padding-top: 28px;
   display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap;
-  font-size: 12px; color: rgba(250, 247, 242, 0.5); line-height: 1.6;
+  font-size: 12px; color: var(--color-ink-inverse-50); line-height: 1.6;
 }
 .landing .footer .bottom .compliance { max-width: 720px; }
 .landing .footer .bottom .compliance p { margin: 0 0 8px; }
