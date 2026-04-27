@@ -61,3 +61,74 @@ export const INITIAL_CONTEXT: IntakeContext = {
   contact: null,
   hasSeenMatch: false,
 };
+
+/* ===========================================================================
+   Insurance-side intake types. The insurance flow is a parallel track to the
+   financing intake above and does not share IntakeContext — operator profile,
+   coverage limits, and TCPA consent artifacts are insurance-specific.
+
+   The financing intake stays exactly as-is; insurance gets its own context,
+   own state machine, and own validators. The only shared atom is Contact.
+   =========================================================================== */
+
+export type RadiusBand = "local-100" | "regional-500" | "long-haul-1000+";
+
+export type AuthorityStatus =
+  | "own-authority"
+  | "leased-on"
+  | "applying"
+  | "no-authority";
+
+export type ClaimsHistoryBand =
+  | "clean-36mo"
+  | "1-claim"
+  | "2-plus-claims"
+  | "not-sure";
+
+export type CoverageLimitBand =
+  | "fmcsa-minimum"
+  | "1m-standard"
+  | "2m-elevated"
+  | "5m-hazmat";
+
+export type InsuranceIntent = {
+  productSlug: string | null;
+  dotClassSlug: string | null;
+  stateAbbr: string | null;
+  zip: string | null;
+  radiusBand: RadiusBand | null;
+  authorityStatus: AuthorityStatus | null;
+  claimsHistory: ClaimsHistoryBand | null;
+  coverageLimitBand: CoverageLimitBand | null;
+  hasReeferUnit: boolean | null;
+  carriesHazmat: boolean | null;
+  trustedFormCert: string | null;
+  jornayaToken: string | null;
+};
+
+export type InsuranceContext = {
+  intent: InsuranceIntent;
+  contact: Contact | null;
+  hasSeenMatch: boolean;
+};
+
+export const INITIAL_INSURANCE_INTENT: InsuranceIntent = {
+  productSlug: null,
+  dotClassSlug: null,
+  stateAbbr: null,
+  zip: null,
+  radiusBand: null,
+  authorityStatus: null,
+  claimsHistory: null,
+  coverageLimitBand: null,
+  hasReeferUnit: null,
+  carriesHazmat: null,
+  trustedFormCert: null,
+  jornayaToken: null,
+};
+
+export const INITIAL_INSURANCE_CONTEXT: InsuranceContext = {
+  intent: INITIAL_INSURANCE_INTENT,
+  contact: null,
+  hasSeenMatch: false,
+};
