@@ -7,6 +7,7 @@ import HowItWorks from "@/components/landing/HowItWorks";
 import InsuranceCrossSell from "@/components/landing/InsuranceCrossSell";
 import Nav from "@/components/landing/Nav";
 import ProofSection from "@/components/landing/ProofSection";
+import { JsonLd, organization, website } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title:
@@ -18,6 +19,8 @@ export const metadata: Metadata = {
 export default function LandingPage() {
   return (
     <div className="landing">
+      <JsonLd payload={organization()} />
+      <JsonLd payload={website()} />
       <Nav />
       <main id="main-content">
         <Hero />

@@ -127,3 +127,29 @@ export function financialProduct(args: {
     },
   };
 }
+
+export function organization(): JsonLdPayload {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Dispatched",
+    url: "https://dispatched.finance",
+    description:
+      "A matching platform for commercial trucking working capital and commercial trucking insurance. Operates two product lines: financing routed to a panel of commercial lenders, and insurance comparison routed to a named producer partner.",
+    sameAs: [],
+  };
+}
+
+export function website(): JsonLdPayload {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Dispatched",
+    url: "https://dispatched.finance",
+    publisher: {
+      "@type": "Organization",
+      name: "Dispatched",
+      url: "https://dispatched.finance",
+    },
+  };
+}
