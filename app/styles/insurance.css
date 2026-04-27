@@ -430,3 +430,21 @@
   color: var(--color-steel-600);
   text-decoration: underline;
 }
+
+.ins-sources-typed {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-6) 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.ins-sources-typed li {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-ink-secondary);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-paper);
+  border-left: 3px solid var(--color-steel-400);
+  border-radius: var(--radius-sm);
+}

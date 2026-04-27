@@ -140,6 +140,7 @@ export default async function DeepMoneyPage({
             premiumLow={observation.premiumLowAnnual}
             premiumHigh={observation.premiumHighAnnual}
             sampledAt={observation.sampledAt}
+            proxyType={observation.proxyType}
             sourceLabel={observation.source?.label ?? "Source pending"}
             sourceUrl={observation.source?.url ?? null}
           />
@@ -183,6 +184,35 @@ function Hero({
   );
 }
 
+function proxyEyebrow(proxyType: string): string {
+  switch (proxyType) {
+    case "state-doi-filing":
+      return "Sampled premium band — state DOI filing";
+    case "carrier-published-guidance":
+      return "Indicative band — carrier-published guidance";
+    case "national-average-proxy":
+      return "Indicative band — national-average proxy";
+    default:
+      return "Indicative band";
+  }
+}
+
+function proxyDisclosure(args: {
+  proxyType: string;
+  state: InsuranceState;
+}): string {
+  switch (args.proxyType) {
+    case "state-doi-filing":
+      return `Sampled directly from a public ${args.state.doi.name} rate filing against the named profile below.`;
+    case "carrier-published-guidance":
+      return `This band reflects the carrier's own publicly-disclosed guidance, not a state-specific rate filing. We will replace it with a sourced ${args.state.doi.name} filing once extracted.`;
+    case "national-average-proxy":
+      return `This band reflects national-average industry data, not a ${args.state.name}-specific filing. We will replace it with a sourced ${args.state.doi.name} filing once extracted.`;
+    default:
+      return "Source pending.";
+  }
+}
+
 function SourcedRate({
   product,
   state,
@@ -190,6 +220,7 @@ function SourcedRate({
   premiumLow,
   premiumHigh,
   sampledAt,
+  proxyType,
   sourceLabel,
   sourceUrl,
 }: {
@@ -199,6 +230,7 @@ function SourcedRate({
   premiumLow: number;
   premiumHigh: number;
   sampledAt: string;
+  proxyType: string;
   sourceLabel: string;
   sourceUrl: string | null;
 }) {
@@ -210,14 +242,14 @@ function SourcedRate({
   return (
     <section>
       <div className="ins-container">
-        <span className="ins-eyebrow">Sampled premium band</span>
+        <span className="ins-eyebrow">{proxyEyebrow(proxyType)}</span>
         <h2 className="ins-hero-title">
           {fmt.format(premiumLow)}–{fmt.format(premiumHigh)} per year
         </h2>
         <p className="ins-hero-sub">
           For {dotClass.name.toLowerCase()} operators in {state.name} buying{" "}
-          {product.shortLabel.toLowerCase()}, this is the band our sample
-          observed against the named profile below. Sampled {sampledAt}.
+          {product.shortLabel.toLowerCase()}, against the named profile
+          below. {proxyDisclosure({ proxyType, state })} Sampled {sampledAt}.
           Source:{" "}
           {sourceUrl ? (
             <a href={sourceUrl} rel="noopener" target="_blank">

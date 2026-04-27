@@ -59,19 +59,42 @@ export default function MethodologyPage() {
               Where the rate observations come from
             </h2>
             <p className="ins-hero-sub">
-              Phase 1 ships with a single source class: public state DOI rate
-              filings. We extract base rates, classification factors, and
-              mandatory state-specific fees from the filings published by each
-              state&apos;s Department of Insurance, and we cite the filing on
-              every page that uses it.
+              Phase 1 ships with three source classes. Each is labelled
+              distinctly on every page that uses it; the eyebrow on the rate
+              band and the disclosure paragraph beneath it tell you which one
+              you are reading.
             </p>
+            <ul className="ins-sources-typed">
+              <li>
+                <strong>State DOI filing.</strong> Sampled directly from a
+                public Department of Insurance rate filing for the named
+                state. The strongest source class. The eyebrow reads
+                &ldquo;Sampled premium band — state DOI filing&rdquo;.
+              </li>
+              <li>
+                <strong>Carrier-published guidance.</strong> Sourced from a
+                carrier&apos;s own publicly-disclosed rate ranges
+                (commercial-marketing pages, owner-operator FAQs). Used as a
+                transitional proxy when we have not yet extracted a
+                state-specific filing. The eyebrow reads &ldquo;Indicative
+                band — carrier-published guidance&rdquo;.
+              </li>
+              <li>
+                <strong>National-average proxy.</strong> Sourced from
+                industry surveys (e.g., ATRI operating-cost reports). Used
+                when no state or carrier source is available. The eyebrow
+                reads &ldquo;Indicative band — national-average proxy&rdquo;.
+              </li>
+            </ul>
             <p className="ins-compliance-note">
               We are not licensing a paid wholesale broker rate feed in Phase
               1. That decision keeps every number on the site auditable
-              against a regulator-published source and avoids the temptation
-              to paper over coverage gaps with vendor-proprietary numbers we
-              cannot show. When we add paid sources in a later phase, the
-              page that uses them will say so.
+              against a regulator-published or carrier-published source and
+              avoids the temptation to paper over coverage gaps with
+              vendor-proprietary numbers we cannot show. Proxy bands
+              (carrier-published, national-average) carry an explicit note
+              that a state-specific filing is pending and will replace the
+              proxy when extracted.
             </p>
           </div>
         </section>

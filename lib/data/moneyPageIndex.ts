@@ -40,7 +40,13 @@ const STATE_MONEY_PAGES: StateMoneyPage[] = [
   { productSlug: "primary-liability", stateSlug: "georgia" },
 ];
 
-const DEEP_MONEY_PAGES: DeepMoneyPage[] = [];
+const DEEP_MONEY_PAGES: DeepMoneyPage[] = [
+  {
+    productSlug: "primary-liability",
+    stateSlug: "texas",
+    dotClassSlug: "class-8-tractor",
+  },
+];
 
 export function getStateMoneyPages(): StateMoneyPage[] {
   return STATE_MONEY_PAGES;

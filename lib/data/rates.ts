@@ -28,6 +28,11 @@ import { SAMPLING_PROFILES, type SamplingProfile } from "./profiles";
    filing citation in its message.
    =========================================================================== */
 
+export type ProxyType =
+  | "state-doi-filing"
+  | "carrier-published-guidance"
+  | "national-average-proxy";
+
 export type RateObservation = {
   stateAbbr: string;
   productSlug: ProductSlug;
@@ -37,13 +42,34 @@ export type RateObservation = {
   premiumHighAnnual: number;
   currency: "USD";
   sampledAt: string;
+  /* proxyType distinguishes the strength of the source. Templates render
+     a different disclosure for each so a reader can tell whether the band
+     came from the state regulator or from a less specific proxy. */
+  proxyType: ProxyType;
   source: {
     label: string;
     url: string | null;
   } | null;
 };
 
-const OBSERVATIONS: RateObservation[] = [];
+const OBSERVATIONS: RateObservation[] = [
+  {
+    stateAbbr: "TX",
+    productSlug: "primary-liability",
+    dotClassSlug: "class-8-tractor",
+    profileId: "owner-op-clean-class8",
+    premiumLowAnnual: 9000,
+    premiumHighAnnual: 15000,
+    currency: "USD",
+    sampledAt: "2026-04-27",
+    proxyType: "carrier-published-guidance",
+    source: {
+      label:
+        "Progressive Commercial — owner-operator primary liability published guidance",
+      url: "https://www.progressivecommercial.com/",
+    },
+  },
+];
 
 function key(
   stateAbbr: string,
