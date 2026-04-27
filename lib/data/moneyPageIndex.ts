@@ -38,6 +38,7 @@ const STATE_MONEY_PAGES: StateMoneyPage[] = [
   { productSlug: "primary-liability", stateSlug: "florida" },
   { productSlug: "primary-liability", stateSlug: "illinois" },
   { productSlug: "primary-liability", stateSlug: "georgia" },
+  { productSlug: "motor-truck-cargo", stateSlug: "texas" },
 ];
 
 const DEEP_MONEY_PAGES: DeepMoneyPage[] = [

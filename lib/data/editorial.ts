@@ -171,6 +171,37 @@ const ENTRIES: EditorialBody[] = [
     lastReviewedAt: null,
   },
   {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "texas",
+    headline: "What drives motor truck cargo premiums in Texas",
+    paragraphs: [
+      "Motor truck cargo coverage is not federally mandated, but it is functionally required by 95%+ of brokered freight contracts. In Texas — where I-10, I-20, I-35, and I-45 carry an outsized share of national freight volume — broker-required cargo limits often run higher than the standard $100,000 baseline, particularly for refrigerated, electronics, and high-value freight lanes.",
+      "Two state-specific dynamics shape the rate environment. First, Texas border ports (Laredo, El Paso) concentrate cross-border freight; cargo theft frequency in border-corridor staging areas factors into rate filings for carriers writing those lanes. Second, Texas hosts a meaningful share of US oil-and-gas freight, which carries distinct cargo-handling exposures (high-value equipment, specialized commodity classes) and is typically priced with endorsements rather than the base policy.",
+      "Cargo claims are governed federally by the Carmack Amendment (49 U.S.C. § 14706), which establishes carrier liability for loss or damage in transit and the contractual ability of shippers and brokers to demand specific coverage limits. Texas courts apply the Carmack framework consistently with the federal model; underwriters do not price meaningful Texas-specific Carmack risk separately.",
+      "We have not yet extracted a public Texas Department of Insurance filing for motor truck cargo. The carrier table below lists the carriers writing the line in Texas based on their published license footprints; the rate band on this page will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Texas Department of Insurance — commercial auto and inland marine filings",
+        url: "https://www.tdi.texas.gov/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706) — Liability of carriers under receipts and bills of lading",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "CargoNet — annual cargo theft trend reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Texas Trucking Association — industry context",
+        url: "https://www.texastrucking.com/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
     productSlug: "primary-liability",
     stateSlug: "georgia",
     headline: "What drives primary liability premiums in Georgia",
