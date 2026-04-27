@@ -347,6 +347,19 @@
 .landing .section-head.centered { text-align: center; margin: 0 auto 48px; }
 .landing .section-head.centered p { margin: 16px auto 0; }
 
+.landing .cross-sell-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-6);
+}
+.landing .cross-sell-secondary {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--color-steel-600);
+  text-decoration: underline;
+}
+
 @media (max-width: 720px) {
   .landing .section { padding: 64px 0; }
   .landing .section-head h2 { font-size: 32px; }
