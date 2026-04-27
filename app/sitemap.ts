@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllProducts } from "@/lib/data/products";
+import { getAllCarriers } from "@/lib/data/carriers";
 import {
   getStateMoneyPages,
   getDeepMoneyPages,
@@ -72,6 +73,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: today,
       changeFrequency: "monthly",
       priority: 0.7,
+    });
+  }
+
+  for (const c of getAllCarriers()) {
+    entries.push({
+      url: `${ORIGIN}/carriers/${c.slug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.6,
     });
   }
 

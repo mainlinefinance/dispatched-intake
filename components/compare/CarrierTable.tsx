@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import type { Carrier } from "@/lib/data/carriers";
 
 type Props = {
@@ -30,7 +32,7 @@ export default function CarrierTable({ carriers, caption }: Props) {
           {carriers.map((c) => (
             <tr key={c.slug}>
               <td className="ins-carrier-name" data-label="Carrier">
-                {c.name}
+                <Link href={`/carriers/${c.slug}`}>{c.name}</Link>
               </td>
               <td data-label="Parent group">{c.parentGroup ?? "—"}</td>
               <td data-label="AM Best">{amBestLabel(c)}</td>

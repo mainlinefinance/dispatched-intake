@@ -14,7 +14,9 @@ export default function Nav() {
   const triggerRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   const truckingActive = pathname === "/" || pathname === "/trucking";
-  const insuranceActive = pathname?.startsWith("/insurance") ?? false;
+  const insuranceActive =
+    (pathname?.startsWith("/insurance") ?? false) ||
+    (pathname?.startsWith("/carriers") ?? false);
   const close = () => setMobileOpen(false);
 
   useEffect(() => {
