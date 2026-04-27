@@ -4,6 +4,7 @@
 @import "./styles/intake.css";
 @import "./styles/geo.css";
 @import "./styles/landing.css";
+@import "./styles/insurance.css";
 
 body {
   background: var(--color-bg-paper);
