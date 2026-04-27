@@ -1,4 +1,6 @@
 import TcpaScripts from "@/components/quote/TcpaScripts";
+import Nav from "@/components/landing/Nav";
+import Footer from "@/components/landing/Footer";
 
 export default function InsuranceLayout({
   children,
@@ -7,7 +9,9 @@ export default function InsuranceLayout({
 }) {
   return (
     <>
+      <Nav />
       {children}
+      <Footer />
       <TcpaScripts />
     </>
   );

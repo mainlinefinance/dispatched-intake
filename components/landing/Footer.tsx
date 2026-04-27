@@ -27,6 +27,9 @@ export default function Footer() {
                 <Link href="/trucking">Trucking capital</Link>
               </li>
               <li>
+                <Link href="/insurance">Trucking insurance</Link>
+              </li>
+              <li>
                 <span className="soon" aria-disabled="true">
                   Fuel advances <span className="soon-tag">Soon</span>
                 </span>
@@ -137,6 +140,7 @@ export default function Footer() {
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
             <Link href="/licenses">Licenses</Link>
+            <Link href="/methodology">Methodology</Link>
             <Link href="/do-not-sell">Do not sell</Link>
           </div>
         </div>

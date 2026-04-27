@@ -14,6 +14,7 @@ export default function Nav() {
   const triggerRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   const truckingActive = pathname === "/" || pathname === "/trucking";
+  const insuranceActive = pathname?.startsWith("/insurance") ?? false;
   const close = () => setMobileOpen(false);
 
   useEffect(() => {
@@ -39,7 +40,14 @@ export default function Nav() {
               className={truckingActive ? "active" : undefined}
               aria-current={truckingActive ? "page" : undefined}
             >
-              Trucking
+              Trucking capital
+            </Link>
+            <Link
+              href="/insurance"
+              className={insuranceActive ? "active" : undefined}
+              aria-current={insuranceActive ? "page" : undefined}
+            >
+              Insurance
             </Link>
             <span className="soon" aria-disabled="true">
               Construction <span className="soon-tag">Soon</span>
@@ -83,7 +91,15 @@ export default function Nav() {
           className={truckingActive ? "active" : undefined}
           aria-current={truckingActive ? "page" : undefined}
         >
-          Trucking
+          Trucking capital
+        </Link>
+        <Link
+          href="/insurance"
+          onClick={close}
+          className={insuranceActive ? "active" : undefined}
+          aria-current={insuranceActive ? "page" : undefined}
+        >
+          Insurance
         </Link>
         <span className="soon" aria-disabled="true">
           Construction <span className="soon-tag">Soon</span>
