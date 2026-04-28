@@ -1333,6 +1333,134 @@ const ENTRIES: EditorialBody[] = [
     reviewer: null,
     lastReviewedAt: null,
   },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "california",
+    dotClassSlug: "reefer-tractor",
+    headline: "Cargo coverage for reefer tractor operators in California",
+    paragraphs: [
+      "Reefer tractor operators on California produce-haul lanes face one of the most demanding cargo-coverage environments in the country. Central Valley produce — particularly leafy greens, berries, stone fruit, and table grapes — is concentrated into a 10-week harvest window across late summer and fall, and broker contracts on those lanes routinely require cargo limits of $250,000 to $1,000,000 with reefer-breakdown endorsements as a minimum standard.",
+      "Three California-specific exposures shape reefer cargo rates. First, time-temperature-sensitive freight carries elevated consequential damages on spoilage subrogation; spoiled-load claims are typically the most expensive cargo events for reefer operators. Second, the Inland Empire warehouse-distribution belt concentrates cargo handoffs and adds the cargo theft exposure that California is known for. Third, CARB compliance and reefer-unit emissions rules add maintenance discipline requirements that carriers may verify before binding coverage.",
+      "Cargo claims are governed federally by the Carmack Amendment (49 U.S.C. § 14706); California courts apply the federal framework consistently. Reefer-breakdown endorsements typically require recent reefer-unit maintenance records as a condition of coverage on high-value temperature-sensitive cargo. Some carriers exclude reefer-breakdown losses entirely on units older than 7 years.",
+      "We have not yet extracted a public California Department of Insurance filing for motor truck cargo on reefer tractor risks. The rate band on this page will publish once the filing has been extracted and reviewed by a California-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "California Department of Insurance",
+        url: "https://www.insurance.ca.gov/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706)",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "California Air Resources Board (CARB) — reefer unit emissions",
+        url: "https://ww2.arb.ca.gov/",
+      },
+      {
+        label: "CargoNet — Inland Empire and California port-corridor reefer reports",
+        url: "https://www.cargonet.com/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "florida",
+    dotClassSlug: "reefer-tractor",
+    headline: "Cargo coverage for reefer tractor operators in Florida",
+    paragraphs: [
+      "Reefer tractor operators on Florida produce-haul lanes — Florida citrus, winter vegetables out of Homestead and the Indian River corridor, and frozen-pharmaceutical lanes — face an exposure profile that combines time-temperature sensitivity, hurricane-season operations, and Florida's elevated cargo theft frequency. Broker contracts on Florida reefer lanes routinely require cargo limits of $250,000 to $1,000,000 with reefer-breakdown endorsements as a minimum standard.",
+      "Hurricane-season operations are the most distinctive Florida exposure for reefer cargo. Atlantic storm activity between June and November creates concentrated dwell-time exposure for refrigerated freight at non-secured staging locations as carriers re-route around landfall. Cargo policies on Florida reefer lanes frequently include named-storm-aware exclusions or sub-limits and require unattended-vehicle protocols on high-value temperature-sensitive cargo. Reefer-unit fuel reserve requirements during named-storm activity may be specified in the policy or by broker contract.",
+      "Cargo claims are governed federally by the Carmack Amendment (49 U.S.C. § 14706); Florida courts apply the federal framework consistently. Florida HB 837 (2023) reshaped general negligence litigation but its effect on Carmack-governed cargo claims is minimal. Spoiled-load subrogation remains the dominant cost driver.",
+      "We have not yet extracted a public Florida Office of Insurance Regulation filing for motor truck cargo on reefer tractor risks. The rate band on this page will publish once the filing has been extracted and reviewed by a Florida-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Florida Office of Insurance Regulation (FLOIR)",
+        url: "https://floir.com/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706)",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "National Hurricane Center — Atlantic basin tropical activity (NOAA)",
+        url: "https://www.nhc.noaa.gov/",
+      },
+      {
+        label: "CargoNet — Florida reefer-corridor and Miami-Dade theft reports",
+        url: "https://www.cargonet.com/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "primary-liability",
+    stateSlug: "california",
+    dotClassSlug: "box-truck",
+    headline: "Primary liability for box truck operators in California",
+    paragraphs: [
+      "Box truck operations in California (Class 3-6 straight trucks with enclosed cargo bodies, 10,001-26,000 lbs GVWR) sit in a distinctive segment of the California commercial-auto market. Most box truck operations are local-delivery, last-mile, household goods, and small-package routes — concentrated in metro Los Angeles, the Bay Area, San Diego, and the Sacramento corridor. Average radius is shorter, average VMT per power unit is lower, and severity per collision is materially lower than Class 8 long-haul.",
+      "California's two distinctive primary-liability dynamics — the absence of caps on non-economic damages outside MICRA, and AB 5 contractor classification effects — apply to box truck operations the same as Class 8. Box truck operators leased onto motor carriers under contractor arrangements face the same AB 5 / FAAAA-preemption complexity, and the underwriting requirement for clear lease documentation applies across DOT classes.",
+      "Collision frequency in metro California is elevated for box truck risks due to high traffic density and frequent stop-and-go routing. Severity is materially lower than Class 8 because box truck combinations are physically smaller and operate at lower average speeds. The rate per dollar of revenue on California box truck risks is typically lower than for Class 8, but venue exposure in LA and Bay Area courts continues to feed into the rate.",
+      "We have not yet extracted a public California Department of Insurance filing for primary liability on box truck risks. The rate band on this page will publish once the filing has been extracted and reviewed by a California-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "California Department of Insurance",
+        url: "https://www.insurance.ca.gov/",
+      },
+      {
+        label: "California AB 5 (2019) — Worker classification",
+        url: "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB5",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+      {
+        label: "Insurance Information Institute — commercial auto overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "primary-liability",
+    stateSlug: "florida",
+    dotClassSlug: "box-truck",
+    headline: "Primary liability for box truck operators in Florida",
+    paragraphs: [
+      "Box truck operations in Florida (Class 3-6 straight trucks, 10,001-26,000 lbs GVWR) concentrate in metropolitan delivery in the Miami / Fort Lauderdale / West Palm Beach corridor, the Tampa / St. Petersburg / Clearwater area, Jacksonville, and Orlando. Most Florida box truck primary liability is written through the same commercial-auto carriers as Class 8 risks — Progressive Commercial, Sentry, Great West — but the underwriting profile is materially different: shorter average radius, lower overall VMT, smaller exposure per power unit, and a different mix of routing risks dominated by metro stop-and-go.",
+      "HB 837 (2023) trial-structure reforms apply to box truck risks the same as Class 8. The reform's favorable rate effect is most visible on long-haul Class 8 books, but box truck primary liability has also benefited from the 2-year statute of limitations and the modified comparative negligence rule. Three years post-reform, underwriters now have enough loss-development data to begin pricing the favorable change in.",
+      "Hurricane-season operations create a secondary exposure for Florida box truck operators. Local delivery routes are typically suspended during named-storm activity, but post-storm cleanup and supply-chain restoration drive elevated route exposure with debris hazards and reduced traffic-control infrastructure. Carriers writing Florida box truck primary liability may include named-storm-aware exclusions or sub-limits.",
+      "We have not yet extracted a public Florida Office of Insurance Regulation filing for primary liability on box truck risks. The rate band on this page will publish once the filing has been extracted and reviewed by a Florida-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Florida Office of Insurance Regulation (FLOIR)",
+        url: "https://floir.com/",
+      },
+      {
+        label: "Florida HB 837 (2023) — Civil Remedies Reform",
+        url: "https://www.flsenate.gov/Session/Bill/2023/837",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+      {
+        label: "Insurance Information Institute — commercial auto overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
 ];
 
 export function getEditorial(

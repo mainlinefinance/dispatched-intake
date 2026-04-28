@@ -146,6 +146,26 @@ const DEEP_MONEY_PAGES: DeepMoneyPage[] = [
     stateSlug: "california",
     dotClassSlug: "class-8-tractor",
   },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "california",
+    dotClassSlug: "reefer-tractor",
+  },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "florida",
+    dotClassSlug: "reefer-tractor",
+  },
+  {
+    productSlug: "primary-liability",
+    stateSlug: "california",
+    dotClassSlug: "box-truck",
+  },
+  {
+    productSlug: "primary-liability",
+    stateSlug: "florida",
+    dotClassSlug: "box-truck",
+  },
 ];
 
 export function getStateMoneyPages(): StateMoneyPage[] {
