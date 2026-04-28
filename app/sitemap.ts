@@ -76,6 +76,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
+  entries.push({
+    url: `${ORIGIN}/carriers`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
   for (const c of getAllCarriers()) {
     entries.push({
       url: `${ORIGIN}/carriers/${c.slug}`,
@@ -84,6 +91,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     });
   }
+
+  entries.push({
+    url: `${ORIGIN}/insurance/tools`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/research`,
+    lastModified: today,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  });
 
   for (const s of getAllFinancingStates()) {
     entries.push({
