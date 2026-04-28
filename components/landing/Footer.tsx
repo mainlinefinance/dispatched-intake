@@ -33,6 +33,11 @@ export default function Footer() {
                 <Link href="/insurance/tools/premium-estimator">Premium estimator</Link>
               </li>
               <li>
+                <Link href="/research/state-of-commercial-trucking-insurance-2026">
+                  Research: State of Trucking Insurance 2026
+                </Link>
+              </li>
+              <li>
                 <span className="soon" aria-disabled="true">
                   Fuel advances <span className="soon-tag">Soon</span>
                 </span>
