@@ -202,6 +202,130 @@ const ENTRIES: EditorialBody[] = [
     lastReviewedAt: null,
   },
   {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "california",
+    headline: "What drives motor truck cargo premiums in California",
+    paragraphs: [
+      "California cargo premiums are shaped by two distinctive exposures: the Ports of Long Beach and Los Angeles, which together handle the largest container volume in the United States, and the Central Valley produce-haul economy, which concentrates time-temperature-sensitive freight across a 10-week harvest window. Both push broker-required cargo limits above the $100,000 default for affected lanes.",
+      "Cargo theft in the Inland Empire and around port-adjacent staging yards is consistently flagged by industry trackers as among the highest-frequency in the country. Underwriters writing California reefer and electronics freight price this exposure into the base rate, and several carriers require route-and-stop endorsements — limits on unattended-vehicle time and overnight parking outside secured yards — as a condition of coverage on high-value commodities.",
+      "The Carmack Amendment (49 U.S.C. § 14706) governs cargo liability federally; California courts apply the framework consistently with the federal model. Where California layers in additional consumer-facing rules (commercial-financing disclosure under SB 1235, AB 5 contractor classification effects on owner-operator coverage), those bear on operations more than on cargo rate filings directly.",
+      "We have not yet extracted a public California Department of Insurance filing for motor truck cargo. The carrier table below reflects carriers writing the line in California based on their published license footprints; the rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "California Department of Insurance — commercial auto and inland marine filings",
+        url: "https://www.insurance.ca.gov/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706)",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "CargoNet — annual cargo theft trend reports (Inland Empire and port-adjacent corridors)",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Surplus Line Association of California (SLA) — premium tax and stamping fee schedule",
+        url: "https://www.slacal.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "florida",
+    headline: "What drives motor truck cargo premiums in Florida",
+    paragraphs: [
+      "Florida is one of the highest-frequency cargo theft states in the country. Industry trackers consistently rank Miami-Dade, Hialeah, and the corridors around Port Tampa Bay among the top cargo-theft venues nationally; underwriters price that exposure into the base rate for any Florida-operating cargo policy. The default $100,000 cargo limit is regularly adjusted upward for refrigerated, electronics, and pharma freight on Florida lanes.",
+      "Hurricane-season operations add a second layer. Tractor-trailer staging and re-routing during Atlantic storm activity creates concentrated dwell-time exposure at non-secured locations, and several carriers require unattended-vehicle endorsements or hard parking-only restrictions as a condition of writing high-value commodity classes through Florida lanes.",
+      "Cargo claims are governed federally by the Carmack Amendment (49 U.S.C. § 14706). Florida courts apply the federal framework consistently. HB 837 (2023) reshaped general negligence litigation in Florida, but its direct effect on cargo coverage — which is governed by Carmack rather than tort law — is minimal; the indirect effect on overall commercial-vehicle premium environments is more visible on primary liability than cargo.",
+      "We have not yet extracted a public Florida Office of Insurance Regulation filing for motor truck cargo. The rate band will publish once the filing is reviewed by a Florida-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Florida Office of Insurance Regulation (FLOIR)",
+        url: "https://floir.com/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706)",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "CargoNet — annual cargo theft trend reports (Florida corridor analysis)",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Florida Surplus Lines Service Office (FSLSO)",
+        url: "https://www.fslso.com/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "illinois",
+    headline: "What drives motor truck cargo premiums in Illinois",
+    paragraphs: [
+      "Illinois cargo premiums are shaped by the Chicago metro's role as the dominant inland intermodal hub in the United States. Container volume from BNSF, CSX, NS, UP, and CN intermodal yards concentrates cargo handoffs in the Chicago-Joliet-Bedford Park corridor, and broker-required cargo limits on those lanes routinely exceed the $100,000 default for high-value commodities and electronics freight.",
+      "Cargo theft frequency around Chicago-area cross-dock and intermodal terminals is consistently flagged by industry trackers, and several carriers writing Illinois cargo require route-and-stop endorsements or hard parking-only conditions on high-value commodity classes. Cook County's plaintiff-friendly venue history affects primary liability more than cargo, but appears in cargo-related subrogation outcomes where third-party defendants are involved.",
+      "The Carmack Amendment (49 U.S.C. § 14706) governs cargo liability federally; Illinois courts apply the federal framework consistently. There is no general cap on damages in Illinois outside specific statutory carve-outs, but for cargo claims this matters less because the Carmack measure is tied to the actual loss rather than non-economic damages.",
+      "We have not yet extracted a public Illinois Department of Insurance filing for motor truck cargo. The rate band on this page will publish once the filing has been extracted and reviewed by an Illinois-licensed producer; until then the carrier table reflects the carriers we expect to write the line based on their published license footprints.",
+    ],
+    sources: [
+      {
+        label: "Illinois Department of Insurance (IDOI)",
+        url: "https://idoi.illinois.gov/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706)",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "CargoNet — annual cargo theft trend reports (Chicago intermodal corridor)",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Surplus Line Association of Illinois (SLA-IL)",
+        url: "https://www.ilsla.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "georgia",
+    headline: "What drives motor truck cargo premiums in Georgia",
+    paragraphs: [
+      "Georgia cargo premiums are shaped by Atlanta's role as the Southeast's freight nexus. The intersection of I-75, I-85, and I-20 — combined with major intermodal facilities at Inman Yard and Fairburn — concentrates cargo handoffs across thousands of daily moves. Broker-required cargo limits on Atlanta lanes regularly exceed the $100,000 default for electronics, pharma, and high-value commodity freight.",
+      "The Port of Savannah is the second axis. Container volume through Savannah has grown faster than any other US East Coast port over the past decade, and cargo policies on Savannah-Atlanta drayage and inland-haul lanes carry their own exposure profile (theft at port-adjacent staging, dwell-time exposures around the inland CSX Appalachian terminal).",
+      "Cargo claims are governed federally by the Carmack Amendment (49 U.S.C. § 14706). Georgia courts apply the federal framework consistently. Georgia's 2025 SB 68 / SB 69 tort reform package reshaped general commercial-vehicle litigation; the direct effect on cargo coverage — which is governed by Carmack rather than tort law — is minimal, but the indirect effect on overall premium environments has improved underwriting appetite.",
+      "We have not yet extracted a public Georgia Office of Commissioner of Insurance and Safety Fire filing for motor truck cargo. The rate band will publish once the filing is reviewed by a Georgia-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Georgia Office of Commissioner of Insurance and Safety Fire",
+        url: "https://oci.georgia.gov/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706)",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "CargoNet — annual cargo theft trend reports (Atlanta and Savannah corridors)",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Georgia Surplus Lines Association (GSLA)",
+        url: "https://www.gsla.us/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
     productSlug: "primary-liability",
     stateSlug: "georgia",
     headline: "What drives primary liability premiums in Georgia",
