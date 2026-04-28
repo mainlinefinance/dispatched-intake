@@ -18,6 +18,7 @@ import {
   getProfileForObservation,
   type ProxyType,
 } from "@/lib/data/rates";
+import { getEditorial, type EditorialBody } from "@/lib/data/editorial";
 import {
   JsonLd,
   article,
@@ -104,6 +105,7 @@ export default async function DeepMoneyPage({
 
   const observation = getRate(s.abbr, p.slug, dc.slug);
   const profile = observation ? getProfileForObservation(observation) : null;
+  const editorial = getEditorial(p.slug, s.slug, dc.slug);
   const carriers = s.topCarriers
     .map((slug) => getCarrier(slug))
     .filter((c): c is Carrier => c !== null);
@@ -158,7 +160,7 @@ export default async function DeepMoneyPage({
         <QuoteSection product={p} state={s} dotClass={dc} />
         {profile ? <ProfileSection profile={profile} /> : null}
         <CarriersSection state={s} carriers={carriers} />
-        <EditorialSection state={s} dotClass={dc} />
+        <EditorialSection state={s} dotClass={dc} editorial={editorial} />
         <ComplianceFooter state={s} product={p} />
       </main>
     </div>
@@ -651,66 +653,104 @@ function CarriersSection({
 function EditorialSection({
   state,
   dotClass,
+  editorial,
 }: {
   state: InsuranceState;
   dotClass: DotClass;
+  editorial: EditorialBody | null;
 }) {
-  // Class context block with the state's tort/regulatory note as the
-  // editorial body. Sources sidebar references the state DOI + FMCSA part 387.
+  // When a per-deep-page editorial entry exists, render its headline + body
+  // + sources. Otherwise fall back to a class-context block sourced from
+  // the DotClass + state regulatory notes.
   return (
     <section className="editorial-section" aria-labelledby="editorial-h2">
       <div className="container editorial-grid">
         <div>
-          <p className="editorial-eyebrow">{dotClass.name} context</p>
+          <p className="editorial-eyebrow">
+            {editorial ? "Editorial" : `${dotClass.name} context`}
+          </p>
           <h2 id="editorial-h2" className="editorial-h2">
-            What drives premiums for {dotClass.name.toLowerCase()} risks in{" "}
-            {state.name}.
+            {editorial
+              ? editorial.headline
+              : `What drives premiums for ${dotClass.name.toLowerCase()} risks in ${state.name}.`}
           </h2>
           <div className="editorial-body">
-            <p>
-              <strong>{dotClass.name}.</strong> {dotClass.typicalOperation}.
-              Typical GVWR range: {dotClass.gvwrRange}. Example vehicles:{" "}
-              {dotClass.exampleVehicles.join(", ")}.{" "}
-              {dotClass.cdlRequired
-                ? "CDL required."
-                : "CDL often not required (verify by GVWR)."}
-            </p>
-            {state.tortReformNote ? <p>{state.tortReformNote}</p> : null}
-            {state.surplusLinesNote ? <p>{state.surplusLinesNote}</p> : null}
-            {state.fmcsaServiceCenter ? (
-              <p>
-                <strong>FMCSA jurisdiction:</strong>{" "}
-                {state.fmcsaServiceCenter}.
-              </p>
-            ) : null}
+            {editorial ? (
+              editorial.paragraphs.map((p, i) => <p key={i}>{p}</p>)
+            ) : (
+              <>
+                <p>
+                  <strong>{dotClass.name}.</strong>{" "}
+                  {dotClass.typicalOperation}. Typical GVWR range:{" "}
+                  {dotClass.gvwrRange}. Example vehicles:{" "}
+                  {dotClass.exampleVehicles.join(", ")}.{" "}
+                  {dotClass.cdlRequired
+                    ? "CDL required."
+                    : "CDL often not required (verify by GVWR)."}
+                </p>
+                {state.tortReformNote ? <p>{state.tortReformNote}</p> : null}
+                {state.surplusLinesNote ? (
+                  <p>{state.surplusLinesNote}</p>
+                ) : null}
+                {state.fmcsaServiceCenter ? (
+                  <p>
+                    <strong>FMCSA jurisdiction:</strong>{" "}
+                    {state.fmcsaServiceCenter}.
+                  </p>
+                ) : null}
+              </>
+            )}
           </div>
         </div>
         <aside className="deep-sources" aria-label="Sources">
           <p className="deep-sources-eyebrow">Sources</p>
           <ul>
-            <li>
-              <a href={state.doi.url} target="_blank" rel="noopener">
-                {state.doi.name}
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387"
-                target="_blank"
-                rel="noopener"
-              >
-                FMCSA 49 CFR Part 387 — Minimum Levels of Financial
-                Responsibility
-              </a>
-            </li>
-            <li>
-              <Link href="/methodology">Dispatched methodology</Link>
-            </li>
+            {editorial ? (
+              editorial.sources.map((s, i) => (
+                <li key={i}>
+                  {s.url ? (
+                    <a href={s.url} target="_blank" rel="noopener">
+                      {s.label}
+                    </a>
+                  ) : (
+                    <span>{s.label}</span>
+                  )}
+                </li>
+              ))
+            ) : (
+              <>
+                <li>
+                  <a href={state.doi.url} target="_blank" rel="noopener">
+                    {state.doi.name}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    FMCSA 49 CFR Part 387 — Minimum Levels of Financial
+                    Responsibility
+                  </a>
+                </li>
+                <li>
+                  <Link href="/methodology">Dispatched methodology</Link>
+                </li>
+              </>
+            )}
           </ul>
-          <p className="reviewer-pending">
-            Reviewer attestation pending. The body above is sourced but has
-            not yet been signed off by a credentialed reviewer.
-          </p>
+          {editorial?.reviewer && editorial.lastReviewedAt ? (
+            <p className="reviewer-pending">
+              Reviewed by {editorial.reviewer.name},{" "}
+              {editorial.reviewer.credential}, on {editorial.lastReviewedAt}.
+            </p>
+          ) : (
+            <p className="reviewer-pending">
+              Reviewer attestation pending. The body above is sourced but
+              has not yet been signed off by a credentialed reviewer.
+            </p>
+          )}
         </aside>
       </div>
     </section>

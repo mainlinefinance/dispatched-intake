@@ -356,6 +356,134 @@ const ENTRIES: EditorialBody[] = [
     reviewer: null,
     lastReviewedAt: null,
   },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "texas",
+    dotClassSlug: "class-8-tractor",
+    headline: "Cargo coverage for Class 8 tractor operators in Texas",
+    paragraphs: [
+      "Class 8 tractor operators in Texas hauling under MC authority almost universally need motor truck cargo coverage above the $100,000 default. Broker contracts on Texas-anchored lanes — particularly cross-border lanes through Laredo and El Paso, oil-and-gas freight on I-20 and I-37, and Houston-area chemical hauls — routinely require limits of $250,000 to $1,000,000 depending on commodity class.",
+      "Two Texas-specific exposures dominate cargo rate filings for Class 8 risks. First, cargo theft frequency in border-staging yards (Laredo and El Paso) and around the Houston Ship Channel inland container facilities is consistently flagged by industry trackers. Second, oil-and-gas freight requires specialized handling endorsements (high-value drilling equipment, specialty commodity classes) that price separately from the base policy and often require route-and-stop conditions.",
+      "Cargo claims are governed by the Carmack Amendment (49 U.S.C. § 14706); Texas courts apply the federal framework consistently. The pertinent contractual carve-outs — released-value provisions, broker-shipper-carrier liability allocation — are the same in Texas as nationally, but the practical reality on Texas border lanes is that brokers demand higher limits to manage their own contingent cargo exposure.",
+      "We have not yet extracted a public Texas Department of Insurance filing for motor truck cargo on Class 8 risks. The rate band will publish once the filing is reviewed by a Texas-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Texas Department of Insurance — commercial auto and inland marine filings",
+        url: "https://www.tdi.texas.gov/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706)",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "CargoNet — Texas border-corridor and Houston Ship Channel reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Texas Trucking Association — cross-border and oil-and-gas freight context",
+        url: "https://www.texastrucking.com/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "primary-liability",
+    stateSlug: "texas",
+    dotClassSlug: "hot-shot",
+    headline: "Primary liability for hot-shot operators in Texas",
+    paragraphs: [
+      "Hot-shot operations — typically Class 3 to Class 5 dually pickups pulling gooseneck or bumper-pull trailers under newly-issued MC authority — sit in the most challenging segment of the Texas commercial-trucking primary liability market. Admitted carriers frequently decline these risks; surplus-lines placement through SLTX is the typical path for the first three to five years of authority operation.",
+      "Two factors drive the rate environment for Texas hot-shot risks. First, hot-shot operators frequently work expedited and partial-load freight from broker load boards, which exposes them to less-vetted shipper relationships and more complex routing — both of which underwriters price into the base rate. Second, the gooseneck-trailer combination GVWR (typically 14,000–19,500 lbs) sits below the FMCSA Class 8 thresholds, but cargo and routing patterns frequently match Class 8 lanes — creating a mismatch between underwriting class and actual exposure that prices to the higher class.",
+      "HB 19 (2021) reformed direct-negligence litigation against motor carriers in Texas, but the favorable effect on rates is most visible in the standard-market Class 8 segment. For hot-shot risks already in the surplus-lines channel, the practical effect on premiums is muted; SLTX's 4.85% premium tax plus stamping fee continues to apply.",
+      "We have not yet extracted a public Texas Department of Insurance filing for primary liability on hot-shot risks. The rate band will publish once the filing is reviewed by a Texas-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Texas Department of Insurance — commercial auto rate filings (TDI)",
+        url: "https://www.tdi.texas.gov/",
+      },
+      {
+        label: "Surplus Lines Stamping Office of Texas (SLTX)",
+        url: "https://www.sltx.org/",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+      {
+        label: "Texas HB 19 (2021) — Trial of Certain Actions Involving Commercial Motor Vehicles",
+        url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=87R&Bill=HB19",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "primary-liability",
+    stateSlug: "california",
+    dotClassSlug: "class-8-tractor",
+    headline: "Primary liability for Class 8 tractor operators in California",
+    paragraphs: [
+      "California Class 8 primary liability is consistently among the most expensive in the country. Two factors compound: the absence of a general cap on non-economic damages outside MICRA, and the venue history in Los Angeles and Bay Area courts. Underwriters writing Class 8 risks operating in California — even those domiciled elsewhere — price the venue exposure into the base rate.",
+      "The AB 5 contractor-classification framework adds a second layer for Class 8 owner-operators leased onto motor carriers. Federal preemption of AB 5 as applied to motor carriers has been litigated extensively (the FAAAA / California debate); the practical consequence today is that fleet structures get scrutinized in any post-loss litigation, which feeds back into both primary liability pricing and non-trucking-liability (bobtail) coverage on leased-on operators.",
+      "Surplus-lines placements in California go through brokers licensed by the Surplus Line Association of California (SLA). A 3% premium tax plus the SLA stamping fee applies. Class 8 risks declined by admitted California carriers — typically those with one or more chargeable losses in 36 months, certain hazmat classes, or operations in elevated-exposure venues — place through the surplus-lines channel.",
+      "We have not yet extracted a public California Department of Insurance filing for primary liability on Class 8 risks. The rate band will publish once the filing is reviewed by a California-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "California Department of Insurance",
+        url: "https://www.insurance.ca.gov/",
+      },
+      {
+        label: "Surplus Line Association of California (SLA)",
+        url: "https://www.slacal.org/",
+      },
+      {
+        label: "California AB 5 (2019) — Worker classification (Lab. Code § 2750.3)",
+        url: "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB5",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "primary-liability",
+    stateSlug: "florida",
+    dotClassSlug: "class-8-tractor",
+    headline: "Primary liability for Class 8 tractor operators in Florida",
+    paragraphs: [
+      "Florida Class 8 primary liability is shaped by HB 837 (2023), which shortened the negligence statute of limitations from four years to two and replaced pure comparative negligence with a modified 51% bar. Underwriters watching the Florida Class 8 book have flagged each of these as moderate-to-favorable for primary liability rates compared to the pre-reform environment, particularly for fleet risks running I-95 and I-75 through Florida.",
+      "Geography drives a second layer. Class 8 lanes feeding the Ports of Jacksonville, Miami, and Tampa concentrate intermodal exposure, and reefer-tractor combinations operating on Florida produce lanes carry distinct cargo-related liability that overlaps with primary liability in subrogation contexts. Hurricane-season operations also create staging exposure — staging yards with high concentrations of dwell-time tractors during storm activity push insurers to scrutinize parking and security practices.",
+      "Surplus-lines placements in Florida are filed through the Florida Surplus Lines Service Office (FSLSO). A 4.94% premium tax plus a 0.06% FSLSO service fee applies on top of the carrier's base rate. Class 8 risks declined by admitted Florida carriers — typically those with chargeable losses, certain hazmat classes, or non-standard operations — typically place through the surplus-lines channel.",
+      "We have not yet extracted a public Florida Office of Insurance Regulation filing for primary liability on Class 8 risks. The rate band will publish once the filing is reviewed by a Florida-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Florida Office of Insurance Regulation (FLOIR)",
+        url: "https://floir.com/",
+      },
+      {
+        label: "Florida Surplus Lines Service Office (FSLSO)",
+        url: "https://www.fslso.com/",
+      },
+      {
+        label: "Florida HB 837 (2023) — Civil Remedies Reform",
+        url: "https://www.flsenate.gov/Session/Bill/2023/837",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
 ];
 
 export function getEditorial(
