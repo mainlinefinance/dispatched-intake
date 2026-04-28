@@ -705,6 +705,161 @@ const ENTRIES: EditorialBody[] = [
     reviewer: null,
     lastReviewedAt: null,
   },
+  {
+    productSlug: "general-liability",
+    stateSlug: "texas",
+    headline: "What drives general liability premiums for Texas trucking operations",
+    paragraphs: [
+      "General liability (GL) for commercial trucking covers premises liability, completed operations, and non-trucking-related injury claims — exposures that fall outside the scope of primary liability (which is vehicle-operation specific). For Texas owner-operators and small fleets, GL is typically required by terminal access agreements, broker contracts, and shipper master agreements, with $1M-per-occurrence limits being the prevailing standard.",
+      "Texas premises liability is governed by chapter 75 of the Texas Civil Practice and Remedies Code, which applies a duty-of-care framework distinct from the post-HB 19 commercial-vehicle reforms. HB 19 specifically addresses commercial-vehicle direct-negligence trials and does not apply to GL premises claims. The practical implication: GL rates in Texas have not moved with HB 19, and the rate environment remains stable rather than easing.",
+      "GL exposure for Texas trucking operations concentrates in three areas: terminal premises (loading docks, parking yards, fuel islands), completed operations (claims arising from cargo handling that doesn't fall under cargo coverage), and non-trucking activities at premises owned or leased by the operator. Texas operators with multiple terminal locations or shared facilities face elevated GL underwriting scrutiny.",
+      "We have not yet extracted a public Texas Department of Insurance filing for general liability on commercial trucking risks. The carrier table reflects carriers writing the line; the rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Texas Department of Insurance",
+        url: "https://www.tdi.texas.gov/",
+      },
+      {
+        label: "Texas Civil Practice and Remedies Code, Chapter 75 (Premises Liability)",
+        url: "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.75.htm",
+      },
+      {
+        label: "Texas Trucking Association — terminal operations context",
+        url: "https://www.texastrucking.com/",
+      },
+      {
+        label: "Insurance Information Institute — commercial general liability overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "general-liability",
+    stateSlug: "california",
+    headline: "What drives general liability premiums for California trucking operations",
+    paragraphs: [
+      "California general liability (GL) on commercial trucking operations is shaped by two distinctive factors: California's plaintiff-friendly venue history (especially in Los Angeles and the Bay Area) and a long-running pattern of ADA-Title-III premises liability claims against commercial properties. Both push California GL rates above the national average for trucking operations with significant California premises exposure.",
+      "California has no general cap on non-economic damages outside MICRA, which applies only to medical malpractice. For trucking-operation GL claims — slip-and-falls at terminals, completed-operations claims, non-vehicle bodily injury — the exposure is unbounded. Underwriters writing California GL on trucking risks price the venue exposure into the base rate, particularly for operators with terminal locations or yard operations in Los Angeles, Orange, San Diego, or Bay Area counties.",
+      "ADA-Title-III premises liability has been a sustained driver of California GL claims. While ADA itself is federal, California's Unruh Civil Rights Act adds statutory damages on top of federal ADA exposure. Trucking operations with public-facing premises (driver lounges, customer service counters) face elevated underwriting attention. Operators without public-facing premises see less of this dynamic in their rates.",
+      "We have not yet extracted a public California Department of Insurance filing for general liability on commercial trucking risks. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "California Department of Insurance",
+        url: "https://www.insurance.ca.gov/",
+      },
+      {
+        label: "California Unruh Civil Rights Act (Cal. Civ. Code § 51 et seq.)",
+        url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=1.&chapter=&part=2.&lawCode=CIV&title=2.",
+      },
+      {
+        label: "Americans with Disabilities Act Title III",
+        url: "https://www.ada.gov/",
+      },
+      {
+        label: "Insurance Information Institute — commercial general liability overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "general-liability",
+    stateSlug: "florida",
+    headline: "What drives general liability premiums for Florida trucking operations",
+    paragraphs: [
+      "Florida general liability (GL) for commercial trucking has materially improved since HB 837 (2023). The reform shortened the negligence statute of limitations from four years to two and adopted modified comparative negligence (51% bar). Both changes apply to GL claims as well as commercial-vehicle claims, and the loss-defense environment has become more favorable for carriers writing Florida GL on trucking risks.",
+      "Florida premises liability remains the dominant GL exposure for trucking operations — loading dock claims, fuel-island slip-and-falls, terminal yard injuries. Florida GL underwriting concentrates on operators with significant terminal presence in Miami-Dade, Broward, and around the Ports of Jacksonville, Miami, and Tampa, where pre-reform venue exposure was meaningful. Three years post-reform, underwriters now have enough loss-development data to begin pricing the favorable change in.",
+      "Hurricane-season operations create a secondary GL exposure: claims arising from storm-cleanup operations on premises, debris liability, and post-storm public-access risks at damaged terminals. Florida GL policies frequently include named-storm-aware exclusions or sub-limits for storm-related losses on premises.",
+      "We have not yet extracted a public Florida Office of Insurance Regulation filing for general liability on commercial trucking risks. The rate band on this page will publish once the filing has been extracted and reviewed by a Florida-licensed producer; until then the carrier table reflects the carriers we expect to write the line based on their published license footprints.",
+    ],
+    sources: [
+      {
+        label: "Florida Office of Insurance Regulation (FLOIR)",
+        url: "https://floir.com/",
+      },
+      {
+        label: "Florida HB 837 (2023) — Civil Remedies Reform",
+        url: "https://www.flsenate.gov/Session/Bill/2023/837",
+      },
+      {
+        label: "Florida Statutes Chapter 768 (Negligence)",
+        url: "https://www.flsenate.gov/Laws/Statutes/2023/Chapter768",
+      },
+      {
+        label: "Insurance Information Institute — commercial general liability overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "general-liability",
+    stateSlug: "illinois",
+    headline: "What drives general liability premiums for Illinois trucking operations",
+    paragraphs: [
+      "Illinois general liability (GL) on commercial trucking operations is shaped primarily by Cook County's plaintiff-friendly venue history. The same dynamic that drives Illinois primary liability rates above national averages — pure several liability without a comparative-negligence percentage bar, no general cap on damages outside specific statutory carve-outs — applies to GL claims arising on trucking premises in or around Chicago.",
+      "Illinois trucking operators with terminal facilities in Cook County, DuPage, Will, or other collar counties face elevated GL underwriting scrutiny. The Chicago intermodal corridor — with its concentration of trucking yards, cross-dock facilities, and warehouse-distribution clusters — is the highest-exposure cluster. Operators with significant yard operations in Joliet, Bedford Park, or the Inman Yard area (the BNSF intermodal corridor) typically see GL rates 15-25% above the equivalent risk operating outside Cook County.",
+      "Premises liability claim severity in Illinois GL has tracked the broader Cook County severity story across multiple recent years. Underwriters writing Illinois GL on trucking risks price the severity exposure into the base rate. For operators in downstate Illinois — outside the Chicago metro — rates approximate national averages.",
+      "We have not yet extracted a public Illinois Department of Insurance filing for general liability on commercial trucking risks. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Illinois Department of Insurance (IDOI)",
+        url: "https://idoi.illinois.gov/",
+      },
+      {
+        label: "Illinois Premises Liability Act (740 ILCS 130)",
+        url: "https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2117",
+      },
+      {
+        label: "Illinois Trucking Association — terminal operations context",
+        url: "https://www.illinoistrucking.org/",
+      },
+      {
+        label: "Insurance Information Institute — commercial general liability overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "general-liability",
+    stateSlug: "georgia",
+    headline: "What drives general liability premiums for Georgia trucking operations",
+    paragraphs: [
+      "Georgia general liability (GL) on commercial trucking operations sits in a transitional rate environment after the 2025 SB 68 / SB 69 tort reform package. The reforms tightened the negligent-entrustment standard, updated attorney advertising rules, and made seatbelt evidence admissible at trial. The reforms apply to GL claims as well as commercial-vehicle claims, and Georgia GL on trucking risks should see moderate rate moderation through 2026 as carriers price the change in.",
+      "Atlanta is the primary GL exposure cluster. The metro area's role as the Southeast's freight nexus concentrates terminal operations, cross-dock facilities, and warehouse-distribution clusters across Fulton, DeKalb, Cobb, Clayton, and Gwinnett counties. Operators with significant Atlanta-metro premises exposure face elevated GL underwriting scrutiny relative to the rest of the state. Port of Savannah-related premises (terminal facilities in Chatham County and along the I-16 corridor) carry their own exposure profile.",
+      "Premises liability claim severity in Georgia GL had tracked the high-severity national pattern through the pre-reform period. Three factors drove that: lack of meaningful comparative-fault constraint, jury venue history in Fulton and DeKalb counties, and aggressive attorney advertising. The 2025 reforms address all three, but loss-development data through 2027 will be needed to confirm sustained rate-environment improvement.",
+      "We have not yet extracted a public Georgia Office of Commissioner of Insurance and Safety Fire filing for general liability on commercial trucking risks. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Georgia Office of Commissioner of Insurance and Safety Fire",
+        url: "https://oci.georgia.gov/",
+      },
+      {
+        label: "Georgia SB 68 (2025) — Tort Reform / Civil Practice",
+        url: "https://www.legis.ga.gov/legislation/SB68",
+      },
+      {
+        label: "Georgia SB 69 (2025) — Litigation Funding Disclosure",
+        url: "https://www.legis.ga.gov/legislation/SB69",
+      },
+      {
+        label: "Insurance Information Institute — commercial general liability overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
 ];
 
 export function getEditorial(

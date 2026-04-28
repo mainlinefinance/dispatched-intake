@@ -46,6 +46,11 @@ const STATE_MONEY_PAGES: StateMoneyPage[] = [
   { productSlug: "physical-damage", stateSlug: "texas" },
   { productSlug: "physical-damage", stateSlug: "california" },
   { productSlug: "physical-damage", stateSlug: "florida" },
+  { productSlug: "general-liability", stateSlug: "texas" },
+  { productSlug: "general-liability", stateSlug: "california" },
+  { productSlug: "general-liability", stateSlug: "florida" },
+  { productSlug: "general-liability", stateSlug: "illinois" },
+  { productSlug: "general-liability", stateSlug: "georgia" },
 ];
 
 const DEEP_MONEY_PAGES: DeepMoneyPage[] = [
