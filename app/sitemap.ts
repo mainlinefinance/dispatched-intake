@@ -111,6 +111,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/insurance/tools/premium-estimator`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
     url: `${ORIGIN}/disclosures`,
     lastModified: today,
     changeFrequency: "yearly",

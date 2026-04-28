@@ -1177,3 +1177,268 @@
   max-width: 72ch;
   margin: 0 0 var(--space-3);
 }
+
+/* ============================================================
+   Premium estimator (/insurance/tools/premium-estimator)
+   ============================================================ */
+
+.estimator-page *,
+.estimator-page *::before,
+.estimator-page *::after {
+  box-sizing: border-box;
+}
+
+.estimator-page .container {
+  max-width: var(--container-marketing);
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+}
+@media (max-width: 720px) {
+  .estimator-page .container { padding: 0 var(--gutter-mobile); }
+}
+
+.estimator-page .estimator-hero {
+  padding: var(--space-12) 0 var(--space-8);
+}
+.estimator-page .estimator-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-steel-600);
+  margin-bottom: var(--space-3);
+}
+.estimator-page .estimator-h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: var(--tr-h1);
+  color: var(--color-ink-primary);
+  margin: 0 0 var(--space-4);
+  max-width: 28ch;
+}
+.estimator-page .estimator-lead {
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-body-lg);
+  color: var(--color-ink-secondary);
+  margin: 0 0 var(--space-4);
+  max-width: 60ch;
+}
+
+.estimator-page .estimator-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+  gap: var(--space-8);
+  align-items: start;
+  padding-bottom: var(--space-12);
+}
+@media (max-width: 900px) {
+  .estimator-page .estimator-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.estimator-page .estimator-form {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.estimator-page .estimator-field-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+@media (max-width: 720px) {
+  .estimator-page .estimator-field-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.estimator-page .estimator-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.estimator-page .estimator-field-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: var(--tr-eyebrow);
+  color: var(--color-ink-tertiary);
+}
+.estimator-page .estimator-field select {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--color-ink-primary);
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border-field);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  width: 100%;
+  min-height: 44px;
+  line-height: 1.4;
+}
+.estimator-page .estimator-field select:focus-visible {
+  outline: 2px solid var(--color-hiviz-400);
+  outline-offset: 2px;
+}
+
+.estimator-page .estimator-submit {
+  align-self: flex-start;
+  height: 48px;
+  padding: 0 var(--space-6);
+  margin-top: var(--space-2);
+}
+
+.estimator-page .estimator-result {
+  background: var(--color-bg-sunken);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  min-height: 320px;
+}
+
+.estimator-page .estimator-empty .estimator-empty-h2,
+.estimator-page .estimator-miss .estimator-miss-h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--tr-h2);
+  font-weight: 600;
+  margin: 0 0 var(--space-4);
+  color: var(--color-ink-primary);
+  max-width: 24ch;
+}
+
+.estimator-page .estimator-band {
+  font-family: var(--font-display);
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  color: var(--color-ink-primary);
+  margin: 0 0 var(--space-4);
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.estimator-page .estimator-band-sep,
+.estimator-page .estimator-band-unit {
+  font-size: var(--fs-body);
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--color-ink-tertiary);
+  letter-spacing: 0;
+}
+@media (max-width: 720px) {
+  .estimator-page .estimator-band { font-size: 40px; }
+}
+
+.estimator-page .estimator-breakdown {
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+.estimator-page .estimator-breakdown-h3 {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-eyebrow);
+  color: var(--color-ink-tertiary);
+  margin: 0 0 var(--space-3);
+}
+.estimator-page .estimator-breakdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.estimator-page .estimator-breakdown-list li {
+  display: grid;
+  grid-template-columns: minmax(140px, 200px) minmax(80px, 110px) 1fr;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: baseline;
+  font-size: var(--fs-small);
+}
+.estimator-page .estimator-breakdown-list li:last-child {
+  border-bottom: none;
+}
+.estimator-page .estimator-breakdown-list li.estimator-bd-total {
+  font-weight: 600;
+  color: var(--color-ink-primary);
+  background: var(--color-bg-paper);
+  padding: var(--space-3) var(--space-3);
+  margin: var(--space-2) calc(var(--space-3) * -1) 0;
+  border-radius: var(--radius-sm);
+}
+.estimator-page .estimator-bd-key {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: var(--tr-eyebrow);
+  color: var(--color-ink-tertiary);
+}
+.estimator-page .estimator-bd-val {
+  font-family: var(--font-mono);
+  color: var(--color-ink-primary);
+  font-size: var(--fs-body);
+}
+.estimator-page .estimator-bd-reason {
+  color: var(--color-ink-secondary);
+  line-height: var(--lh-small);
+}
+@media (max-width: 720px) {
+  .estimator-page .estimator-breakdown-list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+.estimator-page .estimator-cta-row {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+}
+.estimator-page .estimator-permalink {
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  color: var(--color-steel-600);
+}
+
+.estimator-page .estimator-meta {
+  margin-top: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  color: var(--color-ink-tertiary);
+}
+
+.estimator-page .estimator-foot {
+  padding: var(--space-8) 0 var(--space-12);
+  border-top: 1px solid var(--color-border);
+}
+.estimator-page .estimator-compliance {
+  font-size: var(--fs-caption);
+  line-height: var(--lh-small);
+  color: var(--color-ink-tertiary);
+  max-width: 72ch;
+  margin: 0 0 var(--space-3);
+}
+.estimator-page .estimator-foot-links {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  color: var(--color-ink-tertiary);
+}
+.estimator-page .estimator-foot-links a {
+  color: var(--color-steel-600);
+}
