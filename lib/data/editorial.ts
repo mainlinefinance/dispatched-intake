@@ -1077,6 +1077,262 @@ const ENTRIES: EditorialBody[] = [
     reviewer: null,
     lastReviewedAt: null,
   },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "california",
+    dotClassSlug: "class-8-tractor",
+    headline: "Cargo coverage for Class 8 tractor operators in California",
+    paragraphs: [
+      "Class 8 tractor operators running California freight under MC authority almost universally carry motor truck cargo coverage above the $100,000 default. Broker contracts on California-anchored lanes — particularly Inland Empire warehouse-distribution drayage, Central Valley produce-haul, and Bay Area / Port of Oakland intermodal — routinely require limits of $250,000 to $1,000,000 depending on commodity class.",
+      "Two California-specific exposures dominate cargo rate filings for Class 8 risks. First, the Inland Empire is consistently the highest-frequency cargo theft corridor in the country across multiple recent CargoNet annual reports; underwriters writing California cargo for Class 8 tractors require route-and-stop endorsements and hard-parking conditions on high-value commodity classes. Second, Central Valley produce-haul carries time-temperature-sensitive freight on tight delivery windows; reefer-tractor combinations writing produce lanes carry distinct cargo rate factors, and broker contracts on those lanes routinely require reefer-breakdown endorsements.",
+      "Cargo claims are governed federally by the Carmack Amendment (49 U.S.C. § 14706); California courts apply the federal framework consistently. Where California layers in additional consumer-facing rules (commercial-financing disclosure under SB 1235, AB 5 contractor classification effects on owner-operator coverage), those bear on operations more than on cargo rate filings directly.",
+      "We have not yet extracted a public California Department of Insurance filing for motor truck cargo on Class 8 risks. The rate band will publish once a filing is reviewed by a California-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "California Department of Insurance",
+        url: "https://www.insurance.ca.gov/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706)",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "CargoNet — Inland Empire and California port-corridor theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Surplus Line Association of California (SLA)",
+        url: "https://www.slacal.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "florida",
+    dotClassSlug: "class-8-tractor",
+    headline: "Cargo coverage for Class 8 tractor operators in Florida",
+    paragraphs: [
+      "Class 8 tractor operators on Florida lanes face one of the most distinctive cargo-coverage environments in the country. Florida is consistently among the highest-frequency cargo theft states; broker contracts on Florida-anchored lanes routinely require cargo limits of $250,000 to $1,000,000 for electronics, pharma, and high-value commodity freight, well above the $100,000 default.",
+      "Hurricane-season operations layer in a second exposure. Atlantic storm activity between June and November concentrates dwell-time exposure at non-secured staging locations as carriers re-route around landfall. Cargo policies on Florida Class 8 lanes frequently include named-storm-aware exclusions or sub-limits and require unattended-vehicle protocols (hard-parking only at secured yards) as a condition of coverage on high-value commodity classes.",
+      "Cargo claims are governed federally by the Carmack Amendment (49 U.S.C. § 14706); Florida courts apply the federal framework consistently. HB 837 (2023) reshaped general negligence litigation in Florida, but its direct effect on cargo coverage — which is governed by Carmack rather than tort law — is minimal. The indirect effect on overall commercial-vehicle premium environments is more visible on primary liability than cargo.",
+      "We have not yet extracted a public Florida Office of Insurance Regulation filing for motor truck cargo on Class 8 risks. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Florida Office of Insurance Regulation (FLOIR)",
+        url: "https://floir.com/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706)",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "CargoNet — Florida port-corridor and Miami-Dade theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Florida Surplus Lines Service Office (FSLSO)",
+        url: "https://www.fslso.com/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "illinois",
+    dotClassSlug: "class-8-tractor",
+    headline: "Cargo coverage for Class 8 tractor operators in Illinois",
+    paragraphs: [
+      "Class 8 tractor operators handling Chicago-anchored intermodal freight face elevated cargo-coverage requirements. The Chicago metro is the dominant inland intermodal hub in the United States; container volume from BNSF Logistics Park, the CSX Bedford Park terminal, the NS Landers Yard, and surrounding cross-dock facilities concentrates cargo handoffs at a rate matched only by the Port of Los Angeles complex. Broker contracts on Chicago-anchored lanes routinely require cargo limits of $250,000 to $1,000,000 for high-value commodity freight.",
+      "Theft frequency around Chicago intermodal terminals has been consistently flagged by industry trackers across multiple recent CargoNet annual reports. Carriers writing Illinois cargo for Class 8 risks require route-and-stop endorsements and hard-parking conditions on high-value commodity classes; some carriers exclude unattended-vehicle losses entirely on electronics and pharma classes operating Illinois lanes.",
+      "Cargo claims are governed federally by the Carmack Amendment (49 U.S.C. § 14706); Illinois courts apply the federal framework consistently. Cook County's plaintiff-friendly venue history affects primary-liability subrogation claims arising from cargo events, but the cargo claim itself (between the shipper and the carrier) follows federal Carmack rules.",
+      "We have not yet extracted a public Illinois Department of Insurance filing for motor truck cargo on Class 8 risks. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Illinois Department of Insurance (IDOI)",
+        url: "https://idoi.illinois.gov/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706)",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "CargoNet — Chicago intermodal corridor theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Surplus Line Association of Illinois (SLA-IL)",
+        url: "https://www.ilsla.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "georgia",
+    dotClassSlug: "class-8-tractor",
+    headline: "Cargo coverage for Class 8 tractor operators in Georgia",
+    paragraphs: [
+      "Class 8 tractor operators handling Atlanta-anchored freight or Port of Savannah drayage face elevated cargo coverage requirements. Atlanta's role as the Southeast freight nexus concentrates cargo handoffs across thousands of daily intermodal moves; broker contracts on Atlanta-anchored lanes routinely require cargo limits of $250,000 to $1,000,000 for high-value commodity classes. Savannah-Atlanta drayage adds a second exposure layer with its own broker-required limits.",
+      "Theft frequency around Inman Yard, the NS Whitaker Terminal, the Fairburn intermodal facility, and the Port of Savannah staging yards has been consistently flagged by industry trackers. Carriers writing Georgia cargo for Class 8 risks require route-and-stop endorsements and hard-parking conditions on high-value commodity classes operating those corridors.",
+      "Cargo claims are governed federally by the Carmack Amendment (49 U.S.C. § 14706); Georgia courts apply the federal framework consistently. The 2025 SB 68 / SB 69 tort reform package reshaped general commercial-vehicle litigation; its direct effect on cargo coverage — which is governed by Carmack rather than tort law — is minimal, but the indirect effect on overall premium environments has improved underwriting appetite.",
+      "We have not yet extracted a public Georgia Office of Commissioner of Insurance and Safety Fire filing for motor truck cargo on Class 8 risks. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Georgia Office of Commissioner of Insurance and Safety Fire",
+        url: "https://oci.georgia.gov/",
+      },
+      {
+        label: "Carmack Amendment (49 U.S.C. § 14706)",
+        url: "https://www.govinfo.gov/app/details/USCODE-2023-title49/USCODE-2023-title49-subtitleIV-partB-chap147-sec14706",
+      },
+      {
+        label: "CargoNet — Atlanta and Savannah-corridor theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Georgia Surplus Lines Association (GSLA)",
+        url: "https://www.gsla.us/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "illinois",
+    dotClassSlug: "class-8-tractor",
+    headline: "Physical damage for Class 8 tractor operators in Illinois",
+    paragraphs: [
+      "Physical damage on an Illinois-operating Class 8 tractor reflects three exposures: theft frequency around Chicago intermodal terminals, collision frequency in metro Chicago, and freeze-thaw weather damage that shapes equipment maintenance economics. For a $120,000 stated value 2020 model-year Class 8 tractor — the canonical Illinois owner-operator profile — physical damage prices proportionally to stated value with rate-per-dollar reflecting the three exposures.",
+      "Theft frequency around BNSF Logistics Park, CSX Bedford Park, NS Landers Yard, and surrounding cross-dock facilities is consistently flagged by industry trackers. Tractor and trailer theft from staging yards and overnight parking is the primary loss pattern. Carriers writing physical damage on Class 8 tractors with significant Chicago-area exposure require route-and-stop endorsements, hard-parking conditions, and GPS recovery technology on equipment over $150,000 stated value.",
+      "Collision frequency in metro Chicago is elevated relative to highway long-haul corridors. The Cook County / DuPage corridor combines high traffic density with frequent winter weather conditions; underwriters apply higher base rates for collision frequency than for an equivalent risk operating primarily rural Illinois lanes.",
+      "We have not yet extracted a public Illinois Department of Insurance filing for physical damage on Class 8 tractors. The rate band on this page will publish once the filing has been extracted and reviewed by an Illinois-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Illinois Department of Insurance (IDOI)",
+        url: "https://idoi.illinois.gov/",
+      },
+      {
+        label: "CargoNet — Chicago intermodal corridor theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Illinois Department of Transportation — commercial vehicle crash data",
+        url: "https://idot.illinois.gov/",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "georgia",
+    dotClassSlug: "class-8-tractor",
+    headline: "Physical damage for Class 8 tractor operators in Georgia",
+    paragraphs: [
+      "Physical damage on a Georgia-operating Class 8 tractor reflects three exposures: theft frequency around the Atlanta freight nexus and Port of Savannah, collision frequency on metro Atlanta corridors, and tornado / severe-weather catastrophic exposure across north Georgia. Stated value drives the dollar premium proportionally; the three exposures drive the rate per dollar.",
+      "Theft frequency around Inman Yard, the NS Whitaker Terminal, the Fairburn intermodal facility, and Port of Savannah staging is consistently flagged by industry trackers. Class 8 tractors with significant Atlanta-metro or Savannah-port exposure see route-and-stop endorsements, hard-parking conditions, and GPS recovery technology required as conditions of coverage on equipment over $150,000 stated value.",
+      "Collision frequency on metro Atlanta corridors is elevated relative to rural Georgia or interstate long-haul. I-285 and the I-75 / I-85 / I-20 interchanges concentrate Class 8 tractor-trailer traffic at high density; underwriters apply higher collision-frequency factors for operators with substantial Atlanta routing relative to equivalent rural Georgia operations.",
+      "Catastrophic-weather exposure (tornado, severe-weather hail) across north Georgia is a tertiary factor that does not materially move base rates statewide but does inform deductible structures for operators with concentrated equipment storage in tornado-prone counties. We have not yet extracted a public Georgia Office of Commissioner of Insurance and Safety Fire filing for physical damage on Class 8 tractors. The rate band on this page will publish once the filing has been extracted and reviewed by a Georgia-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Georgia Office of Commissioner of Insurance and Safety Fire",
+        url: "https://oci.georgia.gov/",
+      },
+      {
+        label: "CargoNet — Atlanta and Savannah-corridor theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Georgia Department of Public Safety — commercial vehicle crash data",
+        url: "https://gdps.georgia.gov/",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "general-liability",
+    stateSlug: "texas",
+    dotClassSlug: "class-8-tractor",
+    headline: "General liability for Class 8 tractor operators in Texas",
+    paragraphs: [
+      "General liability for Texas Class 8 tractor operators covers premises liability (loading docks, fuel islands, parking yards), completed operations, and non-trucking-related injury claims at owned or leased facilities. For a Class 8 operator with a single Texas terminal location and standard commercial activities, GL is typically written with a $1M-per-occurrence limit and prices independently of the primary liability rate.",
+      "Texas premises liability is governed by chapter 75 of the Civil Practice and Remedies Code, which applies a duty-of-care framework distinct from the post-HB 19 commercial-vehicle reforms. HB 19 specifically addresses commercial-vehicle direct-negligence trials; it does not apply to GL premises claims arising from a Class 8 operator's terminal or yard. Class 8 operators in Texas should not expect GL rates to move with the post-HB 19 primary-liability rate environment.",
+      "Class 8-specific GL exposure for Texas operators concentrates in three areas: terminal yard injuries (slip-and-falls, equipment-handling injuries to non-employees), completed operations (cargo-handling claims that fall outside cargo coverage scope), and shared-facility injury claims at multi-tenant intermodal yards. Operators with multiple Texas terminal locations or shared yard arrangements face elevated GL underwriting scrutiny.",
+      "We have not yet extracted a public Texas Department of Insurance filing for general liability on Class 8 tractor operators. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Texas Department of Insurance",
+        url: "https://www.tdi.texas.gov/",
+      },
+      {
+        label: "Texas Civil Practice and Remedies Code, Chapter 75 (Premises Liability)",
+        url: "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.75.htm",
+      },
+      {
+        label: "Texas Trucking Association — terminal operations context",
+        url: "https://www.texastrucking.com/",
+      },
+      {
+        label: "Insurance Information Institute — commercial general liability overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "general-liability",
+    stateSlug: "california",
+    dotClassSlug: "class-8-tractor",
+    headline: "General liability for Class 8 tractor operators in California",
+    paragraphs: [
+      "General liability for California Class 8 tractor operators sits among the most expensive in the country. Two California-specific factors compound: the absence of a general cap on non-economic damages outside MICRA, and a sustained pattern of ADA-Title-III premises liability claims under California's Unruh Civil Rights Act layered on top of federal ADA exposure. Both push California Class 8 GL rates above the national average for operators with significant California premises footprint.",
+      "Class 8 operators with Los Angeles, Orange, San Diego, or Bay Area county terminal locations face elevated GL underwriting scrutiny. The Inland Empire warehouse-distribution belt — with its concentration of Class 8 tractor yards, cross-dock facilities, and intermodal staging — is the highest-exposure cluster. Underwriters writing California Class 8 GL price the Inland Empire venue exposure into the base rate.",
+      "ADA-Title-III plus Unruh exposure is a sustained driver of California GL claims for Class 8 operators with public-facing premises (driver lounges, customer service counters, dispatcher offices accessible to non-employees). Operators without public-facing premises see less of this dynamic. AB 35 (2023) raised MICRA caps for medical malpractice; commercial-vehicle and trucking-operation GL exposure remains unbounded.",
+      "We have not yet extracted a public California Department of Insurance filing for general liability on Class 8 tractor operators. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "California Department of Insurance",
+        url: "https://www.insurance.ca.gov/",
+      },
+      {
+        label: "California Unruh Civil Rights Act (Cal. Civ. Code § 51 et seq.)",
+        url: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=1.&chapter=&part=2.&lawCode=CIV&title=2.",
+      },
+      {
+        label: "Americans with Disabilities Act Title III",
+        url: "https://www.ada.gov/",
+      },
+      {
+        label: "Insurance Information Institute — commercial general liability overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
 ];
 
 export function getEditorial(

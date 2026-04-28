@@ -106,6 +106,46 @@ const DEEP_MONEY_PAGES: DeepMoneyPage[] = [
     stateSlug: "texas",
     dotClassSlug: "box-truck",
   },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "california",
+    dotClassSlug: "class-8-tractor",
+  },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "florida",
+    dotClassSlug: "class-8-tractor",
+  },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "illinois",
+    dotClassSlug: "class-8-tractor",
+  },
+  {
+    productSlug: "motor-truck-cargo",
+    stateSlug: "georgia",
+    dotClassSlug: "class-8-tractor",
+  },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "illinois",
+    dotClassSlug: "class-8-tractor",
+  },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "georgia",
+    dotClassSlug: "class-8-tractor",
+  },
+  {
+    productSlug: "general-liability",
+    stateSlug: "texas",
+    dotClassSlug: "class-8-tractor",
+  },
+  {
+    productSlug: "general-liability",
+    stateSlug: "california",
+    dotClassSlug: "class-8-tractor",
+  },
 ];
 
 export function getStateMoneyPages(): StateMoneyPage[] {
