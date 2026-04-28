@@ -484,6 +484,99 @@ const ENTRIES: EditorialBody[] = [
     reviewer: null,
     lastReviewedAt: null,
   },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "texas",
+    headline: "What drives physical damage premiums in Texas",
+    paragraphs: [
+      "Physical damage on a Texas-operating Class 8 tractor and trailer is dominated by three exposures: collision frequency on Texas long-haul corridors, theft frequency around border-staging yards (Laredo and El Paso) and Houston Ship Channel staging, and the stated-value range of the equipment. The first two move the rate; the third moves the dollar premium proportional to value.",
+      "Collision frequency is shaped by Texas's role as the largest commercial-trucking state by VMT (vehicle miles traveled). I-10, I-20, I-35, and I-45 each carry significant Class 8 tractor-trailer volume, and DPS crash data shows commercial-vehicle severity on Texas Interstates in line with national averages. Underwriters writing physical damage on Texas-operating fleets generally apply standard collision factors; the Texas-specific adjustment shows up more in the deductible structure than in the base rate.",
+      "Theft is the more state-specific exposure. Laredo and El Paso border-staging theft frequency is consistently flagged by industry trackers; Houston-area cross-dock and intermodal terminals are similarly exposed. Carriers writing physical damage on operators with significant border or port exposure may require route-and-stop endorsements, hard-parking conditions, or anti-theft technology (GPS recovery, kill switches) as a condition of coverage on high-value tractors.",
+      "Catastrophic exposure (hail, tornado) is a tertiary factor in West Texas and the panhandle but does not materially move base rates statewide. We have not yet extracted a public Texas Department of Insurance filing for physical damage on commercial tractors. The carrier table reflects carriers writing the line based on their published license footprints; the rate band will publish once a filing is reviewed by a Texas-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Texas Department of Insurance — commercial auto and inland marine filings",
+        url: "https://www.tdi.texas.gov/",
+      },
+      {
+        label: "Texas Department of Public Safety — commercial vehicle crash statistics",
+        url: "https://www.dps.texas.gov/",
+      },
+      {
+        label: "CargoNet — annual cargo and equipment theft reports (Texas border and port corridors)",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "california",
+    headline: "What drives physical damage premiums in California",
+    paragraphs: [
+      "California physical damage premiums on Class 8 tractors and trailers reflect three California-specific exposures: theft frequency in the Inland Empire and around the Ports of Los Angeles and Long Beach, CARB compliance equipment values, and traffic-density collision frequency in metro Los Angeles and the Bay Area. Stated value drives the dollar premium, but these three factors drive the rate per dollar of value.",
+      "Tractor and trailer theft frequency in the Inland Empire — the warehouse and staging belt extending from Riverside through San Bernardino — is consistently among the highest-frequency in the country. Port-adjacent staging in Wilmington, Carson, and Long Beach adds a second cluster. Underwriters writing California physical damage routinely require route-and-stop endorsements or hard-parking conditions on equipment exceeding $150K stated value, and several carriers require GPS recovery technology as a condition of coverage for high-value tractors.",
+      "CARB engine and fuel-system compliance has driven equipment values for California-operating fleets above national averages. Compliant tractors with certified clean-engine retrofits or post-2010 engines carry stated values 10-20% above the equivalent national-average tractor; physical damage premiums move proportionally. The 2020 Advanced Clean Trucks rule and subsequent zero-emission mandates extend this dynamic into 2026 and beyond.",
+      "We have not yet extracted a public California Department of Insurance filing for physical damage on commercial tractors. The carrier table reflects carriers writing the line based on their published license footprints; the rate band will publish once a filing is reviewed by a California-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "California Department of Insurance",
+        url: "https://www.insurance.ca.gov/",
+      },
+      {
+        label: "California Air Resources Board (CARB) — Advanced Clean Trucks regulation",
+        url: "https://ww2.arb.ca.gov/",
+      },
+      {
+        label: "CargoNet — Inland Empire and California port-corridor theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "florida",
+    headline: "What drives physical damage premiums in Florida",
+    paragraphs: [
+      "Florida physical damage premiums reflect a distinctive combination of catastrophic-weather exposure and elevated theft frequency that no other state matches. Hurricane-season operations create concentrated dwell-time exposure at non-secured staging locations, and Florida is consistently among the highest-frequency theft states for tractors and trailers — a combination that pushes Florida physical damage rates above the national average for equivalent stated values.",
+      "Catastrophic-weather exposure shapes carrier appetite directly. Carriers writing Florida physical damage typically condition coverage on hurricane-protocol compliance: equipment moved to secured inland staging when a named storm enters the warning cone, anti-theft technology on equipment over $150K stated value, and storm-aware deductible structures (separate higher-deductible tier for named-storm losses). Several carriers exclude wind/flood losses entirely on equipment parked at the operator's discretion during a named storm.",
+      "Theft frequency in Miami-Dade, Broward, and around the Ports of Jacksonville and Tampa is consistently flagged by industry trackers. Port-adjacent staging is the highest-exposure zone; carriers writing port drayage and intermodal operations may require route-and-stop endorsements or GPS recovery technology as a condition of coverage on high-value tractors.",
+      "We have not yet extracted a public Florida Office of Insurance Regulation filing for physical damage on commercial tractors. The carrier table reflects carriers writing the line based on their published license footprints; the rate band will publish once a filing is reviewed by a Florida-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Florida Office of Insurance Regulation (FLOIR)",
+        url: "https://floir.com/",
+      },
+      {
+        label: "National Hurricane Center — Atlantic basin tropical activity (NOAA)",
+        url: "https://www.nhc.noaa.gov/",
+      },
+      {
+        label: "CargoNet — Florida port-corridor and Miami-Dade theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
 ];
 
 export function getEditorial(

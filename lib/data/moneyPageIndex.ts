@@ -43,6 +43,9 @@ const STATE_MONEY_PAGES: StateMoneyPage[] = [
   { productSlug: "motor-truck-cargo", stateSlug: "florida" },
   { productSlug: "motor-truck-cargo", stateSlug: "illinois" },
   { productSlug: "motor-truck-cargo", stateSlug: "georgia" },
+  { productSlug: "physical-damage", stateSlug: "texas" },
+  { productSlug: "physical-damage", stateSlug: "california" },
+  { productSlug: "physical-damage", stateSlug: "florida" },
 ];
 
 const DEEP_MONEY_PAGES: DeepMoneyPage[] = [
