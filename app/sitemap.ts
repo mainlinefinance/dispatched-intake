@@ -118,6 +118,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/research/state-of-commercial-trucking-insurance-2026`,
+    lastModified: today,
+    changeFrequency: "yearly",
+    priority: 0.7,
+  });
+
+  entries.push({
     url: `${ORIGIN}/disclosures`,
     lastModified: today,
     changeFrequency: "yearly",
