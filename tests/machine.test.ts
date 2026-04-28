@@ -113,4 +113,28 @@ describe("intakeMachine", () => {
     expect(ctx.contact).toBeNull();
     expect(ctx.hasSeenMatch).toBe(false);
   });
+
+  it("prefill: useCase + vertical + amount lands on screen04 with all three set", () => {
+    const actor = createActor(intakeMachine).start();
+    actor.send({ type: "SELECT_USE_CASE", value: "fuel" });
+    actor.send({ type: "SELECT_VERTICAL", value: "owner-operator" });
+    actor.send({ type: "SELECT_AMOUNT", amount: 75000, band: "custom" });
+    expect(actor.getSnapshot().value).toBe("screen04");
+    expect(actor.getSnapshot().context.useCase).toBe("fuel");
+    expect(actor.getSnapshot().context.vertical).toBe("owner-operator");
+    expect(actor.getSnapshot().context.amount).toBe(75000);
+  });
+
+  it("prefill: only useCase lands on screen02", () => {
+    const actor = createActor(intakeMachine).start();
+    actor.send({ type: "SELECT_USE_CASE", value: "equipment" });
+    expect(actor.getSnapshot().value).toBe("screen02");
+  });
+
+  it("prefill: useCase + vertical lands on screen03", () => {
+    const actor = createActor(intakeMachine).start();
+    actor.send({ type: "SELECT_USE_CASE", value: "bridge" });
+    actor.send({ type: "SELECT_VERTICAL", value: "small-fleet" });
+    expect(actor.getSnapshot().value).toBe("screen03");
+  });
 });

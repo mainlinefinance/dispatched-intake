@@ -1,7 +1,8 @@
 "use client";
 
 import { useMachine } from "@xstate/react";
-import { useCallback } from "react";
+import { Suspense, useCallback, useEffect, useRef } from "react";
+import { useSearchParams } from "next/navigation";
 import BottomActions from "@/components/chrome/BottomActions";
 import HomeIndicator from "@/components/chrome/HomeIndicator";
 import ProgressBar from "@/components/chrome/ProgressBar";
@@ -20,8 +21,33 @@ import ScreenSubmitted from "@/components/screens/ScreenSubmitted";
 import TrustRail from "@/components/trust-rail/TrustRail";
 import { PROGRESS_BY_SCREEN, SCREEN1, VERTICAL_TAG } from "@/lib/copy";
 import { intakeMachine, type IntakeStateValue } from "@/lib/machine";
-import type { IntakeContext } from "@/lib/types";
+import type {
+  IntakeContext,
+  UseCase,
+  Vertical,
+} from "@/lib/types";
 import type { IntakePayload } from "@/lib/validation";
+
+const USE_CASES: ReadonlySet<UseCase> = new Set([
+  "repairs",
+  "fuel",
+  "equipment",
+  "bridge",
+  "other",
+]);
+const VERTICALS: ReadonlySet<Vertical> = new Set([
+  "owner-operator",
+  "small-fleet",
+  "contractor",
+  "other-trade",
+]);
+
+function isUseCase(v: string | null): v is UseCase {
+  return v !== null && USE_CASES.has(v as UseCase);
+}
+function isVertical(v: string | null): v is Vertical {
+  return v !== null && VERTICALS.has(v as Vertical);
+}
 
 const SCREEN_NUM: Record<IntakeStateValue, number> = {
   screen01: 1,
@@ -36,6 +62,16 @@ const SCREEN_NUM: Record<IntakeStateValue, number> = {
 };
 
 export default function Intake() {
+  // Wrap in Suspense because the inner component reads useSearchParams,
+  // which Next 16 requires for the CSR bailout during prerender.
+  return (
+    <Suspense fallback={null}>
+      <IntakeInner />
+    </Suspense>
+  );
+}
+
+function IntakeInner() {
   const [state, send] = useMachine(intakeMachine);
   const value = state.value as IntakeStateValue;
   const ctx = state.context;
@@ -47,6 +83,39 @@ export default function Intake() {
   const handleMatchSeen = useCallback(() => {
     send({ type: "MARK_MATCH_SEEN" });
   }, [send]);
+
+  // Query-string preselection: read once on mount and dispatch the matching
+  // events. The XState machine advances synchronously, so the user lands on
+  // the first screen with missing data — they don't see screen01 flash if
+  // useCase + vertical + amount are all pre-supplied.
+  //
+  // Supported params:
+  //   useCase  = repairs | fuel | equipment | bridge | other
+  //   vertical = owner-operator | small-fleet | contractor | other-trade
+  //   amount   = positive integer (treated as custom-band)
+  const searchParams = useSearchParams();
+  const prefilled = useRef(false);
+  useEffect(() => {
+    if (prefilled.current) return;
+    prefilled.current = true;
+
+    const useCase = searchParams.get("useCase");
+    const vertical = searchParams.get("vertical");
+    const amountRaw = searchParams.get("amount");
+
+    if (isUseCase(useCase)) {
+      send({ type: "SELECT_USE_CASE", value: useCase });
+    }
+    if (isVertical(vertical)) {
+      send({ type: "SELECT_VERTICAL", value: vertical });
+    }
+    if (amountRaw) {
+      const amount = Number.parseInt(amountRaw, 10);
+      if (Number.isFinite(amount) && amount > 0 && amount < 10_000_000) {
+        send({ type: "SELECT_AMOUNT", amount, band: "custom" });
+      }
+    }
+  }, [searchParams, send]);
 
   return (
     <div className="desktop-shell">
