@@ -860,6 +860,223 @@ const ENTRIES: EditorialBody[] = [
     reviewer: null,
     lastReviewedAt: null,
   },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "illinois",
+    headline: "What drives physical damage premiums in Illinois",
+    paragraphs: [
+      "Illinois physical damage on commercial trucking equipment reflects three state-specific exposures: theft frequency in and around the Chicago intermodal corridor, collision frequency in metro Chicago, and freeze-thaw weather damage that affects equipment maintenance economics. Stated value drives the dollar premium proportionally; these three factors drive the rate per dollar of value.",
+      "Theft frequency around the Chicago-Joliet intermodal corridor — including BNSF Logistics Park, the CSX Bedford Park terminal, the NS Landers Yard, and surrounding cross-dock facilities — has been consistently flagged by industry trackers across multiple recent years. Tractor and trailer theft from staging yards and overnight parking is the primary loss pattern. Carriers writing physical damage on Class 8 tractors operating Illinois lanes routinely require route-and-stop endorsements, hard-parking conditions, and GPS recovery technology on equipment over $150,000 stated value.",
+      "Collision frequency in metro Chicago is elevated relative to highway long-haul corridors. The Cook County DuPage corridor combines high traffic density with frequent winter weather conditions; carriers writing physical damage on operators with significant Chicago-metro exposure may apply higher base rates for collision frequency than for an equivalent risk operating exclusively rural Illinois lanes.",
+      "We have not yet extracted a public Illinois Department of Insurance filing for physical damage on commercial tractors. The carrier table reflects carriers writing the line based on their published license footprints; the rate band will publish once a filing is reviewed by an Illinois-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Illinois Department of Insurance (IDOI)",
+        url: "https://idoi.illinois.gov/",
+      },
+      {
+        label: "CargoNet — Chicago intermodal corridor theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Illinois Department of Transportation — commercial vehicle crash data",
+        url: "https://idot.illinois.gov/",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "georgia",
+    headline: "What drives physical damage premiums in Georgia",
+    paragraphs: [
+      "Georgia physical damage on commercial trucking equipment is dominated by three exposures: theft frequency around the Atlanta freight nexus and Port of Savannah, collision frequency on metro Atlanta corridors, and tornado / severe-weather catastrophic exposure across north Georgia. Stated value drives the dollar premium; the three exposures drive the rate per dollar.",
+      "Theft frequency around the Atlanta intermodal corridor — Inman Yard, Fairburn intermodal, the Norfolk Southern Whitaker Terminal — and around the Port of Savannah is consistently flagged by industry trackers. Carriers writing physical damage on Class 8 tractors with significant Atlanta-metro or Savannah-port exposure may require route-and-stop endorsements, hard-parking conditions, and GPS recovery technology on equipment over $150,000 stated value.",
+      "Collision frequency in metro Atlanta is elevated relative to highway long-haul corridors. I-285 and the I-75 / I-85 / I-20 interchanges concentrate Class 8 tractor-trailer traffic at high density, and underwriters writing physical damage on operators with significant Atlanta exposure typically apply higher collision-frequency factors than for equivalent rural Georgia operations.",
+      "We have not yet extracted a public Georgia Office of Commissioner of Insurance and Safety Fire filing for physical damage on commercial tractors. The carrier table reflects carriers writing the line based on their published license footprints; the rate band will publish once a filing is reviewed by a Georgia-licensed producer.",
+    ],
+    sources: [
+      {
+        label: "Georgia Office of Commissioner of Insurance and Safety Fire",
+        url: "https://oci.georgia.gov/",
+      },
+      {
+        label: "CargoNet — Atlanta and Savannah-corridor theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "Georgia Department of Public Safety — commercial vehicle crash data",
+        url: "https://gdps.georgia.gov/",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "occupational-accident",
+    stateSlug: "texas",
+    headline: "What drives occupational-accident premiums in Texas",
+    paragraphs: [
+      "Occupational-accident (occ-acc) coverage provides medical, disability, and accidental-death coverage for owner-operators who are classified as 1099 contractors and therefore excluded from workers' compensation. In Texas, where workers' comp is non-mandatory for private employers, occ-acc fills a critical gap for owner-operators leased onto motor carriers under independent-contractor agreements. Most Texas carrier lease agreements require the leased-on operator to carry occ-acc as a condition of the lease.",
+      "Two Texas-specific factors shape the occ-acc rate environment. First, Texas is one of the few states that does not mandate workers' compensation for private-sector employers, so the share of Texas trucking workforce covered by occ-acc rather than WC is materially higher than in mandatory-WC states. Second, Texas commercial-trucking activity concentrates in long-haul Class 8 operation, which carries higher injury severity than local-delivery box truck or hot-shot operations; occ-acc rate filings reflect this in their classification factors.",
+      "Coverage limits for owner-operator occ-acc in Texas typically run $500,000 medical / $250,000 accidental death / 70% of average weekly earnings disability — roughly the limits required by the dominant Texas-domiciled motor carriers' lease agreements. Higher limits are available; lower limits below the carriers' lease floor would not satisfy the lease.",
+      "We have not yet extracted a public Texas Department of Insurance filing for occupational-accident coverage on owner-operators. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Texas Department of Insurance",
+        url: "https://www.tdi.texas.gov/",
+      },
+      {
+        label: "Texas Workforce Commission — workers' compensation context",
+        url: "https://www.twc.texas.gov/",
+      },
+      {
+        label: "Owner-Operator Independent Drivers Association (OOIDA) — independent-contractor classification",
+        url: "https://www.ooida.com/",
+      },
+      {
+        label: "Insurance Information Institute — occupational-accident overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "occupational-accident",
+    stateSlug: "california",
+    headline: "What drives occupational-accident premiums in California",
+    paragraphs: [
+      "California occupational-accident coverage for owner-operators sits at the intersection of two complex policy frameworks: AB 5 contractor classification (which has reshaped how the FAAAA-preempted motor-carrier industry treats independent-contractor leased-on operators) and California's mandatory workers' compensation regime for employees. Owner-operators classified as employees under AB 5 fall under California WC; those operating under their own MC authority or covered by FAAAA-preempted lease structures may rely on occ-acc.",
+      "The California occ-acc rate environment reflects this complexity. Carriers writing occ-acc on California owner-operators frequently require lease-agreement documentation as a condition of binding, to confirm that the operator's classification supports occ-acc rather than WC. Operators whose lease structures are ambiguous under post-AB 5 case law may be quoted at elevated rates or declined.",
+      "California medical-cost trends are higher than the national average, which feeds into occ-acc medical-coverage pricing. Coverage limits for California owner-operator occ-acc typically run $500,000 medical / $250,000 accidental death / 70% of average weekly earnings disability, with some carriers offering higher medical limits as an option for an additional premium.",
+      "We have not yet extracted a public California Department of Insurance filing for occupational-accident coverage on owner-operators. The rate band on this page will publish once the filing has been extracted and reviewed by a California-licensed producer; until then the carrier table reflects the carriers we expect to write the line based on their published license footprints.",
+    ],
+    sources: [
+      {
+        label: "California Department of Insurance",
+        url: "https://www.insurance.ca.gov/",
+      },
+      {
+        label: "California AB 5 (2019) — Worker classification",
+        url: "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB5",
+      },
+      {
+        label: "California Department of Industrial Relations — workers' compensation",
+        url: "https://www.dir.ca.gov/dwc/",
+      },
+      {
+        label: "Insurance Information Institute — occupational-accident overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "occupational-accident",
+    stateSlug: "florida",
+    headline: "What drives occupational-accident premiums in Florida",
+    paragraphs: [
+      "Florida occupational-accident coverage for owner-operators leased onto motor carriers operates under a relatively stable regulatory framework — Florida workers' compensation is mandatory for employers but excludes independent contractors, and the AB-5-style classification challenges seen in California have not migrated to Florida. Owner-operators leased onto Florida-domiciled carriers rely on occ-acc as the standard injury-coverage substitute for workers' comp.",
+      "Florida medical-cost trends and motor-vehicle injury severity are above the national average, which feeds into occ-acc medical-coverage pricing. The state's role as a hurricane-season operations theater also adds a secondary exposure: occ-acc claims arising from storm-related staging operations, debris-clearance work, and post-storm route exposure. Carriers writing Florida occ-acc may include named-storm-aware exclusions or sub-limits for storm-related disability claims.",
+      "Coverage limits for Florida owner-operator occ-acc typically follow industry standards: $500,000 medical / $250,000 accidental death / 70% of average weekly earnings disability. Florida carrier lease agreements generally require these limits as a minimum, with some Florida-specialty carriers requiring higher medical limits to reflect Florida's elevated medical cost environment.",
+      "We have not yet extracted a public Florida Office of Insurance Regulation filing for occupational-accident coverage on owner-operators. The rate band on this page will publish once the filing has been extracted and reviewed by a Florida-licensed producer; until then the carrier table reflects the carriers we expect to write the line based on their published license footprints.",
+    ],
+    sources: [
+      {
+        label: "Florida Office of Insurance Regulation (FLOIR)",
+        url: "https://floir.com/",
+      },
+      {
+        label: "Florida Division of Workers' Compensation",
+        url: "https://www.myfloridacfo.com/division/wc",
+      },
+      {
+        label: "OOIDA — independent-contractor classification context",
+        url: "https://www.ooida.com/",
+      },
+      {
+        label: "Insurance Information Institute — occupational-accident overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "occupational-accident",
+    stateSlug: "illinois",
+    headline: "What drives occupational-accident premiums in Illinois",
+    paragraphs: [
+      "Illinois occupational-accident coverage for owner-operators leased onto motor carriers operates within a relatively stable framework. Illinois requires workers' compensation for employees, but bona fide independent-contractor owner-operators leased on under valid lease structures rely on occ-acc rather than WC. Illinois carrier lease agreements typically require occ-acc as a condition of the lease.",
+      "The Illinois occ-acc rate environment reflects two factors. First, medical-cost trends in Cook County are elevated relative to downstate Illinois, which feeds into occ-acc medical-coverage pricing for operators routing the Chicago metro. Second, Illinois injury severity in Cook County GL and primary-liability claims has historically been elevated, and while occ-acc isn't directly affected by the venue dynamic (occ-acc claims are between the operator and the occ-acc carrier, not third-party tort claims), the loss-environment context informs underwriter appetite.",
+      "Coverage limits for Illinois owner-operator occ-acc follow industry standards: $500,000 medical / $250,000 accidental death / 70% of average weekly earnings disability. Higher limits are available as options. Illinois operators considering whether to elect higher medical limits should consider their typical routing — operators with substantial Cook County exposure may benefit from elevated medical limits.",
+      "We have not yet extracted a public Illinois Department of Insurance filing for occupational-accident coverage on owner-operators. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Illinois Department of Insurance (IDOI)",
+        url: "https://idoi.illinois.gov/",
+      },
+      {
+        label: "Illinois Workers' Compensation Commission",
+        url: "https://iwcc.illinois.gov/",
+      },
+      {
+        label: "OOIDA — independent-contractor classification context",
+        url: "https://www.ooida.com/",
+      },
+      {
+        label: "Insurance Information Institute — occupational-accident overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "occupational-accident",
+    stateSlug: "georgia",
+    headline: "What drives occupational-accident premiums in Georgia",
+    paragraphs: [
+      "Georgia occupational-accident coverage for owner-operators leased onto motor carriers operates within a stable regulatory framework. Georgia requires workers' compensation for employers with three or more employees, but bona fide independent-contractor owner-operators are not subject to the WC mandate. Georgia carrier lease agreements typically require occ-acc as a condition of the lease, with limits aligned to industry standards.",
+      "The Georgia occ-acc rate environment reflects two factors. First, Atlanta's role as the Southeast freight nexus concentrates owner-operator activity in metropolitan operations with elevated traffic-density exposure on I-75, I-85, I-20, and I-285. Underwriters writing Georgia occ-acc may apply higher classification factors for operators with substantial Atlanta-metro routing relative to operators running primarily rural Georgia or interstate long-haul.",
+      "Second, Georgia's 2025 SB 68 / SB 69 tort reform package indirectly affects occ-acc. While occ-acc is not subject to the same tort-reform dynamics as primary liability or GL (occ-acc claims are between the operator and the occ-acc carrier, not third-party tort claims), the broader Georgia loss environment informs carrier appetite. Coverage limits for Georgia owner-operator occ-acc typically follow industry standards: $500,000 medical / $250,000 accidental death / 70% of average weekly earnings disability.",
+      "We have not yet extracted a public Georgia Office of Commissioner of Insurance and Safety Fire filing for occupational-accident coverage on owner-operators. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Georgia Office of Commissioner of Insurance and Safety Fire",
+        url: "https://oci.georgia.gov/",
+      },
+      {
+        label: "Georgia State Board of Workers' Compensation",
+        url: "https://sbwc.georgia.gov/",
+      },
+      {
+        label: "OOIDA — independent-contractor classification context",
+        url: "https://www.ooida.com/",
+      },
+      {
+        label: "Insurance Information Institute — occupational-accident overview",
+        url: "https://www.iii.org/",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
 ];
 
 export function getEditorial(

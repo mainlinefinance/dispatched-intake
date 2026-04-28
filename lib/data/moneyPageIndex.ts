@@ -51,6 +51,13 @@ const STATE_MONEY_PAGES: StateMoneyPage[] = [
   { productSlug: "general-liability", stateSlug: "florida" },
   { productSlug: "general-liability", stateSlug: "illinois" },
   { productSlug: "general-liability", stateSlug: "georgia" },
+  { productSlug: "physical-damage", stateSlug: "illinois" },
+  { productSlug: "physical-damage", stateSlug: "georgia" },
+  { productSlug: "occupational-accident", stateSlug: "texas" },
+  { productSlug: "occupational-accident", stateSlug: "california" },
+  { productSlug: "occupational-accident", stateSlug: "florida" },
+  { productSlug: "occupational-accident", stateSlug: "illinois" },
+  { productSlug: "occupational-accident", stateSlug: "georgia" },
 ];
 
 const DEEP_MONEY_PAGES: DeepMoneyPage[] = [
