@@ -577,6 +577,134 @@ const ENTRIES: EditorialBody[] = [
     reviewer: null,
     lastReviewedAt: null,
   },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "texas",
+    dotClassSlug: "class-8-tractor",
+    headline: "Physical damage for Class 8 tractor operators in Texas",
+    paragraphs: [
+      "Physical damage on a Texas-operating Class 8 tractor is dominated by stated value, theft exposure, and collision frequency. For a 2020-model Class 8 tractor with a $120,000 stated value running general freight under MC authority — the canonical Texas owner-operator profile — physical damage is typically written with a $1,000–$2,500 deductible and prices proportionally to the stated value of the equipment.",
+      "Theft is the most state-specific exposure for Class 8 tractors operating Texas border lanes. Laredo and El Paso staging-yard theft frequency is consistently flagged by industry trackers; Houston Ship Channel staging is the second cluster. Carriers writing physical damage on Class 8 tractors with significant border or port exposure may require GPS recovery technology, kill switches, or hard-parking conditions as a condition of coverage on equipment over $150,000 stated value.",
+      "Collision exposure on Texas Interstates is at national-average frequency for Class 8 risks. Texas DPS commercial-vehicle crash data does not show meaningful Texas-specific severity for collision (severity is more concentrated in primary-liability claims, where it shows up under post-HB 19 reform context).",
+      "We have not yet extracted a public Texas Department of Insurance filing for physical damage on Class 8 tractors. The rate band on this page will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Texas Department of Insurance",
+        url: "https://www.tdi.texas.gov/",
+      },
+      {
+        label: "Texas Department of Public Safety — commercial vehicle crash statistics",
+        url: "https://www.dps.texas.gov/",
+      },
+      {
+        label: "CargoNet — Texas border-corridor and Houston port theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "california",
+    dotClassSlug: "class-8-tractor",
+    headline: "Physical damage for Class 8 tractor operators in California",
+    paragraphs: [
+      "Physical damage on a California-operating Class 8 tractor sits at the high end of the national rate spectrum. Three California-specific exposures compound: theft frequency in the Inland Empire and around the Ports of Los Angeles and Long Beach, CARB-driven equipment values 10-20% above national averages, and metro Los Angeles and Bay Area collision frequency at elevated levels.",
+      "The Inland Empire — the warehouse and staging belt extending from Riverside through San Bernardino — has been the highest-frequency tractor theft corridor in the country across multiple recent CargoNet annual reports. Port-adjacent staging in Wilmington, Carson, and Long Beach is the second cluster. Carriers writing physical damage on Class 8 tractors with significant Southern California exposure routinely require route-and-stop endorsements, hard-parking conditions, and GPS recovery technology on equipment exceeding $150,000 stated value.",
+      "CARB Advanced Clean Trucks rules and zero-emission mandates have driven equipment values for California-operating Class 8 tractors materially above national averages. Compliant tractors with certified clean engines or post-2020 model years carry stated values that translate directly into higher physical damage premiums (the dollar premium scales with stated value). Operators replacing equipment to maintain CARB compliance through 2026 should expect their physical damage premium to step up at each replacement cycle.",
+      "We have not yet extracted a public California Department of Insurance filing for physical damage on Class 8 tractors. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "California Department of Insurance",
+        url: "https://www.insurance.ca.gov/",
+      },
+      {
+        label: "California Air Resources Board (CARB) — Advanced Clean Trucks regulation",
+        url: "https://ww2.arb.ca.gov/",
+      },
+      {
+        label: "CargoNet — Inland Empire and California port theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "physical-damage",
+    stateSlug: "florida",
+    dotClassSlug: "class-8-tractor",
+    headline: "Physical damage for Class 8 tractor operators in Florida",
+    paragraphs: [
+      "Physical damage on Florida-operating Class 8 tractors carries a distinctive risk profile: hurricane-season catastrophic exposure, elevated theft frequency in Miami-Dade and around Florida ports, and a rate environment that prices both factors above the national average. For a $120,000 stated value 2020 model-year Class 8 tractor, Florida physical damage typically prices 15-30% above the equivalent risk operating in lower-catastrophe, lower-theft states.",
+      "Hurricane-season operations create concentrated dwell-time exposure. Carriers writing Florida Class 8 physical damage typically condition coverage on hurricane-protocol compliance: equipment moved to secured inland staging when a named storm enters the warning cone, a separate higher-deductible tier for named-storm losses, and exclusions for wind/flood losses on equipment parked at the operator's discretion during a named storm. Operators routing Florida lanes between June and November should expect protocol-compliance documentation requirements at renewal.",
+      "Theft frequency in Miami-Dade, Broward, and around the Ports of Jacksonville and Tampa is consistently among the highest in the country for Class 8 tractors. Port-adjacent staging is the highest-exposure zone; carriers writing physical damage on Class 8 tractors with significant port drayage or intermodal operations may require route-and-stop endorsements, GPS recovery technology, or hard-parking conditions on equipment over $150,000 stated value.",
+      "We have not yet extracted a public Florida Office of Insurance Regulation filing for physical damage on Class 8 tractors. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Florida Office of Insurance Regulation (FLOIR)",
+        url: "https://floir.com/",
+      },
+      {
+        label: "National Hurricane Center — Atlantic basin tropical activity (NOAA)",
+        url: "https://www.nhc.noaa.gov/",
+      },
+      {
+        label: "CargoNet — Florida port-corridor and Miami-Dade theft reports",
+        url: "https://www.cargonet.com/",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
+  {
+    productSlug: "primary-liability",
+    stateSlug: "texas",
+    dotClassSlug: "box-truck",
+    headline: "Primary liability for box truck operators in Texas",
+    paragraphs: [
+      "Box truck operations in Texas (Class 3-6 straight trucks with enclosed cargo bodies, typically 10,001-26,000 lbs GVWR) sit in a different segment of the commercial-auto market than Class 8 long-haul. Most Texas box truck primary liability is written through the same commercial-auto carriers as Class 8 — Progressive Commercial, Sentry, Great West — but the underwriting profile is materially different: shorter average radius, lower overall VMT, smaller exposure per power unit, and a different mix of routing risks.",
+      "Texas box truck operations concentrate in metropolitan delivery (Dallas-Fort Worth, Houston, Austin, San Antonio), with last-mile, household goods, and small-package routes accounting for the majority of risk. Collision frequency in metro Texas is elevated relative to highway long-haul, but severity is materially lower because box truck combinations are physically smaller and operate at lower average speeds. The rate per dollar of revenue is typically lower for box truck risks than for Class 8 — but the dollar premium per vehicle is also lower because exposure is lower.",
+      "HB 19 (2021) trial-structure reforms apply to box truck risks the same as Class 8, but the favorable rate effect is most visible on the long-haul book. For box truck risks already pricing well in the standard market, HB 19's effect on premium is muted. SLTX-channel surplus-lines placement is unusual for box truck operations under MC authority — most box truck risks place admitted.",
+      "We have not yet extracted a public Texas Department of Insurance filing for primary liability on box truck risks. The rate band will publish once a filing is reviewed.",
+    ],
+    sources: [
+      {
+        label: "Texas Department of Insurance",
+        url: "https://www.tdi.texas.gov/",
+      },
+      {
+        label: "Texas Department of Public Safety — commercial vehicle crash statistics",
+        url: "https://www.dps.texas.gov/",
+      },
+      {
+        label: "Texas HB 19 (87th Leg., 2021)",
+        url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=87R&Bill=HB19",
+      },
+      {
+        label: "FMCSA 49 CFR Part 387 — Minimum Levels of Financial Responsibility",
+        url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
+      },
+    ],
+    reviewer: null,
+    lastReviewedAt: null,
+  },
 ];
 
 export function getEditorial(
