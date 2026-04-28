@@ -203,6 +203,11 @@ export default function MethodologyPage() {
         <section>
           <div className="ins-container">
             <p>
+              <Link href="/insurance/tools/premium-estimator">
+                → Try the premium estimator
+              </Link>
+            </p>
+            <p>
               <Link href="/insurance">← Back to commercial trucking insurance</Link>
             </p>
           </div>

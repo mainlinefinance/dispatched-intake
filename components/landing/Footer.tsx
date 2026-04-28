@@ -30,6 +30,9 @@ export default function Footer() {
                 <Link href="/insurance">Trucking insurance</Link>
               </li>
               <li>
+                <Link href="/insurance/tools/premium-estimator">Premium estimator</Link>
+              </li>
+              <li>
                 <span className="soon" aria-disabled="true">
                   Fuel advances <span className="soon-tag">Soon</span>
                 </span>
