@@ -373,6 +373,54 @@
   .landing .trust-bar .divider { display: none; }
 }
 
+/* ---------- TRUCKER VOCAB STRIP ----------
+   Domain-literacy band between the hero and the offer cards. Lighter
+   visual weight than .brand-callout — it reads as a wordmark band, not
+   a card. Terms are an unordered list so screen readers announce them
+   as discrete items; the separator dot is a CSS pseudo-element so it's
+   never read aloud and never duplicates with VoiceOver. */
+.landing .trucker-vocab {
+  background: var(--color-bg-paper);
+  padding: var(--space-8) 0 var(--space-4);
+  text-align: center;
+}
+.landing .trucker-vocab-eyebrow {
+  display: block;
+  font-family: var(--font-body); font-weight: 700;
+  font-size: var(--fs-eyebrow); line-height: var(--lh-eyebrow);
+  letter-spacing: var(--tr-eyebrow); text-transform: uppercase;
+  color: var(--color-trail-green-deep);
+  margin-bottom: var(--space-3);
+}
+.landing .trucker-vocab-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-ink-primary);
+}
+.landing .trucker-vocab-list li {
+  padding: 0 14px;
+  position: relative;
+}
+.landing .trucker-vocab-list li + li::before {
+  content: "·";
+  color: var(--color-trail-green);
+  position: absolute;
+  left: -3px;
+  font-weight: 700;
+}
+@media (min-width: 720px) {
+  .landing .trucker-vocab { padding: var(--space-12) 0 var(--space-6); }
+  .landing .trucker-vocab-list { font-size: 15px; }
+}
+
 /* ---------- PRODUCT CARDS (2x2 mobile, 4 across desktop) ----------
    Use-case-framed cards: each card opens with a small green eyebrow label
    ("Repair", "Cash flow", ...) so the section reads as "the four trucking
