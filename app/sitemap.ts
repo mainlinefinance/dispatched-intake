@@ -36,13 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
-    url: `${ORIGIN}/trucking`,
-    lastModified: today,
-    changeFrequency: "weekly",
-    priority: 0.9,
-  });
-
-  entries.push({
     url: `${ORIGIN}/insurance`,
     lastModified: today,
     changeFrequency: "weekly",
