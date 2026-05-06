@@ -59,9 +59,25 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <span className="soon" aria-disabled="true">
-                  Equipment loans <span className="soon-tag">Soon</span>
-                </span>
+                <Link href="/semi-truck-financing">Semi truck financing</Link>
+              </li>
+              <li>
+                <Link href="/equipment-financing">Equipment financing</Link>
+              </li>
+              <li>
+                <Link href="/trucking-working-capital">
+                  Trucking working capital
+                </Link>
+              </li>
+              <li>
+                <Link href="/invoice-factoring-for-truckers">
+                  Invoice factoring
+                </Link>
+              </li>
+              <li>
+                <Link href="/new-authority-truck-financing">
+                  New authority financing
+                </Link>
               </li>
               <li>
                 <span className="soon" aria-disabled="true">
