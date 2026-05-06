@@ -8,65 +8,71 @@ import {
 } from "./icons";
 
 type Product = {
+  label: string;
   title: string;
-  description: string;
+  copy: string;
   href: string;
   icon: React.ReactNode;
-  ariaLabel: string;
 };
 
 const products: Product[] = [
   {
+    label: "Repair",
     title: "Truck repair loans",
-    description:
-      "Get back on the road fast with flexible repair financing.",
+    copy: "Get back on the road fast.",
     href: "/apply?product=repair",
     icon: <IconWrench />,
-    ariaLabel: "Truck repair loans",
   },
   {
+    label: "Cash flow",
     title: "Working capital",
-    description:
-      "Cover fuel, payroll, and daily expenses with quick funding.",
+    copy: "Cover fuel, payroll, and daily expenses.",
     href: "/apply?product=working-capital",
     icon: <IconDollarCircle />,
-    ariaLabel: "Working capital",
   },
   {
+    label: "Equipment",
     title: "Equipment financing",
-    description: "Finance trucks, trailers, and gear to grow your fleet.",
+    copy: "Finance trucks, trailers, and gear.",
     href: "/apply?product=equipment",
     icon: <IconTruckBox />,
-    ariaLabel: "Equipment financing",
   },
   {
+    label: "Insurance",
     title: "Commercial truck insurance",
-    description: "Compare trucking insurance quotes in minutes.",
+    copy: "Compare trucking coverage options.",
     href: "/insurance",
     icon: <IconShieldCheck />,
-    ariaLabel: "Commercial truck insurance",
   },
 ];
 
 export default function ProductCards() {
   return (
-    <section className="product-cards" aria-label="What we fund">
+    <section className="product-cards" aria-labelledby="product-cards-title">
       <div className="container">
+        <header className="product-cards-header">
+          <span className="product-cards-eyebrow">Trucker approved</span>
+          <h2 className="product-cards-title" id="product-cards-title">
+            Funding for the moments that keep your wheels turning.
+          </h2>
+          <p className="product-cards-sub">
+            Repair, cash flow, equipment and insurance options in one place.
+          </p>
+        </header>
         <ul className="product-cards-grid">
           {products.map((p) => (
             <li key={p.title} className="product-card">
               <Link
                 href={p.href}
                 className="product-card-link"
-                aria-label={p.ariaLabel}
+                aria-label={p.title}
               >
                 <span className="product-card-icon" aria-hidden="true">
                   {p.icon}
                 </span>
-                <span className="product-card-body">
-                  <span className="product-card-title">{p.title}</span>
-                  <span className="product-card-desc">{p.description}</span>
-                </span>
+                <span className="product-card-label">{p.label}</span>
+                <span className="product-card-title">{p.title}</span>
+                <span className="product-card-copy">{p.copy}</span>
                 <span className="product-card-arrow" aria-hidden="true">
                   <IconArrowRight />
                 </span>

@@ -37,10 +37,11 @@ export default function Hero() {
             href="/apply"
             className="btn btn--cta-green btn--lg hero-cta-primary"
           >
-            See my options
+            See my funding options
             <IconArrowRight />
           </Link>
         </div>
+        <p className="hero-cta-note">No hard credit pull to start.</p>
         <a href="#how-it-works" className="hero-secondary-link">
           How it works <IconArrowRight />
         </a>
