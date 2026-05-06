@@ -2,27 +2,29 @@
 
 import Script from "next/script";
 
-const ENV_ID = process.env.NEXT_PUBLIC_LENDFLOW_WIDGET_ENV_ID;
-const HOST =
-  process.env.NEXT_PUBLIC_LENDFLOW_WIDGET_HOST ??
-  "https://sandbox-widget.lendflow.com";
-const BRANDING_ID = process.env.NEXT_PUBLIC_LENDFLOW_WIDGET_BRANDING_ID;
-const TARGET_ID = "lendflow-widget-target";
+/* The full script src — env, viewProduct, workflowTemplateId,
+   consentTemplateId, destination[*], targetId — is generated in the
+   Lendflow dashboard (Integrations → Widget Integration → Step 8,
+   "Embedded" toggle) and pasted verbatim into the env var. To change
+   workflow, branding, redirect, or consent template, regenerate the
+   snippet there and replace the env var. The container div id MUST
+   match the `targetId` query param in that URL (dashboard default:
+   `container`). */
+
+const SCRIPT_SRC = process.env.NEXT_PUBLIC_LENDFLOW_WIDGET_SCRIPT_SRC;
 
 export default function LendflowWidget() {
-  if (!ENV_ID) {
+  if (!SCRIPT_SRC) {
     return (
       <div role="alert" className="apply-fallback">
         <p>The application form is not configured. Please reach us by phone.</p>
       </div>
     );
   }
-  const params = new URLSearchParams({ env: ENV_ID, target: TARGET_ID });
-  if (BRANDING_ID) params.set("branding", BRANDING_ID);
   return (
     <>
       <div
-        id={TARGET_ID}
+        id="container"
         style={{
           width: "100%",
           maxWidth: 720,
@@ -30,10 +32,7 @@ export default function LendflowWidget() {
           margin: "0 auto",
         }}
       />
-      <Script
-        src={`${HOST}/js/lendflow-loader.js?${params.toString()}`}
-        strategy="afterInteractive"
-      />
+      <Script src={SCRIPT_SRC} strategy="afterInteractive" />
     </>
   );
 }

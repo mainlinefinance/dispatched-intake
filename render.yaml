@@ -10,11 +10,7 @@ services:
         value: 20
       - key: NEXT_TELEMETRY_DISABLED
         value: 1
-      - key: NEXT_PUBLIC_LENDFLOW_WIDGET_HOST
-        value: https://sandbox-widget.lendflow.com
-      - key: NEXT_PUBLIC_LENDFLOW_WIDGET_ENV_ID
-        sync: false
-      - key: NEXT_PUBLIC_LENDFLOW_WIDGET_BRANDING_ID
+      - key: NEXT_PUBLIC_LENDFLOW_WIDGET_SCRIPT_SRC
         sync: false
       - key: LENDFLOW_WEBHOOK_SECRET
         sync: false
