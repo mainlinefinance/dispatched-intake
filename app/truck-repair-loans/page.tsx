@@ -417,6 +417,14 @@ export default function TruckRepairLoansPage() {
                 </Link>
               </li>
               <li>
+                <Link href="/equipment-financing">Equipment financing →</Link>
+              </li>
+              <li>
+                <Link href="/trucking-working-capital">
+                  Trucking working capital →
+                </Link>
+              </li>
+              <li>
                 <Link href="/calculators/truck-repair">
                   Truck repair fit estimator →
                 </Link>

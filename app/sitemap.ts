@@ -135,6 +135,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/semi-truck-financing`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/equipment-financing`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/trucking-working-capital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/invoice-factoring-for-truckers`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/new-authority-truck-financing`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
     url: `${ORIGIN}/qualify`,
     lastModified: today,
     changeFrequency: "monthly",
