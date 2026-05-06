@@ -27,14 +27,14 @@ const products: Product[] = [
     label: "Cash flow",
     title: "Working capital",
     copy: "Cover fuel, payroll, and daily expenses.",
-    href: "/apply?useCase=bridge",
+    href: "/trucking-working-capital",
     icon: <IconDollarCircle />,
   },
   {
     label: "Equipment",
     title: "Equipment financing",
     copy: "Finance trucks, trailers, and gear.",
-    href: "/apply?useCase=equipment",
+    href: "/equipment-financing",
     icon: <IconTruckBox />,
   },
   {

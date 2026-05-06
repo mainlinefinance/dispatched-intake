@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BRAND } from "@/lib/copy";
 import { IconPhone } from "@/components/icons";
 import BackButton from "./BackButton";
@@ -15,15 +16,15 @@ export default function Topbar({ showBack, onBack, verticalTag }: Props) {
       {showBack && onBack ? (
         <div style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
           <BackButton onBack={onBack} />
-          <span className="brand-wrap">
+          <Link href="/" className="brand-wrap brand-wrap--link" aria-label="Back to dispatched.finance home">
             <span className="brand">{BRAND.name}</span>
-          </span>
+          </Link>
         </div>
       ) : (
-        <span className="brand-wrap">
+        <Link href="/" className="brand-wrap brand-wrap--link" aria-label="Back to dispatched.finance home">
           <span className="brand">{BRAND.name}</span>
           {tag ? <span className="tag">{tag}</span> : null}
-        </span>
+        </Link>
       )}
       <a
         href={`tel:${BRAND.phone.replace(/\D/g, "")}`}
