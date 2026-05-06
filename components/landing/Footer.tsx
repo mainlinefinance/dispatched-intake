@@ -46,6 +46,19 @@ export default function Footer() {
                 <Link href="/truck-repair-loans">Truck repair loans</Link>
               </li>
               <li>
+                <Link href="/owner-operator-financing">
+                  Owner-operator financing
+                </Link>
+              </li>
+              <li>
+                <Link href="/box-truck-financing">Box truck financing</Link>
+              </li>
+              <li>
+                <Link href="/bad-credit-truck-financing">
+                  Bad credit truck financing
+                </Link>
+              </li>
+              <li>
                 <span className="soon" aria-disabled="true">
                   Equipment loans <span className="soon-tag">Soon</span>
                 </span>

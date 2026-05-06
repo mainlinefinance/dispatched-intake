@@ -114,6 +114,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/box-truck-financing`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/bad-credit-truck-financing`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/owner-operator-financing`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
     url: `${ORIGIN}/qualify`,
     lastModified: today,
     changeFrequency: "monthly",
