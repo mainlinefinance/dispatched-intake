@@ -54,20 +54,37 @@
 
   /* Trail green — muted forest CTA used on the trucking marketing home.
      Distinct from --color-ok-* (which is a semantic success ramp). The two
-     should not cross-contaminate: trail-green = brand CTA, ok = status. */
+     should not cross-contaminate: trail-green = brand CTA, ok = status.
+
+     -soft and -deep extend the ramp for the hero CTA gradient and the offer
+     card use-case label; -hover and -pressed remain reserved for button
+     interaction states. */
+  --color-trail-green-soft:   #6F8F5F;
   --color-trail-green:        #5F7A4E;
+  --color-trail-green-deep:   #557847;
   --color-trail-green-hover:  #4E6740;
   --color-trail-green-pressed:#3F5434;
   --color-trail-green-tint:   #E5EBDF;
+  /* Drop-shadow glow for the hero CTA. Suffix = alpha × 100. */
+  --color-trail-green-deep-35: rgba(85, 120, 71, 0.35);
 
   /* Steel-900 alpha aliases — used to layer dark legibility scrim on top of
-     the hero photograph. Suffix = alpha × 100, same convention as
-     --color-ink-inverse-*. */
+     the hero photograph and to shadow / outline the offer cards. Suffix =
+     alpha × 100, same convention as --color-ink-inverse-*. */
   --color-steel-900-92: rgba(8, 23, 34, 0.92);
   --color-steel-900-72: rgba(8, 23, 34, 0.72);
   --color-steel-900-50: rgba(8, 23, 34, 0.5);
   --color-steel-900-30: rgba(8, 23, 34, 0.3);
+  --color-steel-900-10: rgba(8, 23, 34, 0.1);
+  --color-steel-900-06: rgba(8, 23, 34, 0.06);
   --color-steel-900-00: rgba(8, 23, 34, 0);
+
+  /* Pure-white alpha aliases — the existing --color-ink-inverse-* alphas use
+     the warm paper #FAF7F2 as base, which mutes the optical "wet glass"
+     highlight on the CTA gradient. Use these when the highlight needs to
+     read as actual reflective light. */
+  --color-white-22: rgba(255, 255, 255, 0.22);
+  --color-white-90: rgba(255, 255, 255, 0.90);
 
   /* Semantic.
      Each ramp exposes only 100 (subtle tint / background) and 600 (text /

@@ -95,17 +95,32 @@
   border-color: var(--color-steel-800);
 }
 
-/* Variant: cta-green — muted forest used on the trucking home hero and any
-   surface on top of imagery / dark scrim. Inverse text for AA contrast. */
+/* Variant: cta-green — muted forest gradient used on the trucking home hero
+   and any surface on top of imagery / dark scrim. Top→bottom gradient + drop
+   shadow + inset highlight gives the button a tactile fintech weight that a
+   solid fill cannot. Inverse text for AA contrast. */
 .btn--cta-green {
-  background: var(--color-trail-green);
+  background: linear-gradient(
+    180deg,
+    var(--color-trail-green-soft) 0%,
+    var(--color-trail-green-deep) 100%
+  );
   color: var(--color-ink-inverse);
+  border: 1px solid var(--color-white-22);
+  box-shadow:
+    0 16px 36px var(--color-trail-green-deep-35),
+    inset 0 1px 0 var(--color-white-22);
 }
 
 .btn--cta-green:hover:not(:disabled) {
-  background: var(--color-trail-green-hover);
+  background: linear-gradient(
+    180deg,
+    var(--color-trail-green) 0%,
+    var(--color-trail-green-hover) 100%
+  );
 }
 
 .btn--cta-green:active:not(:disabled) {
   background: var(--color-trail-green-pressed);
+  transform: translateY(1px);
 }
