@@ -94,6 +94,9 @@ export default function Footer() {
                 <a href="#faq">FAQ</a>
               </li>
               <li>
+                <Link href="/calculators">Calculators &amp; tools</Link>
+              </li>
+              <li>
                 <a href={PHONE_TEL}>Contact us</a>
               </li>
               <li>
