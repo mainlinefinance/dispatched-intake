@@ -21,20 +21,10 @@ export default function LendflowWidget() {
       </div>
     );
   }
+  // Container has fixed height so the injected iframe (sized by globals.css
+  // `#container iframe` rule) can resolve `height: 100%` against it.
   return (
     <>
-      {/* Lendflow's loader injects an iframe at a default 150px height and
-          does not resize it. We size the container explicitly and force the
-          injected iframe to fill it; CSS percentage heights would not resolve
-          against a `min-height` parent. */}
-      <style>{`
-        #container iframe {
-          width: 100%;
-          height: 100%;
-          border: 0;
-          display: block;
-        }
-      `}</style>
       <div
         id="container"
         style={{
