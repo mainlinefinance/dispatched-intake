@@ -91,7 +91,12 @@ export default function QualificationCalc() {
 
         <p className="qual-foot qual-illustrative-note">
           Estimate based on your two answers. Final product fit and APR
-          depend on your full application.
+          depend on your full application. For a repair-specific fit, try
+          the{" "}
+          <Link href="/calculators/truck-repair">
+            truck repair calculator
+          </Link>
+          .
         </p>
 
         <Link href="/apply" className="btn btn--primary qual-cta">
