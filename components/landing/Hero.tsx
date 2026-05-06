@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IconArrowRight } from "./icons";
+import { PHONE_TEL } from "@/lib/contact";
+import { IconArrowRight, IconPhone } from "./icons";
 
 /* Mobile-first photo hero. The image lives at
    /public/trucker-owner-operator-hero.jpg — when missing the navy scrim
@@ -40,8 +41,18 @@ export default function Hero() {
             See my funding options
             <IconArrowRight />
           </Link>
+          <a href={PHONE_TEL} className="hero-call-cta">
+            <IconPhone />
+            Call a funding specialist
+          </a>
         </div>
-        <p className="hero-cta-note">No hard credit pull to start.</p>
+        <p className="hero-cta-note">
+          No hard credit pull to start.{" "}
+          <span aria-hidden="true" className="hero-cta-note-sep">
+            ·
+          </span>{" "}
+          Takes about 2 minutes.
+        </p>
         <a href="#how-it-works" className="hero-secondary-link">
           How it works <IconArrowRight />
         </a>
