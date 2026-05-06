@@ -71,6 +71,18 @@
   min-width: 0;
   flex-shrink: 1;
 }
+.topbar .brand-wrap--link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  padding: 2px 4px;
+  margin: -2px -4px;
+  transition: background var(--motion-hover) var(--ease-out);
+}
+.topbar .brand-wrap--link:hover {
+  background: var(--color-bg-sunken);
+}
 .topbar .tag {
   display: inline-flex; align-items: center; gap: 4px;
   padding: 3px 7px;
@@ -595,7 +607,13 @@
   color: var(--color-ok-600);
 }
 
-/* ===== Desktop shell: chat column + trust rail ===== */
+/* ===== Desktop shell: chat column + trust rail =====
+   Mobile-first: phone container is 100% of the viewport.
+   Desktop ≥1024px: phone (520px) + trust rail (320px) form a centered
+   840px content block. The viewport gutters are handled by margin: auto
+   so the form sits in the middle of the screen instead of pinned left.
+   Above 1280px we let the phone breathe a little wider so the desktop
+   feels like a real form, not a phone mockup in a corner. */
 .desktop-shell {
   display: flex;
   flex-direction: column;
@@ -609,7 +627,7 @@
   .desktop-shell {
     flex-direction: row;
     align-items: stretch;
-    padding-left: var(--space-12);
+    margin: 0 auto;
     width: max-content;
     max-width: 100vw;
     gap: 0;
