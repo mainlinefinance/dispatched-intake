@@ -818,8 +818,8 @@
 .landing .proof-card .badge {
   font-family: var(--font-body); font-weight: 600; font-size: 11px;
   padding: 4px 8px; border-radius: var(--radius-sm);
-  letter-spacing: 0.02em;
-  background: var(--color-ok-100); color: var(--color-ok-600);
+  letter-spacing: 0.04em; text-transform: uppercase;
+  background: var(--color-steel-50); color: var(--color-steel-600);
 }
 .landing .proof-card .state-tag {
   font-family: var(--font-mono); font-size: 11px; font-weight: 500;
@@ -848,6 +848,18 @@
 }
 .landing .proof-card .foot .time {
   font-family: var(--font-mono); color: var(--color-ok-600); font-weight: 500;
+}
+
+.landing .proof-foot {
+  margin: var(--space-6) 0 0;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+.landing .proof-foot a {
+  color: var(--color-steel-600);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 @media (max-width: 960px) {

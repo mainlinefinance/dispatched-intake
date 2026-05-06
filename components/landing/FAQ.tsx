@@ -14,9 +14,11 @@ const faqs: FaqItem[] = [
         Rates depend on your revenue, time in business, and credit band. For
         working capital, most of our borrowers land between{" "}
         <code>14% – 34% APR</code>. For equipment loans secured by the truck,
-        rates typically run <code>9% – 18% APR</code>. You&rsquo;ll see the
-        exact APR, term length, and total cost on every term sheet before you
-        sign — no bait-and-switch.
+        rates typically run <code>9% – 18% APR</code>. These are observed
+        panel ranges, not guarantees — see{" "}
+        <a href="/methodology#finance-rates">methodology</a>. You&rsquo;ll
+        see the exact APR, term length, and total cost on every term sheet
+        before you sign — no bait-and-switch.
       </>
     ),
   },
@@ -50,10 +52,10 @@ const faqs: FaqItem[] = [
     a: (
       <>
         Soft approval and lender match: typically 20 minutes after you
-        complete the application. Funds in your account:{" "}
-        <code>31 hours median</code> across all loans funded in the last 90
-        days. Same-day funding happens for approvals before 2pm CT when the
-        lender has your verified bank account on file.
+        complete the application. Funds in your account: same banking day
+        after the chosen lender signs off, when the wire instruction lands
+        before that bank&rsquo;s cutoff. Wires that miss the cutoff settle
+        the next banking day.
       </>
     ),
   },

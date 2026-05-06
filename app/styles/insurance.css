@@ -67,6 +67,31 @@
   max-width: 56ch;
 }
 
+/* Methodology page — top-of-page section nav. Two anchor links separated
+   by a divider; each link gets the standard interactive underline. */
+.ins-toc {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+.ins-toc a {
+  color: var(--color-steel-600);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 4px 0;
+}
+.ins-toc a + a::before {
+  content: "·";
+  color: var(--color-ink-tertiary);
+  margin-right: var(--space-3);
+  text-decoration: none;
+  display: inline-block;
+}
+
 /* Product grid (pillar) */
 
 .ins-product-grid {
