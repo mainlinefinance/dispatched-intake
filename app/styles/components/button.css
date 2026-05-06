@@ -94,3 +94,18 @@
   background: var(--color-steel-50);
   border-color: var(--color-steel-800);
 }
+
+/* Variant: cta-green — muted forest used on the trucking home hero and any
+   surface on top of imagery / dark scrim. Inverse text for AA contrast. */
+.btn--cta-green {
+  background: var(--color-trail-green);
+  color: var(--color-ink-inverse);
+}
+
+.btn--cta-green:hover:not(:disabled) {
+  background: var(--color-trail-green-hover);
+}
+
+.btn--cta-green:active:not(:disabled) {
+  background: var(--color-trail-green-pressed);
+}

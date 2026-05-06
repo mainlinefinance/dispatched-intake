@@ -3,17 +3,19 @@ import DeclineSection from "@/components/landing/DeclineSection";
 import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
 import Hero from "@/components/landing/Hero";
+import HomeStatStrip from "@/components/landing/HomeStatStrip";
 import HowItWorks from "@/components/landing/HowItWorks";
 import InsuranceCrossSell from "@/components/landing/InsuranceCrossSell";
 import Nav from "@/components/landing/Nav";
+import ProductCards from "@/components/landing/ProductCards";
 import ProofSection from "@/components/landing/ProofSection";
 import { JsonLd, organization, website } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Dispatched — Working capital for owner-operators and small fleets",
+    "Dispatched — Capital built for truckers",
   description:
-    "$25K–$250K working capital, typically funded in 24–48 hours. No collateral. Bank decline is fine. We route your file to the 3–5 lenders most likely to fund it — you see terms before anyone pulls your credit.",
+    "Capital built for truckers. No collateral. Bank decline is okay. We match owner-operators and small fleets with trucking-friendly lenders for repair loans, working capital, equipment financing, and commercial truck insurance.",
 };
 
 export default function LandingPage() {
@@ -24,8 +26,10 @@ export default function LandingPage() {
       <Nav />
       <main id="main-content">
         <Hero />
-        <DeclineSection />
+        <ProductCards />
+        <HomeStatStrip />
         <HowItWorks />
+        <DeclineSection />
         <ProofSection />
         <InsuranceCrossSell />
         <FAQ />

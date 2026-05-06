@@ -52,6 +52,23 @@
   --color-hiviz-600: #B85A10;
   --color-hiviz-800: #6E3507;
 
+  /* Trail green — muted forest CTA used on the trucking marketing home.
+     Distinct from --color-ok-* (which is a semantic success ramp). The two
+     should not cross-contaminate: trail-green = brand CTA, ok = status. */
+  --color-trail-green:        #5F7A4E;
+  --color-trail-green-hover:  #4E6740;
+  --color-trail-green-pressed:#3F5434;
+  --color-trail-green-tint:   #E5EBDF;
+
+  /* Steel-900 alpha aliases — used to layer dark legibility scrim on top of
+     the hero photograph. Suffix = alpha × 100, same convention as
+     --color-ink-inverse-*. */
+  --color-steel-900-92: rgba(8, 23, 34, 0.92);
+  --color-steel-900-72: rgba(8, 23, 34, 0.72);
+  --color-steel-900-50: rgba(8, 23, 34, 0.5);
+  --color-steel-900-30: rgba(8, 23, 34, 0.3);
+  --color-steel-900-00: rgba(8, 23, 34, 0);
+
   /* Semantic.
      Each ramp exposes only 100 (subtle tint / background) and 600 (text /
      foreground). No intermediates — semantic colors are used sparingly
