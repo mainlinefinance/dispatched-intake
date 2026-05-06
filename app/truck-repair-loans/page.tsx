@@ -404,13 +404,26 @@ export default function TruckRepairLoansPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/qualify">
-                  Two-question funding fit (no credit check) →
+                <Link href="/owner-operator-financing">
+                  Owner-operator financing →
+                </Link>
+              </li>
+              <li>
+                <Link href="/box-truck-financing">Box truck financing →</Link>
+              </li>
+              <li>
+                <Link href="/bad-credit-truck-financing">
+                  Bad credit truck financing →
                 </Link>
               </li>
               <li>
                 <Link href="/calculators/truck-repair">
                   Truck repair fit estimator →
+                </Link>
+              </li>
+              <li>
+                <Link href="/qualify">
+                  Two-question funding fit (no credit check) →
                 </Link>
               </li>
               <li>
