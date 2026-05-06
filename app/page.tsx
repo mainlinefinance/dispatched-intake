@@ -9,6 +9,7 @@ import InsuranceCrossSell from "@/components/landing/InsuranceCrossSell";
 import Nav from "@/components/landing/Nav";
 import ProductCards from "@/components/landing/ProductCards";
 import ProofSection from "@/components/landing/ProofSection";
+import TruckerVocab from "@/components/landing/TruckerVocab";
 import { JsonLd, organization, website } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function LandingPage() {
       <Nav />
       <main id="main-content">
         <Hero />
+        <TruckerVocab />
         <ProductCards />
         <HomeStatStrip />
         <HowItWorks />
