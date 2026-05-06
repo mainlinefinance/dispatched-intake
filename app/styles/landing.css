@@ -306,6 +306,12 @@
   margin: 0 4px;
   color: var(--color-ink-inverse-50);
 }
+.landing .hero--photo .hero-quietlinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
 .landing .hero--photo .hero-secondary-link {
   display: inline-flex;
   align-items: center;
@@ -323,6 +329,10 @@
 }
 @media (min-width: 720px) {
   .landing .hero--photo .hero-cta-note { text-align: left; }
+  .landing .hero--photo .hero-quietlinks {
+    flex-direction: row;
+    gap: var(--space-6);
+  }
 }
 
 /* Mobile portrait — the photo subject sits to the right of the type stack;
@@ -727,6 +737,81 @@
   min-height: 36px;
   text-decoration: underline; text-underline-offset: 3px;
   margin-top: 6px;
+}
+
+/* "Good fit for" reward list shown on the qualifier result before the
+   Continue-to-application CTA. Three or four checkmarks; the green check
+   matches the trucker-vocab separator dot in feel. */
+.landing .qual-fit-list {
+  list-style: none;
+  margin: 8px 0 18px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.landing .qual-fit-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-ink-primary);
+}
+.landing .qual-fit-list .qual-fit-check {
+  color: var(--color-trail-green-deep);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* ---------- /qualify PAGE ---------- */
+/* Standalone page that wraps QualificationCalc. Different framing from the
+   home embed: the qualifier here is the page's main subject, not a
+   sidecar. Constrained width keeps the form readable on desktop. */
+.landing .qualify-page {
+  background: var(--color-bg-paper);
+  min-height: 60vh;
+  padding-bottom: var(--space-16);
+}
+.landing .qualify-hero {
+  padding: var(--space-12) 0 var(--space-8);
+  background: var(--color-bg-paper);
+}
+.landing .qualify-hero .eyebrow {
+  display: block;
+  color: var(--color-trail-green-deep);
+  margin-bottom: var(--space-3);
+}
+.landing .qualify-hero h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h1);
+  line-height: 1.05;
+  letter-spacing: -0.022em;
+  color: var(--color-ink-primary);
+  margin: 0 0 var(--space-3);
+  max-width: 22ch;
+}
+.landing .qualify-hero p {
+  font-family: var(--font-body);
+  font-size: var(--fs-body-lg);
+  line-height: 1.5;
+  color: var(--color-ink-secondary);
+  margin: 0;
+  max-width: 56ch;
+}
+.landing .qualify-form-wrap {
+  padding: 0;
+}
+.landing .qualify-form-wrap .qual,
+.landing .qualify-form-wrap .qual-result {
+  max-width: 560px;
+}
+@media (max-width: 720px) {
+  .landing .qualify-hero { padding: var(--space-8) 0 var(--space-4); }
+  .landing .qualify-hero h1 { font-size: 32px; }
+  .landing .qualify-hero p { font-size: 16px; }
 }
 
 /* ---------- SECTIONS ---------- */

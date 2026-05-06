@@ -53,9 +53,14 @@ export default function Hero() {
           </span>{" "}
           Takes about 2 minutes.
         </p>
-        <a href="#how-it-works" className="hero-secondary-link">
-          How it works <IconArrowRight />
-        </a>
+        <div className="hero-quietlinks">
+          <Link href="/qualify" className="hero-secondary-link">
+            Check your funding fit <IconArrowRight />
+          </Link>
+          <a href="#how-it-works" className="hero-secondary-link">
+            How it works <IconArrowRight />
+          </a>
+        </div>
       </div>
     </section>
   );

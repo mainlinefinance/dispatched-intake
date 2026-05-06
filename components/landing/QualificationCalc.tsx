@@ -8,9 +8,21 @@ import { CTA_LABEL } from "./Nav";
 type Revenue = "" | "under-20" | "20-50" | "50-100" | "100-plus";
 type Years = "" | "under 6 months" | "6–12 months" | "1–3 years" | "3+ years";
 
-type Match = { lenderCount: number; apr: string };
+type Fit = {
+  apr: string;
+  products: string[];
+};
 
-function computeMatch(rev: Revenue, yrs: Years): Match {
+/* The qualifier is a fit estimator, not an underwriting decision. We do not
+   publish a "lenders on our panel" count here — that claim was stripped
+   from the marketing surfaces in #37 and lives behind /methodology until
+   the panel registry is published. The estimator returns:
+     - an APR band (these are observed panel ranges, also shown in the FAQ)
+     - the list of Dispatched product categories the borrower fits
+
+   Equipment financing requires 1+ year in business; everyone else fits
+   working capital + repair financing. */
+function computeFit(rev: Revenue, yrs: Years): Fit {
   const revScore = { "under-20": 1, "20-50": 2, "50-100": 3, "100-plus": 4 }[
     rev as Exclude<Revenue, "">
   ] ?? 0;
@@ -21,10 +33,14 @@ function computeMatch(rev: Revenue, yrs: Years): Match {
     "3+ years": 4,
   }[yrs as Exclude<Years, "">] ?? 0;
   const tier = revScore + yrsScore;
-  if (tier >= 7) return { lenderCount: 18, apr: "9% – 18% APR" };
-  if (tier >= 5) return { lenderCount: 14, apr: "12% – 24% APR" };
-  if (tier >= 3) return { lenderCount: 9, apr: "18% – 30% APR" };
-  return { lenderCount: 5, apr: "22% – 34% APR" };
+  const apr =
+    tier >= 7 ? "9% – 18% APR"
+    : tier >= 5 ? "12% – 24% APR"
+    : tier >= 3 ? "18% – 30% APR"
+    : "22% – 34% APR";
+  const products = ["Working capital", "Repair financing"];
+  if (yrsScore >= 3) products.push("Equipment financing");
+  return { apr, products };
 }
 
 export default function QualificationCalc() {
@@ -40,39 +56,46 @@ export default function QualificationCalc() {
   };
 
   if (submitted) {
-    const match = computeMatch(revenue, yrs);
+    const fit = computeFit(revenue, yrs);
     return (
       <div className="qual-result" id="qual" data-illustrative="true">
         <div className="estimated-label">Based on your answers</div>
-        <div className="range">
-          {match.lenderCount} lenders on our panel will look at your file
-        </div>
+        <div className="range">Good fit for</div>
+        <ul className="qual-fit-list">
+          {fit.products.map((p) => (
+            <li key={p}>
+              <span className="qual-fit-check" aria-hidden="true">✓</span>
+              {p}
+            </li>
+          ))}
+        </ul>
         <div className="range-sub">
           Typical APR range for borrowers with your profile:{" "}
           <span
             className="mono"
             style={{ color: "var(--color-ink-primary)" }}
           >
-            {match.apr}
+            {fit.apr}
           </span>
-          . Final APR depends on your credit pull and is set by the lender —
-          not by us.
+          . These are observed panel ranges — the exact APR is set by the
+          chosen lender on the term sheet and depends on your full
+          application. <Link href="/methodology#finance-rates">See methodology →</Link>
         </div>
 
         <p className="qual-dataflow-line">
           Your answers stay with us until you finish the application. Then a
-          redacted profile (no name or contact) goes to up to 5 matched
-          lenders. One hard pull only happens after you pick one.{" "}
-          <a href="#how-it-works">See the full 5-step flow →</a>
+          redacted profile (no name or contact) goes to the matched lenders.
+          One hard pull only happens after you pick one.{" "}
+          <Link href="/#how-it-works">See the full 5-step flow →</Link>
         </p>
 
         <p className="qual-foot qual-illustrative-note">
-          Estimate based on your two answers. Final lender count and APR
+          Estimate based on your two answers. Final product fit and APR
           depend on your full application.
         </p>
 
         <Link href="/apply" className="btn btn--primary qual-cta">
-          Continue to application
+          {CTA_LABEL}
           <IconArrowRight />
         </Link>
 
@@ -92,7 +115,7 @@ export default function QualificationCalc() {
       <div className="qual-header">
         <div>
           <div className="qual-steps">2 QUESTIONS · NO CREDIT CHECK</div>
-          <div className="title">Two questions, no credit check.</div>
+          <div className="title">Check your funding fit.</div>
         </div>
         <div className="safe">
           <IconLock />
@@ -149,7 +172,7 @@ export default function QualificationCalc() {
         className="btn btn--primary qual-cta"
         disabled={!canSubmit}
       >
-        {CTA_LABEL}
+        Show my fit
         <IconArrowRight />
       </button>
 
