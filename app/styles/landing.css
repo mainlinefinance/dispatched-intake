@@ -266,13 +266,45 @@
   font-weight: 800;
   letter-spacing: -0.01em;
 }
+/* Secondary "Call a funding specialist" CTA — quiet ghost on the navy
+   scrim. Lower visual weight than the green primary so it reads as the
+   second-choice action, not a competing CTA. */
+.landing .hero--photo .hero-call-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 0 var(--space-6);
+  border-radius: 14px;
+  border: 1px solid var(--color-white-22);
+  background: var(--color-steel-900-30);
+  color: var(--color-ink-inverse);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.005em;
+  transition: background var(--motion-hover) var(--ease-out);
+}
+.landing .hero--photo .hero-call-cta:hover {
+  background: var(--color-steel-900-50);
+}
+.landing .hero--photo .hero-call-cta svg {
+  width: 16px;
+  height: 16px;
+  color: var(--color-trail-green-soft);
+}
 .landing .hero--photo .hero-cta-note {
   margin: 0 0 var(--space-4);
   font-family: var(--font-body);
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.5;
   color: var(--color-ink-inverse-70);
   text-align: center;
+}
+.landing .hero--photo .hero-cta-note-sep {
+  margin: 0 4px;
+  color: var(--color-ink-inverse-50);
 }
 .landing .hero--photo .hero-secondary-link {
   display: inline-flex;
@@ -305,6 +337,7 @@
   .landing .hero--photo .hero-title { font-size: 40px; line-height: 1.05; }
   .landing .hero--photo .hero-sub { font-size: 16px; max-width: 320px; }
   .landing .hero--photo .hero-cta-primary { width: 100%; }
+  .landing .hero--photo .hero-call-cta { width: 100%; }
 }
 @media (max-width: 380px) {
   .landing .hero--photo .hero-title { font-size: 36px; }
