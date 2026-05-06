@@ -172,6 +172,90 @@ export function IconFlowArrow({ className }: { className?: string }) {
   );
 }
 
+export function IconWrench({ size = 28, className, strokeWidth = 1.6 }: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      strokeWidth={strokeWidth}
+      className={className}
+      {...common}
+    >
+      <path d="M14.7 6.3a4 4 0 0 1 5 5L17 14l-7 7-3-3 7-7 2.7-4.7z" />
+      <path d="M14.7 6.3 17 4l3 3-2.3 2.3" />
+    </svg>
+  );
+}
+
+export function IconDollarCircle({ size = 28, className, strokeWidth = 1.6 }: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      strokeWidth={strokeWidth}
+      className={className}
+      {...common}
+    >
+      <circle cx="12" cy="12" r="9" />
+      <path d="M14.5 9H10.5a1.8 1.8 0 0 0 0 3.6h3a1.8 1.8 0 0 1 0 3.6H9" />
+      <line x1="12" y1="7.2" x2="12" y2="8.8" />
+      <line x1="12" y1="15.2" x2="12" y2="16.8" />
+    </svg>
+  );
+}
+
+export function IconTruckBox({ size = 28, className, strokeWidth = 1.6 }: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      strokeWidth={strokeWidth}
+      className={className}
+      {...common}
+    >
+      <rect x="2.5" y="7" width="11" height="9" rx="1" />
+      <path d="M13.5 10h4l3 3v3h-7z" />
+      <circle cx="7" cy="17.5" r="1.6" />
+      <circle cx="17" cy="17.5" r="1.6" />
+    </svg>
+  );
+}
+
+export function IconShieldCheck({ size = 28, className, strokeWidth = 1.6 }: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      strokeWidth={strokeWidth}
+      className={className}
+      {...common}
+    >
+      <path d="M12 3 4 6v6c0 4.4 3.4 8.2 8 9 4.6-.8 8-4.6 8-9V6l-8-3z" />
+      <polyline points="9 12 11.5 14.5 15.5 10.5" />
+    </svg>
+  );
+}
+
+export function IconArrowDownRight({ size = 16, className, strokeWidth = 2 }: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      strokeWidth={strokeWidth}
+      className={className}
+      {...common}
+    >
+      <line x1="6" y1="6" x2="18" y2="18" />
+      <polyline points="11 18 18 18 18 11" />
+    </svg>
+  );
+}
+
 export function LogoMark({ size = 26, className }: IconProps) {
   return (
     <svg
