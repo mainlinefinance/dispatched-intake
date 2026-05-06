@@ -73,7 +73,7 @@ function computeFit(
     primary: strain <= 1.5 || yrsScore < 3,
     rationale:
       "Direct-to-shop financing for the specific repair amount. Pay back over the chosen term.",
-    href: "/apply?product=repair",
+    href: "/apply?useCase=repairs",
   });
 
   // Working capital — fits when the repair is a manageable percent of
@@ -84,7 +84,7 @@ function computeFit(
       primary: false,
       rationale:
         "Use a working-capital line to cover the repair plus operating expenses. Repay from receivables.",
-      href: "/apply?product=working-capital",
+      href: "/apply?useCase=bridge",
     });
   }
 
@@ -96,7 +96,7 @@ function computeFit(
       primary: strain > 1.5,
       rationale:
         "Secured by the repaired truck. Longer payback term than a repair loan, lower monthly payment.",
-      href: "/apply?product=equipment",
+      href: "/apply?useCase=equipment",
     });
   }
 

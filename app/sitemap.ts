@@ -106,6 +106,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   });
 
+  entries.push({
+    url: `${ORIGIN}/truck-repair-loans`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/qualify`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/truck-repair`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
   for (const s of getAllFinancingStates()) {
     entries.push({
       url: `${ORIGIN}/trucking-loans/${s.slug}`,

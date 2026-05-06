@@ -43,9 +43,7 @@ export default function Footer() {
                 </span>
               </li>
               <li>
-                <span className="soon" aria-disabled="true">
-                  Truck repair loans <span className="soon-tag">Soon</span>
-                </span>
+                <Link href="/truck-repair-loans">Truck repair loans</Link>
               </li>
               <li>
                 <span className="soon" aria-disabled="true">
