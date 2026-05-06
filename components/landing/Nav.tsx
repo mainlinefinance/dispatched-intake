@@ -7,7 +7,7 @@ import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 import Logo from "@/components/site/Logo";
 import { IconClose, IconMenu, IconPhone } from "./icons";
 
-export const CTA_LABEL = "Find my capital";
+export const CTA_LABEL = "See my funding options";
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
