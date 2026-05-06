@@ -475,6 +475,193 @@
 }
 
 /* ============================================================
+   Product landing pages (/truck-repair-loans, future siblings).
+   Layered on top of .ins-page so prose, sunken sections, and
+   ins-eyebrow / ins-hero-title / ins-hero-sub all carry over.
+   The .product-* classes only add what those don't cover:
+   the dual hero CTA row, list-of-eligibility styling, the
+   composite-example card, the process ordered list, and the
+   FAQ stack.
+   ============================================================ */
+
+.product-page .product-hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.product-page .product-hero-note {
+  margin-top: var(--space-3);
+  font-size: var(--fs-small);
+  color: var(--color-ink-secondary);
+}
+
+.product-page .product-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-6) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.product-page .product-list li {
+  position: relative;
+  padding: var(--space-3) var(--space-4);
+  padding-left: var(--space-8);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  color: var(--color-ink-secondary);
+}
+.product-page .product-list li::before {
+  content: "";
+  position: absolute;
+  left: var(--space-4);
+  top: 22px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-trail-green);
+}
+.product-page .product-list strong {
+  font-weight: 600;
+  color: var(--color-ink-primary);
+}
+
+.product-page .product-example {
+  margin: var(--space-6) 0 0;
+  padding: var(--space-6);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.product-page .product-example-meta {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  column-gap: var(--space-4);
+  align-items: baseline;
+  font-size: var(--fs-body);
+  line-height: 1.55;
+}
+.product-page .product-example-label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-ink-tertiary);
+}
+.product-page .product-example-value {
+  color: var(--color-ink-primary);
+}
+.product-page .product-example-value.mono {
+  font-family: var(--font-mono);
+}
+.product-page .product-example-value strong {
+  font-weight: 600;
+  color: var(--color-ink-primary);
+}
+@media (max-width: 720px) {
+  .product-page .product-example-meta {
+    grid-template-columns: 1fr;
+    row-gap: 4px;
+  }
+}
+
+.product-page .product-process {
+  list-style: none;
+  counter-reset: step;
+  padding: 0;
+  margin: var(--space-6) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 780px;
+}
+.product-page .product-process li {
+  counter-increment: step;
+  position: relative;
+  padding: var(--space-3) var(--space-4) var(--space-3) 56px;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  color: var(--color-ink-secondary);
+  min-height: 64px;
+}
+.product-page .product-process li::before {
+  content: counter(step);
+  position: absolute;
+  left: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-trail-green);
+  color: var(--color-ink-inverse);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 13px;
+}
+.product-page .product-process strong {
+  font-weight: 600;
+  color: var(--color-ink-primary);
+}
+
+.product-page .product-faq {
+  margin: var(--space-6) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.product-page .product-faq-item {
+  padding: var(--space-4) var(--space-4);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+.product-page .product-faq-item dt {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+  color: var(--color-ink-primary);
+  margin-bottom: var(--space-2);
+}
+.product-page .product-faq-item dd {
+  margin: 0;
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--color-ink-secondary);
+}
+
+.product-page .product-related {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-3) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--fs-body);
+}
+.product-page .product-related a {
+  color: var(--color-ink-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ============================================================
    Deep money page redesign (/insurance/[product]/[state]/[dotClass])
    Scoped under .deep-money-page so the new vocabulary doesn't leak
    into other money-page templates.
