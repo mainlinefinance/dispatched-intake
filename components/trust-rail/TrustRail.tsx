@@ -9,23 +9,21 @@ export default function TrustRail() {
         <p className="tr-body">{TRUST_RAIL.whySafeBody}</p>
       </section>
 
-      <section className="tr-stats">
-        {TRUST_RAIL.stats.map((stat) => (
-          <div key={stat.footnote} className="tr-stat">
-            <div className="tr-stat-value">
-              {stat.value}
-              <a
-                href={`/disclosures#fn-${stat.footnote}`}
-                className="tr-footnote"
-                aria-label={`Methodology for ${stat.label}`}
-              >
-                <sup>{stat.footnote}</sup>
-              </a>
-            </div>
-            <div className="tr-stat-label">{stat.label}</div>
-          </div>
+      <ul className="tr-promises">
+        {TRUST_RAIL.promises.map((p) => (
+          <li key={p.footnote} className="tr-promise">
+            <span className="tr-promise-bullet" aria-hidden="true" />
+            <span className="tr-promise-label">{p.label}</span>
+            <a
+              href={`/disclosures#fn-${p.footnote}`}
+              className="tr-footnote"
+              aria-label={`Methodology for ${p.label}`}
+            >
+              <sup>{p.footnote}</sup>
+            </a>
+          </li>
         ))}
-      </section>
+      </ul>
 
       <section className="tr-section">
         <div className="tr-eyebrow">{TRUST_RAIL.preferLabel}</div>

@@ -41,7 +41,7 @@ const flowSteps: FlowStep[] = [
   {
     n: "5",
     label: "Wire to your account",
-    sub: "Median 31 hrs from completed application.",
+    sub: "Wire goes out the same banking day after the lender signs off.",
     who: "You",
     color: "var(--color-ok-600)",
   },
@@ -60,7 +60,7 @@ export default function HowItWorks() {
             broker.
           </p>
           <p className="flow-subhead">
-            <span className="mono">24 lenders</span> on our panel.
+            Trucking-friendly lenders on our panel.
           </p>
         </div>
 
@@ -126,17 +126,16 @@ export default function HowItWorks() {
             >
               <IconClock />
             </span>
-            <h3>Fast or nothing.</h3>
+            <h3>One hard pull.</h3>
             <p className="lede">
-              If a truck is down, a week is too long. Our median time from
-              completed application to funds in your account:
+              Only after you pick a lender. Until then it&rsquo;s a soft
+              match: lenders see your file, you see their offers, and your
+              credit report stays untouched.
             </p>
-            <div className="big">
-              31<sub>hrs median</sub>
-            </div>
             <ul>
-              <li>Soft approval in under 20 minutes</li>
-              <li>Funds wired same-day on approvals before 2pm CT</li>
+              <li>Soft-pull match. No impact on your credit score</li>
+              <li>One hard pull, only with the lender you choose</li>
+              <li>Wire same banking day after lender sign-off</li>
               <li>No in-person closings. E-sign from the cab</li>
             </ul>
           </div>

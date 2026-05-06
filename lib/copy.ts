@@ -279,45 +279,52 @@ export const TRUST_RAIL = {
   whySafeLabel: "Why this is safe",
   whySafeBody:
     "Dispatched does a soft inquiry to find matches. Nothing hits your credit until you pick a lender and sign an application.",
-  stats: [
+  promises: [
     {
-      value: "$47M",
-      label: "funded to truckers in the last 30 days",
+      label: "Soft-pull match — no impact on your credit",
       footnote: 1,
     },
     {
-      value: "31 hours",
-      label: "average time from application to funds",
+      label: "One hard pull, only with the lender you pick",
       footnote: 2,
     },
-  ] as { value: string; label: string; footnote: number }[],
+    {
+      label: "Wire same banking day after lender sign-off",
+      footnote: 3,
+    },
+  ] as { label: string; footnote: number }[],
   preferLabel: "Prefer to talk?",
 };
 
 export const DISCLOSURES = {
   title: "Disclosures & methodology",
   subtitle:
-    "Details behind the numbers we quote on Dispatched marketing surfaces.",
+    "Details behind the structural promises and ranges Dispatched publishes.",
   items: [
     {
       footnote: 1,
-      heading: "$47M funded to truckers in the last 30 days",
-      body: "Illustrative placeholder for v1. Final figure pulls from signed-application totals across all matched lender partners, rolling 30-day window, USD gross. Independently verified monthly.",
+      heading: "Soft-pull match",
+      body: "Dispatched runs a soft credit inquiry to find lender matches. Soft inquiries are not visible to other lenders and do not affect your credit score. See methodology for the inquiry sequence used during application.",
     },
     {
       footnote: 2,
-      heading: "31 hours average time from signed application to funds",
-      body: "Illustrative placeholder for v1. Final figure measures median elapsed time from the lender-signed application event to ACH-settled funding event. Excludes weekends and federal holidays.",
+      heading: "One hard pull, only with the lender you pick",
+      body: "A hard credit pull happens only after you choose a specific lender and move forward on their term sheet. You see APR, term, and total cost before any hard pull. Multiple hard pulls within a 14-day rate-shopping window count as a single inquiry.",
     },
     {
       footnote: 3,
+      heading: "Wire same banking day after lender sign-off",
+      body: "Same-banking-day wires are made when the chosen lender signs off and the wire instruction lands before that bank's cutoff. Wires that miss the cutoff settle the next banking day. Weekend and federal-holiday wires settle the next banking day.",
+    },
+    {
+      footnote: 4,
       heading: "$25K–$250K working capital range",
       body: "Range reflects offers issued by panel lenders to qualified trucking borrowers. Actual approval amount depends on monthly revenue, time in business, credit band, and lender underwriting. Some borrowers qualify for less than $25K or more than $250K via separate products not shown on the landing page.",
     },
     {
-      footnote: 4,
-      heading: "Typically funded in 24–48 hours",
-      body: "Illustrative placeholder for v1. Reflects the span between a lender-signed application and wire-out event across trucking borrowers funded in the trailing 90 days. Individual timing depends on documentation completeness, lender underwriting queue, and banking-partner cutoff times. Weekend and holiday wires settle the next banking day.",
+      footnote: 5,
+      heading: "Composite illustrative scenarios",
+      body: "Cards on the home labeled \"composite scenarios\" are illustrative examples constructed from the categories and amount bands our intake commonly sees. They do not represent specific borrowers, transactions, or guaranteed outcomes.",
     },
   ],
 };

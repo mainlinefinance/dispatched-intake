@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Methodology — Dispatched",
   description:
-    "How Dispatched sources, samples, and publishes commercial trucking insurance rate context. State DOI public filings, named operator profiles, no paid feeds.",
+    "How Dispatched defines, sources, and refreshes the structural promises and rate context it publishes. Trucking finance and commercial trucking insurance methodology in one place.",
   alternates: { canonical: "/methodology" },
 };
 
@@ -26,9 +26,9 @@ export default function MethodologyPage() {
       />
       <JsonLd
         payload={article({
-          headline: "Dispatched Insurance Rate Methodology",
+          headline: "Dispatched Methodology",
           description:
-            "Sourcing, sampling profiles, refresh cadence, and publication discipline for commercial trucking insurance rate context on Dispatched.",
+            "Definitions, sourcing, refresh cadence, and publication discipline for the trucking finance and commercial trucking insurance content Dispatched publishes.",
           url: "https://dispatched.finance/methodology",
           datePublished: today,
           dateModified: today,
@@ -40,8 +40,204 @@ export default function MethodologyPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Methodology</span>
             <h1 className="ins-hero-title">
-              How we source and publish commercial trucking insurance rates.
+              How Dispatched defines, sources, and refreshes what it publishes.
             </h1>
+            <p className="ins-hero-sub">
+              Two surfaces, one discipline. Trucking finance content sticks to
+              structural promises about how the application flow works and to
+              ranges anchored to observed lender pricing. Commercial trucking
+              insurance content anchors every premium band to a named operator
+              profile and a public state Department of Insurance filing.
+            </p>
+            <nav className="ins-toc" aria-label="Methodology sections">
+              <a href="#finance">Trucking finance</a>
+              <a href="#insurance">Commercial trucking insurance</a>
+            </nav>
+          </div>
+        </section>
+
+        {/* ====================== TRUCKING FINANCE ====================== */}
+        <section id="finance">
+          <div className="ins-container">
+            <span className="ins-eyebrow">Trucking finance</span>
+            <h2 className="ins-hero-title">
+              What every claim on the trucking finance home means
+            </h2>
+            <p className="ins-hero-sub">
+              The trucking home publishes a small set of facts: a working
+              capital range, three structural promises about the application
+              flow, and a set of composite scenarios. We do not publish a
+              &ldquo;median time to funds&rdquo; figure or a rolling 30-day
+              funded total until the data layer can derive it from real
+              signed-application and funding events. The promises below are
+              what we are willing to stand behind today.
+            </p>
+          </div>
+        </section>
+
+        <section className="ins-sunken">
+          <div className="ins-container">
+            <span className="ins-eyebrow">What we measure</span>
+            <h2 className="ins-hero-title">
+              The structural facts published on the home
+            </h2>
+            <ul className="ins-sources-typed">
+              <li>
+                <strong>Soft-pull match.</strong> Dispatched runs a soft credit
+                inquiry to find lender matches. Soft inquiries are not visible
+                to other lenders and do not affect the borrower&apos;s credit
+                score. This is a property of the application flow, not a
+                statistical claim.
+              </li>
+              <li>
+                <strong>One hard pull, only with the lender you pick.</strong>{" "}
+                A hard credit pull happens after the borrower selects a
+                specific lender and moves forward on that lender&apos;s term
+                sheet. Multiple hard pulls inside a 14-day rate-shopping window
+                count as a single inquiry under standard credit-bureau
+                policies.
+              </li>
+              <li>
+                <strong>Wire same banking day after lender sign-off.</strong>{" "}
+                Same-banking-day wires occur when the chosen lender signs off
+                and the wire instruction lands before the partner bank&apos;s
+                cutoff. Wires that miss the cutoff settle the next banking day;
+                weekend and federal-holiday wires settle the next banking day.
+                This is constrained by the Federal Reserve&apos;s wire window
+                and partner banking cutoffs, not a Dispatched-controlled
+                throughput target.
+              </li>
+              <li>
+                <strong>$25K–$250K working capital range.</strong> Reflects
+                offers issued by panel lenders to qualified trucking borrowers.
+                Actual approval depends on monthly revenue, time in business,
+                credit band, and lender underwriting. Some borrowers qualify
+                for less than $25K or more than $250K via separate products not
+                shown on the landing page.
+              </li>
+              <li>
+                <strong>Composite illustrative scenarios.</strong> Cards on the
+                home labeled &ldquo;composite scenarios&rdquo; are illustrative
+                examples constructed from the categories and amount bands our
+                intake commonly sees. They do not represent specific borrowers,
+                transactions, or guaranteed outcomes.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="finance-rates">
+          <div className="ins-container">
+            <span className="ins-eyebrow">Finance rates</span>
+            <h2 className="ins-hero-title">
+              How we describe APR ranges
+            </h2>
+            <p className="ins-hero-sub">
+              Two APR bands appear in the marketing FAQ:{" "}
+              <code>14% – 34% APR</code> for working capital and{" "}
+              <code>9% – 18% APR</code> for equipment loans secured by the
+              truck. These are observed panel ranges — the spread of pricing
+              the lenders on our routing panel currently quote to qualified
+              trucking borrowers. They are not Dispatched-set rates,
+              guarantees, or pre-qualifications. The exact APR a borrower sees
+              is set by the chosen lender on the term sheet and depends on
+              revenue, time in business, credit band, and the lender&apos;s
+              own underwriting.
+            </p>
+            <p className="ins-compliance-note">
+              Working capital APRs vary widely because the product covers
+              short-term lines and longer-term term loans across multiple
+              underwriting models. Equipment loan APRs are tighter because the
+              truck itself is the collateral and pricing is more
+              standardized. We do not publish an &ldquo;average&rdquo; APR
+              within either band — averages compress meaningful credit-band
+              variance and would mislead borrowers above and below it.
+            </p>
+          </div>
+        </section>
+
+        <section className="ins-sunken" id="composite-scenarios">
+          <div className="ins-container">
+            <span className="ins-eyebrow">Composite scenarios</span>
+            <h2 className="ins-hero-title">
+              How we label illustrative scenarios
+            </h2>
+            <p className="ins-hero-sub">
+              The four cards in the &ldquo;What a Dispatched-funded request
+              actually looks like&rdquo; section on the home are illustrative
+              composites. Each is built from the kinds of repair, payroll,
+              equipment, and bridge-capital requests our intake routinely
+              sees, paired with a realistic loan-amount band and the
+              borrower-archetype the request typically comes from. They are
+              not specific transactions and are not anonymized real loans.
+            </p>
+            <p className="ins-compliance-note">
+              When the data layer can produce real anonymized funded-loan
+              records with a stamped sourcing date, we will replace these
+              composites with real records and re-label the section to make
+              the change explicit. Until then the section is labeled
+              &ldquo;Composite scenarios&rdquo; and every card carries an
+              &ldquo;Illustrative&rdquo; badge so readers can place the
+              content correctly.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div className="ins-container">
+            <span className="ins-eyebrow">What we do not publish</span>
+            <h2 className="ins-hero-title">
+              Numbers we keep off the marketing surfaces until they are real
+            </h2>
+            <ul className="ins-sources-typed">
+              <li>
+                <strong>Rolling-window funded totals</strong> (e.g., &ldquo;$XM
+                funded in the last 30 days&rdquo;). Will publish only when
+                derived from signed-application and funding events with a
+                computation date stamped in the data layer and an independent
+                monthly verification step.
+              </li>
+              <li>
+                <strong>Median time to funds.</strong> Will publish only when
+                derived from real lender-signed-application and ACH-settled
+                funding events across a defined trailing window, with the
+                computation date and exclusions disclosed inline.
+              </li>
+              <li>
+                <strong>Panel-size counts</strong> (e.g., &ldquo;X lenders on
+                our panel&rdquo;). Currently described qualitatively
+                (&ldquo;trucking-friendly lenders on our panel&rdquo;) until
+                the panel registry is published with last-verified dates per
+                lender.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="ins-sunken">
+          <div className="ins-container">
+            <span className="ins-eyebrow">Refresh</span>
+            <h2 className="ins-hero-title">
+              When the finance content changes
+            </h2>
+            <p className="ins-hero-sub">
+              Structural promises change only when the application flow
+              changes — for example, if the soft-pull behavior, the
+              one-hard-pull rule, or the wire-timing constraint changes. The
+              loan range and APR bands are reviewed at least quarterly against
+              actual lender-issued offers on the routing panel and updated if
+              the observed band shifts materially.
+            </p>
+          </div>
+        </section>
+
+        {/* ================== COMMERCIAL TRUCKING INSURANCE ================== */}
+        <section id="insurance">
+          <div className="ins-container">
+            <span className="ins-eyebrow">Commercial trucking insurance</span>
+            <h2 className="ins-hero-title">
+              How we source and publish commercial trucking insurance rates
+            </h2>
             <p className="ins-hero-sub">
               Every premium band on this site is anchored to a named operator
               profile and a public state Department of Insurance filing. We do
