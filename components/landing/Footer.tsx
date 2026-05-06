@@ -24,7 +24,7 @@ export default function Footer() {
             <h4>Product</h4>
             <ul>
               <li>
-                <Link href="/trucking">Trucking capital</Link>
+                <Link href="/trucking-working-capital">Trucking capital</Link>
               </li>
               <li>
                 <Link href="/insurance">Trucking insurance</Link>
