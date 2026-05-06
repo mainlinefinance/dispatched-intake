@@ -15,7 +15,8 @@ const declineReasons: DeclineReason[] = [
     reframe: (
       <>
         <strong>Our lenders look at ELD miles and settlement statements</strong>
-        , not just the return. If the wheels are turning, the revenue is real.
+        , not just the return. They underwrite the freight the truck is
+        actually moving.
       </>
     ),
   },
@@ -50,14 +51,12 @@ export default function DeclineSection() {
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">Why this product exists</span>
-          <h2>
-            Why banks decline trucking businesses (and why it&rsquo;s rarely a
-            credit problem).
-          </h2>
+          <h2>Banks weren&rsquo;t built for owner-operators.</h2>
           <p>
-            Three structural reasons banks say no to working owner-operators
-            and small fleets. None of them are about whether you can repay —
-            they&rsquo;re about how the bank&rsquo;s forms are built.
+            Your revenue is real. The problem is that most bank forms
+            don&rsquo;t understand freight. Three structural reasons banks say
+            no to working owner-operators and small fleets — none of them
+            about whether you can repay.
           </p>
         </div>
         <div className="decline-grid">
@@ -70,6 +69,12 @@ export default function DeclineSection() {
             </div>
           ))}
         </div>
+        <aside className="brand-callout" aria-label="Dispatched underwriting principle">
+          <span className="brand-callout-eyebrow">Underwriting principle</span>
+          <p className="brand-callout-line">
+            If the wheels are turning, the revenue is real.
+          </p>
+        </aside>
       </div>
     </section>
   );

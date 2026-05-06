@@ -761,6 +761,47 @@
   .landing .decline-grid { grid-template-columns: 1fr; gap: 16px; }
 }
 
+/* ---------- BRAND CALLOUT ----------
+   Single-line underwriting principle anchored at the bottom of the
+   DeclineSection. Visually distinct from cards and stat strips so it reads
+   as the closing argument of the section, not as a fourth card. */
+.landing .brand-callout {
+  margin: var(--space-12) auto 0;
+  max-width: 880px;
+  padding: var(--space-8) var(--space-6);
+  background: var(--color-steel-900);
+  color: var(--color-ink-inverse);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 1px solid var(--color-steel-800);
+}
+.landing .brand-callout-eyebrow {
+  display: inline-block;
+  font-family: var(--font-body); font-weight: 700;
+  font-size: var(--fs-eyebrow); line-height: var(--lh-eyebrow);
+  letter-spacing: var(--tr-eyebrow); text-transform: uppercase;
+  color: var(--color-trail-green-soft);
+  margin-bottom: var(--space-4);
+}
+.landing .brand-callout-line {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-ink-inverse);
+  margin: 0;
+  max-width: 24ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 720px) {
+  .landing .brand-callout {
+    padding: var(--space-12) var(--space-8);
+  }
+  .landing .brand-callout-line { font-size: 36px; }
+}
+
 /* ---------- FEATURE ROW ---------- */
 .landing .feat-grid {
   display: grid;
