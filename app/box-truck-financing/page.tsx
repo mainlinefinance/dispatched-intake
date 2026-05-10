@@ -21,43 +21,55 @@ import {
    differ from semi-truck financing. */
 
 export const metadata: Metadata = {
-  title:
-    "Box truck financing for owner-operators and last-mile fleets — Dispatched",
+  title: "Box truck financing — 16ft to 26ft loans | Dispatched",
   description:
-    "Box truck loans for last-mile, hot-shot, and expediting operators. Soft-pull match first; one hard pull only with the lender you pick. We route to lenders that fund 1099 sole-prop and 6+ months of operating history.",
+    "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. FICO from 500, panel APR 9%–18%. Soft-pull match. Apply now.",
   alternates: { canonical: "/box-truck-financing" },
+  openGraph: {
+    title: "Box truck financing — 16ft to 26ft loans | Dispatched",
+    description:
+      "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. FICO from 500, panel APR 9%–18%. Soft-pull match. Apply now.",
+    url: "/box-truck-financing",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Box truck financing — 16ft to 26ft loans | Dispatched",
+    description:
+      "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. FICO from 500, panel APR 9%–18%. Soft-pull match. Apply now.",
+  },
 };
 
 const PAGE_URL = "https://dispatched.finance/box-truck-financing";
 
 const faqs = [
   {
-    q: "Do I need a CDL to qualify for box truck financing?",
-    a: "Not necessarily. Most box trucks under 26,001 lbs gross vehicle weight don't require a CDL to operate, and the lenders on our panel underwrite the operation, not the license class. If you're moving freight at-or-over CDL weight, you'll need either a CDL on file or a CDL-licensed driver on the payroll; that's an underwriting question on the application, not a panel-level disqualifier.",
+    q: "How much can I borrow for a box truck?",
+    a: "Loans on the Dispatched panel for box trucks typically range from $20K for used 16-foot units to $120K for new 26-foot units with lift gate and refrigeration. The amount is set by the truck's appraised value, the down payment, and the operator's revenue. Lenders fund up to the appraised value minus down payment.",
   },
   {
-    q: "What's the typical loan size for box truck financing?",
-    a: "Box truck loans on our panel typically run smaller than Class 8 financing — most fall in the $15K to $75K range, depending on whether the loan covers a repair, a working-capital line, or an equipment purchase. Larger box-truck fleets and combined repair+equipment requests can go higher; the loan range overall is the same $25K to $250K shown elsewhere on the site.",
+    q: "Can I finance a box truck without a CDL?",
+    a: "Yes. Box trucks under 26,001 GVWR do not require a CDL, and Dispatched panel lenders underwrite non-CDL operators when the operation has a DOT number and demonstrable revenue. New operators with under 12 months of MC authority can apply but should expect a higher APR and a larger down payment requirement until the revenue history matures.",
   },
   {
-    q: "Can I finance a box truck without a DOT number?",
-    a: "Operations under 10,001 lbs GVW running entirely intrastate may not require a USDOT number, and the panel still funds those operators — most often as a working-capital or equipment-secured loan rather than a traditional commercial freight loan. Operations over the FMCSA threshold need active authority in good standing; a recently revoked or out-of-service DOT routes the application to a smaller subset of lenders.",
+    q: "What APR should I expect on a box truck loan?",
+    a: "The observed equipment-loan panel range is 9% to 18% APR for box trucks. Newer trucks, 600+ FICO, and a 15%+ down payment quote toward the low end. Older units, sub-580 FICO, or zero-down structures quote toward the high end. The exact APR is on the term sheet before you sign.",
   },
   {
-    q: "I run for Amazon DSP / hot-shot. Does that qualify?",
-    a: "Yes. Last-mile contracted operations (Amazon DSP, FedEx Ground, hot-shot, expediting) are the dominant box-truck operator profile our panel sees. The relevant signals are revenue stability (read from bank statements), the contract relationship (1099 income from a route or carrier), and credit. The lenders on our panel are familiar with this operator profile and don't underwrite it as an exception.",
+    q: "Can I finance a box truck with bad credit?",
+    a: "Yes. Programs route from a 500 FICO. The truck is collateral, so sub-650 borrowers see higher approval rates on box trucks than on unsecured working capital. Sub-580 borrowers should plan for a higher APR, a larger down payment requirement, and a shorter maximum term.",
   },
   {
-    q: "Will a box truck loan show up on my credit report?",
-    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your credit score. A hard pull only happens after you pick a specific lender and move forward on their term sheet. Multiple hard pulls inside a 14-day rate-shopping window count as a single inquiry under standard credit-bureau policies.",
+    q: "How long can I finance a box truck for?",
+    a: "Terms run 24 to 72 months. Newer trucks (under 4 years) support the full 72 months; trucks 5 to 8 years old typically cap at 48 to 60 months; trucks over 8 years cap at 36 months. The lender sets the maximum term based on the truck's expected residual value at payoff.",
   },
   {
-    q: "What documents will I need?",
-    a: "The basics: last 3 months of business bank statements, your EIN or SSN, your DOT number (if you have one), and a driver's license. For loans over $75K we'll also ask for your most recent Schedule C or 1120 and current settlement statements from your route partner or carrier. No business plan, no tax-preparer letter, no IFTA printouts unless a specific lender requests them.",
+    q: "Do Amazon Relay and last-mile contracts count as revenue for the loan?",
+    a: "Yes. Box truck operators with Amazon Relay, FedEx Ground, Amazon DSP, or comparable contracted-route revenue qualify on the Dispatched panel. The lender underwrites the contract revenue from bank deposits the same way it underwrites brokered freight. The contract itself does not need to be assigned or pledged.",
   },
   {
-    q: "How fast can the wire actually land?",
-    a: "Same banking day after the chosen lender signs off, when the wire instruction lands before that bank's cutoff. Wires that miss the cutoff settle the next banking day; weekend and federal-holiday wires settle the next banking day. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
+    q: "Will applying for box truck financing hurt my credit?",
+    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your score. A hard pull only happens after you pick a specific lender and move forward on their term sheet.",
   },
 ];
 
@@ -86,9 +98,9 @@ export default function BoxTruckFinancingPage() {
         payload={financialProduct({
           name: "Box truck financing",
           description:
-            "Commercial financing for box truck operators — repair loans, working capital, and equipment loans routed to a panel of trucking-friendly lenders.",
+            "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. FICO from 500, panel APR 9%–18%. Soft-pull match.",
           url: PAGE_URL,
-          category: "BusinessLoan",
+          category: "Equipment financing",
         })}
       />
       <JsonLd payload={faqPage(faqs)} />

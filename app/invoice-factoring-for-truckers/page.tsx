@@ -11,43 +11,55 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title:
-    "Invoice factoring for truckers — Dispatched",
+  title: "Invoice factoring for truckers — same-day | Dispatched",
   description:
-    "Sell outstanding broker or carrier invoices for an immediate cash advance. Different cost structure than a loan; settles in days, not weeks. Recourse and non-recourse factoring routed to a panel of trucking-friendly factors.",
+    "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum. Get matched today.",
   alternates: { canonical: "/invoice-factoring-for-truckers" },
+  openGraph: {
+    title: "Invoice factoring for truckers — same-day | Dispatched",
+    description:
+      "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum. Get matched today.",
+    url: "/invoice-factoring-for-truckers",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Invoice factoring for truckers — same-day | Dispatched",
+    description:
+      "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum. Get matched today.",
+  },
 };
 
 const PAGE_URL = "https://dispatched.finance/invoice-factoring-for-truckers";
 
 const faqs = [
   {
-    q: "How does invoice factoring differ from a loan?",
-    a: "Factoring isn't borrowing — it's selling specific outstanding invoices to a third party (the factor) for an immediate cash advance, typically 90–98% of the invoice face value. The factor collects the full invoice from your broker or carrier when it pays. The cost shows up as a factoring fee (typically 1%–5% of the invoice depending on broker payment terms and risk), not as APR. There's no loan to repay because you sold the receivable.",
+    q: "How does invoice factoring for truckers work?",
+    a: "You submit a paid load's bill of lading and broker invoice to the factoring company. The factor advances 85% to 97% of the invoice face value the same or next banking day, then collects the full payment from the broker on net-30 to net-90 terms. Once the broker pays, the factor releases the reserve (the 3% to 15% held back) minus their fee. You get cash on the day you deliver, not 60 days later.",
   },
   {
-    q: "What's the difference between recourse and non-recourse factoring?",
-    a: "Recourse factoring leaves the credit risk on you — if your broker doesn't pay the invoice within an agreed window, the factor charges you back. Non-recourse factoring puts the credit risk on the factor (within their underwriting criteria), at a higher fee. Most trucking factors on our panel offer both; the choice depends on the credit quality of your brokers and how much fee you're willing to trade for risk transfer.",
+    q: "How much does invoice factoring cost?",
+    a: "Factoring fees on the Dispatched panel typically run 1% to 4% of the invoice face value, depending on whether the structure is recourse or non-recourse, the broker's credit, the volume you factor monthly, and the average days-to-pay. Higher-volume operators with strong broker mixes quote toward 1% to 2%; smaller operators or weaker broker mixes quote toward 3% to 4%.",
   },
   {
-    q: "Will my broker know I'm factoring?",
-    a: "Yes. Factoring requires the broker to pay the factor directly rather than you, which means the factor sends a Notice of Assignment to the broker. This is standard in trucking — most freight brokers expect to interact with factors and have processes for it. If your broker refuses to work with factors, that's a flag the factor will see during onboarding.",
+    q: "What is the difference between recourse and non-recourse factoring?",
+    a: "With recourse factoring, you are on the hook to repay the advance if the broker does not pay the invoice. With non-recourse factoring, the factor absorbs the credit loss when a broker goes insolvent. Non-recourse costs more (typically 0.5% to 1.5% higher) but eliminates the operator's exposure to broker bankruptcy. Most non-recourse contracts still leave the operator liable for disputes that are not credit failures.",
   },
   {
-    q: "How long does factoring take to settle?",
-    a: "Initial onboarding with a factor typically takes 3–7 days (broker setup, account verification, paperwork). Once onboarded, individual invoices fund quickly — most factors on our panel advance within 24 hours of receiving the verified invoice. Compared to a working-capital loan, the trade-off is shifted: longer initial setup, but fast per-invoice funding once you're set up.",
+    q: "Can I factor invoices with bad credit?",
+    a: "Yes. Factoring underwrites the broker's credit, not the operator's, because the broker is the entity actually paying the invoice. Operators with sub-600 FICO routinely factor with no rate impact. The factor checks the operator for fraud history and active bankruptcies, but FICO score itself is not the underwriting driver.",
   },
   {
-    q: "What's the cost actually look like?",
-    a: "Most trucking factors price per invoice as a fixed fee or a tiered rate against broker payment terms. A 30-day-payment broker with strong credit might be 1.5%–2.5% of invoice face value; a 60-day or sub-prime broker might run 3%–5%. Some factors charge a flat per-invoice rate regardless of payment terms. The fee structure is on the factoring agreement, which you see before signing — same discipline as the term sheets in our loan products.",
+    q: "How fast does invoice factoring fund?",
+    a: "Same banking day for invoices submitted before the factor's daily cutoff (typically 11am to 1pm Eastern), next banking day for late-cutoff or weekend submissions. Once the factoring relationship is set up, ongoing invoices fund within hours of submission. Initial setup with a new factor takes 3 to 7 business days for credit checks, broker verification, and notice of assignment.",
   },
   {
-    q: "Can I factor only some of my invoices, or do I have to factor all of them?",
-    a: "Both arrangements exist. \"Spot factoring\" lets you choose which invoices to factor; \"contract factoring\" requires you to factor all invoices through the factor (or a percentage of them). Spot factoring has flexibility but typically higher per-invoice fees. Contract factoring is cheaper per invoice but commits volume. The choice is a panel-routing question that the application step asks about directly.",
+    q: "Do I have to factor every load?",
+    a: "It depends on the contract. Some factors require all-load (whole-ledger) factoring, where every invoice goes through them; others allow spot factoring, where you pick which invoices to submit. Whole-ledger contracts come with lower fees because the factor has predictable volume; spot contracts cost more per invoice but give the operator full control. The application asks which structure fits the operation.",
   },
   {
-    q: "Will applying hurt my credit?",
-    a: "Factoring underwriting focuses on broker credit (the entity paying the invoice), not on the borrower's personal credit, so the credit-pull pattern is different from loan products. Some factors do a soft inquiry for the trucking operator; most do not. Hard pulls in factoring are unusual.",
+    q: "How is factoring different from a working-capital loan?",
+    a: "Factoring is selling specific receivables for an immediate advance; working capital is borrowing a lump sum you repay from operations over time. Factoring scales with revenue (the more you haul, the more cash you can pull) and has no APR — it has a flat fee per invoice. Working capital is fixed-amount, has a payment schedule, and reports as debt on the balance sheet. Different cost structures for different cashflow problems.",
   },
 ];
 
@@ -68,11 +80,11 @@ export default function InvoiceFactoringPage() {
         dateModified: today,
       })} />
       <JsonLd payload={financialProduct({
-        name: "Invoice factoring for trucking",
+        name: "Invoice factoring for truckers",
         description:
-          "Sale of outstanding trucking invoices to a panel of trucking factors for immediate cash advance, typically 90–98% of invoice face value.",
+          "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum.",
         url: PAGE_URL,
-        category: "FinancialService",
+        category: "Invoice factoring",
       })} />
       <JsonLd payload={faqPage(faqs)} />
 
