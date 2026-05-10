@@ -35,12 +35,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 1,
   });
 
-  entries.push({
-    url: `${ORIGIN}/trucking`,
-    lastModified: today,
-    changeFrequency: "weekly",
-    priority: 0.9,
-  });
+  // /trucking is a 308 redirect to /trucking-working-capital — including it in
+  // the sitemap wastes crawl budget and creates a "submitted URL is a
+  // redirect" warning in GSC. The destination is listed below as the
+  // working-capital money page. If a true /trucking hub page is built,
+  // re-add this entry pointing to the hub URL.
 
   entries.push({
     url: `${ORIGIN}/insurance`,
@@ -185,6 +184,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   entries.push({
     url: `${ORIGIN}/calculators/truck-repair`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/semi-truck-loan`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/commercial-truck-loan`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/dump-truck-loan`,
     lastModified: today,
     changeFrequency: "monthly",
     priority: 0.7,
