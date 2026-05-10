@@ -333,6 +333,57 @@ export function itemList(args: {
   };
 }
 
+/* DefinedTerm — for individual glossary entries. The DefinedTermSet (the
+   glossary index) groups all DefinedTerms. Critical for AEO/LLM citation
+   eligibility — schema.org's DefinedTerm is one of the most-cited types
+   by ChatGPT and Perplexity for definitional queries. */
+export function definedTerm(args: {
+  name: string;
+  description: string;
+  url: string;
+  termCode?: string; // e.g. "MC#", "DOT#"
+  inDefinedTermSetUrl?: string;
+}): JsonLdPayload {
+  const payload: JsonLdPayload = {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    name: args.name,
+    description: args.description,
+    url: args.url,
+  };
+  if (args.termCode) payload.termCode = args.termCode;
+  if (args.inDefinedTermSetUrl) {
+    payload.inDefinedTermSet = {
+      "@type": "DefinedTermSet",
+      url: args.inDefinedTermSetUrl,
+    };
+  }
+  return payload;
+}
+
+/* DefinedTermSet — the glossary index page wrapper. Lists all DefinedTerm
+   entries by reference (not embedded; each term has its own page with its
+   own DefinedTerm payload). */
+export function definedTermSet(args: {
+  name: string;
+  description: string;
+  url: string;
+  hasDefinedTerms: ReadonlyArray<{ name: string; url: string }>;
+}): JsonLdPayload {
+  return {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    name: args.name,
+    description: args.description,
+    url: args.url,
+    hasDefinedTerm: args.hasDefinedTerms.map((t) => ({
+      "@type": "DefinedTerm",
+      name: t.name,
+      url: t.url,
+    })),
+  };
+}
+
 /* InsuranceAgency — entity-level wrapper for the /insurance pillar page.
    Complements the Article schema on the same page (Article describes the
    editorial; InsuranceAgency describes the entity providing the service). */
