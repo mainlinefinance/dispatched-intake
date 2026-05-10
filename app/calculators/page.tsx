@@ -20,6 +20,27 @@ type Tool = {
 
 const tools: Tool[] = [
   {
+    href: "/calculators/semi-truck-loan",
+    title: "Semi truck loan calculator",
+    description:
+      "Estimate the monthly payment on a semi truck loan in seconds. Inputs: price, down payment, term, equipment condition, credit band. Returns the indicative monthly payment, APR band, and total interest.",
+    inputs: "5 inputs · No credit pull",
+  },
+  {
+    href: "/calculators/commercial-truck-loan",
+    title: "Commercial truck loan calculator",
+    description:
+      "Box trucks, vocational vehicles, cargo vans — same math, broader equipment mix. Returns the indicative monthly payment based on your inputs and the observed lender panel APR bands.",
+    inputs: "5 inputs · No credit pull",
+  },
+  {
+    href: "/calculators/dump-truck-loan",
+    title: "Dump truck loan calculator",
+    description:
+      "Single-axle, tandem, tri-axle, articulated — estimate the monthly payment for any dump truck purchase. Returns the indicative payment, APR band, and total interest based on your credit and equipment condition.",
+    inputs: "5 inputs · No credit pull",
+  },
+  {
     href: "/calculators/truck-repair",
     title: "Truck repair financing fit estimator",
     description:
@@ -54,10 +75,11 @@ export default function CalculatorsIndexPage() {
             <span className="eyebrow">Calculators</span>
             <h1>Decision tools, not lead forms.</h1>
             <p>
-              Fit estimators that tell you which Dispatched product category
-              you fit, given your operator profile. None of these collect
-              personal information or pull credit. They are reasoning aids,
-              not underwriting decisions.
+              Payment estimators and fit estimators for trucking
+              owner-operators and small fleets. None of these collect personal
+              information or pull credit. They are reasoning aids, not
+              underwriting decisions — the chosen lender sets the final APR
+              on the term sheet.
             </p>
           </div>
         </section>

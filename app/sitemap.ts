@@ -189,6 +189,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   });
 
+  entries.push({
+    url: `${ORIGIN}/calculators/semi-truck-loan`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/commercial-truck-loan`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/dump-truck-loan`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
   for (const s of getAllFinancingStates()) {
     entries.push({
       url: `${ORIGIN}/trucking-loans/${s.slug}`,
