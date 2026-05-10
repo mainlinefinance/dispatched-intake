@@ -60,8 +60,8 @@ export default async function CarrierReviewPage({
     <div className="ins-page">
       <JsonLd
         payload={breadcrumbList([
-          { name: "Home", url: "https://dispatched.finance/" },
-          { name: "Insurance", url: "https://dispatched.finance/insurance" },
+          { name: "Dispatched", url: "https://dispatched.finance/" },
+          { name: "Carriers", url: "https://dispatched.finance/carriers" },
           { name: c.name, url },
         ])}
       />
