@@ -384,6 +384,41 @@ export function definedTermSet(args: {
   };
 }
 
+/* SoftwareApplication — for interactive calculator pages (factoring fee,
+   lease vs buy, owner-operator P&L). Pairs with HowTo schema on the same
+   page: HowTo describes the steps, SoftwareApplication describes the
+   tool itself. applicationCategory uses Google's enumerated values
+   (BusinessApplication, FinanceApplication). */
+export function softwareApplication(args: {
+  name: string;
+  description: string;
+  url: string;
+  applicationCategory:
+    | "BusinessApplication"
+    | "FinanceApplication"
+    | "UtilitiesApplication";
+}): JsonLdPayload {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: args.name,
+    description: args.description,
+    url: args.url,
+    applicationCategory: args.applicationCategory,
+    operatingSystem: "Web",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    provider: {
+      "@type": "Organization",
+      name: "Dispatched",
+      url: "https://dispatched.finance",
+    },
+  };
+}
+
 /* InsuranceAgency — entity-level wrapper for the /insurance pillar page.
    Complements the Article schema on the same page (Article describes the
    editorial; InsuranceAgency describes the entity providing the service). */

@@ -5,10 +5,17 @@ import "server-only";
    Each term renders as its own page under /glossary/{slug} and is grouped
    on the index by category.
 
+   Architecture: this barrel file holds the original 10 core terms plus
+   imports from category sub-files in lib/data/glossary/. Each sub-file
+   contains an array of additional terms in that category. Splitting by
+   category lets agents extend the glossary without touching this barrel
+   and avoids merge conflicts when multiple categories are populated in
+   parallel.
+
    Adding a term:
-     1. Add an entry to TERMS with slug, term, abbreviation, category,
-        shortDefinition, sections, relatedTerms, and relatedProducts.
-     2. The glossary index page and the dynamic /glossary/[slug] route
+     1. Pick a category sub-file (lib/data/glossary/<category>.ts) or
+        add an entry directly to CORE_TERMS below.
+     2. Add the entry; the index page and /glossary/[slug] route
         auto-pick it up.
      3. The sitemap loops over getAllTerms() to emit every term URL.
 
@@ -18,40 +25,23 @@ import "server-only";
    without rewriting content.
    =========================================================================== */
 
-export type GlossaryCategory =
-  | "operating-authority-compliance"
-  | "factoring-cash-flow"
-  | "operator-types";
+import { COMPLIANCE_EXTENDED_TERMS } from "./glossary/compliance-extended";
+import { OPERATIONS_TERMS } from "./glossary/operations";
+import { FINANCE_TERMS } from "./glossary/finance";
+import { INSURANCE_RISK_TERMS } from "./glossary/insurance-risk";
 
-export type GlossaryRelatedProduct = {
-  readonly url: string;
-  readonly label: string;
-};
+export type {
+  GlossaryCategory,
+  GlossaryRelatedProduct,
+  GlossarySection,
+  GlossaryTerm,
+} from "./glossary/types";
+export { CATEGORY_LABELS } from "./glossary/types";
 
-export type GlossarySection = {
-  readonly h2: string;
-  readonly body: string;
-};
+import type { GlossaryCategory, GlossaryTerm } from "./glossary/types";
+import { CATEGORY_LABELS } from "./glossary/types";
 
-export type GlossaryTerm = {
-  readonly slug: string;
-  readonly term: string;
-  readonly abbreviation?: string;
-  readonly termCode?: string;
-  readonly category: GlossaryCategory;
-  readonly shortDefinition: string;
-  readonly sections: ReadonlyArray<GlossarySection>;
-  readonly relatedTerms: ReadonlyArray<string>;
-  readonly relatedProducts: ReadonlyArray<GlossaryRelatedProduct>;
-};
-
-export const CATEGORY_LABELS: Record<GlossaryCategory, string> = {
-  "operating-authority-compliance": "Operating Authority & Compliance",
-  "factoring-cash-flow": "Factoring & Cash Flow",
-  "operator-types": "Operator Types",
-};
-
-const TERMS: ReadonlyArray<GlossaryTerm> = [
+const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
   {
     slug: "mc-number",
     term: "MC Number",
@@ -311,6 +301,18 @@ const TERMS: ReadonlyArray<GlossaryTerm> = [
   },
 ];
 
+/* All terms — core array spread first so the original 10 retain their
+   ordering, followed by each category sub-file's contributions. Within
+   getTermsByCategory the order of CATEGORY_LABELS / ORDERED_CATEGORIES
+   is what controls index-page rendering. */
+const TERMS: ReadonlyArray<GlossaryTerm> = [
+  ...CORE_TERMS,
+  ...COMPLIANCE_EXTENDED_TERMS,
+  ...OPERATIONS_TERMS,
+  ...FINANCE_TERMS,
+  ...INSURANCE_RISK_TERMS,
+];
+
 export function getAllTerms(): ReadonlyArray<GlossaryTerm> {
   return TERMS;
 }
@@ -326,13 +328,15 @@ export type GlossaryCategoryGroup = {
 };
 
 export function getTermsByCategory(): ReadonlyArray<GlossaryCategoryGroup> {
-  // Order categories deterministically. The label index follows
-  // CATEGORY_LABELS insertion order so the index page renders in a stable
-  // sequence rather than whatever object-key order the runtime returns.
+  // Order categories deterministically. The index page renders in this
+  // sequence regardless of how terms are distributed across sub-files.
   const ordered: ReadonlyArray<GlossaryCategory> = [
     "operating-authority-compliance",
     "factoring-cash-flow",
     "operator-types",
+    "trucking-operations",
+    "trucking-finance",
+    "insurance-and-risk",
   ];
   return ordered.map((category) => ({
     category,
