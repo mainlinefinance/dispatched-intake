@@ -5,6 +5,12 @@ export const metadata: Metadata = {
   title: "Apply for funding — Dispatched",
   description:
     "Get matched with funding partners in minutes. Soft match, no impact to your credit.",
+  // Conversion endpoint — embedded Lendflow widget. No SEO value as a landing
+  // page; indexing it would dilute ranking signals across the actual money
+  // pages (working capital, equipment, etc.) that should rank for funding
+  // intent. Follow links so internal anchors still pass equity.
+  robots: { index: false, follow: true },
+  alternates: { canonical: "/apply" },
 };
 
 export default function ApplyPage() {
