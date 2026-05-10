@@ -23,43 +23,55 @@ import {
    Dispatched panel from a bank. */
 
 export const metadata: Metadata = {
-  title:
-    "Bad credit truck financing for owner-operators — Dispatched",
+  title: "Bad credit truck financing — FICO 500+",
   description:
-    "Truck financing options for borrowers with sub-580 credit. The panel underwrites revenue and equipment, not just FICO. Soft-pull match first; one hard pull only with the lender you pick.",
+    "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply or call (307) 317-0801.",
   alternates: { canonical: "/bad-credit-truck-financing" },
+  openGraph: {
+    title: "Bad credit truck financing — FICO 500+",
+    description:
+      "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply or call (307) 317-0801.",
+    url: "/bad-credit-truck-financing",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bad credit truck financing — FICO 500+",
+    description:
+      "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply or call (307) 317-0801.",
+  },
 };
 
 const PAGE_URL = "https://dispatched.finance/bad-credit-truck-financing";
 
 const faqs = [
   {
-    q: "What's the lowest credit score that can qualify on the Dispatched panel?",
-    a: "The marketing FAQ states the panel routes applications starting at a 500 FICO. That's the floor. Below 580, the panel narrows considerably — fewer lenders see the application and the ones that do quote on the higher end of the observed APR range. Above 580 the panel widens. Above 680 you qualify for the full product set.",
+    q: "Can I get truck financing with a 500 credit score?",
+    a: "Yes. Programs on the Dispatched panel route from a 500 FICO. Most banks decline below 650 because they underwrite on credit alone; the Dispatched panel underwrites on revenue, debt service coverage, equipment value, and deposit history first, with FICO second. Sub-580 borrowers should expect a higher APR and tighter loan amounts, but approval is realistic.",
   },
   {
-    q: "What rates can someone with bad credit actually expect?",
-    a: "The marketing FAQ documents two observed panel ranges: 14% – 34% APR for working capital and 9% – 18% APR for equipment loans secured by the truck. Sub-580 borrowers should expect rates at or near the top of those ranges, depending on revenue and time in business. These are observed panel ranges, not guarantees — see /methodology#finance-rates for how we describe the bands.",
+    q: "What APR will I pay with bad credit?",
+    a: "Expect rates toward the high end of the published panel ranges. For working capital, that is the 28% to 34% APR end of the 14% to 34% range. For equipment-secured loans, that is the 14% to 18% APR end of the 9% to 18% range. The exact APR depends on revenue, time in business, equipment age, and down payment. The term sheet shows the exact rate before you sign.",
   },
   {
-    q: "Will I be denied because of past business decline marks on my report?",
-    a: "Past decline marks don't automatically disqualify the application. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and don't compound on your file. We route to the lenders most likely to fund your specific operator profile, which avoids the bank pattern where each new application accelerates the next decline.",
+    q: "Why does Dispatched approve sub-650 borrowers when banks decline them?",
+    a: "Banks underwrite on FICO and personal financial statements. The Dispatched panel underwrites on the operation's bank deposits, equipment value, and time in business — credit is a secondary signal. A trucker pulling $30K a month in deposits with a 580 FICO is a different risk than the FICO alone suggests, and the panel's lenders price for that distinction.",
   },
   {
-    q: "What compensating factors help with sub-580 credit?",
-    a: "Three signals carry meaningful weight on our panel: revenue stability (consistent monthly bank-statement deposits over 6+ months), time in business (12+ months opens up the working-capital and equipment-financing fit), and the equipment itself (a truck with a clean title in good operating condition is collateral for an equipment-secured loan). The panel underwrites all three, not just FICO.",
+    q: "What documents do I need for bad credit truck financing?",
+    a: "Three months of business bank statements, your EIN or SSN, DOT and MC number, and a driver's license. For equipment loans, also include a copy of the title or dealer purchase order. The bank statements are the central document — they tell the lender what the operation actually moves through deposits, which is the underwriting signal that matters most for sub-650 applications.",
   },
   {
-    q: "Will applying hurt my credit score?",
-    a: "Not at the start. The Dispatched application is a soft-pull match. A hard pull only happens after you choose a specific lender and move forward on their term sheet. Multiple hard pulls inside a 14-day rate-shopping window count as a single inquiry under standard credit-bureau policies, so shopping rates among matched lenders during that window doesn't compound damage.",
+    q: "Will applying with bad credit hurt my score further?",
+    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your score. A hard pull only happens after you pick a specific lender and move forward on their term sheet. If you compare offers, hard pulls inside a 14-day rate-shopping window count as one inquiry on most scoring models.",
   },
   {
-    q: "Can I use a co-signer or business partner with better credit?",
-    a: "Some lenders on the panel accept co-signers; some don't. If you list a co-borrower or a business partner on the application, the panel routing widens to the lenders that underwrite jointly. The co-signer or partner consents to a hard pull only at the same point you do — after a specific lender is chosen and the term sheet is signed.",
+    q: "Is there a minimum FICO to apply?",
+    a: "500. Below 500, the Dispatched panel does not currently have a program that funds. Operators below 500 should focus on rebuilding the score (paying down revolving balances, settling charge-offs) before reapplying. Active Chapter 13 plans are reviewed case-by-case; active Chapter 7 cases inside the 12-month post-discharge window are typically declined across the panel.",
   },
   {
-    q: "I had a recent bankruptcy. Am I eligible?",
-    a: "A bankruptcy on file doesn't automatically disqualify the application, but it narrows the panel. The lenders that fund post-bankruptcy borrowers usually require a documented period since discharge (often 12-24 months), proof of subsequent business revenue, and an explanation of the circumstances. The application step asks about it directly so the file gets routed to the right subset of the panel.",
+    q: "Can I refinance an existing high-rate truck loan with bad credit?",
+    a: "Yes, if the operation's revenue and the truck's remaining value support the refinance. Refinancing makes sense when the existing rate is materially above the current panel range and the truck has at least 24 months of payments left. The application step asks about existing obligations so the lender can underwrite the refinance accurately.",
   },
 ];
 
@@ -97,9 +109,8 @@ export default function BadCreditTruckFinancingPage() {
       <JsonLd
         payload={financialService({
           name: "Bad Credit Truck Financing",
-          // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
           description:
-            "Commercial trucking financing for owner-operators with sub-580 credit. Panel lenders underwrite revenue and equipment in addition to FICO. Soft-pull match first; one hard pull only with the lender you pick.",
+            "Truck financing for sub-650 FICO operators. Programs route from a 500 FICO across equipment loans, working capital, and repair loans. Soft-pull match.",
           url: PAGE_URL,
           serviceType: "Commercial trucking financing",
         })}

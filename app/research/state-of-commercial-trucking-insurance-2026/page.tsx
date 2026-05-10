@@ -4,17 +4,53 @@ import {
   JsonLd,
   article,
   breadcrumbList,
+  faqPage,
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title:
-    "State of Commercial Trucking Insurance 2026 — Dispatched Research",
+  title: "State of commercial trucking insurance 2026",
   description:
-    "Annual research report on the commercial-trucking insurance market: state legal-environment shifts, commodity hotspots, AM Best context, broker market shape, and what we're watching for 2026.",
+    "Annual research on commercial trucking insurance: state legal-environment shifts, commodity hotspots, AM Best context, and what we are watching for 2026.",
   alternates: {
     canonical: "/research/state-of-commercial-trucking-insurance-2026",
   },
+  openGraph: {
+    title: "State of commercial trucking insurance 2026",
+    description:
+      "Annual research on commercial trucking insurance: state legal-environment shifts, commodity hotspots, AM Best context, and what we are watching for 2026.",
+    url: "/research/state-of-commercial-trucking-insurance-2026",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "State of commercial trucking insurance 2026",
+    description:
+      "Annual research on commercial trucking insurance: state legal-environment shifts, commodity hotspots, AM Best context, and what we are watching for 2026.",
+  },
 };
+
+const researchFaqs = [
+  {
+    q: "What does the State of Commercial Trucking Insurance 2026 report cover?",
+    a: "The report covers the structural state of the commercial-trucking insurance market entering 2026: state-level legal-environment shifts (nuclear verdict trends, tort reform), commodity-class pricing hotspots, AM Best capacity moves on the major carriers, the broker and MGA market shape, and the open underwriting questions the team is watching going into the year. Source-cited and regulator-anchored.",
+  },
+  {
+    q: "Where does the data in the report come from?",
+    a: "Public regulator filings (state DOI rate filings, NAIC), American Transportation Research Institute (ATRI) annual operational-cost surveys, AM Best public filings, FMCSA SAFER and CSA data, and named broker and carrier interviews. The report does not use proprietary feeds. Every chart and claim is cited inline and a full source list runs at the end.",
+  },
+  {
+    q: "How often is the report updated?",
+    a: "The headline State of Commercial Trucking Insurance report is annual — the 2026 edition publishes in Q1 2026 and is locked through Q4 2026. Quarterly updates publish at /research and address material changes (a major rate filing, a carrier withdrawal, a Supreme Court ruling on a relevant tort case) without rewriting the headline report.",
+  },
+  {
+    q: "Is the report free to read?",
+    a: "Yes. The full report is published on dispatched.finance with no paywall, no email gate, and no PDF lockbox. Source files for charts are linked alongside each chart for analysts who want to verify the data themselves.",
+  },
+  {
+    q: "Can I cite or republish the report?",
+    a: "Yes, with attribution. Cite as \"Dispatched, State of Commercial Trucking Insurance 2026\" with a link back to the canonical URL. Republishing charts is permitted with the same attribution. For excerpts longer than 500 words or for commercial republication (paid newsletters, paid research products), email the editorial team for written permission.",
+  },
+];
 
 const SOURCES: ReadonlyArray<{ label: string; url: string }> = [
   {
@@ -87,6 +123,7 @@ export default function StateOfTruckingInsurance2026() {
           dateModified: today,
         })}
       />
+      <JsonLd payload={faqPage(researchFaqs)} />
 
       <main id="main-content">
         <div className="research-container">

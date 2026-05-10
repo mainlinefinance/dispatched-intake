@@ -12,43 +12,55 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title:
-    "Semi truck financing — Class 8 tractors — Dispatched",
+  title: "Semi truck financing — Class 8 truck loans",
   description:
-    "Class 8 semi truck financing for owner-operators and small fleets. Cascadias, Kenworths, Peterbilts, Volvos. Secured by the truck; 9% – 18% observed APR band. Soft-pull match first.",
+    "Class 8 semi truck loans for owner-operators and small fleets. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. See your rate today.",
   alternates: { canonical: "/semi-truck-financing" },
+  openGraph: {
+    title: "Semi truck financing — Class 8 truck loans",
+    description:
+      "Class 8 semi truck loans for owner-operators and small fleets. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. See your rate today.",
+    url: "/semi-truck-financing",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Semi truck financing — Class 8 truck loans",
+    description:
+      "Class 8 semi truck loans for owner-operators and small fleets. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. See your rate today.",
+  },
 };
 
 const PAGE_URL = "https://dispatched.finance/semi-truck-financing";
 
 const faqs = [
   {
-    q: "What's the difference between semi truck financing and general equipment financing?",
-    a: "Semi truck financing is a subset of equipment financing focused specifically on Class 8 tractors — the over-26,001-lbs heavy-duty trucks used for OTR freight. The lender mechanics are the same as general equipment financing (secured by the truck, lien held until paid off), but the panel routing, term lengths, and pricing reflect the specific equipment class. See /equipment-financing for the broader category that includes box trucks, trailers, and add-ons.",
+    q: "How much can I borrow for a semi truck?",
+    a: "Loans on the Dispatched panel for Class 8 tractors typically range from $40K for older sleeper trucks to $200K for newer day cabs and premium sleepers. The amount is set by the truck's appraised value, the down payment, and the operator's revenue. Lenders fund up to the appraised value minus down payment; they do not finance over-market sticker prices.",
   },
   {
-    q: "Can I finance a used Cascadia / Kenworth / Peterbilt / Volvo?",
-    a: "Yes. Used Class 8 tractors are routinely funded across our panel. Lenders look at year, mileage, and condition — not just model. Trucks under 5 years old with under 600,000 miles are the easiest to finance; older trucks or higher-mileage units route to a smaller subset and price closer to the high end of the observed 9% – 18% APR band. Pre-emissions trucks (pre-2010 EPA) and some early-2010s units have narrower availability because of resale value concerns.",
+    q: "What APR should I expect on a semi truck loan?",
+    a: "The observed equipment-loan panel range is 9% to 18% APR for tractors. Newer trucks (under 5 years), 600+ FICO, and a 15%+ down payment quote toward the low end. Trucks over 8 years old, sub-580 FICO, or zero-down structures quote toward the high end. The exact APR is on the term sheet before you sign.",
   },
   {
-    q: "What's the typical loan amount for semi truck financing?",
-    a: "Used Class 8 tractor purchases on our panel typically run $40K–$120K depending on year, model, mileage, and condition. New tractor purchases often exceed the published $25K–$250K loan range and route to separate products not shown on the landing page. Repair and equipment-upgrade loans against a truck you already own can run smaller.",
+    q: "Can I get semi truck financing with bad credit?",
+    a: "Yes. Programs route from a 500 FICO. The truck itself is collateral, so lenders on the Dispatched panel underwrite sub-650 borrowers more readily on tractors than on unsecured working capital. Sub-580 borrowers should plan for a higher APR, a larger down payment, and a shorter maximum term, but approval rates are higher than on unsecured products.",
   },
   {
-    q: "How much down payment will I need on a Class 8 truck?",
-    a: "Down payment requirements vary by credit band, time in business, and truck age. For seasoned operators (2+ years operating) with 680+ FICO buying a used truck under 5 years old, some lenders waive down payment entirely. For sub-680 borrowers or older trucks, expect 10%–20% down. The exact down payment requirement is on the term sheet before any hard pull.",
+    q: "Can I finance a used semi truck from a private seller?",
+    a: "Yes. The lender requires a clean title, a current inspection, and a bill of sale that matches the appraised value. Private-party deals close more slowly than dealer sales because the title has to be pulled and the lien recorded before funds release. Plan for an extra 3 to 5 banking days versus a dealer transaction.",
   },
   {
-    q: "Can I finance a Class 8 truck as a new-authority operator?",
-    a: "Yes, with caveats. Equipment financing for first-truck Class 8 purchases by new-authority operators routes to a narrower subset of the panel, with higher down payments (often 20%+) and shorter terms (24–36 months instead of 48–60). See /new-authority-truck-financing for a deeper read on the under-12-month-authority routing.",
+    q: "What down payment do I need on a semi truck loan?",
+    a: "Most semi truck loans on the Dispatched panel fund with 10% to 20% down. Zero-down and first-payment-deferred structures exist for operators with strong revenue history. Higher down payments lower the APR and shorten the term needed to keep the monthly payment manageable for the operation's revenue.",
   },
   {
-    q: "Will the lender pay the dealer directly?",
-    a: "Usually yes for dealer purchases. Most semi truck loans on our panel are issued direct-to-dealer with title work coordinated between the lender, the dealer, and the borrower. For private-party purchases (auctions, marketplace sales, direct-from-driver deals), lenders typically wire to escrow or to the seller after title transfer. Disbursement method is on the term sheet.",
+    q: "How long can I finance a semi truck for?",
+    a: "Terms run 24 to 72 months for tractors. Newer trucks (under 4 years) support the full 72 months; trucks 5 to 8 years old typically cap at 48 to 60 months; trucks over 8 years cap at 36 months. The lender sets the maximum term based on the truck's expected residual value at payoff.",
   },
   {
-    q: "What documents will I need?",
-    a: "Last 3 months of business bank statements, EIN or SSN, DOT number, driver's license. For the equipment loan: bill of sale or dealer purchase quote, vehicle inspection report (some lenders require for trucks over 7 years old), and most-recent Schedule C or 1120 for loans over $75K. The lender may also request a copy of the title or an independent appraisal for older equipment.",
+    q: "Do I need to be incorporated to finance a semi truck?",
+    a: "No. Sole proprietors with an active DOT and MC number qualify on the Dispatched panel. LLCs and S-corps with two-plus years operating history typically see a slightly lower APR because the lender can underwrite the entity's bank statements directly. Both structures fund.",
   },
 ];
 
@@ -78,9 +90,8 @@ export default function SemiTruckFinancingPage() {
       <JsonLd payload={faqPage(faqs)} />
       <JsonLd payload={financialService({
         name: "Semi-Truck Financing",
-        // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
         description:
-          "Class 8 semi-truck financing for owner-operators and small fleets — Cascadias, Kenworths, Peterbilts, Volvos, Macks. Secured by the truck; 9% – 18% observed APR band. Soft-pull match first.",
+          "Class 8 semi-truck loans for owner-operators and small fleets. Panel APR 9% to 18%, terms to 72 months, FICO from 500, soft-pull match.",
         url: PAGE_URL,
         serviceType: "Commercial trucking equipment financing",
       })} />

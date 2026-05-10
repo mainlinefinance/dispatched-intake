@@ -5,14 +5,59 @@ import {
   JsonLd,
   article,
   breadcrumbList,
+  faqPage,
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Methodology — Dispatched",
+  title: "Methodology — how Dispatched matches you",
   description:
-    "How Dispatched defines, sources, and refreshes the structural promises and rate context it publishes. Trucking finance and commercial trucking insurance methodology in one place.",
+    "How Dispatched defines, sources, and refreshes the rate ranges and structural promises it publishes. Finance and insurance methodology in one place.",
   alternates: { canonical: "/methodology" },
+  openGraph: {
+    title: "Methodology — how Dispatched matches you",
+    description:
+      "How Dispatched defines, sources, and refreshes the rate ranges and structural promises it publishes. Finance and insurance methodology in one place.",
+    url: "/methodology",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Methodology — how Dispatched matches you",
+    description:
+      "How Dispatched defines, sources, and refreshes the rate ranges and structural promises it publishes. Finance and insurance methodology in one place.",
+  },
 };
+
+const methodologyFaqs = [
+  {
+    q: "How does Dispatched match operators to lenders?",
+    a: "The intake form collects the underwriting fields lenders care about — monthly business deposits, time in business, FICO band, equipment type, and what the funds are for. The matching engine routes the application to the lenders on the panel whose published appetite rules accept the operator's profile. The operator sees a shortlist of 2 to 4 matched lenders and picks one to move forward with.",
+  },
+  {
+    q: "Where do the panel APR ranges come from?",
+    a: "The 14% to 34% working-capital range and 9% to 18% equipment-loan range are the observed band of APRs that lenders on the Dispatched panel have actually quoted to funded borrowers over the trailing 12 months. The ranges are not a forecast and not a guarantee — they are descriptive of what the panel has done. Bands are reviewed quarterly and updated when the underlying data shifts materially.",
+  },
+  {
+    q: "What underwriting signals do the panel lenders weight most?",
+    a: "For working capital and repair loans: monthly business deposits, deposit consistency over the trailing 3 to 6 months, debt service coverage ratio (DSCR), and time in business. FICO is secondary. For equipment loans: the asset's appraised value and remaining useful life, the operator's down payment, and revenue. For factoring: the broker's credit, not the operator's.",
+  },
+  {
+    q: "Is Dispatched a direct lender?",
+    a: "No. Dispatched is a matching platform. Loans are originated and funded by the lenders on the panel. Dispatched is paid a referral fee by the lender on funded loans — the operator pays nothing to apply, match, or receive a term sheet. Dispatched is also not a direct insurer; insurance quotes route to a named producer partner.",
+  },
+  {
+    q: "How is the lender panel curated?",
+    a: "Lenders are vetted on three dimensions before joining the panel: licensing and disclosure compliance in the states they fund, transparent fee and APR disclosure on term sheets, and willingness to underwrite trucking-specific signals (DOT, MC, settlement statements) instead of generic small-business templates. Lenders that price-gouge or bury fees in the fine print are removed from the panel.",
+  },
+  {
+    q: "Does Dispatched accept compensation that biases the match?",
+    a: "Lenders pay Dispatched on funded loans, but the matching engine routes on appetite fit, not on pay rate. The shortlist returned to the operator is the set of lenders whose published appetite accepts the operator's profile — it is not sorted by which lender pays Dispatched the most. Operators always see at least 2 lenders to compare, where 2 or more pass appetite.",
+  },
+  {
+    q: "How often are the rate ranges and program rules updated?",
+    a: "The panel APR ranges are reviewed quarterly against the trailing 12 months of funded-loan data. Program rules (FICO floors, loan amount bands, document requirements) are updated within 14 days of a material panel change — for example, if a lender exits the panel or changes their FICO floor. Updates are reflected on this page and on the affected money pages.",
+  },
+];
 
 export default function MethodologyPage() {
   const today = new Date().toISOString().slice(0, 10);
@@ -34,6 +79,7 @@ export default function MethodologyPage() {
           dateModified: today,
         })}
       />
+      <JsonLd payload={faqPage(methodologyFaqs)} />
 
       <main id="main-content">
         <section className="ins-hero">

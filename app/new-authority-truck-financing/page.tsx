@@ -12,43 +12,55 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title:
-    "New authority truck financing — Dispatched",
+  title: "New authority truck financing — under 12mo",
   description:
-    "Trucking financing for owner-operators in the first year of MC authority. Narrower panel than seasoned operators; factoring is often the right first product. Soft-pull match first.",
+    "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match. Apply now.",
   alternates: { canonical: "/new-authority-truck-financing" },
+  openGraph: {
+    title: "New authority truck financing — under 12mo",
+    description:
+      "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match. Apply now.",
+    url: "/new-authority-truck-financing",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "New authority truck financing — under 12mo",
+    description:
+      "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match. Apply now.",
+  },
 };
 
 const PAGE_URL = "https://dispatched.finance/new-authority-truck-financing";
 
 const faqs = [
   {
-    q: "What counts as 'new authority' on this panel?",
-    a: "New authority generally means under 12 months from the date your USDOT or MC authority went active. Some lenders draw the line at 6 months. Operating history before authority (driving as a company driver, leased to a carrier) doesn't count toward the under-authority clock for most panel lenders, though some weigh it positively in underwriting.",
+    q: "Can I get truck financing with new MC authority?",
+    a: "Yes. The Dispatched panel includes lenders who specifically underwrite operators under 12 months of MC authority. Programs are narrower than for seasoned operators — primarily equipment-secured loans and smaller working-capital lines — and expect a higher APR and a larger down payment requirement until the revenue history matures past the 12-month mark.",
   },
   {
-    q: "Why is new authority harder to finance?",
-    a: "Most commercial lenders use 12–24 months of independent operating history as a baseline underwriting input. Without that history, lenders are pricing on credit and equipment alone, which produces a smaller panel and higher rates. The panel that does fund new-authority operators specializes in this segment and typically requires either factoring (where the broker's credit substitutes for the trucker's history) or higher-down-payment equipment financing.",
+    q: "How long do I need to have my MC authority before I can borrow?",
+    a: "There is no fixed minimum on the Dispatched panel; lenders underwrite as early as the first month of active authority if the operator has trucking-related industry experience (prior W-2 driving, dispatched fleet ownership, or prior owner-operator history). Operators with zero prior trucking experience and a brand-new authority typically wait 90 to 180 days of revenue before lenders fund.",
   },
   {
-    q: "What's the most common product for a new-authority operator?",
-    a: "Invoice factoring. The factor underwrites the broker's credit (the entity paying the invoice) rather than the trucker's operating history, which makes factoring available to operators that traditional lenders won't fund yet. Many new-authority owner-ops use factoring for their first 6–12 months and graduate to working-capital lines once they have a track record.",
+    q: "What revenue do I need with a new authority?",
+    a: "Most working-capital programs require a minimum of $15K to $20K in monthly business deposits over the trailing three months — the same threshold as seasoned operators. Equipment loans size against the asset, not against revenue minimums. New-authority operators below the working-capital threshold should start with equipment-secured products or factoring.",
   },
   {
-    q: "Can I finance my first truck purchase as a new-authority operator?",
-    a: "Yes, but with caveats. Equipment financing for first-truck purchases by new-authority operators routes to a smaller subset of the panel — typically lenders that fund this segment with higher down payments (often 20%+ for sub-680 credit) and shorter loan terms. The truck's age and condition matter more than for seasoned operators because the equipment is the lender's primary collateral.",
+    q: "What APR should I expect as a new authority?",
+    a: "Expect rates at the higher end of the panel ranges. Working capital quotes toward the 24% to 34% APR end of the 14% to 34% range; equipment-secured quotes toward the 14% to 18% APR end of the 9% to 18% range. As your operating history extends past 12 and 24 months, the same panel re-prices toward the lower end on subsequent applications.",
   },
   {
-    q: "What credit score do I need as a new-authority operator?",
-    a: "Credit weighs more heavily for new-authority files because operating history is the missing input. The 500 FICO panel floor still applies, but rates land toward the high end of every observed band. 620+ noticeably widens the panel; 680+ unlocks pricing closer to the seasoned-operator equivalent.",
+    q: "Can I get equipment financing as a new authority?",
+    a: "Yes. Equipment-secured loans are the most accessible product for new authorities because the financed truck or trailer is collateral. Expect a 15% to 25% down payment requirement (versus 10% to 15% for seasoned operators) and a maximum term tied to the equipment's expected residual value at payoff. New-authority operators routinely fund tractors, trailers, and box trucks.",
   },
   {
-    q: "Will applying hurt my credit?",
-    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your credit score. A hard pull only happens after you pick a specific lender (or factor) and move forward.",
+    q: "What documents do I need as a new authority?",
+    a: "Three months of business bank statements (or whatever you have if the authority is younger than 90 days), your EIN, MC and DOT numbers, a driver's license, and your most recent personal tax return. The personal tax return helps lenders bridge the underwriting gap when business history is short. For equipment loans, also include the title or dealer purchase order.",
   },
   {
-    q: "What documents will I need?",
-    a: "MC authority letter from FMCSA, last 3 months of business bank statements (even if minimal), EIN or SSN, driver's license. For factoring applications, also a list of the brokers you're working with. For first-truck equipment purchases, the bill of sale or dealer quote. Some lenders may request the operating agreement if you're an LLC and the entity formation paperwork.",
+    q: "Why are most lenders declining my new authority application?",
+    a: "Most banks and dealer financing arms require 2 years of MC authority to fund. The Dispatched panel includes lenders who underwrite shorter histories because they evaluate revenue, equipment, and prior trucking experience instead of using authority age as a hard cutoff. That is the gap the new-authority program fills.",
   },
 ];
 
@@ -78,9 +90,8 @@ export default function NewAuthorityFinancingPage() {
       <JsonLd payload={faqPage(faqs)} />
       <JsonLd payload={financialService({
         name: "New Authority Truck Financing",
-        // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
         description:
-          "Trucking financing for owner-operators in the first year of MC authority. Narrower panel than seasoned operators; factoring and equipment financing are the most accessible products. Soft-pull match first.",
+          "Trucking financing for operators with new MC authority (under 12 months). Equipment loans and working capital programs, FICO from 500, soft-pull match.",
         url: PAGE_URL,
         serviceType: "Commercial trucking financing",
       })} />

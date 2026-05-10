@@ -12,43 +12,55 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title:
-    "Equipment financing for trucking — trucks, trailers, gear — Dispatched",
+  title: "Trucking equipment financing 9–18% APR",
   description:
-    "Equipment financing for commercial trucking: tractors, trailers, reefers, lift gates, ELDs. Secured by the equipment, longer terms than working capital. Soft-pull match first; one hard pull only with the chosen lender.",
+    "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. Get matched today.",
   alternates: { canonical: "/equipment-financing" },
+  openGraph: {
+    title: "Trucking equipment financing 9–18% APR",
+    description:
+      "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. Get matched today.",
+    url: "/equipment-financing",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trucking equipment financing 9–18% APR",
+    description:
+      "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. Get matched today.",
+  },
 };
 
 const PAGE_URL = "https://dispatched.finance/equipment-financing";
 
 const faqs = [
   {
-    q: "What kinds of equipment can be financed?",
-    a: "Class 8 tractors, day cabs, sleeper cabs, dry vans, reefers, flatbeds, step decks, lowboys, and box trucks are the dominant equipment types on our panel. Specialty trailers (tankers, bulk pneumatic, auto carriers) and add-ons (lift gates, ELDs, telematics, refrigeration units) are also financeable on most lenders, often as add-ons to the truck or trailer loan rather than standalone equipment.",
+    q: "What can I finance with a trucking equipment loan?",
+    a: "Any titled commercial vehicle or attached equipment used in the operation. Tractors, day cabs, sleepers, dry vans, reefers, flatbeds, dump trailers, lowboys, lift gates, APUs, and on-board reefer units all qualify. The lender takes a first-position lien on the financed asset, and the asset's market value supports a longer term and a lower APR than working capital.",
   },
   {
-    q: "How does equipment financing differ from a working-capital line?",
-    a: "Equipment financing is secured by the equipment being purchased; working capital is unsecured. The collateral changes the math: equipment loans typically have lower APRs (the marketing FAQ documents 9% – 18% APR for equipment loans secured by the truck, versus 14% – 34% for working capital), longer payback terms (24–60 months versus 6–24 months), and lower monthly payments. The trade-off is that the lender holds a lien on the equipment until the loan is paid off.",
+    q: "What APR should I expect on a trucking equipment loan?",
+    a: "The observed panel range is 9% to 18% APR for equipment loans secured by the financed asset. APR depends on credit band, age and mileage of the equipment, term length, and down payment. New equipment with a higher down payment and a 600+ FICO quotes toward the low end; older equipment, no down payment, or sub-580 FICO quotes toward the high end.",
   },
   {
-    q: "Can I finance a used truck?",
-    a: "Yes. Used Class 8 tractors are routinely financed on our panel; lenders look at the truck's age, mileage, and condition rather than only model year. Trucks more than 10 years old or with high mileage route to a smaller subset of the panel and price closer to the high end of the equipment-loan APR range. Salvage-title or rebuilt-title equipment is harder to finance and may not have a panel match.",
+    q: "How much down payment do I need on an equipment loan?",
+    a: "Most equipment loans on the Dispatched panel fund with 10% to 20% down. Programs exist for zero-down and first-payment-deferred structures depending on the asset, the operator's revenue history, and the lender. Higher down payments lower the APR and shorten the term needed to keep the monthly payment manageable.",
   },
   {
-    q: "How much down payment will I need?",
-    a: "Down payment requirements vary by lender, credit band, and equipment age. The published $25K–$250K range is the loan amount, not the purchase price; lenders often expect 10–20% down on used trucks for borrowers with 580–679 credit, and may waive down payment for stronger files (680+ FICO, 2+ years operating). The exact down payment requirement is on the term sheet before any hard pull.",
+    q: "Can I get equipment financing with bad credit?",
+    a: "Yes. Programs route from a 500 FICO. Equipment loans are easier to underwrite at lower credit bands than working capital because the lender holds collateral on the asset. Sub-580 borrowers should expect a higher APR, a larger down payment requirement, and a shorter maximum term, but approval rates are higher than on unsecured products.",
   },
   {
-    q: "Will the lender pay the seller directly?",
-    a: "Usually yes for dealer purchases — most equipment loans on our panel are issued direct-to-dealer with the title work coordinated between the lender, the dealer, and the borrower. For private-party purchases, lenders typically wire to an escrow or direct to the seller after title transfer, depending on state. The disbursement method is documented on the term sheet so you can see it before signing.",
+    q: "How long are typical trucking equipment loan terms?",
+    a: "Terms run 24 to 72 months for tractors and 24 to 60 months for trailers. Newer equipment supports the longer end; equipment over five years old typically caps at 48 months. The lender sets the maximum term based on the asset's expected residual value at payoff — a 2018 tractor financed in 2026 will not stretch to 72 months.",
   },
   {
-    q: "Will applying hurt my credit?",
-    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your credit score. A hard pull only happens after you pick a specific lender and move forward on their term sheet. Multiple hard pulls inside a 14-day rate-shopping window count as a single inquiry under standard credit-bureau policies.",
+    q: "Can I finance used equipment from a private seller?",
+    a: "Yes, with conditions. The lender requires a clean title, a current inspection (DOT or independent), and a bill of sale that matches the appraised value. Private-party sales close more slowly than dealer sales because the lender needs the title pulled and the lien recorded before funds release. Plan for an extra 3 to 5 banking days versus a dealer transaction.",
   },
   {
-    q: "What documents will I need?",
-    a: "The basics: last 3 months of business bank statements, EIN or SSN, DOT number, driver's license. For equipment loans we'll also need the bill of sale or purchase quote from the dealer/seller, and for loans over $75K the most-recent Schedule C or 1120. The lender may also request a vehicle inspection report or an independent appraisal for older equipment.",
+    q: "Will applying for equipment financing hurt my credit?",
+    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your score. A hard pull only happens after you pick a specific lender and move forward on their term sheet.",
   },
 ];
 
@@ -78,9 +90,8 @@ export default function EquipmentFinancingPage() {
       <JsonLd payload={faqPage(faqs)} />
       <JsonLd payload={financialService({
         name: "Equipment Financing",
-        // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
         description:
-          "Equipment financing for commercial trucking — tractors, trailers, reefers, lift gates, ELDs. Secured by the equipment, longer terms than working capital. Soft-pull match first; one hard pull only with the lender you pick.",
+          "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9% to 18%, terms to 72 months, FICO from 500, soft-pull match.",
         url: PAGE_URL,
         serviceType: "Commercial trucking equipment financing",
       })} />

@@ -3,14 +3,50 @@ import Link from "next/link";
 import TruckRepairCalculator from "@/components/calculators/TruckRepairCalculator";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
-import { JsonLd, article, breadcrumbList } from "@/components/seo/JsonLd";
+import { JsonLd, article, breadcrumbList, faqPage } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Truck repair financing calculator — Dispatched",
+  title: "Truck repair financing calculator — fit",
   description:
-    "Estimate the right financing product for a truck repair. Five inputs, no credit pull, no personal info. Returns the Dispatched product category that fits and the typical APR band for your profile.",
+    "Estimate the right financing for a truck repair. Five inputs, no credit pull, no personal info. Returns the product fit and typical APR for your profile.",
   alternates: { canonical: "/calculators/truck-repair" },
+  openGraph: {
+    title: "Truck repair financing calculator — fit",
+    description:
+      "Estimate the right financing for a truck repair. Five inputs, no credit pull, no personal info. Returns the product fit and typical APR for your profile.",
+    url: "/calculators/truck-repair",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Truck repair financing calculator — fit",
+    description:
+      "Estimate the right financing for a truck repair. Five inputs, no credit pull, no personal info. Returns the product fit and typical APR for your profile.",
+  },
 };
+
+const truckRepairCalcFaqs = [
+  {
+    q: "How do I use the truck repair financing calculator?",
+    a: "Enter five inputs: the shop's repair quote, the truck's age, your monthly business revenue range, your FICO band, and whether the truck is paid off. The calculator returns the Dispatched product category that fits (working-capital repair loan, equipment-secured refinance, or pay-cash recommendation) and the typical panel APR range for borrowers with your profile.",
+  },
+  {
+    q: "When does the calculator recommend financing versus paying cash?",
+    a: "The calculator recommends financing when the repair cost exceeds roughly one month of net operating income or when paying cash would drain reserves below a 30-day operating buffer. It recommends paying cash when the repair is a fraction of monthly net and reserves are healthy — the financing fee on a small repair often costs more than the cashflow benefit.",
+  },
+  {
+    q: "What APR should I expect on a truck repair loan?",
+    a: "The observed panel range is 14% to 34% APR for working-capital-style repair loans, and 9% to 18% APR when the repair is rolled into an equipment-secured product on a tractor with sufficient remaining value. The calculator shows which range applies to your profile based on the inputs.",
+  },
+  {
+    q: "Does the calculator pull my credit?",
+    a: "No. The calculator asks for a credit band (a range like \"580 to 619\"), not a specific score, and does not touch your credit file. Nothing about the calculator is reported to the credit bureaus.",
+  },
+  {
+    q: "When does the calculator tell me to replace the truck instead of repairing?",
+    a: "When the repair cost exceeds roughly 50% of the truck's current market value and the truck is older than 8 years, the calculator flags replacement as the math-favored path. The flag is directional — the operator's specific situation (lane fit, downtime cost, prior repair history on the same systems) often justifies repair even when the math marginally favors replacement.",
+  },
+];
 
 export default function TruckRepairCalculatorPage() {
   const today = new Date().toISOString().slice(0, 10);
@@ -36,6 +72,7 @@ export default function TruckRepairCalculatorPage() {
           dateModified: today,
         })}
       />
+      <JsonLd payload={faqPage(truckRepairCalcFaqs)} />
       <Nav />
       <main id="main-content" className="calc-page">
         <section className="calc-hero">

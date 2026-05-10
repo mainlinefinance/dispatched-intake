@@ -25,11 +25,23 @@ import {
    examples are explicitly composite, never "real loans". */
 
 export const metadata: Metadata = {
-  title:
-    "Truck repair loans for owner-operators and small fleets — Dispatched",
+  title: "Truck repair loans — same-day funding",
   description:
-    "Truck repair financing routed to lenders that fund owner-operators. No collateral beyond the truck. Soft-pull match first; one hard pull only with the lender you pick. Wire same banking day after lender sign-off.",
+    "Truck down? Get matched with repair lenders for $5K–$150K in same-banking-day funds. Soft pull, FICO from 500. Apply now or call (307) 317-0801.",
   alternates: { canonical: "/truck-repair-loans" },
+  openGraph: {
+    title: "Truck repair loans — same-day funding",
+    description:
+      "Truck down? Get matched with repair lenders for $5K–$150K in same-banking-day funds. Soft pull, FICO from 500. Apply now or call (307) 317-0801.",
+    url: "/truck-repair-loans",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Truck repair loans — same-day funding",
+    description:
+      "Truck down? Get matched with repair lenders for $5K–$150K in same-banking-day funds. Soft pull, FICO from 500. Apply now or call (307) 317-0801.",
+  },
 };
 
 const PAGE_URL = "https://dispatched.finance/truck-repair-loans";
@@ -37,32 +49,32 @@ const PAGE_URL = "https://dispatched.finance/truck-repair-loans";
 // SECTION: FAQ (also drives FAQPage JSON-LD)
 const faqs = [
   {
-    q: "Will a truck repair loan show up on my credit report?",
-    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your credit score. A hard pull only happens after you pick a specific lender and move forward on their term sheet. Multiple hard pulls inside a 14-day rate-shopping window count as a single inquiry under standard credit-bureau policies.",
+    q: "How fast can I get a truck repair loan?",
+    a: "Soft approval and lender match typically come back within 20 minutes of submitting the application. Funds hit your account the same banking day after the chosen lender countersigns, provided the wire lands before that bank's cutoff. If you apply after cutoff or on a weekend, funds settle the next banking day. The Dispatched workflow is built around the case where the truck is already at the shop and the operator needs the wire today.",
   },
   {
-    q: "Can the lender pay my repair shop directly?",
-    a: "Yes. Most truck-repair loans on our panel are issued direct-to-shop: the lender wires the funds to the shop after you've signed the term sheet and provided the repair quote and shop banking details. Some lenders will instead deposit funds in your business account and ask you to pay the shop. The disbursement method is set on the term sheet so you can see it before signing.",
+    q: "How much can I borrow for a truck repair?",
+    a: "The repair-loan band on the Dispatched panel is $5K to $150K. The right amount is normally the shop's written estimate plus a 15% buffer for parts that show up as the job opens up. Lenders underwrite based on revenue, deposit history, and equipment type — not a hard ceiling tied to the repair cost itself. Larger jobs that include an engine or transmission rebuild routinely fund at the upper end.",
   },
   {
-    q: "What if the repair is over $50,000?",
-    a: "Repairs over $50,000 are still financeable on our panel, but two of the three product fits become more relevant: an equipment loan secured by the truck you're repairing (longer payback, lower monthly payment) or a working-capital line if you have at least a year in business and meaningful monthly revenue. Use the truck repair calculator to see the fit for your specific amount and operator profile.",
+    q: "Can I get a truck repair loan with bad credit?",
+    a: "Yes. Programs route from a 500 FICO. Most banks decline below 650 because they underwrite on credit alone; the Dispatched panel underwrites on revenue, DSCR, equipment, and deposit history first, with FICO second. Sub-580 borrowers should expect rates toward the high end of the 14% to 34% APR working-capital range and tighter loan amounts.",
   },
   {
-    q: "Can I qualify with a 580 credit score?",
-    a: "Yes. The lenders on our panel underwrite on revenue and equipment, not just credit. The marketing FAQ states the panel routes applications starting at a 500 FICO; below 580 expect rates on the higher end of the observed panel range and a tighter maximum. Above 680 you qualify for the full product set. APR ranges and the methodology behind them are documented at /methodology.",
+    q: "Do I need a quote from the shop before applying?",
+    a: "No. You can apply with an estimated repair cost and refine the amount once the shop sends the written quote. The chosen lender funds the approved amount to your business account, and you pay the shop directly — Dispatched does not pay shops on the operator's behalf, and lenders do not require the invoice to be assigned to them.",
   },
   {
-    q: "How fast can the wire actually land?",
-    a: "Same banking day after the chosen lender signs off, when the wire instruction lands before that bank's cutoff. Wires that miss the cutoff settle the next banking day; weekend and federal-holiday wires settle the next banking day. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
+    q: "What APR should I expect on a truck repair loan?",
+    a: "The observed panel range is 14% to 34% APR for working-capital-style repair loans, and 9% to 18% APR when the repair is rolled into an equipment-secured product on a tractor with sufficient remaining value. The exact APR depends on credit band, time in business, monthly revenue, and lender underwriting. You see the exact APR, term, and total cost on the term sheet before signing.",
   },
   {
-    q: "What if my truck is on a lien?",
-    a: "An existing lien doesn't disqualify the application. Truck repair loans on our panel are typically unsecured (paid back from operations), so the existing lien on the equipment is unaffected. If the fit estimator routes you to equipment financing because of the repair size, the new loan would be secured by the same truck — in that case the lender will work with the existing lienholder on the priority and the new loan structure is documented on the term sheet before any hard pull.",
+    q: "Can I finance a repair on a truck I am still paying off?",
+    a: "Yes. The repair loan is an unsecured working-capital advance against the operation's revenue, not a lien against the truck itself. Existing financing on the tractor does not block the repair loan, though the chosen lender will ask about monthly debt service when sizing the offer.",
   },
   {
-    q: "What documents will I need to apply?",
-    a: "The basics: last 3 months of business bank statements, your EIN or SSN, your DOT number, and a driver's license. For loans over $75K we'll also ask for your most recent Schedule C or 1120 and current settlement statements from your carrier or broker. No business plan, no tax-preparer letter, no IFTA printouts unless a specific lender requests them.",
+    q: "Will applying for a truck repair loan hurt my credit?",
+    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your score. A hard pull only happens after you pick a specific lender and move forward on their term sheet.",
   },
 ];
 
@@ -100,9 +112,8 @@ export default function TruckRepairLoansPage() {
       <JsonLd
         payload={financialService({
           name: "Truck Repair Loans",
-          // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
           description:
-            "Same-day financing for emergency commercial truck repairs. Soft-pull pre-qualification, direct-to-shop disbursement, panel of trucking-friendly lenders that fund owner-operators and small fleets.",
+            "Same-banking-day financing for emergency commercial truck repairs from $5K to $150K. Soft-pull match, FICO from 500, routed to lenders that fund owner-operators.",
           url: PAGE_URL,
           serviceType: "Commercial trucking financing",
         })}
