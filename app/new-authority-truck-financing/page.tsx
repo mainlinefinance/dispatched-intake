@@ -98,7 +98,7 @@ export default function NewAuthorityFinancingPage() {
               Financing in your first year under your own authority.
             </h1>
             <p className="ins-hero-sub">
-              The first 6–12 months under your own MC authority are the
+              The first 6–12 months under your own <Link href="/glossary/mc-number">MC number</Link> are the
               hardest to finance. Most commercial lenders want 12+
               months of independent history; the panel that does fund
               new-authority operators specializes in this segment, and
@@ -127,9 +127,10 @@ export default function NewAuthorityFinancingPage() {
             <p className="ins-hero-sub">
               Two products dominate the new-authority segment on our
               panel: invoice factoring (where the factor underwrites the
-              broker&rsquo;s credit, not yours) and higher-down-payment
-              equipment financing (where the truck itself is the
-              lender&rsquo;s primary collateral). Working-capital lines
+              broker&rsquo;s credit, not yours) and higher-down-payment{" "}
+              <Link href="/glossary/equipment-loan">equipment loan</Link> financing
+              (where the truck itself is the lender&rsquo;s primary collateral).{" "}
+              <Link href="/glossary/working-capital">Working capital</Link> lines
               are typically not available to under-6-month operators and
               available only on a narrow panel for 6–12 month operators.
             </p>
@@ -138,10 +139,14 @@ export default function NewAuthorityFinancingPage() {
               end of every observed band because the lenders pricing for
               new authority are pricing for the absence of operating
               history. Once you cross 12 months, the full panel becomes
-              available and the same operator profile prices materially
-              lower. Most new-authority operators on our panel use
-              factoring through their first 6–12 months and then move to
-              working capital.
+              available — particularly once compliance items like the{" "}
+              <Link href="/glossary/boc-3">BOC-3</Link> process agent,{" "}
+              <Link href="/glossary/ucr">UCR</Link> registration,{" "}
+              <Link href="/glossary/irp">IRP</Link> apportionment, and{" "}
+              <Link href="/glossary/ifta">IFTA</Link> filings are clean —
+              and the same operator profile prices materially lower. Most
+              new-authority operators on our panel use factoring through
+              their first 6–12 months and then move to working capital.
             </p>
           </div>
         </section>
@@ -266,7 +271,7 @@ export default function NewAuthorityFinancingPage() {
             <span className="ins-eyebrow">How the money moves</span>
             <h2 className="ins-hero-title">From application to first advance.</h2>
             <ol className="product-process">
-              <li><strong>Application.</strong> Two minutes inside <Link href="/apply">/apply</Link>. MC authority date, the truck, brokers (if you have them). Soft-pull only.</li>
+              <li><strong>Application.</strong> Two minutes inside <Link href="/apply">/apply</Link>. MC authority date, your <Link href="/glossary/dot-number">DOT number</Link>, the truck, brokers (if you have them). Soft-pull only.</li>
               <li><strong>Soft-pull match.</strong> Redacted profile to the panel subset that funds new-authority operators (factors and the equipment-finance subset).</li>
               <li><strong>Offers.</strong> Factor agreements + equipment loan term sheets, side by side, before any hard pull or factoring agreement signature.</li>
               <li><strong>One commitment.</strong> Pick a factor or a lender. Factoring agreements aren&rsquo;t loans, but they are commitments — read the recourse clause.</li>

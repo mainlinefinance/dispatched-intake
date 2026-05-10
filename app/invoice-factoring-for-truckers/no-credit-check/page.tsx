@@ -145,7 +145,7 @@ export default function NoCreditCheckFactoringPage() {
               <strong>Factoring isn&rsquo;t borrowing — it&rsquo;s selling the invoice.</strong>
             </h3>
             <p className="ins-hero-sub">
-              When you take a working-capital loan, the lender hands you
+              When you take a <Link href="/glossary/working-capital">working capital</Link> loan, the lender hands you
               cash and you owe it back with interest. Your personal
               credit profile is the underwriting question — it&rsquo;s how
               the lender prices the risk of getting repaid.{" "}
@@ -154,7 +154,8 @@ export default function NoCreditCheckFactoringPage() {
               </Link>{" "}
               is structurally different. You&rsquo;re selling a paid
               load&rsquo;s receivable to a third party. The factor pays
-              you 90%–97% of the invoice face value today and waits to
+              you 90%–97% of the invoice face value today — the{" "}
+              <Link href="/glossary/advance-rate">advance rate</Link> — and waits to
               collect the full amount from your broker on the broker&rsquo;s
               normal payment terms. There&rsquo;s no loan, no APR, no
               balance owed by you. The cash you got is yours.
@@ -274,7 +275,8 @@ export default function NoCreditCheckFactoringPage() {
               <Link href="/apply?useCase=factoring&creditPull=soft">
                 /apply
               </Link>{" "}
-              is intentionally lightweight: MC#, DOT#, the brokers you
+              is intentionally lightweight: <Link href="/glossary/mc-number">MC number</Link>,{" "}
+              <Link href="/glossary/dot-number">DOT number</Link>, the brokers you
               haul for, average invoice size, and monthly volume. No
               SSN required to see which factors fit. The factor itself
               collects identity documents at onboarding (MC authority,
@@ -292,10 +294,11 @@ export default function NoCreditCheckFactoringPage() {
               first invoice typically funds within 24–72 hours. The
               gating items are broker verification (the factor
               confirms the broker has a good credit file and accepts
-              factor relationships) and the Notice of Assignment going
+              factor relationships), filing of a <Link href="/glossary/ucc-1">UCC-1</Link> against
+              your receivables, and the Notice of Assignment going
               out (the legal document that redirects the broker&rsquo;s
               payment to the factor). Once those clear, the first
-              invoice advance hits your account.
+              invoice advance hits your account by <Link href="/glossary/ach">ACH</Link>.
             </p>
             <h3 className="ins-hero-sub">
               <strong>Funding speed thereafter — same-day on most loads.</strong>
@@ -322,7 +325,7 @@ export default function NoCreditCheckFactoringPage() {
               <strong>Recourse: factor checks broker credit; you eat losses if they don&rsquo;t pay.</strong>
             </h3>
             <p className="ins-hero-sub">
-              In a recourse contract, the factor still vets the
+              In a <Link href="/glossary/recourse-factoring">recourse factoring</Link> contract, the factor still vets the
               broker, but you&rsquo;re the one on the hook if the
               broker goes insolvent before paying the invoice. The
               upside is rate — recourse factoring is the cheapest
@@ -335,7 +338,7 @@ export default function NoCreditCheckFactoringPage() {
               <strong>Non-recourse: factor takes the credit risk; rate is 0.5–1% higher.</strong>
             </h3>
             <p className="ins-hero-sub">
-              In a non-recourse contract, the factor absorbs the loss
+              In a <Link href="/glossary/non-recourse-factoring">non-recourse factoring</Link> contract, the factor absorbs the loss
               if the broker goes bankrupt. You walk away clean even
               when the receivable doesn&rsquo;t collect. The trade-off
               is the fee — non-recourse runs 0.5%–1% higher than

@@ -99,10 +99,11 @@ export default function EquipmentFinancingPage() {
               Equipment financing for trucks, trailers, and trucking gear.
             </h1>
             <p className="ins-hero-sub">
-              Secured by the equipment, longer payback than working
-              capital, lower monthly payment. We route to lenders that
-              fund Class 8 tractors, trailers, reefers, lift gates, and
-              ELDs without the bank&rsquo;s two-year DSCR test.
+              Secured by the equipment, longer payback than{" "}
+              <Link href="/glossary/working-capital">working capital</Link>,
+              lower monthly payment. We route to lenders that
+              fund Class 8 tractors, trailers, <Link href="/glossary/reefer">reefers</Link>,
+              lift gates, and <Link href="/glossary/eld">ELDs</Link> without the bank&rsquo;s two-year DSCR test.
             </p>
             <div className="product-hero-ctas">
               <Link
@@ -127,11 +128,14 @@ export default function EquipmentFinancingPage() {
             <span className="ins-eyebrow">The short answer</span>
             <h2 className="ins-hero-title">What equipment financing covers.</h2>
             <p className="ins-hero-sub">
-              Equipment financing is a secured commercial loan: the lender
+              Equipment financing is a secured commercial loan — a classic{" "}
+              <Link href="/glossary/equipment-loan">equipment loan</Link> structure where the lender
               holds a lien on the equipment until the loan is paid off, in
               exchange for a longer payback term and a lower APR than an
               unsecured working-capital line of the same amount. On our
-              panel, equipment financing covers tractors, trailers, refer
+              panel, equipment financing covers tractors,{" "}
+              <Link href="/glossary/dry-van">dry vans</Link>,{" "}
+              <Link href="/glossary/flatbed">flatbeds</Link>, reefer
               units, lift gates, ELDs, telematics, and most other
               revenue-generating trucking equipment.
             </p>
@@ -143,6 +147,8 @@ export default function EquipmentFinancingPage() {
               APR band on our panel runs 9% – 18% versus the 14% – 34%
               band on working-capital lines (see{" "}
               <Link href="/methodology#finance-rates">methodology</Link>).
+              Most structures are fixed-payment <Link href="/glossary/term-loan">term loans</Link>;
+              a smaller subset offers a <Link href="/glossary/balloon-payment">balloon payment</Link> at maturity to keep monthly cost lower.
             </p>
           </div>
         </section>
@@ -171,8 +177,8 @@ export default function EquipmentFinancingPage() {
                 680+ unlocks the panel&rsquo;s best equipment-loan pricing.
               </li>
               <li>
-                <strong>Active DOT number.</strong> The borrower&rsquo;s
-                authority needs to be in good standing with FMCSA.
+                <strong>Active <Link href="/glossary/dot-number">DOT number</Link>.</strong> The borrower&rsquo;s
+                authority needs to be in good standing with <Link href="/glossary/fmcsa">FMCSA</Link>.
                 Recently revoked or out-of-service authorities go to a
                 smaller subset of lenders.
               </li>

@@ -126,14 +126,14 @@ export default function SemiTruckFinancingPage() {
               Semi truck financing is the Class 8 subset of equipment
               financing — secured by the truck, with the lender holding
               a lien until the loan is paid off. The structure is the
-              same as the broader equipment-loan product (
+              same as the broader <Link href="/glossary/equipment-loan">equipment loan</Link> product (
               <Link href="/equipment-financing">/equipment-financing</Link>),
               but the panel routing reflects the specific equipment
               class: term lengths, pricing, and down-payment
               expectations are calibrated to Class 8 resale dynamics.
             </p>
             <p className="ins-hero-sub">
-              The defining trade-off vs a working-capital line is the
+              The defining trade-off vs a <Link href="/glossary/working-capital">working capital</Link> line is the
               lien. Equipment financing has a security interest in the
               truck; selling or replacing the truck requires
               coordinating with the lender. In exchange, the
@@ -152,8 +152,9 @@ export default function SemiTruckFinancingPage() {
             <ul className="product-list">
               <li>
                 <strong>Freightliner Cascadia.</strong> The most-
-                financed Class 8 tractor on our panel by volume. Wide
-                lender availability across model years 2018–2024;
+                financed Class 8 tractor on our panel by volume — the
+                workhorse for <Link href="/glossary/otr">OTR</Link> sleeper operations.
+                Wide lender availability across model years 2018–2024;
                 pre-2018 routes to a smaller subset.
               </li>
               <li>
@@ -241,8 +242,9 @@ export default function SemiTruckFinancingPage() {
               <div className="product-example-meta">
                 <span className="product-example-label">Operator</span>
                 <span className="product-example-value">
-                  Owner-operator, 1 truck, 3 years operating under own
-                  authority, FICO 695, $60K monthly revenue.
+                  <Link href="/glossary/owner-operator">Owner-operator</Link>, 1 truck, 3 years operating under own
+                  authority with an active <Link href="/glossary/mc-number">MC number</Link> and{" "}
+                  <Link href="/glossary/dot-number">DOT number</Link>, FICO 695, $60K monthly revenue.
                 </span>
               </div>
               <div className="product-example-meta">

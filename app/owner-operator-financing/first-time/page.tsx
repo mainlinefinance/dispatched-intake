@@ -170,7 +170,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               your first loan.
             </h1>
             <p className="ins-hero-sub">
-              New CDL, new authority, no business history? Here&rsquo;s
+              New <Link href="/glossary/cdl-class-a">CDL</Link>, new authority, no business history? Here&rsquo;s
               what the Dispatched lender panel actually approves — and
               what it asks for instead of the two years of revenue most
               banks demand.
@@ -203,11 +203,11 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               The first-time operator&rsquo;s chicken-and-egg problem.
             </h2>
             <p className="ins-hero-sub">
-              Every first-time owner-operator hits the same wall: you need
+              Every first-time <Link href="/glossary/owner-operator">owner-operator</Link> hits the same wall: you need
               a truck to make money, but you need money — or a track
               record of making it — to get a truck. The traditional bank
               answer is &ldquo;come back in two years.&rdquo; The dealer
-              answer is a lease-purchase that fails most of the time.
+              answer is a <Link href="/glossary/lease-purchase">lease-purchase</Link> that fails most of the time.
               There&rsquo;s a third path, and it&rsquo;s the one
               owner-operators on the Dispatched panel actually use.
             </p>
@@ -240,15 +240,15 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
 
             <h3>There&rsquo;s a middle path — equipment lenders that underwrite the truck plus you</h3>
             <p>
-              Equipment lenders on the Dispatched panel underwrite
+              <Link href="/glossary/equipment-loan">Equipment loan</Link> lenders on the Dispatched panel underwrite
               first-time operators by weighting two factors banks
               under-weight: the truck&rsquo;s collateral value, and your
               personal credit. The truck secures the loan, so the
               lender&rsquo;s downside is bounded by the resale market.
               Your personal credit and bank deposits give the lender
               enough signal to price the deal even without two years of
-              business books. That&rsquo;s how a CDL-holder with a fresh
-              MC# gets a $70K Cascadia financed at 14% APR over 60 months
+              business books. That&rsquo;s how a CDL-holder with a fresh{" "}
+              <Link href="/glossary/mc-number">MC number</Link> gets a $70K Cascadia financed at 14% APR over 60 months
               — a deal a bank would never write and a lease-purchase
               would bleed dry.
             </p>
@@ -287,8 +287,8 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
 
             <h3>Scenario B — CDL + DOT# (no MC# yet, hauling under a carrier)</h3>
             <p>
-              You drive under a carrier&rsquo;s authority — you have a
-              DOT# tied to that carrier, your CDL is current, you&rsquo;re
+              You drive under a carrier&rsquo;s authority — you have a{" "}
+              <Link href="/glossary/dot-number">DOT number</Link> tied to that carrier, your CDL is current, you&rsquo;re
               earning settlements but you don&rsquo;t hold operating
               authority. You&rsquo;re buying a truck to lease onto the
               same carrier (or jump to another). The panel underwrites

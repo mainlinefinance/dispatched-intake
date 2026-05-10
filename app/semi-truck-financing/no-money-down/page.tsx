@@ -124,7 +124,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
             <h3>What &ldquo;zero down&rdquo; actually means on a panel offer</h3>
             <p className="ins-hero-sub">
               Zero down means the lender funds 100% of the truck&rsquo;s
-              appraised value at signing. You wire nothing to the dealer or
+              appraised value at signing — a 100% <Link href="/glossary/advance-rate">advance rate</Link>. You wire nothing to the dealer or
               private seller out of pocket. The lender places a first-position
               lien on the title, registers it with the state, and you take
               possession. Taxes, registration, DOT inspection fees, and the
@@ -151,10 +151,11 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
               First: rolling the down payment into the loan by inflating the
               truck&rsquo;s sale price above book — you finance more, the
               dealer collects the same money, and you drive off underwater on
-              day one. Second: routing you to a lease-purchase program where
-              you never actually own the truck and the &ldquo;balloon&rdquo;
+              day one. Second: routing you to a <Link href="/glossary/lease-purchase">lease-purchase</Link> program where
+              you never actually own the truck and the{" "}
+              <Link href="/glossary/balloon-payment">balloon payment</Link>
               at the end is structured to push you into a refinance. Third:
-              a real zero-down loan, but only after a 700+ FICO and two
+              a real zero-down <Link href="/glossary/equipment-loan">equipment loan</Link>, but only after a 700+ FICO and two
               years of authority — the dealer just doesn&rsquo;t mention that
               in the ad.
             </p>
@@ -176,7 +177,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
 
             <h3>Profile A — 700+ FICO + 2 years authority + clean MVR</h3>
             <p className="ins-hero-sub">
-              The cleanest path. A 700-plus personal FICO, an MC number that
+              The cleanest path. A 700-plus personal FICO, an <Link href="/glossary/mc-number">MC number</Link> that
               has been active and unrevoked for at least 24 months, and a
               motor vehicle record with no DUIs, no major accidents in the
               last 36 months, and no more than one minor moving violation.
@@ -412,9 +413,11 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
               fund 100% of an asset to a borrower whose credit history
               suggests an elevated default rate. Lenders that will write
               this paper at all do so with three protections stacked on top
-              of each other: a personal guarantee, a UCC blanket lien on
+              of each other: a personal guarantee, a <Link href="/glossary/ucc-1">UCC-1</Link> blanket lien on
               the borrower&rsquo;s business assets, and an APR in the high
-              teens to low 20s. The monthly payment on a $75,000 truck at
+              teens to low 20s — often structured as a higher-cost{" "}
+              <Link href="/glossary/working-capital">working capital</Link> overlay rather than
+              a pure equipment loan. The monthly payment on a $75,000 truck at
               19% APR over 36 months is roughly $2,750 — on a credit
               profile that already correlates with thinner cash buffers.
               Most of these deals don&rsquo;t finish their term.

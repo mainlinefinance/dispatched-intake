@@ -8,6 +8,7 @@ import {
 import { getAllStates as getAllFinancingStates } from "@/lib/cities";
 import { getAllCities } from "@/lib/cities";
 import { getAllTerms } from "@/lib/data/glossary";
+import { getAllStateSlugs as getAllLenderStateSlugs } from "@/lib/data/lenders";
 
 const ORIGIN = "https://dispatched.finance";
 
@@ -227,11 +228,76 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/compare/apex-capital-vs-truckstop-go-capital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/otr-capital-vs-ecapital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/ecapital-vs-truckstop-go-capital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/triumph-vs-otr-capital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/rts-financial-vs-tbs-factoring`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/how-much-can-i-borrow-for-a-truck`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/whats-my-factoring-rate`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
     url: `${ORIGIN}/research/state-of-trucking-capital-2026`,
     lastModified: today,
     changeFrequency: "yearly",
     priority: 0.7,
   });
+
+  entries.push({
+    url: `${ORIGIN}/lenders`,
+    lastModified: today,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  });
+
+  for (const stateSlug of getAllLenderStateSlugs()) {
+    entries.push({
+      url: `${ORIGIN}/lenders/${stateSlug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    });
+  }
 
   entries.push({
     url: `${ORIGIN}/calculators/factoring-fee`,

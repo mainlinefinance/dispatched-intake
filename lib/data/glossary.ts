@@ -26,8 +26,11 @@ import "server-only";
    =========================================================================== */
 
 import { COMPLIANCE_EXTENDED_TERMS } from "./glossary/compliance-extended";
+import { COMPLIANCE_LICENSING_TERMS } from "./glossary/compliance-licensing";
 import { OPERATIONS_TERMS } from "./glossary/operations";
+import { OPERATIONS_EXTENDED_TERMS } from "./glossary/operations-extended";
 import { FINANCE_TERMS } from "./glossary/finance";
+import { FINANCE_EXTENDED_TERMS } from "./glossary/finance-extended";
 import { INSURANCE_RISK_TERMS } from "./glossary/insurance-risk";
 
 export type {
@@ -308,8 +311,11 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
 const TERMS: ReadonlyArray<GlossaryTerm> = [
   ...CORE_TERMS,
   ...COMPLIANCE_EXTENDED_TERMS,
+  ...COMPLIANCE_LICENSING_TERMS,
   ...OPERATIONS_TERMS,
+  ...OPERATIONS_EXTENDED_TERMS,
   ...FINANCE_TERMS,
+  ...FINANCE_EXTENDED_TERMS,
   ...INSURANCE_RISK_TERMS,
 ];
 

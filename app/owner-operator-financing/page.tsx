@@ -116,7 +116,8 @@ export default function OwnerOperatorFinancingPage() {
             </h1>
             <p className="ins-hero-sub">
               1099 sole-prop is the default profile on our panel, not the
-              exception. The lenders we route to underwrite ELD miles and
+              exception. The lenders we route to underwrite{" "}
+              <Link href="/glossary/eld">ELD</Link> miles and
               settlement statements, not the bank&rsquo;s two-year DSCR
               test. Whether the truck is down, the route is slow, or
               you&rsquo;re buying number two — the application flow is the
@@ -157,19 +158,22 @@ export default function OwnerOperatorFinancingPage() {
                 6–36 months. <Link href="/truck-repair-loans">Details</Link>.
               </li>
               <li>
-                <strong>Working capital.</strong> $25K–$250K line for fuel,
+                <strong><Link href="/glossary/working-capital">Working capital</Link>.</strong> $25K–$250K line for fuel,
                 payroll, tolls, insurance, and bridging slow months.
                 Repaid from receivables.
               </li>
               <li>
                 <strong>Equipment financing.</strong> Secured by the truck
-                or trailer being purchased or upgraded. Longer payback,
-                lower monthly payment.
+                or trailer being purchased or upgraded — a standard{" "}
+                <Link href="/glossary/equipment-loan">equipment loan</Link>{" "}
+                with longer payback and a lower monthly payment.
               </li>
               <li>
                 <strong>Invoice factoring.</strong> Cash advance against
                 outstanding invoices from your carrier or broker. Settles
-                in days, not weeks. Different cost structure from a loan.
+                in days, not weeks. Different cost structure from a loan —
+                see <Link href="/glossary/recourse-factoring">recourse factoring</Link>{" "}
+                for the typical fee and chargeback structure.
               </li>
             </ul>
           </div>
@@ -201,8 +205,8 @@ export default function OwnerOperatorFinancingPage() {
                 for the pre-revenue and pre-MC# routing.
               </li>
               <li>
-                <strong>Active DOT number.</strong> The driver&rsquo;s
-                authority needs to be in good standing with FMCSA.
+                <strong>Active <Link href="/glossary/dot-number">DOT number</Link>.</strong> The driver&rsquo;s
+                authority needs to be in good standing with <Link href="/glossary/fmcsa">FMCSA</Link>.
                 Recently revoked or out-of-service authorities go to a
                 smaller subset of lenders.
               </li>
@@ -234,7 +238,7 @@ export default function OwnerOperatorFinancingPage() {
                 PDF exports from online banking work.
               </li>
               <li>
-                <strong>EIN or SSN.</strong> Sole-prop applications use
+                <strong><Link href="/glossary/ein">EIN</Link> or SSN.</strong> Sole-prop applications use
                 SSN; LLCs and corporations use the EIN on file with the
                 IRS.
               </li>
@@ -286,8 +290,9 @@ export default function OwnerOperatorFinancingPage() {
               <div className="product-example-meta">
                 <span className="product-example-label">Operator</span>
                 <span className="product-example-value">
-                  Owner-operator, 1 Class 8 tractor, 4 years under own
-                  authority, primarily Texas–Midwest van freight, 660 FICO,
+                  <Link href="/glossary/owner-operator">Owner-operator</Link>, 1 Class 8 tractor, 4 years under own
+                  authority with an active <Link href="/glossary/mc-number">MC number</Link>,
+                  primarily Texas–Midwest van freight, 660 FICO,
                   $55K monthly revenue.
                 </span>
               </div>

@@ -127,13 +127,16 @@ export default function TruckingWorkingCapitalPage() {
             <span className="ins-eyebrow">The short answer</span>
             <h2 className="ins-hero-title">What working capital actually is.</h2>
             <p className="ins-hero-sub">
-              A trucking working-capital line is an unsecured commercial
+              A trucking <Link href="/glossary/working-capital">working capital</Link> line is an unsecured commercial
               loan in the $25K–$250K range that the borrower can use for
               any operational expense. The lender underwrites the
               operation&rsquo;s cashflow — bank-statement deposits over
               the last three months, time in business, credit band — and
-              the loan is repaid from operations over a fixed term, most
-              often 6 to 24 months.
+              the loan is repaid from operations over a fixed{" "}
+              <Link href="/glossary/term-loan">term loan</Link> schedule, most
+              often 6 to 24 months. Revolving structures (a{" "}
+              <Link href="/glossary/line-of-credit">line of credit</Link>) and asset-based{" "}
+              <Link href="/glossary/abl">ABL</Link> facilities are also available on a narrower subset of the panel.
             </p>
             <p className="ins-hero-sub">
               The defining trade-off vs equipment financing is the lien.
@@ -171,8 +174,8 @@ export default function TruckingWorkingCapitalPage() {
                 approved amount scales.
               </li>
               <li>
-                <strong>Active DOT number.</strong> Authority in good
-                standing with FMCSA.
+                <strong>Active <Link href="/glossary/dot-number">DOT number</Link>.</strong> Authority in good
+                standing with <Link href="/glossary/fmcsa">FMCSA</Link>.
               </li>
               <li>
                 <strong>Active business bank account.</strong> Lenders
@@ -217,8 +220,9 @@ export default function TruckingWorkingCapitalPage() {
               </li>
               <li>
                 <strong>Refinancing higher-cost debt</strong> —
-                consolidating MCAs or short-term advances into a single
-                lower-APR working-capital line.
+                consolidating <Link href="/glossary/mca">MCA</Link> advances or short-term financing into a single
+                lower-APR working-capital line. The new lender typically files a{" "}
+                <Link href="/glossary/ucc-1">UCC-1</Link> against business assets to perfect its position.
               </li>
             </ul>
           </div>
