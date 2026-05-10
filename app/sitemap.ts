@@ -176,6 +176,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/compare/apex-capital-vs-rts-financial`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/ecapital-vs-triumph-business-capital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/apex-capital-vs-tbs-factoring`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/otr-capital-vs-apex-capital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
     url: `${ORIGIN}/equipment-financing`,
     lastModified: today,
     changeFrequency: "monthly",
