@@ -37,13 +37,13 @@ export const metadata: Metadata = {
   title:
     "Trucking financing — working capital, equipment, repair loans — Dispatched",
   description:
-    "Compare nine trucking loan products: working capital, equipment, truck repair, invoice factoring, semi-truck, box-truck, owner-operator, new-authority, and bad-credit financing. Soft-pull match first.",
+    "9 trucking loan products: working capital, equipment, repair, factoring, semi-truck, owner-op, new-authority, bad-credit. Soft-pull first.",
   alternates: { canonical: "/trucking" },
   openGraph: {
     title:
       "Trucking financing — working capital, equipment, repair loans — Dispatched",
     description:
-      "Compare nine trucking loan products: working capital, equipment, truck repair, invoice factoring, semi-truck, box-truck, owner-operator, new-authority, and bad-credit financing. Soft-pull match first.",
+      "9 trucking loan products: working capital, equipment, repair, factoring, semi-truck, owner-op, new-authority, bad-credit. Soft-pull first.",
     url: "/trucking",
     type: "website",
   },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title:
       "Trucking financing — working capital, equipment, repair loans — Dispatched",
     description:
-      "Compare nine trucking loan products: working capital, equipment, truck repair, invoice factoring, semi-truck, box-truck, owner-operator, new-authority, and bad-credit financing. Soft-pull match first.",
+      "9 trucking loan products: working capital, equipment, repair, factoring, semi-truck, owner-op, new-authority, bad-credit. Soft-pull first.",
   },
 };
 
