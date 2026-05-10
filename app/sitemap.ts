@@ -6,8 +6,9 @@ import {
   getDeepMoneyPages,
 } from "@/lib/data/moneyPageIndex";
 import { getAllStates as getAllFinancingStates } from "@/lib/cities";
-import { getAllCities } from "@/lib/cities";
+import { getAllCities, LOW_COVERAGE_THRESHOLD } from "@/lib/cities";
 import { getAllTerms } from "@/lib/data/glossary";
+import { getAllPosts } from "@/lib/data/blog";
 import { getAllStateSlugs as getAllLenderStateSlugs } from "@/lib/data/lenders";
 
 const ORIGIN = "https://dispatched.finance";
@@ -107,6 +108,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly",
     priority: 0.7,
   });
+
+  entries.push({
+    url: `${ORIGIN}/blog`,
+    lastModified: today,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  });
+
+  for (const post of getAllPosts()) {
+    entries.push({
+      url: `${ORIGIN}/blog/${post.slug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    });
+  }
 
   entries.push({
     url: `${ORIGIN}/truck-repair-loans`,
@@ -366,6 +383,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: today,
       changeFrequency: "monthly",
       priority: 0.6,
+    });
+  }
+
+  for (const c of getAllCities()) {
+    // Skip low-coverage cities (matching the redirect in [city]/page.tsx).
+    if (c.stateLenderPanelCount < LOW_COVERAGE_THRESHOLD) continue;
+    entries.push({
+      url: `${ORIGIN}/lenders/${c.stateSlug}/${c.citySlug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.5,
     });
   }
 
