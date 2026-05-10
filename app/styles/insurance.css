@@ -492,6 +492,373 @@
 }
 
 /* ============================================================
+   /insurance pillar — Coverdash partnership rebuild
+   Hero, 3-step ribbon, embed surface, product comparison table,
+   carrier strip, FAQ, and section-level helpers. Layered on top
+   of the .ins-page namespace already established above.
+   ============================================================ */
+
+.ins-page .ins-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--color-steel-600);
+}
+
+/* Hero — large variant for the pillar */
+.ins-page .ins-hero--lg {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-12);
+}
+.ins-page .ins-hero--lg .ins-hero-title {
+  max-width: 22ch;
+}
+
+.ins-hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.ins-hero-stats {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-8) 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-3);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-6);
+  max-width: 880px;
+}
+.ins-hero-stats li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ins-hero-stats strong {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  line-height: 1;
+  letter-spacing: var(--tr-h2);
+  color: var(--color-ink-primary);
+  font-weight: 700;
+}
+.ins-hero-stats span {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-eyebrow);
+  color: var(--color-ink-tertiary);
+}
+
+/* Three-step ribbon */
+.ins-three-step {
+  list-style: none;
+  counter-reset: step;
+  padding: 0;
+  margin: var(--space-6) 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-4);
+}
+.ins-three-step li {
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.ins-three-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-trail-green);
+  color: var(--color-ink-inverse);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: var(--space-2);
+}
+.ins-three-step h3 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  letter-spacing: var(--tr-h3);
+  font-weight: 600;
+  color: var(--color-ink-primary);
+  margin: 0;
+}
+.ins-three-step p {
+  margin: 0;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-ink-secondary);
+}
+
+/* Quote section — host for the Coverdash embed */
+.ins-quote-section {
+  scroll-margin-top: var(--space-8);
+}
+
+/* Coverdash embed surface */
+.cd-embed {
+  margin-top: var(--space-6);
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+.cd-embed--iframe {
+  padding: 0;
+  overflow: hidden;
+}
+.cd-iframe {
+  display: block;
+  width: 100%;
+  min-height: 720px;
+  border: 0;
+  background: var(--color-bg-paper);
+}
+.cd-widget-mount {
+  min-height: 480px;
+}
+
+.cd-deeplink-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-eyebrow);
+  color: var(--color-steel-600);
+  margin: 0 0 var(--space-2);
+}
+.cd-deeplink-lead {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-ink-secondary);
+  margin: 0 0 var(--space-4);
+  max-width: 60ch;
+}
+.cd-deeplink-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-3);
+}
+.cd-deeplink-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--color-ink-primary);
+  transition: border-color var(--motion-hover) var(--ease-out);
+}
+.cd-deeplink-card:hover,
+.cd-deeplink-card:focus-visible {
+  border-color: var(--color-steel-400);
+}
+.cd-deeplink-card-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  color: var(--color-ink-primary);
+}
+.cd-deeplink-card-sub {
+  font-size: var(--fs-small);
+  line-height: var(--lh-small);
+  color: var(--color-ink-secondary);
+}
+.cd-deeplink-card-cta {
+  margin-top: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-eyebrow);
+  color: var(--color-steel-600);
+}
+
+/* Product comparison table */
+.ins-table-wrap {
+  margin-top: var(--space-6);
+  overflow-x: auto;
+}
+.ins-product-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-body);
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.ins-product-table thead {
+  background: var(--color-bg-surface);
+}
+.ins-product-table th,
+.ins-product-table td {
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+.ins-product-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.ins-product-table th {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-steel-400);
+}
+.ins-pt-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 200px;
+}
+.ins-pt-name a {
+  font-weight: 600;
+  color: var(--color-ink-primary);
+  text-decoration: none;
+}
+.ins-pt-name a:hover {
+  text-decoration: underline;
+}
+.ins-pt-sub {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-eyebrow);
+  color: var(--color-ink-tertiary);
+}
+.ins-pt-action {
+  text-align: right;
+  white-space: nowrap;
+}
+.ins-pt-link {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-eyebrow);
+  color: var(--color-steel-600);
+  text-decoration: none;
+}
+.ins-pt-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .ins-product-table thead {
+    display: none;
+  }
+  .ins-product-table,
+  .ins-product-table tbody,
+  .ins-product-table tr,
+  .ins-product-table td {
+    display: block;
+    width: 100%;
+  }
+  .ins-product-table tr {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-3);
+    padding: var(--space-3);
+  }
+  .ins-product-table td {
+    border: 0;
+    padding: var(--space-1) 0;
+  }
+  .ins-product-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-family: var(--font-mono);
+    font-size: var(--fs-small);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-steel-400);
+    margin-bottom: 2px;
+  }
+  .ins-pt-action {
+    text-align: left;
+  }
+}
+
+/* Carrier strip */
+.ins-carrier-strip {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-6) 0 var(--space-3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.ins-carrier-strip li {
+  padding: 8px var(--space-4);
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  color: var(--color-ink-primary);
+  font-weight: 500;
+}
+.ins-carrier-foot {
+  margin-top: var(--space-3);
+  font-size: var(--fs-small);
+  color: var(--color-ink-secondary);
+}
+
+/* State directory footer */
+.ins-state-foot {
+  margin-top: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-eyebrow);
+}
+
+/* FAQ */
+.ins-faq {
+  margin: var(--space-6) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 880px;
+}
+.ins-faq-item {
+  background: var(--color-bg-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-6);
+}
+.ins-faq-item dt {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  letter-spacing: var(--tr-h3);
+  color: var(--color-ink-primary);
+  margin: 0 0 var(--space-2);
+}
+.ins-faq-item dd {
+  margin: 0;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-ink-secondary);
+}
+
+/* ============================================================
    Product landing pages (/truck-repair-loans, future siblings).
    Layered on top of .ins-page so prose, sunken sections, and
    ins-eyebrow / ins-hero-title / ins-hero-sub all carry over.

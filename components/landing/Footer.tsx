@@ -19,6 +19,13 @@ export default function Footer() {
               <IconPhone size={16} />
               Call {PHONE_DISPLAY}
             </a>
+            <address className="footer-address">
+              12895 Josey Lane #124
+              <br />
+              Dallas, TX 75234
+              <br />
+              United States
+            </address>
           </div>
           <div className="col">
             <h3>Product</h3>
