@@ -139,6 +139,7 @@ export function financialProduct(args: {
    collapse references via @id, which strengthens entity recognition. */
 const ORG_ID = "https://dispatched.finance/#organization";
 const SITE_ID = "https://dispatched.finance/#website";
+const FOUNDER_ID = "https://dispatched.finance/about#angelo-orru-neto";
 
 export function organization(): JsonLdPayload {
   return {
@@ -159,6 +160,7 @@ export function organization(): JsonLdPayload {
     telephone: "+1-307-317-0801",
     email: "support@dispatched.finance",
     foundingDate: "2026",
+    founder: { "@id": FOUNDER_ID },
     address: {
       "@type": "PostalAddress",
       streetAddress: "1021 E Lincolnway, Ste 8858",
@@ -182,6 +184,42 @@ export function organization(): JsonLdPayload {
       "https://www.facebook.com/dispatchedfinance",
     ],
   };
+}
+
+/* Person schema for the founder. Lives on /about and is referenced from
+   organization() via founder → @id. Search engines collapse the reference
+   into a single entity-graph node, strengthening E-E-A-T signal for the
+   YMYL finance vertical (Google quality raters explicitly look for "who
+   runs this site" with a real human). */
+export function person(args: {
+  name: string;
+  jobTitle: string;
+  description: string;
+  imageUrl: string;
+  alumniOf?: string;
+  sameAs?: ReadonlyArray<string>;
+}): JsonLdPayload {
+  const payload: JsonLdPayload = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": FOUNDER_ID,
+    name: args.name,
+    jobTitle: args.jobTitle,
+    description: args.description,
+    url: "https://dispatched.finance/about",
+    image: args.imageUrl,
+    worksFor: { "@id": ORG_ID },
+  };
+  if (args.alumniOf) {
+    payload.alumniOf = {
+      "@type": "EducationalOrganization",
+      name: args.alumniOf,
+    };
+  }
+  if (args.sameAs && args.sameAs.length > 0) {
+    payload.sameAs = [...args.sameAs];
+  }
+  return payload;
 }
 
 export function website(): JsonLdPayload {

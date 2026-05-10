@@ -90,9 +90,7 @@ export default function Footer() {
             <h4>Company</h4>
             <ul>
               <li>
-                <span className="soon" aria-disabled="true">
-                  About Dispatched <span className="soon-tag">Soon</span>
-                </span>
+                <Link href="/about">About Dispatched</Link>
               </li>
               <li>
                 <a href="#how-it-works">How it works</a>

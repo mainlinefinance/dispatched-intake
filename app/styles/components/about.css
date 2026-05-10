@@ -1,0 +1,173 @@
+/* /about page — founder + company facts. Lean styles using the project
+   token system; no one-off hex values. */
+
+.about-page {
+  background: var(--color-bg-paper);
+  color: var(--color-ink-primary);
+}
+
+.about-main {
+  padding: var(--space-8) 0 var(--space-12);
+}
+
+.about-header {
+  max-width: 720px;
+  margin: var(--space-6) 0 var(--space-8);
+}
+
+.about-header h1 {
+  margin: 0 0 var(--space-3);
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: var(--tr-h1);
+}
+
+.about-lede {
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-body-lg);
+  color: var(--color-ink-secondary);
+  margin: 0;
+}
+
+.about-founder {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  padding: var(--space-8) 0;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .about-founder {
+    grid-template-columns: 320px 1fr;
+    gap: var(--space-8);
+  }
+}
+
+.about-founder-photo {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-bg-sunken);
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 320px;
+}
+
+.about-founder-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-founder-body h2 {
+  margin: 0 0 var(--space-1);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--tr-h2);
+}
+
+.about-founder-title {
+  color: var(--color-ink-tertiary);
+  margin: 0 0 var(--space-4);
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.about-founder-body p {
+  line-height: var(--lh-body);
+  margin: 0 0 var(--space-3);
+  max-width: 64ch;
+}
+
+.about-founder-links {
+  margin-top: var(--space-4);
+  font-size: var(--fs-small);
+  color: var(--color-ink-tertiary);
+}
+
+.about-founder-links a {
+  color: var(--color-steel-600);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.about-founder-links a:hover {
+  color: var(--color-steel-800);
+}
+
+.about-org {
+  padding: var(--space-8) 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.about-org h2 {
+  margin: 0 0 var(--space-6);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--tr-h2);
+}
+
+.about-org-facts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .about-org-facts {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+  }
+}
+
+.about-org-facts > div {
+  margin: 0;
+}
+
+.about-org-facts dt {
+  font-weight: 600;
+  font-size: var(--fs-eyebrow);
+  line-height: var(--lh-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-eyebrow);
+  color: var(--color-ink-tertiary);
+  margin: 0 0 var(--space-2);
+}
+
+.about-org-facts dd {
+  margin: 0;
+  line-height: var(--lh-body);
+}
+
+.about-org-facts a {
+  color: var(--color-steel-600);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.about-cta {
+  padding: var(--space-8) 0 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.about-cta h2 {
+  margin: 0 0 var(--space-3);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--tr-h2);
+}
+
+.about-cta p {
+  line-height: var(--lh-body);
+  margin: 0;
+  max-width: 64ch;
+}
+
+.about-cta a {
+  color: var(--color-steel-600);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
