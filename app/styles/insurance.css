@@ -92,6 +92,23 @@
   display: inline-block;
 }
 
+/* Methodology page — author byline. Small secondary text under the H1
+   that attributes the page to the founder and surfaces a stable
+   last-updated date. The date string itself comes from a constant in
+   app/methodology/page.tsx so the visible byline and the Article
+   schema dateModified can never drift. */
+.methodology-byline {
+  font-size: var(--fs-small);
+  color: var(--color-ink-tertiary);
+  margin: 0 0 var(--space-6);
+  padding-top: var(--space-3);
+}
+.methodology-byline a {
+  color: var(--color-steel-600);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* Product grid (pillar) */
 
 .ins-product-grid {
