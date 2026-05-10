@@ -132,11 +132,75 @@ export function organization(): JsonLdPayload {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://dispatched.finance/#organization",
     name: "Dispatched",
+    legalName: "Dispatched, Inc.",
     url: "https://dispatched.finance",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://dispatched.finance/opengraph-image",
+      width: 1200,
+      height: 630,
+    },
     description:
       "A matching platform for commercial trucking working capital and commercial trucking insurance. Operates two product lines: financing routed to a panel of commercial lenders, and insurance comparison routed to a named producer partner.",
+    telephone: "+1-307-317-0801",
+    areaServed: { "@type": "Country", name: "United States" },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+1-307-317-0801",
+      contactType: "customer service",
+      areaServed: "US",
+      availableLanguage: ["English"],
+    },
     sameAs: [],
+  };
+}
+
+export function financialService(args: {
+  name: string;
+  description: string;
+  url: string;
+  serviceType: string;
+  offerCatalog?: ReadonlyArray<{ name: string; url: string }>;
+}): JsonLdPayload {
+  const payload: JsonLdPayload = {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    name: args.name,
+    description: args.description,
+    url: args.url,
+    serviceType: args.serviceType,
+    provider: { "@id": "https://dispatched.finance/#organization" },
+    areaServed: { "@type": "Country", name: "United States" },
+  };
+  if (args.offerCatalog && args.offerCatalog.length > 0) {
+    payload.hasOfferCatalog = {
+      "@type": "OfferCatalog",
+      name: `${args.name} — products`,
+      itemListElement: args.offerCatalog.map((o) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: o.name, url: o.url },
+      })),
+    };
+  }
+  return payload;
+}
+
+export function insuranceAgency(args: {
+  name: string;
+  description: string;
+  url: string;
+}): JsonLdPayload {
+  return {
+    "@context": "https://schema.org",
+    "@type": "InsuranceAgency",
+    name: args.name,
+    description: args.description,
+    url: args.url,
+    provider: { "@id": "https://dispatched.finance/#organization" },
+    areaServed: { "@type": "Country", name: "United States" },
+    telephone: "+1-307-317-0801",
   };
 }
 

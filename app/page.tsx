@@ -10,7 +10,13 @@ import Nav from "@/components/landing/Nav";
 import ProductCards from "@/components/landing/ProductCards";
 import ProofSection from "@/components/landing/ProofSection";
 import TruckerVocab from "@/components/landing/TruckerVocab";
-import { JsonLd, organization, website } from "@/components/seo/JsonLd";
+import { homepageFaqs } from "@/components/landing/FAQ.data";
+import {
+  JsonLd,
+  faqPage,
+  organization,
+  website,
+} from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title:
@@ -24,6 +30,9 @@ export default function LandingPage() {
     <div className="landing">
       <JsonLd payload={organization()} />
       <JsonLd payload={website()} />
+      <JsonLd
+        payload={faqPage(homepageFaqs.map((f) => ({ q: f.q, a: f.aText })))}
+      />
       <Nav />
       <main id="main-content">
         <Hero />
