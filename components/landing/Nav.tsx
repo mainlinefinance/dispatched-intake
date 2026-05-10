@@ -13,7 +13,7 @@ export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
-  const truckingActive = pathname === "/" || pathname === "/trucking";
+  const truckingActive = pathname === "/" || pathname === "/trucking-working-capital";
   const insuranceActive =
     (pathname?.startsWith("/insurance") ?? false) ||
     (pathname?.startsWith("/carriers") ?? false);
@@ -38,7 +38,7 @@ export default function Nav() {
           <Logo />
           <div className="nav-links">
             <Link
-              href="/trucking"
+              href="/trucking-working-capital"
               className={truckingActive ? "active" : undefined}
               aria-current={truckingActive ? "page" : undefined}
             >
@@ -88,7 +88,7 @@ export default function Nav() {
         hidden={!mobileOpen}
       >
         <Link
-          href="/trucking"
+          href="/trucking-working-capital"
           onClick={close}
           className={truckingActive ? "active" : undefined}
           aria-current={truckingActive ? "page" : undefined}
