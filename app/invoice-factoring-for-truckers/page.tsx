@@ -102,8 +102,9 @@ export default function InvoiceFactoringPage() {
               advance instead of waiting 30–60 days for payment.
               Different product class than a loan: no APR, no monthly
               payment, no debt on the books — but the fee comes out of
-              the invoice. Recourse and non-recourse factoring routed
-              to a panel of trucking-specific factors.
+              the invoice. <Link href="/glossary/recourse-factoring">Recourse</Link>{" "}
+              and <Link href="/glossary/non-recourse-factoring">non-recourse factoring</Link>{" "}
+              routed to a panel of trucking-specific factors.
             </p>
             <div className="product-hero-ctas">
               <Link href="/apply?useCase=other" className="btn btn--primary btn--lg">
@@ -129,11 +130,14 @@ export default function InvoiceFactoringPage() {
               exchange for an immediate cash advance. The factor collects
               the full invoice amount from your broker or carrier when
               the invoice matures; you keep the difference between the
-              advance and the face value, minus the factoring fee.
+              <Link href="/glossary/advance-rate">{" "}advance rate</Link> and the face value, minus the factoring fee.
+              Verification of the load typically requires a clean{" "}
+              <Link href="/glossary/bol">bill of lading</Link> and proof of delivery (
+              <Link href="/glossary/pod">POD</Link>).
             </p>
             <p className="ins-hero-sub">
-              Mechanically that&rsquo;s very different from a working-
-              capital loan. There&rsquo;s no APR, no monthly payment, no
+              Mechanically that&rsquo;s very different from a <Link href="/glossary/working-capital">working capital</Link>{" "}
+              loan. There&rsquo;s no APR, no monthly payment, no
               debt on the balance sheet. The cost is the factoring fee
               (typically 1%–5% of invoice face value depending on broker
               payment terms and risk profile). The trade-off is that
@@ -276,8 +280,8 @@ export default function InvoiceFactoringPage() {
             <ol className="product-process">
               <li><strong>Application.</strong> Two minutes inside <Link href="/apply">/apply</Link>. Brokers, payment terms, average invoice size, time in business. Soft-pull where applicable.</li>
               <li><strong>Factor match.</strong> A redacted profile goes to the trucking factors most likely to fund your broker mix and ticket size.</li>
-              <li><strong>Onboarding.</strong> Notice of Assignment goes to your brokers; account setup; factoring agreement signed.</li>
-              <li><strong>First invoice.</strong> Submit a verified invoice; factor advances 90–98% of face value within 24 hours.</li>
+              <li><strong>Onboarding.</strong> Notice of Assignment goes to your brokers; account setup; factoring agreement signed. The factor files a <Link href="/glossary/ucc-1">UCC-1</Link> against your receivables and may route broker payments through a <Link href="/glossary/lockbox">lockbox</Link>.</li>
+              <li><strong>First invoice.</strong> Submit a verified invoice; factor advances 90–98% of face value within 24 hours, typically wired via <Link href="/glossary/ach">ACH</Link>.</li>
               <li><strong>Ongoing.</strong> Submit invoices as they&rsquo;re generated; factor advances and collects from the broker on the original payment terms.</li>
             </ol>
           </div>

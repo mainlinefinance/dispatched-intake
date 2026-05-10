@@ -118,7 +118,8 @@ export default function BoxTruckFinancingPage() {
             <p className="ins-hero-sub">
               Box-truck operations are not Class 8. Loan sizes are smaller,
               the equipment value is smaller, and the operator profile —
-              last-mile, hot-shot, expediting, intrastate freight — is its
+              last-mile, <Link href="/glossary/hot-shot">hot-shot</Link>,{" "}
+              <Link href="/glossary/expedited">expediting</Link>, intrastate freight — is its
               own thing. We match you with lenders who underwrite this
               operator profile by default, not as an exception.
             </p>
@@ -146,8 +147,10 @@ export default function BoxTruckFinancingPage() {
             <h2 className="ins-hero-title">What box truck financing covers.</h2>
             <p className="ins-hero-sub">
               &ldquo;Box truck financing&rdquo; is shorthand for three
-              distinct products on our panel — equipment financing for
-              buying or upgrading the truck itself, working capital for
+              distinct products on our panel — an{" "}
+              <Link href="/glossary/equipment-loan">equipment loan</Link> for
+              buying or upgrading the truck itself,{" "}
+              <Link href="/glossary/working-capital">working capital</Link> for
               fuel and operating expenses, and repair loans for keeping the
               truck running. Which one fits depends on what triggered the
               application: a truck purchase, an unexpected repair, or a
@@ -188,9 +191,10 @@ export default function BoxTruckFinancingPage() {
                 apply; panel routing narrows.
               </li>
               <li>
-                <strong>Active DOT number when required.</strong>{" "}
+                <strong>Active <Link href="/glossary/dot-number">DOT number</Link> when required.</strong>{" "}
                 Operations over 10,001 lbs GVW running interstate need an
-                active USDOT number in good standing. Intrastate
+                active USDOT number in good standing with{" "}
+                <Link href="/glossary/fmcsa">FMCSA</Link>. Intrastate
                 under-10,001 lbs operations may not need one and route
                 differently on the panel.
               </li>
@@ -223,7 +227,7 @@ export default function BoxTruckFinancingPage() {
                 PDF exports from online banking work.
               </li>
               <li>
-                <strong>EIN or SSN.</strong> Sole-prop applications use
+                <strong><Link href="/glossary/ein">EIN</Link> or SSN.</strong> Sole-prop applications use
                 SSN; LLCs and corporations use the EIN on file with the
                 IRS.
               </li>

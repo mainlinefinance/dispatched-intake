@@ -162,12 +162,13 @@ export default function TruckRepairLoansPage() {
               chosen lender&rsquo;s underwriting.
             </p>
             <p className="ins-hero-sub">
-              Repair loans on our panel are usually unsecured commercial
-              loans — the lender underwrites the operation&rsquo;s
+              Repair loans on our panel are usually short unsecured commercial{" "}
+              <Link href="/glossary/term-loan">term loans</Link> structured against{" "}
+              <Link href="/glossary/working-capital">working capital</Link> — the lender underwrites the operation&rsquo;s
               cashflow, not the equipment. That&rsquo;s the operational
               difference from equipment financing (where the truck itself
               is collateral). It&rsquo;s also the reason these loans fund
-              quickly: there&rsquo;s no UCC filing, no title work, no
+              quickly: there&rsquo;s no <Link href="/glossary/ucc-1">UCC-1</Link> filing, no title work, no
               equipment appraisal in the way of a wire.
             </p>
           </div>
@@ -182,8 +183,8 @@ export default function TruckRepairLoansPage() {
             </h2>
             <ul className="product-list">
               <li>
-                <strong>Active DOT number.</strong> The borrower&rsquo;s
-                authority needs to be in good standing with FMCSA.
+                <strong>Active <Link href="/glossary/dot-number">DOT number</Link>.</strong> The borrower&rsquo;s
+                authority needs to be in good standing with <Link href="/glossary/fmcsa">FMCSA</Link>.
                 Recently revoked or out-of-service authorities are routed
                 to a smaller subset of lenders that specialize in
                 rebuild-from-decline situations.
@@ -236,7 +237,7 @@ export default function TruckRepairLoansPage() {
                 originals.
               </li>
               <li>
-                <strong>EIN or SSN.</strong> Sole-prop applications use
+                <strong><Link href="/glossary/ein">EIN</Link> or SSN.</strong> Sole-prop applications use
                 SSN; LLCs and corporations use the EIN on file with the
                 IRS.
               </li>

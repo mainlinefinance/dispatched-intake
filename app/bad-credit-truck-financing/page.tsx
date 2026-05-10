@@ -197,8 +197,8 @@ export default function BadCreditTruckFinancingPage() {
                 revenue, panel routing widens.
               </li>
               <li>
-                <strong>Active DOT number.</strong> The borrower&rsquo;s
-                authority needs to be in good standing with FMCSA.
+                <strong>Active <Link href="/glossary/dot-number">DOT number</Link>.</strong> The borrower&rsquo;s
+                authority needs to be in good standing with <Link href="/glossary/fmcsa">FMCSA</Link>.
                 Recently revoked or out-of-service authorities go to a
                 smaller subset of lenders.
               </li>
@@ -230,16 +230,18 @@ export default function BadCreditTruckFinancingPage() {
               </li>
               <li>
                 <strong>Time in business.</strong> Crossing 12 months
-                opens working capital; crossing 36 months opens equipment
-                financing on the better-priced tier. Both are moves
+                opens <Link href="/glossary/working-capital">working capital</Link>; crossing 36 months opens{" "}
+                <Link href="/glossary/equipment-loan">equipment loan</Link> pricing
+                on the better-priced tier. Both are moves
                 you&rsquo;ll make once and benefit from for the next loan.
               </li>
               <li>
                 <strong>Lower amount, shorter term.</strong> A $20K loan
                 over 12 months is easier to underwrite for a sub-580
-                borrower than a $80K loan over 36. Asking for what you
-                actually need and choosing a shorter term tightens the
-                rate.
+                borrower than a $80K loan over 36. A short-duration{" "}
+                <Link href="/glossary/term-loan">term loan</Link> at the amount
+                you actually need tightens the rate versus a higher-cost{" "}
+                <Link href="/glossary/mca">MCA</Link> structure.
               </li>
               <li>
                 <strong>Co-signer with better credit.</strong> Some
@@ -251,7 +253,9 @@ export default function BadCreditTruckFinancingPage() {
                 <strong>Equipment as collateral.</strong> For
                 equipment-secured loans, the truck&rsquo;s value and
                 clean title pull the rate down materially versus an
-                unsecured working-capital line of the same amount.
+                unsecured working-capital line of the same amount. The
+                lender will file a <Link href="/glossary/ucc-1">UCC-1</Link> against
+                the truck to perfect the security interest.
               </li>
             </ul>
           </div>
