@@ -30,10 +30,16 @@ export type JsonLdPayload = {
 };
 
 export function JsonLd({ payload }: { payload: JsonLdPayload }) {
+  // Defense-in-depth: escape `<` to its unicode equivalent so a stray HTML
+  // sequence in any future schema field can't break out of the <script> tag.
+  // Per Next 16 official JSON-LD guide:
+  // node_modules/next/dist/docs/01-app/02-guides/json-ld.md
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(payload) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(payload).replace(/</g, "\\u003c"),
+      }}
     />
   );
 }
@@ -128,15 +134,53 @@ export function financialProduct(args: {
   };
 }
 
+/* Stable @id values — used to cross-reference entities in the JSON-LD graph
+   (e.g., a FinancialService can point provider → org @id). Search engines
+   collapse references via @id, which strengthens entity recognition. */
+const ORG_ID = "https://dispatched.finance/#organization";
+const SITE_ID = "https://dispatched.finance/#website";
+
 export function organization(): JsonLdPayload {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": ORG_ID,
     name: "Dispatched",
+    legalName: "TCopyCats LLC",
     url: "https://dispatched.finance",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://dispatched.finance/logo.png",
+      width: 512,
+      height: 512,
+    },
     description:
       "A matching platform for commercial trucking working capital and commercial trucking insurance. Operates two product lines: financing routed to a panel of commercial lenders, and insurance comparison routed to a named producer partner.",
-    sameAs: [],
+    telephone: "+1-307-317-0801",
+    email: "support@dispatched.finance",
+    foundingDate: "2026",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "1021 E Lincolnway, Ste 8858",
+      addressLocality: "Cheyenne",
+      addressRegion: "WY",
+      postalCode: "82001",
+      addressCountry: "US",
+    },
+    areaServed: { "@type": "Country", name: "United States" },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+1-307-317-0801",
+      email: "support@dispatched.finance",
+      contactType: "customer service",
+      areaServed: "US",
+      availableLanguage: ["English", "Spanish"],
+    },
+    sameAs: [
+      "https://www.linkedin.com/company/dispatched-finance",
+      "https://twitter.com/dispatchedfin",
+      "https://www.facebook.com/dispatchedfinance",
+    ],
   };
 }
 
@@ -144,12 +188,64 @@ export function website(): JsonLdPayload {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": SITE_ID,
     name: "Dispatched",
     url: "https://dispatched.finance",
-    publisher: {
-      "@type": "Organization",
-      name: "Dispatched",
-      url: "https://dispatched.finance",
+    publisher: { "@id": ORG_ID },
+  };
+}
+
+/* FinancialService — entity-level wrapper for a hub page that lists multiple
+   financing products under one service. Use on a hub like /trucking when one
+   exists; per-product pages keep using financialProduct(). */
+export function financialService(): JsonLdPayload {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "@id": "https://dispatched.finance/trucking#service",
+    name: "Trucking Financing",
+    url: "https://dispatched.finance/trucking-working-capital",
+    provider: { "@id": ORG_ID },
+    areaServed: { "@type": "Country", name: "United States" },
+    serviceType: "Commercial trucking financing",
+    description:
+      "Working capital, equipment financing, truck repair loans, invoice factoring, semi-truck financing, box truck financing, owner-operator and new-authority loans for U.S. truckers.",
+    audience: {
+      "@type": "BusinessAudience",
+      audienceType: "Owner-operators and small fleet truckers",
     },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Trucking Loan Products",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Truck Repair Loans", url: "https://dispatched.finance/truck-repair-loans" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Working Capital", url: "https://dispatched.finance/trucking-working-capital" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Equipment Financing", url: "https://dispatched.finance/equipment-financing" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Invoice Factoring", url: "https://dispatched.finance/invoice-factoring-for-truckers" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Semi-Truck Financing", url: "https://dispatched.finance/semi-truck-financing" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Box Truck Financing", url: "https://dispatched.finance/box-truck-financing" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Bad Credit Truck Financing", url: "https://dispatched.finance/bad-credit-truck-financing" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "New Authority Truck Financing", url: "https://dispatched.finance/new-authority-truck-financing" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Owner-Operator Financing", url: "https://dispatched.finance/owner-operator-financing" } },
+      ],
+    },
+  };
+}
+
+/* InsuranceAgency — entity-level wrapper for the /insurance pillar page.
+   Complements the Article schema on the same page (Article describes the
+   editorial; InsuranceAgency describes the entity providing the service). */
+export function insuranceAgency(): JsonLdPayload {
+  return {
+    "@context": "https://schema.org",
+    "@type": "InsuranceAgency",
+    "@id": "https://dispatched.finance/insurance#service",
+    name: "Dispatched Trucking Insurance",
+    url: "https://dispatched.finance/insurance",
+    provider: { "@id": ORG_ID },
+    description:
+      "Commercial trucking insurance comparison and matching: primary liability, motor truck cargo, physical damage, general liability, non-trucking liability, occupational accident, and reefer breakdown coverage from a panel of carriers writing your DOT class in your state.",
+    areaServed: { "@type": "Country", name: "United States" },
+    telephone: "+1-307-317-0801",
   };
 }
