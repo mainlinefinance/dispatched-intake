@@ -8,6 +8,7 @@ import {
 import { getAllStates as getAllFinancingStates } from "@/lib/cities";
 import { getAllCities } from "@/lib/cities";
 import { getAllTerms } from "@/lib/data/glossary";
+import { getAllStateSlugs as getAllLenderStateSlugs } from "@/lib/data/lenders";
 
 const ORIGIN = "https://dispatched.finance";
 
@@ -281,6 +282,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "yearly",
     priority: 0.7,
   });
+
+  entries.push({
+    url: `${ORIGIN}/lenders`,
+    lastModified: today,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  });
+
+  for (const stateSlug of getAllLenderStateSlugs()) {
+    entries.push({
+      url: `${ORIGIN}/lenders/${stateSlug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    });
+  }
 
   entries.push({
     url: `${ORIGIN}/calculators/factoring-fee`,
