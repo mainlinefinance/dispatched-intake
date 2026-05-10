@@ -322,6 +322,55 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/compare/apex-capital-vs-triumph-business-capital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/apex-capital-vs-porter-freight-funding`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/ecapital-vs-porter-freight-funding`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/rts-financial-vs-otr-solutions`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/tbs-factoring-vs-otr-solutions`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/research/state-of-trucking-fuel-costs-2026`,
+    lastModified: today,
+    changeFrequency: "yearly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/research/state-of-broker-relations-2026`,
+    lastModified: today,
+    changeFrequency: "yearly",
+    priority: 0.7,
+  });
+
+  entries.push({
     url: `${ORIGIN}/research/state-of-trucking-tech-2026`,
     lastModified: today,
     changeFrequency: "yearly",

@@ -36,6 +36,7 @@ import { DRIVER_LIFE_WORK_TERMS } from "./glossary/driver-life-work";
 import { TAX_ACCOUNTING_TERMS } from "./glossary/tax-accounting";
 import { TECH_TELEMATICS_TERMS } from "./glossary/tech-telematics";
 import { COMPLIANCE_ENDORSEMENTS_TERMS } from "./glossary/compliance-endorsements";
+import { DRIVER_PAY_SETTLEMENT_TERMS } from "./glossary/driver-pay-settlement";
 
 export type {
   GlossaryCategory,
@@ -325,6 +326,7 @@ const TERMS: ReadonlyArray<GlossaryTerm> = [
   ...TAX_ACCOUNTING_TERMS,
   ...TECH_TELEMATICS_TERMS,
   ...COMPLIANCE_ENDORSEMENTS_TERMS,
+  ...DRIVER_PAY_SETTLEMENT_TERMS,
 ];
 
 export function getAllTerms(): ReadonlyArray<GlossaryTerm> {
