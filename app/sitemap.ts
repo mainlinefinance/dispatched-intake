@@ -7,6 +7,7 @@ import {
 } from "@/lib/data/moneyPageIndex";
 import { getAllStates as getAllFinancingStates } from "@/lib/cities";
 import { getAllCities } from "@/lib/cities";
+import { getAllTerms } from "@/lib/data/glossary";
 
 const ORIGIN = "https://dispatched.finance";
 
@@ -325,6 +326,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "yearly",
     priority: 0.3,
   });
+
+  entries.push({
+    url: `${ORIGIN}/glossary`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  });
+
+  for (const t of getAllTerms()) {
+    entries.push({
+      url: `${ORIGIN}/glossary/${t.slug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    });
+  }
 
   return entries;
 }
