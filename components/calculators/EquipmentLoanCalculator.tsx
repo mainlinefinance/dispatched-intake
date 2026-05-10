@@ -1,9 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { IconArrowRight, IconLock } from "@/components/landing/icons";
-import { formatMoney, formatMoneyDigitsOnly } from "@/lib/format";
+import {
+  formatMoney,
+  formatMoneyDigitsOnly,
+  parseDollars,
+} from "@/lib/format";
 import {
   CONDITION_LABEL,
   computeEstimate,
@@ -36,9 +40,23 @@ type CreditOption = "" | Credit;
 type ConditionOption = "" | Condition;
 type TermOption = "" | `${Term}`;
 
+type ResolvedInputs = {
+  price: number;
+  downPaymentDollars: number;
+  termMonths: Term;
+  credit: Credit;
+  condition: Condition;
+};
+
+/* Tagged phase state. The result branch can ONLY render with fully-
+   resolved inputs — the type system enforces it, no narrow-and-cast
+   guard required. */
+type Phase = { kind: "form" } | { kind: "result"; resolved: ResolvedInputs };
+
 type Props = {
-  /* Noun used in copy — "semi truck", "commercial truck", "dump truck". */
-  equipmentNoun: string;
+  /* Equipment noun used in copy. Union (not `string`) so adding a
+     fourth variant is a deliberate, type-checked decision. */
+  equipmentNoun: "semi truck" | "commercial truck" | "dump truck";
   /* Pre-filled equipment price shown on first render. Picked to be
      representative of the median lead, not the cheapest scenario. */
   defaultPrice: number;
@@ -48,45 +66,76 @@ export default function EquipmentLoanCalculator({
   equipmentNoun,
   defaultPrice,
 }: Props) {
-  const [submitted, setSubmitted] = useState(false);
+  const [phase, setPhase] = useState<Phase>({ kind: "form" });
   const [price, setPrice] = useState(formatMoneyDigitsOnly(String(defaultPrice)));
   const [downPayment, setDownPayment] = useState("");
   const [term, setTerm] = useState<TermOption>("60");
   const [condition, setCondition] = useState<ConditionOption>("");
   const [credit, setCredit] = useState<CreditOption>("");
 
-  const priceNum = Number(price.replace(/[^0-9]/g, ""));
-  const downPaymentNum = Number(downPayment.replace(/[^0-9]/g, ""));
+  const priceNum = parseDollars(price);
+  const downPaymentNum = parseDollars(downPayment);
+  /* `<=` (not `<`) — cash buyers entering downPayment === price are
+     valid: loan amount becomes 0, monthly becomes 0, math is sound,
+     result panel still tells them the APR band their credit qualifies
+     for if they ever DO finance future equipment. */
   const canSubmit =
     priceNum >= 10_000 &&
     downPaymentNum >= 0 &&
-    downPaymentNum < priceNum &&
+    downPaymentNum <= priceNum &&
     term !== "" &&
     condition !== "" &&
     credit !== "";
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (canSubmit) setSubmitted(true);
+    /* `canSubmit` is a const-evaluated `&&` chain that includes
+       `term !== ""`, `credit !== ""`, and `condition !== ""`. TypeScript
+       propagates those narrowings to subsequent reads, so by this point
+       term/credit/condition are typed as their non-empty unions. */
+    if (canSubmit) {
+      setPhase({
+        kind: "result",
+        resolved: {
+          price: priceNum,
+          downPaymentDollars: downPaymentNum,
+          termMonths: Number(term) as Term,
+          credit,
+          condition,
+        },
+      });
+    }
   };
 
-  if (submitted && term !== "" && credit !== "" && condition !== "") {
-    const result = computeEstimate({
-      price: priceNum,
-      downPaymentDollars: downPaymentNum,
-      termMonths: Number(term) as Term,
-      credit,
-      condition,
-    });
+  /* Move keyboard + screen reader focus to the result heading on transition,
+     so SR users hear the new monthly payment instead of silence and keyboard
+     users don't drop to body when the submit button unmounts. */
+  const resultHeadingRef = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    if (phase.kind === "result") {
+      resultHeadingRef.current?.focus();
+    }
+  }, [phase.kind]);
+
+  if (phase.kind === "result") {
+    const result = computeEstimate(phase.resolved);
 
     return (
-      <div className="calc-result" data-illustrative="true">
+      <div className="calc-result" role="status" aria-live="polite">
         <div className="calc-eyebrow">Estimated monthly payment</div>
-        <h2 className="calc-primary-title">{formatMoney(Math.round(result.monthly))}/mo</h2>
+        <h2
+          ref={resultHeadingRef}
+          tabIndex={-1}
+          className="calc-primary-title"
+        >
+          {formatMoney(Math.round(result.monthly))}/mo
+        </h2>
         <p className="calc-primary-rationale">
-          Equipment financing on a {formatMoney(Math.round(result.loanAmount))} loan
-          over {term} months. Estimate uses the midpoint of your credit band; the
-          chosen lender sets the final APR on the term sheet.
+          Equipment financing on a{" "}
+          {formatMoney(Math.round(result.loanAmount))} loan over{" "}
+          {phase.resolved.termMonths} months. Estimate uses the midpoint of
+          your credit band; the chosen lender sets the final APR on the term
+          sheet.
         </p>
 
         <div className="calc-meta">
@@ -131,7 +180,7 @@ export default function EquipmentLoanCalculator({
         <button
           type="button"
           className="back-link"
-          onClick={() => setSubmitted(false)}
+          onClick={() => setPhase({ kind: "form" })}
         >
           ← Change my answers
         </button>
@@ -162,7 +211,12 @@ export default function EquipmentLoanCalculator({
             inputMode="numeric"
             placeholder="e.g. 80,000"
             value={price}
-            onChange={(e) => setPrice(formatMoneyDigitsOnly(e.target.value))}
+            /* Raw input on keystroke. We deliberately do NOT format with
+               formatMoneyDigitsOnly here, because that helper strips
+               every non-digit — including the decimal point — and would
+               turn a pasted "$80,000.50" into "8,000,050" (a 100x bug).
+               parseDollars() handles the cents-stripping at submit time. */
+            onChange={(e) => setPrice(e.target.value)}
             required
           />
         </div>
@@ -185,9 +239,7 @@ export default function EquipmentLoanCalculator({
             inputMode="numeric"
             placeholder="e.g. 8,000"
             value={downPayment}
-            onChange={(e) =>
-              setDownPayment(formatMoneyDigitsOnly(e.target.value))
-            }
+            onChange={(e) => setDownPayment(e.target.value)}
             required
           />
         </div>

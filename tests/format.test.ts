@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { formatMoney, formatMoneyDigitsOnly, maskPhone } from "@/lib/format";
+import {
+  formatMoney,
+  formatMoneyDigitsOnly,
+  maskPhone,
+  parseDollars,
+} from "@/lib/format";
 
 describe("formatMoney", () => {
   it("formats with $ prefix and commas", () => {
@@ -14,6 +19,32 @@ describe("formatMoneyDigitsOnly", () => {
     expect(formatMoneyDigitsOnly("95a000")).toBe("95,000");
     expect(formatMoneyDigitsOnly("$1,234")).toBe("1,234");
     expect(formatMoneyDigitsOnly("")).toBe("");
+  });
+});
+
+describe("parseDollars", () => {
+  it("handles plain integer input", () => {
+    expect(parseDollars("80000")).toBe(80_000);
+  });
+
+  it("strips $ and commas (typical user-format paste)", () => {
+    expect(parseDollars("$80,000")).toBe(80_000);
+    expect(parseDollars("1,234,567")).toBe(1_234_567);
+  });
+
+  it("discards a decimal portion BEFORE digit-stripping (regression: 100x bug)", () => {
+    /* If the helper naively did raw.replace(/\D/g, ""), "$80,000.50" would
+       become "8000050" → 8,000,050 — a 100x error. Splitting on "." first
+       prevents this. */
+    expect(parseDollars("$80,000.50")).toBe(80_000);
+    expect(parseDollars("80000.99")).toBe(80_000);
+    expect(parseDollars("1,500.25")).toBe(1_500);
+  });
+
+  it("returns 0 on empty or non-numeric input", () => {
+    expect(parseDollars("")).toBe(0);
+    expect(parseDollars("abc")).toBe(0);
+    expect(parseDollars(".50")).toBe(0);
   });
 });
 

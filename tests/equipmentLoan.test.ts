@@ -178,4 +178,58 @@ describe("computeEstimate — payoff date", () => {
     // 2026-09 + 84 months = 2033-09
     expect(r.payoffDate).toBe("Sep 2033");
   });
+
+  it("does NOT roll over when crossing a leap year (Feb 29 + 36mo → Feb 2027)", () => {
+    /* Regression for the setMonth() rollover bug: under the old
+       implementation, Feb 29, 2024 + 36mo via setMonth(month + 36)
+       targeted Feb 29, 2027 — but 2027 is not a leap year, so JS
+       normalized to Mar 1, 2027, displaying "Mar 2027" instead of
+       "Feb 2027". The day-1 anchor fix prevents this. This test is
+       reachable from production: Term = 36 is a valid form value, and
+       any user starting financing on a Feb-29 leap date hits this. */
+    const r = computeEstimate({
+      price: 80_000,
+      downPaymentDollars: 8_000,
+      termMonths: 36,
+      credit: "680-plus",
+      condition: "new",
+      now: new Date(2024, 1, 29), // Feb 29, 2024 (leap)
+    });
+    expect(r.payoffDate).toBe("Feb 2027");
+  });
+
+  it("does NOT roll over for Aug 31 + 60mo (Aug 2031 has day-31 — sanity)", () => {
+    /* Sanity check that the day-1 anchor doesn't break the common case. */
+    const r = computeEstimate({
+      price: 80_000,
+      downPaymentDollars: 8_000,
+      termMonths: 60,
+      credit: "680-plus",
+      condition: "new",
+      now: new Date(2026, 7, 31), // Aug 31, 2026
+    });
+    expect(r.payoffDate).toBe("Aug 2031");
+  });
+});
+
+describe("computeEstimate — cash-buyer scenario", () => {
+  it("downPayment === price returns loan=0, monthly=0, totalInterest=0", () => {
+    /* Cash buyers entering downPayment === price are valid through the form
+       (canSubmit allows <=). The math should still produce a clean result so
+       the panel can confirm the APR band their credit qualifies for if they
+       ever DO finance future equipment. */
+    const r = computeEstimate({
+      price: 80_000,
+      downPaymentDollars: 80_000,
+      termMonths: 60,
+      credit: "680-plus",
+      condition: "new",
+    });
+    expect(r.loanAmount).toBe(0);
+    expect(r.monthly).toBe(0);
+    expect(r.totalInterest).toBe(0);
+    expect(r.totalPaid).toBe(0);
+    expect(r.band).toBe("9% – 14% APR");
+    expect(r.apr).toBe(11);
+  });
 });

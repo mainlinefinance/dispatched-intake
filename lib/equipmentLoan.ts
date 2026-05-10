@@ -79,8 +79,12 @@ export function computeEstimate(
         (1 - Math.pow(1 + monthlyRate, -termMonths));
   const totalPaid = monthly * termMonths;
   const totalInterest = totalPaid - loanAmount;
-  const payoff = inputs.now ? new Date(inputs.now) : new Date();
-  payoff.setMonth(payoff.getMonth() + termMonths);
+  /* Anchor to day-1 of the start month before adding term, so a `now`
+     of e.g. Jan 31 + 1mo doesn't roll over to March (because Feb has
+     no day-31). The constructor's month-overflow arithmetic carries
+     into the year correctly: new Date(2026, 92, 1) → Sep 2033. */
+  const start = inputs.now ? new Date(inputs.now) : new Date();
+  const payoff = new Date(start.getFullYear(), start.getMonth() + termMonths, 1);
   return {
     loanAmount,
     monthly,
