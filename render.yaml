@@ -24,6 +24,11 @@ services:
         sync: false
       - key: INDEXNOW_HOST
         value: dispatched.finance
+      # Bearer token guarding /api/cron/indexnow. MUST be set to the same
+      # value here AND on the indexnow-ping cron job below. Generate with:
+      # openssl rand -hex 32
+      - key: CRON_SECRET
+        sync: false
       # Injected from the Render dashboard when real backends come online:
       # NEXT_PUBLIC_SITE_URL
       # GOOGLE_SITE_VERIFICATION
@@ -32,3 +37,26 @@ services:
       # DATABASE_URL
     autoDeploy: true
     healthCheckPath: /healthz
+
+  # Cron-driven IndexNow re-ping. The post-build script in the web service
+  # already submits on every deploy; this job re-submits every 6 hours so
+  # editorial sitemap changes (new programmatic city, new article) get
+  # picked up by Bing/Yandex/Yep/Naver/Seznam without waiting for the next
+  # deploy. The route is auth-gated by CRON_SECRET — same value must be
+  # set on the web service AND on this cron job in the Render dashboard.
+  #
+  # `|| echo` keeps the cron exit code zero on transient failures so a
+  # bad ping doesn't pollute the cron-job alert history. Real failures
+  # still surface in Render request logs from the route's console.error.
+  - type: cron
+    name: indexnow-ping
+    runtime: node
+    schedule: "0 */6 * * *"
+    buildCommand: "true"
+    startCommand: |
+      curl -fsS -X POST "https://dispatched.finance/api/cron/indexnow" \
+        -H "Authorization: Bearer $CRON_SECRET" \
+        || echo "[indexnow-cron] ping failed (non-fatal)"
+    envVars:
+      - key: CRON_SECRET
+        sync: false
