@@ -205,6 +205,55 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/compare/triumph-vs-rts-financial`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/ecapital-vs-rts-financial`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/tbs-factoring-vs-triumph-business-capital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/research/state-of-trucking-capital-2026`,
+    lastModified: today,
+    changeFrequency: "yearly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/factoring-fee`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/lease-vs-buy`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/owner-operator-pl`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
     url: `${ORIGIN}/equipment-financing`,
     lastModified: today,
     changeFrequency: "monthly",
