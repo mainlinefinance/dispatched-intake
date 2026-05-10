@@ -10,7 +10,9 @@
     "lint:css": "stylelint 'app/**/*.css'",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "indexnow:submit": "node scripts/submit-indexnow.mjs",
+    "indexnow:dry-run": "INDEXNOW_DRY_RUN=true node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

@@ -3,7 +3,10 @@ services:
     name: dispatched-intake
     runtime: node
     plan: starter
-    buildCommand: npm ci && npm run build
+    # Build runs IndexNow submission as a post-step. The `|| true` guard
+    # ensures an IndexNow failure (network blip, key file race) cannot
+    # fail the production deploy.
+    buildCommand: npm ci && npm run build && (npm run indexnow:submit || true)
     startCommand: npm start
     envVars:
       - key: NODE_VERSION
@@ -14,8 +17,17 @@ services:
         sync: false
       - key: LENDFLOW_WEBHOOK_SECRET
         sync: false
+      # IndexNow auto-submit. Generate key with: openssl rand -hex 16
+      # Mark INDEXNOW_KEY as secret in the Render dashboard. After setting,
+      # also drop public/<KEY>.txt containing exactly the key string.
+      - key: INDEXNOW_KEY
+        sync: false
+      - key: INDEXNOW_HOST
+        value: dispatched.finance
       # Injected from the Render dashboard when real backends come online:
       # NEXT_PUBLIC_SITE_URL
+      # GOOGLE_SITE_VERIFICATION
+      # BING_SITE_VERIFICATION
       # SENTRY_DSN
       # DATABASE_URL
     autoDeploy: true
