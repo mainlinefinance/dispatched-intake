@@ -806,7 +806,7 @@ function SiteFooter({ entry }: { entry: City }) {
                 <a href="/about">About</a>
               </li>
               <li>
-                <a href="/lenders">For lenders</a>
+                <Link href="/lenders">For lenders</Link>
               </li>
               <li>
                 <a href="/careers">Careers</a>
