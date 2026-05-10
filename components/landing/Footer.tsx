@@ -21,7 +21,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="col">
-            <h4>Product</h4>
+            <h3>Product</h3>
             <ul>
               <li>
                 <Link href="/trucking-working-capital">Trucking capital</Link>
@@ -87,7 +87,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col">
-            <h4>Company</h4>
+            <h3>Company</h3>
             <ul>
               <li>
                 <Link href="/about">About Dispatched</Link>
@@ -113,7 +113,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col">
-            <h4>Support</h4>
+            <h3>Support</h3>
             <ul>
               <li>
                 <a href="#faq">FAQ</a>

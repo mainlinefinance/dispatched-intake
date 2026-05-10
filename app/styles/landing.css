@@ -1410,7 +1410,7 @@
 }
 .landing .footer .phone-cta:hover { background: var(--color-steel-600); }
 .landing .footer .phone-cta svg { width: 16px; height: 16px; color: var(--color-hiviz-400); }
-.landing .footer .col h4 {
+.landing .footer .col h3 {
   font-family: var(--font-body); font-weight: 600;
   font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--color-ink-inverse-50);

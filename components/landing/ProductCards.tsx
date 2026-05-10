@@ -65,7 +65,6 @@ export default function ProductCards() {
               <Link
                 href={p.href}
                 className="product-card-link"
-                aria-label={p.title}
               >
                 <span className="product-card-icon" aria-hidden="true">
                   {p.icon}
