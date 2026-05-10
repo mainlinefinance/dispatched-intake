@@ -205,7 +205,11 @@ export function financialService(): JsonLdPayload {
     "@id": "https://dispatched.finance/trucking#service",
     name: "Trucking Financing",
     url: "https://dispatched.finance/trucking-working-capital",
-    provider: { "@id": ORG_ID },
+    // FinancialService inherits from LocalBusiness/Organization; the correct
+    // way to relate it to the parent corporate entity (TCopyCats LLC dba
+    // Dispatched) is parentOrganization, not provider. The schema.org
+    // validator flags `provider` here as an unrecognized property.
+    parentOrganization: { "@id": ORG_ID },
     areaServed: { "@type": "Country", name: "United States" },
     serviceType: "Commercial trucking financing",
     description:
@@ -242,7 +246,11 @@ export function insuranceAgency(): JsonLdPayload {
     "@id": "https://dispatched.finance/insurance#service",
     name: "Dispatched Trucking Insurance",
     url: "https://dispatched.finance/insurance",
-    provider: { "@id": ORG_ID },
+    // InsuranceAgency inherits from LocalBusiness/Organization; the correct
+    // way to relate it to the parent corporate entity (TCopyCats LLC dba
+    // Dispatched) is parentOrganization, not provider. Schema.org validator
+    // flagged `provider` as not recognized on InsuranceAgency.
+    parentOrganization: { "@id": ORG_ID },
     description:
       "Commercial trucking insurance comparison and matching: primary liability, motor truck cargo, physical damage, general liability, non-trucking liability, occupational accident, and reefer breakdown coverage from a panel of carriers writing your DOT class in your state.",
     areaServed: { "@type": "Country", name: "United States" },
