@@ -141,6 +141,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/semi-truck-financing/no-money-down`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/owner-operator-financing/first-time`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/invoice-factoring-for-truckers/no-credit-check`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/research/best-trucking-factoring-2026`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/apex-capital-vs-ecapital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
     url: `${ORIGIN}/equipment-financing`,
     lastModified: today,
     changeFrequency: "monthly",
