@@ -8,6 +8,7 @@ import {
   breadcrumbList,
   faqPage,
   financialProduct,
+  financialService,
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
@@ -75,6 +76,14 @@ export default function InvoiceFactoringPage() {
         category: "FinancialService",
       })} />
       <JsonLd payload={faqPage(faqs)} />
+      <JsonLd payload={financialService({
+        name: "Invoice Factoring for Truckers",
+        // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
+        description:
+          "Invoice factoring for trucking operations — sell outstanding broker or carrier invoices for an immediate cash advance, typically 90–98% of face value. Recourse and non-recourse options, settles in days not weeks, routed to a panel of trucking-friendly factors.",
+        url: PAGE_URL,
+        serviceType: "Invoice factoring",
+      })} />
 
       <Nav />
 

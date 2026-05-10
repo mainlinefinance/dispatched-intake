@@ -8,6 +8,7 @@ import {
   breadcrumbList,
   faqPage,
   financialProduct,
+  financialService,
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
@@ -75,6 +76,14 @@ export default function EquipmentFinancingPage() {
         category: "BusinessLoan",
       })} />
       <JsonLd payload={faqPage(faqs)} />
+      <JsonLd payload={financialService({
+        name: "Equipment Financing",
+        // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
+        description:
+          "Equipment financing for commercial trucking — tractors, trailers, reefers, lift gates, ELDs. Secured by the equipment, longer terms than working capital. Soft-pull match first; one hard pull only with the lender you pick.",
+        url: PAGE_URL,
+        serviceType: "Commercial trucking equipment financing",
+      })} />
 
       <Nav />
 

@@ -8,6 +8,7 @@ import {
   breadcrumbList,
   faqPage,
   financialProduct,
+  financialService,
 } from "@/components/seo/JsonLd";
 
 /* /owner-operator-financing — second-wave SEO landing.
@@ -91,6 +92,16 @@ export default function OwnerOperatorFinancingPage() {
         })}
       />
       <JsonLd payload={faqPage(faqs)} />
+      <JsonLd
+        payload={financialService({
+          name: "Owner-Operator Financing",
+          // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
+          description:
+            "Commercial trucking financing for 1099 owner-operators — repair loans, working capital, equipment financing, and invoice factoring routed to a panel of lenders that underwrite sole-prop carriers as the default profile, not an exception.",
+          url: PAGE_URL,
+          serviceType: "Commercial trucking financing",
+        })}
+      />
 
       <Nav />
 

@@ -8,6 +8,7 @@ import {
   breadcrumbList,
   faqPage,
   financialProduct,
+  financialService,
 } from "@/components/seo/JsonLd";
 
 /* /truck-repair-loans — the reference SEO landing.
@@ -96,6 +97,16 @@ export default function TruckRepairLoansPage() {
         })}
       />
       <JsonLd payload={faqPage(faqs)} />
+      <JsonLd
+        payload={financialService({
+          name: "Truck Repair Loans",
+          // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
+          description:
+            "Same-day financing for emergency commercial truck repairs. Soft-pull pre-qualification, direct-to-shop disbursement, panel of trucking-friendly lenders that fund owner-operators and small fleets.",
+          url: PAGE_URL,
+          serviceType: "Commercial trucking financing",
+        })}
+      />
 
       <Nav />
 

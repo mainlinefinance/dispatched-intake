@@ -8,6 +8,7 @@ import {
   breadcrumbList,
   faqPage,
   financialProduct,
+  financialService,
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
@@ -75,6 +76,14 @@ export default function NewAuthorityFinancingPage() {
         category: "BusinessLoan",
       })} />
       <JsonLd payload={faqPage(faqs)} />
+      <JsonLd payload={financialService({
+        name: "New Authority Truck Financing",
+        // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
+        description:
+          "Trucking financing for owner-operators in the first year of MC authority. Narrower panel than seasoned operators; factoring and equipment financing are the most accessible products. Soft-pull match first.",
+        url: PAGE_URL,
+        serviceType: "Commercial trucking financing",
+      })} />
 
       <Nav />
 

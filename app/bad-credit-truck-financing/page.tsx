@@ -8,6 +8,7 @@ import {
   breadcrumbList,
   faqPage,
   financialProduct,
+  financialService,
 } from "@/components/seo/JsonLd";
 
 /* /bad-credit-truck-financing — second-wave SEO landing.
@@ -93,6 +94,16 @@ export default function BadCreditTruckFinancingPage() {
         })}
       />
       <JsonLd payload={faqPage(faqs)} />
+      <JsonLd
+        payload={financialService({
+          name: "Bad Credit Truck Financing",
+          // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
+          description:
+            "Commercial trucking financing for owner-operators with sub-580 credit. Panel lenders underwrite revenue and equipment in addition to FICO. Soft-pull match first; one hard pull only with the lender you pick.",
+          url: PAGE_URL,
+          serviceType: "Commercial trucking financing",
+        })}
+      />
 
       <Nav />
 

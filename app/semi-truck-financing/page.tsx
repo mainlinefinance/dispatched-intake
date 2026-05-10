@@ -8,6 +8,7 @@ import {
   breadcrumbList,
   faqPage,
   financialProduct,
+  financialService,
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
@@ -75,6 +76,14 @@ export default function SemiTruckFinancingPage() {
         category: "BusinessLoan",
       })} />
       <JsonLd payload={faqPage(faqs)} />
+      <JsonLd payload={financialService({
+        name: "Semi-Truck Financing",
+        // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
+        description:
+          "Class 8 semi-truck financing for owner-operators and small fleets — Cascadias, Kenworths, Peterbilts, Volvos, Macks. Secured by the truck; 9% – 18% observed APR band. Soft-pull match first.",
+        url: PAGE_URL,
+        serviceType: "Commercial trucking equipment financing",
+      })} />
 
       <Nav />
 

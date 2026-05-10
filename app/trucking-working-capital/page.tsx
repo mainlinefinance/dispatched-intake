@@ -8,6 +8,7 @@ import {
   breadcrumbList,
   faqPage,
   financialProduct,
+  financialService,
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
@@ -75,6 +76,20 @@ export default function TruckingWorkingCapitalPage() {
         category: "BusinessLoan",
       })} />
       <JsonLd payload={faqPage(faqs)} />
+      <JsonLd payload={financialService({
+        name: "Trucking Working Capital",
+        // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
+        description:
+          "Unsecured working-capital financing for trucking operations: $25K–$250K to cover fuel, payroll, tolls, insurance, and slow-month gaps. Soft-pull match first; one hard pull only with the lender you pick.",
+        url: PAGE_URL,
+        serviceType: "Commercial trucking financing",
+        offerCatalog: [
+          { name: "Truck repair loans", url: "https://dispatched.finance/truck-repair-loans" },
+          { name: "Equipment financing", url: "https://dispatched.finance/equipment-financing" },
+          { name: "Invoice factoring for truckers", url: "https://dispatched.finance/invoice-factoring-for-truckers" },
+          { name: "Owner-operator financing", url: "https://dispatched.finance/owner-operator-financing" },
+        ],
+      })} />
 
       <Nav />
 

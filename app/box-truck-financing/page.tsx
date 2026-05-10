@@ -8,6 +8,7 @@ import {
   breadcrumbList,
   faqPage,
   financialProduct,
+  financialService,
 } from "@/components/seo/JsonLd";
 
 /* /box-truck-financing — second-wave SEO landing.
@@ -92,6 +93,16 @@ export default function BoxTruckFinancingPage() {
         })}
       />
       <JsonLd payload={faqPage(faqs)} />
+      <JsonLd
+        payload={financialService({
+          name: "Box Truck Financing",
+          // TODO(marketing): replace with copy from docs/seo/per-page-copy.md once landed
+          description:
+            "Commercial financing for box truck operators — last-mile, hot-shot, and expediting. Equipment loans, working capital, and repair financing routed to a panel of trucking-friendly lenders. Soft-pull match first.",
+          url: PAGE_URL,
+          serviceType: "Commercial trucking equipment financing",
+        })}
+      />
 
       <Nav />
 
