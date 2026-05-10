@@ -5,10 +5,10 @@ import { JsonLd, organization, website } from "@/components/seo/JsonLd";
 
 const archivo = localFont({
   src: [
-    { path: "../public/fonts/Archivo-Regular.ttf", weight: "400", style: "normal" },
-    { path: "../public/fonts/Archivo-Medium.ttf", weight: "500", style: "normal" },
-    { path: "../public/fonts/Archivo-SemiBold.ttf", weight: "600", style: "normal" },
-    { path: "../public/fonts/Archivo-Bold.ttf", weight: "700", style: "normal" },
+    { path: "../public/fonts/Archivo-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../public/fonts/Archivo-Medium.woff2", weight: "500", style: "normal" },
+    { path: "../public/fonts/Archivo-SemiBold.woff2", weight: "600", style: "normal" },
+    { path: "../public/fonts/Archivo-Bold.woff2", weight: "700", style: "normal" },
   ],
   variable: "--font-archivo",
   display: "swap",
@@ -16,10 +16,10 @@ const archivo = localFont({
 
 const plexSans = localFont({
   src: [
-    { path: "../public/fonts/IBMPlexSans-Regular.ttf", weight: "400", style: "normal" },
-    { path: "../public/fonts/IBMPlexSans-Italic.ttf", weight: "400", style: "italic" },
-    { path: "../public/fonts/IBMPlexSans-Medium.ttf", weight: "500", style: "normal" },
-    { path: "../public/fonts/IBMPlexSans-SemiBold.ttf", weight: "600", style: "normal" },
+    { path: "../public/fonts/IBMPlexSans-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../public/fonts/IBMPlexSans-Italic.woff2", weight: "400", style: "italic" },
+    { path: "../public/fonts/IBMPlexSans-Medium.woff2", weight: "500", style: "normal" },
+    { path: "../public/fonts/IBMPlexSans-SemiBold.woff2", weight: "600", style: "normal" },
   ],
   variable: "--font-plex-sans",
   display: "swap",
@@ -27,8 +27,8 @@ const plexSans = localFont({
 
 const plexMono = localFont({
   src: [
-    { path: "../public/fonts/IBMPlexMono-Regular.ttf", weight: "400", style: "normal" },
-    { path: "../public/fonts/IBMPlexMono-Medium.ttf", weight: "500", style: "normal" },
+    { path: "../public/fonts/IBMPlexMono-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../public/fonts/IBMPlexMono-Medium.woff2", weight: "500", style: "normal" },
   ],
   variable: "--font-plex-mono",
   display: "swap",
