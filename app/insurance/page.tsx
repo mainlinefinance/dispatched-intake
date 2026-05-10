@@ -5,6 +5,7 @@ import {
   JsonLd,
   article,
   breadcrumbList,
+  insuranceAgency,
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function InsurancePillarPage() {
 
   return (
     <div className="ins-page">
+      <JsonLd payload={insuranceAgency()} />
       <JsonLd
         payload={breadcrumbList([
           { name: "Home", url: "https://dispatched.finance/" },

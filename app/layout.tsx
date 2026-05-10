@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { JsonLd, organization, website } from "@/components/seo/JsonLd";
 
 const archivo = localFont({
   src: [
@@ -33,10 +34,79 @@ const plexMono = localFont({
   display: "swap",
 });
 
+/* Root metadata.
+
+   Notes:
+   - metadataBase resolves relative URLs (canonical, openGraph.url, twitter
+     image paths). Falls back to the production origin when NEXT_PUBLIC_SITE_URL
+     is unset (preview builds, local dev without .env.local).
+   - openGraph.images and twitter.images are NOT set here on purpose — Next 16
+     auto-populates them from app/opengraph-image.tsx for every route.
+   - alternates.canonical is NOT set here on purpose — every page-level
+     metadata MUST set its own canonical. Setting one in the root layout
+     would silently canonicalize every uninstrumented child route to "/",
+     deindexing the site.
+   - verification reads from env at build time. SEO owner pastes the GSC and
+     Bing tokens into Render dashboard env, then redeploys. */
+
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://dispatched.finance";
+
 export const metadata: Metadata = {
-  title: "Dispatched — AI Capital Advisor",
+  metadataBase: new URL(SITE_URL),
+  title: "Dispatched — Capital and Insurance Built for Truckers",
   description:
-    "Working capital, matched in minutes. Soft match, no credit impact.",
+    "Capital and insurance built for owner-operators and small fleets. Match with trucking-friendly lenders for working capital, equipment financing, repair loans, and invoice factoring — and compare commercial trucking insurance carriers writing your DOT class in your state. Soft pull first; no credit impact to start.",
+  applicationName: "Dispatched",
+  authors: [{ name: "Dispatched", url: SITE_URL }],
+  creator: "Dispatched",
+  publisher: "TCopyCats LLC",
+  keywords: [
+    "trucking financing",
+    "commercial truck loans",
+    "owner-operator financing",
+    "semi truck financing",
+    "truck repair loans",
+    "invoice factoring trucking",
+    "commercial trucking insurance",
+    "primary liability trucking",
+    "MC authority financing",
+    "trucking working capital",
+  ],
+  formatDetection: { telephone: false, email: false, address: false },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Dispatched",
+    title: "Dispatched — Capital and Insurance Built for Truckers",
+    description:
+      "Capital and insurance built for owner-operators and small fleets. Soft pull first; no credit impact to start.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@dispatchedfin",
+    creator: "@dispatchedfin",
+    title: "Dispatched — Capital Built for Truckers",
+    description:
+      "Capital and insurance built for owner-operators and small fleets. Soft pull first; no credit impact.",
+  },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+    other: process.env.BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION }
+      : undefined,
+  },
 };
 
 export default function RootLayout({
@@ -50,6 +120,12 @@ export default function RootLayout({
       className={`${archivo.variable} ${plexSans.variable} ${plexMono.variable}`}
     >
       <body>
+        {/* Site-wide entity context. Every page inherits Organization +
+            WebSite schema so search engines can resolve the publisher of
+            any given Article/FAQ/FinancialProduct schema rendered on a
+            child page via the @id graph. */}
+        <JsonLd payload={organization()} />
+        <JsonLd payload={website()} />
         <a href="#main-content" className="skip-link">Skip to main content</a>
         {children}
       </body>
