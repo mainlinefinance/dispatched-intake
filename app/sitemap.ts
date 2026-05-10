@@ -229,6 +229,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   entries.push({
+    url: `${ORIGIN}/about`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  });
+
+  entries.push({
     url: `${ORIGIN}/methodology`,
     lastModified: today,
     changeFrequency: "monthly",

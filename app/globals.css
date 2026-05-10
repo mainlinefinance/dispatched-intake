@@ -2,6 +2,7 @@
 @import "./styles/tokens.css";
 @import "./styles/components/button.css";
 @import "./styles/components/breadcrumbs.css";
+@import "./styles/components/about.css";
 @import "./styles/intake.css";
 @import "./styles/geo.css";
 @import "./styles/landing.css";
