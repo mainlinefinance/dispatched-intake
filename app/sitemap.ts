@@ -227,6 +227,55 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/compare/apex-capital-vs-truckstop-go-capital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/otr-capital-vs-ecapital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/ecapital-vs-truckstop-go-capital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/triumph-vs-otr-capital`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/rts-financial-vs-tbs-factoring`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/how-much-can-i-borrow-for-a-truck`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/calculators/whats-my-factoring-rate`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
     url: `${ORIGIN}/research/state-of-trucking-capital-2026`,
     lastModified: today,
     changeFrequency: "yearly",
