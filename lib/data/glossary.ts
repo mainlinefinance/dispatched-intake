@@ -32,6 +32,9 @@ import { OPERATIONS_EXTENDED_TERMS } from "./glossary/operations-extended";
 import { FINANCE_TERMS } from "./glossary/finance";
 import { FINANCE_EXTENDED_TERMS } from "./glossary/finance-extended";
 import { INSURANCE_RISK_TERMS } from "./glossary/insurance-risk";
+import { DRIVER_LIFE_WORK_TERMS } from "./glossary/driver-life-work";
+import { TAX_ACCOUNTING_TERMS } from "./glossary/tax-accounting";
+import { TECH_TELEMATICS_TERMS } from "./glossary/tech-telematics";
 
 export type {
   GlossaryCategory,
@@ -317,6 +320,9 @@ const TERMS: ReadonlyArray<GlossaryTerm> = [
   ...FINANCE_TERMS,
   ...FINANCE_EXTENDED_TERMS,
   ...INSURANCE_RISK_TERMS,
+  ...DRIVER_LIFE_WORK_TERMS,
+  ...TAX_ACCOUNTING_TERMS,
+  ...TECH_TELEMATICS_TERMS,
 ];
 
 export function getAllTerms(): ReadonlyArray<GlossaryTerm> {
@@ -343,6 +349,9 @@ export function getTermsByCategory(): ReadonlyArray<GlossaryCategoryGroup> {
     "trucking-operations",
     "trucking-finance",
     "insurance-and-risk",
+    "driver-life-work",
+    "tax-and-accounting",
+    "tech-and-telematics",
   ];
   return ordered.map((category) => ({
     category,

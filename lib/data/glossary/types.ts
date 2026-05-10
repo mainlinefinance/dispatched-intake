@@ -20,7 +20,10 @@ export type GlossaryCategory =
   | "operator-types"
   | "trucking-operations"
   | "trucking-finance"
-  | "insurance-and-risk";
+  | "insurance-and-risk"
+  | "driver-life-work"
+  | "tax-and-accounting"
+  | "tech-and-telematics";
 
 export type GlossaryRelatedProduct = {
   readonly url: string;
@@ -51,4 +54,7 @@ export const CATEGORY_LABELS: Record<GlossaryCategory, string> = {
   "trucking-operations": "Trucking Operations",
   "trucking-finance": "Trucking Finance",
   "insurance-and-risk": "Insurance & Risk",
+  "driver-life-work": "Driver Life & Work",
+  "tax-and-accounting": "Tax & Accounting",
+  "tech-and-telematics": "Tech & Telematics",
 };
