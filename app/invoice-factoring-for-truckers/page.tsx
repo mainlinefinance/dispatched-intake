@@ -317,6 +317,7 @@ export default function InvoiceFactoringPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
+              <li><Link href="/trucking">All trucking financing products →</Link></li>
               <li><Link href="/trucking-working-capital">Working capital →</Link></li>
               <li><Link href="/new-authority-truck-financing">New authority financing →</Link></li>
               <li><Link href="/owner-operator-financing">Owner-operator financing →</Link></li>
