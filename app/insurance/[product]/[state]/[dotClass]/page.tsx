@@ -116,7 +116,7 @@ export default async function DeepMoneyPage({
     <div className="deep-money-page">
       <JsonLd
         payload={breadcrumbList([
-          { name: "Home", url: "https://dispatched.finance/" },
+          { name: "Dispatched", url: "https://dispatched.finance/" },
           { name: "Insurance", url: "https://dispatched.finance/insurance" },
           {
             name: p.name,
@@ -126,7 +126,7 @@ export default async function DeepMoneyPage({
             name: s.name,
             url: `https://dispatched.finance/insurance/${p.slug}/${s.slug}`,
           },
-          { name: dc.shortLabel, url },
+          { name: dc.name, url },
         ])}
       />
       <JsonLd

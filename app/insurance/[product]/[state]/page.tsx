@@ -84,7 +84,7 @@ export default async function StateMoneyPage({
     <div className="ins-page">
       <JsonLd
         payload={breadcrumbList([
-          { name: "Home", url: "https://dispatched.finance/" },
+          { name: "Dispatched", url: "https://dispatched.finance/" },
           { name: "Insurance", url: "https://dispatched.finance/insurance" },
           {
             name: p.name,

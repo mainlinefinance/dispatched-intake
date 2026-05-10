@@ -7,6 +7,7 @@ import {
   LOW_COVERAGE_THRESHOLD,
   type City,
 } from "@/lib/cities";
+import { JsonLd, breadcrumbList } from "@/components/seo/JsonLd";
 
 type Params = { state: string; city: string };
 
@@ -45,6 +46,23 @@ export default async function GeoLandingPage({
 
   return (
     <div className="geo-page">
+      <JsonLd
+        payload={breadcrumbList([
+          { name: "Dispatched", url: "https://dispatched.finance/" },
+          {
+            name: "Trucking Loans",
+            url: "https://dispatched.finance/trucking-working-capital",
+          },
+          {
+            name: entry.state,
+            url: `https://dispatched.finance/trucking-loans/${entry.stateSlug}`,
+          },
+          {
+            name: entry.city,
+            url: `https://dispatched.finance/trucking-loans/${entry.stateSlug}/${entry.citySlug}`,
+          },
+        ])}
+      />
       <SiteNav />
       <Hero entry={entry} />
       <WhyLocalMatters entry={entry} />

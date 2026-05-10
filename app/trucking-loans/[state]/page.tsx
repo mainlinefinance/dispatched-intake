@@ -7,6 +7,7 @@ import {
   LOW_COVERAGE_THRESHOLD,
   type StateInfo,
 } from "@/lib/cities";
+import { JsonLd, breadcrumbList } from "@/components/seo/JsonLd";
 
 type Params = { state: string };
 
@@ -40,6 +41,19 @@ export default async function StatePage({
 
   return (
     <div className="geo-page">
+      <JsonLd
+        payload={breadcrumbList([
+          { name: "Dispatched", url: "https://dispatched.finance/" },
+          {
+            name: "Trucking Loans",
+            url: "https://dispatched.finance/trucking-working-capital",
+          },
+          {
+            name: info.name,
+            url: `https://dispatched.finance/trucking-loans/${info.slug}`,
+          },
+        ])}
+      />
       <SiteNav />
       <section className="geo-hero">
         <div className="geo-container">
