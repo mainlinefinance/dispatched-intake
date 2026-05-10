@@ -20,43 +20,55 @@ import {
    exception." */
 
 export const metadata: Metadata = {
-  title:
-    "Owner-operator financing — Dispatched",
+  title: "Owner-operator financing — single truck up | Dispatched",
   description:
-    "Trucking finance for 1099 owner-operators: working capital, repair loans, equipment financing, and factoring. The panel underwrites Schedule C revenue, not the bank's two-year DSCR test. Soft-pull match first.",
+    "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, funds same banking day. Get matched.",
   alternates: { canonical: "/owner-operator-financing" },
+  openGraph: {
+    title: "Owner-operator financing — single truck up | Dispatched",
+    description:
+      "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, funds same banking day. Get matched.",
+    url: "/owner-operator-financing",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Owner-operator financing — single truck up | Dispatched",
+    description:
+      "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, funds same banking day. Get matched.",
+  },
 };
 
 const PAGE_URL = "https://dispatched.finance/owner-operator-financing";
 
 const faqs = [
   {
-    q: "I'm a 1099 sole-prop with no W-2 history. Can I qualify?",
-    a: "Yes. 1099 sole-prop with a Schedule C is the default operator profile on our panel — it isn't an exception, it's the norm. The lenders we route to don't run the bank's two-year-tax-return DSCR test. They underwrite ELD miles, settlement statements, and bank-statement deposits as the primary signals. If your wheels are turning, the revenue is real.",
+    q: "What financing is available for owner-operators?",
+    a: "The Dispatched panel covers four core products for owner-operators: working capital ($25K to $250K, 14% to 34% APR), equipment financing for tractors and trailers ($20K to $200K, 9% to 18% APR), repair loans ($5K to $150K, same banking day funding), and invoice factoring for receivables. One application routes to the right product based on the operator's situation.",
   },
   {
-    q: "Do I need to form an LLC to qualify?",
-    a: "No. Sole-prop applications under your SSN are eligible across the panel. Forming an LLC is your call for liability and tax reasons; it doesn't change panel routing or APR. If you want to apply under a brand-new LLC EIN, the lenders will look at the operating history you ran under your SSN before the entity change — that history transfers to the application.",
+    q: "Can I get a loan as a sole proprietor with no LLC?",
+    a: "Yes. Sole proprietors with an active DOT and MC number qualify on the Dispatched panel. Lenders underwrite the operator's business bank statements and Schedule C. LLCs and S-corps with two-plus years operating history typically see a slightly lower APR because the entity's books are easier to underwrite, but both structures fund.",
   },
   {
-    q: "Can I finance the truck I want to buy as my first one?",
-    a: "Yes, but a first-truck purchase as a brand-new operator (zero operating history) routes to a much smaller subset of the panel — typically lenders that fund new-authority and first-truck operators with a heavier emphasis on credit and down payment. The fit estimator at /calculators/truck-repair handles repair scenarios; for purchase scenarios, the apply flow with useCase=equipment is the right path.",
+    q: "How much revenue do I need to qualify as an owner-operator?",
+    a: "Most working-capital programs on the Dispatched panel require a minimum of $15K to $20K in monthly business deposits over the trailing three months. Equipment loans have no published revenue minimum because the asset is collateral; the lender sizes the loan to fit the operation's cashflow. Operators below the working-capital threshold should look at factoring or equipment-secured products first.",
   },
   {
-    q: "What if I haven't filed taxes for the last business year yet?",
-    a: "For loans under $75K the panel doesn't require the most-recent year's Schedule C. Bank statements over the last 3 months substitute for tax-return revenue verification at that loan size. Above $75K, lenders typically want the Schedule C; if you're between filings, the prior year's return plus current bank statements is generally accepted while the new return is in extension.",
+    q: "Can a new MC authority owner-operator get financing?",
+    a: "Yes, with caveats. Operators under 12 months of MC authority qualify for a narrower set of programs, primarily equipment-secured loans, and should expect a higher APR and a larger down payment requirement than seasoned operators. The Dispatched panel includes lenders who specifically underwrite new authorities.",
   },
   {
-    q: "How much can a 1-truck owner-operator typically borrow?",
-    a: "The site's published range is $25K–$250K for the working-capital product. One-truck owner-ops most often land in the $25K–$100K band on our panel, depending on revenue and time in business. The working-capital range and methodology are at /methodology — for borrowers who qualify outside the published $25K–$250K band, separate products apply that aren't shown on the landing page.",
+    q: "What documents do I need as an owner-operator?",
+    a: "Three months of business bank statements, your EIN or SSN, DOT and MC number, and a driver's license. For loans above $75K the chosen lender also asks for the most recent Schedule C or 1120 and current settlement statements from your carrier or broker. No business plan, no tax preparer letter.",
   },
   {
-    q: "Will applying hurt my credit?",
-    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your credit score. A hard pull only happens after you pick a specific lender and move forward on their term sheet. Multiple hard pulls inside a 14-day rate-shopping window count as a single inquiry under standard credit-bureau policies.",
+    q: "How long does owner-operator financing take to fund?",
+    a: "Soft approval and lender match typically come back within 20 minutes of submitting the application. Working capital and repair loans fund the same banking day after the chosen lender countersigns and the wire lands before cutoff. Equipment loans take 2 to 5 banking days because the lender has to verify the title and record the lien before funds release.",
   },
   {
-    q: "What documents will I need?",
-    a: "The basics: last 3 months of business bank statements, your EIN or SSN, your DOT number, and a driver's license. For loans over $75K we'll also ask for your most recent Schedule C or 1120 and current settlement statements from your carrier or broker. No business plan, no tax-preparer letter, no IFTA printouts unless a specific lender requests them.",
+    q: "Will applying as an owner-operator hurt my credit?",
+    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your credit score. A hard pull only happens after you pick a specific lender and move forward on their term sheet.",
   },
 ];
 
@@ -85,9 +97,9 @@ export default function OwnerOperatorFinancingPage() {
         payload={financialProduct({
           name: "Owner-operator financing",
           description:
-            "Commercial trucking financing routed to a panel of lenders that fund 1099 sole-prop owner-operators — working capital, repair loans, equipment financing, and factoring.",
+            "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, funds same banking day.",
           url: PAGE_URL,
-          category: "BusinessLoan",
+          category: "Commercial trucking financing",
         })}
       />
       <JsonLd payload={faqPage(faqs)} />

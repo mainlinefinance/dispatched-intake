@@ -11,43 +11,59 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title:
-    "Trucking working capital — fuel, payroll, daily expenses — Dispatched",
+  title: "Trucking working capital — fuel & payroll fast | Dispatched",
   description:
-    "Working capital for trucking operations: $25K–$250K to cover fuel, payroll, tolls, insurance, and slow-month gaps. Soft-pull match first; one hard pull only with the lender you pick.",
+    "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, funds same banking day. Apply in minutes.",
   alternates: { canonical: "/trucking-working-capital" },
+  openGraph: {
+    title: "Trucking working capital — fuel & payroll fast | Dispatched",
+    description:
+      "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, funds same banking day. Apply in minutes.",
+    url: "/trucking-working-capital",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trucking working capital — fuel & payroll fast | Dispatched",
+    description:
+      "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, funds same banking day. Apply in minutes.",
+  },
 };
 
 const PAGE_URL = "https://dispatched.finance/trucking-working-capital";
 
 const faqs = [
   {
-    q: "What can a trucking working-capital line actually be used for?",
-    a: "Anything operational: fuel, driver payroll, tolls, insurance premiums, broker fees, IFTA, IRP, factoring fees, and bridging slow months between dedicated lanes. Working-capital lines on our panel don't restrict the use of funds at the line-item level — the lender underwrites the operation's ability to repay, and the proceeds are flexible.",
+    q: "How fast can I get a trucking working capital loan?",
+    a: "Soft approval and lender match typically come back within 20 minutes of finishing the application. Funds hit your account the same banking day after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff. Wires that miss the cutoff settle the next banking day; weekend and federal-holiday wires settle the next banking day. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
   },
   {
-    q: "How is this different from invoice factoring?",
-    a: "Working capital is a loan you pay back from operations over time; factoring is selling specific outstanding invoices for an immediate cash advance. Working capital costs more in APR but gives you cash that isn't tied to specific receivables and doesn't require the carrier or broker to be notified. Factoring settles in days rather than weeks but eats into the margin on each invoice. Different cost structures for different cashflow problems.",
+    q: "What can I use a trucking working capital loan for?",
+    a: "Anything operational. Fuel, driver payroll, tolls, insurance premiums, broker fees, IFTA, IRP, factoring fees, repair deductibles, and bridging slow months between dedicated lanes are all common uses. Working-capital lines on the Dispatched panel do not restrict use of funds at the line-item level — the lender underwrites the operation's ability to repay, and the proceeds are flexible.",
   },
   {
-    q: "How fast does the working-capital line fund?",
-    a: "Same banking day after the chosen lender signs off, when the wire instruction lands before that bank's cutoff. Wires that miss the cutoff settle the next banking day; weekend and federal-holiday wires settle the next banking day. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
+    q: "How is working capital different from invoice factoring?",
+    a: "Working capital is a loan you pay back from operations over time; factoring is selling specific outstanding invoices for an immediate cash advance. Working capital costs more in APR but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring settles in days rather than weeks but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems.",
   },
   {
-    q: "What's the typical APR for a trucking working-capital line?",
-    a: "The marketing FAQ documents the observed panel range as 14% – 34% APR for working capital. The exact APR depends on credit band, time in business, monthly revenue, and the chosen lender's underwriting; see /methodology#finance-rates for how we describe the bands. Higher credit bands and longer operating histories quote toward the lower end; sub-580 borrowers quote toward the high end.",
+    q: "What APR can I expect on a trucking working capital loan?",
+    a: "The observed panel range is 14% to 34% APR for working capital. The exact APR depends on credit band, time in business, monthly revenue, and the chosen lender's underwriting. Higher credit bands and longer operating histories quote toward the lower end; sub-580 borrowers quote toward the high end. You see the exact APR, term length, and total cost on the term sheet before signing.",
   },
   {
-    q: "Can I use working capital to pay off a higher-rate loan I already have?",
-    a: "Yes. Refinancing higher-cost debt is one of the common use cases on our panel, particularly for borrowers consolidating multiple shorter-term advances into a single working-capital line at a lower blended cost. The application step asks about existing obligations so the lender can underwrite the consolidation accurately.",
+    q: "How much can a trucking operation borrow?",
+    a: "The published range is $25K to $250K for the working capital product. Actual approval depends on monthly revenue, time in business, credit band, and lender underwriting. Some operators qualify for less than $25K or more than $250K via separate products not shown on the landing page. The application step asks the questions a lender needs to size the offer accurately.",
   },
   {
-    q: "Will applying hurt my credit?",
-    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your credit score. A hard pull only happens after you pick a specific lender and move forward on their term sheet.",
+    q: "Can I use working capital to pay off a higher-rate loan?",
+    a: "Yes. Refinancing higher-cost debt is a common use case on the Dispatched panel, particularly for borrowers consolidating multiple short-term cash advances into a single working-capital line at a lower blended cost. The application step asks about existing obligations so the lender can underwrite the consolidation accurately.",
   },
   {
-    q: "How much can a trucking operation typically borrow?",
-    a: "The published range is $25K–$250K for the working-capital product. Actual approval depends on monthly revenue, time in business, credit band, and lender underwriting. Some borrowers qualify for less than $25K or more than $250K via separate products not shown on the landing page.",
+    q: "Will applying for working capital hurt my credit?",
+    a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your credit score. A hard pull only happens after you pick a specific lender and move forward on their term sheet. If you compare offers from multiple lenders, hard pulls inside a 14-day rate-shopping window count as one inquiry on most scoring models.",
+  },
+  {
+    q: "What documents do I need for a working capital loan?",
+    a: "Three months of business bank statements, your EIN or SSN, DOT number, and a driver's license. For loan amounts above $75K the chosen lender will also ask for the most recent Schedule C or 1120 and current settlement statements from your carrier or broker. No business plan, no tax preparer letter, no IFTA printouts unless a specific lender requests them.",
   },
 ];
 
@@ -70,9 +86,9 @@ export default function TruckingWorkingCapitalPage() {
       <JsonLd payload={financialProduct({
         name: "Trucking working capital",
         description:
-          "Unsecured working-capital lines for trucking operations, $25K–$250K, routed to a panel of trucking-friendly lenders.",
+          "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, funds same banking day.",
         url: PAGE_URL,
-        category: "BusinessLoan",
+        category: "Commercial trucking financing",
       })} />
       <JsonLd payload={faqPage(faqs)} />
 
