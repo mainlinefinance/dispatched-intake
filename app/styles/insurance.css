@@ -684,27 +684,8 @@
   }
 }
 
-/* Breadcrumb */
-.deep-money-page .breadcrumb {
-  padding: var(--space-4) 0 0;
-  font-family: var(--font-mono);
-  font-size: var(--fs-eyebrow);
-  text-transform: uppercase;
-  letter-spacing: var(--tr-eyebrow);
-  color: var(--color-ink-tertiary);
-}
-.deep-money-page .breadcrumb a {
-  text-decoration: none;
-  color: inherit;
-}
-.deep-money-page .breadcrumb a:hover {
-  text-decoration: underline;
-}
-.deep-money-page .breadcrumb-sep {
-  display: inline-block;
-  padding: 0 var(--space-2);
-  color: var(--color-steel-200);
-}
+/* Breadcrumb styles moved to app/styles/components/breadcrumbs.css — the
+   shared <Breadcrumbs /> component now renders the deep money page chain. */
 
 /* Hero zone */
 .deep-money-page .hero-zone {

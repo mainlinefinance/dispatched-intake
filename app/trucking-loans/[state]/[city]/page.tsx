@@ -8,6 +8,8 @@ import {
   type City,
 } from "@/lib/cities";
 import { JsonLd, breadcrumbList } from "@/components/seo/JsonLd";
+import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import { metaTruckingLoansCity } from "@/lib/seo/metadataPatterns";
 
 type Params = { state: string; city: string };
 
@@ -22,10 +24,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { state, city } = await params;
   const entry = getCity(state, city);
-  if (!entry) return { title: "Trucking loans — Dispatched" };
+  if (!entry) return {};
+  const { title, description } = metaTruckingLoansCity({
+    cityName: entry.city,
+    stateAbbr: entry.stateAbbr,
+  });
+  const canonical = `/trucking-loans/${entry.stateSlug}/${entry.citySlug}`;
   return {
-    title: `Trucking loans in ${entry.city}, ${entry.state} — Dispatched`,
-    description: `Working capital for ${entry.city} truckers and owner-operators. $25K–$250K at ${entry.aprRangeLow}–${entry.aprRangeHigh}% APR, typically funded in 24–48 hours.`,
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -44,26 +63,29 @@ export default async function GeoLandingPage({
   // flagship trucking LP until coverage is confirmed.
   if (entry.stateLenderPanelCount < LOW_COVERAGE_THRESHOLD) redirect("/trucking");
 
+  const breadcrumbs: BreadcrumbItem[] = [
+    { name: "Dispatched", url: "https://dispatched.finance/" },
+    {
+      name: "Trucking Loans",
+      url: "https://dispatched.finance/trucking-working-capital",
+    },
+    {
+      name: entry.state,
+      url: `https://dispatched.finance/trucking-loans/${entry.stateSlug}`,
+    },
+    {
+      name: entry.city,
+      url: `https://dispatched.finance/trucking-loans/${entry.stateSlug}/${entry.citySlug}`,
+    },
+  ];
+
   return (
     <div className="geo-page">
-      <JsonLd
-        payload={breadcrumbList([
-          { name: "Dispatched", url: "https://dispatched.finance/" },
-          {
-            name: "Trucking Loans",
-            url: "https://dispatched.finance/trucking-working-capital",
-          },
-          {
-            name: entry.state,
-            url: `https://dispatched.finance/trucking-loans/${entry.stateSlug}`,
-          },
-          {
-            name: entry.city,
-            url: `https://dispatched.finance/trucking-loans/${entry.stateSlug}/${entry.citySlug}`,
-          },
-        ])}
-      />
+      <JsonLd payload={breadcrumbList(breadcrumbs)} />
       <SiteNav />
+      <div className="geo-container">
+        <Breadcrumbs items={breadcrumbs} />
+      </div>
       <Hero entry={entry} />
       <WhyLocalMatters entry={entry} />
       <WhyBanksDecline entry={entry} />

@@ -16,6 +16,8 @@ import {
   article,
   breadcrumbList,
 } from "@/components/seo/JsonLd";
+import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import { metaInsuranceProductHub } from "@/lib/seo/metadataPatterns";
 
 type Params = { product: string };
 
@@ -32,11 +34,24 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { product } = await params;
   const p = getProduct(product);
-  if (!p) return { title: "Insurance — Dispatched" };
+  if (!p) return {};
+  const { title, description } = metaInsuranceProductHub(p.name);
+  const canonical = `/insurance/${p.slug}`;
   return {
-    title: `${p.name} for Commercial Trucking — Dispatched`,
-    description: `${p.oneLine} ${p.whoBuys}`,
-    alternates: { canonical: `/insurance/${p.slug}` },
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -51,22 +66,18 @@ export default async function ProductHubPage({
 
   const states = getAllInsuranceStates();
   const today = new Date().toISOString().slice(0, 10);
+  const breadcrumbs: BreadcrumbItem[] = [
+    { name: "Dispatched", url: "https://dispatched.finance/" },
+    { name: "Insurance", url: "https://dispatched.finance/insurance" },
+    {
+      name: p.name,
+      url: `https://dispatched.finance/insurance/${p.slug}`,
+    },
+  ];
 
   return (
     <div className="ins-page">
-      <JsonLd
-        payload={breadcrumbList([
-          { name: "Dispatched", url: "https://dispatched.finance/" },
-          {
-            name: "Insurance",
-            url: "https://dispatched.finance/insurance",
-          },
-          {
-            name: p.name,
-            url: `https://dispatched.finance/insurance/${p.slug}`,
-          },
-        ])}
-      />
+      <JsonLd payload={breadcrumbList(breadcrumbs)} />
       <JsonLd
         payload={article({
           headline: `${p.name} for Commercial Trucking`,
@@ -78,6 +89,9 @@ export default async function ProductHubPage({
       />
 
       <main id="main-content">
+        <div className="ins-container">
+          <Breadcrumbs items={breadcrumbs} />
+        </div>
         <Hero product={p} />
         <RegulatoryBlock product={p} />
         <StateDirectory product={p} states={states} />

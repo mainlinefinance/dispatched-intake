@@ -1,0 +1,57 @@
+/* Dispatched — Breadcrumbs primitive.
+   Visible nav rendered alongside the BreadcrumbList JSON-LD on dynamic
+   programmatic pages. Single source of truth lives in
+   components/seo/Breadcrumbs.tsx; this file styles the markup it emits.
+
+   Visual goals: small, muted, single line, inline list. The leaf
+   (aria-current="page") is ink-secondary so the user's current location is
+   the highest-contrast item in the chain. Separator color ties to the
+   steel scale used elsewhere in the design system. */
+
+.breadcrumbs {
+  padding: var(--space-4) 0 0;
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tr-eyebrow);
+  color: var(--color-ink-tertiary);
+}
+
+.breadcrumbs ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+}
+
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumbs a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs a:focus-visible {
+  outline: 2px solid var(--color-hiviz-400);
+  outline-offset: 2px;
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: var(--color-ink-secondary);
+}
+
+.breadcrumbs-sep {
+  display: inline-block;
+  padding: 0 var(--space-2);
+  color: var(--color-steel-200);
+}

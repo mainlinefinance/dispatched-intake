@@ -25,6 +25,8 @@ import {
   breadcrumbList,
   financialProduct,
 } from "@/components/seo/JsonLd";
+import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import { metaInsuranceDeep } from "@/lib/seo/metadataPatterns";
 import CarrierCardList from "@/components/compare/CarrierCardList";
 import {
   INSURANCE_CONSENT_TEXT,
@@ -53,12 +55,29 @@ export async function generateMetadata({
   const p = getProduct(product);
   const s = getInsuranceState(state);
   const dc = getDotClass(dotClass);
-  if (!p || !s || !dc) return { title: "Insurance — Dispatched" };
+  if (!p || !s || !dc) return {};
+  const { title, description } = metaInsuranceDeep({
+    productName: p.name,
+    productShortLabel: p.shortLabel,
+    dotClassName: dc.name,
+    dotClassShortLabel: dc.shortLabel,
+    stateName: s.name,
+  });
+  const canonical = `/insurance/${p.slug}/${s.slug}/${dc.slug}`;
   return {
-    title: `${p.name} for ${dc.name} in ${s.name} — Dispatched`,
-    description: `${p.shortLabel} for ${dc.name.toLowerCase()} operators in ${s.name}. Sampling profile, carriers writing the line, and rate band where sourced.`,
-    alternates: {
-      canonical: `/insurance/${p.slug}/${s.slug}/${dc.slug}`,
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
     },
   };
 }
@@ -111,24 +130,23 @@ export default async function DeepMoneyPage({
     .filter((c): c is Carrier => c !== null);
   const today = new Date().toISOString().slice(0, 10);
   const url = `https://dispatched.finance/insurance/${p.slug}/${s.slug}/${dc.slug}`;
+  const breadcrumbs: BreadcrumbItem[] = [
+    { name: "Dispatched", url: "https://dispatched.finance/" },
+    { name: "Insurance", url: "https://dispatched.finance/insurance" },
+    {
+      name: p.name,
+      url: `https://dispatched.finance/insurance/${p.slug}`,
+    },
+    {
+      name: s.name,
+      url: `https://dispatched.finance/insurance/${p.slug}/${s.slug}`,
+    },
+    { name: dc.name, url },
+  ];
 
   return (
     <div className="deep-money-page">
-      <JsonLd
-        payload={breadcrumbList([
-          { name: "Dispatched", url: "https://dispatched.finance/" },
-          { name: "Insurance", url: "https://dispatched.finance/insurance" },
-          {
-            name: p.name,
-            url: `https://dispatched.finance/insurance/${p.slug}`,
-          },
-          {
-            name: s.name,
-            url: `https://dispatched.finance/insurance/${p.slug}/${s.slug}`,
-          },
-          { name: dc.name, url },
-        ])}
-      />
+      <JsonLd payload={breadcrumbList(breadcrumbs)} />
       <JsonLd
         payload={article({
           headline: `${p.name} for ${dc.name} in ${s.name}`,
@@ -149,7 +167,7 @@ export default async function DeepMoneyPage({
 
       <main id="main-content">
         <div className="container">
-          <Breadcrumb product={p} state={s} dotClass={dc} />
+          <Breadcrumbs items={breadcrumbs} />
           <HeroZone
             product={p}
             state={s}
@@ -164,28 +182,6 @@ export default async function DeepMoneyPage({
         <ComplianceFooter state={s} product={p} />
       </main>
     </div>
-  );
-}
-
-function Breadcrumb({
-  product,
-  state,
-  dotClass,
-}: {
-  product: Product;
-  state: InsuranceState;
-  dotClass: DotClass;
-}) {
-  return (
-    <nav className="breadcrumb" aria-label="Breadcrumb">
-      <Link href="/insurance">Insurance</Link>
-      <span className="breadcrumb-sep">/</span>
-      <Link href={`/insurance/${product.slug}`}>{product.shortLabel}</Link>
-      <span className="breadcrumb-sep">/</span>
-      <Link href={`/insurance/${product.slug}/${state.slug}`}>{state.name}</Link>
-      <span className="breadcrumb-sep">/</span>
-      <span>{dotClass.shortLabel}</span>
-    </nav>
   );
 }
 
