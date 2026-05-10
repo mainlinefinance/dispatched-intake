@@ -6,7 +6,16 @@ import {
   article,
   breadcrumbList,
   faqPage,
+  person,
 } from "@/components/seo/JsonLd";
+
+/* Single source of truth for the methodology page's last-updated date.
+   Used by the visible byline AND the Article schema dateModified so the
+   two never drift. ISO date — must be a stable literal, not new Date(),
+   so the byline is deterministic across renders. */
+const METHODOLOGY_LAST_UPDATED = "2026-05-10";
+const METHODOLOGY_LAST_UPDATED_DISPLAY = "May 10, 2026";
+const METHODOLOGY_PUBLISHED = "2026-04-01";
 
 export const metadata: Metadata = {
   title: "Methodology — how Dispatched matches you | Dispatched",
@@ -60,7 +69,6 @@ const faqs = [
 ];
 
 export default function MethodologyPage() {
-  const today = new Date().toISOString().slice(0, 10);
   return (
     <div className="ins-page">
       <JsonLd
@@ -71,12 +79,24 @@ export default function MethodologyPage() {
       />
       <JsonLd
         payload={article({
-          headline: "Dispatched Methodology",
+          headline: "Dispatched methodology — how we route, vet, and price",
           description:
             "Definitions, sourcing, refresh cadence, and publication discipline for the trucking finance and commercial trucking insurance content Dispatched publishes.",
           url: "https://dispatched.finance/methodology",
-          datePublished: today,
-          dateModified: today,
+          datePublished: METHODOLOGY_PUBLISHED,
+          dateModified: METHODOLOGY_LAST_UPDATED,
+          authorName: "Angelo Orru Neto",
+        })}
+      />
+      <JsonLd
+        payload={person({
+          name: "Angelo Orru Neto",
+          jobTitle: "Founder",
+          description:
+            "Founder of Dispatched. Operator-engineer with a decade in clinical-data infrastructure. Built Dispatched to apply the same intake-to-routing discipline to U.S. trucking finance and insurance.",
+          imageUrl: "https://dispatched.finance/about/angelo.jpg",
+          alumniOf: "Fundação Getulio Vargas",
+          sameAs: ["https://www.linkedin.com/in/angelo-orru-neto-b4109917b/"],
         })}
       />
       <JsonLd payload={faqPage(faqs)} />
@@ -88,6 +108,11 @@ export default function MethodologyPage() {
             <h1 className="ins-hero-title">
               How Dispatched defines, sources, and refreshes what it publishes.
             </h1>
+            <p className="methodology-byline">
+              Authored by{" "}
+              <Link href="/about">Angelo Orru Neto, Founder</Link>
+              {" · "}Last updated {METHODOLOGY_LAST_UPDATED_DISPLAY}
+            </p>
             <p className="ins-hero-sub">
               Two surfaces, one discipline. Trucking finance content sticks to
               structural promises about how the application flow works and to
