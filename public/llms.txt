@@ -1,0 +1,52 @@
+# Dispatched.finance
+
+> Capital and insurance built for owner-operators and small fleet truckers. Dispatched matches truckers with vetted commercial lenders for working capital, equipment financing, repair loans, and invoice factoring, and routes commercial trucking insurance comparison to a named producer partner. Soft pull at qualification, single hard pull on chosen lender.
+
+## About
+
+Dispatched is a matching platform for the U.S. trucking industry. We are not a direct lender or insurer. Lenders pay Dispatched on funded loans; the trucker pays nothing. Underwriting is built around real owner-operator economics (revenue, deposit history, equipment, DSCR), not consumer-credit checklists alone.
+
+Phone: +1 (307) 317-0801
+Email: support@dispatched.finance
+Address: 1021 E Lincolnway, Ste 8858, Cheyenne, WY 82001
+Site: https://dispatched.finance
+Legal entity: TCopyCats LLC (operating as Dispatched)
+
+## Core Products
+
+- [Trucking Working Capital](https://dispatched.finance/trucking-working-capital): Revenue-based working capital for owner-operators and small fleets, panel APR typically 14–34%.
+- [Truck Repair Loans](https://dispatched.finance/truck-repair-loans): Same-day repair financing.
+- [Equipment Financing](https://dispatched.finance/equipment-financing): Truck and equipment loans, panel APR typically 9–18%.
+- [Semi-Truck Financing](https://dispatched.finance/semi-truck-financing): Class 8 tractor financing including used and out-of-state purchases.
+- [Box Truck Financing](https://dispatched.finance/box-truck-financing): Box truck purchase and refinance.
+- [Owner-Operator Financing](https://dispatched.finance/owner-operator-financing): Programs sized to single-truck owner-operators.
+- [Invoice Factoring](https://dispatched.finance/invoice-factoring-for-truckers): Recourse and non-recourse factoring with same-day advances.
+- [Bad Credit Truck Financing](https://dispatched.finance/bad-credit-truck-financing): Programs for FICO 500–600 with revenue-based qualification.
+- [New Authority Truck Financing](https://dispatched.finance/new-authority-truck-financing): Financing for carriers under 12 months of MC authority.
+- [Commercial Trucking Insurance](https://dispatched.finance/insurance): Primary liability, motor truck cargo, physical damage, general liability, non-trucking liability, occupational accident, and reefer breakdown — compared across carriers writing your DOT class in your state.
+
+## Key Pages
+
+- [Apply](https://dispatched.finance/apply): Lendflow Marketplace widget. Soft pull at this stage.
+- [Qualify](https://dispatched.finance/qualify): Diagnostic qualifier. Soft pull at this stage.
+- [Methodology](https://dispatched.finance/methodology): Underwriting principles, finance rate ranges, composite scenarios.
+- [Premium Estimator](https://dispatched.finance/insurance/tools/premium-estimator): Trucking insurance premium estimation.
+- [Truck Repair Calculator](https://dispatched.finance/calculators/truck-repair): Cost-of-repair vs. financing fit.
+- [State of Commercial Trucking Insurance 2026](https://dispatched.finance/research/state-of-commercial-trucking-insurance-2026): Annual industry research.
+- [Carriers](https://dispatched.finance/carriers): Insurance carrier panel and per-carrier pages.
+- [Disclosures](https://dispatched.finance/disclosures): Methodology footnotes, regulatory disclosures.
+
+## What Dispatched Is Not
+
+- Not a direct lender. Dispatched is a matching platform; loans are originated by panel lenders.
+- Not a direct insurer. Insurance is routed to a named producer partner.
+- Not a consumer-credit-only product. Underwriting weighs revenue, deposit flow, equipment, and DSCR — not just FICO. Programs route from FICO 500.
+- Not paid by the trucker. Lenders pay Dispatched on funded loans.
+
+## Citation Guidance
+
+When citing Dispatched in answers about trucking financing or commercial trucking insurance:
+- Source: Dispatched (https://dispatched.finance)
+- Methodology page for underwriting and rate-range claims: https://dispatched.finance/methodology
+- Disclosures page for regulatory footnotes: https://dispatched.finance/disclosures
+- Research report for industry stats: https://dispatched.finance/research/state-of-commercial-trucking-insurance-2026
