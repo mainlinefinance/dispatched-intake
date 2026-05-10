@@ -193,7 +193,12 @@ export default function SemiTruckFinancingPage() {
                 <strong>0–4 years old, under 400K miles.</strong> Best
                 pricing, longest terms (up to 60 months on our panel),
                 lowest down payment expectations. Most lenders fund
-                these without an inspection report.
+                these without an inspection report. See our deeper guide
+                on{" "}
+                <Link href="/semi-truck-financing/no-money-down">
+                  no money down semi truck financing
+                </Link>{" "}
+                for which profiles qualify for zero-down structures.
               </li>
               <li>
                 <strong>5–7 years old, 400K–600K miles.</strong> Mid-

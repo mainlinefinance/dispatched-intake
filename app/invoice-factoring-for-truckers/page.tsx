@@ -167,7 +167,12 @@ export default function InvoiceFactoringPage() {
                 Factoring is sometimes the only product available to
                 operators with under six months of operating history,
                 because the factor underwrites the broker&rsquo;s credit
-                rather than the trucker&rsquo;s.
+                rather than the trucker&rsquo;s. This is also why{" "}
+                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                  no credit check trucking factoring
+                </Link>{" "}
+                is the standard path for sub-580 FICO and post-BK
+                operators.
               </li>
               <li>
                 <strong>Operators who don&rsquo;t want debt.</strong>{" "}

@@ -275,6 +275,64 @@ export function financialService(): JsonLdPayload {
   };
 }
 
+/* HowTo — for step-by-step pages (e.g., /owner-operator-financing/first-time
+   "from CDL to your first funded truck"). Google still rewards HowTo schema
+   on educational pages even though rich-result eligibility was narrowed in
+   2023; the structured signal still strengthens entity recognition. */
+export function howTo(args: {
+  name: string;
+  description: string;
+  totalTime?: string; // ISO 8601 duration, e.g. "PT10D" for 10 days
+  steps: ReadonlyArray<{ name: string; text: string; url?: string }>;
+}): JsonLdPayload {
+  const payload: JsonLdPayload = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: args.name,
+    description: args.description,
+    step: args.steps.map((s, i) => {
+      const step: JsonLdValue = {
+        "@type": "HowToStep",
+        position: i + 1,
+        name: s.name,
+        text: s.text,
+      };
+      if (s.url) (step as { [k: string]: JsonLdValue }).url = s.url;
+      return step;
+    }),
+  };
+  if (args.totalTime) payload.totalTime = args.totalTime;
+  return payload;
+}
+
+/* ItemList — used on listicle/ranking pages (e.g.,
+   /research/best-trucking-factoring-2026). Each item references an external
+   organization by url; we do NOT emit AggregateRating without verifiable
+   user-review data, since Google penalizes self-serving rating schema. */
+export function itemList(args: {
+  name: string;
+  description: string;
+  items: ReadonlyArray<{ name: string; url: string; description?: string }>;
+}): JsonLdPayload {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: args.name,
+    description: args.description,
+    numberOfItems: args.items.length,
+    itemListElement: args.items.map((it, i) => {
+      const li: JsonLdValue = {
+        "@type": "ListItem",
+        position: i + 1,
+        name: it.name,
+        url: it.url,
+      };
+      if (it.description) (li as { [k: string]: JsonLdValue }).description = it.description;
+      return li;
+    }),
+  };
+}
+
 /* InsuranceAgency — entity-level wrapper for the /insurance pillar page.
    Complements the Article schema on the same page (Article describes the
    editorial; InsuranceAgency describes the entity providing the service). */

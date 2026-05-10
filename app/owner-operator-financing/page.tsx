@@ -194,7 +194,11 @@ export default function OwnerOperatorFinancingPage() {
                 with under six months under their own authority can still
                 apply; the working-capital fit goes away and the
                 repair-loan fit narrows. New-authority financing has its
-                own panel routing.
+                own panel routing — see the{" "}
+                <Link href="/owner-operator-financing/first-time">
+                  first-time owner-operator financing guide
+                </Link>{" "}
+                for the pre-revenue and pre-MC# routing.
               </li>
               <li>
                 <strong>Active DOT number.</strong> The driver&rsquo;s
