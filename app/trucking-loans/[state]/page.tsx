@@ -8,6 +8,8 @@ import {
   type StateInfo,
 } from "@/lib/cities";
 import { JsonLd, breadcrumbList } from "@/components/seo/JsonLd";
+import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import { metaTruckingLoansState } from "@/lib/seo/metadataPatterns";
 
 type Params = { state: string };
 
@@ -22,10 +24,24 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { state } = await params;
   const info = getState(state);
-  if (!info) return { title: "Page not found — Dispatched" };
+  if (!info) return {};
+  const { title, description } = metaTruckingLoansState(info.name);
+  const canonical = `/trucking-loans/${info.slug}`;
   return {
-    title: `${info.name} trucking loans — ${info.lenderPanelCount} lenders on panel · Dispatched`,
-    description: `Working capital for ${info.name} trucking owner-operators and small fleets. Soft-match preview first — nothing hits your credit until you pick a lender. ${info.lenderPanelCount} lenders actively funding ${info.name} trucking.`,
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -39,22 +55,25 @@ export default async function StatePage({
   if (!info) notFound();
   if (info.lenderPanelCount < LOW_COVERAGE_THRESHOLD) redirect("/trucking");
 
+  const breadcrumbs: BreadcrumbItem[] = [
+    { name: "Dispatched", url: "https://dispatched.finance/" },
+    {
+      name: "Trucking Loans",
+      url: "https://dispatched.finance/trucking-working-capital",
+    },
+    {
+      name: info.name,
+      url: `https://dispatched.finance/trucking-loans/${info.slug}`,
+    },
+  ];
+
   return (
     <div className="geo-page">
-      <JsonLd
-        payload={breadcrumbList([
-          { name: "Dispatched", url: "https://dispatched.finance/" },
-          {
-            name: "Trucking Loans",
-            url: "https://dispatched.finance/trucking-working-capital",
-          },
-          {
-            name: info.name,
-            url: `https://dispatched.finance/trucking-loans/${info.slug}`,
-          },
-        ])}
-      />
+      <JsonLd payload={breadcrumbList(breadcrumbs)} />
       <SiteNav />
+      <div className="geo-container">
+        <Breadcrumbs items={breadcrumbs} />
+      </div>
       <section className="geo-hero">
         <div className="geo-container">
           <span className="geo-eyebrow">Trucking loans · {info.name}</span>

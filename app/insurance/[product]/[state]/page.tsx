@@ -26,6 +26,8 @@ import {
   breadcrumbList,
   financialProduct,
 } from "@/components/seo/JsonLd";
+import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import { metaInsuranceProductState } from "@/lib/seo/metadataPatterns";
 import CarrierTable from "@/components/compare/CarrierTable";
 import MethodologyByline from "@/components/trust/MethodologyByline";
 import ExpertCallout from "@/components/trust/ExpertCallout";
@@ -52,11 +54,29 @@ export async function generateMetadata({
   const { product, state } = await params;
   const p = getProduct(product);
   const s = getInsuranceState(state);
-  if (!p || !s) return { title: "Insurance — Dispatched" };
+  if (!p || !s) return {};
+  const { title, description } = metaInsuranceProductState({
+    productShortLabel: p.shortLabel,
+    productName: p.name,
+    productNameLower: p.name.toLowerCase(),
+    stateName: s.name,
+  });
+  const canonical = `/insurance/${p.slug}/${s.slug}`;
   return {
-    title: `${p.name} in ${s.name}: Carriers and Rate Context — Dispatched`,
-    description: `${p.shortLabel} for commercial trucking operators in ${s.name}. Carriers writing the line, ${s.doi.name} regulatory context, and sampled premium ranges where available.`,
-    alternates: { canonical: `/insurance/${p.slug}/${s.slug}` },
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -79,20 +99,19 @@ export default async function StateMoneyPage({
   const editorial = getEditorial(p.slug, s.slug);
   const today = new Date().toISOString().slice(0, 10);
   const url = `https://dispatched.finance/insurance/${p.slug}/${s.slug}`;
+  const breadcrumbs: BreadcrumbItem[] = [
+    { name: "Dispatched", url: "https://dispatched.finance/" },
+    { name: "Insurance", url: "https://dispatched.finance/insurance" },
+    {
+      name: p.name,
+      url: `https://dispatched.finance/insurance/${p.slug}`,
+    },
+    { name: s.name, url },
+  ];
 
   return (
     <div className="ins-page">
-      <JsonLd
-        payload={breadcrumbList([
-          { name: "Dispatched", url: "https://dispatched.finance/" },
-          { name: "Insurance", url: "https://dispatched.finance/insurance" },
-          {
-            name: p.name,
-            url: `https://dispatched.finance/insurance/${p.slug}`,
-          },
-          { name: s.name, url },
-        ])}
-      />
+      <JsonLd payload={breadcrumbList(breadcrumbs)} />
       <JsonLd
         payload={article({
           headline: `${p.name} in ${s.name} for Commercial Trucking`,
@@ -112,6 +131,9 @@ export default async function StateMoneyPage({
       />
 
       <main id="main-content">
+        <div className="ins-container">
+          <Breadcrumbs items={breadcrumbs} />
+        </div>
         <Hero product={p} state={s} />
         <div className="ins-container">
           <MethodologyByline />

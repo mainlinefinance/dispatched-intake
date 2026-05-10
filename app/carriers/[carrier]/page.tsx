@@ -14,6 +14,8 @@ import {
   article,
   breadcrumbList,
 } from "@/components/seo/JsonLd";
+import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import { metaCarrier } from "@/lib/seo/metadataPatterns";
 
 type Params = { carrier: string };
 
@@ -30,11 +32,24 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { carrier } = await params;
   const c = getCarrier(carrier);
-  if (!c) return { title: "Carrier — Dispatched" };
+  if (!c) return {};
+  const { title, description } = metaCarrier(c.name);
+  const canonical = `/carriers/${c.slug}`;
   return {
-    title: `${c.name} — Commercial Trucking Insurance Review — Dispatched`,
-    description: `${c.name}: AM Best rating, products written, state footprint, and the editorial context Dispatched uses when listing this carrier on money pages.`,
-    alternates: { canonical: `/carriers/${c.slug}` },
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -55,16 +70,15 @@ export default async function CarrierReviewPage({
     .filter((p): p is NonNullable<ReturnType<typeof getProduct>> => p !== null);
   const today = new Date().toISOString().slice(0, 10);
   const url = `https://dispatched.finance/carriers/${c.slug}`;
+  const breadcrumbs: BreadcrumbItem[] = [
+    { name: "Dispatched", url: "https://dispatched.finance/" },
+    { name: "Carriers", url: "https://dispatched.finance/carriers" },
+    { name: c.name, url },
+  ];
 
   return (
     <div className="ins-page">
-      <JsonLd
-        payload={breadcrumbList([
-          { name: "Dispatched", url: "https://dispatched.finance/" },
-          { name: "Carriers", url: "https://dispatched.finance/carriers" },
-          { name: c.name, url },
-        ])}
-      />
+      <JsonLd payload={breadcrumbList(breadcrumbs)} />
       <JsonLd
         payload={article({
           headline: `${c.name} — Commercial Trucking Insurance Review`,
@@ -76,6 +90,9 @@ export default async function CarrierReviewPage({
       />
 
       <main id="main-content">
+        <div className="ins-container">
+          <Breadcrumbs items={breadcrumbs} />
+        </div>
         <Hero carrier={c} />
         <RatingBlock carrier={c} />
         {c.notes ? <AboutBlock carrier={c} /> : null}
