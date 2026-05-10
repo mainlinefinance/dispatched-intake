@@ -284,6 +284,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/compare/progressive-commercial-vs-sentry-insurance`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/sentry-insurance-vs-nationwide-trucking`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/progressive-commercial-vs-nationwide-trucking`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/research/state-of-trucking-tech-2026`,
+    lastModified: today,
+    changeFrequency: "yearly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/research/state-of-trucking-regulation-2026`,
+    lastModified: today,
+    changeFrequency: "yearly",
+    priority: 0.7,
+  });
+
+  entries.push({
     url: `${ORIGIN}/research/state-of-owner-operator-economics-2026`,
     lastModified: today,
     changeFrequency: "yearly",

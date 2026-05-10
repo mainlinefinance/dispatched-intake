@@ -35,6 +35,7 @@ import { INSURANCE_RISK_TERMS } from "./glossary/insurance-risk";
 import { DRIVER_LIFE_WORK_TERMS } from "./glossary/driver-life-work";
 import { TAX_ACCOUNTING_TERMS } from "./glossary/tax-accounting";
 import { TECH_TELEMATICS_TERMS } from "./glossary/tech-telematics";
+import { COMPLIANCE_ENDORSEMENTS_TERMS } from "./glossary/compliance-endorsements";
 
 export type {
   GlossaryCategory,
@@ -323,6 +324,7 @@ const TERMS: ReadonlyArray<GlossaryTerm> = [
   ...DRIVER_LIFE_WORK_TERMS,
   ...TAX_ACCOUNTING_TERMS,
   ...TECH_TELEMATICS_TERMS,
+  ...COMPLIANCE_ENDORSEMENTS_TERMS,
 ];
 
 export function getAllTerms(): ReadonlyArray<GlossaryTerm> {
