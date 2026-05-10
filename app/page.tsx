@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title:
     "Dispatched — Capital built for truckers",
   description:
-    "Capital built for truckers. No collateral. Bank decline is okay. We match owner-operators and small fleets with trucking-friendly lenders for repair loans, working capital, equipment financing, and commercial truck insurance.",
+    "Capital and insurance for truckers. Soft pull, lender-paid. Match with trucking-friendly lenders for working capital, equipment, repair, factoring.",
   alternates: { canonical: "/" },
 };
 
