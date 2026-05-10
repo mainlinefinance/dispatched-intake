@@ -249,13 +249,14 @@ export function financialService(): JsonLdPayload {
     // validator flags `provider` here as an unrecognized property.
     parentOrganization: { "@id": ORG_ID },
     areaServed: { "@type": "Country", name: "United States" },
-    serviceType: "Commercial trucking financing",
+    // serviceType + audience were dropped — both are properties of Service,
+    // and FinancialService's lineage in schema.org is LocalBusiness >
+    // Organization (NOT Service). The validator flags either as unrecognized
+    // on FinancialService. The audience signal is preserved in the
+    // description string ("for U.S. truckers"); the @type itself is the
+    // serviceType (FinancialService).
     description:
-      "Working capital, equipment financing, truck repair loans, invoice factoring, semi-truck financing, box truck financing, owner-operator and new-authority loans for U.S. truckers.",
-    audience: {
-      "@type": "BusinessAudience",
-      audienceType: "Owner-operators and small fleet truckers",
-    },
+      "Working capital, equipment financing, truck repair loans, invoice factoring, semi-truck financing, box truck financing, owner-operator and new-authority loans for U.S. truckers (owner-operators and small fleets).",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Trucking Loan Products",
