@@ -324,6 +324,7 @@ export default function EquipmentFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
+              <li><Link href="/trucking">All trucking financing products →</Link></li>
               <li><Link href="/semi-truck-financing">Semi truck financing →</Link></li>
               <li><Link href="/box-truck-financing">Box truck financing →</Link></li>
               <li><Link href="/owner-operator-financing">Owner-operator financing →</Link></li>

@@ -322,6 +322,7 @@ export default function TruckingWorkingCapitalPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
+              <li><Link href="/trucking">All trucking financing products →</Link></li>
               <li><Link href="/invoice-factoring-for-truckers">Invoice factoring →</Link></li>
               <li><Link href="/equipment-financing">Equipment financing →</Link></li>
               <li><Link href="/truck-repair-loans">Truck repair loans →</Link></li>

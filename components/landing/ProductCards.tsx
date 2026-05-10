@@ -25,9 +25,9 @@ const products: Product[] = [
   },
   {
     label: "Cash flow",
-    title: "Working capital",
-    copy: "Cover fuel, payroll, and daily expenses.",
-    href: "/trucking-working-capital",
+    title: "Trucking financing",
+    copy: "Working capital, equipment, repair loans, and more.",
+    href: "/trucking",
     icon: <IconDollarCircle />,
   },
   {

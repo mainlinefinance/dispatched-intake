@@ -316,6 +316,7 @@ export default function NewAuthorityFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
+              <li><Link href="/trucking">All trucking financing products →</Link></li>
               <li><Link href="/invoice-factoring-for-truckers">Invoice factoring for truckers →</Link></li>
               <li><Link href="/equipment-financing">Equipment financing →</Link></li>
               <li><Link href="/owner-operator-financing">Owner-operator financing →</Link></li>

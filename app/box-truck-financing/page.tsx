@@ -393,6 +393,11 @@ export default function BoxTruckFinancingPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
+                <Link href="/trucking">
+                  All trucking financing products →
+                </Link>
+              </li>
+              <li>
                 <Link href="/truck-repair-loans">
                   Truck repair financing →
                 </Link>

@@ -35,11 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 1,
   });
 
-  // /trucking is a 308 redirect to /trucking-working-capital — including it in
-  // the sitemap wastes crawl budget and creates a "submitted URL is a
-  // redirect" warning in GSC. The destination is listed below as the
-  // working-capital money page. If a true /trucking hub page is built,
-  // re-add this entry pointing to the hub URL.
+  entries.push({
+    url: `${ORIGIN}/trucking`,
+    lastModified: today,
+    changeFrequency: "weekly",
+    priority: 0.9,
+  });
 
   entries.push({
     url: `${ORIGIN}/insurance`,
