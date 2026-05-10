@@ -263,6 +263,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/compare/1st-commercial-credit-vs-riviera-finance`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/bluevine-vs-ondeck`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/compare/porter-freight-funding-vs-otr-solutions`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/research/state-of-owner-operator-economics-2026`,
+    lastModified: today,
+    changeFrequency: "yearly",
+    priority: 0.7,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/research/state-of-trucking-insurance-claims-2026`,
+    lastModified: today,
+    changeFrequency: "yearly",
+    priority: 0.7,
+  });
+
+  entries.push({
     url: `${ORIGIN}/calculators/how-much-can-i-borrow-for-a-truck`,
     lastModified: today,
     changeFrequency: "monthly",

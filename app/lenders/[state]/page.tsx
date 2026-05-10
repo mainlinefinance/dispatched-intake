@@ -18,6 +18,10 @@ import {
   type LenderType,
   type StateInfo,
 } from "@/lib/data/lenders";
+import {
+  getStateContext,
+  type StateContextEntry,
+} from "@/lib/data/lenderStateContext";
 
 type Params = { state: string };
 
@@ -95,11 +99,13 @@ function filterByBestFor(
   );
 }
 
-function stateFAQs(s: StateInfo) {
+function stateFAQs(s: StateInfo, ctx?: StateContextEntry) {
+  const lenderListFaq = ctx?.procedural.faqLine ??
+    `Yes. The Dispatched lender panel includes 12 factoring, equipment financing, and working capital providers serving ${s.name}-based carriers.`;
   return [
     {
       q: `Which trucking lenders serve ${s.name}?`,
-      a: `All 12 lenders in the Dispatched directory serve ${s.name}: Apex Capital, eCapital, RTS Financial, Triumph Business Capital, TBS Factoring, OTR Solutions, Porter Freight Funding, Truckstop Go Capital, 1st Commercial Credit, Riviera Finance, Bluevine, and Lendio. Each is nationwide — the operational answer changes state-by-state because of IRP base state, IFTA filing, UCR, and state DOT requirements, but the lender list is the same.`,
+      a: `All 12 lenders in the Dispatched directory serve ${s.name}: Apex Capital, eCapital, RTS Financial, Triumph Business Capital, TBS Factoring, OTR Solutions, Porter Freight Funding, Truckstop Go Capital, 1st Commercial Credit, Riviera Finance, Bluevine, and Lendio. Each is nationwide — the operational answer changes state-by-state because of IRP base state, IFTA filing, UCR, and state DOT requirements, but the lender list is the same. ${lenderListFaq}`,
     },
     {
       q: `What's different about financing a trucking business in ${s.name}?`,
@@ -128,7 +134,8 @@ export default async function LendersStatePage({
   const today = new Date().toISOString().slice(0, 10);
   const url = `${ORIGIN}/lenders/${s.slug}`;
   const lenders = getLendersByState(s.code);
-  const faqs = stateFAQs(s);
+  const ctx = getStateContext(s.slug);
+  const faqs = stateFAQs(s, ctx);
 
   const ownerOpLenders = filterByBestFor(lenders, ["owner-operator"]);
   const fleetLenders = filterByBestFor(lenders, ["fleet"]);
@@ -189,6 +196,55 @@ export default async function LendersStatePage({
               <Link href="/lenders">All states</Link>
             </p>
           </header>
+
+          {ctx?.curated ? (
+            <section className="research-section" id="state-market">
+              <h2>The {s.name} trucking market</h2>
+              <p>{ctx.curated.market}</p>
+              {ctx.curated.economicNote ? (
+                <p>{ctx.curated.economicNote}</p>
+              ) : null}
+              <h3>Major freight corridors in {s.name}</h3>
+              <ul className="research-list">
+                {ctx.curated.corridors.map((c) => (
+                  <li key={c}>{c}</li>
+                ))}
+              </ul>
+            </section>
+          ) : (
+            <section className="research-section" id="state-summary">
+              <h2>The {s.name} trucking market</h2>
+              <p>{ctx?.procedural.summary}</p>
+            </section>
+          )}
+
+          {ctx?.curated?.regulatoryNote ? (
+            <section className="research-section" id="state-regulatory">
+              <h2>{s.name} regulatory considerations</h2>
+              <p>{ctx.curated.regulatoryNote}</p>
+            </section>
+          ) : null}
+
+          {ctx?.curated?.regionalLenders &&
+          ctx.curated.regionalLenders.length > 0 ? (
+            <section className="research-section" id="regional-lenders">
+              <h2>Regional lenders in {s.name}</h2>
+              <p>
+                Beyond the 12 national lenders below, these regional or
+                state-specific lenders maintain meaningful presence in{" "}
+                {s.name}. We do not vet them with the same rigor as the
+                directory — but their existence is worth knowing when
+                comparing offers.
+              </p>
+              <ul className="research-list">
+                {ctx.curated.regionalLenders.map((name) => (
+                  <li key={name}>
+                    <strong>{name}</strong>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
 
           <section className="research-section" id="state-context">
             <h2>The {s.name} trucking-finance picture</h2>
