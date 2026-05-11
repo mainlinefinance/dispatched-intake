@@ -114,7 +114,7 @@ export default function StateOfTruckingTech2026() {
             "Annual Dispatched Research report on commercial trucking technology: ELD market consolidation, AI dash cam adoption, fleet management platform landscape, telematics insurance integration, and 2026 outlook.",
           url,
           datePublished: today,
-          dateModified: today,
+          dateModified: "2026-05-11",
         })}
       />
 
@@ -122,7 +122,7 @@ export default function StateOfTruckingTech2026() {
         <div className="research-container">
           <header className="research-header">
             <p className="research-eyebrow">
-              Dispatched Research · Annual report · Updated May 2026
+              Dispatched Research · Annual report · Updated Q2 2026
             </p>
             <h1 className="research-h1">
               State of trucking tech, 2026.
@@ -141,6 +141,18 @@ export default function StateOfTruckingTech2026() {
               referenced inline. Data through April 2026.
             </p>
           </header>
+
+          <section className="research-section" id="q2-2026-update">
+            <h2>Q2 2026 update</h2>
+            <p>
+              Samsara (NYSE: IOT) reported continued 30%+ revenue growth
+              in its commercial fleet segment. Mobile-app ELDs gained
+              share among single-truck owner-operators. The digital
+              broker platform consolidation continues — Loadsmith
+              launched a new direct shipper integration. No major
+              FMCSA-Registered ELD additions in Q1.
+            </p>
+          </section>
 
           <nav className="research-toc" aria-label="Table of contents">
             <p className="research-toc-eyebrow">Contents</p>

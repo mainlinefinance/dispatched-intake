@@ -114,7 +114,7 @@ export default function StateOfTruckingCapital2026() {
             "Annual Dispatched Research report on commercial trucking financing — 2026 rate environment, lender landscape, factoring market consolidation (Love's/TBS, eCapital/LSQ), and regulatory shifts.",
           url,
           datePublished: today,
-          dateModified: today,
+          dateModified: "2026-05-11",
         })}
       />
 
@@ -122,7 +122,7 @@ export default function StateOfTruckingCapital2026() {
         <div className="research-container">
           <header className="research-header">
             <p className="research-eyebrow">
-              Dispatched Research · Annual report · Updated May 2026
+              Dispatched Research · Annual report · Updated Q2 2026
             </p>
             <h1 className="research-h1">
               State of commercial trucking capital, 2026.
@@ -143,6 +143,19 @@ export default function StateOfTruckingCapital2026() {
               referenced inline. Data through April 2026.
             </p>
           </header>
+
+          <section className="research-section" id="q2-2026-update">
+            <h2>Q2 2026 update</h2>
+            <p>
+              The Federal Reserve held rates steady through April 2026,
+              with no near-term cut expected. Equipment-loan APRs on the
+              Dispatched panel remain in the 9–18% band. Working capital
+              APRs softened slightly at the low end (now 13–34% vs
+              14–34% in February). Factoring market consolidation
+              continues — no new major M&amp;A since the December 2025
+              TBS/Love&apos;s deal.
+            </p>
+          </section>
 
           <nav className="research-toc" aria-label="Table of contents">
             <p className="research-toc-eyebrow">Contents</p>

@@ -124,7 +124,7 @@ export default function StateOfBrokerRelations2026() {
             "Annual Dispatched Research report on carrier-broker dynamics: 2026 broker landscape, spread economics, payment-time trends, broker concentration risk, FMCSA broker transparency rule status, and 2026–2027 outlook.",
           url,
           datePublished: today,
-          dateModified: today,
+          dateModified: "2026-05-11",
         })}
       />
 
@@ -132,7 +132,7 @@ export default function StateOfBrokerRelations2026() {
         <div className="research-container">
           <header className="research-header">
             <p className="research-eyebrow">
-              Dispatched Research · Annual report · Updated May 2026
+              Dispatched Research · Annual report · Updated Q2 2026
             </p>
             <h1 className="research-h1">
               State of broker relations, 2026.
@@ -151,6 +151,18 @@ export default function StateOfBrokerRelations2026() {
               sources referenced inline. Data through April 2026.
             </p>
           </header>
+
+          <section className="research-section" id="q2-2026-update">
+            <h2>Q2 2026 update</h2>
+            <p>
+              The FMCSA broker transparency rule remains unresolved
+              through Q1 2026. Days-to-pay trends across major brokers
+              steady — TQL median 28 days, CH Robinson median 31 days
+              per Dispatched panel observations. Convoy alumni continued
+              spinning off niche platforms. No major broker
+              consolidation in Q1.
+            </p>
+          </section>
 
           <nav className="research-toc" aria-label="Table of contents">
             <p className="research-toc-eyebrow">Contents</p>

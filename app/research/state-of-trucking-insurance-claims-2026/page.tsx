@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CSAImpactDiagram } from "@/components/diagrams/CSAImpactDiagram";
 import {
   JsonLd,
   article,
@@ -114,7 +115,7 @@ export default function StateOfTruckingInsuranceClaims2026() {
             "Annual Dispatched Research report on commercial trucking insurance claims: nuclear verdict trends, premium dynamics, CSA correlation, telematics adoption, and 2026 outlook.",
           url,
           datePublished: today,
-          dateModified: today,
+          dateModified: "2026-05-11",
         })}
       />
 
@@ -122,7 +123,7 @@ export default function StateOfTruckingInsuranceClaims2026() {
         <div className="research-container">
           <header className="research-header">
             <p className="research-eyebrow">
-              Dispatched Research · Annual report · Updated May 2026
+              Dispatched Research · Annual report · Updated Q2 2026
             </p>
             <h1 className="research-h1">
               State of trucking insurance claims, 2026.
@@ -142,6 +143,17 @@ export default function StateOfTruckingInsuranceClaims2026() {
               referenced inline. Data through April 2026.
             </p>
           </header>
+
+          <section className="research-section" id="q2-2026-update">
+            <h2>Q2 2026 update</h2>
+            <p>
+              Nuclear verdict frequency tracking on pace to exceed 2025.
+              Telematics-based underwriting adoption accelerated —
+              Progressive Commercial and Nationwide Trucking both
+              expanded usage-based commercial trucking pilots. AI dash
+              cam adoption among 25+ truck fleets crossed 60% per ATRI.
+            </p>
+          </section>
 
           <nav className="research-toc" aria-label="Table of contents">
             <p className="research-toc-eyebrow">Contents</p>
@@ -533,6 +545,14 @@ export default function StateOfTruckingInsuranceClaims2026() {
               Indicator) feed into the model with smaller but
               non-trivial weights.
             </p>
+            <figure>
+              <CSAImpactDiagram />
+              <figcaption>
+                The seven CSA BASICs roll up into a single percentile that
+                now drives three commercial-side decisions: insurance pricing,
+                broker access, and lender risk scoring.
+              </figcaption>
+            </figure>
             <p>
               The empirical relationship between CSA percentile and
               claim frequency is well established in the underwriting

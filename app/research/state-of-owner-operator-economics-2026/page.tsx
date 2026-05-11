@@ -116,7 +116,7 @@ export default function StateOfOwnerOperatorEconomics2026() {
             "Annual Dispatched Research report on owner-operator profitability: revenue per mile, cost per mile, lease-purchase failure rates, new-authority economics, and regulatory shifts.",
           url,
           datePublished: today,
-          dateModified: today,
+          dateModified: "2026-05-11",
         })}
       />
 
@@ -124,7 +124,7 @@ export default function StateOfOwnerOperatorEconomics2026() {
         <div className="research-container">
           <header className="research-header">
             <p className="research-eyebrow">
-              Dispatched Research · Annual report · Updated May 2026
+              Dispatched Research · Annual report · Updated Q2 2026
             </p>
             <h1 className="research-h1">
               State of owner-operator economics, 2026.
@@ -144,6 +144,18 @@ export default function StateOfOwnerOperatorEconomics2026() {
               sources referenced inline. Data through April 2026.
             </p>
           </header>
+
+          <section className="research-section" id="q2-2026-update">
+            <h2>Q2 2026 update</h2>
+            <p>
+              ATRI&apos;s annual Operational Costs of Trucking report
+              (released April 2026) put 2025 industry-average CPM at
+              $2.32/mile, up modestly from 2024. Spot-market RPM
+              softened slightly through Q1 2026 with seasonal recovery
+              beginning April. Lease-purchase failure rates remain ≥80%
+              per OOIDA&apos;s latest data.
+            </p>
+          </section>
 
           <nav className="research-toc" aria-label="Table of contents">
             <p className="research-toc-eyebrow">Contents</p>
