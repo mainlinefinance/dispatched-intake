@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
+import PageTOC from "@/components/landing/PageTOC";
+import StickyCTABar from "@/components/landing/StickyCTABar";
 import {
   JsonLd,
   article,
@@ -9,6 +11,15 @@ import {
   faqPage,
   financialProduct,
 } from "@/components/seo/JsonLd";
+
+const TOC_ITEMS = [
+  { id: "what-it-is", label: "Factoring isn't a loan" },
+  { id: "when-it-fits", label: "When factoring fits" },
+  { id: "when-it-doesnt", label: "When working capital is better" },
+  { id: "composite-scenario", label: "Composite scenario" },
+  { id: "onboarding", label: "Onboarding to first advance" },
+  { id: "faq", label: "FAQ" },
+] as const;
 
 export const metadata: Metadata = {
   title: "Invoice factoring for truckers — same-day | Dispatched",
@@ -120,7 +131,9 @@ export default function InvoiceFactoringPage() {
           </div>
         </section>
 
-        <section className="ins-sunken">
+        <PageTOC items={TOC_ITEMS} />
+
+        <section id="what-it-is" className="ins-sunken">
           <div className="ins-container">
             <span className="ins-eyebrow">The short answer</span>
             <h2 className="ins-hero-title">Factoring isn&rsquo;t a loan.</h2>
@@ -148,7 +161,7 @@ export default function InvoiceFactoringPage() {
           </div>
         </section>
 
-        <section>
+        <section id="when-it-fits">
           <div className="ins-container">
             <span className="ins-eyebrow">When factoring fits</span>
             <h2 className="ins-hero-title">Use cases.</h2>
@@ -200,7 +213,7 @@ export default function InvoiceFactoringPage() {
           </div>
         </section>
 
-        <section className="ins-sunken">
+        <section id="when-it-doesnt" className="ins-sunken">
           <div className="ins-container">
             <span className="ins-eyebrow">When factoring doesn&rsquo;t fit</span>
             <h2 className="ins-hero-title">When working capital is the better path.</h2>
@@ -236,7 +249,7 @@ export default function InvoiceFactoringPage() {
           </div>
         </section>
 
-        <section>
+        <section id="composite-scenario">
           <div className="ins-container">
             <span className="ins-eyebrow">Composite scenario</span>
             <h2 className="ins-hero-title">
@@ -284,7 +297,7 @@ export default function InvoiceFactoringPage() {
           </div>
         </section>
 
-        <section className="ins-sunken">
+        <section id="onboarding" className="ins-sunken">
           <div className="ins-container">
             <span className="ins-eyebrow">How the relationship moves</span>
             <h2 className="ins-hero-title">Onboarding to first advance.</h2>
@@ -300,7 +313,7 @@ export default function InvoiceFactoringPage() {
           </div>
         </section>
 
-        <section>
+        <section id="faq">
           <div className="ins-container">
             <span className="ins-eyebrow">FAQ</span>
             <h2 className="ins-hero-title">Questions about factoring.</h2>
@@ -348,6 +361,12 @@ export default function InvoiceFactoringPage() {
           </div>
         </section>
       </main>
+
+      <StickyCTABar
+        text="Get matched with the right factor"
+        primaryCtaHref="/apply?useCase=factoring"
+        primaryCtaLabel="See my factoring options →"
+      />
 
       <Footer />
     </div>
