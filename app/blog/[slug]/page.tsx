@@ -14,6 +14,8 @@ import {
   type BlogPost,
 } from "@/lib/data/blog";
 import { getTerm } from "@/lib/data/glossary";
+import { getRelatedContent } from "@/lib/related";
+import RelatedContent from "@/components/related/RelatedContent";
 
 type Params = { slug: string };
 
@@ -71,6 +73,16 @@ export default async function BlogPostPage({
   const relatedGlossaryTerms = p.relatedGlossary
     .map((s) => getTerm(s))
     .filter((x): x is NonNullable<ReturnType<typeof getTerm>> => Boolean(x));
+
+  const crossTypeRelated = getRelatedContent({
+    currentUrl: `/blog/${p.slug}`,
+    glossarySlugs: p.relatedGlossary,
+    productUrls: p.relatedProducts.map((rp) => rp.url),
+    topic: p.topic,
+    type: "blog",
+    excludeBlogSlugs: p.relatedPosts,
+    limit: 6,
+  });
 
   return (
     <div className="research-page">
@@ -180,6 +192,12 @@ export default async function BlogPostPage({
               </ul>
             </section>
           ) : null}
+
+          <RelatedContent
+            items={crossTypeRelated}
+            heading="More from Dispatched"
+            intro="Glossary, comparisons, calculators, and research that map to the topics in this post."
+          />
 
           <section className="research-section research-cta">
             <h2>Ready to qualify?</h2>
