@@ -10,6 +10,7 @@ import { getAllCities, LOW_COVERAGE_THRESHOLD } from "@/lib/cities";
 import { getAllTerms } from "@/lib/data/glossary";
 import { getAllPosts } from "@/lib/data/blog";
 import { getAllStateSlugs as getAllLenderStateSlugs } from "@/lib/data/lenders";
+import { getAllTopicSlugs } from "@/lib/topics";
 
 const ORIGIN = "https://dispatched.finance";
 
@@ -603,6 +604,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: today,
       changeFrequency: "monthly",
       priority: 0.5,
+    });
+  }
+
+  entries.push({
+    url: `${ORIGIN}/topics`,
+    lastModified: today,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  });
+
+  for (const topicSlug of getAllTopicSlugs()) {
+    entries.push({
+      url: `${ORIGIN}/topics/${topicSlug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.6,
     });
   }
 
