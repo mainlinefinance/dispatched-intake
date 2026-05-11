@@ -139,7 +139,7 @@ export default function StateOfTruckingFuelCosts2026() {
             "Annual Dispatched Research report on commercial trucking fuel: 2026 diesel pricing, fuel surcharge dynamics, factor fuel programs, IFTA reporting realities, idle reduction technology, and the slow ramp of alternative-fuel adoption.",
           url,
           datePublished: today,
-          dateModified: today,
+          dateModified: "2026-05-11",
         })}
       />
 
@@ -147,7 +147,7 @@ export default function StateOfTruckingFuelCosts2026() {
         <div className="research-container">
           <header className="research-header">
             <p className="research-eyebrow">
-              Dispatched Research · Annual report · Updated May 2026
+              Dispatched Research · Annual report · Updated Q2 2026
             </p>
             <h1 className="research-h1">
               State of trucking fuel costs, 2026.
@@ -164,6 +164,17 @@ export default function StateOfTruckingFuelCosts2026() {
               sources referenced inline. Data through April 2026.
             </p>
           </header>
+
+          <section className="research-section" id="q2-2026-update">
+            <h2>Q2 2026 update</h2>
+            <p>
+              National average diesel through April 2026 ran
+              $3.85–$4.10/gal retail. CARB Phase 3 began phasing in
+              starting January 2026. BEV Class 8 truck registrations
+              grew modestly but remain under 0.5% of new sales. Factor
+              fuel programs (Apex 51¢, RTS 40¢) unchanged.
+            </p>
+          </section>
 
           <nav className="research-toc" aria-label="Table of contents">
             <p className="research-toc-eyebrow">Contents</p>

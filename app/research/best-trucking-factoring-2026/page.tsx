@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FactoringFlowDiagram } from "@/components/diagrams/FactoringFlowDiagram";
 import {
   JsonLd,
   article,
@@ -166,7 +167,7 @@ export default function BestTruckingFactoring2026Page() {
             "Honest 2026 ranking of 12 freight factoring companies for trucking businesses by use case — owner-operators, fleets, new authority, bad credit, non-recourse, and tech integration.",
           url: PAGE_URL,
           datePublished: today,
-          dateModified: today,
+          dateModified: "2026-05-11",
         })}
       />
       <JsonLd
@@ -219,7 +220,7 @@ export default function BestTruckingFactoring2026Page() {
         <div className="research-container">
           <header className="research-header">
             <p className="research-eyebrow">
-              Dispatched Research · Updated May 2026
+              Dispatched Research · Updated Q2 2026
             </p>
             <h1 className="research-h1">
               Best trucking factoring companies of 2026 — honest review.
@@ -227,10 +228,10 @@ export default function BestTruckingFactoring2026Page() {
             <p className="research-subhead">
               We reviewed 12 freight factors on rates, contract length, funding
               speed, fuel discounts, and bad-credit acceptance. No paid
-              placements. Updated May 2026.
+              placements. Updated Q2 2026.
             </p>
             <p className="research-meta">
-              Dispatched Research · Updated May 2026 · No paid placements
+              Dispatched Research · Updated Q2 2026 · No paid placements
             </p>
             <p style={{ marginTop: "1.25rem" }}>
               <Link href="/apply?useCase=factoring">
@@ -238,6 +239,18 @@ export default function BestTruckingFactoring2026Page() {
               </Link>
             </p>
           </header>
+
+          <section className="research-section" id="q2-2026-update">
+            <h2>Q2 2026 update</h2>
+            <p>
+              TBS Factoring&apos;s integration with Love&apos;s Financial
+              is progressing through 2026 with no immediate rate changes
+              for existing customers. Apex Capital&apos;s blynk® system
+              processed its $1B+ milestone in cumulative instant
+              payments. eCapital announced expanded UK operations.
+              Rankings unchanged.
+            </p>
+          </section>
 
           <nav className="research-toc" aria-label="Table of contents">
             <p className="research-toc-eyebrow">Contents</p>
@@ -278,6 +291,15 @@ export default function BestTruckingFactoring2026Page() {
               the highest affiliate commission. Here is what each criterion
               means and how we weighed it.
             </p>
+
+            <figure>
+              <FactoringFlowDiagram />
+              <figcaption>
+                How factoring works: from invoice issued, through the factor
+                advance, broker payment, and reserve release, to net payment
+                to the carrier.
+              </figcaption>
+            </figure>
 
             <h3>Rate transparency (advertised vs. effective)</h3>
             <p>

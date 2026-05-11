@@ -120,7 +120,7 @@ export default function StateOfTruckingInsurance2026() {
             "Annual research on commercial trucking insurance: state legal-environment shifts, commodity hotspots, AM Best context, and what we are watching for 2026.",
           url,
           datePublished: "2026-01-15",
-          dateModified: "2026-05-06",
+          dateModified: "2026-05-11",
         })}
       />
       <JsonLd payload={faqPage(faqs)} />
@@ -129,7 +129,7 @@ export default function StateOfTruckingInsurance2026() {
         <div className="research-container">
           <header className="research-header">
             <p className="research-eyebrow">
-              Dispatched Research · 2026 Annual Report
+              Dispatched Research · 2026 Annual Report · Updated Q2 2026
             </p>
             <h1 className="research-h1">
               State of Commercial Trucking Insurance 2026.
@@ -144,6 +144,17 @@ export default function StateOfTruckingInsurance2026() {
               referenced inline. Reviewer attestation pending.
             </p>
           </header>
+
+          <section className="research-section" id="q2-2026-update">
+            <h2>Q2 2026 update</h2>
+            <p>
+              Primary liability premiums continued the hardening trend —
+              most carriers reported 18–22% YoY increases at renewal
+              through April 2026. Nuclear verdict frequency is on pace
+              to exceed 2025 baseline. AM Best ratings stable across the
+              trucking-specialty carrier panel.
+            </p>
+          </section>
 
           <nav className="research-toc" aria-label="Table of contents">
             <p className="research-toc-eyebrow">Contents</p>

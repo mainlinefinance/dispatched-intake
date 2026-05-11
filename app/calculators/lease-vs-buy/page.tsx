@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LeaseVsBuyCalculator from "@/components/calculators/LeaseVsBuyCalculator";
+import { LeaseVsBuyEquityChart } from "@/components/diagrams/LeaseVsBuyEquityChart";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -127,6 +128,15 @@ export default function LeaseVsBuyCalculatorPage() {
                 exit terms. Read the contract.
               </li>
             </ul>
+            <figure>
+              <LeaseVsBuyEquityChart />
+              <figcaption>
+                Equity build over a 60-month term. An equipment loan compounds
+                principal pay-down into roughly $130K of equity at payoff;
+                lease-purchase equity is $0 unless the operator completes the
+                contract — and roughly 80% don&rsquo;t.
+              </figcaption>
+            </figure>
           </div>
         </section>
 

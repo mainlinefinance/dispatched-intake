@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
+import PageTOC from "@/components/landing/PageTOC";
+import StickyCTABar from "@/components/landing/StickyCTABar";
 import {
   JsonLd,
   article,
@@ -9,6 +11,15 @@ import {
   faqPage,
   financialProduct,
 } from "@/components/seo/JsonLd";
+
+const TOC_ITEMS = [
+  { id: "what-it-is", label: "What semi truck financing is" },
+  { id: "common-makes", label: "Common makes and conditions" },
+  { id: "used-vs-new", label: "Used vs new" },
+  { id: "composite-scenario", label: "Composite scenario" },
+  { id: "how-the-money-moves", label: "How the money moves" },
+  { id: "faq", label: "FAQ" },
+] as const;
 
 export const metadata: Metadata = {
   title: "Semi truck financing — Class 8 truck loans | Dispatched",
@@ -118,7 +129,9 @@ export default function SemiTruckFinancingPage() {
           </div>
         </section>
 
-        <section className="ins-sunken">
+        <PageTOC items={TOC_ITEMS} />
+
+        <section id="what-it-is" className="ins-sunken">
           <div className="ins-container">
             <span className="ins-eyebrow">The short answer</span>
             <h2 className="ins-hero-title">What semi truck financing is.</h2>
@@ -148,7 +161,7 @@ export default function SemiTruckFinancingPage() {
           </div>
         </section>
 
-        <section>
+        <section id="common-makes">
           <div className="ins-container">
             <span className="ins-eyebrow">Common makes and conditions</span>
             <h2 className="ins-hero-title">What the panel routinely finances.</h2>
@@ -188,7 +201,7 @@ export default function SemiTruckFinancingPage() {
           </div>
         </section>
 
-        <section className="ins-sunken">
+        <section id="used-vs-new" className="ins-sunken">
           <div className="ins-container">
             <span className="ins-eyebrow">Used vs new</span>
             <h2 className="ins-hero-title">How loan terms shift by truck age.</h2>
@@ -238,7 +251,7 @@ export default function SemiTruckFinancingPage() {
           </div>
         </section>
 
-        <section>
+        <section id="composite-scenario">
           <div className="ins-container">
             <span className="ins-eyebrow">Composite scenario</span>
             <h2 className="ins-hero-title">
@@ -285,7 +298,7 @@ export default function SemiTruckFinancingPage() {
           </div>
         </section>
 
-        <section className="ins-sunken">
+        <section id="how-the-money-moves" className="ins-sunken">
           <div className="ins-container">
             <span className="ins-eyebrow">How the money moves</span>
             <h2 className="ins-hero-title">From application to title.</h2>
@@ -299,7 +312,7 @@ export default function SemiTruckFinancingPage() {
           </div>
         </section>
 
-        <section>
+        <section id="faq">
           <div className="ins-container">
             <span className="ins-eyebrow">FAQ</span>
             <h2 className="ins-hero-title">
@@ -350,6 +363,12 @@ export default function SemiTruckFinancingPage() {
           </div>
         </section>
       </main>
+
+      <StickyCTABar
+        text="See your semi truck financing options"
+        primaryCtaHref="/apply?useCase=equipment"
+        primaryCtaLabel="See my options →"
+      />
 
       <Footer />
     </div>

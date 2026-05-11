@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
+import PageTOC from "@/components/landing/PageTOC";
+import StickyCTABar from "@/components/landing/StickyCTABar";
 import {
   JsonLd,
   article,
@@ -9,6 +11,15 @@ import {
   faqPage,
   financialProduct,
 } from "@/components/seo/JsonLd";
+
+const TOC_ITEMS = [
+  { id: "four-products", label: "The four products" },
+  { id: "eligibility", label: "Who qualifies" },
+  { id: "documents", label: "Documents you need" },
+  { id: "composite-scenario", label: "Composite scenario" },
+  { id: "how-the-money-moves", label: "How the money moves" },
+  { id: "faq", label: "FAQ" },
+] as const;
 
 /* /owner-operator-financing — second-wave SEO landing.
    Template parent: /truck-repair-loans (#44).
@@ -142,8 +153,10 @@ export default function OwnerOperatorFinancingPage() {
           </div>
         </section>
 
+        <PageTOC items={TOC_ITEMS} />
+
         {/* SECTION: SHORT ANSWER ===================================== */}
-        <section className="ins-sunken">
+        <section id="four-products" className="ins-sunken">
           <div className="ins-container">
             <span className="ins-eyebrow">The four products</span>
             <h2 className="ins-hero-title">What an owner-operator can finance.</h2>
@@ -187,7 +200,7 @@ export default function OwnerOperatorFinancingPage() {
         </section>
 
         {/* SECTION: ELIGIBILITY ====================================== */}
-        <section>
+        <section id="eligibility">
           <div className="ins-container">
             <span className="ins-eyebrow">Who qualifies</span>
             <h2 className="ins-hero-title">
@@ -237,7 +250,7 @@ export default function OwnerOperatorFinancingPage() {
         </section>
 
         {/* SECTION: DOCUMENTS ======================================= */}
-        <section className="ins-sunken">
+        <section id="documents" className="ins-sunken">
           <div className="ins-container">
             <span className="ins-eyebrow">Documents</span>
             <h2 className="ins-hero-title">What you&rsquo;ll need to apply.</h2>
@@ -283,7 +296,7 @@ export default function OwnerOperatorFinancingPage() {
         </section>
 
         {/* SECTION: COMPOSITE EXAMPLE =============================== */}
-        <section>
+        <section id="composite-scenario">
           <div className="ins-container">
             <span className="ins-eyebrow">Composite scenario</span>
             <h2 className="ins-hero-title">
@@ -336,7 +349,7 @@ export default function OwnerOperatorFinancingPage() {
         </section>
 
         {/* SECTION: PROCESS ========================================= */}
-        <section className="ins-sunken">
+        <section id="how-the-money-moves" className="ins-sunken">
           <div className="ins-container">
             <span className="ins-eyebrow">How the money moves</span>
             <h2 className="ins-hero-title">From application to wire.</h2>
@@ -370,7 +383,7 @@ export default function OwnerOperatorFinancingPage() {
         </section>
 
         {/* SECTION: FAQ ============================================= */}
-        <section>
+        <section id="faq">
           <div className="ins-container">
             <span className="ins-eyebrow">FAQ</span>
             <h2 className="ins-hero-title">
@@ -444,6 +457,12 @@ export default function OwnerOperatorFinancingPage() {
           </div>
         </section>
       </main>
+
+      <StickyCTABar
+        text="Get matched with the right lender"
+        primaryCtaHref="/qualify"
+        primaryCtaLabel="Start — 2 minutes →"
+      />
 
       <Footer />
     </div>

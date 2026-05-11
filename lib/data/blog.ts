@@ -1009,12 +1009,25 @@ const POSTS: ReadonlyArray<BlogPost> = [
   },
 ];
 
+/* Category sub-file imports — extend the core POSTS array without
+   touching the inline entries above. Mirrors the glossary barrel pattern. */
+import { OPERATIONS_COMPLIANCE_POSTS } from "./blog/operations-compliance";
+import { FINANCE_CASHFLOW_POSTS } from "./blog/finance-cashflow";
+import { INSURANCE_RISK_POSTS } from "./blog/insurance-risk";
+
+const ALL_POSTS: ReadonlyArray<BlogPost> = [
+  ...POSTS,
+  ...OPERATIONS_COMPLIANCE_POSTS,
+  ...FINANCE_CASHFLOW_POSTS,
+  ...INSURANCE_RISK_POSTS,
+];
+
 export function getAllPosts(): ReadonlyArray<BlogPost> {
-  return POSTS;
+  return ALL_POSTS;
 }
 
 export function getPost(slug: string): BlogPost | undefined {
-  return POSTS.find((p) => p.slug === slug);
+  return ALL_POSTS.find((p) => p.slug === slug);
 }
 
 export type BlogTopicGroup = {
@@ -1038,7 +1051,7 @@ export function getPostsByTopic(): ReadonlyArray<BlogTopicGroup> {
     .map((topic) => ({
       topic,
       label: BLOG_TOPICS[topic],
-      posts: POSTS.filter((p) => p.topic === topic),
+      posts: ALL_POSTS.filter((p) => p.topic === topic),
     }))
     .filter((g) => g.posts.length > 0);
 }

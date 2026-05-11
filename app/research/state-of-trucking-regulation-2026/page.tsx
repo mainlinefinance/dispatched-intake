@@ -144,7 +144,7 @@ export default function StateOfTruckingRegulation2026() {
             "Annual Dispatched Research report on the regulatory environment for commercial trucking — FMCSA rulemaking, California AB 5 and CARB Phase 3, state-level MCA disclosure laws, broker transparency, and the 2026–2027 outlook.",
           url,
           datePublished: today,
-          dateModified: today,
+          dateModified: "2026-05-11",
         })}
       />
 
@@ -152,7 +152,7 @@ export default function StateOfTruckingRegulation2026() {
         <div className="research-container">
           <header className="research-header">
             <p className="research-eyebrow">
-              Dispatched Research · Annual report · Updated May 2026
+              Dispatched Research · Annual report · Updated Q2 2026
             </p>
             <h1 className="research-h1">
               State of trucking regulation, 2026.
@@ -173,6 +173,19 @@ export default function StateOfTruckingRegulation2026() {
               through April 2026.
             </p>
           </header>
+
+          <section className="research-section" id="q2-2026-update">
+            <h2>Q2 2026 update</h2>
+            <p>
+              The FMCSA broker transparency rule remains in proposed
+              status with no final action through April 2026. California
+              AB 5 litigation continued — California Trucking
+              Association v. Bonta returned to district court on remand.
+              CARB Phase 3 emissions standards began implementing on
+              schedule. Two more states (Utah, Virginia) proposed MCA
+              disclosure bills.
+            </p>
+          </section>
 
           <nav className="research-toc" aria-label="Table of contents">
             <p className="research-toc-eyebrow">Contents</p>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import OwnerOperatorPLCalculator from "@/components/calculators/OwnerOperatorPLCalculator";
+import { OwnerOpPLPie } from "@/components/diagrams/OwnerOpPLPie";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -129,6 +130,15 @@ export default function OwnerOperatorPLCalculatorPage() {
                 weeks off for vacation, repairs, and downtime.
               </li>
             </ul>
+            <figure>
+              <OwnerOpPLPie />
+              <figcaption>
+                Representative weekly P&amp;L mix for an owner-operator
+                running ~2,500 miles. Fuel, truck payment, and taxes
+                dominate; net to owner sits around a quarter of revenue
+                in a healthy lane.
+              </figcaption>
+            </figure>
           </div>
         </section>
 
