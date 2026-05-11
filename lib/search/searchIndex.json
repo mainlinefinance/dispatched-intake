@@ -1,0 +1,2053 @@
+[
+  {
+    "url": "/",
+    "title": "Dispatched — capital and insurance built for truckers",
+    "description": "Match with trucking-friendly lenders for working capital, equipment financing, repair loans, and invoice factoring. Soft pull first; no credit impact.",
+    "type": "vertical"
+  },
+  {
+    "url": "/trucking",
+    "title": "Trucking capital — match with trucking-friendly lenders",
+    "description": "Working capital, equipment financing, repair loans, and factoring for owner-operators and small fleets. Match in minutes.",
+    "type": "vertical"
+  },
+  {
+    "url": "/trucking-working-capital",
+    "title": "Trucking working capital loans",
+    "description": "Short-term working capital for owner-operators and small fleets. Use for fuel, payroll, repairs, or covering a slow week between settlements.",
+    "type": "vertical"
+  },
+  {
+    "url": "/equipment-financing",
+    "title": "Trucking equipment financing",
+    "description": "Finance tractors, trailers, reefers, and refurbishing work. Built for commercial-trucking borrowers.",
+    "type": "vertical"
+  },
+  {
+    "url": "/truck-repair-loans",
+    "title": "Truck repair loans",
+    "description": "Funding for emergency truck repairs — engine overhauls, transmission, DPF, brakes. Same-week funding for qualified operators.",
+    "type": "vertical"
+  },
+  {
+    "url": "/box-truck-financing",
+    "title": "Box truck financing",
+    "description": "Box truck loans for owner-operators and small fleets, including Amazon DSP and last-mile operators.",
+    "type": "vertical"
+  },
+  {
+    "url": "/bad-credit-truck-financing",
+    "title": "Bad credit truck financing",
+    "description": "Truck financing options for sub-580 FICO borrowers and recent bankruptcies. Honest about trade-offs in rate and down payment.",
+    "type": "vertical"
+  },
+  {
+    "url": "/owner-operator-financing",
+    "title": "Owner-operator financing",
+    "description": "Financing programs sized for independent owner-operators with their own MC authority. Truck loans, working capital, factoring.",
+    "type": "vertical"
+  },
+  {
+    "url": "/owner-operator-financing/first-time",
+    "title": "First-time owner-operator financing",
+    "description": "Financing programs for first-year owner-operators with new MC authority. Lower down-payment options for clean files.",
+    "type": "vertical"
+  },
+  {
+    "url": "/semi-truck-financing",
+    "title": "Semi-truck financing",
+    "description": "Class 8 tractor financing — new and used, sleeper and day-cab. Programs for new and seasoned operators.",
+    "type": "vertical"
+  },
+  {
+    "url": "/semi-truck-financing/no-money-down",
+    "title": "No money down semi-truck financing",
+    "description": "No-money-down semi-truck financing programs. Trade-offs: higher APR and tighter underwriting on the file.",
+    "type": "vertical"
+  },
+  {
+    "url": "/invoice-factoring-for-truckers",
+    "title": "Invoice factoring for truckers",
+    "description": "Recourse and non-recourse factoring for owner-operators and fleets. Compare advance rates, fuel programs, and broker credit tooling.",
+    "type": "vertical"
+  },
+  {
+    "url": "/invoice-factoring-for-truckers/no-credit-check",
+    "title": "No credit check factoring for truckers",
+    "description": "Factoring options with no personal credit pull. The factor underwrites the broker, not the trucker — useful for thin-file and bad-credit operators.",
+    "type": "vertical"
+  },
+  {
+    "url": "/new-authority-truck-financing",
+    "title": "New authority truck financing",
+    "description": "Truck and factoring programs for carriers in their first year of MC authority. Most lenders require 6+ months — these don't.",
+    "type": "vertical"
+  },
+  {
+    "url": "/insurance",
+    "title": "Commercial trucking insurance comparison",
+    "description": "Compare commercial trucking insurance carriers writing your DOT class in your state. Primary liability, motor truck cargo, physical damage, more.",
+    "type": "vertical"
+  },
+  {
+    "url": "/insurance/tools",
+    "title": "Commercial trucking insurance tools",
+    "description": "Estimators and fit tools for commercial trucking insurance. Premium estimator, coverage selector, claims-history calculator.",
+    "type": "vertical"
+  },
+  {
+    "url": "/insurance/tools/premium-estimator",
+    "title": "Commercial trucking insurance premium estimator",
+    "description": "Estimate your annual commercial-trucking insurance premium by DOT class, state, and operating profile.",
+    "type": "vertical"
+  },
+  {
+    "url": "/qualify",
+    "title": "Qualify in 3 minutes — see your funding options",
+    "description": "Soft pull, no credit impact. Match with the lender panel that fits your authority age, credit profile, and capital need.",
+    "type": "vertical"
+  },
+  {
+    "url": "/apply",
+    "title": "Apply for trucking financing",
+    "description": "Start the matching flow with Dispatched. Soft pull first; no credit impact to start.",
+    "type": "vertical"
+  },
+  {
+    "url": "/carriers",
+    "title": "Commercial trucking insurance carriers",
+    "description": "Profiles of the major commercial-trucking insurance carriers — appetite, DOT class, common limitations.",
+    "type": "vertical"
+  },
+  {
+    "url": "/about",
+    "title": "About Dispatched",
+    "description": "Who runs Dispatched, our methodology, and the partner panel of lenders and insurance producers we route to.",
+    "type": "vertical"
+  },
+  {
+    "url": "/methodology",
+    "title": "Dispatched methodology",
+    "description": "How Dispatched scores lenders and insurance carriers, how matching works, and the partner-panel disclosure.",
+    "type": "vertical"
+  },
+  {
+    "url": "/disclosures",
+    "title": "Dispatched disclosures",
+    "description": "Compensation, partner relationships, and editorial-independence disclosures.",
+    "type": "vertical"
+  },
+  {
+    "url": "/glossary",
+    "title": "Trucking finance glossary",
+    "description": "Operating authority, factoring, and operator-type terms — vocabulary every owner-operator and small fleet uses.",
+    "type": "glossary"
+  },
+  {
+    "url": "/glossary/mc-number",
+    "title": "MC Number (MC#)",
+    "description": "Federal operating authority number issued by FMCSA that identifies for-hire interstate motor carriers and brokers.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/dot-number",
+    "title": "DOT Number (USDOT)",
+    "description": "USDOT-issued registration number identifying any vehicle subject to federal safety oversight, including private and for-hire carriers.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/boc-3",
+    "title": "BOC-3",
+    "description": "FMCSA filing designating process agents in every state where a carrier operates, required to activate operating authority.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/irp",
+    "title": "IRP",
+    "description": "Reciprocal apportioned-registration agreement among US states and Canadian provinces for commercial vehicles operating across jurisdictions.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/ifta",
+    "title": "IFTA",
+    "description": "Reciprocal fuel-tax agreement among US states and Canadian provinces consolidating fuel-tax reporting for interstate commercial vehicles.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/ucr",
+    "title": "UCR",
+    "description": "Annual federal fee program funding state-level commercial-vehicle enforcement, required for interstate carriers regardless of state of registration.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/recourse-factoring",
+    "title": "Recourse Factoring",
+    "description": "Factoring arrangement where the carrier remains liable for unpaid invoices if the broker fails to pay; lower rates than non-recourse.",
+    "type": "glossary",
+    "category": "Factoring & Cash Flow"
+  },
+  {
+    "url": "/glossary/non-recourse-factoring",
+    "title": "Non-Recourse Factoring",
+    "description": "Factoring arrangement where the factor absorbs broker insolvency risk on clean deliveries; higher rates than recourse.",
+    "type": "glossary",
+    "category": "Factoring & Cash Flow"
+  },
+  {
+    "url": "/glossary/owner-operator",
+    "title": "Owner-Operator",
+    "description": "Independent trucking professional who owns or leases their truck and operates under their own MC authority or as a subcontractor.",
+    "type": "glossary",
+    "category": "Operator Types"
+  },
+  {
+    "url": "/glossary/lease-purchase",
+    "title": "Lease-Purchase",
+    "description": "Carrier-administered program where a driver leases a truck with payments structured to result in eventual ownership; high failure rate.",
+    "type": "glossary",
+    "category": "Operator Types"
+  },
+  {
+    "url": "/glossary/mcs-150",
+    "title": "MCS-150",
+    "description": "Biennial update form filed with FMCSA to refresh a carrier's operational data and keep DOT/MC authority active.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/csa-score",
+    "title": "CSA Score (CSA)",
+    "description": "FMCSA Compliance, Safety, Accountability program scoring system that rates carrier safety performance using roadside inspection and crash data.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/eld",
+    "title": "ELD",
+    "description": "Electronic Logging Device that automatically records driving time, replacing paper logbooks; mandated for most CDL operators since December 2017.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/fmcsa",
+    "title": "FMCSA",
+    "description": "Federal Motor Carrier Safety Administration — DOT agency that regulates commercial motor vehicles, issues operating authority, and enforces safety rules.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/hos",
+    "title": "Hours of Service (HOS)",
+    "description": "FMCSA rules limiting daily and weekly driving time for commercial drivers, designed to prevent fatigue-related crashes.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/ein",
+    "title": "EIN",
+    "description": "Employer Identification Number issued by the IRS to identify a business entity for tax purposes; required for most trucking authority filings.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/bol",
+    "title": "Bill of Lading (BOL)",
+    "description": "Legal document between carrier and shipper that serves as receipt of freight, contract of carriage, and document of title.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/pod",
+    "title": "Proof of Delivery (POD)",
+    "description": "Signed document confirming the consignee received the freight in acceptable condition; required to factor most trucking invoices.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/ooida",
+    "title": "OOIDA",
+    "description": "Owner-Operator Independent Drivers Association — trade group representing independent owner-operators on regulatory and policy issues.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/ata",
+    "title": "ATA",
+    "description": "American Trucking Associations — national trade association representing primarily larger fleet operators on regulatory, legislative, and economic policy.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/cdl-class-a",
+    "title": "CDL Class A (CDL-A)",
+    "description": "Commercial Driver's License Class A — required for combination vehicles over 26,001 lbs GCWR with a towed unit over 10,000 lbs; the standard CDL for OTR trucking.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/hazmat-endorsement",
+    "title": "Hazmat Endorsement (H endorsement)",
+    "description": "Additional CDL endorsement authorizing the driver to haul hazardous materials in placardable quantities; requires TSA background check.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/eldt",
+    "title": "ELDT",
+    "description": "Entry-Level Driver Training — federal training standard required since February 2022 for new CDL applicants, upgrades, or hazmat endorsements.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/scac",
+    "title": "SCAC",
+    "description": "Standard Carrier Alpha Code — 2-4 letter unique identifier assigned by NMFTA to motor carriers, brokers, and freight forwarders for EDI and intermodal use.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/hvut",
+    "title": "HVUT (Form 2290) (HVUT)",
+    "description": "Heavy Vehicle Use Tax — annual federal tax on commercial vehicles over 55,000 lbs GVWR, filed via IRS Form 2290; required for IRP registration.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/medc-card",
+    "title": "Medical Examiner's Certificate (MEDC)",
+    "description": "DOT-required medical certification verifying a commercial driver's physical fitness to operate; issued by a National Registry medical examiner.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/hot-shot",
+    "title": "Hot-Shot Trucking",
+    "description": "Time-sensitive freight hauled by light- or medium-duty pickups with goosenecks, typically Class 3–5 trucks running expedited LTL loads.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/reefer",
+    "title": "Reefer",
+    "description": "Refrigerated trailer (or the freight that requires temperature control); standard equipment for hauling produce, frozen goods, and pharma.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/dry-van",
+    "title": "Dry Van",
+    "description": "Standard enclosed trailer (53-foot box) for non-perishable, non-temperature-controlled freight; the most common trailer type in trucking.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/flatbed",
+    "title": "Flatbed",
+    "description": "Open trailer with no walls or roof, used for oversized, irregularly shaped, or top-loaded freight; requires tarping and load securement skills.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/deadhead",
+    "title": "Deadhead",
+    "description": "Empty miles run without revenue freight, typically returning to home base or repositioning for the next load.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/otr",
+    "title": "Over-the-Road (OTR)",
+    "description": "Long-haul trucking covering significant distances, typically multi-state routes with drivers spending days or weeks away from home.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/ltl",
+    "title": "Less-Than-Truckload (LTL)",
+    "description": "Freight model where carriers consolidate multiple shippers' loads into a single trailer; loads are typically 100–10,000 lbs and below truckload.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/ftl",
+    "title": "Full Truckload (FTL)",
+    "description": "Freight that fills an entire trailer for a single shipper, typically over 10,000 lbs or by volume; the standard model for OTR carriers.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/intermodal",
+    "title": "Intermodal",
+    "description": "Freight that travels in containers or trailers across multiple modes (truck + rail + ocean) without the freight itself being unloaded between modes.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/drayage",
+    "title": "Drayage",
+    "description": "Short-distance trucking, typically the first or last leg of an intermodal move, hauling containers between port/rail and warehouses or consignees.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/expedited",
+    "title": "Expedited Freight",
+    "description": "Time-sensitive freight requiring immediate or guaranteed delivery, typically using sprinters, straight trucks, or hot-shot setups for premium rates.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/hazmat",
+    "title": "Hazmat",
+    "description": "Hazardous materials freight regulated by DOT under 49 CFR; requires specialized endorsement on CDL plus carrier-level hazmat permitting.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/lumper",
+    "title": "Lumper Fee (Lumper)",
+    "description": "Fee paid for third-party labor that unloads or loads a trailer at a warehouse or dock; common at grocery DCs and large retailers.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/tonu",
+    "title": "Truck Order Not Used (TONU)",
+    "description": "Compensation paid to a carrier when a load is cancelled after the truck is dispatched but before pickup; partial payment for the trip.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/detention",
+    "title": "Detention Pay",
+    "description": "Compensation paid to a carrier when loading or unloading takes longer than the contractually free time (typically 2 hours).",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/accessorial-charges",
+    "title": "Accessorial Charges",
+    "description": "Additional fees on a freight bill beyond the base line-haul rate — detention, lumper, layover, fuel surcharge, tolls, etc.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/dispatch-fee",
+    "title": "Dispatch Fee",
+    "description": "Percentage of revenue paid to a dispatch service (often 5–10%) for finding loads, negotiating rates, and handling broker relationships.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/fuel-surcharge",
+    "title": "Fuel Surcharge (FSC)",
+    "description": "Variable line item on a freight bill adjusting compensation for fuel price fluctuations; calculated from the DOE national diesel price benchmark.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/demurrage",
+    "title": "Demurrage",
+    "description": "Penalty charged by a steamship line or rail when an intermodal container is held beyond the free time at a port or terminal.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/layover",
+    "title": "Layover",
+    "description": "Compensation paid when a driver is required to wait overnight or longer at a pickup/delivery beyond normal turnaround time; typically $100–$250/day.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/backhaul",
+    "title": "Backhaul",
+    "description": "Return load picked up after delivering the outbound freight, converting an empty deadhead return into revenue.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/headhaul",
+    "title": "Headhaul",
+    "description": "The outbound or higher-paying direction in a lane pair; the primary load that drives the lane's economics.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/weight-ticket",
+    "title": "Weight Ticket",
+    "description": "Documented certified weight measurement of a loaded truck from a certified scale (CAT scale, public weigh station, or shipper scale).",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/dock-fee",
+    "title": "Dock Fee",
+    "description": "Fee charged by a warehouse or distribution center for the use of dock space during loading or unloading; sometimes bundled into lumper.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/freight-class",
+    "title": "Freight Class (NMFC)",
+    "description": "NMFC-designated freight classification (50–500) that determines LTL pricing based on density, value, fragility, handling difficulty, and stowability.",
+    "type": "glossary",
+    "category": "Trucking Operations"
+  },
+  {
+    "url": "/glossary/advance-rate",
+    "title": "Advance Rate",
+    "description": "The percentage of an invoice's face value that a factoring company advances to the carrier, typically 80–97%; remainder is held in reserve until broker pays.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/ach",
+    "title": "ACH",
+    "description": "Automated Clearing House — electronic bank transfer network used for direct deposit of factoring advances and most carrier-to-broker payments.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/mca",
+    "title": "Merchant Cash Advance (MCA)",
+    "description": "Lump-sum cash advance against future business revenue, typically with daily ACH deductions; high effective APR but easier qualification than term loans.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/abl",
+    "title": "Asset-Based Lending (ABL)",
+    "description": "Revolving credit facility secured by accounts receivable, equipment, or inventory; typical for fleets with $5M+ annual revenue.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/equipment-loan",
+    "title": "Equipment Loan",
+    "description": "Term loan secured by the financed vehicle (truck, trailer, or other equipment); standard structure for buying Class 8 tractors and trailers.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/working-capital",
+    "title": "Working Capital",
+    "description": "Short-term unsecured business funding used to bridge cash-flow gaps, cover operating expenses, or capitalize on opportunities; APR typically 14–34%.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/line-of-credit",
+    "title": "Line of Credit",
+    "description": "Revolving credit facility allowing the carrier to draw funds as needed up to an approved limit; pays interest only on drawn balance.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/term-loan",
+    "title": "Term Loan",
+    "description": "Lump-sum business loan repaid over a fixed schedule with interest; the standard structure for equipment purchases and major capital expenditures.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/sba-loan",
+    "title": "SBA Loan (SBA)",
+    "description": "Small Business Administration-guaranteed loan with longer terms (up to 10–25 years) and lower rates than conventional commercial loans.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/lockbox",
+    "title": "Lockbox",
+    "description": "Address or bank account designated for invoice payments where the factoring company receives broker payments directly, used to control collections.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/ucc-1",
+    "title": "UCC-1",
+    "description": "Uniform Commercial Code financing statement filed by a lender or factor to publicly establish a security interest in business assets.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/balloon-payment",
+    "title": "Balloon Payment",
+    "description": "Large lump-sum payment due at the end of a loan term, with smaller monthly payments throughout the term; common in equipment financing.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/cpm",
+    "title": "Cost Per Mile (CPM)",
+    "description": "Total operating cost divided by total miles driven; the diagnostic metric that defines whether a lane or contract is profitable.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/rpm",
+    "title": "Revenue Per Mile (RPM)",
+    "description": "Total revenue divided by total miles driven; the headline number quoted in spot-market and contract pricing, but only meaningful when compared to CPM.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/all-in-rate",
+    "title": "All-In Rate",
+    "description": "Combined rate per mile or per load that includes line-haul, fuel surcharge, and all accessorials in a single flat number.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/broker-spread",
+    "title": "Broker Spread",
+    "description": "The difference between what a shipper pays a freight broker and what the broker pays the carrier; the broker's gross margin on the load.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
+    "url": "/glossary/primary-liability",
+    "title": "Primary Liability",
+    "description": "Commercial auto insurance covering bodily injury and property damage to others when at fault; FMCSA mandates $750K–$5M minimum based on cargo.",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/motor-truck-cargo",
+    "title": "Motor Truck Cargo (MTC)",
+    "description": "Insurance coverage protecting the freight in transit; required by most brokers and shippers, typically $100K minimum for general freight.",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/physical-damage",
+    "title": "Physical Damage",
+    "description": "Coverage on the carrier's own truck and trailer against collision, theft, fire, vandalism, and other damage; typically required by equipment lenders.",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/general-liability",
+    "title": "General Liability (GL)",
+    "description": "Commercial general liability covering bodily injury and property damage from non-trucking-related business activities (premises, completed operations).",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/non-trucking-liability",
+    "title": "Non-Trucking Liability (NTL)",
+    "description": "Bobtail coverage protecting an owner-operator leased on with a carrier when driving the truck for personal/non-business use.",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/occupational-accident",
+    "title": "Occupational Accident",
+    "description": "Coverage replacing workers compensation for owner-operators (1099 contractors) covering injury and disability while working.",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/reefer-breakdown",
+    "title": "Reefer Breakdown",
+    "description": "Insurance endorsement covering cargo loss from refrigeration unit failure; standard motor truck cargo policies exclude this.",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/premium-financing",
+    "title": "Premium Financing",
+    "description": "Loan structured to spread an annual insurance premium into monthly payments; widely used in trucking where premiums often exceed 10% of revenue.",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/deductible",
+    "title": "Deductible",
+    "description": "The portion of a covered claim the insured pays before insurance pays; higher deductibles lower the premium but increase out-of-pocket exposure.",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/am-best",
+    "title": "AM Best",
+    "description": "Independent rating agency that grades insurance carriers' financial strength; ratings affect which carriers are acceptable to brokers and lenders.",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/dot-class",
+    "title": "DOT Class",
+    "description": "Federal vehicle classification (Class 1–8) based on gross vehicle weight rating; affects insurance pricing, licensing, and lender treatment.",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/dec-page",
+    "title": "Declarations Page (Dec Page)",
+    "description": "Summary page of an insurance policy listing covered vehicles, drivers, coverage limits, deductibles, and effective dates; the proof-of-insurance document.",
+    "type": "glossary",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/glossary/hometime",
+    "title": "Hometime",
+    "description": "Scheduled time a long-haul driver spends at home between OTR trips; varies by carrier and driver agreement, typically 2-4 days every 2-3 weeks.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/slip-seat",
+    "title": "Slip-Seat",
+    "description": "Operational model where multiple drivers share the same truck on alternating shifts, maximizing equipment utilization (60+ hours per truck per day).",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/team-driving",
+    "title": "Team Driving",
+    "description": "Two drivers alternating shifts in the same truck simultaneously, keeping the freight moving 18-20 hours per day; premium lanes pay 50%+ more than solo.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/forced-dispatch",
+    "title": "Forced Dispatch",
+    "description": "Carrier policy requiring a driver to accept assigned loads or face disciplinary action; common at large fleets, contentious in lease-on arrangements.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/sleeper-berth",
+    "title": "Sleeper Berth",
+    "description": "Compartment behind the cab where a driver sleeps; HOS regulations allow split rest periods (8/2 or 7/3) when berth is properly equipped.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/dot-physical",
+    "title": "DOT Physical",
+    "description": "Medical examination required for commercial drivers by FMCSA, conducted by certified examiners; validity ranges from 3 months to 24 months based on health.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/drug-alcohol-clearinghouse",
+    "title": "Drug & Alcohol Clearinghouse (Clearinghouse)",
+    "description": "FMCSA-operated database tracking commercial driver drug and alcohol violations; mandatory query for hiring and annual checks since 2020.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/pre-employment-screening",
+    "title": "Pre-Employment Screening (PSP) (PSP)",
+    "description": "FMCSA system providing motor carriers a driver's 5-year crash history and 3-year inspection history before hiring decisions.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/cents-per-mile-pay",
+    "title": "Cents-Per-Mile Pay (CPM)",
+    "description": "Driver pay model based on a fixed cents-per-mile rate for loaded (and sometimes empty) miles; the dominant pay structure for OTR truck drivers.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/percentage-of-line-haul",
+    "title": "Percentage-of-Line-Haul (%-of-line-haul)",
+    "description": "Driver pay model giving a percentage (typically 60-80%) of the freight line-haul rate; common for owner-operators leased on with carriers.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/lease-on-driver",
+    "title": "Lease-On Driver",
+    "description": "Owner-operator operating under a carrier's authority via a permanent lease arrangement; receives loads from the carrier and pays a percentage to operate.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/company-driver",
+    "title": "Company Driver",
+    "description": "W-2 employee driver operating a carrier-owned truck under the carrier's authority; carrier handles all operating costs and pays the driver per mile or salary.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/per-diem",
+    "title": "Per Diem",
+    "description": "Daily meal & incidental expense allowance ($69 in 2026) that truck drivers can deduct from taxable income; 80% deductible for transportation workers.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/macrs-depreciation",
+    "title": "MACRS Depreciation (MACRS)",
+    "description": "Modified Accelerated Cost Recovery System — IRS depreciation method for business assets; semi trucks depreciate over 3 years on a 200% declining balance.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/section-179",
+    "title": "Section 179",
+    "description": "IRS provision allowing immediate expense deduction of up to $1.16M (2026) on qualifying business assets in the year placed in service.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/quarterly-estimated-taxes",
+    "title": "Quarterly Estimated Taxes (1040-ES)",
+    "description": "Federal estimated tax payments due quarterly (April, June, September, January) for self-employed taxpayers including owner-operators.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/self-employment-tax",
+    "title": "Self-Employment Tax (SE Tax)",
+    "description": "15.3% federal tax on net self-employment income (12.4% Social Security + 2.9% Medicare); paid by sole proprietors, partners, and LLC owner-operators.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/schedule-c",
+    "title": "Schedule C",
+    "description": "IRS Form 1040 Schedule C — Profit or Loss from Business; used by sole-proprietor owner-operators to report business revenue, expenses, and net profit.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/mileage-log",
+    "title": "Mileage Log",
+    "description": "Daily record of miles driven, route, purpose, and odometer readings; required for tax deduction support and IFTA reporting.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/1099-nec",
+    "title": "1099-NEC",
+    "description": "IRS Form 1099-NEC reports non-employee compensation paid to independent contractors; brokers issue 1099-NEC to carriers who received $600+ in a year.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/independent-contractor-classification",
+    "title": "Independent Contractor Classification",
+    "description": "IRS, DOL, and state-level legal classification of worker as 1099 contractor (vs W-2 employee); test factors vary; misclassification is a major regulatory risk.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/fuel-tax-credit",
+    "title": "Fuel Tax Credit",
+    "description": "Federal tax credit (Form 4136) refunding excise tax on fuel used for off-highway business purposes; minor for most truckers but valuable in niche operations.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/actual-expenses-vs-mileage",
+    "title": "Actual Expenses vs Standard Mileage",
+    "description": "IRS allows two methods for deducting vehicle expenses: actual expenses (all costs) or standard mileage rate; truckers typically use actual expenses.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/truck-driver-tax-home",
+    "title": "Tax Home",
+    "description": "IRS-defined principal place of business; for truckers, typically the home base or domicile where the driver lives between trips.",
+    "type": "glossary",
+    "category": "Tax & Accounting"
+  },
+  {
+    "url": "/glossary/dash-cam",
+    "title": "Dash Cam",
+    "description": "Forward-facing in-cab camera recording the road; provides video evidence in accidents and is increasingly required by insurance carriers and shippers.",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/ai-dash-cam",
+    "title": "AI Dash Cam",
+    "description": "Dash cam with onboard AI detecting risky driving events (harsh braking, lane departure, distraction), generating real-time alerts and scoring driver behavior.",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/tms",
+    "title": "TMS",
+    "description": "Transportation Management System — software platform for managing trucking operations (dispatch, billing, document management, settlements, compliance).",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/dispatch-software",
+    "title": "Dispatch Software",
+    "description": "Software for assigning loads to trucks, tracking shipments, and communicating with drivers; subset of TMS but available as standalone for smaller fleets.",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/load-board",
+    "title": "Load Board",
+    "description": "Online marketplace where freight brokers post loads and carriers find freight; major platforms: DAT, Truckstop, 123Loadboard.",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/geofencing",
+    "title": "Geofencing",
+    "description": "GPS-based virtual perimeter around a location; alerts/automates actions when a truck enters or exits the zone (arrival notification, automatic detention timer).",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/dvir",
+    "title": "DVIR",
+    "description": "Driver Vehicle Inspection Report — daily pre-trip and post-trip vehicle inspection record required by FMCSA; logs defects and corrective actions.",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/vehicle-telematics",
+    "title": "Vehicle Telematics",
+    "description": "Connected vehicle data (location, speed, fuel, engine diagnostics, driver behavior) transmitted to fleet management systems for analysis and reporting.",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/driver-scorecard",
+    "title": "Driver Scorecard",
+    "description": "Telematics-based performance metric scoring driver behavior (harsh braking, speeding, idling) on a 0-100 scale; used for coaching and pay incentives.",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/ifta-reporting-software",
+    "title": "IFTA Reporting Software",
+    "description": "Software automating quarterly IFTA fuel-tax-by-state reporting using ELD mileage data and fuel-purchase records; reduces audit risk and prep time.",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/fleet-management-platform",
+    "title": "Fleet Management Platform",
+    "description": "Integrated software combining ELD, telematics, dash cams, fuel cards, and reporting in a single dashboard; standard for fleets of 5+ trucks.",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/mobile-app-eld",
+    "title": "Mobile-App ELD",
+    "description": "ELD device that uses a smartphone/tablet as the user interface (paired with a hardware ECM-connected device); alternative to all-in-one hardware ELDs.",
+    "type": "glossary",
+    "category": "Tech & Telematics"
+  },
+  {
+    "url": "/glossary/tanker-endorsement",
+    "title": "Tanker Endorsement (N endorsement)",
+    "description": "CDL endorsement (N) authorizing the driver to haul liquids or gases in a permanently mounted tank with capacity over 1,000 gallons.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/doubles-triples-endorsement",
+    "title": "Doubles/Triples Endorsement (T endorsement)",
+    "description": "CDL endorsement (T) authorizing the driver to operate combination vehicles with two or three trailers; common in LTL fleet operations.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/passenger-endorsement",
+    "title": "Passenger Endorsement (P endorsement)",
+    "description": "CDL endorsement (P) authorizing the driver to transport 16 or more passengers; required for charter buses, transit, and certain shuttle operations.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/school-bus-endorsement",
+    "title": "School Bus Endorsement (S endorsement)",
+    "description": "CDL endorsement (S) authorizing the driver to operate a school bus; requires P endorsement plus additional school-bus-specific knowledge and skills tests.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/x-endorsement",
+    "title": "X Endorsement (X endorsement)",
+    "description": "Combined CDL endorsement (X) covering both hazmat (H) and tanker (N); required for hauling liquid or gaseous hazardous materials.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/cdl-class-b",
+    "title": "CDL Class B (CDL-B)",
+    "description": "Commercial Driver's License Class B — authorizes operation of single vehicles over 26,001 lbs GVWR, including straight trucks, dump trucks, and most buses.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/cdl-class-c",
+    "title": "CDL Class C (CDL-C)",
+    "description": "Commercial Driver's License Class C — for single vehicles under 26,001 lbs GVWR transporting 16+ passengers or placardable hazmat.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/hos-11-hour-rule",
+    "title": "HOS 11-Hour Driving Rule",
+    "description": "FMCSA Hours-of-Service rule limiting commercial drivers to 11 hours of driving within a 14-hour on-duty window; requires 10 hours off-duty before reset.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/hos-14-hour-window",
+    "title": "HOS 14-Hour Window",
+    "description": "FMCSA Hours-of-Service rule defining the 14-hour on-duty window during which 11 hours of driving and required breaks must occur.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/hos-30-minute-break",
+    "title": "HOS 30-Minute Break",
+    "description": "FMCSA Hours-of-Service rule requiring a 30-minute break after 8 cumulative driving hours; break can be off-duty, on-duty not driving, or sleeper berth.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/hos-70-hour-rule",
+    "title": "HOS 70-Hour Rule (8-Day)",
+    "description": "FMCSA Hours-of-Service rule limiting commercial drivers to 70 hours of on-duty time in any 8 consecutive days; resets via 34-hour rest.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/hos-34-hour-restart",
+    "title": "HOS 34-Hour Restart",
+    "description": "Optional FMCSA Hours-of-Service provision allowing a 34-hour off-duty period to reset the 8-day (70-hour) cumulative on-duty clock.",
+    "type": "glossary",
+    "category": "Operating Authority & Compliance"
+  },
+  {
+    "url": "/glossary/settlement-statement",
+    "title": "Settlement Statement",
+    "description": "Weekly statement from a carrier to a lease-on owner-operator (or 1099 contractor) detailing gross revenue, deductions, and net pay.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/escrow-deductions",
+    "title": "Escrow Deductions",
+    "description": "Weekly deductions held by a carrier in a reserve account, typically funding maintenance, repair, or end-of-lease balloon; refundable on terms set in the lease.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/fuel-advance",
+    "title": "Fuel Advance",
+    "description": "Cash advance from a carrier or factoring company against the operator's next pay or invoice, specifically for fuel purchases; typically 25-50% of expected pay.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/maintenance-escrow",
+    "title": "Maintenance Escrow",
+    "description": "Specific escrow category covering anticipated maintenance and repair costs; typically $100-$250/week deducted by carriers from lease-on operators' pay.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/bobtail-pay",
+    "title": "Bobtail Pay",
+    "description": "Compensation paid to a driver for moving the tractor without a trailer (bobtail movement); covers fuel and time for repositioning runs.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/detention-pay-policy",
+    "title": "Detention Pay Policy",
+    "description": "Carrier or broker-specific policy defining when, how, and how much detention pay is owed; varies widely from formal contracts to ad hoc claims.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/guaranteed-pay",
+    "title": "Guaranteed Pay",
+    "description": "Carrier compensation structure ensuring a minimum weekly amount regardless of actual miles driven; common in dedicated and high-priority operations.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/safety-bonus",
+    "title": "Safety Bonus",
+    "description": "Carrier-paid bonus tied to driver safety metrics (CSA improvements, accident-free quarters, telematics scorecard); typically $500-$3,000/quarter.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/referral-bonus",
+    "title": "Referral Bonus",
+    "description": "Carrier-paid bonus for referring qualified drivers; typically $500-$5,000 paid after the referred driver completes a probationary period.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/orientation-pay",
+    "title": "Orientation Pay",
+    "description": "Compensation paid to a new driver during the carrier orientation period (typically 2-7 days), covering training, paperwork, and DOT drug testing.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/trip-sheet",
+    "title": "Trip Sheet",
+    "description": "Driver-maintained record of load details, fuel purchases, miles driven by state, and expenses for a single trip; supports IFTA and tax reporting.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/glossary/carrier-deduction",
+    "title": "Carrier Deduction",
+    "description": "Any deduction taken by a motor carrier from a lease-on owner-operator's settlement; includes fuel, escrow, insurance, dispatch, communications, and miscellaneous.",
+    "type": "glossary",
+    "category": "Driver Life & Work"
+  },
+  {
+    "url": "/blog",
+    "title": "Dispatched blog — trucking finance & operations",
+    "description": "Long-form posts on owner-operator economics, factoring, equipment financing, and trucking operations.",
+    "type": "blog"
+  },
+  {
+    "url": "/blog/true-cost-per-mile",
+    "title": "How to calculate true cost per mile for your trucking operation",
+    "description": "Stop guessing. Calculate your real cost per mile in 8 steps, including fuel, fixed costs, factoring, depreciation, and deadhead. Plus the diagnostic number that tells you if you're profitable.",
+    "type": "blog",
+    "category": "Owner-Operator Economics"
+  },
+  {
+    "url": "/blog/new-owner-operator-insurance-mistakes",
+    "title": "What new owner-operators get wrong about commercial trucking insurance",
+    "description": "Insurance is 4-8% of revenue for owner-operators — and most new operators get it wrong. Coverage gaps, broker assumptions, premium financing traps, and CSA score impact.",
+    "type": "blog",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/blog/lease-purchase-vs-financing-math",
+    "title": "Lease-purchase vs financing: the math the carrier doesn't show you",
+    "description": "Lease-purchase programs sell easy entry. 80%+ fail. Here's the actual math comparing total cost, equity build, and the failure-rate-adjusted expected value.",
+    "type": "blog",
+    "category": "Equipment & Financing"
+  },
+  {
+    "url": "/blog/picking-first-factoring-company",
+    "title": "Picking your first factoring company: a decision framework",
+    "description": "Stop comparing rates alone. The 6-factor framework for picking the right factor: contract terms, advance rate, fuel program, recourse structure, customer service tier, and growth fit.",
+    "type": "blog",
+    "category": "Factoring & Cash Flow"
+  },
+  {
+    "url": "/blog/reading-broker-rate-confirmation",
+    "title": "How to read a freight broker rate confirmation",
+    "description": "Rate cons hide details that matter. Detention windows, fuel surcharges, accessorial pay, lumper reimbursement, and the clauses that decide if a load is profitable.",
+    "type": "blog",
+    "category": "Operations & Compliance"
+  },
+  {
+    "url": "/blog/mc-number-deactivation-recovery",
+    "title": "What to do when your MC# is deactivated",
+    "description": "MC# deactivation stops your revenue overnight. The five causes, the recovery process, and how to avoid it. Plus how factoring and lending react to the deactivation event.",
+    "type": "blog",
+    "category": "Operations & Compliance"
+  },
+  {
+    "url": "/blog/hidden-cost-of-low-rate-freight",
+    "title": "The hidden costs of accepting low-rate spot freight",
+    "description": "Accepting a $1.80/mile load to fill the truck looks like revenue. The math says it's a loss. Operating costs, deadhead, opportunity cost, and the rate floor every operator should know.",
+    "type": "blog",
+    "category": "Owner-Operator Economics"
+  },
+  {
+    "url": "/blog/building-business-credit-owner-operator",
+    "title": "Building business credit as an owner-operator",
+    "description": "Business credit takes 18-24 months to build properly. The 6-step path from MC# activation to a real Paydex score and the SBA loan that unlocks. Practical playbook.",
+    "type": "blog",
+    "category": "Equipment & Financing"
+  },
+  {
+    "url": "/blog/understanding-csa-scores",
+    "title": "Understanding CSA scores: what they actually mean for your operation",
+    "description": "CSA percentile scores affect insurance, broker access, and lender underwriting. The 7 BASICs, how to improve them, and what the 24-month rolling window means.",
+    "type": "blog",
+    "category": "Operations & Compliance"
+  },
+  {
+    "url": "/blog/factoring-vs-working-capital",
+    "title": "Factoring vs working capital: when to use which",
+    "description": "Factoring accelerates broker payments. Working capital loans bridge cash flow. Which one to use, when to use both, and when to use neither.",
+    "type": "blog",
+    "category": "Factoring & Cash Flow"
+  },
+  {
+    "url": "/blog/truck-down-payment-strategy",
+    "title": "How much down payment do you actually need on a truck?",
+    "description": "10%, 15%, 20% down? Zero down? The right down payment depends on credit, revenue history, and truck age. Plus the trade-off between lower monthly and total interest cost.",
+    "type": "blog",
+    "category": "Equipment & Financing"
+  },
+  {
+    "url": "/blog/irp-ifta-survival-guide",
+    "title": "IRP and IFTA: the survival guide",
+    "description": "IRP base state selection and IFTA quarterly reporting trip up new owner-operators every year. The mechanics, audit defense, and how ELD data simplifies both.",
+    "type": "blog",
+    "category": "Operations & Compliance"
+  },
+  {
+    "url": "/blog/dispatch-services-vs-self-dispatch",
+    "title": "Dispatch services vs self-dispatch: the trade-off",
+    "description": "5-10% of gross goes to dispatch services. Self-dispatch saves the fee but costs time. When dispatch is worth it, when it isn't, and the math that decides.",
+    "type": "blog",
+    "category": "Operations & Compliance"
+  },
+  {
+    "url": "/blog/truck-maintenance-budget",
+    "title": "How much should you budget for truck maintenance?",
+    "description": "Maintenance is 15-25 cents per mile for OTR Class 8. The cost categories, when to budget more, and the maintenance-fund approach that prevents emergency MCAs.",
+    "type": "blog",
+    "category": "Owner-Operator Economics"
+  },
+  {
+    "url": "/blog/motor-truck-cargo-insurance-explained",
+    "title": "Motor truck cargo insurance: what you actually need",
+    "description": "$100K minimum is the default but rarely the right answer. Coverage limits by freight type, what's excluded, claim filing mechanics, and reefer breakdown gotchas.",
+    "type": "blog",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/blog/freight-broker-vetting",
+    "title": "How to vet a freight broker before booking the load",
+    "description": "Most broker disputes start with brokers you shouldn't have booked with. The pre-booking checks, MC# verification, factoring-company broker credit, and red flags.",
+    "type": "blog",
+    "category": "Operations & Compliance"
+  },
+  {
+    "url": "/blog/insurance-claim-filing-for-truckers",
+    "title": "Insurance claim filing for owner-operators: a step-by-step playbook",
+    "description": "When a claim happens, the next 48 hours matter most. The 7-step filing process, what to document, when to involve an attorney, and the mistakes that hurt your premium.",
+    "type": "blog",
+    "category": "Operations & Compliance"
+  },
+  {
+    "url": "/blog/factoring-contract-walk-through",
+    "title": "Factoring contract walk-through: what every line actually means",
+    "description": "Most factoring contracts use the same boilerplate. The 12 sections that matter, the clauses that trap operators, and the negotiation language that gets you better terms.",
+    "type": "blog",
+    "category": "Operations & Compliance"
+  },
+  {
+    "url": "/blog/csa-improvement-playbook",
+    "title": "The 90-day CSA improvement playbook",
+    "description": "CSA percentiles drive insurance, broker access, and lender risk. The 90-day plan to improve your scores, starting with the BASIC most likely to move first.",
+    "type": "blog",
+    "category": "Operations & Compliance"
+  },
+  {
+    "url": "/blog/roadside-inspection-survival-guide",
+    "title": "Roadside inspection survival guide for owner-operators",
+    "description": "The 5 inspection levels, the documents to keep accessible, the common violations that compound into CSA points, and how to handle an inspector professionally.",
+    "type": "blog",
+    "category": "Operations & Compliance"
+  },
+  {
+    "url": "/blog/new-authority-year-1-compliance-calendar",
+    "title": "The new-authority Year 1 compliance calendar",
+    "description": "Day 1, Month 1, Month 6, Year 1. The compliance milestones every new MC# operator must hit. Filing deadlines, renewals, and the things that trip up first-year carriers.",
+    "type": "blog",
+    "category": "Operations & Compliance"
+  },
+  {
+    "url": "/blog/equipment-buyback-math",
+    "title": "Equipment buyback offers: when to take them and when to walk",
+    "description": "Dealer or carrier buyback offers feel like an easy exit. The math reveals when they're fair and when they're undercutting your equity. The framework, plus 3 worked examples.",
+    "type": "blog",
+    "category": "Equipment & Financing"
+  },
+  {
+    "url": "/blog/working-capital-vs-factoring-vs-mca-decision-matrix",
+    "title": "Working capital vs factoring vs MCA: the decision matrix",
+    "description": "Three cash-flow tools, three completely different products. The decision matrix that tells you which to use when, and the trap of using all three simultaneously.",
+    "type": "blog",
+    "category": "Factoring & Cash Flow"
+  },
+  {
+    "url": "/blog/refinancing-your-truck-loan",
+    "title": "Refinancing your truck loan: when it actually saves money",
+    "description": "Refinancing can save thousands or cost thousands. The math, the FICO improvement timing, and the prepayment penalty trap most operators don't see coming.",
+    "type": "blog",
+    "category": "Equipment & Financing"
+  },
+  {
+    "url": "/blog/sba-loan-for-owner-operators",
+    "title": "SBA loans for owner-operators: eligibility, timeline, and the trade-off",
+    "description": "SBA loans offer the lowest commercial rates available — but the 60-90 day timeline and paperwork burden disqualify them for emergency needs. The eligibility, the math, the path.",
+    "type": "blog",
+    "category": "Equipment & Financing"
+  },
+  {
+    "url": "/blog/reading-your-settlement-statement",
+    "title": "Reading your settlement statement: what every line means",
+    "description": "Your weekly settlement statement has 30+ line items. The categories that matter, the deductions that get miscoded, and the math that reveals whether your carrier is treating you fairly.",
+    "type": "blog",
+    "category": "Factoring & Cash Flow"
+  },
+  {
+    "url": "/blog/nuclear-verdict-defense",
+    "title": "Nuclear verdict defense: what your dash cam needs to capture",
+    "description": "Trucking nuclear verdicts (over $10M) grew 800%+ since 2014. The dash cam evidence that defends carriers, the 7 angles to capture, and the storage rules that protect the evidence.",
+    "type": "blog",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/blog/cargo-claim-filing-playbook",
+    "title": "Cargo claim filing: the playbook that protects your factoring relationship",
+    "description": "Cargo claims hit your motor truck cargo policy AND your factoring relationship. The 6-step filing process, settlement math, and how to avoid the chargeback trap.",
+    "type": "blog",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/blog/premium-financing-math",
+    "title": "Premium financing math: when monthly payments beat paying cash",
+    "description": "Premium financing spreads annual insurance into monthly payments at 8-15% APR. The math comparing premium financing vs cash pay, plus the cancellation risk most operators don't model.",
+    "type": "blog",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/blog/bobtail-non-trucking-liability-decoded",
+    "title": "Bobtail and non-trucking liability decoded for lease-on operators",
+    "description": "Lease-on operators have coverage gaps the carrier's primary doesn't fill. NTL/bobtail coverage, what it does and doesn't cover, and the $400/year decision that protects $1M of exposure.",
+    "type": "blog",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/blog/hot-shot-vs-class-8-insurance-pricing",
+    "title": "Hot-shot vs Class 8 insurance pricing — what actually drives the difference",
+    "description": "Hot-shot insurance can be 30-50% cheaper than Class 8. Or it can be more expensive. The variables that drive the pricing gap, and the underwriting logic behind it.",
+    "type": "blog",
+    "category": "Insurance & Risk"
+  },
+  {
+    "url": "/lenders",
+    "title": "Trucking lender directory",
+    "description": "Editorial directory of trucking lenders — factoring, equipment, working capital, ABL, and insurance-premium financing.",
+    "type": "lender"
+  },
+  {
+    "url": "/lenders/apex-capital",
+    "title": "Apex Capital",
+    "description": "Three decades of owner-operator factoring with instant 24/7/365 funding via blynk® and the deepest fuel discount in the market (operator-reported ~51¢/gal at participating chains). 12-month auto-renewing contract with a 30-day cancellation window is the main trade-off.",
+    "type": "lender",
+    "category": "factoring · equipment"
+  },
+  {
+    "url": "/lenders/ecapital",
+    "title": "eCapital",
+    "description": "Largest North American freight factor by volume with deep mid-fleet and broker products plus ABL and equipment financing under one roof. Fee transparency and contract-exit complaints are the most common review themes — read the schedule in writing before signing.",
+    "type": "lender",
+    "category": "factoring · working-capital · abl"
+  },
+  {
+    "url": "/lenders/rts-financial",
+    "title": "RTS Financial",
+    "description": "Trucking-native factor with a solid fuel-card network and broker-credit tool sized for 10–50 truck fleets. Does not edge out Apex on owner-operators or eCapital on the largest fleets, but a fair quote-against for mid-sized operators.",
+    "type": "lender",
+    "category": "factoring"
+  },
+  {
+    "url": "/lenders/triumph-business-capital",
+    "title": "Triumph Business Capital",
+    "description": "Strongest non-recourse program on the list — built around broker-credit risk as a core product, not a bolt-on. Owned by publicly traded Triumph Financial, which keeps pricing disciplined but rigid; the 12-month contract auto-renews.",
+    "type": "lender",
+    "category": "factoring · abl · insurance-premium-financing"
+  },
+  {
+    "url": "/lenders/tbs-factoring",
+    "title": "TBS Factoring",
+    "description": "Funds brand-new MC numbers in their first 30 days where most factors require 90+ days of broker history. Supportive of post-bankruptcy operators and includes a fuel card plus dispatch support; customer service is functional rather than high-touch.",
+    "type": "lender",
+    "category": "factoring"
+  },
+  {
+    "url": "/lenders/otr-solutions",
+    "title": "OTR Solutions",
+    "description": "No minimum volume and no minimum contract — spot factoring on the loads you choose with everything else in-house. Per-invoice rate (2.5–5%) is higher than full-ledger factoring, so the math only works if you factor selectively.",
+    "type": "lender",
+    "category": "factoring"
+  },
+  {
+    "url": "/lenders/porter-freight-funding",
+    "title": "Porter Freight Funding",
+    "description": "Explicit no-personal-credit-check option for sub-580 FICOs, recent bankruptcies, and thin-file operators — they underwrite the broker, not the trucker. No fuel program and a 90% advance cap raise the effective cost vs. Apex or eCapital.",
+    "type": "lender",
+    "category": "factoring"
+  },
+  {
+    "url": "/lenders/truckstop-go-capital",
+    "title": "Truckstop Go Capital",
+    "description": "Native factoring product inside the Truckstop load board — invoices flow from booked loads into the factoring queue without re-entry. Higher headline rate (3.25%+) than Apex or Triumph; the integration value disappears if you do not run loads through Truckstop.",
+    "type": "lender",
+    "category": "factoring"
+  },
+  {
+    "url": "/lenders/1st-commercial-credit",
+    "title": "1st Commercial Credit",
+    "description": "Broad SMB factoring desk with a trucking-specific team and open underwriting for operators other factors decline. Trade-off: not trucking-specialized in the way Apex, TBS, and Triumph are — the fuel program and broker-credit tooling are thinner.",
+    "type": "lender",
+    "category": "factoring · abl"
+  },
+  {
+    "url": "/lenders/riviera-finance",
+    "title": "Riviera Finance",
+    "description": "Legacy factor since 1969 with a national branch network — the only major factor on this list with in-person branch relationships. Technology stack (instant payment, mobile capture) is dated relative to Apex, eCapital, and Truckstop Go.",
+    "type": "lender",
+    "category": "factoring · working-capital"
+  },
+  {
+    "url": "/lenders/bluevine",
+    "title": "Bluevine",
+    "description": "Tech-forward online lender offering revolving lines of credit up to $250K with same-day decisioning for clean files. Not trucking-native — works for owner-operators with strong personal credit and clean bank statements, but the underwriting does not flex for thin-file or new-authority profiles.",
+    "type": "lender",
+    "category": "working-capital · abl"
+  },
+  {
+    "url": "/lenders/lendio",
+    "title": "Lendio",
+    "description": "Lender marketplace that shops a single application across 75+ partner lenders for term loans, lines of credit, and equipment financing. Convenient for first-pass shopping; the downside is generic SMB underwriting rather than trucking-specific products from any single desk.",
+    "type": "lender",
+    "category": "working-capital · equipment"
+  },
+  {
+    "url": "/lenders/alabama",
+    "title": "Trucking lenders in Alabama",
+    "description": "Factoring, equipment, and working capital lenders serving Alabama truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Alabama"
+  },
+  {
+    "url": "/lenders/alaska",
+    "title": "Trucking lenders in Alaska",
+    "description": "Factoring, equipment, and working capital lenders serving Alaska truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Alaska"
+  },
+  {
+    "url": "/lenders/arizona",
+    "title": "Trucking lenders in Arizona",
+    "description": "Factoring, equipment, and working capital lenders serving Arizona truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Arizona"
+  },
+  {
+    "url": "/lenders/arkansas",
+    "title": "Trucking lenders in Arkansas",
+    "description": "Factoring, equipment, and working capital lenders serving Arkansas truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Arkansas"
+  },
+  {
+    "url": "/lenders/california",
+    "title": "Trucking lenders in California",
+    "description": "Factoring, equipment, and working capital lenders serving California truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "California"
+  },
+  {
+    "url": "/lenders/colorado",
+    "title": "Trucking lenders in Colorado",
+    "description": "Factoring, equipment, and working capital lenders serving Colorado truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Colorado"
+  },
+  {
+    "url": "/lenders/connecticut",
+    "title": "Trucking lenders in Connecticut",
+    "description": "Factoring, equipment, and working capital lenders serving Connecticut truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Connecticut"
+  },
+  {
+    "url": "/lenders/delaware",
+    "title": "Trucking lenders in Delaware",
+    "description": "Factoring, equipment, and working capital lenders serving Delaware truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Delaware"
+  },
+  {
+    "url": "/lenders/district-of-columbia",
+    "title": "Trucking lenders in District of Columbia",
+    "description": "Factoring, equipment, and working capital lenders serving District of Columbia truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "District of Columbia"
+  },
+  {
+    "url": "/lenders/florida",
+    "title": "Trucking lenders in Florida",
+    "description": "Factoring, equipment, and working capital lenders serving Florida truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Florida"
+  },
+  {
+    "url": "/lenders/georgia",
+    "title": "Trucking lenders in Georgia",
+    "description": "Factoring, equipment, and working capital lenders serving Georgia truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Georgia"
+  },
+  {
+    "url": "/lenders/hawaii",
+    "title": "Trucking lenders in Hawaii",
+    "description": "Factoring, equipment, and working capital lenders serving Hawaii truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Hawaii"
+  },
+  {
+    "url": "/lenders/idaho",
+    "title": "Trucking lenders in Idaho",
+    "description": "Factoring, equipment, and working capital lenders serving Idaho truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Idaho"
+  },
+  {
+    "url": "/lenders/illinois",
+    "title": "Trucking lenders in Illinois",
+    "description": "Factoring, equipment, and working capital lenders serving Illinois truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Illinois"
+  },
+  {
+    "url": "/lenders/indiana",
+    "title": "Trucking lenders in Indiana",
+    "description": "Factoring, equipment, and working capital lenders serving Indiana truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Indiana"
+  },
+  {
+    "url": "/lenders/iowa",
+    "title": "Trucking lenders in Iowa",
+    "description": "Factoring, equipment, and working capital lenders serving Iowa truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Iowa"
+  },
+  {
+    "url": "/lenders/kansas",
+    "title": "Trucking lenders in Kansas",
+    "description": "Factoring, equipment, and working capital lenders serving Kansas truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Kansas"
+  },
+  {
+    "url": "/lenders/kentucky",
+    "title": "Trucking lenders in Kentucky",
+    "description": "Factoring, equipment, and working capital lenders serving Kentucky truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Kentucky"
+  },
+  {
+    "url": "/lenders/louisiana",
+    "title": "Trucking lenders in Louisiana",
+    "description": "Factoring, equipment, and working capital lenders serving Louisiana truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Louisiana"
+  },
+  {
+    "url": "/lenders/maine",
+    "title": "Trucking lenders in Maine",
+    "description": "Factoring, equipment, and working capital lenders serving Maine truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Maine"
+  },
+  {
+    "url": "/lenders/maryland",
+    "title": "Trucking lenders in Maryland",
+    "description": "Factoring, equipment, and working capital lenders serving Maryland truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Maryland"
+  },
+  {
+    "url": "/lenders/massachusetts",
+    "title": "Trucking lenders in Massachusetts",
+    "description": "Factoring, equipment, and working capital lenders serving Massachusetts truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Massachusetts"
+  },
+  {
+    "url": "/lenders/michigan",
+    "title": "Trucking lenders in Michigan",
+    "description": "Factoring, equipment, and working capital lenders serving Michigan truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Michigan"
+  },
+  {
+    "url": "/lenders/minnesota",
+    "title": "Trucking lenders in Minnesota",
+    "description": "Factoring, equipment, and working capital lenders serving Minnesota truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Minnesota"
+  },
+  {
+    "url": "/lenders/mississippi",
+    "title": "Trucking lenders in Mississippi",
+    "description": "Factoring, equipment, and working capital lenders serving Mississippi truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Mississippi"
+  },
+  {
+    "url": "/lenders/missouri",
+    "title": "Trucking lenders in Missouri",
+    "description": "Factoring, equipment, and working capital lenders serving Missouri truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Missouri"
+  },
+  {
+    "url": "/lenders/montana",
+    "title": "Trucking lenders in Montana",
+    "description": "Factoring, equipment, and working capital lenders serving Montana truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Montana"
+  },
+  {
+    "url": "/lenders/nebraska",
+    "title": "Trucking lenders in Nebraska",
+    "description": "Factoring, equipment, and working capital lenders serving Nebraska truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Nebraska"
+  },
+  {
+    "url": "/lenders/nevada",
+    "title": "Trucking lenders in Nevada",
+    "description": "Factoring, equipment, and working capital lenders serving Nevada truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Nevada"
+  },
+  {
+    "url": "/lenders/new-hampshire",
+    "title": "Trucking lenders in New Hampshire",
+    "description": "Factoring, equipment, and working capital lenders serving New Hampshire truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "New Hampshire"
+  },
+  {
+    "url": "/lenders/new-jersey",
+    "title": "Trucking lenders in New Jersey",
+    "description": "Factoring, equipment, and working capital lenders serving New Jersey truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "New Jersey"
+  },
+  {
+    "url": "/lenders/new-mexico",
+    "title": "Trucking lenders in New Mexico",
+    "description": "Factoring, equipment, and working capital lenders serving New Mexico truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "New Mexico"
+  },
+  {
+    "url": "/lenders/new-york",
+    "title": "Trucking lenders in New York",
+    "description": "Factoring, equipment, and working capital lenders serving New York truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "New York"
+  },
+  {
+    "url": "/lenders/north-carolina",
+    "title": "Trucking lenders in North Carolina",
+    "description": "Factoring, equipment, and working capital lenders serving North Carolina truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "North Carolina"
+  },
+  {
+    "url": "/lenders/north-dakota",
+    "title": "Trucking lenders in North Dakota",
+    "description": "Factoring, equipment, and working capital lenders serving North Dakota truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "North Dakota"
+  },
+  {
+    "url": "/lenders/ohio",
+    "title": "Trucking lenders in Ohio",
+    "description": "Factoring, equipment, and working capital lenders serving Ohio truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Ohio"
+  },
+  {
+    "url": "/lenders/oklahoma",
+    "title": "Trucking lenders in Oklahoma",
+    "description": "Factoring, equipment, and working capital lenders serving Oklahoma truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Oklahoma"
+  },
+  {
+    "url": "/lenders/oregon",
+    "title": "Trucking lenders in Oregon",
+    "description": "Factoring, equipment, and working capital lenders serving Oregon truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Oregon"
+  },
+  {
+    "url": "/lenders/pennsylvania",
+    "title": "Trucking lenders in Pennsylvania",
+    "description": "Factoring, equipment, and working capital lenders serving Pennsylvania truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Pennsylvania"
+  },
+  {
+    "url": "/lenders/rhode-island",
+    "title": "Trucking lenders in Rhode Island",
+    "description": "Factoring, equipment, and working capital lenders serving Rhode Island truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Rhode Island"
+  },
+  {
+    "url": "/lenders/south-carolina",
+    "title": "Trucking lenders in South Carolina",
+    "description": "Factoring, equipment, and working capital lenders serving South Carolina truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "South Carolina"
+  },
+  {
+    "url": "/lenders/south-dakota",
+    "title": "Trucking lenders in South Dakota",
+    "description": "Factoring, equipment, and working capital lenders serving South Dakota truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "South Dakota"
+  },
+  {
+    "url": "/lenders/tennessee",
+    "title": "Trucking lenders in Tennessee",
+    "description": "Factoring, equipment, and working capital lenders serving Tennessee truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Tennessee"
+  },
+  {
+    "url": "/lenders/texas",
+    "title": "Trucking lenders in Texas",
+    "description": "Factoring, equipment, and working capital lenders serving Texas truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Texas"
+  },
+  {
+    "url": "/lenders/utah",
+    "title": "Trucking lenders in Utah",
+    "description": "Factoring, equipment, and working capital lenders serving Utah truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Utah"
+  },
+  {
+    "url": "/lenders/vermont",
+    "title": "Trucking lenders in Vermont",
+    "description": "Factoring, equipment, and working capital lenders serving Vermont truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Vermont"
+  },
+  {
+    "url": "/lenders/virginia",
+    "title": "Trucking lenders in Virginia",
+    "description": "Factoring, equipment, and working capital lenders serving Virginia truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Virginia"
+  },
+  {
+    "url": "/lenders/washington",
+    "title": "Trucking lenders in Washington",
+    "description": "Factoring, equipment, and working capital lenders serving Washington truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Washington"
+  },
+  {
+    "url": "/lenders/west-virginia",
+    "title": "Trucking lenders in West Virginia",
+    "description": "Factoring, equipment, and working capital lenders serving West Virginia truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "West Virginia"
+  },
+  {
+    "url": "/lenders/wisconsin",
+    "title": "Trucking lenders in Wisconsin",
+    "description": "Factoring, equipment, and working capital lenders serving Wisconsin truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Wisconsin"
+  },
+  {
+    "url": "/lenders/wyoming",
+    "title": "Trucking lenders in Wyoming",
+    "description": "Factoring, equipment, and working capital lenders serving Wyoming truckers. State-specific panel and rates.",
+    "type": "city",
+    "category": "Wyoming"
+  },
+  {
+    "url": "/compare/apex-capital-vs-ecapital",
+    "title": "Apex Capital vs eCapital",
+    "description": "Owner-operator factoring depth (Apex) vs mid-fleet + ABL scale (eCapital). Side-by-side rates, contracts, fuel programs.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/apex-capital-vs-rts-financial",
+    "title": "Apex Capital vs RTS Financial",
+    "description": "Two trucking-native factors compared on owner-operator economics, fuel-card networks, and broker-credit tooling.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/ecapital-vs-triumph-business-capital",
+    "title": "eCapital vs Triumph Business Capital",
+    "description": "Mid-fleet factoring and ABL: eCapital's broad product surface vs Triumph's non-recourse depth.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/apex-capital-vs-tbs-factoring",
+    "title": "Apex Capital vs TBS Factoring",
+    "description": "Owner-operator factoring head-to-head — Apex on fuel discount, TBS on new-authority and post-bankruptcy onboarding.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/otr-capital-vs-apex-capital",
+    "title": "OTR Capital vs Apex Capital",
+    "description": "Spot factoring (OTR Solutions) vs full-ledger factoring (Apex). The math when you factor selectively.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/triumph-vs-rts-financial",
+    "title": "Triumph vs RTS Financial",
+    "description": "Triumph's non-recourse program vs RTS's high-volume fleet factoring desk.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/ecapital-vs-rts-financial",
+    "title": "eCapital vs RTS Financial",
+    "description": "Mid-fleet factoring options: eCapital's scale + ABL vs RTS's trucking focus.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/tbs-factoring-vs-triumph-business-capital",
+    "title": "TBS Factoring vs Triumph Business Capital",
+    "description": "New-authority and post-bankruptcy onboarding (TBS) vs non-recourse credit risk transfer (Triumph).",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/apex-capital-vs-truckstop-go-capital",
+    "title": "Apex Capital vs Truckstop Go Capital",
+    "description": "Standalone owner-operator factoring (Apex) vs integrated Truckstop-board factoring (Go Capital).",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/otr-capital-vs-ecapital",
+    "title": "OTR Capital vs eCapital",
+    "description": "Spot factoring (OTR) vs full-ledger factoring with ABL graduation (eCapital).",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/ecapital-vs-truckstop-go-capital",
+    "title": "eCapital vs Truckstop Go Capital",
+    "description": "Multi-product mid-fleet factoring (eCapital) vs load-board integrated factoring (Go Capital).",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/triumph-vs-otr-capital",
+    "title": "Triumph vs OTR Capital",
+    "description": "Non-recourse program with 12-month contract (Triumph) vs spot, month-to-month factoring (OTR).",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/rts-financial-vs-tbs-factoring",
+    "title": "RTS Financial vs TBS Factoring",
+    "description": "Mid-fleet factoring (RTS) vs new-authority onboarding specialist (TBS).",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/1st-commercial-credit-vs-riviera-finance",
+    "title": "1st Commercial Credit vs Riviera Finance",
+    "description": "Broad SMB factoring desk (1st Commercial) vs legacy in-branch factor (Riviera). Tooling and underwriting compared.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/bluevine-vs-ondeck",
+    "title": "Bluevine vs OnDeck",
+    "description": "Online working-capital lines for SMB owner-operators — same-day decisioning compared on file profile and ceiling.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/porter-freight-funding-vs-otr-solutions",
+    "title": "Porter Freight Funding vs OTR Solutions",
+    "description": "Bad-credit factoring (Porter) vs spot factoring with no minimum (OTR Solutions).",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/progressive-commercial-vs-sentry-insurance",
+    "title": "Progressive Commercial vs Sentry Insurance",
+    "description": "Two of the largest commercial-trucking insurance carriers compared on appetite, DOT class, and claims handling.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/sentry-insurance-vs-nationwide-trucking",
+    "title": "Sentry Insurance vs Nationwide Trucking",
+    "description": "Mid-market trucking insurance head-to-head — pricing, fleet appetite, and risk-engineering services.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/progressive-commercial-vs-nationwide-trucking",
+    "title": "Progressive Commercial vs Nationwide Trucking",
+    "description": "Owner-operator trucking insurance — Progressive's volume and pricing vs Nationwide's mid-fleet strength.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/apex-capital-vs-triumph-business-capital",
+    "title": "Apex Capital vs Triumph Business Capital",
+    "description": "Owner-operator factoring (Apex) vs non-recourse risk transfer (Triumph). When the non-recourse premium pays off.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/apex-capital-vs-porter-freight-funding",
+    "title": "Apex Capital vs Porter Freight Funding",
+    "description": "Clean-file owner-operator factoring (Apex) vs sub-580 FICO factoring (Porter).",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/ecapital-vs-porter-freight-funding",
+    "title": "eCapital vs Porter Freight Funding",
+    "description": "Mid-fleet factoring (eCapital) vs bad-credit-friendly factoring (Porter).",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/rts-financial-vs-otr-solutions",
+    "title": "RTS Financial vs OTR Solutions",
+    "description": "Full-ledger factoring (RTS) vs spot factoring (OTR Solutions). Which math fits a small fleet.",
+    "type": "comparison"
+  },
+  {
+    "url": "/compare/tbs-factoring-vs-otr-solutions",
+    "title": "TBS Factoring vs OTR Solutions",
+    "description": "New-authority onboarding (TBS) vs month-to-month spot factoring (OTR Solutions).",
+    "type": "comparison"
+  },
+  {
+    "url": "/research",
+    "title": "Dispatched Research — trucking and insurance reports",
+    "description": "Annual and quarterly research reports on commercial trucking insurance, capital, fuel costs, broker relations, and more.",
+    "type": "research"
+  },
+  {
+    "url": "/research/best-trucking-factoring-2026",
+    "title": "Best trucking factoring 2026 — annual rankings",
+    "description": "Annual ranking of the top trucking factoring companies — Apex, eCapital, RTS, Triumph, TBS, OTR, and more. Methodology + scorecards.",
+    "type": "research"
+  },
+  {
+    "url": "/research/state-of-trucking-capital-2026",
+    "title": "State of trucking capital 2026",
+    "description": "Annual report on the trucking-capital market — rate environment, lender appetite shifts, and where money is moving.",
+    "type": "research"
+  },
+  {
+    "url": "/research/state-of-trucking-fuel-costs-2026",
+    "title": "State of trucking fuel costs 2026",
+    "description": "Diesel pricing, fuel-card networks, and the fuel-cost squeeze on owner-operator margins.",
+    "type": "research"
+  },
+  {
+    "url": "/research/state-of-broker-relations-2026",
+    "title": "State of broker relations 2026",
+    "description": "Broker payment terms, days-to-pay trends, broker-bond climate, and FMCSA enforcement direction.",
+    "type": "research"
+  },
+  {
+    "url": "/research/state-of-trucking-tech-2026",
+    "title": "State of trucking tech 2026",
+    "description": "ELD, TMS, dashcam, and load-board landscape. What owner-operators actually use vs what is marketed.",
+    "type": "research"
+  },
+  {
+    "url": "/research/state-of-trucking-regulation-2026",
+    "title": "State of trucking regulation 2026",
+    "description": "FMCSA rulemaking, IRP/IFTA changes, state-level enforcement trends, and the AB 5 / FAAAA litigation track.",
+    "type": "research"
+  },
+  {
+    "url": "/research/state-of-owner-operator-economics-2026",
+    "title": "State of owner-operator economics 2026",
+    "description": "Revenue per mile, cost per mile, deadhead, and the margin reality of independent owner-operators in 2026.",
+    "type": "research"
+  },
+  {
+    "url": "/research/state-of-trucking-insurance-claims-2026",
+    "title": "State of trucking insurance claims 2026",
+    "description": "Claim frequency, severity trends, nuclear verdicts, and the underwriting response from primary-liability carriers.",
+    "type": "research"
+  },
+  {
+    "url": "/research/state-of-commercial-trucking-insurance-2026",
+    "title": "State of commercial trucking insurance 2026",
+    "description": "Annual report — legal-environment shifts, commodity hotspots, AM Best context, broker market shape, FMCSA rules.",
+    "type": "research"
+  },
+  {
+    "url": "/calculators",
+    "title": "Trucking finance calculators",
+    "description": "Fit estimators and decision tools — loan ceilings, factoring rates, lease vs buy, owner-operator P&L. No credit pull.",
+    "type": "calculator"
+  },
+  {
+    "url": "/calculators/how-much-can-i-borrow-for-a-truck",
+    "title": "How much can I borrow for a truck — loan estimator",
+    "description": "Estimate your truck-loan ceiling by FICO band, down-payment, and authority age. Directional fit, not a binding offer.",
+    "type": "calculator"
+  },
+  {
+    "url": "/calculators/whats-my-factoring-rate",
+    "title": "What's my factoring rate — quick estimator",
+    "description": "Estimate a realistic factoring advance rate and fee by authority age, monthly volume, and broker concentration.",
+    "type": "calculator"
+  },
+  {
+    "url": "/calculators/factoring-fee",
+    "title": "Factoring fee calculator",
+    "description": "Compute the dollar cost of factoring against a target advance rate, fee tier, and monthly invoice volume.",
+    "type": "calculator"
+  },
+  {
+    "url": "/calculators/lease-vs-buy",
+    "title": "Lease vs buy calculator — trucking equipment",
+    "description": "Compare leasing vs buying a tractor with realistic depreciation, payment, and tax-deduction assumptions.",
+    "type": "calculator"
+  },
+  {
+    "url": "/calculators/owner-operator-pl",
+    "title": "Owner-operator profit & loss calculator",
+    "description": "Build a realistic P&L for an owner-operator — revenue, fixed costs, variable costs, and break-even per mile.",
+    "type": "calculator"
+  },
+  {
+    "url": "/calculators/truck-repair",
+    "title": "Truck repair loan calculator",
+    "description": "Estimate the payment, term, and rate range on a truck-repair loan based on your FICO band and repair amount.",
+    "type": "calculator"
+  },
+  {
+    "url": "/calculators/semi-truck-loan",
+    "title": "Semi-truck loan calculator",
+    "description": "Estimate the monthly payment and term on a Class 8 tractor loan by truck price, down payment, and credit band.",
+    "type": "calculator"
+  },
+  {
+    "url": "/calculators/commercial-truck-loan",
+    "title": "Commercial truck loan calculator",
+    "description": "General commercial-truck loan calculator covering tractors, box trucks, and vocational equipment.",
+    "type": "calculator"
+  },
+  {
+    "url": "/calculators/dump-truck-loan",
+    "title": "Dump truck loan calculator",
+    "description": "Estimate dump-truck loan terms — covers Class 7/8 dumps and is tuned for vocational borrowers.",
+    "type": "calculator"
+  }
+]
