@@ -165,6 +165,15 @@ export default function BoxTruckFinancingPage() {
               truck running an Amazon DSP route, and underwrites the
               operation behind the equipment.
             </p>
+            <p className="ins-hero-sub">
+              License class matters here. A 26,001+ GVWR straight truck
+              triggers a <Link href="/glossary/cdl-class-b">CDL Class B</Link>{" "}
+              requirement, while smaller box trucks and lighter combinations
+              can fall under a non-CDL or <Link href="/glossary/cdl-class-c">CDL Class C</Link>{" "}
+              license depending on weight rating and what&rsquo;s being
+              hauled. Lenders ask which class the operator holds because
+              it ties to which routes the truck can legally run.
+            </p>
           </div>
         </section>
 
@@ -211,6 +220,13 @@ export default function BoxTruckFinancingPage() {
                 bank-account verification step is part of the application;
                 lenders need three months of business statements and the
                 account that will receive the wire.
+              </li>
+              <li>
+                <strong>Telematics or fleet tooling (helpful, not required).</strong>{" "}
+                Operators running a <Link href="/glossary/fleet-management-platform">fleet management platform</Link>{" "}
+                or basic <Link href="/glossary/vehicle-telematics">vehicle telematics</Link> tend to underwrite
+                more cleanly because route, hours, and maintenance are
+                documented rather than self-reported.
               </li>
             </ul>
           </div>

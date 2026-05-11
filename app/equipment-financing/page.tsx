@@ -150,6 +150,15 @@ export default function EquipmentFinancingPage() {
               Most structures are fixed-payment <Link href="/glossary/term-loan">term loans</Link>;
               a smaller subset offers a <Link href="/glossary/balloon-payment">balloon payment</Link> at maturity to keep monthly cost lower.
             </p>
+            <p className="ins-hero-sub">
+              Tax treatment is part of the appeal too. Equipment is
+              depreciable property under{" "}
+              <Link href="/glossary/macrs-depreciation">MACRS depreciation</Link>, and most
+              new and used trucking equipment also qualifies for{" "}
+              <Link href="/glossary/section-179">Section 179</Link> expensing in
+              the year placed in service — which can offset a meaningful
+              chunk of the first year&rsquo;s tax bill.
+            </p>
           </div>
         </section>
 
@@ -194,6 +203,15 @@ export default function EquipmentFinancingPage() {
                 at the application step — equipment loans need to be
                 anchored to a specific piece of equipment with a
                 documented price.
+              </li>
+              <li>
+                <strong>Telematics on the financed asset (preferred, not required).</strong>{" "}
+                Lenders increasingly factor{" "}
+                <Link href="/glossary/vehicle-telematics">vehicle telematics</Link>{" "}
+                and centralized{" "}
+                <Link href="/glossary/fleet-management-platform">fleet management platform</Link>{" "}
+                data into pricing, because real route and uptime data
+                lowers the perceived risk on the collateral.
               </li>
             </ul>
           </div>

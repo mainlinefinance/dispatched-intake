@@ -209,6 +209,15 @@ export default function BadCreditTruckFinancingPage() {
                 title and a maintained truck unlock pricing the
                 unsecured-credit-only path doesn&rsquo;t.
               </li>
+              <li>
+                <strong>Clean compliance record.</strong> A clear{" "}
+                <Link href="/glossary/drug-alcohol-clearinghouse">Drug &amp; Alcohol Clearinghouse</Link>{" "}
+                query and clean{" "}
+                <Link href="/glossary/pre-employment-screening">pre-employment screening</Link>{" "}
+                history weigh in your favor on equipment-secured files,
+                because they reduce the lender&rsquo;s perceived risk
+                that the operator loses authority to drive the truck.
+              </li>
             </ul>
           </div>
         </section>
@@ -248,6 +257,13 @@ export default function BadCreditTruckFinancingPage() {
                 lenders on the panel accept a co-borrower with stronger
                 credit, which routes the file to a wider lender set with
                 lower-tier pricing.
+              </li>
+              <li>
+                <strong>A current{" "}
+                <Link href="/glossary/dot-physical">DOT physical</Link> on file.</strong>{" "}
+                An unexpired medical certificate confirms the operator
+                is legally able to drive and reduces the lender&rsquo;s
+                worry about loss of authority mid-loan.
               </li>
               <li>
                 <strong>Equipment as collateral.</strong> For

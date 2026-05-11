@@ -164,7 +164,9 @@ export default function InvoiceFactoringPage() {
                 Operators with predictable revenue but unpredictable
                 broker payment timing use factoring to smooth
                 receivables. Particularly useful for owner-ops running
-                multiple brokers with different payment cycles.
+                multiple brokers — often booked through a{" "}
+                <Link href="/glossary/load-board">load board</Link> — with
+                different payment cycles.
               </li>
               <li>
                 <strong>New authorities (under 6 months).</strong>{" "}
@@ -184,6 +186,15 @@ export default function InvoiceFactoringPage() {
                 loan to disclose on subsequent applications, no monthly
                 payment to schedule. Some operators prefer this even at
                 a higher per-dollar cost than a working-capital line.
+              </li>
+              <li>
+                <strong>1099 sole-prop owner-ops.</strong> Operators
+                whose carrier or broker pays them via{" "}
+                <Link href="/glossary/1099-nec">1099-NEC</Link> and whose
+                relationship qualifies under standard{" "}
+                <Link href="/glossary/independent-contractor-classification">independent contractor classification</Link>{" "}
+                tend to use factoring more than W-2 drivers, because
+                they own the receivable directly.
               </li>
             </ul>
           </div>
@@ -282,7 +293,9 @@ export default function InvoiceFactoringPage() {
               <li><strong>Factor match.</strong> A redacted profile goes to the trucking factors most likely to fund your broker mix and ticket size.</li>
               <li><strong>Onboarding.</strong> Notice of Assignment goes to your brokers; account setup; factoring agreement signed. The factor files a <Link href="/glossary/ucc-1">UCC-1</Link> against your receivables and may route broker payments through a <Link href="/glossary/lockbox">lockbox</Link>.</li>
               <li><strong>First invoice.</strong> Submit a verified invoice; factor advances 90–98% of face value within 24 hours, typically wired via <Link href="/glossary/ach">ACH</Link>.</li>
-              <li><strong>Ongoing.</strong> Submit invoices as they&rsquo;re generated; factor advances and collects from the broker on the original payment terms.</li>
+              <li><strong>Ongoing.</strong> Submit invoices as they&rsquo;re generated; factor advances and collects from the broker on the original payment terms. Operators running a{" "}
+                <Link href="/glossary/tms">TMS</Link> can often auto-export the
+                BOL and invoice on delivery.</li>
             </ol>
           </div>
         </section>

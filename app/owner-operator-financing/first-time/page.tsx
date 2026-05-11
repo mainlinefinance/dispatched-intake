@@ -290,7 +290,9 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               You drive under a carrier&rsquo;s authority — you have a{" "}
               <Link href="/glossary/dot-number">DOT number</Link> tied to that carrier, your CDL is current, you&rsquo;re
               earning settlements but you don&rsquo;t hold operating
-              authority. You&rsquo;re buying a truck to lease onto the
+              authority. This is the classic{" "}
+              <Link href="/glossary/lease-on-driver">lease-on driver</Link> profile.
+              You&rsquo;re buying a truck to lease onto the
               same carrier (or jump to another). The panel underwrites
               this off your settlement statements as proxy revenue and
               your personal credit. APR runs 14–17%; down payment 15–20%;
@@ -300,8 +302,9 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
 
             <h3>Scenario C — CDL only, planning to file authority next</h3>
             <p>
-              You have your CDL, you&rsquo;re working as a company driver
-              or you&rsquo;re fresh out of school, and you&rsquo;re going
+              You have your CDL, you&rsquo;re working as a{" "}
+              <Link href="/glossary/company-driver">company driver</Link>
+              {" "}or you&rsquo;re fresh out of school, and you&rsquo;re going
               authority-and-truck simultaneously. The panel narrows here
               — fewer lenders write pre-authority deals — and pricing
               moves up. Expect 16–18% APR, 20%+ down, term capped at 48
@@ -340,7 +343,11 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               If you&rsquo;re below 580 and the deal isn&rsquo;t urgent,
               90 days of credit-building work — paying down revolving
               balances, disputing errors — can move you a band and save
-              real money over 60 months.
+              real money over 60 months. Lenders also expect a current{" "}
+              <Link href="/glossary/dot-physical">DOT physical</Link> on file
+              and, once revenue is real, a habit of paying{" "}
+              <Link href="/glossary/quarterly-estimated-taxes">quarterly estimated taxes</Link>{" "}
+              against the new <Link href="/glossary/schedule-c">Schedule C</Link>.
             </p>
 
             <h3>Down payment (10–20% standard for first-time; more without authority)</h3>
@@ -514,7 +521,9 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               The lease-purchase costs $55K more cash over 60 months and
               ends with no asset. The equipment loan requires real cash
               up front but ends with a paid-off truck and the freedom to
-              switch carriers, switch routes, or sell the asset. For
+              switch carriers, switch routes, take{" "}
+              <Link href="/glossary/hometime">hometime</Link> on your own
+              schedule, or sell the asset. For
               every dollar of risk, the equipment loan is the
               better-engineered deal.
             </p>

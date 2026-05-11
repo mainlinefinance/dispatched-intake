@@ -282,7 +282,10 @@ export default function NoCreditCheckFactoringPage() {
               collects identity documents at onboarding (MC authority,
               W-9, voided check, articles of organization), but the
               matching layer doesn&rsquo;t need your social just to
-              show you options. See{" "}
+              show you options. Operators paid by broker via{" "}
+              <Link href="/glossary/1099-nec">1099-NEC</Link> under standard{" "}
+              <Link href="/glossary/independent-contractor-classification">independent contractor classification</Link>{" "}
+              are the modal profile here. See{" "}
               <Link href="/qualify">/qualify</Link> if you want a
               two-question fit check first.
             </p>
@@ -356,7 +359,10 @@ export default function NoCreditCheckFactoringPage() {
               Non-recourse is worth the premium when you&rsquo;re a
               small fleet that can&rsquo;t absorb a single
               bad-broker hit, or when your lane mix forces you onto
-              brokers with thin credit files. If one broker insolvency
+              brokers with thin credit files — common when most loads
+              come off a public{" "}
+              <Link href="/glossary/load-board">load board</Link> rather
+              than a stable contracted lane. If one broker insolvency
               would wipe out your operating cash, the extra 0.5–1%
               is cheap insurance. If you&rsquo;re running primarily
               with top-credit brokers (the kind every factor wants

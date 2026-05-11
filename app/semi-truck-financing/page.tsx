@@ -141,6 +141,9 @@ export default function SemiTruckFinancingPage() {
               band on working capital, and term lengths run 36–60
               months instead of 6–24 (see{" "}
               <Link href="/methodology#finance-rates">methodology</Link>).
+              On the tax side, the truck itself is depreciable property
+              eligible for <Link href="/glossary/macrs-depreciation">MACRS depreciation</Link> and, in many cases,{" "}
+              <Link href="/glossary/section-179">Section 179</Link> expensing in the year placed in service.
             </p>
           </div>
         </section>
@@ -153,7 +156,7 @@ export default function SemiTruckFinancingPage() {
               <li>
                 <strong>Freightliner Cascadia.</strong> The most-
                 financed Class 8 tractor on our panel by volume — the
-                workhorse for <Link href="/glossary/otr">OTR</Link> sleeper operations.
+                workhorse for <Link href="/glossary/otr">OTR</Link> <Link href="/glossary/sleeper-berth">sleeper berth</Link> operations.
                 Wide lender availability across model years 2018–2024;
                 pre-2018 routes to a smaller subset.
               </li>
@@ -225,6 +228,13 @@ export default function SemiTruckFinancingPage() {
                 separate products not shown on the landing page.
               </li>
             </ul>
+            <p className="ins-hero-sub">
+              A <Link href="/glossary/dash-cam">dash cam</Link> and a clean log of
+              compliance with the <Link href="/glossary/hos-11-hour-rule">HOS 11-hour rule</Link> both
+              show up in underwriting as positive signals — they reduce
+              perceived loss frequency and can move the APR within the
+              observed band.
+            </p>
           </div>
         </section>
 
