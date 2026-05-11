@@ -121,7 +121,9 @@ export default function OwnerOperatorFinancingPage() {
               settlement statements, not the bank&rsquo;s two-year DSCR
               test. Whether the truck is down, the route is slow, or
               you&rsquo;re buying number two — the application flow is the
-              same.
+              same. This is the profile that owns the truck, files
+              their own taxes, claims <Link href="/glossary/per-diem">per diem</Link>,
+              and decides when to take <Link href="/glossary/hometime">hometime</Link>.
             </p>
             <div className="product-hero-ctas">
               <Link
@@ -150,6 +152,11 @@ export default function OwnerOperatorFinancingPage() {
               owner-operators. Most one-truck operators end up using two
               or three of them across a year — the truck breaks down once,
               there&rsquo;s a slow month, the trailer needs replacing.
+              Pay structure matters here too: an operator on{" "}
+              <Link href="/glossary/percentage-of-line-haul">percentage of line haul</Link> or{" "}
+              <Link href="/glossary/cents-per-mile-pay">cents-per-mile pay</Link> presents revenue
+              very differently from a <Link href="/glossary/company-driver">company driver</Link>,
+              which changes which product fits.
             </p>
             <ul className="product-list">
               <li>
@@ -220,8 +227,10 @@ export default function OwnerOperatorFinancingPage() {
               <li>
                 <strong>1099 sole-prop or LLC, both fit.</strong> No W-2
                 requirement. No two-year-tax-return requirement under
-                $75K. Schedule C with $40K+ monthly revenue is a profile
-                the panel underwrites every day.
+                $75K. A <Link href="/glossary/schedule-c">Schedule C</Link> with $40K+ monthly revenue is a profile
+                the panel underwrites every day — the same operator who
+                also files <Link href="/glossary/quarterly-estimated-taxes">quarterly estimated taxes</Link> and
+                pays <Link href="/glossary/self-employment-tax">self-employment tax</Link> against that revenue.
               </li>
             </ul>
           </div>

@@ -148,6 +148,14 @@ export default function NewAuthorityFinancingPage() {
               new-authority operators on our panel use factoring through
               their first 6–12 months and then move to working capital.
             </p>
+            <p className="ins-hero-sub">
+              Driver-side compliance matters too. Lenders look for a
+              current <Link href="/glossary/dot-physical">DOT physical</Link>{" "}
+              and valid <Link href="/glossary/medc-card">medical examiner&rsquo;s certificate (Med Card)</Link>{" "}
+              on file, plus a daily{" "}
+              <Link href="/glossary/dvir">DVIR</Link> habit that shows the
+              truck is being inspected as required.
+            </p>
           </div>
         </section>
 

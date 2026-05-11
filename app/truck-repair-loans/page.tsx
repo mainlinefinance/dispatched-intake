@@ -171,6 +171,12 @@ export default function TruckRepairLoansPage() {
               quickly: there&rsquo;s no <Link href="/glossary/ucc-1">UCC-1</Link> filing, no title work, no
               equipment appraisal in the way of a wire.
             </p>
+            <p className="ins-hero-sub">
+              Keep the parts invoices and shop work orders with your
+              <Link href="/glossary/mileage-log">{" "}mileage log</Link> — they
+              support the repair as a deductible business expense at
+              tax time, separate from how the loan itself is treated.
+            </p>
           </div>
         </section>
 
@@ -208,6 +214,16 @@ export default function TruckRepairLoansPage() {
                 bank-account verification step is part of the
                 application; lenders need three months of business
                 statements and the account that will receive the wire.
+              </li>
+              <li>
+                <strong>Maintenance habit (helpful, not required).</strong>{" "}
+                A documented daily{" "}
+                <Link href="/glossary/dvir">DVIR</Link> log plus{" "}
+                <Link href="/glossary/vehicle-telematics">vehicle telematics</Link>{" "}
+                history on the truck both reduce the lender&rsquo;s
+                concern that today&rsquo;s breakdown is the first of
+                many — which can move the offer toward the cleaner
+                tier.
               </li>
               <li>
                 <strong>Schedule C or W-2 income — both fit.</strong>{" "}

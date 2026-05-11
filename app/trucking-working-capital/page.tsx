@@ -182,6 +182,14 @@ export default function TruckingWorkingCapitalPage() {
                 need three months of statements and the account that
                 will receive the wire.
               </li>
+              <li>
+                <strong>Operational tooling (helpful, not required).</strong>{" "}
+                Operators running a <Link href="/glossary/tms">TMS</Link>,
+                a <Link href="/glossary/fleet-management-platform">fleet management platform</Link>,
+                or basic <Link href="/glossary/vehicle-telematics">vehicle telematics</Link> tend
+                to underwrite faster because revenue, miles, and uptime
+                are documented rather than self-reported.
+              </li>
             </ul>
           </div>
         </section>
@@ -199,7 +207,9 @@ export default function TruckingWorkingCapitalPage() {
               </li>
               <li>
                 <strong>Driver payroll</strong> — fleet operators covering
-                a payroll cycle that lands before broker payment cycles.
+                a payroll cycle that lands before broker payment cycles,
+                including driver{" "}
+                <Link href="/glossary/per-diem">per diem</Link> reimbursements.
                 Particularly common after a broker default on a sizable
                 receivable.
               </li>
@@ -211,7 +221,12 @@ export default function TruckingWorkingCapitalPage() {
               <li>
                 <strong>IFTA, IRP, registration, permits</strong> —
                 quarterly and annual regulatory expenses, particularly
-                multi-state operations with stacked filings.
+                multi-state operations with stacked filings. Operators
+                also use the same line to cover{" "}
+                <Link href="/glossary/quarterly-estimated-taxes">quarterly estimated taxes</Link>{" "}
+                tied to their <Link href="/glossary/schedule-c">Schedule C</Link>{" "}
+                so the IRS deadline doesn&rsquo;t collide with a slow
+                month.
               </li>
               <li>
                 <strong>Broker default bridges</strong> — covering

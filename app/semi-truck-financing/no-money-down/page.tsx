@@ -181,7 +181,9 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
               has been active and unrevoked for at least 24 months, and a
               motor vehicle record with no DUIs, no major accidents in the
               last 36 months, and no more than one minor moving violation.
-              On this profile, zero-down approvals run 12% to 14% APR on a
+              A <Link href="/glossary/dash-cam">dash cam</Link> on the
+              truck is a quiet credibility signal here — it tells the lender
+              the operator runs disciplined. On this profile, zero-down approvals run 12% to 14% APR on a
               60-month term for trucks under 5 years old. Lenders treat the
               authority age and clean MVR as a proxy for revenue stability —
               you&rsquo;ve been hauling freight long enough that the loan
@@ -329,6 +331,17 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
               not theoretical — and they&rsquo;re the cost of preserving
               cash today.
             </p>
+            <p className="ins-hero-sub">
+              Worth noting on the tax side: regardless of down payment, the
+              truck is depreciable property under{" "}
+              <Link href="/glossary/macrs-depreciation">MACRS depreciation</Link>{" "}
+              and typically eligible for{" "}
+              <Link href="/glossary/section-179">Section 179</Link> expensing
+              in year one, which can offset a meaningful chunk of taxable
+              income that same year. Talk to a tax preparer before assuming
+              a specific deduction will land — eligibility depends on
+              business income.
+            </p>
           </div>
         </section>
 
@@ -340,8 +353,10 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
             <h3>Math: monthly payment vs. operating margin</h3>
             <p className="ins-hero-sub">
               The first question to ask: does the monthly payment leave room
-              for fuel, insurance, maintenance, and the operator&rsquo;s
-              draw? The rough rule of thumb on the Dispatched panel is that
+              for fuel, insurance, maintenance, the operator&rsquo;s
+              draw, and the daily{" "}
+              <Link href="/glossary/per-diem">per diem</Link> the operator
+              expects to cover meals on the road? The rough rule of thumb on the Dispatched panel is that
               the truck payment should not exceed 25% of monthly gross
               revenue. An owner-operator grossing $20,000 a month should be
               looking at a $5,000-and-under payment. If zero-down on the
