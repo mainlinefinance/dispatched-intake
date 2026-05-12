@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { FactoringFlowDiagram } from "@/components/diagrams/FactoringFlowDiagram";
+import EmailCapture from "@/components/landing/EmailCapture";
 import {
   JsonLd,
   article,
@@ -8,6 +9,8 @@ import {
   faqPage,
   itemList,
 } from "@/components/seo/JsonLd";
+import RelatedContent from "@/components/related/RelatedContent";
+import { getRelatedContent } from "@/lib/related";
 
 export const metadata: Metadata = {
   title: "Best Trucking Factoring Companies 2026 | Dispatched",
@@ -151,6 +154,23 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
 
 export default function BestTruckingFactoring2026Page() {
   const today = new Date().toISOString().slice(0, 10);
+  const relatedItems = getRelatedContent({
+    currentUrl: "/research/best-trucking-factoring-2026",
+    glossarySlugs: [
+      "recourse-factoring",
+      "non-recourse-factoring",
+      "advance-rate",
+      "broker-spread",
+      "all-in-rate",
+    ],
+    productUrls: [
+      "/invoice-factoring-for-truckers",
+      "/invoice-factoring-for-truckers/no-credit-check",
+    ],
+    topic: "factoring-and-cash-flow",
+    type: "research",
+    limit: 6,
+  });
   return (
     <div className="research-page">
       <JsonLd
@@ -239,6 +259,13 @@ export default function BestTruckingFactoring2026Page() {
               </Link>
             </p>
           </header>
+
+          <EmailCapture
+            variant="card"
+            source="research-best-factoring"
+            heading="Get the next research drop"
+            description="Quarterly research on trucking capital, insurance, and operations — straight to your inbox."
+          />
 
           <section className="research-section" id="q2-2026-update">
             <h2>Q2 2026 update</h2>
@@ -1029,6 +1056,12 @@ export default function BestTruckingFactoring2026Page() {
               </div>
             ))}
           </section>
+
+          <RelatedContent
+            items={relatedItems}
+            heading="Related from Dispatched"
+            intro="Glossary, comparisons, calculators, and adjacent reports for the topics in this guide."
+          />
 
           <section
             className="research-section research-cta"

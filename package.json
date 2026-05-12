@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run build:search-index || true",
     "build": "next build",
     "build:analyze": "ANALYZE=true npm run build",
+    "build:search-index": "node --no-warnings --experimental-strip-types scripts/build-search-index.ts",
     "start": "next start -p ${PORT:-3000}",
     "lint": "eslint && npm run lint:css",
     "lint:css": "stylelint 'app/**/*.css'",

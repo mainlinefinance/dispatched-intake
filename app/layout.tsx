@@ -119,6 +119,20 @@ export default function RootLayout({
       lang="en"
       className={`${archivo.variable} ${plexSans.variable} ${plexMono.variable}`}
     >
+      <head>
+        {/* Third-party origins that are loaded after-interactive on specific
+            routes. dns-prefetch resolves DNS ahead of script execution; the
+            cost is ~zero and the saving is one RTT when the script body kicks
+            in. preconnect on the Coverdash quote engine because the iframe
+            renders inside the viewport on /insurance and benefits from a
+            warm TLS handshake. We do NOT preconnect to the Lendflow or
+            Coverdash widget SRCs because those origins are env-driven and
+            not known at build time. */}
+        <link rel="dns-prefetch" href="https://quotes.coverdash.com" />
+        <link rel="preconnect" href="https://quotes.coverdash.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://api.trustedform.com" />
+        <link rel="dns-prefetch" href="https://create.lidstatic.com" />
+      </head>
       <body>
         {/* Site-wide entity context. Every page inherits Organization +
             WebSite schema so search engines can resolve the publisher of

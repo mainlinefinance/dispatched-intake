@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FactoringFeeCalculator from "@/components/calculators/FactoringFeeCalculator";
+import EmailCapture from "@/components/landing/EmailCapture";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -70,6 +71,17 @@ export default function FactoringFeeCalculatorPage() {
         <section className="calc-form-wrap">
           <div className="container">
             <FactoringFeeCalculator />
+          </div>
+        </section>
+
+        <section className="calc-form-wrap">
+          <div className="container">
+            <EmailCapture
+              variant="card"
+              source="calculator-factoring-fee"
+              heading="Get more trucking finance tools"
+              description="Monthly newsletter with new calculators, research updates, and lender insights."
+            />
           </div>
         </section>
 

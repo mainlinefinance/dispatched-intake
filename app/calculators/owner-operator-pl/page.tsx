@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import OwnerOperatorPLCalculator from "@/components/calculators/OwnerOperatorPLCalculator";
 import { OwnerOpPLPie } from "@/components/diagrams/OwnerOpPLPie";
+import EmailCapture from "@/components/landing/EmailCapture";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -10,6 +11,8 @@ import {
   breadcrumbList,
   softwareApplication,
 } from "@/components/seo/JsonLd";
+import RelatedContent from "@/components/related/RelatedContent";
+import { getRelatedContent } from "@/lib/related";
 
 const PAGE_URL =
   "https://dispatched.finance/calculators/owner-operator-pl";
@@ -23,6 +26,26 @@ export const metadata: Metadata = {
 
 export default function OwnerOperatorPLCalculatorPage() {
   const today = new Date().toISOString().slice(0, 10);
+  const relatedItems = getRelatedContent({
+    currentUrl: "/calculators/owner-operator-pl",
+    glossarySlugs: [
+      "cpm",
+      "rpm",
+      "deadhead",
+      "broker-spread",
+      "owner-operator",
+      "all-in-rate",
+      "per-diem",
+    ],
+    productUrls: [
+      "/owner-operator-financing",
+      "/owner-operator-financing/first-time",
+      "/invoice-factoring-for-truckers",
+    ],
+    topic: "owner-operator-economics",
+    type: "calculator",
+    limit: 6,
+  });
   return (
     <div className="landing">
       <JsonLd
@@ -76,6 +99,17 @@ export default function OwnerOperatorPLCalculatorPage() {
         <section className="calc-form-wrap">
           <div className="container">
             <OwnerOperatorPLCalculator />
+          </div>
+        </section>
+
+        <section className="calc-form-wrap">
+          <div className="container">
+            <EmailCapture
+              variant="card"
+              source="calculator-owner-op-pl"
+              heading="Get more trucking finance tools"
+              description="Monthly newsletter with new calculators, research updates, and lender insights."
+            />
           </div>
         </section>
 
@@ -236,6 +270,11 @@ export default function OwnerOperatorPLCalculatorPage() {
 
         <section className="calc-related">
           <div className="container">
+            <RelatedContent
+              items={relatedItems}
+              heading="Related from Dispatched"
+              intro="Glossary, blog, research, and comparisons that pair with this calculator."
+            />
             <h2>Related</h2>
             <ul>
               <li>

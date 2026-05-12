@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/landing/EmailCapture";
 import {
   JsonLd,
   article,
   breadcrumbList,
 } from "@/components/seo/JsonLd";
+import RelatedContent from "@/components/related/RelatedContent";
+import { getRelatedContent } from "@/lib/related";
 
 export const metadata: Metadata = {
   title: "State of Trucking Capital 2026 — Dispatched Research",
@@ -95,6 +98,29 @@ export default function StateOfTruckingCapital2026() {
   const today = new Date().toISOString().slice(0, 10);
   const url =
     "https://dispatched.finance/research/state-of-trucking-capital-2026";
+  const relatedItems = getRelatedContent({
+    currentUrl: "/research/state-of-trucking-capital-2026",
+    glossarySlugs: [
+      "recourse-factoring",
+      "non-recourse-factoring",
+      "advance-rate",
+      "mc-number",
+      "dot-number",
+      "owner-operator",
+      "lease-purchase",
+      "premium-financing",
+    ],
+    productUrls: [
+      "/invoice-factoring-for-truckers",
+      "/trucking-working-capital",
+      "/equipment-financing",
+      "/owner-operator-financing/first-time",
+      "/insurance",
+    ],
+    topic: "industry-trends",
+    type: "research",
+    limit: 6,
+  });
   return (
     <div className="research-page">
       <JsonLd
@@ -143,6 +169,13 @@ export default function StateOfTruckingCapital2026() {
               referenced inline. Data through April 2026.
             </p>
           </header>
+
+          <EmailCapture
+            variant="card"
+            source="research-trucking-capital"
+            heading="Get the next research drop"
+            description="Quarterly research on trucking capital, insurance, and operations — straight to your inbox."
+          />
 
           <section className="research-section" id="q2-2026-update">
             <h2>Q2 2026 update</h2>
@@ -1091,6 +1124,12 @@ export default function StateOfTruckingCapital2026() {
               ))}
             </ul>
           </section>
+
+          <RelatedContent
+            items={relatedItems}
+            heading="Related from Dispatched"
+            intro="Glossary, comparisons, calculators, and adjacent research for the topics in this report."
+          />
 
           <section className="research-section research-cta">
             <h2>What this means for your operation</h2>
