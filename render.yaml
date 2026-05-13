@@ -29,6 +29,12 @@ services:
       # openssl rand -hex 32
       - key: CRON_SECRET
         sync: false
+      # Bearer secret used by proxy.ts to forward crawler hits to the
+      # Mainline analytics ingest endpoint. Operator shares the value
+      # out-of-band; set it in the Render dashboard. Missing value → the
+      # beacon helper short-circuits to a no-op (no crash, no reporting).
+      - key: MAINLINE_INGEST_SECRET
+        sync: false
       # Injected from the Render dashboard when real backends come online:
       # NEXT_PUBLIC_SITE_URL
       # GOOGLE_SITE_VERIFICATION
