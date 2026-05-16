@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import { getAllProducts } from "@/lib/data/products";
 import { getAllInsuranceStates } from "@/lib/data/states";
 import {
@@ -153,7 +154,7 @@ export default function InsurancePillarPage() {
       <JsonLd payload={faqPage(faqs)} />
 
       <main id="main-content">
-        <Hero quoteAnchorId={QUOTE_ANCHOR} />
+        <Hero quoteAnchorId={QUOTE_ANCHOR} today={today} />
 
         <ThreeStepRibbon />
 
@@ -175,7 +176,13 @@ export default function InsurancePillarPage() {
   );
 }
 
-function Hero({ quoteAnchorId }: { quoteAnchorId: string }) {
+function Hero({
+  quoteAnchorId,
+  today,
+}: {
+  quoteAnchorId: string;
+  today: string;
+}) {
   return (
     <section className="ins-hero ins-hero--lg">
       <div className="ins-container">
@@ -183,6 +190,7 @@ function Hero({ quoteAnchorId }: { quoteAnchorId: string }) {
         <h1 className="ins-hero-title">
           Compare commercial trucking insurance from 30+ carriers.
         </h1>
+        <EditorialByline updated={today} />
         <p className="ins-hero-sub">
           Primary liability, cargo, physical damage, and the rest of the
           coverage stack — quoted by our licensed producer partner across the

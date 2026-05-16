@@ -9,6 +9,7 @@ import {
 } from "@/lib/cities";
 import { JsonLd, breadcrumbList } from "@/components/seo/JsonLd";
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import EditorialByline from "@/components/landing/EditorialByline";
 import { metaTruckingLoansCity } from "@/lib/seo/metadataPatterns";
 
 type Params = { state: string; city: string };
@@ -63,6 +64,7 @@ export default async function GeoLandingPage({
   // flagship trucking LP until coverage is confirmed.
   if (entry.stateLenderPanelCount < LOW_COVERAGE_THRESHOLD) redirect("/trucking");
 
+  const today = new Date().toISOString().slice(0, 10);
   const breadcrumbs: BreadcrumbItem[] = [
     { name: "Dispatched", url: "https://dispatched.finance/" },
     {
@@ -86,7 +88,7 @@ export default async function GeoLandingPage({
       <div className="geo-container">
         <Breadcrumbs items={breadcrumbs} />
       </div>
-      <Hero entry={entry} />
+      <Hero entry={entry} today={today} />
       <WhyLocalMatters entry={entry} />
       <WhyBanksDecline entry={entry} />
       <ProofCards entry={entry} />
@@ -161,7 +163,7 @@ function SiteNav() {
   );
 }
 
-function Hero({ entry }: { entry: City }) {
+function Hero({ entry, today }: { entry: City; today: string }) {
   return (
     <section className="geo-hero">
       <div className="geo-container">
@@ -175,6 +177,7 @@ function Hero({ entry }: { entry: City }) {
               $25K–$250K at {entry.aprRangeLow}–{entry.aprRangeHigh}% APR,
               typically funded in 24–48 hours.
             </h1>
+            <EditorialByline updated={today} />
             <p className="geo-hero-sub">
               {entry.state} has{" "}
               <strong>

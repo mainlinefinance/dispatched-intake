@@ -27,6 +27,7 @@ import {
   financialProduct,
 } from "@/components/seo/JsonLd";
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import EditorialByline from "@/components/landing/EditorialByline";
 import { metaInsuranceProductState } from "@/lib/seo/metadataPatterns";
 import CarrierTable from "@/components/compare/CarrierTable";
 import MethodologyByline from "@/components/trust/MethodologyByline";
@@ -134,7 +135,7 @@ export default async function StateMoneyPage({
         <div className="ins-container">
           <Breadcrumbs items={breadcrumbs} />
         </div>
-        <Hero product={p} state={s} />
+        <Hero product={p} state={s} today={today} />
         <div className="ins-container">
           <MethodologyByline />
         </div>
@@ -166,9 +167,11 @@ export default async function StateMoneyPage({
 function Hero({
   product,
   state,
+  today,
 }: {
   product: Product;
   state: InsuranceState;
+  today: string;
 }) {
   return (
     <section className="ins-hero">
@@ -179,6 +182,7 @@ function Hero({
         <h1 className="ins-hero-title">
           {product.name} for {state.name} commercial trucking operators.
         </h1>
+        <EditorialByline updated={today} />
         <p className="ins-hero-sub">{product.oneLine}</p>
       </div>
     </section>

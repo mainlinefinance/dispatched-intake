@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -101,6 +102,7 @@ export default function TruckingWorkingCapitalPage() {
             <h1 className="ins-hero-title">
               Working capital for fuel, payroll, and daily operations.
             </h1>
+            <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               $25K–$250K unsecured commercial lines for trucking
               owner-operators and small fleets. Cover fuel, driver

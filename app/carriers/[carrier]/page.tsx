@@ -15,6 +15,7 @@ import {
   breadcrumbList,
 } from "@/components/seo/JsonLd";
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import EditorialByline from "@/components/landing/EditorialByline";
 import { metaCarrier } from "@/lib/seo/metadataPatterns";
 
 type Params = { carrier: string };
@@ -93,7 +94,7 @@ export default async function CarrierReviewPage({
         <div className="ins-container">
           <Breadcrumbs items={breadcrumbs} />
         </div>
-        <Hero carrier={c} />
+        <Hero carrier={c} today={today} />
         <RatingBlock carrier={c} />
         {c.notes ? <AboutBlock carrier={c} /> : null}
         <ProductsBlock carrier={c} products={products} />
@@ -104,12 +105,13 @@ export default async function CarrierReviewPage({
   );
 }
 
-function Hero({ carrier }: { carrier: Carrier }) {
+function Hero({ carrier, today }: { carrier: Carrier; today: string }) {
   return (
     <section className="ins-hero">
       <div className="ins-container">
         <span className="ins-eyebrow">Carrier review</span>
         <h1 className="ins-hero-title">{carrier.name}</h1>
+        <EditorialByline updated={today} />
         {carrier.parentGroup ? (
           <p className="ins-hero-sub">
             Part of <strong>{carrier.parentGroup}</strong>.
