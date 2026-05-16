@@ -43,6 +43,10 @@ const PAGE_URL =
 
 const faqs = [
   {
+    q: "Going from W-2 driver to owner-operator — how do I finance my first truck?",
+    a: "Yes — driver-to-owner-operator transitions fund routinely on the Dispatched panel even without an active MC authority yet. The lender substitutes your last 12 to 24 months of W-2 driving history (and your 90 days of personal bank statements) for the business-history signal a seasoned operator would show. Plan for 10% to 20% down depending on your FICO band, an equipment-secured structure on a Class 8 tractor at or below appraised value, and pre-qualification at /qualify (soft pull, no credit impact) before you commit to a truck.",
+  },
+  {
     q: "Can I get a truck loan as a first-time owner-operator?",
     a: "Yes. The Dispatched panel underwrites from a 500 FICO with no minimum business history requirement. Lenders weight your personal credit, down payment, and the truck's value when business history is thin. Plan for 10–20% down on your first deal.",
   },

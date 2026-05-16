@@ -46,6 +46,10 @@ const PAGE_URL = "https://dispatched.finance/bad-credit-truck-financing";
 
 const faqs = [
   {
+    q: "Owner-operator with a 600 credit score — can I actually get a truck loan?",
+    a: "Yes. FICO 600 sits in the middle of the panel's working-capital pricing band — most operators at that credit level qualify for the standard product set, with APRs typically quoting in the 24% to 30% range on working capital and 12% to 15% on equipment-secured loans. The Dispatched panel underwrites on monthly business deposits, debt service coverage, and equipment value first, with FICO as a secondary signal — which is why the same FICO-600 operator who gets declined by a bank routinely funds on the panel.",
+  },
+  {
     q: "Can I get truck financing with a 500 credit score?",
     a: "Yes. Programs on the Dispatched panel route from a 500 FICO. Most banks decline below 650 because they underwrite on credit alone; the Dispatched panel underwrites on revenue, debt service coverage, equipment value, and deposit history first, with FICO second. Sub-580 borrowers should expect a higher APR and tighter loan amounts, but approval is realistic.",
   },
@@ -115,7 +119,7 @@ export default function BadCreditTruckFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Bad credit truck financing</span>
             <h1 className="ins-hero-title">
-              Truck financing when your credit is the problem.
+              Trucking loans for owner-operators with 500–650 credit.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
