@@ -9,6 +9,7 @@ import {
 } from "@/lib/cities";
 import { JsonLd, breadcrumbList } from "@/components/seo/JsonLd";
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import EditorialByline from "@/components/landing/EditorialByline";
 import { metaTruckingLoansState } from "@/lib/seo/metadataPatterns";
 
 type Params = { state: string };
@@ -55,6 +56,7 @@ export default async function StatePage({
   if (!info) notFound();
   if (info.lenderPanelCount < LOW_COVERAGE_THRESHOLD) redirect("/trucking");
 
+  const today = new Date().toISOString().slice(0, 10);
   const breadcrumbs: BreadcrumbItem[] = [
     { name: "Dispatched", url: "https://dispatched.finance/" },
     {
@@ -81,6 +83,7 @@ export default async function StatePage({
             Working capital for {info.name} truckers.{" "}
             <em>Bank decline is fine.</em>
           </h1>
+          <EditorialByline updated={today} />
           <p className="geo-hero-sub">
             {info.lenderPanelCount} lenders on our panel actively fund{" "}
             {info.name} trucking operations — from owner-operators running a

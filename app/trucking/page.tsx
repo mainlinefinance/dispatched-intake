@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import { getAllFinancingProducts } from "@/lib/data/financingProducts";
@@ -122,6 +123,7 @@ export default function TruckingHubPage() {
             <h1 className="ins-hero-title">
               Trucking financing, by product and by situation.
             </h1>
+            <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               Nine financing products operators actually shop for, mapped to
               the cashflow situation each one solves. Pick the situation

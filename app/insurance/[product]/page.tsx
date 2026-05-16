@@ -17,6 +17,7 @@ import {
   breadcrumbList,
 } from "@/components/seo/JsonLd";
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import EditorialByline from "@/components/landing/EditorialByline";
 import { metaInsuranceProductHub } from "@/lib/seo/metadataPatterns";
 
 type Params = { product: string };
@@ -92,7 +93,7 @@ export default async function ProductHubPage({
         <div className="ins-container">
           <Breadcrumbs items={breadcrumbs} />
         </div>
-        <Hero product={p} />
+        <Hero product={p} today={today} />
         <RegulatoryBlock product={p} />
         <StateDirectory product={p} states={states} />
         <ComplianceFooter />
@@ -101,7 +102,7 @@ export default async function ProductHubPage({
   );
 }
 
-function Hero({ product }: { product: Product }) {
+function Hero({ product, today }: { product: Product; today: string }) {
   return (
     <section className="ins-hero">
       <div className="ins-container">
@@ -111,6 +112,7 @@ function Hero({ product }: { product: Product }) {
         <h1 className="ins-hero-title">
           {product.name} for commercial trucking.
         </h1>
+        <EditorialByline updated={today} />
         <p className="ins-hero-sub">{product.oneLine}</p>
         <p className="ins-hero-sub">{product.whoBuys}</p>
       </div>

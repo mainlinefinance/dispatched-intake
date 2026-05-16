@@ -26,6 +26,7 @@ import {
   financialProduct,
 } from "@/components/seo/JsonLd";
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
+import EditorialByline from "@/components/landing/EditorialByline";
 import { metaInsuranceDeep } from "@/lib/seo/metadataPatterns";
 import CarrierCardList from "@/components/compare/CarrierCardList";
 import {
@@ -173,6 +174,7 @@ export default async function DeepMoneyPage({
             state={s}
             dotClass={dc}
             observation={observation}
+            today={today}
           />
         </div>
         <QuoteSection product={p} state={s} dotClass={dc} />
@@ -190,11 +192,13 @@ function HeroZone({
   state,
   dotClass,
   observation,
+  today,
 }: {
   product: Product;
   state: InsuranceState;
   dotClass: DotClass;
   observation: ReturnType<typeof getRate>;
+  today: string;
 }) {
   return (
     <section className="hero-zone" aria-labelledby="hero-h1">
@@ -207,6 +211,7 @@ function HeroZone({
         {product.name} for {state.abbr} {dotClass.shortLabel.toLowerCase()}{" "}
         owner-operators.
       </h1>
+      <EditorialByline updated={today} />
       <p className="hero-lead">{product.oneLine}</p>
       {observation ? (
         <RatePanel

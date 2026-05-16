@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -115,6 +116,7 @@ export default function BoxTruckFinancingPage() {
             <h1 className="ins-hero-title">
               Box truck financing for owner-operators and last-mile fleets.
             </h1>
+            <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               Box-truck operations are not Class 8. Loan sizes are smaller,
               the equipment value is smaller, and the operator profile —

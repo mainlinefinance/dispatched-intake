@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -44,6 +45,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 ];
 
 export default function AboutPage() {
+  const today = new Date().toISOString().slice(0, 10);
   return (
     <div className="about-page">
       <JsonLd payload={breadcrumbList(breadcrumbs)} />
@@ -64,6 +66,7 @@ export default function AboutPage() {
 
           <header className="about-header">
             <h1>About Dispatched</h1>
+            <EditorialByline updated={today} />
             <p className="about-lede">
               A matching platform for U.S. trucking finance and insurance.
               Lender-paid. Soft pull first. One application, panel routing.
