@@ -1014,12 +1014,14 @@ const POSTS: ReadonlyArray<BlogPost> = [
 import { OPERATIONS_COMPLIANCE_POSTS } from "./blog/operations-compliance";
 import { FINANCE_CASHFLOW_POSTS } from "./blog/finance-cashflow";
 import { INSURANCE_RISK_POSTS } from "./blog/insurance-risk";
+import { AEO_BATCH_POSTS } from "./blog/aeo-batch";
 
 const ALL_POSTS: ReadonlyArray<BlogPost> = [
   ...POSTS,
   ...OPERATIONS_COMPLIANCE_POSTS,
   ...FINANCE_CASHFLOW_POSTS,
   ...INSURANCE_RISK_POSTS,
+  ...AEO_BATCH_POSTS,
 ];
 
 export function getAllPosts(): ReadonlyArray<BlogPost> {
