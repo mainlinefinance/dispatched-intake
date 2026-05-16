@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -169,6 +170,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               First-time owner-operator truck financing — your first truck,
               your first loan.
             </h1>
+            <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               New <Link href="/glossary/cdl-class-a">CDL</Link>, new authority, no business history? Here&rsquo;s
               what the Dispatched lender panel actually approves — and

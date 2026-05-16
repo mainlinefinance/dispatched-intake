@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -98,6 +99,7 @@ export default function EquipmentFinancingPage() {
             <h1 className="ins-hero-title">
               Equipment financing for trucks, trailers, and trucking gear.
             </h1>
+            <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               Secured by the equipment, longer payback than{" "}
               <Link href="/glossary/working-capital">working capital</Link>,

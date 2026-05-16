@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -119,6 +120,7 @@ export default function TruckRepairLoansPage() {
             <h1 className="ins-hero-title">
               Truck repair financing for owner-operators and small fleets.
             </h1>
+            <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               When the truck is down, the wire can land same banking day
               after the chosen lender signs off. We match you with

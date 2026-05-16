@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LendflowWidget from "./_components/LendflowWidget";
+import HdyhauSurvey from "@/components/hdyhau/HdyhauSurvey";
 import { JsonLd, faqPage } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
@@ -76,6 +77,7 @@ export default function ApplyPage() {
           credit.
         </p>
       </header>
+      <HdyhauSurvey source="apply" />
       <LendflowWidget />
     </main>
   );

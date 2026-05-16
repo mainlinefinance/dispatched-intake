@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import PageTOC from "@/components/landing/PageTOC";
@@ -108,6 +109,7 @@ export default function InvoiceFactoringPage() {
             <h1 className="ins-hero-title">
               Invoice factoring for trucking operations.
             </h1>
+            <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               Sell broker or carrier invoices for an immediate cash
               advance instead of waiting 30–60 days for payment.
