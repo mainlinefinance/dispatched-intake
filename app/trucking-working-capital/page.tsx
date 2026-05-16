@@ -35,6 +35,10 @@ const PAGE_URL = "https://dispatched.finance/trucking-working-capital";
 
 const faqs = [
   {
+    q: "Small fleet of 2 to 5 trucks needs capital for fuel cards and payroll — what are the options?",
+    a: "Small fleets in the 2 to 5 truck range typically access working-capital lines from $50K to $125K through lenders that underwrite on fleet revenue, deposit consistency, and settlement-statement quality. APRs run 18% to 28% for fleets with 12 to 24 months of operating history; 14% to 22% for fleets above 24 months. Revolving lines of credit (interest only on drawn balance) usually price 2 to 4 APR points lower than equivalent term loans and are the right structure when the capital need is recurring fuel-and-payroll bridging rather than a one-time gap.",
+  },
+  {
     q: "How fast can I get a trucking working capital loan?",
     a: "Soft approval and lender match typically come back within 20 minutes of finishing the application. Funds hit your account the same banking day after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff. Wires that miss the cutoff settle the next banking day; weekend and federal-holiday wires settle the next banking day. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
   },
@@ -100,7 +104,7 @@ export default function TruckingWorkingCapitalPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Working capital</span>
             <h1 className="ins-hero-title">
-              Working capital for fuel, payroll, and daily operations.
+              Working capital for small trucking fleets — fuel, payroll, and slow-pay coverage.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">

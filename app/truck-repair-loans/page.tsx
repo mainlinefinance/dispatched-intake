@@ -49,6 +49,10 @@ const PAGE_URL = "https://dispatched.finance/truck-repair-loans";
 // SECTION: FAQ (also drives FAQPage JSON-LD)
 const faqs = [
   {
+    q: "My truck broke down on the road — can I get financing for the repair today?",
+    a: "Yes. The Dispatched workflow is built around the case where the truck is already at the shop and the operator needs the wire today. Soft approval and lender match typically come back within 20 minutes of submitting the application; the chosen lender wires funds to the operator's business account the same banking day if the countersign clears before bank cutoff. There is no shop-assignment step and no requirement that the truck be roadworthy or inspected at the time of application.",
+  },
+  {
     q: "How fast can I get a truck repair loan?",
     a: "Soft approval and lender match typically come back within 20 minutes of submitting the application. Funds hit your account the same banking day after the chosen lender countersigns, provided the wire lands before that bank's cutoff. If you apply after cutoff or on a weekend, funds settle the next banking day. The Dispatched workflow is built around the case where the truck is already at the shop and the operator needs the wire today.",
   },
@@ -118,7 +122,7 @@ export default function TruckRepairLoansPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Truck repair loans</span>
             <h1 className="ins-hero-title">
-              Truck repair financing for owner-operators and small fleets.
+              Same-day truck repair loans for owner-operators and small fleets.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">

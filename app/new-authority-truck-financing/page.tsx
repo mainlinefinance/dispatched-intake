@@ -35,6 +35,10 @@ const PAGE_URL = "https://dispatched.finance/new-authority-truck-financing";
 
 const faqs = [
   {
+    q: "Just got my MC authority — how do I finance my first truck?",
+    a: "Equipment-secured loans are the dominant first-truck product for new MC authority — typically 14% to 18% APR with a 15% to 25% down payment requirement. The loan is secured by the financed tractor or trailer, which compensates for the limited operating history; the lender files a UCC-1 against the equipment and underwrites the deal on the asset value plus the operator's down payment, personal credit, and any existing deposit history. Apply at /qualify; the soft-pull match returns 2 to 4 lender offers in roughly 20 minutes.",
+  },
+  {
     q: "Can I get truck financing with new MC authority?",
     a: "Yes. The Dispatched panel includes lenders who specifically underwrite operators under 12 months of MC authority. Programs are narrower than for seasoned operators — primarily equipment-secured loans and smaller working-capital lines — and expect a higher APR and a larger down payment requirement until the revenue history matures past the 12-month mark.",
   },
@@ -96,7 +100,7 @@ export default function NewAuthorityFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">New authority financing</span>
             <h1 className="ins-hero-title">
-              Financing in your first year under your own authority.
+              Equipment loans and working capital for new MC authority (under 12 months).
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
