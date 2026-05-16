@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import PageTOC from "@/components/landing/PageTOC";
@@ -108,6 +109,7 @@ export default function SemiTruckFinancingPage() {
             <h1 className="ins-hero-title">
               Class 8 semi truck financing for owner-operators.
             </h1>
+            <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               Cascadias, Kenworths, Peterbilts, Volvos, Macks. Secured
               by the truck, longer terms than working capital, lower

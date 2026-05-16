@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import PageTOC from "@/components/landing/PageTOC";
@@ -125,6 +126,7 @@ export default function OwnerOperatorFinancingPage() {
             <h1 className="ins-hero-title">
               Capital for the operator behind the truck.
             </h1>
+            <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               1099 sole-prop is the default profile on our panel, not the
               exception. The lenders we route to underwrite{" "}

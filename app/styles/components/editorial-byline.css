@@ -1,0 +1,31 @@
+/* Editorial byline — visible last-updated line under landing-page H1s.
+   Muted, small, single line, sits between H1 and the lead paragraph.
+   Matches the visual weight of .methodology-byline so the system reads
+   as one pattern across the site. */
+
+.editorial-byline {
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  line-height: var(--lh-caption);
+  color: var(--color-ink-secondary);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-4);
+  letter-spacing: var(--tr-caption);
+}
+
+.editorial-byline a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--color-ink-tertiary);
+  text-underline-offset: 0.15em;
+}
+
+.editorial-byline a:hover,
+.editorial-byline a:focus {
+  color: var(--color-ink-primary);
+  text-decoration-color: currentcolor;
+}
+
+.editorial-byline time {
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,116 @@
+/* HDYHAU = "How did you hear about us." Chip-style attribution survey
+   on /apply (above the Lendflow widget) and /qualify (inside the
+   QualificationCalc submitted state).
+
+   Design discipline: muted, low-friction, never blocks the conversion
+   flow. Single tap submits. Success state replaces the chips in place
+   so the user doesn't feel a layout shift. */
+
+.hdyhau {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-6);
+  background: var(--color-bg-sunken);
+}
+
+.hdyhau-heading {
+  font-family: var(--font-display, var(--font-body));
+  font-size: var(--fs-body);
+  font-weight: 600;
+  line-height: var(--lh-body);
+  margin-top: 0;
+  margin-bottom: var(--space-1);
+  color: var(--color-ink-primary);
+}
+
+.hdyhau-sub {
+  font-size: var(--fs-caption);
+  line-height: var(--lh-caption);
+  color: var(--color-ink-secondary);
+  margin-top: 0;
+  margin-bottom: var(--space-3);
+}
+
+.hdyhau-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hdyhau-chip {
+  font-family: var(--font-body);
+  font-size: var(--fs-caption);
+  line-height: 1.2;
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-pill);
+  background: var(--color-bg-paper);
+  color: var(--color-ink-primary);
+  cursor: pointer;
+  transition: background-color 0.12s ease, border-color 0.12s ease,
+    color 0.12s ease;
+}
+
+.hdyhau-chip:focus-visible {
+  outline: 2px solid var(--color-steel-400);
+  outline-offset: 2px;
+}
+
+.hdyhau-chip:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hdyhau-chip:hover:not(:disabled) {
+  background: var(--color-bg-surface);
+  border-color: var(--color-ink-tertiary);
+}
+
+.hdyhau-chip--active {
+  background: var(--color-ink-primary);
+  color: var(--color-ink-inverse);
+  border-color: var(--color-ink-primary);
+}
+
+.hdyhau-other-form {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.hdyhau-other-input {
+  flex: 1 1 200px;
+  min-width: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-paper);
+  color: var(--color-ink-primary);
+}
+
+.hdyhau-other-input:focus {
+  outline: 2px solid var(--color-steel-400);
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.hdyhau-error {
+  font-size: var(--fs-caption);
+  color: var(--color-err-600);
+  margin-top: var(--space-2);
+  margin-bottom: 0;
+}
+
+.hdyhau--success p {
+  font-size: var(--fs-small);
+  color: var(--color-ink-secondary);
+  margin: 0;
+}

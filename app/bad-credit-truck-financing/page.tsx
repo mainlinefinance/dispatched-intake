@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -116,6 +117,7 @@ export default function BadCreditTruckFinancingPage() {
             <h1 className="ins-hero-title">
               Truck financing when your credit is the problem.
             </h1>
+            <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               The lenders on our panel underwrite revenue and equipment,
               not just FICO. The marketing FAQ states the panel routes

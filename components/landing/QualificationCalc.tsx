@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
+import HdyhauSurvey from "@/components/hdyhau/HdyhauSurvey";
 import { IconArrowRight, IconLock } from "./icons";
 import { CTA_LABEL } from "./Nav";
 
@@ -103,6 +104,8 @@ export default function QualificationCalc() {
           {CTA_LABEL}
           <IconArrowRight />
         </Link>
+
+        <HdyhauSurvey source="qualify" />
 
         <button
           type="button"

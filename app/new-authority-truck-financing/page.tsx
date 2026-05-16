@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialByline from "@/components/landing/EditorialByline";
 import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import {
@@ -97,6 +98,7 @@ export default function NewAuthorityFinancingPage() {
             <h1 className="ins-hero-title">
               Financing in your first year under your own authority.
             </h1>
+            <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               The first 6–12 months under your own <Link href="/glossary/mc-number">MC number</Link> are the
               hardest to finance. Most commercial lenders want 12+
