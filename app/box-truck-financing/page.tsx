@@ -45,6 +45,10 @@ const PAGE_URL = "https://dispatched.finance/box-truck-financing";
 
 const faqs = [
   {
+    q: "Amazon Relay operator without a CDL — can I finance a 26-foot box truck?",
+    a: "Yes. Box trucks under 26,001 GVWR do not require a CDL, and the Dispatched panel includes lenders that underwrite non-CDL operators running Amazon Relay, FedEx Ground, Amazon DSP, or comparable contracted-route work. Loans for new 26-foot units with lift gate typically fund in the $60K to $120K range; APRs run 9% to 18% depending on credit band, down payment, and equipment age. The lender underwrites the contract revenue from bank deposits — the Relay contract itself does not need to be assigned or pledged.",
+  },
+  {
     q: "How much can I borrow for a box truck?",
     a: "Loans on the Dispatched panel for box trucks typically range from $20K for used 16-foot units to $120K for new 26-foot units with lift gate and refrigeration. The amount is set by the truck's appraised value, the down payment, and the operator's revenue. Lenders fund up to the appraised value minus down payment.",
   },
@@ -114,7 +118,7 @@ export default function BoxTruckFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Box truck financing</span>
             <h1 className="ins-hero-title">
-              Box truck financing for owner-operators and last-mile fleets.
+              Box truck financing for Amazon Relay, last-mile, and expediting operators (CDL or non-CDL).
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">

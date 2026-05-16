@@ -40,6 +40,10 @@ const QUOTE_ANCHOR = "quote";
 
 const faqs = [
   {
+    q: "Just got my MC authority — what trucking insurance do I need on day 1?",
+    a: "Day-1 insurance for a new MC authority means three coverages bound before the truck moves a load: primary auto liability ($1M is the industry standard and the FMCSA-mandated minimum for most general freight), motor truck cargo (typically $100K for general freight; higher for specialty), and physical damage if the truck is financed (lender-required, written for stated equipment value). Non-trucking liability (bobtail) is required if the operator is leased on to a carrier. New-authority quotes carry a narrower carrier mix and higher premiums than seasoned operations, but Coverdash holds appointments with the specialty MGAs that write under-12-month authorities — submit DOT, equipment list, and lane footprint through the quote engine on this page and the producer returns side-by-side options within 1 to 3 business days.",
+  },
+  {
     q: "Does Dispatched sell trucking insurance directly?",
     a: "No. Dispatched is a matching platform. Insurance quotes are placed by our named producer partner — a licensed commercial insurance brokerage that holds the carrier appointments and binds the policies. The producer partner is disclosed at the quote step and is the entity bound to you on the policy. Dispatched is paid a referral fee on bound policies and does not collect premium.",
   },

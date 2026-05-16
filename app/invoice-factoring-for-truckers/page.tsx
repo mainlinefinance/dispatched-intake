@@ -46,6 +46,10 @@ const PAGE_URL = "https://dispatched.finance/invoice-factoring-for-truckers";
 
 const faqs = [
   {
+    q: "Broker is taking 60 days to pay me — can I factor this invoice today?",
+    a: "Yes. Invoice factoring converts a single broker invoice on net-30 to net-90 terms into same-day cash. Submit the bill of lading and broker invoice to the factor; they advance 85% to 97% of the face value the same banking day (subject to broker credit verification and a daily cutoff typically 11am to 1pm Eastern), then collect from the broker on the original terms. Once the broker pays, the factor releases the reserve minus their fee — typically 1% to 4% of face value depending on the broker's credit rating, your monthly volume, and recourse vs non-recourse structure.",
+  },
+  {
     q: "How does invoice factoring for truckers work?",
     a: "You submit a paid load's bill of lading and broker invoice to the factoring company. The factor advances 85% to 97% of the invoice face value the same or next banking day, then collects the full payment from the broker on net-30 to net-90 terms. Once the broker pays, the factor releases the reserve (the 3% to 15% held back) minus their fee. You get cash on the day you deliver, not 60 days later.",
   },
@@ -107,7 +111,7 @@ export default function InvoiceFactoringPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Invoice factoring</span>
             <h1 className="ins-hero-title">
-              Invoice factoring for trucking operations.
+              Invoice factoring for truckers — convert broker net-30/60 invoices to same-day cash.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">

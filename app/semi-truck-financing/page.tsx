@@ -46,6 +46,10 @@ const PAGE_URL = "https://dispatched.finance/semi-truck-financing";
 
 const faqs = [
   {
+    q: "Owner-operator buying a used Class 8 — how much down payment and what APR should I expect?",
+    a: "Most used Class 8 tractor loans on the Dispatched panel fund with 10% to 20% down. Operators with 600+ FICO and 12+ months of MC authority typically quote 11% to 15% APR on tractors under 5 years old; older trucks (5 to 8 years), sub-580 FICO, or zero-down structures quote toward the 16% to 18% top of the 9% to 18% panel range. The lender appraises the truck and funds up to appraised value minus down payment — they do not finance over-market sticker prices, so confirm the VIN-level appraisal before signing with the seller.",
+  },
+  {
     q: "How much can I borrow for a semi truck?",
     a: "Loans on the Dispatched panel for Class 8 tractors typically range from $40K for older sleeper trucks to $200K for newer day cabs and premium sleepers. The amount is set by the truck's appraised value, the down payment, and the operator's revenue. Lenders fund up to the appraised value minus down payment; they do not finance over-market sticker prices.",
   },
@@ -107,7 +111,7 @@ export default function SemiTruckFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Semi truck financing</span>
             <h1 className="ins-hero-title">
-              Class 8 semi truck financing for owner-operators.
+              Class 8 semi truck loans for owner-operators — Cascadia, T680, 579, VNL, Anthem.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">

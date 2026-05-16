@@ -55,6 +55,10 @@ const PAGE_URL = "https://dispatched.finance/owner-operator-financing";
 
 const faqs = [
   {
+    q: "Owner-operator running one truck — which Dispatched product fits which situation?",
+    a: "Four products, four situations. Truck broke down and needs repair: a working-capital repair loan ($5K to $150K, 14% to 34% APR, same-banking-day wire). Cash gap between broker payments for fuel and payroll: working-capital line or term loan ($25K to $250K, 14% to 34% APR). Buying or refinancing a tractor or trailer: equipment-secured loan ($20K to $200K, 9% to 18% APR, lien on the asset). Receivables aging 30+ days on slow-pay brokers: invoice factoring (1% to 4% per invoice, no debt on the balance sheet). One application at /qualify routes to the right product based on what the operator selects as the use of funds.",
+  },
+  {
     q: "What financing is available for owner-operators?",
     a: "The Dispatched panel covers four core products for owner-operators: working capital ($25K to $250K, 14% to 34% APR), equipment financing for tractors and trailers ($20K to $200K, 9% to 18% APR), repair loans ($5K to $150K, same banking day funding), and invoice factoring for receivables. One application routes to the right product based on the operator's situation.",
   },
@@ -124,7 +128,7 @@ export default function OwnerOperatorFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Owner-operator financing</span>
             <h1 className="ins-hero-title">
-              Capital for the operator behind the truck.
+              Working capital, equipment, repair, and factoring for single-truck and small-fleet owner-operators.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">

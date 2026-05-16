@@ -35,6 +35,10 @@ const PAGE_URL = "https://dispatched.finance/equipment-financing";
 
 const faqs = [
   {
+    q: "Reefer trailer financing for a produce hauler — what term and APR can I expect?",
+    a: "Reefer trailers on the Dispatched panel typically finance in the 9% to 14% APR range over 36 to 60 month terms, with 10% to 20% down payment. Newer reefers (under 4 years) with strong refrigeration unit hours and clean title support the longer term and lower APR; older units (5+ years) cap at 48 months at the upper end of the band. The financed unit serves as collateral with a first-position UCC-1, and lenders underwrite the operation's revenue and DSCR in addition to the asset value.",
+  },
+  {
     q: "What can I finance with a trucking equipment loan?",
     a: "Any titled commercial vehicle or attached equipment used in the operation. Tractors, day cabs, sleepers, dry vans, reefers, flatbeds, dump trailers, lowboys, lift gates, APUs, and on-board reefer units all qualify. The lender takes a first-position lien on the financed asset, and the asset's market value supports a longer term and a lower APR than working capital.",
   },
@@ -97,7 +101,7 @@ export default function EquipmentFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Equipment financing</span>
             <h1 className="ins-hero-title">
-              Equipment financing for trucks, trailers, and trucking gear.
+              Equipment loans for tractors, trailers, reefers, lift gates, and APUs (9%–18% APR).
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
