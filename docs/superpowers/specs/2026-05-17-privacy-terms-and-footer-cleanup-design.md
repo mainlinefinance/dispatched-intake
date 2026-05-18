@@ -274,3 +274,21 @@ This document is the **design**, not the implementation plan. The next step is t
 - **Phase 5:** Build + test verification + manual smoke.
 
 Each phase has a verification gate before the next begins.
+
+---
+
+## 12. 2026-05-17 Scope reduction (post-audit)
+
+Phase 1 audit (Task 1 in the plan) found 80+ inbound references to `/methodology` across the site, including ~50 with load-bearing semantics (visible-text-is-URL or fragment-anchored citations like `/methodology#composite-scenarios`). The founder reversed the methodology deletion. **The `/methodology` page stays alive.** Only `/licenses` and `/do-not-sell` are deleted.
+
+This supersedes the following parts of this spec:
+
+- **§2 Decisions table**, row "Scope of 'exclude' for Licenses / Methodology / Do not sell" — methodology PAGE is no longer deleted. Footer link is still removed (alongside Licenses and Do not sell).
+- **§3.2 Deleted** — drop `app/methodology/page.tsx` from the deletion list. Only `app/(legal)/licenses/page.tsx` and `app/(legal)/do-not-sell/page.tsx` are deleted.
+- **§3.3 Modified** — drop the `app/sitemap.ts` line. Add: `app/trucking-loans/[state]/[city]/page.tsx` (remove the `<li>Licenses & disclosures</li>` block at lines 828-833). The Footer.tsx edit remains as planned (3 links removed).
+- **§6.1 Pre-deletion audit** — the audit ran and was thorough; the founder decision narrowed the cleanup. See `docs/superpowers/plans/2026-05-17-deletion-audit-results.md` for the full hits + post-decision dispositions.
+- **§6.3 Page-file deletions** — delete 2 files (`/licenses`, `/do-not-sell`), not 3. The `rm -r app/methodology` line is dropped.
+- **§9 Risks** — risk #1 ("Deleting /methodology orphans inbound links across the site, breaking navigation and creating 404s") was averted by the BLOCKING audit gate doing its job. Worked-example evidence that the mitigation is real.
+- **§10 Acceptance criteria** — criterion #4: only `/licenses` and `/do-not-sell` return 404; `/methodology` continues to render. Criterion #5: the sitemap entry for `/methodology` stays. Criterion #6: the post-cleanup grep should return no hits for `/licenses` or `/do-not-sell` in production code outside the deleted files; methodology hits are expected and fine.
+
+Everything else in this spec — Privacy outline (§4), Terms outline (§5), rendering conventions (§7), out of scope (§8) — is unchanged.

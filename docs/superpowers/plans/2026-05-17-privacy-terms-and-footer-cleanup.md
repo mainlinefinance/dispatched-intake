@@ -10,6 +10,8 @@
 
 **Spec:** `docs/superpowers/specs/2026-05-17-privacy-terms-and-footer-cleanup-design.md` — the source of truth for content outlines, entity facts, dispute-resolution choice, and acceptance criteria. The plan implements that spec; if anything below contradicts the spec, the spec wins and the plan needs updating.
 
+> **Post-audit scope reduction (2026-05-17):** Phase 1 found 80+ inbound references to `/methodology`. Founder reversed the methodology deletion — the **`/methodology` page stays alive, sitemap entry stays, in-context citations keep working**. Only `/licenses` and `/do-not-sell` are deleted. The footer cleanup still removes all 3 legal links (Methodology page stays accessible via in-context citations). Tasks 2, 3, 5, 6, 7, 8 have been edited inline to reflect this. See `docs/superpowers/plans/2026-05-17-deletion-audit-results.md` for the full audit + decision history. Spec has a matching addendum.
+
 ---
 
 ## Phase 1: Pre-deletion audit (BLOCKING gate — no production changes)
@@ -103,10 +105,15 @@ import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 
 /* ===========================================================================
-   Regression guard: the three deferred legal items (licenses, methodology,
-   do-not-sell) were deleted on 2026-05-17. This test fails if any of them
-   reappears in production source (under app/, components/, or lib/) or if
-   any of the deleted page files comes back.
+   Regression guard: the two deferred legal items (licenses, do-not-sell)
+   were deleted on 2026-05-17. This test fails if either reappears in
+   production source (under app/, components/, or lib/) or if either
+   deleted page file comes back.
+
+   Methodology was NOT deleted (post-audit scope reduction — the page is
+   load-bearing across the site). If you also delete methodology later,
+   add "methodology" back to DELETED_PATHS and "app/methodology/page.tsx"
+   to DELETED_FILES.
 
    Excludes: node_modules, .next, docs/ (the spec discusses these paths in
    prose), tests/ (this test mentions them), git history.
@@ -115,12 +122,11 @@ import { resolve } from "node:path";
    delete this test in the same commit.
    =========================================================================== */
 
-const DELETED_PATHS = ["licenses", "methodology", "do-not-sell"] as const;
+const DELETED_PATHS = ["licenses", "do-not-sell"] as const;
 
 const DELETED_FILES = [
   "app/(legal)/licenses/page.tsx",
   "app/(legal)/do-not-sell/page.tsx",
-  "app/methodology/page.tsx",
 ] as const;
 
 describe("legal cleanup regression guard", () => {
@@ -163,6 +169,8 @@ describe("legal cleanup regression guard", () => {
 });
 ```
 
+NOTE: the test no longer checks `/methodology`. Per the 2026-05-17 post-audit scope reduction, methodology stays alive — the page is load-bearing across the site (~80 inbound references). If you delete methodology in a future PR, add `"methodology"` back to `DELETED_PATHS` and `"app/methodology/page.tsx"` to `DELETED_FILES` in the same commit.
+
 - [ ] **Step 2: Run the test and confirm it fails**
 
 Run from `~/Developer/dispatched-intake`:
@@ -191,25 +199,62 @@ Apply the Phase 1 dispositions, delete the three page files, edit the footer, an
 ### Task 3: Apply Phase 1 audit dispositions
 
 **Files:**
-- Modify: every file annotated with DELETE-LINE or REWRITE-LINK-TO in `docs/superpowers/plans/2026-05-17-deletion-audit-results.md`
+- Modify: `app/trucking-loans/[state]/[city]/page.tsx` (lines 828-833: remove the `<li>Licenses & disclosures</li>` block)
 
-- [ ] **Step 1: Walk the audit scratchpad and apply each disposition**
+Post-audit scope reduction: this task is now tiny. Only one inbound reference to a deleted page (`/licenses`) exists in production code. All methodology references stay untouched (page survives). `/do-not-sell` has zero inbound references. See `docs/superpowers/plans/2026-05-17-deletion-audit-results.md` "2026-05-17 — Founder decision" section for the supersession.
 
-Open `docs/superpowers/plans/2026-05-17-deletion-audit-results.md`. For each line annotated DELETE-LINE, edit the source file to remove the link, sentence, or sitemap entry. For each REWRITE-LINK-TO entry, edit the source file to point the link at the approved redirect target. For each KEEP entry, do nothing.
+- [ ] **Step 1: Remove the Licenses link from the trucking-loans city page**
 
-For removed `<Link>` elements: if the link was the only content of a list `<li>` or a sentence, remove the parent `<li>` / sentence too. Do not leave empty list items or sentence fragments.
+Open `app/trucking-loans/[state]/[city]/page.tsx`. Find lines 828-833:
 
-For removed JSON-LD `breadcrumbList` nodes: re-number any subsequent `position` values in the same `itemListElement` array. Breadcrumb positions are 1-indexed and must be contiguous.
+```tsx
+              <li>
+                <a href="/privacy">Privacy</a>
+              </li>
+              <li>
+                <a href="/terms">Terms</a>
+              </li>
+              <li>
+                <a href="/licenses">Licenses &amp; disclosures</a>
+              </li>
+              <li>
+                <a href="/responsible-lending">Responsible lending</a>
+              </li>
+```
 
-- [ ] **Step 2: Re-run the audit grep to confirm no production hits remain (except for the three target files about to be deleted in Task 4 and the new audit doc itself)**
+Remove the `<li>` block containing the `/licenses` link (lines 831-833):
+
+```tsx
+              <li>
+                <a href="/licenses">Licenses &amp; disclosures</a>
+              </li>
+```
+
+Result:
+
+```tsx
+              <li>
+                <a href="/privacy">Privacy</a>
+              </li>
+              <li>
+                <a href="/terms">Terms</a>
+              </li>
+              <li>
+                <a href="/responsible-lending">Responsible lending</a>
+              </li>
+```
+
+Do NOT touch the `/responsible-lending` link — it's out of scope and not in this PR.
+
+- [ ] **Step 2: Re-run the targeted grep to confirm no production hits remain for the two deleted paths**
 
 ```bash
-grep -rn -E '/(licenses|methodology|do-not-sell)' \
+grep -rn -E '/(licenses|do-not-sell)' \
   --include='*.tsx' --include='*.ts' --include='*.json' \
   app components lib
 ```
 
-Expected: only the three page files themselves (`app/(legal)/licenses/page.tsx`, `app/(legal)/do-not-sell/page.tsx`, `app/methodology/page.tsx`) appear. Anything else means the disposition pass missed a hit — go back to Step 1.
+Expected: only the two doomed page files themselves (`app/(legal)/licenses/page.tsx`, `app/(legal)/do-not-sell/page.tsx`) appear. Methodology references are NOT checked because methodology stays alive.
 
 ### Task 4: Edit the footer
 
@@ -248,40 +293,25 @@ git diff components/landing/Footer.tsx
 
 Expected: exactly three `<Link>` lines removed, nothing else. Anything else (e.g., trailing whitespace edits, prettier reformatting of unrelated lines) — revert and redo.
 
-### Task 5: Remove `/methodology` from the sitemap
+### Task 5: SKIPPED — methodology stays in the sitemap
 
-**Files:**
-- Modify: `app/sitemap.ts:566-571`
+Post-audit scope reduction: methodology stays alive, so the sitemap entry at `app/sitemap.ts:566-571` stays untouched. `/licenses` and `/do-not-sell` were never in the sitemap (verify with the grep below). Task 5 is a no-op.
 
-- [ ] **Step 1: Remove the methodology sitemap entry**
-
-Open `app/sitemap.ts`. Find the entry around line 566-571:
-
-```typescript
-  entries.push({
-    url: `${ORIGIN}/methodology`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.5,
-  });
-```
-
-Delete the entire `entries.push({...});` block. Do not leave a blank line where it was — collapse any double-blank.
-
-- [ ] **Step 2: Confirm no other sitemap references to deleted paths**
+- [ ] **Step 1 (verification only): confirm no sitemap edits are needed**
 
 ```bash
-grep -n -E '/(licenses|methodology|do-not-sell)' app/sitemap.ts
+grep -n -E '/(licenses|do-not-sell)' app/sitemap.ts
 ```
 
-Expected: no output.
+Expected: no output. If anything appears, escalate to controller — the audit missed an entry.
 
-### Task 6: Delete the three page files
+### Task 6: Delete the two placeholder page files
 
 **Files:**
 - Delete: `app/(legal)/licenses/page.tsx`
 - Delete: `app/(legal)/do-not-sell/page.tsx`
-- Delete: `app/methodology/page.tsx` (and parent directory)
+
+Post-audit scope reduction: only 2 page files deleted. The methodology directory and its `page.tsx` stay alive — see audit doc for rationale.
 
 - [ ] **Step 1: Delete the legal placeholders**
 
@@ -290,29 +320,30 @@ rm "app/(legal)/licenses/page.tsx"
 rm "app/(legal)/do-not-sell/page.tsx"
 ```
 
-- [ ] **Step 2: Delete the methodology directory**
+- [ ] **Step 2: Remove now-empty parent directories**
 
-The methodology page has no co-located files per the initial listing, but `rm -r` is defensive in case any sub-file (e.g. `_components/`, `loading.tsx`) gets added between plan-write and execution.
+After deleting the two `page.tsx` files, their parent directories (`app/(legal)/licenses/` and `app/(legal)/do-not-sell/`) are empty. Empty directories in `app/` would not cause Next.js issues but are pointless to keep. Remove them if empty:
 
 ```bash
-rm -r app/methodology
+rmdir "app/(legal)/licenses" 2>/dev/null || true
+rmdir "app/(legal)/do-not-sell" 2>/dev/null || true
 ```
 
-- [ ] **Step 3: Remove now-empty parent directories**
+(`rmdir` refuses to remove non-empty dirs and exits non-zero — the `|| true` keeps the script flowing if any unexpected sibling file made the directory non-empty.)
 
-The `(legal)/` group still has `privacy/`, `terms/`, and `layout.tsx` so it stays. The `methodology/` directory is gone. Check nothing was orphaned:
+- [ ] **Step 3: Verify**
 
 ```bash
 ls "app/(legal)/"
 ```
 
-Expected: `do-not-sell` and `licenses` are gone; `layout.tsx`, `privacy`, and `terms` remain.
+Expected: `layout.tsx`, `privacy`, `terms`. No `licenses`, no `do-not-sell`. `methodology` is at `app/methodology/` (sibling of `app/(legal)/`) and is NOT touched.
 
 ```bash
-ls app/ | grep -E '^(methodology|licenses|do-not-sell)$' || echo "clean"
+ls app/methodology/ 2>&1
 ```
 
-Expected: `clean`.
+Expected: still shows `page.tsx` (and any other co-located files). Methodology stays alive.
 
 ### Task 7: Verify guard test now passes
 
@@ -322,9 +353,9 @@ Expected: `clean`.
 npm test -- tests/legal-cleanup.test.ts
 ```
 
-Expected: PASS on all six assertions.
+Expected: PASS on all four assertions (2 grep checks for `/licenses` and `/do-not-sell`; 2 file-existence checks). Methodology is NOT checked.
 
-If it fails on a `grep` assertion: the audit missed a reference — find it in the failure output, return to Task 3 Step 1, fix, re-run.
+If it fails on a `grep` assertion: the audit missed a reference to `/licenses` or `/do-not-sell` — find it in the failure output, return to Task 3 Step 1, fix, re-run.
 
 If it fails on a file-existence assertion: a delete didn't take — re-run Task 6.
 
@@ -343,12 +374,18 @@ Expected: PASS on the full suite. If any pre-existing test fails referencing the
 ```bash
 git add -A
 git status   # review — should be only legal-cleanup files
-git commit -m "chore: remove licenses, methodology, do-not-sell pages and footer links
+git commit -m "chore: remove licenses + do-not-sell pages and slim footer to Privacy + Terms
 
-The footer now shows only Privacy + Terms. The /licenses, /methodology,
-and /do-not-sell page files and their sitemap entries are removed.
-Inbound references swept per docs/superpowers/plans/2026-05-17-deletion-audit-results.md.
-tests/legal-cleanup.test.ts guards against re-addition."
+The footer now shows only Privacy + Terms. The /licenses and /do-not-sell
+page files are removed. The /licenses link in the trucking-loans city
+template is removed. tests/legal-cleanup.test.ts guards against
+re-addition of the two deleted paths.
+
+Methodology stays alive: per the 2026-05-17 audit, /methodology has 80+
+inbound references across the site and is load-bearing for credibility.
+The footer link is removed (along with Licenses and Do not sell) but the
+page itself and its sitemap entry stay. See
+docs/superpowers/plans/2026-05-17-deletion-audit-results.md."
 ```
 
 ---
