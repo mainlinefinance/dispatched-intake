@@ -829,9 +829,6 @@ function SiteFooter({ entry }: { entry: City }) {
                 <a href="/terms">Terms</a>
               </li>
               <li>
-                <a href="/licenses">Licenses &amp; disclosures</a>
-              </li>
-              <li>
                 <a href="/responsible-lending">Responsible lending</a>
               </li>
             </ul>
