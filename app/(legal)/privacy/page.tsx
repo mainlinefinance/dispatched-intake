@@ -34,7 +34,10 @@ export default function PrivacyPage() {
     <>
       <h1>Privacy policy</h1>
       <p className="lead">
-        Effective {EFFECTIVE_DATE_DISPLAY}. Last updated {EFFECTIVE_DATE_DISPLAY}.
+        Effective{" "}
+        <time dateTime={EFFECTIVE_DATE}>{EFFECTIVE_DATE_DISPLAY}</time>. Last
+        updated{" "}
+        <time dateTime={EFFECTIVE_DATE}>{EFFECTIVE_DATE_DISPLAY}</time>.
       </p>
 
       <nav aria-label="Sections">
@@ -549,11 +552,12 @@ export default function PrivacyPage() {
           of these rights, use the process described below.
         </p>
         <table>
+          <caption>State privacy laws applicable as of {EFFECTIVE_DATE_DISPLAY}.</caption>
           <thead>
             <tr>
-              <th>State</th>
-              <th>Law</th>
-              <th>Effective</th>
+              <th scope="col">State</th>
+              <th scope="col">Law</th>
+              <th scope="col">Effective</th>
             </tr>
           </thead>
           <tbody>
