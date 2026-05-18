@@ -46,7 +46,7 @@ export default function TermsPage() {
         <ul>
           <li><a href="#acceptance">1. Acceptance</a></li>
           <li><a href="#who-we-are">2. Who we are</a></li>
-          <li><a href="#what-dispatched-is">3. What Dispatched is — and isn&rsquo;t</a></li>
+          <li><a href="#what-dispatched-is">3. What Dispatched is &mdash; and isn&rsquo;t</a></li>
           <li><a href="#eligibility">4. Eligibility</a></li>
           <li><a href="#your-application">5. Your account and your application</a></li>
           <li><a href="#communications">6. Communications consent</a></li>
@@ -193,9 +193,9 @@ export default function TermsPage() {
         </p>
         <p>
           Your consent is <strong>not</strong> a condition of any purchase
-          and you can opt out at any time. For text messages, reply
-          <strong> STOP</strong> to any SMS to opt out of that sender or
-          <strong> HELP</strong> for assistance. For email, use the
+          and you can opt out at any time. For text messages, reply{" "}
+          <strong>STOP</strong> to any SMS to opt out of that sender or{" "}
+          <strong>HELP</strong> for assistance. For email, use the
           unsubscribe link at the bottom of any marketing email. For phone
           calls, tell us on the call or email{" "}
           <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>; oral
