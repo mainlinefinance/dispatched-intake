@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { JsonLd, organization, website } from "@/components/seo/JsonLd";
+import { Providers } from "./providers";
 
 const archivo = localFont({
   src: [
@@ -140,8 +141,12 @@ export default function RootLayout({
             child page via the @id graph. */}
         <JsonLd payload={organization()} />
         <JsonLd payload={website()} />
-        <a href="#main-content" className="skip-link">Skip to main content</a>
-        {children}
+        {/* Providers wraps the tree in PostHog product analytics, reporting
+            into the shared Mainline PostHog project. */}
+        <Providers>
+          <a href="#main-content" className="skip-link">Skip to main content</a>
+          {children}
+        </Providers>
       </body>
     </html>
   );
