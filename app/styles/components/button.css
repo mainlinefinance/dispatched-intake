@@ -15,6 +15,10 @@
   justify-content: center;
   gap: 8px;
   padding: 14px 22px;
+  /* Touch-target floor (WCAG 2.5.5) — lifts .btn--sm, whose padding
+     alone yields ~36px, to a tappable 44px. base/.btn--lg already clear
+     it; align-items: center keeps the label centered. */
+  min-height: 44px;
   border: 0;
   border-radius: var(--radius-md);
   font-family: var(--font-body);
