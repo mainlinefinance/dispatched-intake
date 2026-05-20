@@ -70,3 +70,18 @@ h3 {
   line-height: var(--lh-body);
   color: var(--color-ink-secondary);
 }
+
+/* Respect prefers-reduced-motion site-wide. landing.css scopes its own
+   copy to .landing; this global rule covers every other surface
+   (/insurance, the geo state pages, /apply) so motion reduction is not
+   dependent on which stylesheet a page happens to load. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
