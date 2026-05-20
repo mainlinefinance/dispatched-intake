@@ -20,6 +20,15 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Balance multi-line headings so wrapped lines are distributed evenly
+   instead of stranding a lone word on the last line. Progressive
+   enhancement — browsers without text-wrap: balance ignore it. */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
 /* Lendflow widget iframe — the loader injects an iframe with default 150px
    height; without this rule the form below the header card is clipped. */
 #container iframe {
