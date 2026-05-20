@@ -39,6 +39,12 @@ const COVERDASH_QUOTES_BASE =
 const COVERDASH_WIDGET_SRC =
   process.env.NEXT_PUBLIC_COVERDASH_WIDGET_SCRIPT_SRC ?? "";
 
+/* BD-negotiated partner-cobrand quote URL. The path UUID is a public partner
+   identifier — no secret material, same class as the license ID above. Every
+   deeplink CTA and the hero quote button route here. */
+export const COVERDASH_PARTNER_QUOTE_URL =
+  "https://quotes.coverdash.com/partner-cobrand-embedded/e264f3d2-bb31-4696-a476-3ea71dab1d01";
+
 type Mode = "widget" | "iframe" | "deeplink";
 
 /* Coverdash uses operationType to pre-segment a partner funnel (mirrors the
@@ -60,8 +66,6 @@ type Props = {
      widget supports per-product entry, this routes the user directly into
      that line's flow. */
   productSlug?: string;
-  /* Anchor id for in-page deep-links (the hero CTA scrolls to this). */
-  anchorId?: string;
 };
 
 function pickMode(): Mode {
@@ -125,7 +129,7 @@ export default function CoverdashEmbed(props: Props) {
       operationType: props.operationType,
       productSlug: props.productSlug,
     });
-    if (!src) return <DeepLinkFallback {...props} />;
+    if (!src) return <DeepLinkFallback />;
     return (
       <div className="cd-embed cd-embed--iframe">
         <iframe
@@ -146,20 +150,10 @@ export default function CoverdashEmbed(props: Props) {
     );
   }
 
-  return <DeepLinkFallback {...props} />;
+  return <DeepLinkFallback />;
 }
 
-function DeepLinkFallback(props: Props) {
-  /* Even without a license configured we render meaningful CTAs that route
-     to the brand /apply path so the page never has a dead conversion
-     surface. When the partnership envvars are populated, the same buttons
-     deep-link directly into the producer's quote engine. */
-  const baseHref =
-    buildQuoteUrl({
-      operationType: props.operationType,
-      productSlug: props.productSlug,
-    }) ?? "/apply";
-
+function DeepLinkFallback() {
   return (
     <div className="cd-embed cd-embed--deeplink">
       <p className="cd-deeplink-eyebrow">Quote with our producer partner</p>
@@ -169,26 +163,19 @@ function DeepLinkFallback(props: Props) {
         engine — no application fee, no commitment.
       </p>
       <div className="cd-deeplink-grid">
-        {DEEPLINK_PRODUCTS.map((p) => {
-          const href =
-            buildQuoteUrl({
-              operationType: props.operationType,
-              productSlug: p.slug,
-            }) ?? baseHref;
-          return (
-            <a
-              key={p.slug}
-              href={href}
-              className="cd-deeplink-card"
-              target="_blank"
-              rel="noopener"
-            >
-              <span className="cd-deeplink-card-title">{p.label}</span>
-              <span className="cd-deeplink-card-sub">{p.sub}</span>
-              <span className="cd-deeplink-card-cta">Quote →</span>
-            </a>
-          );
-        })}
+        {DEEPLINK_PRODUCTS.map((p) => (
+          <a
+            key={p.slug}
+            href={COVERDASH_PARTNER_QUOTE_URL}
+            className="cd-deeplink-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <span className="cd-deeplink-card-title">{p.label}</span>
+            <span className="cd-deeplink-card-sub">{p.sub}</span>
+            <span className="cd-deeplink-card-cta">Quote →</span>
+          </a>
+        ))}
       </div>
     </div>
   );

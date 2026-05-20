@@ -10,7 +10,9 @@ import {
   faqPage,
   insuranceAgency,
 } from "@/components/seo/JsonLd";
-import CoverdashEmbed from "@/components/insurance/CoverdashEmbed";
+import CoverdashEmbed, {
+  COVERDASH_PARTNER_QUOTE_URL,
+} from "@/components/insurance/CoverdashEmbed";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 
 export const metadata: Metadata = {
@@ -154,7 +156,7 @@ export default function InsurancePillarPage() {
       <JsonLd payload={faqPage(faqs)} />
 
       <main id="main-content">
-        <Hero quoteAnchorId={QUOTE_ANCHOR} today={today} />
+        <Hero today={today} />
 
         <ThreeStepRibbon />
 
@@ -176,13 +178,7 @@ export default function InsurancePillarPage() {
   );
 }
 
-function Hero({
-  quoteAnchorId,
-  today,
-}: {
-  quoteAnchorId: string;
-  today: string;
-}) {
+function Hero({ today }: { today: string }) {
   return (
     <section className="ins-hero ins-hero--lg">
       <div className="ins-container">
@@ -198,7 +194,12 @@ function Hero({
           bind the same day.
         </p>
         <div className="ins-hero-ctas">
-          <a href={`#${quoteAnchorId}`} className="btn btn--primary btn--lg">
+          <a
+            href={COVERDASH_PARTNER_QUOTE_URL}
+            className="btn btn--primary btn--lg"
+            target="_blank"
+            rel="noopener"
+          >
             Get my quote
           </a>
           <a href={PHONE_TEL} className="btn btn--secondary btn--lg">
@@ -279,7 +280,7 @@ function QuoteSection({ anchorId }: { anchorId: string }) {
           the carrier panel writing your DOT class in your state and return
           real, bindable numbers. No fee to quote; no commitment.
         </p>
-        <CoverdashEmbed anchorId={anchorId} />
+        <CoverdashEmbed />
         <p className="ins-compliance-note">
           By submitting through the quote engine you agree to the producer
           partner&rsquo;s consent and TCPA terms shown on the form. Dispatched

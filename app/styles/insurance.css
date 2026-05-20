@@ -653,17 +653,24 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: var(--space-4) var(--space-5);
+  padding: var(--space-4);
   background: var(--color-bg-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   text-decoration: none;
   color: var(--color-ink-primary);
-  transition: border-color var(--motion-hover) var(--ease-out);
+  transition:
+    border-color var(--motion-hover) var(--ease-out),
+    box-shadow var(--motion-hover) var(--ease-out);
 }
 .cd-deeplink-card:hover,
 .cd-deeplink-card:focus-visible {
   border-color: var(--color-steel-400);
+  box-shadow: 0 6px 16px var(--color-steel-900-10);
+}
+.cd-deeplink-card:focus-visible {
+  outline: 2px solid var(--color-hiviz-400);
+  outline-offset: 2px;
 }
 .cd-deeplink-card-title {
   font-family: var(--font-display);
@@ -680,10 +687,19 @@
 .cd-deeplink-card-cta {
   margin-top: var(--space-2);
   font-family: var(--font-mono);
+  font-weight: 600;
   font-size: var(--fs-eyebrow);
   text-transform: uppercase;
   letter-spacing: var(--tr-eyebrow);
-  color: var(--color-steel-600);
+  color: var(--color-hiviz-800);
+  transition:
+    color var(--motion-hover) var(--ease-out),
+    transform var(--motion-hover) var(--ease-out);
+}
+.cd-deeplink-card:hover .cd-deeplink-card-cta,
+.cd-deeplink-card:focus-visible .cd-deeplink-card-cta {
+  color: var(--color-hiviz-600);
+  transform: translateX(2px);
 }
 
 /* Product comparison table */
@@ -840,7 +856,7 @@
   background: var(--color-bg-paper);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: var(--space-5) var(--space-6);
+  padding: var(--space-4) var(--space-6);
 }
 .ins-faq-item dt {
   font-family: var(--font-display);
