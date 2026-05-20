@@ -2,6 +2,8 @@
 
 import Script from "next/script";
 
+import { PHONE_TEL, PHONE_DISPLAY } from "@/lib/contact";
+
 /* The full script src — env, viewProduct, workflowTemplateId,
    consentTemplateId, destination[*], targetId — is generated in the
    Lendflow dashboard (Integrations → Widget Integration → Step 8,
@@ -17,7 +19,16 @@ export default function LendflowWidget() {
   if (!SCRIPT_SRC) {
     return (
       <div role="alert" className="apply-fallback">
-        <p>The application form is not configured. Please reach us by phone.</p>
+        <p className="apply-fallback-title">
+          The online application isn’t available right now.
+        </p>
+        <p className="apply-fallback-body">
+          Call us and a funding specialist will match you with lenders by
+          phone — same soft-pull match, no impact to your credit.
+        </p>
+        <a className="btn btn--primary btn--lg" href={PHONE_TEL}>
+          Call {PHONE_DISPLAY}
+        </a>
       </div>
     );
   }
