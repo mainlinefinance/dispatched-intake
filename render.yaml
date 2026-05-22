@@ -24,6 +24,13 @@ services:
         sync: false
       - key: INDEXNOW_HOST
         value: dispatched.finance
+      # PostHog product analytics → shared Mainline PostHog project (US,
+      # project 428185). Both values are publishable / client-side safe,
+      # so they're committed here rather than set as dashboard secrets.
+      - key: NEXT_PUBLIC_POSTHOG_KEY
+        value: phc_o5qp8URU8jp3hTPVGWkuABjdGKjpiHstuxqSvh39w5Uc
+      - key: NEXT_PUBLIC_POSTHOG_HOST
+        value: https://us.i.posthog.com
       # Bearer token guarding /api/cron/indexnow. MUST be set to the same
       # value here AND on the indexnow-ping cron job below. Generate with:
       # openssl rand -hex 32
