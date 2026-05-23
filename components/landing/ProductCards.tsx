@@ -38,6 +38,13 @@ const products: Product[] = [
     icon: <IconTruckBox />,
   },
   {
+    label: "Factoring",
+    title: "Invoice factoring",
+    copy: "Get paid in 24 hours, not 60.",
+    href: "/factoring",
+    icon: <IconDollarCircle />,
+  },
+  {
     label: "Insurance",
     title: "Commercial truck insurance",
     copy: "Compare trucking coverage options.",
@@ -56,7 +63,7 @@ export default function ProductCards() {
             Funding for the moments that keep your wheels turning.
           </h2>
           <p className="product-cards-sub">
-            Repair, cash flow, equipment and insurance options in one place.
+            Repair, cash flow, equipment, factoring, and insurance options in one place.
           </p>
         </header>
         <ul className="product-cards-grid">
