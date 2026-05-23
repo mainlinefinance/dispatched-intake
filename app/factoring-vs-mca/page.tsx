@@ -194,7 +194,7 @@ export default function FactoringVsMcaPage() {
               not one. Second, the cost is a fixed fee per invoice; there
               is no compounding and no early-payoff penalty, because
               there is no schedule. Third, the underwriting is on the
-              broker's credit, not yours. A factor cares whether the
+              broker&rsquo;s credit, not yours. A factor cares whether the
               broker will pay; they do not care much about your{" "}
               <Link href="/glossary/fico">FICO</Link> score. This is why
               factoring is often the only product available to
@@ -248,7 +248,7 @@ export default function FactoringVsMcaPage() {
               MCA contracts frequently contain provisions that do not
               appear in conventional financing: confessions of judgment,
               consent to jurisdiction in remote states, personal
-              guarantees, and "stacking" allowances that let the funder
+              guarantees, and &ldquo;stacking&rdquo; allowances that let the funder
               file a second position against receivables already pledged
               to a factor. The Federal Trade Commission and several
               state attorneys general have brought enforcement actions
@@ -280,7 +280,7 @@ export default function FactoringVsMcaPage() {
               </li>
               <li>
                 <strong>Underwriting.</strong> Factoring underwrites the
-                broker's credit. MCA underwrites your historical revenue
+                broker&rsquo;s credit. MCA underwrites your historical revenue
                 deposits — typically 3 to 6 months of bank statements.
               </li>
               <li>
@@ -291,7 +291,7 @@ export default function FactoringVsMcaPage() {
                 why it appeals when cashflow is already in crisis.
               </li>
               <li>
-                <strong>Repayment.</strong> Factoring "repays" itself —
+                <strong>Repayment.</strong> Factoring &ldquo;repays&rdquo; itself —
                 the broker pays the factor on the original terms. MCA
                 requires daily or weekly ACH debits from your operating
                 account starting the day after funding.
@@ -305,7 +305,7 @@ export default function FactoringVsMcaPage() {
               <li>
                 <strong>Stackability.</strong> A factor will not let you
                 factor invoices already pledged to another factor. MCA
-                funders frequently allow "stacking" — taking a second,
+                funders frequently allow &ldquo;stacking&rdquo; — taking a second,
                 third, or fourth MCA against the same future revenue — at
                 progressively worse rates. Stacking is the most common
                 path to operator bankruptcy in trucking finance.
@@ -332,7 +332,7 @@ export default function FactoringVsMcaPage() {
               the factor rate as if it were an interest rate. It is not.
               Consider a $50,000 advance at a 1.35 factor rate, payable
               over 6 months via $556 daily ACH debits (roughly $11,250
-              per month). The total repayment is $67,500. The "cost" is
+              per month). The total repayment is $67,500. The &ldquo;cost&rdquo; is
               $17,500, or 35% of the cash advanced.
             </p>
             <p className="ins-hero-sub">
@@ -379,7 +379,7 @@ export default function FactoringVsMcaPage() {
               <li>
                 <strong>Your brokers pay slowly.</strong> Net-45 and
                 net-60 brokers are exactly the case factoring was built
-                for. The longer the broker's payment terms, the larger
+                for. The longer the broker&rsquo;s payment terms, the larger
                 the financing benefit of factoring relative to the fee.
               </li>
               <li>
@@ -396,7 +396,7 @@ export default function FactoringVsMcaPage() {
                 <strong>You want to keep debt off the balance sheet.</strong>{" "}
                 Operators planning to buy a truck, expand to a small
                 fleet, or apply for new authority financing in the next
-                12 months benefit from factoring's off-balance-sheet
+                12 months benefit from factoring&rsquo;s off-balance-sheet
                 treatment. An active MCA on the books typically
                 disqualifies the operator from{" "}
                 <Link href="/new-authority-truck-financing">new authority financing</Link>.
@@ -404,8 +404,8 @@ export default function FactoringVsMcaPage() {
               <li>
                 <strong>Your problem is timing, not scale.</strong>{" "}
                 Factoring smooths receivables. It does not enlarge the
-                business. If your cashflow problem is "I will be paid
-                eventually, I just need it now," factoring is the
+                business. If your cashflow problem is &ldquo;I will be paid
+                eventually, I just need it now,&rdquo; factoring is the
                 surgical fit.
               </li>
             </ul>
@@ -430,7 +430,7 @@ export default function FactoringVsMcaPage() {
                 — fixed amount, fixed APR (typically 14%–34% on the
                 Dispatched panel), monthly repayment, full pre-payoff
                 allowed without penalty. Suitable when the cashflow gap
-                will resolve within 6 to 24 months and the operator's
+                will resolve within 6 to 24 months and the operator&rsquo;s
                 revenue can support a fixed payment.
               </li>
               <li>
@@ -476,7 +476,7 @@ export default function FactoringVsMcaPage() {
                 <strong>Confession of judgment (COJ).</strong> A waiver
                 of your right to defend yourself in court if the funder
                 claims default. Banned in New York since 2019 but still
-                common in contracts governed by other states' law.
+                common in contracts governed by other states&rsquo; law.
               </li>
               <li>
                 <strong>Personal guarantee plus confession of judgment.</strong>{" "}
@@ -485,14 +485,14 @@ export default function FactoringVsMcaPage() {
                 in default.
               </li>
               <li>
-                <strong>Reconciliation only at funder's discretion.</strong>{" "}
-                Many MCAs promise "reconciliation" if your revenue drops,
+                <strong>Reconciliation only at funder&rsquo;s discretion.</strong>{" "}
+                Many MCAs promise &ldquo;reconciliation&rdquo; if your revenue drops,
                 meaning a temporary reduction in the daily debit. If the
                 contract makes reconciliation discretionary, the funder
                 will deny it.
               </li>
               <li>
-                <strong>"Sale" language that hides minimum return guarantees.</strong>{" "}
+                <strong>&ldquo;Sale&rdquo; language that hides minimum return guarantees.</strong>{" "}
                 A true receivables purchase has true risk to the funder.
                 If the contract guarantees the funder a minimum return
                 regardless of your revenue, the contract is functionally
@@ -507,8 +507,8 @@ export default function FactoringVsMcaPage() {
               </li>
               <li>
                 <strong>Origination fees over 3%.</strong> Fees stacked
-                on top of the factor rate. A "1.35 factor rate plus 5%
-                origination" is functionally a 1.42 factor rate.
+                on top of the factor rate. A &ldquo;1.35 factor rate plus 5%
+                origination&rdquo; is functionally a 1.42 factor rate.
               </li>
             </ul>
             <p className="ins-hero-sub">
