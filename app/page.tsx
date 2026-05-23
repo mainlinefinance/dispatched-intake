@@ -18,8 +18,12 @@ import { JsonLd, faqPage } from "@/components/seo/JsonLd";
    in some validators. The FAQPage payload IS page-specific (it describes the
    homepage's visible FAQ section), so it stays here. */
 export const metadata: Metadata = {
-  title:
-    "Dispatched — Capital built for truckers",
+  // Keyword-first per 2026-05-23 SEO audit. Brand at the end keeps brand
+  // recognition while letting the head terms (trucking capital, equipment,
+  // repair, factoring) land in the first 30 chars where Google clips SERP
+  // titles. Was: "Dispatched — Capital built for truckers" (brand-first,
+  // 39 chars under the 50-60 ideal).
+  title: "Trucking Capital, Equipment, Repair, Factoring | Dispatched",
   description:
     "Capital and insurance for truckers. Soft pull, lender-paid. Match with trucking-friendly lenders for working capital, equipment, repair, factoring.",
   alternates: { canonical: "/" },

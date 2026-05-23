@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   title:
     "Commercial Trucking Insurance — Compare Quotes from 30+ Carriers | Dispatched",
   description:
-    "Compare commercial trucking insurance — primary liability, motor truck cargo, physical damage, NTL, GL — across 30+ carriers in all 50 states. Quotes placed by our licensed producer partner.",
+    "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quote in 3 minutes via our producer.",
   alternates: { canonical: "/insurance" },
   openGraph: {
     title:
       "Commercial Trucking Insurance — Compare Quotes from 30+ Carriers | Dispatched",
     description:
-      "Compare commercial trucking insurance — primary liability, motor truck cargo, physical damage, NTL, GL — across 30+ carriers in all 50 states. Quotes placed by our licensed producer partner.",
+      "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quote in 3 minutes via our producer.",
     url: "/insurance",
     type: "website",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title:
       "Commercial Trucking Insurance — Compare Quotes from 30+ Carriers | Dispatched",
     description:
-      "Compare commercial trucking insurance — primary liability, motor truck cargo, physical damage, NTL, GL — across 30+ carriers in all 50 states.",
+      "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quotes in 3 minutes.",
   },
 };
 
