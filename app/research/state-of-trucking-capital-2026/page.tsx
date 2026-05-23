@@ -111,7 +111,7 @@ export default function StateOfTruckingCapital2026() {
       "premium-financing",
     ],
     productUrls: [
-      "/invoice-factoring-for-truckers",
+      "/factoring",
       "/trucking-working-capital",
       "/equipment-financing",
       "/owner-operator-financing/first-time",
@@ -1140,7 +1140,7 @@ export default function StateOfTruckingCapital2026() {
             </p>
             <div className="research-cta-grid">
               <Link
-                href="/invoice-factoring-for-truckers"
+                href="/factoring"
                 className="research-cta-card"
               >
                 <h3>Invoice factoring</h3>

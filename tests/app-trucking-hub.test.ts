@@ -90,7 +90,7 @@ describe("financingProducts data layer", () => {
       "/trucking-working-capital",
       "/equipment-financing",
       "/truck-repair-loans",
-      "/invoice-factoring-for-truckers",
+      "/factoring",
       "/semi-truck-financing",
       "/box-truck-financing",
       "/owner-operator-financing",

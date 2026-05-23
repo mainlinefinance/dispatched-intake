@@ -212,12 +212,12 @@ export default function FactoringFeeCalculatorPage() {
             <h2>Related</h2>
             <ul>
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers — parent product →
                 </Link>
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   Factoring without a credit check →
                 </Link>
               </li>

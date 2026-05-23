@@ -66,13 +66,13 @@
     "type": "vertical"
   },
   {
-    "url": "/invoice-factoring-for-truckers",
+    "url": "/factoring",
     "title": "Invoice factoring for truckers",
     "description": "Recourse and non-recourse factoring for owner-operators and fleets. Compare advance rates, fuel programs, and broker credit tooling.",
     "type": "vertical"
   },
   {
-    "url": "/invoice-factoring-for-truckers/no-credit-check",
+    "url": "/factoring/no-credit-check",
     "title": "No credit check factoring for truckers",
     "description": "Factoring options with no personal credit pull. The factor underwrites the broker, not the trucker — useful for thin-file and bad-credit operators.",
     "type": "vertical"

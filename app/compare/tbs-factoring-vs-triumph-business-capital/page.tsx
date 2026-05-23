@@ -514,7 +514,7 @@ export default function TbsVsTriumphPage() {
               the operator has a process and the bundle stops being
               load-bearing; Triumph&rsquo;s rate advantage becomes pure
               margin. For how factor pricing maps to operation size, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>.
             </p>
@@ -1160,7 +1160,7 @@ export default function TbsVsTriumphPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>

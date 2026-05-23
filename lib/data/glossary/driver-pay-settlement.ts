@@ -77,7 +77,7 @@ export const DRIVER_PAY_SETTLEMENT_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["settlement-statement", "advance-rate", "lease-on-driver"],
     relatedProducts: [
       { url: "/trucking-working-capital", label: "Trucking working capital" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
   },
   {
@@ -148,7 +148,7 @@ export const DRIVER_PAY_SETTLEMENT_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["detention", "accessorial-charges", "tonu", "layover"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/owner-operator-financing", label: "Owner-operator financing" },
     ],
   },

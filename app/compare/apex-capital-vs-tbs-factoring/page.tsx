@@ -429,7 +429,7 @@ export default function ApexVsTbsFactoringPage() {
               leakage. For a single-truck operator factoring
               $25K/month, 75 bps is $2,250/year. For how factor
               pricing maps to operation size, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>.
             </p>
@@ -938,7 +938,7 @@ export default function ApexVsTbsFactoringPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
-              <li><Link href="/invoice-factoring-for-truckers">Invoice factoring for truckers →</Link></li>
+              <li><Link href="/factoring">Invoice factoring for truckers →</Link></li>
               <li><Link href="/new-authority-truck-financing">New authority truck financing →</Link></li>
               <li><Link href="/owner-operator-financing/first-time">First-time owner-operator financing →</Link></li>
               <li><Link href="/research/best-trucking-factoring-2026">Best trucking factoring 2026 →</Link></li>

@@ -182,8 +182,8 @@ export default function NewAuthorityFinancingPage() {
             <p className="ins-hero-sub">
               For a deeper read on factoring mechanics, recourse vs
               non-recourse, and what the fees actually look like, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
-                /invoice-factoring-for-truckers
+              <Link href="/factoring">
+                /factoring
               </Link>.
             </p>
           </div>
@@ -336,7 +336,7 @@ export default function NewAuthorityFinancingPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li><Link href="/trucking">All trucking financing products →</Link></li>
-              <li><Link href="/invoice-factoring-for-truckers">Invoice factoring for truckers →</Link></li>
+              <li><Link href="/factoring">Invoice factoring for truckers →</Link></li>
               <li><Link href="/equipment-financing">Equipment financing →</Link></li>
               <li><Link href="/owner-operator-financing">Owner-operator financing →</Link></li>
               <li><Link href="/methodology">Methodology →</Link></li>

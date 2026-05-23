@@ -208,7 +208,7 @@ export default function TruckingHubPage() {
               </li>
               <li>
                 <strong>Outstanding broker invoices →</strong>{" "}
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   invoice factoring
                 </Link>
                 . Sell specific invoices for immediate cash. Recourse and

@@ -120,7 +120,7 @@ export default function PorterVsOtrPage() {
                 Get matched with no-credit-pull factors →
               </Link>
               <Link
-                href="/invoice-factoring-for-truckers/no-credit-check"
+                href="/factoring/no-credit-check"
                 className="btn btn--secondary btn--lg"
               >
                 Read about no credit check factoring →
@@ -340,7 +340,7 @@ export default function PorterVsOtrPage() {
                 porterfreightfunding.com
               </a>{" "}
               for company-stated details; for the broader category, see{" "}
-              <Link href="/invoice-factoring-for-truckers/no-credit-check">
+              <Link href="/factoring/no-credit-check">
                 no credit check factoring
               </Link>
               .)
@@ -443,7 +443,7 @@ export default function PorterVsOtrPage() {
               factors will approve bad-credit operators that Apex, eCapital,
               or Triumph would decline at the front door. For the broader
               product profile of credit-friendly factoring, see{" "}
-              <Link href="/invoice-factoring-for-truckers/no-credit-check">
+              <Link href="/factoring/no-credit-check">
                 no credit check trucking factoring
               </Link>
               {" "}and{" "}
@@ -504,7 +504,7 @@ export default function PorterVsOtrPage() {
               experience the two factors at very different effective costs
               depending on the fee mix. For one comparison angle on this,
               see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>{" "}
               and our methodology at{" "}
@@ -620,7 +620,7 @@ export default function PorterVsOtrPage() {
               12-month structure is acceptable for stable operators
               willing to lock in for the lower rate. For one related angle
               on commitment-free factoring broadly, see{" "}
-              <Link href="/invoice-factoring-for-truckers/no-credit-check">
+              <Link href="/factoring/no-credit-check">
                 no credit check trucking factoring
               </Link>{" "}
               &mdash; many of the same flexibility tradeoffs apply across
@@ -912,7 +912,7 @@ export default function PorterVsOtrPage() {
                 best trucking factoring 2026
               </Link>
               ,{" "}
-              <Link href="/invoice-factoring-for-truckers/no-credit-check">
+              <Link href="/factoring/no-credit-check">
                 no credit check trucking factoring
               </Link>
               , and{" "}
@@ -1003,12 +1003,12 @@ export default function PorterVsOtrPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   No credit check trucking factoring →
                 </Link>
               </li>

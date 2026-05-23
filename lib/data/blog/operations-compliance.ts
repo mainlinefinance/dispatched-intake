@@ -151,7 +151,7 @@ export const OPERATIONS_COMPLIANCE_POSTS: ReadonlyArray<BlogPost> = [
     ],
     relatedPosts: ["picking-first-factoring-company", "factoring-vs-working-capital"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/research/best-trucking-factoring-2026", label: "Best Trucking Factoring 2026 ranking" },
     ],
     relatedGlossary: ["recourse-factoring", "non-recourse-factoring", "advance-rate", "ucc-1", "lockbox", "carrier-deduction"],

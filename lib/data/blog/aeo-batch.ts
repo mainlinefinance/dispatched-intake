@@ -364,7 +364,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
     relatedProducts: [
       { url: "/trucking-working-capital", label: "Trucking working capital" },
       { url: "/equipment-financing", label: "Equipment financing" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/qualify", label: "Start a soft-pull match" },
       { url: "/methodology", label: "How we describe APR ranges" },
     ],

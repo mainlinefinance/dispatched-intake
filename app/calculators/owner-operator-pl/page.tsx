@@ -40,7 +40,7 @@ export default function OwnerOperatorPLCalculatorPage() {
     productUrls: [
       "/owner-operator-financing",
       "/owner-operator-financing/first-time",
-      "/invoice-factoring-for-truckers",
+      "/factoring",
     ],
     topic: "owner-operator-economics",
     type: "calculator",
@@ -288,7 +288,7 @@ export default function OwnerOperatorPLCalculatorPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>

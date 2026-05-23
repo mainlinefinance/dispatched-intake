@@ -29,7 +29,7 @@ export const OPERATIONS_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["accessorial-charges", "pod", "detention"],
     relatedProducts: [
       { url: "/trucking-working-capital", label: "Trucking working capital" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
   },
   {
@@ -54,7 +54,7 @@ export const OPERATIONS_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["accessorial-charges", "detention", "layover"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
   },
   {
@@ -77,7 +77,7 @@ export const OPERATIONS_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["accessorial-charges", "tonu", "layover", "pod"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/owner-operator-financing", label: "Owner-operator financing" },
     ],
   },
@@ -101,7 +101,7 @@ export const OPERATIONS_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["detention", "lumper", "tonu", "fuel-surcharge"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/owner-operator-financing", label: "Owner-operator financing" },
     ],
   },
@@ -152,7 +152,7 @@ export const OPERATIONS_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["accessorial-charges", "dispatch-fee"],
     relatedProducts: [
       { url: "/trucking-working-capital", label: "Trucking working capital" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
   },
   {
@@ -199,7 +199,7 @@ export const OPERATIONS_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["detention", "tonu", "accessorial-charges"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
   },
   {
@@ -293,7 +293,7 @@ export const OPERATIONS_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["lumper", "accessorial-charges"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
   },
   {

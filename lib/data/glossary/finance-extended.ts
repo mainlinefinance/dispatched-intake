@@ -77,7 +77,7 @@ export const FINANCE_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["cpm", "rpm", "fuel-surcharge", "accessorial-charges"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/owner-operator-financing", label: "Owner-operator financing" },
     ],
   },
@@ -101,7 +101,7 @@ export const FINANCE_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["dispatch-fee", "all-in-rate", "recourse-factoring"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/methodology", label: "Dispatched methodology" },
     ],
   },

@@ -164,8 +164,8 @@ export default function BestTruckingFactoring2026Page() {
       "all-in-rate",
     ],
     productUrls: [
-      "/invoice-factoring-for-truckers",
-      "/invoice-factoring-for-truckers/no-credit-check",
+      "/factoring",
+      "/factoring/no-credit-check",
     ],
     topic: "factoring-and-cash-flow",
     type: "research",
@@ -428,7 +428,7 @@ export default function BestTruckingFactoring2026Page() {
               For methodology context behind the broader product, see our{" "}
               <Link href="/methodology">rate methodology</Link>. For the
               underlying product page, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>
               .
@@ -551,7 +551,7 @@ export default function BestTruckingFactoring2026Page() {
               re-entering trucking after a layoff. If you have been
               declined by Apex or Triumph for thin authority history, TBS
               is the next call. See our{" "}
-              <Link href="/invoice-factoring-for-truckers/no-credit-check">
+              <Link href="/factoring/no-credit-check">
                 no-credit-check factoring page
               </Link>{" "}
               for the related credit-acceptance product profile.
@@ -1040,7 +1040,7 @@ export default function BestTruckingFactoring2026Page() {
                 start the qualification flow
               </Link>{" "}
               or read the{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 product page
               </Link>{" "}
               for how the factoring panel is structured.
@@ -1085,7 +1085,7 @@ export default function BestTruckingFactoring2026Page() {
                 </p>
               </Link>
               <Link
-                href="/invoice-factoring-for-truckers"
+                href="/factoring"
                 className="research-cta-card"
               >
                 <h3>How factoring works</h3>
@@ -1107,13 +1107,13 @@ export default function BestTruckingFactoring2026Page() {
                 other annual and quarterly reports.
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers
                 </Link>{" "}
                 — the product page that maps to this listicle.
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   No-credit-check factoring
                 </Link>{" "}
                 — the bad-credit-acceptance product profile.

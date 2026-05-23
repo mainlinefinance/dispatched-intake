@@ -153,7 +153,7 @@ export default function BlogIndexPage() {
                 </p>
               </Link>
               <Link
-                href="/invoice-factoring-for-truckers"
+                href="/factoring"
                 className="research-cta-card"
               >
                 <h3>Compare factoring</h3>
