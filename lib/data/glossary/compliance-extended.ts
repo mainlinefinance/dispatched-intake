@@ -182,7 +182,7 @@ export const COMPLIANCE_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["pod", "recourse-factoring", "non-recourse-factoring"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/insurance", label: "Commercial trucking insurance" },
     ],
   },
@@ -208,8 +208,8 @@ export const COMPLIANCE_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["bol", "recourse-factoring", "non-recourse-factoring"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
-      { url: "/invoice-factoring-for-truckers/no-credit-check", label: "No credit check factoring" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
+      { url: "/factoring/no-credit-check", label: "No credit check factoring" },
     ],
   },
   {

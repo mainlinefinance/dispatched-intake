@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   description:
     "Most freight factoring approves without a credit pull on you — they check your brokers. Bad credit, new authority, and prior bankruptcy still qualify. Same-day funding.",
   alternates: {
-    canonical: "/invoice-factoring-for-truckers/no-credit-check",
+    canonical: "/factoring/no-credit-check",
   },
   openGraph: {
     title: "Trucking Factoring No Credit Check 2026 | Dispatched",
     description:
       "Most freight factoring approves without a credit pull on you — they check your brokers. Bad credit, new authority, and prior bankruptcy still qualify. Same-day funding.",
-    url: "/invoice-factoring-for-truckers/no-credit-check",
+    url: "/factoring/no-credit-check",
     type: "website",
   },
   twitter: {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 };
 
 const PAGE_URL =
-  "https://dispatched.finance/invoice-factoring-for-truckers/no-credit-check";
+  "https://dispatched.finance/factoring/no-credit-check";
 
 const faqs = [
   {
@@ -75,7 +75,7 @@ export default function NoCreditCheckFactoringPage() {
           { name: "Home", url: "https://dispatched.finance/" },
           {
             name: "Invoice factoring for truckers",
-            url: "https://dispatched.finance/invoice-factoring-for-truckers",
+            url: "https://dispatched.finance/factoring",
           },
           { name: "No credit check", url: PAGE_URL },
         ])}
@@ -149,7 +149,7 @@ export default function NoCreditCheckFactoringPage() {
               cash and you owe it back with interest. Your personal
               credit profile is the underwriting question — it&rsquo;s how
               the lender prices the risk of getting repaid.{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 Invoice factoring
               </Link>{" "}
               is structurally different. You&rsquo;re selling a paid
@@ -464,7 +464,7 @@ export default function NoCreditCheckFactoringPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers (parent) →
                 </Link>
               </li>

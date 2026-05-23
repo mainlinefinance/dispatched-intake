@@ -96,8 +96,8 @@ const STATIC_ITEMS: ReadonlyArray<StaticItem> = [
       "advance-rate",
     ],
     productRefs: [
-      "/invoice-factoring-for-truckers",
-      "/invoice-factoring-for-truckers/no-credit-check",
+      "/factoring",
+      "/factoring/no-credit-check",
     ],
     topic: "factoring-and-cash-flow",
   },
@@ -115,7 +115,7 @@ const STATIC_ITEMS: ReadonlyArray<StaticItem> = [
       "dot-number",
     ],
     productRefs: [
-      "/invoice-factoring-for-truckers",
+      "/factoring",
       "/trucking-working-capital",
       "/equipment-financing",
       "/owner-operator-financing/first-time",
@@ -186,7 +186,7 @@ const STATIC_ITEMS: ReadonlyArray<StaticItem> = [
       "non-recourse-factoring",
       "all-in-rate",
     ],
-    productRefs: ["/invoice-factoring-for-truckers"],
+    productRefs: ["/factoring"],
     topic: "industry-trends",
   },
   {
@@ -197,7 +197,7 @@ const STATIC_ITEMS: ReadonlyArray<StaticItem> = [
     type: "research",
     glossaryRefs: ["cpm", "rpm", "deadhead"],
     productRefs: [
-      "/invoice-factoring-for-truckers",
+      "/factoring",
       "/trucking-working-capital",
     ],
     topic: "industry-trends",
@@ -259,7 +259,7 @@ const STATIC_ITEMS: ReadonlyArray<StaticItem> = [
       "non-recourse-factoring",
       "advance-rate",
     ],
-    productRefs: ["/invoice-factoring-for-truckers"],
+    productRefs: ["/factoring"],
     topic: "factoring-and-cash-flow",
   },
   {
@@ -273,7 +273,7 @@ const STATIC_ITEMS: ReadonlyArray<StaticItem> = [
       "non-recourse-factoring",
       "advance-rate",
     ],
-    productRefs: ["/invoice-factoring-for-truckers"],
+    productRefs: ["/factoring"],
     topic: "factoring-and-cash-flow",
   },
   {
@@ -463,8 +463,8 @@ function factoringComparison(
         "advance-rate",
       ],
       productRefs: [
-        "/invoice-factoring-for-truckers",
-        "/invoice-factoring-for-truckers/no-credit-check",
+        "/factoring",
+        "/factoring/no-credit-check",
       ],
       topic: "factoring-and-cash-flow",
     },

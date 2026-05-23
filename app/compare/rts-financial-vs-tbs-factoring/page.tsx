@@ -473,7 +473,7 @@ export default function RtsVsTbsFactoringPage() {
               The rate premium is offset by services worth
               $1,500&ndash;$3,500/year. For how factor pricing maps to
               operation size, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>
               .
@@ -1047,7 +1047,7 @@ export default function RtsVsTbsFactoringPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>

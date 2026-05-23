@@ -432,7 +432,7 @@ export default function OtrVsEcapitalPage() {
               Volume-based negotiation can pull effective rates below OTR
               on whole-ledger contracts, and the up-to-100% advance is real
               extra working capital. For a wider view, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>.
             </p>
@@ -943,11 +943,11 @@ export default function OtrVsEcapitalPage() {
               check fit before going further, the two-question tool at{" "}
               <Link href="/qualify">/qualify</Link> takes about 30 seconds
               and pulls no credit. For the broader category, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>{" "}
               and{" "}
-              <Link href="/invoice-factoring-for-truckers/no-credit-check">
+              <Link href="/factoring/no-credit-check">
                 no credit check trucking factoring
               </Link>.
             </p>
@@ -1002,12 +1002,12 @@ export default function OtrVsEcapitalPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   No credit check trucking factoring →
                 </Link>
               </li>

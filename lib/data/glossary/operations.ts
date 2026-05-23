@@ -200,7 +200,7 @@ export const OPERATIONS_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["ltl", "otr", "deadhead"],
     relatedProducts: [
       { url: "/owner-operator-financing", label: "Owner-operator financing" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
   },
   {

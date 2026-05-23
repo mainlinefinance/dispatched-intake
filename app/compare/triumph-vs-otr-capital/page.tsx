@@ -447,7 +447,7 @@ export default function TriumphVsOtrCapitalPage() {
               For carriers who want non-recourse without negotiating it as
               an upgrade, OTR is the cleaner fit. For more on how factor
               pricing maps to operation size, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>
               .
@@ -1173,12 +1173,12 @@ export default function TriumphVsOtrCapitalPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   No credit check trucking factoring →
                 </Link>
               </li>

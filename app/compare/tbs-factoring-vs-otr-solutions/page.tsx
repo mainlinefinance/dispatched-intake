@@ -484,7 +484,7 @@ export default function TbsVsOtrSolutionsPage() {
               factoring $25K/month, 50&ndash;75 bps of pricing difference
               is $1,500&ndash;$2,250/year. For how factor pricing maps to
               operation size, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>
               .
@@ -1060,7 +1060,7 @@ export default function TbsVsOtrSolutionsPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>

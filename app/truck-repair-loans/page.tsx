@@ -14,7 +14,7 @@ import {
 /* /truck-repair-loans — the reference SEO landing.
    This file is the template for the second-wave product pages
    (/box-truck-financing, /bad-credit-truck-financing,
-   /owner-operator-financing, /invoice-factoring-for-truckers,
+   /owner-operator-financing, /factoring,
    /new-authority-truck-financing, /equipment-financing,
    /trucking-working-capital, /semi-truck-financing).
 

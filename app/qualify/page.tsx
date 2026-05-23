@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: "Check your trucking funding fit — soft pull | Dispatched",
   description:
     "Two questions, no credit check. See the lender type most likely to fund your operation and the typical APR range for your profile. No commitment.",
+  // Conversion endpoint — QualificationCalc owns the chrome and the page
+  // exists to drive funnel completion, not capture search intent. Indexing
+  // it would split ranking signals with the money pages (working capital,
+  // equipment, factoring, repair) that should rank for funding intent.
+  // Follow links so internal anchors pass equity.
+  robots: { index: false, follow: true },
   alternates: { canonical: "/qualify" },
   openGraph: {
     title: "Check your trucking funding fit — soft pull | Dispatched",

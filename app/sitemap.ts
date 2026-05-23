@@ -176,7 +176,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
-    url: `${ORIGIN}/invoice-factoring-for-truckers/no-credit-check`,
+    url: `${ORIGIN}/factoring/no-credit-check`,
     lastModified: today,
     changeFrequency: "monthly",
     priority: 0.7,
@@ -483,7 +483,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
-    url: `${ORIGIN}/invoice-factoring-for-truckers`,
+    url: `${ORIGIN}/factoring`,
     lastModified: today,
     changeFrequency: "monthly",
     priority: 0.8,

@@ -15,6 +15,28 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["framer-motion", "libphonenumber-js"],
   },
+  async redirects() {
+    return [
+      {
+        source: "/invoice-factoring-for-truckers",
+        destination: "/factoring",
+        permanent: true,
+      },
+      {
+        source: "/invoice-factoring-for-truckers/:path*",
+        destination: "/factoring/:path*",
+        permanent: true,
+      },
+      {
+        // Canonical money-page slug is /trucking-working-capital. /working-capital
+        // is the slug external citers and AI tools default to — redirect it in
+        // so the URL is reachable without a 404.
+        source: "/working-capital",
+        destination: "/trucking-working-capital",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withBundleAnalyzer(nextConfig);

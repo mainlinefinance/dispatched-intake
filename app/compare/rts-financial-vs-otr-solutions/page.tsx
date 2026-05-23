@@ -435,7 +435,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
               non-recourse-by-default adds protection RTS&rsquo;s
               standard product doesn&rsquo;t. For a wider view of how
               factor pricing maps to operation size, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>
               .
@@ -1135,12 +1135,12 @@ export default function RtsFinancialVsOtrSolutionsPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   No credit check trucking factoring →
                 </Link>
               </li>

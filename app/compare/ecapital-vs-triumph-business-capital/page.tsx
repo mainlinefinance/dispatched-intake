@@ -413,7 +413,7 @@ export default function EcapitalVsTriumphPage() {
               and bank-grade documentation discipline means the rate
               you&rsquo;re quoted is the rate you actually pay. For a wider
               view of how factor pricing maps to operation size, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>.
             </p>
@@ -965,12 +965,12 @@ export default function EcapitalVsTriumphPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   No credit check trucking factoring →
                 </Link>
               </li>

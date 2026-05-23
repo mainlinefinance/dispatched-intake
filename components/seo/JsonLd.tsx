@@ -264,7 +264,7 @@ export function financialService(): JsonLdPayload {
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Truck Repair Loans", url: "https://dispatched.finance/truck-repair-loans" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Working Capital", url: "https://dispatched.finance/trucking-working-capital" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Equipment Financing", url: "https://dispatched.finance/equipment-financing" } },
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Invoice Factoring", url: "https://dispatched.finance/invoice-factoring-for-truckers" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Invoice Factoring", url: "https://dispatched.finance/factoring" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Semi-Truck Financing", url: "https://dispatched.finance/semi-truck-financing" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Box Truck Financing", url: "https://dispatched.finance/box-truck-financing" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Bad Credit Truck Financing", url: "https://dispatched.finance/bad-credit-truck-financing" } },

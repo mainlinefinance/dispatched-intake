@@ -292,7 +292,7 @@ export default function FactoringFeeCalculator() {
         </p>
 
         <Link
-          href="/invoice-factoring-for-truckers"
+          href="/factoring"
           className="btn btn--primary calc-cta"
         >
           See factoring options

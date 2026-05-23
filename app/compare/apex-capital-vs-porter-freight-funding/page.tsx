@@ -349,7 +349,7 @@ export default function ApexVsPorterPage() {
                 porterfreightfunding.com
               </a>{" "}
               for company-stated details; for the broader category, see{" "}
-              <Link href="/invoice-factoring-for-truckers/no-credit-check">
+              <Link href="/factoring/no-credit-check">
                 no credit check factoring
               </Link>
               .)
@@ -417,7 +417,7 @@ export default function ApexVsPorterPage() {
               or recent BK on file, Porter&rsquo;s no-pull policy is
               cleaner and the underwriting outcome more reliable. The
               broader bad-credit category context is in{" "}
-              <Link href="/invoice-factoring-for-truckers/no-credit-check">
+              <Link href="/factoring/no-credit-check">
                 no credit check trucking factoring
               </Link>{" "}
               and{" "}
@@ -486,7 +486,7 @@ export default function ApexVsPorterPage() {
               tend to land, and Porter&rsquo;s mid-range underprices
               that. For a wider view of how factor pricing maps to credit
               profile, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>
               .
@@ -1000,12 +1000,12 @@ export default function ApexVsPorterPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   No credit check trucking factoring →
                 </Link>
               </li>

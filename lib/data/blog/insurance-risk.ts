@@ -124,7 +124,7 @@ export const INSURANCE_RISK_POSTS: ReadonlyArray<BlogPost> = [
     relatedPosts: ["motor-truck-cargo-insurance-explained", "insurance-claim-filing-for-truckers"],
     relatedProducts: [
       { url: "/insurance", label: "Commercial trucking insurance" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
     relatedGlossary: ["motor-truck-cargo", "reefer-breakdown", "recourse-factoring", "bol", "pod", "deductible"],
   },

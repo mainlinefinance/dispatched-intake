@@ -583,14 +583,14 @@ const STATIC_CONTENT: ReadonlyArray<StaticContentItem> = [
 
   // -- Verticals & money pages --------------------------------------------
   {
-    url: "/invoice-factoring-for-truckers",
+    url: "/factoring",
     title: "Invoice Factoring for Truckers",
     description: "The Dispatched matching flow for trucking invoice factoring — recourse, non-recourse, and fuel-card programs.",
     contentType: "vertical",
     topics: ["factoring"],
   },
   {
-    url: "/invoice-factoring-for-truckers/no-credit-check",
+    url: "/factoring/no-credit-check",
     title: "No Credit Check Factoring",
     description: "Factoring programs that approve on broker credit, not personal FICO — built for new authority and credit-rebuilding owners.",
     contentType: "vertical",

@@ -476,7 +476,7 @@ export default function BluevineVsOnDeckPage() {
               improvement) that justifies fixed repayment. For broker-payment
               timing relief, factoring is structurally better than either
               product &mdash; see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>{" "}
               for the comparison.
@@ -636,7 +636,7 @@ export default function BluevineVsOnDeckPage() {
               high until you compare it to the alternative of a daily-ACH
               term loan at 35&ndash;40% APR that doesn&rsquo;t actually
               accelerate any cash. Full breakdown at{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>{" "}
               and the 2026 ranking at{" "}
@@ -920,7 +920,7 @@ export default function BluevineVsOnDeckPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>

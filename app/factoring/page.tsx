@@ -26,12 +26,12 @@ export const metadata: Metadata = {
   title: "Invoice factoring for truckers — same-day | Dispatched",
   description:
     "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum. Get matched today.",
-  alternates: { canonical: "/invoice-factoring-for-truckers" },
+  alternates: { canonical: "/factoring" },
   openGraph: {
     title: "Invoice factoring for truckers — same-day | Dispatched",
     description:
       "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum. Get matched today.",
-    url: "/invoice-factoring-for-truckers",
+    url: "/factoring",
     type: "website",
   },
   twitter: {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
 };
 
-const PAGE_URL = "https://dispatched.finance/invoice-factoring-for-truckers";
+const PAGE_URL = "https://dispatched.finance/factoring";
 
 const faqs = [
   {
@@ -189,7 +189,7 @@ export default function InvoiceFactoringPage() {
                 operators with under six months of operating history,
                 because the factor underwrites the broker&rsquo;s credit
                 rather than the trucker&rsquo;s. This is also why{" "}
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   no credit check trucking factoring
                 </Link>{" "}
                 is the standard path for sub-580 FICO and post-BK

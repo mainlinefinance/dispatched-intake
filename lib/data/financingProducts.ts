@@ -84,7 +84,7 @@ const PRODUCTS: Record<FinancingProductSlug, FinancingProduct> = {
     name: "Invoice factoring",
     oneLine:
       "Sell broker or carrier invoices for an immediate cash advance instead of waiting 30–60 days. Not a loan: no APR, no monthly payment.",
-    url: "/invoice-factoring-for-truckers",
+    url: "/factoring",
     category: "Cashflow",
     rangeLabel: "Recourse and non-recourse",
   },

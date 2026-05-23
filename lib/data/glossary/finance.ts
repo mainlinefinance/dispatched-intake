@@ -26,8 +26,8 @@ export const FINANCE_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["recourse-factoring", "non-recourse-factoring"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
-      { url: "/invoice-factoring-for-truckers/no-credit-check", label: "No credit check factoring" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
+      { url: "/factoring/no-credit-check", label: "No credit check factoring" },
     ],
   },
   {
@@ -52,7 +52,7 @@ export const FINANCE_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["advance-rate", "lockbox", "recourse-factoring"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/trucking-working-capital", label: "Trucking working capital" },
     ],
   },
@@ -250,7 +250,7 @@ export const FINANCE_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["recourse-factoring", "ach", "ucc-1"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/methodology", label: "Dispatched methodology" },
     ],
   },

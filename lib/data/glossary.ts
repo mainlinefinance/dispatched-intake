@@ -74,7 +74,7 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedProducts: [
       { url: "/new-authority-truck-financing", label: "New authority truck financing" },
       { url: "/owner-operator-financing/first-time", label: "First-time owner-operator financing" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
   },
   {
@@ -126,7 +126,7 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["mc-number", "dot-number"],
     relatedProducts: [
       { url: "/new-authority-truck-financing", label: "New authority truck financing" },
-      { url: "/invoice-factoring-for-truckers/no-credit-check", label: "No credit check factoring" },
+      { url: "/factoring/no-credit-check", label: "No credit check factoring" },
     ],
   },
   {
@@ -178,7 +178,7 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["irp", "ucr", "dot-number"],
     relatedProducts: [
       { url: "/trucking-working-capital", label: "Trucking working capital" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
   },
   {
@@ -227,8 +227,8 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["non-recourse-factoring", "owner-operator"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
-      { url: "/invoice-factoring-for-truckers/no-credit-check", label: "No credit check factoring" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
+      { url: "/factoring/no-credit-check", label: "No credit check factoring" },
     ],
   },
   {
@@ -251,8 +251,8 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
     relatedTerms: ["recourse-factoring"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
-      { url: "/invoice-factoring-for-truckers/no-credit-check", label: "No credit check factoring" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
+      { url: "/factoring/no-credit-check", label: "No credit check factoring" },
     ],
   },
   {

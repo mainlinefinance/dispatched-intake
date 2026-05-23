@@ -396,7 +396,7 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
               The premium is sometimes recovered in reduced dispute
               losses. For the broader mapping of factor pricing to
               operation size, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>.
             </p>
@@ -940,12 +940,12 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   No credit check trucking factoring →
                 </Link>
               </li>

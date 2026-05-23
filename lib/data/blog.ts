@@ -320,7 +320,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     relatedPosts: ["true-cost-per-mile", "reading-broker-rate-confirmation", "building-business-credit-owner-operator"],
     relatedProducts: [
       { url: "/research/best-trucking-factoring-2026", label: "Best Trucking Factoring 2026 ranking" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
     relatedGlossary: ["recourse-factoring", "non-recourse-factoring", "advance-rate", "lockbox", "ucc-1", "broker-spread"],
   },
@@ -375,7 +375,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     ],
     relatedPosts: ["picking-first-factoring-company", "hidden-cost-of-low-rate-freight", "true-cost-per-mile"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/owner-operator-financing", label: "Owner-operator financing" },
     ],
     relatedGlossary: ["accessorial-charges", "detention", "tonu", "lumper", "fuel-surcharge", "all-in-rate"],
@@ -432,7 +432,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     relatedPosts: ["new-owner-operator-insurance-mistakes", "picking-first-factoring-company", "building-business-credit-owner-operator"],
     relatedProducts: [
       { url: "/new-authority-truck-financing", label: "New authority truck financing" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
     relatedGlossary: ["mc-number", "dot-number", "boc-3", "ucr", "mcs-150", "fmcsa"],
   },
@@ -664,7 +664,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     ],
     relatedPosts: ["picking-first-factoring-company", "true-cost-per-mile", "building-business-credit-owner-operator"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/trucking-working-capital", label: "Trucking working capital" },
       { url: "/calculators/factoring-fee", label: "Factoring fee calculator" },
     ],
@@ -1003,7 +1003,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     ],
     relatedPosts: ["picking-first-factoring-company", "reading-broker-rate-confirmation", "mc-number-deactivation-recovery"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
     relatedGlossary: ["broker-spread", "recourse-factoring", "non-recourse-factoring", "fmcsa", "mc-number"],
   },

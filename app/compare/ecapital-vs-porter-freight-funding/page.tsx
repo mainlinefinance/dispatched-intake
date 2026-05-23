@@ -362,7 +362,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
                 porterfreightfunding.com
               </a>{" "}
               for company-stated details; for the broader category, see{" "}
-              <Link href="/invoice-factoring-for-truckers/no-credit-check">
+              <Link href="/factoring/no-credit-check">
                 no credit check factoring
               </Link>
               .)
@@ -491,7 +491,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               friendly-credit-policy underwriting beats eCapital&rsquo;s
               repriced bad-credit quote even though the headline ranges
               overlap. For one comparison angle on this, see{" "}
-              <Link href="/invoice-factoring-for-truckers">
+              <Link href="/factoring">
                 invoice factoring for truckers
               </Link>{" "}
               and our methodology at{" "}
@@ -869,7 +869,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
                 hard credit decision. eCapital onboards new authorities
                 but at scale-driven pricing that penalizes day-one
                 operators. For new-authority context, see{" "}
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   no credit check trucking factoring
                 </Link>
                 .
@@ -1051,12 +1051,12 @@ export default function EcapitalVsPorterFreightFundingPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li>
-                <Link href="/invoice-factoring-for-truckers">
+                <Link href="/factoring">
                   Invoice factoring for truckers →
                 </Link>
               </li>
               <li>
-                <Link href="/invoice-factoring-for-truckers/no-credit-check">
+                <Link href="/factoring/no-credit-check">
                   No credit check trucking factoring →
                 </Link>
               </li>

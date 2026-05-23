@@ -76,7 +76,7 @@ export const TECH_TELEMATICS_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["dispatch-software", "load-board", "fleet-management-platform"],
     relatedProducts: [
       { url: "/trucking-working-capital", label: "Trucking working capital" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
   },
   {
@@ -123,7 +123,7 @@ export const TECH_TELEMATICS_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["tms", "dispatch-software", "dispatch-fee", "accessorial-charges"],
     relatedProducts: [
       { url: "/owner-operator-financing", label: "Owner-operator financing" },
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
     ],
   },
   {

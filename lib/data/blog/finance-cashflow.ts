@@ -124,7 +124,7 @@ export const FINANCE_CASHFLOW_POSTS: ReadonlyArray<BlogPost> = [
     ],
     relatedPosts: ["factoring-vs-working-capital", "picking-first-factoring-company"],
     relatedProducts: [
-      { url: "/invoice-factoring-for-truckers", label: "Invoice factoring for truckers" },
+      { url: "/factoring", label: "Invoice factoring for truckers" },
       { url: "/trucking-working-capital", label: "Trucking working capital" },
     ],
     relatedGlossary: ["recourse-factoring", "working-capital", "mca", "advance-rate", "ucc-1", "line-of-credit"],
