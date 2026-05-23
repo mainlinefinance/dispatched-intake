@@ -105,7 +105,7 @@ export default function FactoringVsMcaPage() {
             <h1 className="ins-hero-title">
               Factoring vs MCA for trucking owner-operators.
             </h1>
-            <EditorialByline updated={today} />
+            <EditorialByline updated={today} format="iso" />
             <p className="ins-hero-sub">
               Invoice factoring and merchant cash advances both put cash
               in your account in a few days, but they are not the same

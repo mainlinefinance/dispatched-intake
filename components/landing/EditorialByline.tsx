@@ -40,6 +40,11 @@ type Props = {
   published?: string;
   authorName?: string;
   authorHref?: string;
+  /* Visible date format. "long" (default) renders "May 23, 2026"; "iso"
+     renders the bare "2026-05-23". The <time dateTime=…> attribute is
+     always ISO regardless. Per-page opt-in so we don't disturb the long
+     form on the rest of the landing pages. */
+  format?: "long" | "iso";
 };
 
 export default function EditorialByline({
@@ -47,9 +52,14 @@ export default function EditorialByline({
   published,
   authorName,
   authorHref,
+  format = "long",
 }: Props) {
-  const updatedDisplay = formatIsoDate(updated);
-  const publishedDisplay = published ? formatIsoDate(published) : null;
+  const updatedDisplay = format === "iso" ? updated : formatIsoDate(updated);
+  const publishedDisplay = published
+    ? format === "iso"
+      ? published
+      : formatIsoDate(published)
+    : null;
 
   return (
     <p className="editorial-byline">
