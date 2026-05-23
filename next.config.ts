@@ -27,6 +27,14 @@ const nextConfig: NextConfig = {
         destination: "/factoring/:path*",
         permanent: true,
       },
+      {
+        // Canonical money-page slug is /trucking-working-capital. /working-capital
+        // is the slug external citers and AI tools default to — redirect it in
+        // so the URL is reachable without a 404.
+        source: "/working-capital",
+        destination: "/trucking-working-capital",
+        permanent: true,
+      },
     ];
   },
 };
