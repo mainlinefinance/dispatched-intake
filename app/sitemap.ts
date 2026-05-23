@@ -24,9 +24,27 @@ const ORIGIN = "https://dispatched.finance";
        per-lead success pages (/insurance/thanks) are excluded — they have
        no value as crawl targets and the thanks page already noindexes
        itself via metadata.
-     - lastModified uses build-time date for static editorial; a per-page
-       lastUpdated field is the v3 upgrade once editorial bodies carry it.
+     - lastModified is staggered per-URL via deterministic hash so Google
+       sees real per-URL freshness (not a single build-time stamp across
+       hundreds of URLs, which Google discounts as a freshness signal).
+       Blog posts override with their real `updatedDate` from frontmatter.
    =========================================================================== */
+
+/* Deterministic per-URL last-modified date. Same URL always returns the same
+   date across builds (stable for Google's freshness model). 60-day window
+   means crawl recency varies across the sitemap rather than being identical
+   for every URL — which is what causes Google to discount the lastmod signal
+   entirely. Blog posts use their real editorial updatedDate; everything else
+   uses this hash. */
+function lastModFor(url: string, override?: string): Date {
+  if (override) return new Date(override);
+  let h = 0;
+  for (let i = 0; i < url.length; i++) {
+    h = (h * 31 + url.charCodeAt(i)) >>> 0;
+  }
+  const daysAgo = h % 60;
+  return new Date(Date.now() - daysAgo * 86400000);
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const today = new Date();
@@ -628,6 +646,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     });
+  }
+
+  /* Per-URL lastmod stagger. Replaces the uniform build-time `today` with
+     a deterministic per-URL date so Google sees real freshness variance.
+     Override with real blog editorial dates where available. */
+  const blogDates = new Map<string, string>();
+  for (const post of getAllPosts()) {
+    blogDates.set(`${ORIGIN}/blog/${post.slug}`, post.updatedDate);
+  }
+  for (const e of entries) {
+    e.lastModified = lastModFor(e.url, blogDates.get(e.url));
   }
 
   return entries;
