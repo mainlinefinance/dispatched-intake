@@ -578,6 +578,13 @@
     "category": "Trucking Finance"
   },
   {
+    "url": "/glossary/fico",
+    "title": "FICO",
+    "description": "Fair Isaac Corporation consumer credit score (300–850); the dominant US credit metric. In trucking finance, FICO is a secondary underwriting signal — revenue, debt-service coverage, and equipment value lead.",
+    "type": "glossary",
+    "category": "Trucking Finance"
+  },
+  {
     "url": "/glossary/balloon-payment",
     "title": "Balloon Payment",
     "description": "Large lump-sum payment due at the end of a loan term, with smaller monthly payments throughout the term; common in equipment financing.",

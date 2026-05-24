@@ -281,6 +281,34 @@ export const FINANCE_TERMS: ReadonlyArray<GlossaryTerm> = [
     ],
   },
   {
+    slug: "fico",
+    term: "FICO",
+    abbreviation: "FICO",
+    termCode: "FICO",
+    category: "trucking-finance",
+    shortDefinition:
+      "Fair Isaac Corporation consumer credit score (300–850); the dominant US credit metric. In trucking finance, FICO is a secondary underwriting signal — revenue, debt-service coverage, and equipment value lead.",
+    sections: [
+      {
+        h2: "What it is",
+        body:
+          "FICO is the consumer credit score developed by Fair Isaac Corporation, scaled 300–850. It is the dominant credit-scoring model in US consumer lending — over 90% of US lenders use some version of FICO when pulling personal credit. Three credit bureaus (Equifax, Experian, TransUnion) each maintain a credit file on every consumer, and FICO produces a score from each file. The three scores are usually within 20–40 points of each other; the differences come from which creditors report to which bureau and on what cadence.\n\nMultiple FICO versions exist (FICO 8, 9, 10, plus auto-enhanced and bankcard-enhanced variants). Mortgage lenders typically pull older versions; auto lenders pull FICO Auto Score 8 or 9, which weights auto-loan payment history more heavily than the base score; bankcard issuers pull the bankcard-enhanced variant. The version pulled matters — the same consumer can score 20 points higher or lower depending on which model the lender uses. Commercial trucking lenders typically pull base FICO 8 or 9 against the personal credit file of the principal (the owner-operator or fleet owner), since most trucking entities are single-member LLCs or sole proprietorships where personal and business credit blur in practice.\n\nThe Dispatched panel uses common trucking-industry FICO bands: a 500 panel floor, with sub-580 borrowers in a wider-spread sub-prime tier, 580–620 as a building-credit band, 620–680 as the mid-band where most working-capital and equipment-loan pricing lands, and 700+ as the premium tier with access to the tightest APRs and largest loan amounts.",
+      },
+      {
+        h2: "Why it matters for trucking finance",
+        body:
+          "Trucking lenders weight FICO differently than banks. A traditional bank underwrites on FICO and personal financial statements first — typically declining anything below 650 regardless of business performance. Trucking-specialist lenders (and most of the Dispatched panel) underwrite on monthly business bank deposits, debt-service coverage, equipment value, and time in business first, with FICO as a secondary signal. The reasoning is structural: trucking has tangible collateral (the tractor or trailer), and revenue is highly visible through factoring history and bank deposits, so the lender has multiple independent risk signals beyond the credit score. A 580 FICO operator pulling $30K/month in clean deposits with 18 months of operating history is a different risk than the FICO alone suggests, and the panel prices for that distinction.\n\nFICO sensitivity also varies sharply by product. Factoring is essentially FICO-blind — the factor underwrites broker credit, not the carrier, so factoring is the first-line product for sub-580 FICOs and first-six-months-of-authority operators. Equipment loans are FICO-tolerant because the equipment secures the loan and the lender can repossess on default — pricing tiers up at each band, but approval is realistic from a 500 FICO with adequate down payment. Working capital is the most FICO-sensitive product because the loan is unsecured; pricing widens fastest as FICO drops, and stacked active MCA balances compound the impact. SBA loans require the highest FICO (typically 650–680 minimum) because the government guarantee program runs conventional bank-style underwriting, which puts FICO back into the lead position alongside tax returns and projections.\n\nPractical guidance: pull your free credit report at annualcreditreport.com before any lender does, dispute errors first (a 20-point swing changes the APR band), and time large applications around credit-improving moves like paying down revolving balances. A 700+ FICO co-signer can drop a first-time owner-op's APR by 3–5 points and unlock larger loan amounts — useful when the math works for both parties, dangerous when used to qualify for a deal you can't service alone.",
+      },
+    ],
+    relatedTerms: ["working-capital", "equipment-loan", "mca", "sba-loan", "recourse-factoring"],
+    relatedProducts: [
+      { url: "/bad-credit-truck-financing", label: "Bad credit truck financing" },
+      { url: "/factoring/no-credit-check", label: "No credit check factoring" },
+      { url: "/owner-operator-financing/first-time", label: "First-time owner-operator financing" },
+      { url: "/trucking-working-capital", label: "Trucking working capital" },
+    ],
+  },
+  {
     slug: "balloon-payment",
     term: "Balloon Payment",
     category: "trucking-finance",
