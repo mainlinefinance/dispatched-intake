@@ -159,6 +159,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   entries.push({
+    url: `${ORIGIN}/factoring-vs-working-capital-loan`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/reefer-breakdown-coverage`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/freightliner-repair-financing`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/bad-credit-truck-repair-financing`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/owner-operator-repair-loans`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
+  entries.push({
+    url: `${ORIGIN}/truck-repair-line-of-credit`,
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  entries.push({
     url: `${ORIGIN}/box-truck-financing`,
     lastModified: today,
     changeFrequency: "monthly",
