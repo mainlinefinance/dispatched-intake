@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { JsonLd, organization, website } from "@/components/seo/JsonLd";
 import { Providers } from "./providers";
@@ -147,6 +148,9 @@ export default function RootLayout({
           <a href="#main-content" className="skip-link">Skip to main content</a>
           {children}
         </Providers>
+        {process.env.GOOGLE_ANALYTICS_ID && (
+          <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID} />
+        )}
       </body>
     </html>
   );
