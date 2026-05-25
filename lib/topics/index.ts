@@ -673,6 +673,15 @@ const STATIC_CONTENT: ReadonlyArray<StaticContentItem> = [
     contentType: "vertical",
     topics: ["insurance"],
   },
+
+  // -- Pulse (operational intelligence layer) -----------------------------
+  {
+    url: "/pulse/diesel",
+    title: "U.S. Diesel Prices This Week",
+    description: "Weekly EIA retail on-highway diesel — national plus PADD 1-5. Updated every Monday.",
+    contentType: "research",
+    topics: ["owner-operator-life", "industry-trends"],
+  },
 ];
 
 /* -----------------------------------------------------------------------------

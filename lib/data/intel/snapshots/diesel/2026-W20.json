@@ -1,0 +1,140 @@
+{
+  "pillar": "diesel",
+  "generatedAt": "2026-05-18T18:00:00.000Z",
+  "period": "2026-W20",
+  "source": "EIA",
+  "sourceUrl": "https://www.eia.gov/petroleum/gasdiesel/",
+  "methodologyHash": "eia-weekly-onhwy-v1",
+  "payload": {
+    "asOf": "2026-05-18",
+    "unit": "USD/gal",
+    "regions": [
+      {
+        "slug": "national",
+        "label": "U.S. National",
+        "current": 3.812,
+        "previous": 3.847,
+        "changeAbs": -0.035,
+        "changePct": -0.9,
+        "yearAgo": 3.694,
+        "yoyChangePct": 3.2,
+        "series": [
+          { "period": "2026-03-23", "pricePerGallon": 3.901 },
+          { "period": "2026-03-30", "pricePerGallon": 3.889 },
+          { "period": "2026-04-06", "pricePerGallon": 3.876 },
+          { "period": "2026-04-13", "pricePerGallon": 3.862 },
+          { "period": "2026-04-20", "pricePerGallon": 3.858 },
+          { "period": "2026-04-27", "pricePerGallon": 3.854 },
+          { "period": "2026-05-04", "pricePerGallon": 3.851 },
+          { "period": "2026-05-11", "pricePerGallon": 3.847 },
+          { "period": "2026-05-18", "pricePerGallon": 3.812 }
+        ]
+      },
+      {
+        "slug": "padd-1",
+        "label": "PADD 1 — East Coast",
+        "current": 3.929,
+        "previous": 3.961,
+        "changeAbs": -0.032,
+        "changePct": -0.8,
+        "yearAgo": 3.802,
+        "yoyChangePct": 3.3,
+        "series": [
+          { "period": "2026-03-23", "pricePerGallon": 4.014 },
+          { "period": "2026-03-30", "pricePerGallon": 4.001 },
+          { "period": "2026-04-06", "pricePerGallon": 3.988 },
+          { "period": "2026-04-13", "pricePerGallon": 3.975 },
+          { "period": "2026-04-20", "pricePerGallon": 3.969 },
+          { "period": "2026-04-27", "pricePerGallon": 3.966 },
+          { "period": "2026-05-04", "pricePerGallon": 3.963 },
+          { "period": "2026-05-11", "pricePerGallon": 3.961 },
+          { "period": "2026-05-18", "pricePerGallon": 3.929 }
+        ]
+      },
+      {
+        "slug": "padd-2",
+        "label": "PADD 2 — Midwest",
+        "current": 3.732,
+        "previous": 3.768,
+        "changeAbs": -0.036,
+        "changePct": -1.0,
+        "yearAgo": 3.611,
+        "yoyChangePct": 3.4,
+        "series": [
+          { "period": "2026-03-23", "pricePerGallon": 3.821 },
+          { "period": "2026-03-30", "pricePerGallon": 3.809 },
+          { "period": "2026-04-06", "pricePerGallon": 3.797 },
+          { "period": "2026-04-13", "pricePerGallon": 3.785 },
+          { "period": "2026-04-20", "pricePerGallon": 3.779 },
+          { "period": "2026-04-27", "pricePerGallon": 3.774 },
+          { "period": "2026-05-04", "pricePerGallon": 3.771 },
+          { "period": "2026-05-11", "pricePerGallon": 3.768 },
+          { "period": "2026-05-18", "pricePerGallon": 3.732 }
+        ]
+      },
+      {
+        "slug": "padd-3",
+        "label": "PADD 3 — Gulf Coast",
+        "current": 3.534,
+        "previous": 3.572,
+        "changeAbs": -0.038,
+        "changePct": -1.1,
+        "yearAgo": 3.418,
+        "yoyChangePct": 3.4,
+        "series": [
+          { "period": "2026-03-23", "pricePerGallon": 3.624 },
+          { "period": "2026-03-30", "pricePerGallon": 3.611 },
+          { "period": "2026-04-06", "pricePerGallon": 3.599 },
+          { "period": "2026-04-13", "pricePerGallon": 3.587 },
+          { "period": "2026-04-20", "pricePerGallon": 3.581 },
+          { "period": "2026-04-27", "pricePerGallon": 3.577 },
+          { "period": "2026-05-04", "pricePerGallon": 3.575 },
+          { "period": "2026-05-11", "pricePerGallon": 3.572 },
+          { "period": "2026-05-18", "pricePerGallon": 3.534 }
+        ]
+      },
+      {
+        "slug": "padd-4",
+        "label": "PADD 4 — Rocky Mountain",
+        "current": 3.879,
+        "previous": 3.911,
+        "changeAbs": -0.032,
+        "changePct": -0.8,
+        "yearAgo": 3.752,
+        "yoyChangePct": 3.4,
+        "series": [
+          { "period": "2026-03-23", "pricePerGallon": 3.962 },
+          { "period": "2026-03-30", "pricePerGallon": 3.949 },
+          { "period": "2026-04-06", "pricePerGallon": 3.937 },
+          { "period": "2026-04-13", "pricePerGallon": 3.925 },
+          { "period": "2026-04-20", "pricePerGallon": 3.919 },
+          { "period": "2026-04-27", "pricePerGallon": 3.915 },
+          { "period": "2026-05-04", "pricePerGallon": 3.913 },
+          { "period": "2026-05-11", "pricePerGallon": 3.911 },
+          { "period": "2026-05-18", "pricePerGallon": 3.879 }
+        ]
+      },
+      {
+        "slug": "padd-5",
+        "label": "PADD 5 — West Coast",
+        "current": 4.598,
+        "previous": 4.624,
+        "changeAbs": -0.026,
+        "changePct": -0.6,
+        "yearAgo": 4.412,
+        "yoyChangePct": 4.2,
+        "series": [
+          { "period": "2026-03-23", "pricePerGallon": 4.681 },
+          { "period": "2026-03-30", "pricePerGallon": 4.668 },
+          { "period": "2026-04-06", "pricePerGallon": 4.655 },
+          { "period": "2026-04-13", "pricePerGallon": 4.642 },
+          { "period": "2026-04-20", "pricePerGallon": 4.634 },
+          { "period": "2026-04-27", "pricePerGallon": 4.629 },
+          { "period": "2026-05-04", "pricePerGallon": 4.626 },
+          { "period": "2026-05-11", "pricePerGallon": 4.624 },
+          { "period": "2026-05-18", "pricePerGallon": 4.598 }
+        ]
+      }
+    ]
+  }
+}

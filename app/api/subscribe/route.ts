@@ -17,6 +17,7 @@ export async function POST(request: Request) {
   }
 
   // V1: log only. Future: integrate Mailchimp / Resend / SendGrid via env var.
+  // `interests` is the segmentation hook for the Pulse digest; v1 just logs.
   console.log("[subscribe]", parsed.data);
 
   return NextResponse.json({ ok: true }, { status: 200 });

@@ -120,6 +120,32 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col">
+            <h3>Pulse</h3>
+            <ul>
+              <li>
+                <Link href="/pulse">Dispatched Pulse</Link>
+              </li>
+              <li>
+                <Link href="/pulse/diesel">Diesel prices</Link>
+              </li>
+              <li>
+                <span className="soon" aria-disabled="true">
+                  Freight rates <span className="soon-tag">Soon</span>
+                </span>
+              </li>
+              <li>
+                <span className="soon" aria-disabled="true">
+                  FMCSA & regulation <span className="soon-tag">Soon</span>
+                </span>
+              </li>
+              <li>
+                <span className="soon" aria-disabled="true">
+                  Lender appetite <span className="soon-tag">Soon</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="col">
             <h3>Support</h3>
             <ul>
               <li>

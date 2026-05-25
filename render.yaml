@@ -42,6 +42,19 @@ services:
       # beacon helper short-circuits to a no-op (no crash, no reporting).
       - key: MAINLINE_INGEST_SECRET
         sync: false
+      # EIA Open Data API key — gates /api/cron/pulse-diesel. The free
+      # public series we use does not technically require a key, but
+      # the v2 endpoint expects api_key on every request. Provision a
+      # key at https://www.eia.gov/opendata/register.php and set this
+      # value as a Render dashboard secret (sync: false).
+      - key: EIA_API_KEY
+        sync: false
+      # Pulse snapshot persistence root. Points at the mounted Render
+      # Disk in production so weekly snapshots survive container
+      # restarts; defaults to lib/data/intel/snapshots in repo when
+      # unset (dev / preview / fallback).
+      - key: PULSE_SNAPSHOTS_DIR
+        value: /var/data/intel-snapshots
       # Injected from the Render dashboard when real backends come online:
       # NEXT_PUBLIC_SITE_URL
       # GOOGLE_SITE_VERIFICATION
@@ -50,6 +63,10 @@ services:
       # DATABASE_URL
     autoDeploy: true
     healthCheckPath: /healthz
+    disk:
+      name: intel-snapshots
+      mountPath: /var/data/intel-snapshots
+      sizeGB: 1
 
   # Cron-driven IndexNow re-ping. The post-build script in the web service
   # already submits on every deploy; this job re-submits every 6 hours so
@@ -70,6 +87,27 @@ services:
       curl -fsS -X POST "https://dispatched.finance/api/cron/indexnow" \
         -H "Authorization: Bearer $CRON_SECRET" \
         || echo "[indexnow-cron] ping failed (non-fatal)"
+    envVars:
+      - key: CRON_SECRET
+        sync: false
+
+  # Dispatched Pulse — diesel. Mondays at 18:00 UTC, after EIA publishes
+  # the week's retail on-highway diesel survey (typically released Monday
+  # afternoon ET). Same Bearer-CRON_SECRET auth model as indexnow-ping.
+  # On failure the route returns 503 and the on-disk `latest.json` is NOT
+  # overwritten — pages keep serving the previous good snapshot. We do
+  # NOT trail with `|| echo` here: a missing EIA_API_KEY, EIA outage, or
+  # schema-validation failure must surface as a non-zero cron exit so
+  # Render's cron-job alerting fires. Pages stay live regardless because
+  # of the seed fallback in lib/data/intel/diesel.ts.
+  - type: cron
+    name: pulse-diesel
+    runtime: node
+    schedule: "0 18 * * 1"
+    buildCommand: "true"
+    startCommand: |
+      curl -fsS -X POST "https://dispatched.finance/api/cron/pulse-diesel" \
+        -H "Authorization: Bearer $CRON_SECRET"
     envVars:
       - key: CRON_SECRET
         sync: false

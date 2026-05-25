@@ -20,6 +20,7 @@ export default function Nav() {
   const insuranceActive =
     (pathname?.startsWith("/insurance") ?? false) ||
     (pathname?.startsWith("/carriers") ?? false);
+  const pulseActive = pathname?.startsWith("/pulse") ?? false;
   const close = () => setMobileOpen(false);
 
   useEffect(() => {
@@ -53,6 +54,13 @@ export default function Nav() {
               aria-current={insuranceActive ? "page" : undefined}
             >
               Insurance
+            </Link>
+            <Link
+              href="/pulse"
+              className={pulseActive ? "active" : undefined}
+              aria-current={pulseActive ? "page" : undefined}
+            >
+              Pulse
             </Link>
             <span className="soon" aria-disabled="true">
               Construction <span className="soon-tag">Soon</span>
@@ -105,6 +113,14 @@ export default function Nav() {
           aria-current={insuranceActive ? "page" : undefined}
         >
           Insurance
+        </Link>
+        <Link
+          href="/pulse"
+          onClick={close}
+          className={pulseActive ? "active" : undefined}
+          aria-current={pulseActive ? "page" : undefined}
+        >
+          Pulse
         </Link>
         <span className="soon" aria-disabled="true">
           Construction <span className="soon-tag">Soon</span>

@@ -11,8 +11,17 @@ import { getAllTerms } from "@/lib/data/glossary";
 import { getAllPosts } from "@/lib/data/blog";
 import { getAllStateSlugs as getAllLenderStateSlugs } from "@/lib/data/lenders";
 import { getAllTopicSlugs } from "@/lib/topics";
+import { getLatestDiesel } from "@/lib/data/intel/diesel";
+import { PADD_SLUGS } from "@/lib/validation/pulseSchema";
 
 const ORIGIN = "https://dispatched.finance";
+
+/* Hourly regeneration so the weekly Pulse cron's snapshot writes propagate
+   into <lastmod> without requiring a redeploy. Sitemap is otherwise cached
+   at build time. The cost is one extra getLatestDiesel() per regeneration
+   (a single fs.readFile of a tiny JSON file) plus the synchronous loops
+   over getAllPosts / getAllStates / getAllCities — all in-memory. */
+export const revalidate = 3600;
 
 /* ===========================================================================
    Sitemap discipline:
@@ -46,7 +55,7 @@ function lastModFor(url: string, override?: string): Date {
   return new Date(Date.now() - daysAgo * 86400000);
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const today = new Date();
   const entries: MetadataRoute.Sitemap = [];
 
@@ -690,15 +699,55 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
+  /* Dispatched Pulse — operational intelligence layer. Real lastModified
+     from the snapshot file so weekly fetches actually shift the freshness
+     signal. If the snapshot is missing (cold container, dev), fall back
+     silently — the deterministic-hash stagger below covers it. */
+  const pulseDates = new Map<string, string>();
+  try {
+    const diesel = await getLatestDiesel();
+    entries.push({
+      url: `${ORIGIN}/pulse`,
+      lastModified: today,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    });
+    entries.push({
+      url: `${ORIGIN}/pulse/diesel`,
+      lastModified: today,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    });
+    pulseDates.set(`${ORIGIN}/pulse`, diesel.generatedAt);
+    pulseDates.set(`${ORIGIN}/pulse/diesel`, diesel.generatedAt);
+    for (const slug of PADD_SLUGS) {
+      if (slug === "national") continue;
+      const url = `${ORIGIN}/pulse/diesel/${slug}`;
+      entries.push({
+        url,
+        lastModified: today,
+        changeFrequency: "weekly",
+        priority: 0.6,
+      });
+      pulseDates.set(url, diesel.generatedAt);
+    }
+  } catch {
+    /* snapshot unavailable — skip Pulse entries this build */
+  }
+
   /* Per-URL lastmod stagger. Replaces the uniform build-time `today` with
      a deterministic per-URL date so Google sees real freshness variance.
-     Override with real blog editorial dates where available. */
+     Override with real blog editorial dates and real Pulse snapshot dates
+     where available. */
   const blogDates = new Map<string, string>();
   for (const post of getAllPosts()) {
     blogDates.set(`${ORIGIN}/blog/${post.slug}`, post.updatedDate);
   }
   for (const e of entries) {
-    e.lastModified = lastModFor(e.url, blogDates.get(e.url));
+    e.lastModified = lastModFor(
+      e.url,
+      pulseDates.get(e.url) ?? blogDates.get(e.url),
+    );
   }
 
   return entries;
