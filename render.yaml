@@ -95,7 +95,11 @@ services:
   # the week's retail on-highway diesel survey (typically released Monday
   # afternoon ET). Same Bearer-CRON_SECRET auth model as indexnow-ping.
   # On failure the route returns 503 and the on-disk `latest.json` is NOT
-  # overwritten — pages keep serving the previous good snapshot.
+  # overwritten — pages keep serving the previous good snapshot. We do
+  # NOT trail with `|| echo` here: a missing EIA_API_KEY, EIA outage, or
+  # schema-validation failure must surface as a non-zero cron exit so
+  # Render's cron-job alerting fires. Pages stay live regardless because
+  # of the seed fallback in lib/data/intel/diesel.ts.
   - type: cron
     name: pulse-diesel
     runtime: node
@@ -103,8 +107,7 @@ services:
     buildCommand: "true"
     startCommand: |
       curl -fsS -X POST "https://dispatched.finance/api/cron/pulse-diesel" \
-        -H "Authorization: Bearer $CRON_SECRET" \
-        || echo "[pulse-diesel-cron] fetch failed (non-fatal)"
+        -H "Authorization: Bearer $CRON_SECRET"
     envVars:
       - key: CRON_SECRET
         sync: false

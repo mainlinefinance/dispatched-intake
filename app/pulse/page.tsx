@@ -90,7 +90,6 @@ const ORIGIN = "https://dispatched.finance";
 export default async function PulseIndexPage() {
   const diesel = await getLatestDiesel();
   const national = diesel.payload.regions.find((r) => r.slug === "national");
-  const today = new Date().toISOString().slice(0, 10);
   const dieselStale = isDieselSnapshotStale(diesel.generatedAt);
 
   return (
@@ -108,7 +107,7 @@ export default async function PulseIndexPage() {
             "Weekly diesel prices, freight rates, FMCSA enforcement, and lender appetite for trucking operators.",
           url: `${ORIGIN}/pulse`,
           datePublished: "2026-05-18",
-          dateModified: today,
+          dateModified: diesel.generatedAt,
         })}
       />
       <JsonLd payload={faqPage(INDEX_FAQS)} />

@@ -23,15 +23,46 @@ import {
 const REPO_SNAPSHOTS_ROOT = path.join(process.cwd(), "lib", "data", "intel", "snapshots");
 
 function snapshotsRoot(): string {
-  return process.env.PULSE_SNAPSHOTS_DIR || REPO_SNAPSHOTS_ROOT;
+  const override = process.env.PULSE_SNAPSHOTS_DIR;
+  return override && override.length > 0 ? override : REPO_SNAPSHOTS_ROOT;
 }
 
 export function dieselSnapshotPath(period: "latest" | string): string {
   return path.join(snapshotsRoot(), "diesel", `${period}.json`);
 }
 
+function repoDieselSnapshotPath(period: "latest" | string): string {
+  return path.join(REPO_SNAPSHOTS_ROOT, "diesel", `${period}.json`);
+}
+
+/* Two-tier read: primary path (Render Disk mount in prod), then in-repo seed.
+   The seed makes /pulse pages render on cold containers (disk newly mounted,
+   cron hasn't fired yet) and on the build host (where the disk doesn't exist
+   at all). Once the Monday cron writes a fresh snapshot, the primary path
+   wins and the seed becomes inert. Errors other than ENOENT propagate. */
+async function readSnapshotWithFallback(period: "latest" | string): Promise<string> {
+  const primary = dieselSnapshotPath(period);
+  try {
+    return await readFile(primary, "utf-8");
+  } catch (err) {
+    if (!isEnoent(err)) throw err;
+    const seed = repoDieselSnapshotPath(period);
+    if (seed === primary) throw err;
+    return await readFile(seed, "utf-8");
+  }
+}
+
+function isEnoent(err: unknown): boolean {
+  return (
+    typeof err === "object" &&
+    err !== null &&
+    "code" in err &&
+    (err as { code?: string }).code === "ENOENT"
+  );
+}
+
 export async function getLatestDiesel(): Promise<DieselSnapshot> {
-  const raw = await readFile(dieselSnapshotPath("latest"), "utf-8");
+  const raw = await readSnapshotWithFallback("latest");
   const parsed = DieselSnapshotSchema.safeParse(JSON.parse(raw));
   if (!parsed.success) {
     throw new Error(
@@ -79,6 +110,20 @@ export function formatPrice(usdPerGal: number): string {
 export function formatChange(absChange: number, pctChange: number): string {
   const sign = absChange >= 0 ? "+" : "";
   return `${sign}${absChange.toFixed(3)} (${sign}${pctChange.toFixed(1)}%)`;
+}
+
+/* Hero-strip delta string: "+0.012 WoW · +3.2% YoY" or, when yearAgo data
+   is unavailable, "+0.012 WoW · — YoY". Renders "—" (em dash) rather than
+   collapsing missing data into a misleading +0.0%. */
+export function formatHeroDelta(
+  changeAbs: number,
+  yoyChangePct: number | undefined,
+): string {
+  const wowSign = changeAbs >= 0 ? "+" : "";
+  const wow = `${wowSign}${changeAbs.toFixed(3)} WoW`;
+  if (yoyChangePct === undefined) return `${wow} · — YoY`;
+  const yoySign = yoyChangePct >= 0 ? "+" : "";
+  return `${wow} · ${yoySign}${yoyChangePct.toFixed(1)}% YoY`;
 }
 
 const DAY_MS = 86_400_000;

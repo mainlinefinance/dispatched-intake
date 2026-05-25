@@ -14,6 +14,7 @@ import PulseDigestSignup from "@/components/pulse/PulseDigestSignup";
 import {
   getLatestDiesel,
   formatPrice,
+  formatHeroDelta,
   isDieselSnapshotStale,
   PADD_LABELS,
   PADD_DESCRIPTIONS,
@@ -116,9 +117,7 @@ export default async function PaddDieselPage({
             metric={{
               label,
               value: formatPrice(region.current),
-              delta: `${region.changeAbs >= 0 ? "+" : ""}${region.changeAbs.toFixed(3)} WoW · ${
-                (region.yoyChangePct ?? 0) >= 0 ? "+" : ""
-              }${(region.yoyChangePct ?? 0).toFixed(1)}% YoY`,
+              delta: formatHeroDelta(region.changeAbs, region.yoyChangePct),
               deltaDirection: region.changeAbs < 0 ? "down" : "up",
             }}
           >
@@ -156,9 +155,11 @@ export default async function PaddDieselPage({
                 <dt>Year-over-year</dt>
                 <dd
                   className={
-                    (region.yoyChangePct ?? 0) < 0
-                      ? "pulse-delta--down"
-                      : "pulse-delta--up"
+                    region.yoyChangePct === undefined
+                      ? undefined
+                      : region.yoyChangePct < 0
+                        ? "pulse-delta--down"
+                        : "pulse-delta--up"
                   }
                 >
                   {region.yoyChangePct === undefined

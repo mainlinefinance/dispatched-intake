@@ -16,6 +16,13 @@ import { PADD_SLUGS } from "@/lib/validation/pulseSchema";
 
 const ORIGIN = "https://dispatched.finance";
 
+/* Hourly regeneration so the weekly Pulse cron's snapshot writes propagate
+   into <lastmod> without requiring a redeploy. Sitemap is otherwise cached
+   at build time. The cost is one extra getLatestDiesel() per regeneration
+   (a single fs.readFile of a tiny JSON file) plus the synchronous loops
+   over getAllPosts / getAllStates / getAllCities — all in-memory. */
+export const revalidate = 3600;
+
 /* ===========================================================================
    Sitemap discipline:
      - Only include pages that we are willing to defend in search results.

@@ -14,6 +14,7 @@ import PulseDigestSignup from "@/components/pulse/PulseDigestSignup";
 import {
   getLatestDiesel,
   formatPrice,
+  formatHeroDelta,
   isDieselSnapshotStale,
 } from "@/lib/data/intel/diesel";
 
@@ -61,7 +62,6 @@ const PADD_SUMMARY = [
 
 export default async function DieselIndexPage() {
   const snapshot = await getLatestDiesel();
-  const today = new Date().toISOString().slice(0, 10);
   const stale = isDieselSnapshotStale(snapshot.generatedAt);
   const national = snapshot.payload.regions.find((r) => r.slug === "national");
   if (!national) {
@@ -101,7 +101,7 @@ export default async function DieselIndexPage() {
             "U.S. weekly retail on-highway diesel — national plus PADD 1-5.",
           url: `${ORIGIN}/pulse/diesel`,
           datePublished: snapshot.generatedAt,
-          dateModified: today,
+          dateModified: snapshot.generatedAt,
         })}
       />
       <JsonLd payload={faqPage(FAQS)} />
@@ -115,9 +115,7 @@ export default async function DieselIndexPage() {
             metric={{
               label: "U.S. national",
               value: formatPrice(national.current),
-              delta: `${national.changeAbs >= 0 ? "+" : ""}${national.changeAbs.toFixed(3)} WoW · ${
-                (national.yoyChangePct ?? 0) >= 0 ? "+" : ""
-              }${(national.yoyChangePct ?? 0).toFixed(1)}% YoY`,
+              delta: formatHeroDelta(national.changeAbs, national.yoyChangePct),
               deltaDirection: national.changeAbs < 0 ? "down" : "up",
             }}
           >
