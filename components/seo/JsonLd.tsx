@@ -419,6 +419,55 @@ export function softwareApplication(args: {
   };
 }
 
+/* Dataset — for Dispatched Pulse data pages (diesel, freight rates, etc.).
+   `Dataset` is one of the highest-cited schema types by Perplexity / ChatGPT
+   for numeric queries ("what is the current diesel price"). Pairs with
+   article() on the same page (Article describes the commentary, Dataset
+   describes the data). Set `isBasedOn` to the upstream source URL (EIA,
+   FMCSA) so the citation chain is auditable. */
+export function dataset(args: {
+  name: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  temporalCoverage: string; // ISO 8601 interval, e.g. "2026-W20"
+  variableMeasured: string; // e.g. "Retail diesel price (USD/gal)"
+  spatialCoverage?: string; // e.g. "United States" or "PADD 1 — East Coast"
+  sourceName: string;       // e.g. "U.S. Energy Information Administration"
+  sourceUrl: string;        // upstream source URL
+  license?: string;         // distribution license URL or label
+  measurementTechnique?: string;
+}): JsonLdPayload {
+  const payload: JsonLdPayload = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: args.name,
+    description: args.description,
+    url: args.url,
+    datePublished: args.datePublished,
+    dateModified: args.dateModified,
+    temporalCoverage: args.temporalCoverage,
+    variableMeasured: args.variableMeasured,
+    creator: { "@id": ORG_ID },
+    publisher: { "@id": ORG_ID },
+    isBasedOn: {
+      "@type": "Dataset",
+      name: args.sourceName,
+      url: args.sourceUrl,
+    },
+    distribution: {
+      "@type": "DataDownload",
+      contentUrl: args.url,
+      encodingFormat: "text/html",
+    },
+  };
+  if (args.spatialCoverage) payload.spatialCoverage = args.spatialCoverage;
+  if (args.license) payload.license = args.license;
+  if (args.measurementTechnique) payload.measurementTechnique = args.measurementTechnique;
+  return payload;
+}
+
 /* InsuranceAgency — entity-level wrapper for the /insurance pillar page.
    Complements the Article schema on the same page (Article describes the
    editorial; InsuranceAgency describes the entity providing the service). */

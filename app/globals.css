@@ -9,6 +9,7 @@
 @import "./styles/geo.css";
 @import "./styles/landing.css";
 @import "./styles/insurance.css";
+@import "./styles/pulse.css";
 
 body {
   background: var(--color-bg-paper);
