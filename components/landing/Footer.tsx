@@ -45,11 +45,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <span className="soon" aria-disabled="true">
-                  Fuel advances <span className="soon-tag">Soon</span>
-                </span>
-              </li>
-              <li>
                 <Link href="/truck-repair-loans">Truck repair loans</Link>
               </li>
               <li>
@@ -86,11 +81,6 @@ export default function Footer() {
                   New authority financing
                 </Link>
               </li>
-              <li>
-                <span className="soon" aria-disabled="true">
-                  Construction <span className="soon-tag">Soon</span>
-                </span>
-              </li>
             </ul>
           </div>
           <div className="col">
@@ -103,19 +93,7 @@ export default function Footer() {
                 <a href="#how-it-works">How it works</a>
               </li>
               <li>
-                <span className="soon" aria-disabled="true">
-                  Lender partners <span className="soon-tag">Soon</span>
-                </span>
-              </li>
-              <li>
-                <span className="soon" aria-disabled="true">
-                  Press &amp; newsroom <span className="soon-tag">Soon</span>
-                </span>
-              </li>
-              <li>
-                <span className="soon" aria-disabled="true">
-                  Careers <span className="soon-tag">Soon</span>
-                </span>
+                <Link href="/methodology">Methodology</Link>
               </li>
             </ul>
           </div>
@@ -129,19 +107,9 @@ export default function Footer() {
                 <Link href="/pulse/diesel">Diesel prices</Link>
               </li>
               <li>
-                <span className="soon" aria-disabled="true">
-                  Freight rates <span className="soon-tag">Soon</span>
-                </span>
-              </li>
-              <li>
-                <span className="soon" aria-disabled="true">
-                  FMCSA & regulation <span className="soon-tag">Soon</span>
-                </span>
-              </li>
-              <li>
-                <span className="soon" aria-disabled="true">
-                  Lender appetite <span className="soon-tag">Soon</span>
-                </span>
+                <Link href="/research/state-of-commercial-trucking-insurance-2026">
+                  Trucking insurance 2026
+                </Link>
               </li>
             </ul>
           </div>
@@ -158,19 +126,7 @@ export default function Footer() {
                 <a href={PHONE_TEL}>Contact us</a>
               </li>
               <li>
-                <span className="soon" aria-disabled="true">
-                  Application status <span className="soon-tag">Soon</span>
-                </span>
-              </li>
-              <li>
-                <span className="soon" aria-disabled="true">
-                  Complaints <span className="soon-tag">Soon</span>
-                </span>
-              </li>
-              <li>
-                <span className="soon" aria-disabled="true">
-                  Accessibility <span className="soon-tag">Soon</span>
-                </span>
+                <Link href="/disclosures">Disclosures</Link>
               </li>
             </ul>
           </div>
@@ -203,6 +159,15 @@ export default function Footer() {
               states. State-specific licensing information will be listed
               here prior to launch. Dispatched does not broker loans to
               consumers and does not extend credit directly.
+            </p>
+            <p className="footer-partners">
+              Insurance quotes routed through{" "}
+              <strong>Coverdash</strong>, the licensed insurance producer
+              of record. Carrier solvency ratings sourced from{" "}
+              <strong>AM Best</strong>. Capital matching to a panel of
+              commercial lenders; no consumer credit products. Founded
+              and operated by{" "}
+              <Link href="/about">Angelo Orru Neto</Link>.
             </p>
           </div>
           <div className="legal-links">

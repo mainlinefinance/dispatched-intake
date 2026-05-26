@@ -41,10 +41,10 @@ export default function Hero() {
             See my funding options
             <IconArrowRight />
           </Link>
-          <a href={PHONE_TEL} className="hero-call-cta">
-            <IconPhone />
-            Call a funding specialist
-          </a>
+          <Link href="/qualify" className="hero-call-cta">
+            Check your funding fit
+            <IconArrowRight />
+          </Link>
         </div>
         <p className="hero-cta-note">
           No hard credit pull to start.{" "}
@@ -54,9 +54,10 @@ export default function Hero() {
           Takes about 2 minutes.
         </p>
         <div className="hero-quietlinks">
-          <Link href="/qualify" className="hero-secondary-link">
-            Check your funding fit <IconArrowRight />
-          </Link>
+          <a href={PHONE_TEL} className="hero-secondary-link">
+            <IconPhone />
+            Call a funding specialist
+          </a>
           <a href="#how-it-works" className="hero-secondary-link">
             How it works <IconArrowRight />
           </a>

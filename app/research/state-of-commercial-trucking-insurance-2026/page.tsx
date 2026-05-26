@@ -121,6 +121,7 @@ export default function StateOfTruckingInsurance2026() {
           url,
           datePublished: "2026-01-15",
           dateModified: "2026-05-11",
+          authorName: "Angelo Orru Neto",
         })}
       />
       <JsonLd payload={faqPage(faqs)} />
@@ -140,8 +141,9 @@ export default function StateOfTruckingInsurance2026() {
               and rating dynamics moving premiums in the year ahead.
             </p>
             <p className="research-meta">
-              Published {today} · Dispatched Research · Ten sources
-              referenced inline. Reviewer attestation pending.
+              By{" "}
+              <Link href="/about">Angelo Orru Neto, Founder</Link>
+              {" · "}Published {today} · Ten sources referenced inline.
             </p>
           </header>
 
@@ -545,10 +547,15 @@ export default function StateOfTruckingInsurance2026() {
               auditable against a public source.
             </p>
             <p>
-              Reviewer attestation is pending. The body above is sourced
-              but has not yet been signed off by a credentialed reviewer
-              (a CPCU with commercial-trucking practice and a former
-              motor-carrier underwriter are the recruitment targets).
+              Authored by Angelo Orru Neto, founder of Dispatched. The
+              report is sourced but not independently attested; a
+              credentialed reviewer (CPCU with commercial-trucking
+              practice, or a former motor-carrier underwriter) will sign
+              off the next major revision. Questions or corrections:{" "}
+              <a href="mailto:angelo@dispatched.finance">
+                angelo@dispatched.finance
+              </a>
+              .
             </p>
           </section>
 
