@@ -23,11 +23,6 @@
   margin-bottom: var(--space-6);
 }
 
-.apply-sub {
-  color: var(--color-ink-secondary);
-  margin: var(--space-2) 0 0;
-}
-
 /* ---------- Trust strip (3 chips, above widget) ---------- */
 .apply-trust {
   list-style: none;
@@ -51,85 +46,6 @@
 }
 
 .apply-trust-icon {
-  color: var(--color-steel-600);
-  flex-shrink: 0;
-}
-
-/* ---------- Process strip (4 steps, above widget) ---------- */
-.apply-process {
-  list-style: none;
-  padding: var(--space-6);
-  margin: 0 0 var(--space-4);
-  background: var(--color-bg-sunken);
-  border-radius: var(--radius-lg);
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-4);
-}
-
-@media (min-width: 720px) {
-  .apply-process {
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-3);
-  }
-}
-
-.apply-process-step {
-  display: flex;
-  gap: var(--space-3);
-  align-items: flex-start;
-}
-
-.apply-process-num {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  border-radius: var(--radius-pill);
-  background: var(--color-steel-600);
-  color: var(--color-ink-inverse);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: var(--fs-small);
-  line-height: 1;
-}
-
-.apply-process-title {
-  margin: 0;
-  font-weight: 600;
-  font-size: var(--fs-body);
-  color: var(--color-ink-primary);
-}
-
-.apply-process-detail {
-  margin: var(--space-1) 0 0;
-  font-size: var(--fs-small);
-  line-height: 1.45;
-  color: var(--color-ink-secondary);
-}
-
-/* ---------- Human-contact callout (above widget) ---------- */
-.apply-callout {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  margin: 0 0 var(--space-6);
-  padding: var(--space-3) var(--space-4);
-  background: var(--color-bg-surface);
-  border: 1px dashed var(--color-border-strong);
-  border-radius: var(--radius-md);
-  font-size: var(--fs-small);
-  color: var(--color-ink-secondary);
-}
-
-.apply-callout a {
-  color: var(--color-ink-primary);
-  font-weight: 600;
-}
-
-.apply-callout-icon {
   color: var(--color-steel-600);
   flex-shrink: 0;
 }
