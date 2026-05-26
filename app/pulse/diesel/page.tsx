@@ -22,11 +22,29 @@ export const revalidate = 3600;
 
 const ORIGIN = "https://dispatched.finance";
 
+const DIESEL_TITLE = "U.S. Diesel Prices This Week — Dispatched Pulse";
+const DIESEL_DESCRIPTION =
+  "Weekly U.S. retail on-highway diesel — national plus PADD 1-5. Sourced from EIA, updated every Monday. The number truckers actually see at the pump.";
+
 export const metadata: Metadata = {
-  title: "U.S. Diesel Prices This Week — Dispatched Pulse",
-  description:
-    "Weekly U.S. retail on-highway diesel — national plus PADD 1-5. Sourced from EIA, updated every Monday. The number truckers actually see at the pump.",
+  title: DIESEL_TITLE,
+  description: DIESEL_DESCRIPTION,
   alternates: { canonical: "/pulse/diesel" },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Dispatched",
+    title: DIESEL_TITLE,
+    description: DIESEL_DESCRIPTION,
+    url: "/pulse/diesel",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@dispatchedfin",
+    creator: "@dispatchedfin",
+    title: DIESEL_TITLE,
+    description: DIESEL_DESCRIPTION,
+  },
 };
 
 const FAQS = [

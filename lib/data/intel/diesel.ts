@@ -127,12 +127,13 @@ export function formatHeroDelta(
 }
 
 const DAY_MS = 86_400_000;
-const DIESEL_STALE_THRESHOLD_DAYS = 10;
+const DIESEL_STALE_THRESHOLD_DAYS = 8;
 
 /* Server-side staleness check. Lives here (not in the badge component)
    because React purity rules forbid Date.now() during component render.
-   Diesel snapshots refresh weekly on Mondays; anything older than 10 days
-   is treated as a delayed refresh. */
+   Diesel snapshots refresh weekly on Mondays; anything older than 8 days
+   is treated as a delayed refresh (one day of slack past the Monday cron
+   so a Tuesday view of last Monday's data does not falsely flip stale). */
 export function isDieselSnapshotStale(generatedAt: string): boolean {
   const ageMs = new Date().getTime() - new Date(generatedAt).getTime();
   return ageMs > DIESEL_STALE_THRESHOLD_DAYS * DAY_MS;

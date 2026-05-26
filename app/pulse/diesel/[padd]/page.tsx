@@ -41,10 +41,28 @@ export async function generateMetadata({
   const { padd } = await params;
   if (!isPaddPathSlug(padd)) return {};
   const label = PADD_LABELS[padd];
+  const title = `${label} Diesel Prices This Week — Dispatched Pulse`;
+  const description = PADD_DESCRIPTIONS[padd];
+  const canonical = `/pulse/diesel/${padd}`;
   return {
-    title: `${label} Diesel Prices This Week — Dispatched Pulse`,
-    description: PADD_DESCRIPTIONS[padd],
-    alternates: { canonical: `/pulse/diesel/${padd}` },
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      type: "website",
+      locale: "en_US",
+      siteName: "Dispatched",
+      title,
+      description,
+      url: canonical,
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@dispatchedfin",
+      creator: "@dispatchedfin",
+      title,
+      description,
+    },
   };
 }
 

@@ -62,9 +62,6 @@ export default function Nav() {
             >
               Pulse
             </Link>
-            <span className="soon" aria-disabled="true">
-              Construction <span className="soon-tag">Soon</span>
-            </span>
             <a href="#how-it-works">How it works</a>
             <a href="#faq">FAQ</a>
           </div>
@@ -122,9 +119,6 @@ export default function Nav() {
         >
           Pulse
         </Link>
-        <span className="soon" aria-disabled="true">
-          Construction <span className="soon-tag">Soon</span>
-        </span>
         <a href="#how-it-works" onClick={close}>
           How it works
         </a>
