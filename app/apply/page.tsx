@@ -2,18 +2,16 @@ import type { Metadata } from "next";
 import LendflowWidget from "./_components/LendflowWidget";
 import ApplyFaq from "./_components/ApplyFaq";
 import { JsonLd, faqPage } from "@/components/seo/JsonLd";
-import { PHONE_TEL, PHONE_DISPLAY } from "@/lib/contact";
 import {
   IconShieldCheck,
   IconDollarCircle,
   IconLock,
-  IconPhone,
 } from "@/components/landing/icons";
 
 export const metadata: Metadata = {
   title: "Apply for trucking funding — soft pull | Dispatched",
   description:
-    "Apply for trucking working capital, equipment, or repair financing. Soft-pull match in 20 minutes. No upfront fees. Funds same banking day on approval.",
+    "Apply for trucking working capital, equipment, or repair financing. Soft-pull match — no impact to your credit. No upfront fees.",
   // Conversion endpoint — embedded Lendflow widget. No SEO value as a landing
   // page; indexing it would dilute ranking signals across the actual money
   // pages (working capital, equipment, etc.) that should rank for funding
@@ -23,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Apply for trucking funding — soft pull | Dispatched",
     description:
-      "Apply for trucking working capital, equipment, or repair financing. Soft-pull match in 20 minutes. No upfront fees. Funds same banking day on approval.",
+      "Apply for trucking working capital, equipment, or repair financing. Soft-pull match — no impact to your credit. No upfront fees.",
     url: "/apply",
     type: "website",
   },
@@ -31,11 +29,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Apply for trucking funding — soft pull | Dispatched",
     description:
-      "Apply for trucking working capital, equipment, or repair financing. Soft-pull match in 20 minutes. No upfront fees. Funds same banking day on approval.",
+      "Apply for trucking working capital, equipment, or repair financing. Soft-pull match — no impact to your credit. No upfront fees.",
   },
 };
-
-const SUPPORT_EMAIL = "support@dispatched.finance";
 
 // Same source feeds both the visible accordion (<ApplyFaq>) and the
 // FAQPage JSON-LD — answers stay byte-identical, no schema/visible-content
@@ -44,7 +40,7 @@ const SUPPORT_EMAIL = "support@dispatched.finance";
 const faqs = [
   {
     q: "What happens after I submit the application?",
-    a: "You see a soft-approval range and a shortlist of 2 to 4 matched lenders typically within 20 minutes. You pick the lender that fits. The chosen lender runs a hard pull and sends a final term sheet (APR, term, total cost) usually within 4 hours. You review, ask questions on the phone, e-sign from your phone, and the wire goes out the same banking day if it lands before the cutoff.",
+    a: "You see a soft-approval range and a shortlist of 2 to 4 matched lenders. You pick the lender that fits. The chosen lender runs a hard pull and sends a final term sheet (APR, term, total cost). You review, ask questions on the phone, e-sign from your phone, and the wire goes out once the lender clears final docs.",
   },
   {
     q: "Will applying affect my credit score?",
@@ -60,15 +56,8 @@ const faqs = [
   },
   {
     q: "How long does the application take?",
-    a: "Most applicants finish in under 7 minutes. The application is structured so you can complete it on a phone in a parking lot — no document uploads required at the soft-pull stage. Document collection happens after you pick a lender, on that lender's secure portal.",
+    a: "The application is short — designed so you can complete it on a phone in a parking lot. No document uploads required at the soft-pull stage. Document collection happens after you pick a lender, on that lender's secure portal.",
   },
-];
-
-const PROCESS_STEPS = [
-  { n: 1, title: "Apply", detail: "~7 min on your phone" },
-  { n: 2, title: "Match", detail: "Soft-pull range + 2–4 lenders in ~20 min" },
-  { n: 3, title: "Pick", detail: "Choose a lender; hard pull + term sheet" },
-  { n: 4, title: "Fund", detail: "Wire same banking day on approval" },
 ];
 
 export default function ApplyPage() {
@@ -78,10 +67,6 @@ export default function ApplyPage() {
 
       <header className="apply-header">
         <h1 className="t-h1">Apply for funding</h1>
-        <p className="t-body-lg apply-sub">
-          Soft-pull match in 20 minutes. No impact to your credit. No upfront
-          fees.
-        </p>
       </header>
 
       <ul
@@ -102,30 +87,6 @@ export default function ApplyPage() {
           <span>Bank-grade encryption</span>
         </li>
       </ul>
-
-      <ol className="apply-process" aria-label="How matching works">
-        {PROCESS_STEPS.map((s) => (
-          <li key={s.n} className="apply-process-step">
-            <span className="apply-process-num" aria-hidden>
-              {s.n}
-            </span>
-            <div>
-              <p className="apply-process-title">{s.title}</p>
-              <p className="apply-process-detail">{s.detail}</p>
-            </div>
-          </li>
-        ))}
-      </ol>
-
-      <p className="apply-callout">
-        <IconPhone className="apply-callout-icon" />
-        <span>
-          Prefer to apply by phone? Call{" "}
-          <a href={PHONE_TEL}>{PHONE_DISPLAY}</a> or email{" "}
-          <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> — a human
-          picks up.
-        </span>
-      </p>
 
       <LendflowWidget />
 
