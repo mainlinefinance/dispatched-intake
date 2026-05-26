@@ -20,11 +20,29 @@ import {
    /api/cron/pulse-* routes. */
 export const revalidate = 3600;
 
+const PULSE_TITLE = "Dispatched Pulse — Trucking Market Intelligence";
+const PULSE_DESCRIPTION =
+  "Weekly diesel prices, freight rates, FMCSA enforcement, and lender appetite for trucking operators. Source-cited, free, no signup required.";
+
 export const metadata: Metadata = {
-  title: "Dispatched Pulse — Trucking Market Intelligence",
-  description:
-    "Weekly diesel prices, freight rates, FMCSA enforcement, and lender appetite for trucking operators. Source-cited, free, no signup required.",
+  title: PULSE_TITLE,
+  description: PULSE_DESCRIPTION,
   alternates: { canonical: "/pulse" },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Dispatched",
+    title: PULSE_TITLE,
+    description: PULSE_DESCRIPTION,
+    url: "/pulse",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@dispatchedfin",
+    creator: "@dispatchedfin",
+    title: PULSE_TITLE,
+    description: PULSE_DESCRIPTION,
+  },
 };
 
 const PILLARS = [
@@ -122,7 +140,7 @@ export default async function PulseIndexPage() {
                 ? {
                     label: `U.S. diesel · ${new Date(diesel.payload.asOf).toLocaleDateString(
                       "en-US",
-                      { month: "short", day: "numeric" },
+                      { month: "short", day: "numeric", timeZone: "UTC" },
                     )}`,
                     value: formatPrice(national.current),
                     delta: `${national.changeAbs >= 0 ? "+" : ""}${national.changeAbs.toFixed(3)} WoW`,
