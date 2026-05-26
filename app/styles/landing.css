@@ -1454,6 +1454,17 @@
 .landing .footer .bottom .compliance { max-width: 720px; }
 .landing .footer .bottom .compliance p { margin: 0 0 8px; }
 .landing .footer .bottom .compliance p:last-child { margin-bottom: 0; }
+.landing .footer .bottom .compliance .footer-partners {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-ink-inverse-50);
+  color: var(--color-ink-inverse-70);
+}
+.landing .footer .bottom .compliance .footer-partners a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 .landing .footer .bottom .legal-links { display: flex; gap: 20px; }
 .landing .footer .bottom .legal-links a {
   padding: 4px 0;
