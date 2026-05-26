@@ -21,6 +21,13 @@ export default function Nav() {
     (pathname?.startsWith("/insurance") ?? false) ||
     (pathname?.startsWith("/carriers") ?? false);
   const pulseActive = pathname?.startsWith("/pulse") ?? false;
+  /* Anchor sections (#how-it-works, #faq) live on the home page only.
+     Off-home, ship a "/#anchor" so clicking navigates to home + scrolls
+     instead of dead-anchoring on the current page and emitting a noise
+     pageview to analytics. */
+  const onHome = pathname === "/";
+  const howItWorksHref = onHome ? "#how-it-works" : "/#how-it-works";
+  const faqHref = onHome ? "#faq" : "/#faq";
   const close = () => setMobileOpen(false);
 
   useEffect(() => {
@@ -62,8 +69,8 @@ export default function Nav() {
             >
               Pulse
             </Link>
-            <a href="#how-it-works">How it works</a>
-            <a href="#faq">FAQ</a>
+            <a href={howItWorksHref}>How it works</a>
+            <a href={faqHref}>FAQ</a>
           </div>
           <div className="nav-right">
             <a href={PHONE_TEL} className="nav-phone">
@@ -119,10 +126,10 @@ export default function Nav() {
         >
           Pulse
         </Link>
-        <a href="#how-it-works" onClick={close}>
+        <a href={howItWorksHref} onClick={close}>
           How it works
         </a>
-        <a href="#faq" onClick={close}>
+        <a href={faqHref} onClick={close}>
           FAQ
         </a>
         <div className="mobile-foot">

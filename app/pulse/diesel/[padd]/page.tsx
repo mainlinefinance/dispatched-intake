@@ -55,6 +55,7 @@ export async function generateMetadata({
       title,
       description,
       url: canonical,
+      images: ["/opengraph-image"],
     },
     twitter: {
       card: "summary_large_image",
@@ -62,6 +63,7 @@ export async function generateMetadata({
       creator: "@dispatchedfin",
       title,
       description,
+      images: ["/opengraph-image"],
     },
   };
 }
