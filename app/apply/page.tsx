@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import LendflowWidget from "./_components/LendflowWidget";
-import HdyhauSurvey from "@/components/hdyhau/HdyhauSurvey";
+import ApplyFaq from "./_components/ApplyFaq";
 import { JsonLd, faqPage } from "@/components/seo/JsonLd";
+import { PHONE_TEL, PHONE_DISPLAY } from "@/lib/contact";
+import {
+  IconShieldCheck,
+  IconDollarCircle,
+  IconLock,
+  IconPhone,
+} from "@/components/landing/icons";
 
 export const metadata: Metadata = {
   title: "Apply for trucking funding — soft pull | Dispatched",
@@ -28,11 +35,12 @@ export const metadata: Metadata = {
   },
 };
 
-// FAQPage JSON-LD only — no visible FAQ accordion. Per A5 decision: /apply is
-// a pure conversion page (Lendflow widget owns the chrome below the H1) and a
-// visible FAQ would dilute completion rate. Schema-only ships the rich-result
-// eligibility without harming CRO. The marketing/upstream pages own the
-// visible accordion versions of these objections.
+const SUPPORT_EMAIL = "support@dispatched.finance";
+
+// Same source feeds both the visible accordion (<ApplyFaq>) and the
+// FAQPage JSON-LD — answers stay byte-identical, no schema/visible-content
+// divergence penalty from Google. Edit both representations by editing
+// this one array.
 const faqs = [
   {
     q: "What happens after I submit the application?",
@@ -56,29 +64,100 @@ const faqs = [
   },
 ];
 
+const PROCESS_STEPS = [
+  { n: 1, title: "Apply", detail: "~7 min on your phone" },
+  { n: 2, title: "Match", detail: "Soft-pull range + 2–4 lenders in ~20 min" },
+  { n: 3, title: "Pick", detail: "Choose a lender; hard pull + term sheet" },
+  { n: 4, title: "Fund", detail: "Wire same banking day on approval" },
+];
+
 export default function ApplyPage() {
   return (
-    <main
-      id="main-content"
-      style={{
-        maxWidth: 760,
-        margin: "0 auto",
-        padding: "var(--space-12) var(--gutter-mobile)",
-      }}
-    >
+    <main id="main-content" className="apply-shell">
       <JsonLd payload={faqPage(faqs)} />
-      <header style={{ marginBottom: "var(--space-8)" }}>
+
+      <header className="apply-header">
         <h1 className="t-h1">Apply for funding</h1>
-        <p
-          className="t-body-lg"
-          style={{ color: "var(--color-ink-secondary)" }}
-        >
-          Get matched with funding partners in minutes. No impact to your
-          credit.
+        <p className="t-body-lg apply-sub">
+          Soft-pull match in 20 minutes. No impact to your credit. No upfront
+          fees.
         </p>
       </header>
-      <HdyhauSurvey source="apply" />
+
+      <ul
+        className="apply-trust"
+        role="list"
+        aria-label="Application guarantees"
+      >
+        <li className="apply-trust-chip">
+          <IconShieldCheck size={20} className="apply-trust-icon" />
+          <span>Soft pull — no credit impact</span>
+        </li>
+        <li className="apply-trust-chip">
+          <IconDollarCircle size={20} className="apply-trust-icon" />
+          <span>No upfront fees, ever</span>
+        </li>
+        <li className="apply-trust-chip">
+          <IconLock size={20} className="apply-trust-icon" />
+          <span>Bank-grade encryption</span>
+        </li>
+      </ul>
+
+      <ol className="apply-process" aria-label="How matching works">
+        {PROCESS_STEPS.map((s) => (
+          <li key={s.n} className="apply-process-step">
+            <span className="apply-process-num" aria-hidden>
+              {s.n}
+            </span>
+            <div>
+              <p className="apply-process-title">{s.title}</p>
+              <p className="apply-process-detail">{s.detail}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+
+      <p className="apply-callout">
+        <IconPhone className="apply-callout-icon" />
+        <span>
+          Prefer to apply by phone? Call{" "}
+          <a href={PHONE_TEL}>{PHONE_DISPLAY}</a> or email{" "}
+          <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> — a human
+          picks up.
+        </span>
+      </p>
+
       <LendflowWidget />
+
+      {/* Lendflow (the embedded application vendor) holds SOC 2 Type II via
+          Thoropass. Phrased as a property of the application infrastructure,
+          not a Dispatched certification, to stay accurate while the
+          partnership is unannounced. Verified on lendflow.com 2026-05-26. */}
+      <p className="apply-infrastructure">
+        <IconLock className="apply-infrastructure-icon" />
+        <span>
+          Application infrastructure is SOC 2 Type II audited and used by
+          major US lenders.
+        </span>
+      </p>
+
+      <aside className="apply-founder" aria-label="From the founder">
+        <div className="apply-founder-mark" aria-hidden>
+          AO
+        </div>
+        <div>
+          <p className="apply-founder-body">
+            Built by operators for operators. Dispatched gets paid only when
+            you fund — never on applications.
+          </p>
+          <p className="apply-founder-sig">
+            <strong>Angelo Orru Neto</strong>, Founder &middot;{" "}
+            <a href="/about">About Dispatched</a>
+          </p>
+        </div>
+      </aside>
+
+      <ApplyFaq items={faqs} />
     </main>
   );
 }

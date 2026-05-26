@@ -1,0 +1,253 @@
+/* =========================================================================
+   /apply page chrome — trust strip, process strip, contact callout,
+   founder note, FAQ accordion, infrastructure micro-line.
+
+   Every section here exists to defeat a specific objection that drives
+   mid-form bailout on a third-party lending widget:
+   - "will this hurt my credit?"     → trust strip + FAQ
+   - "what happens after I submit?"  → process strip + FAQ
+   - "is this a scam?"               → founder note + human-contact callout
+   - "is my data safe?"              → encryption chip + infrastructure line
+
+   Visual weight is intentionally low so the Lendflow widget stays the
+   focal point.
+   ========================================================================= */
+
+.apply-shell {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: var(--space-12) var(--gutter-mobile);
+}
+
+.apply-header {
+  margin-bottom: var(--space-6);
+}
+
+.apply-sub {
+  color: var(--color-ink-secondary);
+  margin: var(--space-2) 0 0;
+}
+
+/* ---------- Trust strip (3 chips, above widget) ---------- */
+.apply-trust {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-4);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-3);
+}
+
+.apply-trust-chip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-small);
+  color: var(--color-ink-primary);
+}
+
+.apply-trust-icon {
+  color: var(--color-steel-600);
+  flex-shrink: 0;
+}
+
+/* ---------- Process strip (4 steps, above widget) ---------- */
+.apply-process {
+  list-style: none;
+  padding: var(--space-6);
+  margin: 0 0 var(--space-4);
+  background: var(--color-bg-sunken);
+  border-radius: var(--radius-lg);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 720px) {
+  .apply-process {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+  }
+}
+
+.apply-process-step {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+
+.apply-process-num {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-pill);
+  background: var(--color-steel-600);
+  color: var(--color-ink-inverse);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-small);
+  line-height: 1;
+}
+
+.apply-process-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: var(--fs-body);
+  color: var(--color-ink-primary);
+}
+
+.apply-process-detail {
+  margin: var(--space-1) 0 0;
+  font-size: var(--fs-small);
+  line-height: 1.45;
+  color: var(--color-ink-secondary);
+}
+
+/* ---------- Human-contact callout (above widget) ---------- */
+.apply-callout {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-6);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-surface);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-small);
+  color: var(--color-ink-secondary);
+}
+
+.apply-callout a {
+  color: var(--color-ink-primary);
+  font-weight: 600;
+}
+
+.apply-callout-icon {
+  color: var(--color-steel-600);
+  flex-shrink: 0;
+}
+
+/* ---------- Infrastructure micro-line (below widget) ---------- */
+.apply-infrastructure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin: var(--space-6) 0;
+  font-size: var(--fs-caption);
+  color: var(--color-ink-tertiary);
+  text-align: center;
+}
+
+.apply-infrastructure-icon {
+  color: var(--color-ink-tertiary);
+  flex-shrink: 0;
+}
+
+/* ---------- Founder note ---------- */
+.apply-founder {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  margin: var(--space-8) 0;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.apply-founder-mark {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-pill);
+  background: var(--color-steel-600);
+  color: var(--color-ink-inverse);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-body);
+  letter-spacing: 0.04em;
+}
+
+.apply-founder-body {
+  margin: 0 0 var(--space-2);
+  color: var(--color-ink-primary);
+  line-height: var(--lh-body);
+}
+
+.apply-founder-sig {
+  margin: 0;
+  font-size: var(--fs-small);
+  color: var(--color-ink-secondary);
+}
+
+.apply-founder-sig a {
+  color: var(--color-steel-600);
+  text-decoration: underline;
+}
+
+/* ---------- FAQ accordion (below widget) ---------- */
+.apply-faq {
+  margin: var(--space-8) 0 0;
+}
+
+.apply-faq-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--tr-h2);
+  color: var(--color-ink-primary);
+  margin: 0 0 var(--space-4);
+}
+
+.apply-faq-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.apply-faq-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-4) 0;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-body);
+  color: var(--color-ink-primary);
+  cursor: pointer;
+}
+
+.apply-faq-button:hover {
+  color: var(--color-steel-600);
+}
+
+.apply-faq-button .chev {
+  flex-shrink: 0;
+  color: var(--color-ink-tertiary);
+  transition: transform 0.15s ease;
+}
+
+.apply-faq-item.open .apply-faq-button .chev {
+  transform: rotate(180deg);
+}
+
+.apply-faq-answer p {
+  margin: 0 0 var(--space-4);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-ink-secondary);
+}
