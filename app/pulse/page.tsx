@@ -35,6 +35,13 @@ export const metadata: Metadata = {
     title: PULSE_TITLE,
     description: PULSE_DESCRIPTION,
     url: "/pulse",
+    /* Re-state images explicitly: Next.js replaces (does not merge) the
+       openGraph object when a child sets it, which silently drops the
+       file-based image at app/opengraph-image.tsx that the layout relied
+       on. Pointing at "/opengraph-image" keeps the same auto-generated
+       card; add a per-route opengraph-image.tsx later for pulse-specific
+       imagery. */
+    images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
@@ -42,6 +49,7 @@ export const metadata: Metadata = {
     creator: "@dispatchedfin",
     title: PULSE_TITLE,
     description: PULSE_DESCRIPTION,
+    images: ["/opengraph-image"],
   },
 };
 

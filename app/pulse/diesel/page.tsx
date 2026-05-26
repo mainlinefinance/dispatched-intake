@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     title: DIESEL_TITLE,
     description: DIESEL_DESCRIPTION,
     url: "/pulse/diesel",
+    images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
@@ -44,6 +45,7 @@ export const metadata: Metadata = {
     creator: "@dispatchedfin",
     title: DIESEL_TITLE,
     description: DIESEL_DESCRIPTION,
+    images: ["/opengraph-image"],
   },
 };
 

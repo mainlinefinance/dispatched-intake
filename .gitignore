@@ -51,3 +51,4 @@ next-env.d.ts
 # tools that want to see the docs next to the code; do not track it.
 # Untracked from b1ad1b5 onward; those files remain in history.
 cowork.dispatched.finance/
+.gstack/
