@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FactoringFlowDiagram } from "@/components/diagrams/FactoringFlowDiagram";
 import EmailCapture from "@/components/landing/EmailCapture";
+import ResearchByline from "@/components/landing/ResearchByline";
 import {
   JsonLd,
   article,
@@ -188,6 +189,7 @@ export default function BestTruckingFactoring2026Page() {
           url: PAGE_URL,
           datePublished: today,
           dateModified: "2026-05-11",
+          authorName: "Angelo Orru Neto",
         })}
       />
       <JsonLd
@@ -250,9 +252,11 @@ export default function BestTruckingFactoring2026Page() {
               speed, fuel discounts, and bad-credit acceptance. No paid
               placements. Updated Q2 2026.
             </p>
-            <p className="research-meta">
-              Dispatched Research · Updated Q2 2026 · No paid placements
-            </p>
+            <ResearchByline
+              publishedDate={today}
+              sourceCount={12}
+              methodologyNote="No paid placements."
+            />
             <p style={{ marginTop: "1.25rem" }}>
               <Link href="/apply?useCase=factoring">
                 Skip the research — get matched with the right factor →
@@ -431,6 +435,16 @@ export default function BestTruckingFactoring2026Page() {
               <Link href="/factoring">
                 invoice factoring for truckers
               </Link>
+              .
+            </p>
+            <p>
+              These rankings were authored by Angelo Orru Neto, founder of
+              Dispatched. No factor on this list paid for placement, and
+              the criteria above are the only basis for inclusion or
+              ranking. Questions or corrections:{" "}
+              <a href="mailto:angelo@dispatched.finance">
+                angelo@dispatched.finance
+              </a>
               .
             </p>
           </section>

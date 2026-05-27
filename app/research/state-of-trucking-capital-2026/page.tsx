@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/landing/EmailCapture";
+import ResearchByline from "@/components/landing/ResearchByline";
 import {
   JsonLd,
   article,
@@ -141,6 +142,7 @@ export default function StateOfTruckingCapital2026() {
           url,
           datePublished: today,
           dateModified: "2026-05-11",
+          authorName: "Angelo Orru Neto",
         })}
       />
 
@@ -164,10 +166,11 @@ export default function StateOfTruckingCapital2026() {
               report covers what changed, what stayed the same, and what
               owner-operators and small fleets should expect through 2026.
             </p>
-            <p className="research-meta">
-              Published {today} · Dispatched Research · Twelve sources
-              referenced inline. Data through April 2026.
-            </p>
+            <ResearchByline
+              publishedDate={today}
+              sourceCount={12}
+              methodologyNote="Data through April 2026."
+            />
           </header>
 
           <EmailCapture
@@ -1109,6 +1112,16 @@ export default function StateOfTruckingCapital2026() {
               substituting one for the other; readers should refer to
               the public sources for primary data. The report does not
               contain proprietary, paid, or vendor-licensed data feeds.
+            </p>
+            <p>
+              Authored by Angelo Orru Neto, founder of Dispatched. The
+              report is sourced but not independently attested; a
+              credentialed domain reviewer will sign off the next major
+              revision. Questions or corrections:{" "}
+              <a href="mailto:angelo@dispatched.finance">
+                angelo@dispatched.finance
+              </a>
+              .
             </p>
           </section>
 
