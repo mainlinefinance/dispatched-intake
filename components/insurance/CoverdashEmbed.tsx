@@ -2,6 +2,7 @@
 
 import Script from "next/script";
 import { useId, useRef } from "react";
+import OutboundLink from "@/components/OutboundLink";
 
 /* ===========================================================================
    Coverdash producer-partner embed.
@@ -164,17 +165,17 @@ function DeepLinkFallback() {
       </p>
       <div className="cd-deeplink-grid">
         {DEEPLINK_PRODUCTS.map((p) => (
-          <a
+          <OutboundLink
             key={p.slug}
             href={COVERDASH_PARTNER_QUOTE_URL}
+            partner="Coverdash"
+            eventProps={{ product: p.slug }}
             className="cd-deeplink-card"
-            target="_blank"
-            rel="noopener"
           >
             <span className="cd-deeplink-card-title">{p.label}</span>
             <span className="cd-deeplink-card-sub">{p.sub}</span>
             <span className="cd-deeplink-card-cta">Quote →</span>
-          </a>
+          </OutboundLink>
         ))}
       </div>
     </div>
