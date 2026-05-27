@@ -668,6 +668,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   });
 
   entries.push({
+    url: `${ORIGIN}/accessibility`,
+    lastModified: today,
+    changeFrequency: "yearly",
+    priority: 0.3,
+  });
+
+  entries.push({
     url: `${ORIGIN}/glossary`,
     lastModified: today,
     changeFrequency: "monthly",
