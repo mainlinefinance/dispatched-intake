@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import OutboundLink from "@/components/OutboundLink";
 import {
   JsonLd,
   article,
@@ -78,9 +79,13 @@ function lenderCard(l: LenderEntry) {
         <strong>Products:</strong> {types}
       </p>
       <p>
-        <a href={l.url} target="_blank" rel="noopener noreferrer">
+        <OutboundLink
+          href={l.url}
+          partner={l.name}
+          eventProps={{ lenderSlug: l.slug, lenderTypes: l.types.join(",") }}
+        >
           {l.name} website →
-        </a>
+        </OutboundLink>
       </p>
     </article>
   );
