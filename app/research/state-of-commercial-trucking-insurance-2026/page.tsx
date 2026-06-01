@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ResearchByline from "@/components/landing/ResearchByline";
 import {
   JsonLd,
   article,
@@ -140,11 +141,7 @@ export default function StateOfTruckingInsurance2026() {
               shifts mean for the 2026 book, and the commodity, geography,
               and rating dynamics moving premiums in the year ahead.
             </p>
-            <p className="research-meta">
-              By{" "}
-              <Link href="/about">Angelo Orru Neto, Founder</Link>
-              {" · "}Published {today} · Ten sources referenced inline.
-            </p>
+            <ResearchByline publishedDate={today} sourceCount={10} />
           </header>
 
           <section className="research-section" id="q2-2026-update">

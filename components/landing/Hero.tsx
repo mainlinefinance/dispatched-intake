@@ -27,7 +27,7 @@ export default function Hero() {
           <span className="dot" aria-hidden="true" />
           Built for trucking — Est. 2024
         </span>
-        <h1 className="hero-title">Capital built for truckers.</h1>
+        <h1 className="hero-title">Trucking capital built for owner-operators.</h1>
         <p className="hero-sub">
           No collateral. Bank decline is okay. We match you with
           trucking-friendly lenders who fund owner-operators and small

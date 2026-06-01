@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ResearchByline from "@/components/landing/ResearchByline";
 import {
   JsonLd,
   article,
@@ -125,6 +126,7 @@ export default function StateOfBrokerRelations2026() {
           url,
           datePublished: today,
           dateModified: "2026-05-11",
+          authorName: "Angelo Orru Neto",
         })}
       />
 
@@ -146,10 +148,11 @@ export default function StateOfBrokerRelations2026() {
               status, and what owner-operators should expect through
               2026–2027.
             </p>
-            <p className="research-meta">
-              Published {today} · Dispatched Research · Fourteen
-              sources referenced inline. Data through April 2026.
-            </p>
+            <ResearchByline
+              publishedDate={today}
+              sourceCount={14}
+              methodologyNote="Data through April 2026."
+            />
           </header>
 
           <section className="research-section" id="q2-2026-update">
@@ -1323,6 +1326,16 @@ export default function StateOfBrokerRelations2026() {
               for primary data. The report does not contain
               proprietary, paid, or vendor-licensed broker data
               feeds.
+            </p>
+            <p>
+              Authored by Angelo Orru Neto, founder of Dispatched. The
+              report is sourced but not independently attested; a
+              credentialed domain reviewer will sign off the next major
+              revision. Questions or corrections:{" "}
+              <a href="mailto:angelo@dispatched.finance">
+                angelo@dispatched.finance
+              </a>
+              .
             </p>
           </section>
 

@@ -37,7 +37,25 @@ export const revalidate = 3600;
        sees real per-URL freshness (not a single build-time stamp across
        hundreds of URLs, which Google discounts as a freshness signal).
        Blog posts override with their real `updatedDate` from frontmatter.
+
+   Split sitemap architecture (added 2026-05-31, crawl-budget triage):
+     - generateSitemaps() returns three IDs: money, content, programmatic.
+     - Next emits a sitemap index at /sitemap.xml that points to each child
+       at /sitemap/<id>.xml. GSC can be told to crawl money first.
+     - The split is a PRIORITY SIGNAL, not a content cull — every URL still
+       ships. The diagnostic value (indexation rate per bucket) and the
+       crawl-budget routing are the wins. Bucket assignments:
+         money:        root pillars, products, conversion, research,
+                       calculators, listicle/comparison pages — the SEO
+                       pages we defend on commercial-intent queries.
+         content:      blog + glossary + topics + carriers — editorial
+                       and knowledge-graph content.
+         programmatic: insurance state/dotClass + lenders + trucking-loans
+                       — geo-templated pages whose value compounds at
+                       scale rather than per-URL.
    =========================================================================== */
+
+type SitemapId = "money" | "content" | "programmatic";
 
 /* Deterministic per-URL last-modified date. Same URL always returns the same
    date across builds (stable for Google's freshness model). 60-day window
@@ -55,95 +73,168 @@ function lastModFor(url: string, override?: string): Date {
   return new Date(Date.now() - daysAgo * 86400000);
 }
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const today = new Date();
+export async function generateSitemaps(): Promise<{ id: SitemapId }[]> {
+  return [{ id: "money" }, { id: "content" }, { id: "programmatic" }];
+}
+
+function buildMoneyEntries(today: Date): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
-  entries.push({
-    url: `${ORIGIN}/`,
-    lastModified: today,
-    changeFrequency: "weekly",
-    priority: 1,
-  });
+  // Top hubs.
+  entries.push(
+    { url: `${ORIGIN}/`, lastModified: today, changeFrequency: "weekly", priority: 1 },
+    { url: `${ORIGIN}/trucking`, lastModified: today, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${ORIGIN}/insurance`, lastModified: today, changeFrequency: "weekly", priority: 0.9 },
+  );
 
-  entries.push({
-    url: `${ORIGIN}/trucking`,
-    lastModified: today,
-    changeFrequency: "weekly",
-    priority: 0.9,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/insurance`,
-    lastModified: today,
-    changeFrequency: "weekly",
-    priority: 0.9,
-  });
-
-  for (const p of getAllProducts()) {
+  // Product / category pillar pages.
+  const pillars = [
+    "/truck-repair-loans",
+    "/factoring-vs-mca",
+    "/factoring-vs-working-capital-loan",
+    "/reefer-breakdown-coverage",
+    "/freightliner-repair-financing",
+    "/bad-credit-truck-repair-financing",
+    "/owner-operator-repair-loans",
+    "/truck-repair-line-of-credit",
+    "/box-truck-financing",
+    "/bad-credit-truck-financing",
+    "/bad-credit-truck-financing/chapter-7-discharge",
+    "/owner-operator-financing",
+    "/semi-truck-financing",
+    "/semi-truck-financing/no-money-down",
+    "/owner-operator-financing/first-time",
+    "/owner-operator-financing/new-llc",
+    "/owner-operator-financing/no-business-history",
+    "/truck-repair-loans/emergency",
+    "/truck-repair-loans/engine-rebuild",
+    "/factoring/no-credit-check",
+    "/equipment-financing",
+    "/trucking-working-capital",
+    "/factoring",
+    "/new-authority-truck-financing",
+  ];
+  for (const path of pillars) {
     entries.push({
-      url: `${ORIGIN}/insurance/${p.slug}`,
+      url: `${ORIGIN}${path}`,
       lastModified: today,
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: path.includes("/") && path.split("/").length > 2 ? 0.7 : 0.8,
     });
   }
 
-  for (const sm of getStateMoneyPages()) {
+  // Conversion + trust pages.
+  entries.push(
+    { url: `${ORIGIN}/qualify`, lastModified: today, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${ORIGIN}/about`, lastModified: today, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${ORIGIN}/methodology`, lastModified: today, changeFrequency: "monthly", priority: 0.5 },
+  );
+
+  // Research pillars (annual reports).
+  const research = [
+    "/research",
+    "/research/state-of-commercial-trucking-insurance-2026",
+    "/research/state-of-trucking-capital-2026",
+    "/research/state-of-trucking-fuel-costs-2026",
+    "/research/state-of-broker-relations-2026",
+    "/research/state-of-trucking-tech-2026",
+    "/research/state-of-trucking-regulation-2026",
+    "/research/state-of-owner-operator-economics-2026",
+    "/research/state-of-trucking-insurance-claims-2026",
+    "/research/best-trucking-factoring-2026",
+  ];
+  for (const path of research) {
     entries.push({
-      url: `${ORIGIN}/insurance/${sm.productSlug}/${sm.stateSlug}`,
+      url: `${ORIGIN}${path}`,
       lastModified: today,
-      changeFrequency: "monthly",
-      priority: 0.8,
+      changeFrequency: path === "/research" ? "weekly" : "yearly",
+      priority: path === "/research" ? 0.7 : 0.7,
     });
   }
 
-  for (const dm of getDeepMoneyPages()) {
+  // Calculators (interactive money-page tools).
+  const calculators = [
+    "/calculators",
+    "/calculators/how-much-can-i-borrow-for-a-truck",
+    "/calculators/whats-my-factoring-rate",
+    "/calculators/factoring-fee",
+    "/calculators/lease-vs-buy",
+    "/calculators/owner-operator-pl",
+    "/calculators/truck-repair",
+    "/calculators/semi-truck-loan",
+    "/calculators/commercial-truck-loan",
+    "/calculators/dump-truck-loan",
+  ];
+  for (const path of calculators) {
     entries.push({
-      url: `${ORIGIN}/insurance/${dm.productSlug}/${dm.stateSlug}/${dm.dotClassSlug}`,
+      url: `${ORIGIN}${path}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: path === "/calculators" ? 0.6 : 0.7,
+    });
+  }
+
+  // Comparison / lender-vs-lender pages.
+  const compares = [
+    "/compare/apex-capital-vs-ecapital",
+    "/compare/apex-capital-vs-rts-financial",
+    "/compare/ecapital-vs-triumph-business-capital",
+    "/compare/apex-capital-vs-tbs-factoring",
+    "/compare/otr-capital-vs-apex-capital",
+    "/compare/triumph-vs-rts-financial",
+    "/compare/ecapital-vs-rts-financial",
+    "/compare/tbs-factoring-vs-triumph-business-capital",
+    "/compare/apex-capital-vs-truckstop-go-capital",
+    "/compare/otr-capital-vs-ecapital",
+    "/compare/ecapital-vs-truckstop-go-capital",
+    "/compare/triumph-vs-otr-capital",
+    "/compare/rts-financial-vs-tbs-factoring",
+    "/compare/1st-commercial-credit-vs-riviera-finance",
+    "/compare/bluevine-vs-ondeck",
+    "/compare/porter-freight-funding-vs-otr-solutions",
+    "/compare/progressive-commercial-vs-sentry-insurance",
+    "/compare/sentry-insurance-vs-nationwide-trucking",
+    "/compare/progressive-commercial-vs-nationwide-trucking",
+    "/compare/apex-capital-vs-triumph-business-capital",
+    "/compare/apex-capital-vs-porter-freight-funding",
+    "/compare/ecapital-vs-porter-freight-funding",
+    "/compare/rts-financial-vs-otr-solutions",
+    "/compare/tbs-factoring-vs-otr-solutions",
+  ];
+  for (const path of compares) {
+    entries.push({
+      url: `${ORIGIN}${path}`,
       lastModified: today,
       changeFrequency: "monthly",
       priority: 0.7,
     });
   }
 
-  entries.push({
-    url: `${ORIGIN}/carriers`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
+  // Insurance tools (estimator).
+  entries.push(
+    { url: `${ORIGIN}/insurance/tools`, lastModified: today, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${ORIGIN}/insurance/tools/premium-estimator`, lastModified: today, changeFrequency: "monthly", priority: 0.7 },
+  );
 
-  for (const c of getAllCarriers()) {
-    entries.push({
-      url: `${ORIGIN}/carriers/${c.slug}`,
-      lastModified: today,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    });
-  }
+  // Trust pages (legal/disclosure — low priority but defensible URLs).
+  entries.push(
+    { url: `${ORIGIN}/disclosures`, lastModified: today, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${ORIGIN}/accessibility`, lastModified: today, changeFrequency: "yearly", priority: 0.3 },
+  );
 
-  entries.push({
-    url: `${ORIGIN}/insurance/tools`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  });
+  return entries;
+}
 
-  entries.push({
-    url: `${ORIGIN}/research`,
-    lastModified: today,
-    changeFrequency: "weekly",
-    priority: 0.7,
-  });
+function buildContentEntries(today: Date): MetadataRoute.Sitemap {
+  const entries: MetadataRoute.Sitemap = [];
 
+  // Blog hub + posts.
   entries.push({
     url: `${ORIGIN}/blog`,
     lastModified: today,
     changeFrequency: "weekly",
     priority: 0.7,
   });
-
   for (const post of getAllPosts()) {
     entries.push({
       url: `${ORIGIN}/blog/${post.slug}`,
@@ -153,356 +244,100 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   }
 
+  // Carriers (10 editorial-quality pages with profile + AM Best context).
   entries.push({
-    url: `${ORIGIN}/truck-repair-loans`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/factoring-vs-mca`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/factoring-vs-working-capital-loan`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/reefer-breakdown-coverage`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/freightliner-repair-financing`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/bad-credit-truck-repair-financing`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/owner-operator-repair-loans`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/truck-repair-line-of-credit`,
+    url: `${ORIGIN}/carriers`,
     lastModified: today,
     changeFrequency: "monthly",
     priority: 0.7,
   });
+  for (const c of getAllCarriers()) {
+    entries.push({
+      url: `${ORIGIN}/carriers/${c.slug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    });
+  }
 
+  // Glossary (140 entries averaging ~750 words each — substantive
+  // knowledge-graph content, highly cited by Perplexity / ChatGPT).
   entries.push({
-    url: `${ORIGIN}/box-truck-financing`,
+    url: `${ORIGIN}/glossary`,
     lastModified: today,
     changeFrequency: "monthly",
-    priority: 0.8,
+    priority: 0.6,
   });
+  for (const t of getAllTerms()) {
+    entries.push({
+      url: `${ORIGIN}/glossary/${t.slug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    });
+  }
 
+  // Topic hubs.
   entries.push({
-    url: `${ORIGIN}/bad-credit-truck-financing`,
+    url: `${ORIGIN}/topics`,
     lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/owner-operator-financing`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/semi-truck-financing`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/semi-truck-financing/no-money-down`,
-    lastModified: today,
-    changeFrequency: "monthly",
+    changeFrequency: "weekly",
     priority: 0.7,
   });
+  for (const topicSlug of getAllTopicSlugs()) {
+    entries.push({
+      url: `${ORIGIN}/topics/${topicSlug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    });
+  }
 
-  entries.push({
-    url: `${ORIGIN}/owner-operator-financing/first-time`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
+  return entries;
+}
 
-  entries.push({
-    url: `${ORIGIN}/factoring/no-credit-check`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
+async function buildProgrammaticEntries(
+  today: Date,
+): Promise<{ entries: MetadataRoute.Sitemap; pulseDates: Map<string, string> }> {
+  const entries: MetadataRoute.Sitemap = [];
 
-  entries.push({
-    url: `${ORIGIN}/research/best-trucking-factoring-2026`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
+  // Insurance per-product pages.
+  for (const p of getAllProducts()) {
+    entries.push({
+      url: `${ORIGIN}/insurance/${p.slug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    });
+  }
 
-  entries.push({
-    url: `${ORIGIN}/compare/apex-capital-vs-ecapital`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
+  // Insurance state-money pages (curated, not Cartesian).
+  for (const sm of getStateMoneyPages()) {
+    entries.push({
+      url: `${ORIGIN}/insurance/${sm.productSlug}/${sm.stateSlug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    });
+  }
 
-  entries.push({
-    url: `${ORIGIN}/compare/apex-capital-vs-rts-financial`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
+  // Insurance deep money pages (product/state/dotClass).
+  for (const dm of getDeepMoneyPages()) {
+    entries.push({
+      url: `${ORIGIN}/insurance/${dm.productSlug}/${dm.stateSlug}/${dm.dotClassSlug}`,
+      lastModified: today,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    });
+  }
 
-  entries.push({
-    url: `${ORIGIN}/compare/ecapital-vs-triumph-business-capital`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/apex-capital-vs-tbs-factoring`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/otr-capital-vs-apex-capital`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/triumph-vs-rts-financial`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/ecapital-vs-rts-financial`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/tbs-factoring-vs-triumph-business-capital`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/apex-capital-vs-truckstop-go-capital`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/otr-capital-vs-ecapital`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/ecapital-vs-truckstop-go-capital`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/triumph-vs-otr-capital`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/rts-financial-vs-tbs-factoring`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/1st-commercial-credit-vs-riviera-finance`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/bluevine-vs-ondeck`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/porter-freight-funding-vs-otr-solutions`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/progressive-commercial-vs-sentry-insurance`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/sentry-insurance-vs-nationwide-trucking`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/progressive-commercial-vs-nationwide-trucking`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/apex-capital-vs-triumph-business-capital`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/apex-capital-vs-porter-freight-funding`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/ecapital-vs-porter-freight-funding`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/rts-financial-vs-otr-solutions`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/compare/tbs-factoring-vs-otr-solutions`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/research/state-of-trucking-fuel-costs-2026`,
-    lastModified: today,
-    changeFrequency: "yearly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/research/state-of-broker-relations-2026`,
-    lastModified: today,
-    changeFrequency: "yearly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/research/state-of-trucking-tech-2026`,
-    lastModified: today,
-    changeFrequency: "yearly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/research/state-of-trucking-regulation-2026`,
-    lastModified: today,
-    changeFrequency: "yearly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/research/state-of-owner-operator-economics-2026`,
-    lastModified: today,
-    changeFrequency: "yearly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/research/state-of-trucking-insurance-claims-2026`,
-    lastModified: today,
-    changeFrequency: "yearly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/calculators/how-much-can-i-borrow-for-a-truck`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/calculators/whats-my-factoring-rate`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/research/state-of-trucking-capital-2026`,
-    lastModified: today,
-    changeFrequency: "yearly",
-    priority: 0.7,
-  });
-
+  // Lender directory (state + high-coverage city pages).
   entries.push({
     url: `${ORIGIN}/lenders`,
     lastModified: today,
     changeFrequency: "weekly",
     priority: 0.7,
   });
-
   for (const stateSlug of getAllLenderStateSlugs()) {
     entries.push({
       url: `${ORIGIN}/lenders/${stateSlug}`,
@@ -511,7 +346,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.6,
     });
   }
-
   for (const c of getAllCities()) {
     // Skip low-coverage cities (matching the redirect in [city]/page.tsx).
     if (c.stateLenderPanelCount < LOW_COVERAGE_THRESHOLD) continue;
@@ -523,106 +357,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   }
 
-  entries.push({
-    url: `${ORIGIN}/calculators/factoring-fee`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/calculators/lease-vs-buy`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/calculators/owner-operator-pl`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/equipment-financing`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/trucking-working-capital`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/factoring`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/new-authority-truck-financing`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/qualify`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/calculators`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/calculators/truck-repair`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/calculators/semi-truck-loan`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/calculators/commercial-truck-loan`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/calculators/dump-truck-loan`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  for (const s of getAllFinancingStates()) {
-    entries.push({
-      url: `${ORIGIN}/trucking-loans/${s.slug}`,
-      lastModified: today,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    });
-  }
-
+  // Trucking-loans geo: the per-CITY pages carry real content (~1500 words
+   // each) and stay in the sitemap. The per-STATE hub pages are essentially
+   // city directories (~170 words rendered) and are noindexed at the page
+   // level (see app/trucking-loans/[state]/page.tsx). Omitting them from
+   // the sitemap keeps GSC's submitted/indexed ratio honest.
   for (const c of getAllCities()) {
     entries.push({
       url: `${ORIGIN}/trucking-loans/${c.stateSlug}/${c.citySlug}`,
@@ -631,78 +370,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.6,
     });
   }
+  // Intentionally unused import — kept so the structural intent is visible
+  // in code review when we later decide to expand the state hubs to merit
+  // re-indexing. See task #29.
+  void getAllFinancingStates;
 
-  entries.push({
-    url: `${ORIGIN}/about`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/methodology`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.5,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/insurance/tools/premium-estimator`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/research/state-of-commercial-trucking-insurance-2026`,
-    lastModified: today,
-    changeFrequency: "yearly",
-    priority: 0.7,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/disclosures`,
-    lastModified: today,
-    changeFrequency: "yearly",
-    priority: 0.3,
-  });
-
-  entries.push({
-    url: `${ORIGIN}/glossary`,
-    lastModified: today,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  });
-
-  for (const t of getAllTerms()) {
-    entries.push({
-      url: `${ORIGIN}/glossary/${t.slug}`,
-      lastModified: today,
-      changeFrequency: "monthly",
-      priority: 0.5,
-    });
-  }
-
-  entries.push({
-    url: `${ORIGIN}/topics`,
-    lastModified: today,
-    changeFrequency: "weekly",
-    priority: 0.7,
-  });
-
-  for (const topicSlug of getAllTopicSlugs()) {
-    entries.push({
-      url: `${ORIGIN}/topics/${topicSlug}`,
-      lastModified: today,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    });
-  }
-
-  /* Dispatched Pulse — operational intelligence layer. Real lastModified
-     from the snapshot file so weekly fetches actually shift the freshness
-     signal. If the snapshot is missing (cold container, dev), fall back
-     silently — the deterministic-hash stagger below covers it. */
+  // Dispatched Pulse — operational intelligence (diesel snapshot).
   const pulseDates = new Map<string, string>();
   try {
     const diesel = await getLatestDiesel();
@@ -735,13 +408,44 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     /* snapshot unavailable — skip Pulse entries this build */
   }
 
+  return { entries, pulseDates };
+}
+
+/* Next 16 breaking change: the `id` returned from generateSitemaps() is
+   passed to the sitemap() function as a Promise<string> (not a sync value).
+   Awaiting it is required — comparing a Promise to a string is always false
+   and would silently return an empty sitemap for every shard, which would
+   drop the entire site from Google's crawl over a renewal cycle.
+   Ref: node_modules/next/dist/docs/01-app/02-guides/upgrading/version-16.md */
+export default async function sitemap({
+  id,
+}: {
+  id: Promise<SitemapId>;
+}): Promise<MetadataRoute.Sitemap> {
+  const resolvedId = await id;
+  const today = new Date();
+  let entries: MetadataRoute.Sitemap = [];
+  let pulseDates = new Map<string, string>();
+
+  if (resolvedId === "money") {
+    entries = buildMoneyEntries(today);
+  } else if (resolvedId === "content") {
+    entries = buildContentEntries(today);
+  } else if (resolvedId === "programmatic") {
+    const built = await buildProgrammaticEntries(today);
+    entries = built.entries;
+    pulseDates = built.pulseDates;
+  }
+
   /* Per-URL lastmod stagger. Replaces the uniform build-time `today` with
      a deterministic per-URL date so Google sees real freshness variance.
      Override with real blog editorial dates and real Pulse snapshot dates
      where available. */
   const blogDates = new Map<string, string>();
-  for (const post of getAllPosts()) {
-    blogDates.set(`${ORIGIN}/blog/${post.slug}`, post.updatedDate);
+  if (resolvedId === "content") {
+    for (const post of getAllPosts()) {
+      blogDates.set(`${ORIGIN}/blog/${post.slug}`, post.updatedDate);
+    }
   }
   for (const e of entries) {
     e.lastModified = lastModFor(

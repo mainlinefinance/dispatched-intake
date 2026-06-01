@@ -57,6 +57,16 @@ export default function AboutPage() {
           imageUrl: `https://dispatched.finance${FOUNDER_PHOTO}`,
           alumniOf: "Fundação Getulio Vargas",
           sameAs: [FOUNDER_LINKEDIN],
+          knowsAbout: [
+            "Commercial trucking finance",
+            "Owner-operator and small-fleet underwriting",
+            "Invoice factoring",
+            "Equipment financing",
+            "Commercial trucking insurance",
+            "Lender matching and intake routing",
+            "Clinical-data infrastructure",
+            "Real-world evidence at scale",
+          ],
         })}
       />
       <Nav />
@@ -66,7 +76,11 @@ export default function AboutPage() {
 
           <header className="about-header">
             <h1>About Dispatched</h1>
-            <EditorialByline updated={today} />
+            <EditorialByline
+              updated={today}
+              authorName={FOUNDER_NAME}
+              authorHref="/about"
+            />
             <p className="about-lede">
               A matching platform for U.S. trucking finance and insurance.
               Lender-paid. Soft pull first. One application, panel routing.

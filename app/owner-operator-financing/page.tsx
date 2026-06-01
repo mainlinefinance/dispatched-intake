@@ -124,7 +124,7 @@ export default function OwnerOperatorFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Owner-operator financing</span>
             <h1 className="ins-hero-title">
-              Capital for the operator behind the truck.
+              Owner-operator financing for the operator behind the truck.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
@@ -177,7 +177,9 @@ export default function OwnerOperatorFinancingPage() {
               <li>
                 <strong>Truck repair financing.</strong> Direct-to-shop
                 loan for a specific repair amount. Term lengths typically
-                6–36 months. <Link href="/truck-repair-loans">Details</Link>.
+                6–36 months. See{" "}
+                <Link href="/truck-repair-loans">truck repair loans</Link>{" "}
+                for the full product detail.
               </li>
               <li>
                 <strong><Link href="/glossary/working-capital">Working capital</Link>.</strong> $25K–$250K line for fuel,

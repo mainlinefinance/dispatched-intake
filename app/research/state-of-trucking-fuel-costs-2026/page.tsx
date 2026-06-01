@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ResearchByline from "@/components/landing/ResearchByline";
 import {
   JsonLd,
   article,
@@ -140,6 +141,7 @@ export default function StateOfTruckingFuelCosts2026() {
           url,
           datePublished: today,
           dateModified: "2026-05-11",
+          authorName: "Angelo Orru Neto",
         })}
       />
 
@@ -159,10 +161,11 @@ export default function StateOfTruckingFuelCosts2026() {
               surcharge dynamics, factor fuel programs, IFTA reporting
               realities, and the slow ramp of alternative-fuel adoption.
             </p>
-            <p className="research-meta">
-              Published {today} · Dispatched Research · Seventeen
-              sources referenced inline. Data through April 2026.
-            </p>
+            <ResearchByline
+              publishedDate={today}
+              sourceCount={17}
+              methodologyNote="Data through April 2026."
+            />
           </header>
 
           <section className="research-section" id="q2-2026-update">
@@ -1313,6 +1316,16 @@ export default function StateOfTruckingFuelCosts2026() {
               sources cited for primary data. The report does not
               contain proprietary, paid, or vendor-licensed data
               feeds.
+            </p>
+            <p>
+              Authored by Angelo Orru Neto, founder of Dispatched. The
+              report is sourced but not independently attested; a
+              credentialed domain reviewer will sign off the next major
+              revision. Questions or corrections:{" "}
+              <a href="mailto:angelo@dispatched.finance">
+                angelo@dispatched.finance
+              </a>
+              .
             </p>
           </section>
 

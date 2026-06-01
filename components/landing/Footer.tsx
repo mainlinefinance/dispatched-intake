@@ -128,6 +128,9 @@ export default function Footer() {
               <li>
                 <Link href="/disclosures">Disclosures</Link>
               </li>
+              <li>
+                <Link href="/accessibility">Accessibility</Link>
+              </li>
             </ul>
           </div>
         </div>

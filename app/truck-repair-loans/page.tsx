@@ -80,6 +80,10 @@ const faqs = [
     q: "Will applying for a truck repair loan hurt my credit?",
     a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your score. A hard pull only happens after you pick a specific lender and move forward on their term sheet.",
   },
+  {
+    q: "Is this a no-credit-check truck repair loan?",
+    a: "No, and any commercial truck repair lender that promises a true no-credit-check loan should be read carefully — the products that advertise that way are usually merchant cash advances at effective rates well above the 14% to 34% APR working-capital band. What the Dispatched panel does instead is a soft pull at the pre-qualification step. A soft pull does not affect your FICO, is invisible to other lenders, and is what most operators searching for 'no credit check' actually want: the ability to compare options without a hard inquiry on the report. A hard pull happens only after you pick a specific lender and move forward on their term sheet, and hard pulls inside a 14-day rate-shopping window count as a single inquiry on most scoring models.",
+  },
 ];
 
 export default function TruckRepairLoansPage() {
