@@ -13,6 +13,11 @@ import { getAllStateSlugs as getAllLenderStateSlugs } from "@/lib/data/lenders";
 import { getAllTopicSlugs } from "@/lib/topics";
 import { getLatestDiesel } from "@/lib/data/intel/diesel";
 import { PADD_SLUGS } from "@/lib/validation/pulseSchema";
+/* Shard ids live in lib/seo/sitemapShards.ts so app/robots.ts emits matching
+   Sitemap: directives. generateSitemaps serves each shard at /sitemap/<id>.xml
+   and Next does NOT create a /sitemap.xml index — robots.txt is the only
+   pointer to the shards, so the two files must not drift. */
+import { SITEMAP_SHARDS, type SitemapId } from "@/lib/seo/sitemapShards";
 
 const ORIGIN = "https://dispatched.finance";
 
@@ -55,8 +60,6 @@ export const revalidate = 3600;
                        scale rather than per-URL.
    =========================================================================== */
 
-type SitemapId = "money" | "content" | "programmatic";
-
 /* Deterministic per-URL last-modified date. Same URL always returns the same
    date across builds (stable for Google's freshness model). 60-day window
    means crawl recency varies across the sitemap rather than being identical
@@ -74,7 +77,7 @@ function lastModFor(url: string, override?: string): Date {
 }
 
 export async function generateSitemaps(): Promise<{ id: SitemapId }[]> {
-  return [{ id: "money" }, { id: "content" }, { id: "programmatic" }];
+  return SITEMAP_SHARDS.map((id) => ({ id }));
 }
 
 function buildMoneyEntries(today: Date): MetadataRoute.Sitemap {

@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { SITEMAP_SHARDS, sitemapShardUrl } from "@/lib/seo/sitemapShards";
 
 const ORIGIN = "https://dispatched.finance";
 
@@ -13,6 +14,13 @@ const ORIGIN = "https://dispatched.finance";
        of an explicit allow as cautious.
      - This file is a Next.js metadata route. It outputs robots.txt at
        /robots.txt; do not also place a static file in /public.
+     - Sitemap discovery: the sitemap is split into shards via
+       generateSitemaps() in app/sitemap.ts. Next 16 serves each shard at
+       /sitemap/<id>.xml and does NOT create a /sitemap.xml index, so we must
+       point crawlers at each shard explicitly. Google supports multiple
+       `Sitemap:` directives in robots.txt. Pointing at the old single
+       /sitemap.xml here would 404 and break discovery entirely (the shard
+       list is the single source of truth in lib/seo/sitemapShards.ts).
    =========================================================================== */
 
 const LLM_AGENTS = [
@@ -49,7 +57,7 @@ export default function robots(): MetadataRoute.Robots {
       },
       ...LLM_AGENTS.map((userAgent) => ({ userAgent, allow: "/" })),
     ],
-    sitemap: `${ORIGIN}/sitemap.xml`,
+    sitemap: SITEMAP_SHARDS.map((id) => sitemapShardUrl(ORIGIN, id)),
     host: ORIGIN,
   };
 }
