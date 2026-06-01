@@ -185,9 +185,16 @@ export default function BadCreditTruckFinancingPage() {
             <ul className="product-list">
               <li>
                 <strong>500+ FICO panel floor.</strong> Below 500 the
-                panel does not have routing. At 500–579 a smaller subset
-                of lenders sees the application; rates are at the high end
-                and the maximum loan amount is tighter.
+                panel does not have routing for loans. At 500–579 a
+                smaller subset of lenders sees the application; rates are
+                at the high end and the maximum loan amount is tighter.
+                Operators with active credit events or sub-500 FICO can
+                often still get cash flow through{" "}
+                <Link href="/factoring/no-credit-check">
+                  factoring with no credit check on you
+                </Link>
+                {" "}— the factor underwrites the broker who owes the
+                invoice, not you.
               </li>
               <li>
                 <strong>6+ months of operating history.</strong> The

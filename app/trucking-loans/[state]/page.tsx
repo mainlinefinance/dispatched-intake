@@ -32,6 +32,13 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical },
+    /* noindex on the state hub: page is essentially a city directory
+       (~170 words rendered, mostly nav + city link list). The /trucking
+       country hub and the per-city pages carry the real SEO value; this
+       hub exists for site nav but should not eat crawl budget. Follow:true
+       so Google still walks the links to the indexable city pages.
+       Removed from sitemap.xml in tandem (see app/sitemap.ts). */
+    robots: { index: false, follow: true },
     openGraph: {
       title,
       description,

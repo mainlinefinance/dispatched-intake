@@ -52,14 +52,20 @@ export const homepageFaqs: HomepageFaqItem[] = [
   {
     q: "What credit score do I need?",
     aText:
-      "We route applications starting at a 500 FICO. Lenders on our panel go lower than most banks because they underwrite on revenue and equipment, not just credit. Below 580, expect rates on the higher end of the range and a tighter maximum. Above 680, you qualify for our full product set.",
+      "We route applications starting at a 500 FICO. Lenders on our panel go lower than most banks because they underwrite on revenue and equipment, not just credit. Below 580, expect rates on the higher end of the range and a tighter maximum. Above 680, you qualify for our full product set. For operators below 500 or actively in a credit event, factoring with no credit check on you is often the right product — the factor underwrites the broker who owes the invoice, not the operator.",
     aJsx: (
       <>
         We route applications starting at a <code>500 FICO</code>. Lenders on
         our panel go lower than most banks because they underwrite on revenue
         and equipment, not just credit. Below 580, expect rates on the higher
         end of the range and a tighter maximum. Above 680, you qualify for our
-        full product set.
+        full product set. For operators below 500 or actively in a credit
+        event,{" "}
+        <a href="/factoring/no-credit-check">
+          factoring with no credit check on you
+        </a>{" "}
+        is often the right product — the factor underwrites the broker who owes
+        the invoice, not the operator.
       </>
     ),
   },

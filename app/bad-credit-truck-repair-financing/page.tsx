@@ -19,24 +19,24 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Bad credit truck repair financing — sub-580 FICO, truck-down options | Dispatched",
+    "Semi truck repair loan with bad credit — sub-580 FICO, truck-down options | Dispatched",
   description:
-    "Truck broken with bad credit? Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, same-banking-day funds after sign-off.",
+    "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, same-banking-day funds after sign-off.",
   alternates: { canonical: "/bad-credit-truck-repair-financing" },
   openGraph: {
     title:
-      "Bad credit truck repair financing — sub-580 FICO, truck-down options | Dispatched",
+      "Semi truck repair loan with bad credit — sub-580 FICO, truck-down options | Dispatched",
     description:
-      "Truck broken with bad credit? Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, same-banking-day funds after sign-off.",
+      "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, same-banking-day funds after sign-off.",
     url: "/bad-credit-truck-repair-financing",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Bad credit truck repair financing — sub-580 FICO, truck-down options | Dispatched",
+      "Semi truck repair loan with bad credit — sub-580 FICO, truck-down options | Dispatched",
     description:
-      "Truck broken with bad credit? Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, same-banking-day funds after sign-off.",
+      "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, same-banking-day funds after sign-off.",
   },
 };
 
@@ -114,9 +114,9 @@ export default function BadCreditTruckRepairFinancingPage() {
       <main id="main-content" className="ins-page product-page">
         <section className="ins-hero product-hero">
           <div className="ins-container">
-            <span className="ins-eyebrow">Bad credit truck repair financing</span>
+            <span className="ins-eyebrow">Semi truck repair loan • bad credit</span>
             <h1 className="ins-hero-title">
-              Truck repair financing when your credit isn&rsquo;t where you want it.
+              Semi truck repair loans for operators with bad credit.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">

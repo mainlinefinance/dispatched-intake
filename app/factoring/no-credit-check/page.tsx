@@ -11,14 +11,14 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Trucking Factoring No Credit Check 2026 | Dispatched",
+  title: "Trucking factoring with no credit check — 2026 | Dispatched",
   description:
     "Most freight factoring approves without a credit pull on you — they check your brokers. Bad credit, new authority, and prior bankruptcy still qualify. Same-day funding.",
   alternates: {
     canonical: "/factoring/no-credit-check",
   },
   openGraph: {
-    title: "Trucking Factoring No Credit Check 2026 | Dispatched",
+    title: "Trucking factoring with no credit check — 2026 | Dispatched",
     description:
       "Most freight factoring approves without a credit pull on you — they check your brokers. Bad credit, new authority, and prior bankruptcy still qualify. Same-day funding.",
     url: "/factoring/no-credit-check",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Trucking Factoring No Credit Check 2026 | Dispatched",
+    title: "Trucking factoring with no credit check — 2026 | Dispatched",
     description:
       "Most freight factoring approves without a credit pull on you — they check your brokers. Bad credit, new authority, and prior bankruptcy still qualify. Same-day funding.",
   },

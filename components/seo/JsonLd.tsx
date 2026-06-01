@@ -29,6 +29,21 @@ export type JsonLdPayload = {
   [key: string]: JsonLdValue;
 };
 
+/* Stable @id values — used to cross-reference entities in the JSON-LD graph
+   (e.g., a FinancialService can point provider → org @id). Search engines
+   collapse references via @id, which strengthens entity recognition. Hoisted
+   to the top of the file so the article() helper can reference FOUNDER_ID
+   without forward-reference ambiguity. */
+const ORG_ID = "https://dispatched.finance/#organization";
+const SITE_ID = "https://dispatched.finance/#website";
+const FOUNDER_ID = "https://dispatched.finance/about#angelo-orru-neto";
+
+/* Canonical founder name — used by article()/howTo()/etc. to detect when an
+   authorName/reviewerName arg refers to the founder Person entity and emit an
+   @id reference instead of a detached inline Person. Keeps the entity graph
+   clean: one Person node on /about, many articles referencing it. */
+const FOUNDER_NAME_CANONICAL = "Angelo Orru Neto";
+
 export function JsonLd({ payload }: { payload: JsonLdPayload }) {
   // Defense-in-depth: escape `<` to its unicode equivalent so a stray HTML
   // sequence in any future schema field can't break out of the <script> tag.
@@ -54,9 +69,12 @@ export function article(args: {
   reviewerName?: string;
   reviewerCredential?: string;
 }): JsonLdPayload {
-  const author: JsonLdPayload["author"] = args.authorName
-    ? { "@type": "Person", name: args.authorName }
-    : { "@type": "Organization", name: "Dispatched" };
+  const author: JsonLdPayload["author"] =
+    args.authorName === FOUNDER_NAME_CANONICAL
+      ? { "@id": FOUNDER_ID }
+      : args.authorName
+        ? { "@type": "Person", name: args.authorName }
+        : { "@type": "Organization", name: "Dispatched" };
   const payload: JsonLdPayload = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -73,13 +91,16 @@ export function article(args: {
     },
   };
   if (args.reviewerName) {
-    payload.reviewedBy = {
-      "@type": "Person",
-      name: args.reviewerName,
-      ...(args.reviewerCredential
-        ? { hasCredential: args.reviewerCredential }
-        : {}),
-    };
+    payload.reviewedBy =
+      args.reviewerName === FOUNDER_NAME_CANONICAL
+        ? { "@id": FOUNDER_ID }
+        : {
+            "@type": "Person",
+            name: args.reviewerName,
+            ...(args.reviewerCredential
+              ? { hasCredential: args.reviewerCredential }
+              : {}),
+          };
   }
   return payload;
 }
@@ -133,13 +154,6 @@ export function financialProduct(args: {
     },
   };
 }
-
-/* Stable @id values — used to cross-reference entities in the JSON-LD graph
-   (e.g., a FinancialService can point provider → org @id). Search engines
-   collapse references via @id, which strengthens entity recognition. */
-const ORG_ID = "https://dispatched.finance/#organization";
-const SITE_ID = "https://dispatched.finance/#website";
-const FOUNDER_ID = "https://dispatched.finance/about#angelo-orru-neto";
 
 export function organization(): JsonLdPayload {
   return {
@@ -198,6 +212,7 @@ export function person(args: {
   imageUrl: string;
   alumniOf?: string;
   sameAs?: ReadonlyArray<string>;
+  knowsAbout?: ReadonlyArray<string>;
 }): JsonLdPayload {
   const payload: JsonLdPayload = {
     "@context": "https://schema.org",
@@ -218,6 +233,9 @@ export function person(args: {
   }
   if (args.sameAs && args.sameAs.length > 0) {
     payload.sameAs = [...args.sameAs];
+  }
+  if (args.knowsAbout && args.knowsAbout.length > 0) {
+    payload.knowsAbout = [...args.knowsAbout];
   }
   return payload;
 }

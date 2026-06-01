@@ -40,6 +40,14 @@ type Props = {
   published?: string;
   authorName?: string;
   authorHref?: string;
+  /* Reviewer attribution for transactional / money pages. Distinct from
+     author so editorial pieces ("By Angelo Orru Neto") and product pages
+     ("Reviewed by Angelo Orru Neto") read correctly and the E-E-A-T
+     signal still propagates to the canonical Person URL on /about. Mirror
+     of authorName/authorHref. Setting both authorName and reviewerName on
+     the same byline is allowed but unusual — authorName renders first. */
+  reviewerName?: string;
+  reviewerHref?: string;
   /* Visible date format. "long" (default) renders "May 23, 2026"; "iso"
      renders the bare "2026-05-23". The <time dateTime=…> attribute is
      always ISO regardless. Per-page opt-in so we don't disturb the long
@@ -52,6 +60,8 @@ export default function EditorialByline({
   published,
   authorName,
   authorHref,
+  reviewerName,
+  reviewerHref,
   format = "long",
 }: Props) {
   const updatedDisplay = format === "iso" ? updated : formatIsoDate(updated);
@@ -65,10 +75,22 @@ export default function EditorialByline({
     <p className="editorial-byline">
       {authorName && (
         <>
+          {"By "}
           {authorHref ? (
             <Link href={authorHref}>{authorName}</Link>
           ) : (
             <span>{authorName}</span>
+          )}
+          {" · "}
+        </>
+      )}
+      {!authorName && reviewerName && (
+        <>
+          {"Reviewed by "}
+          {reviewerHref ? (
+            <Link href={reviewerHref}>{reviewerName}</Link>
+          ) : (
+            <span>{reviewerName}</span>
           )}
           {" · "}
         </>

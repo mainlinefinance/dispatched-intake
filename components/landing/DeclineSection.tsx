@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Link from "next/link";
 
 type DeclineReason = {
   num: string;
@@ -39,7 +40,12 @@ const declineReasons: DeclineReason[] = [
       <>
         <strong>One soft check. One application.</strong> We route to the
         lenders most likely to fund it — declines don&rsquo;t stack against you
-        here.
+        here. When credit is the wall,{" "}
+        <Link href="/factoring/no-credit-check">
+          factoring with no credit check on you
+        </Link>{" "}
+        is the path most operators in your shoes actually use — the factor
+        underwrites your brokers, not your FICO.
       </>
     ),
   },

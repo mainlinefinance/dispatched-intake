@@ -17,13 +17,13 @@ import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title:
-    "Commercial Trucking Insurance — Compare Quotes from 30+ Carriers | Dispatched",
+    "Commercial Trucking Insurance Quotes | 30+ Carriers | Dispatched",
   description:
     "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quote in 3 minutes via our producer.",
   alternates: { canonical: "/insurance" },
   openGraph: {
     title:
-      "Commercial Trucking Insurance — Compare Quotes from 30+ Carriers | Dispatched",
+      "Commercial Trucking Insurance Quotes | 30+ Carriers | Dispatched",
     description:
       "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quote in 3 minutes via our producer.",
     url: "/insurance",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Commercial Trucking Insurance — Compare Quotes from 30+ Carriers | Dispatched",
+      "Commercial Trucking Insurance Quotes | 30+ Carriers | Dispatched",
     description:
       "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quotes in 3 minutes.",
   },
@@ -433,7 +433,7 @@ function StateDirectory({
         </div>
         <p className="ins-state-foot">
           <Link href="/insurance/primary-liability" className="ins-link">
-            See all states →
+            See primary liability rates in all 50 states →
           </Link>
         </p>
       </div>
