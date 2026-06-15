@@ -65,11 +65,17 @@ export default function MainlineApplyWidget() {
     <iframe
       ref={iframeRef}
       title="Funding application form"
+      // Transparent so the page's cream background shows through instead of the
+      // iframe painting an opaque white block behind Mainline's card. The framed
+      // document must also keep a transparent <body> for this to take full
+      // effect.
+      allowTransparency
       style={{
         width: "100%",
         minHeight: MIN_HEIGHT_PX,
         border: 0,
         display: "block",
+        background: "transparent",
       }}
     />
   );
