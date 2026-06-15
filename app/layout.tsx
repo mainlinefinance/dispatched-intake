@@ -128,9 +128,9 @@ export default function RootLayout({
             cost is ~zero and the saving is one RTT when the script body kicks
             in. preconnect on the Coverdash quote engine because the iframe
             renders inside the viewport on /insurance and benefits from a
-            warm TLS handshake. We do NOT preconnect to the Lendflow or
-            Coverdash widget SRCs because those origins are env-driven and
-            not known at build time. */}
+            warm TLS handshake. We do NOT preconnect to the Mainline apply
+            widget or Coverdash widget origins because those are env-driven
+            and not known at build time. */}
         <link rel="dns-prefetch" href="https://quotes.coverdash.com" />
         <link rel="preconnect" href="https://quotes.coverdash.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://api.trustedform.com" />

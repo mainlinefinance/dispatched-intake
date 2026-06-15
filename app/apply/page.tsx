@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import LendflowWidget from "./_components/LendflowWidget";
+import MainlineApplyWidget from "./_components/MainlineApplyWidget";
 import ApplyFaq from "./_components/ApplyFaq";
 import { JsonLd, faqPage } from "@/components/seo/JsonLd";
 import {
@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: "Apply for trucking funding — soft pull | Dispatched",
   description:
     "Apply for trucking working capital, equipment, or repair financing. Soft-pull match — no impact to your credit. No upfront fees.",
-  // Conversion endpoint — embedded Lendflow widget. No SEO value as a landing
+  // Conversion endpoint — embedded Mainline partner widget (BTC funding quiz).
+  // No SEO value as a landing
   // page; indexing it would dilute ranking signals across the actual money
   // pages (working capital, equipment, etc.) that should rank for funding
   // intent. Follow links so internal anchors still pass equity.
@@ -88,19 +89,7 @@ export default function ApplyPage() {
         </li>
       </ul>
 
-      <LendflowWidget />
-
-      {/* Lendflow (the embedded application vendor) holds SOC 2 Type II via
-          Thoropass. Phrased as a property of the application infrastructure,
-          not a Dispatched certification, to stay accurate while the
-          partnership is unannounced. Verified on lendflow.com 2026-05-26. */}
-      <p className="apply-infrastructure">
-        <IconLock className="apply-infrastructure-icon" />
-        <span>
-          Application infrastructure is SOC 2 Type II audited and used by
-          major US lenders.
-        </span>
-      </p>
+      <MainlineApplyWidget />
 
       <aside className="apply-founder" aria-label="From the founder">
         <div className="apply-founder-mark" aria-hidden>
