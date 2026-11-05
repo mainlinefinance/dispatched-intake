@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
+import { HAS_SUPPORT_PHONE, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 import { IconChevronDown } from "./icons";
 import { homepageFaqs } from "./FAQ.data";
 
@@ -14,8 +14,21 @@ export default function FAQ() {
           <span className="eyebrow">Questions we get asked</span>
           <h2>Frequently asked.</h2>
           <p className="faq-centered-foot">
-            Still stuck? Call <a href={PHONE_TEL}>{PHONE_DISPLAY}</a> — a
-            human picks up.
+            Still stuck?{" "}
+            {HAS_SUPPORT_PHONE ? (
+              <>
+                Call <a href={PHONE_TEL}>{PHONE_DISPLAY}</a> — a human picks
+                up.
+              </>
+            ) : (
+              <>
+                Email{" "}
+                <a href="mailto:support@dispatched.finance">
+                  support@dispatched.finance
+                </a>
+                .
+              </>
+            )}
           </p>
         </div>
         <div className="faq-wrap">

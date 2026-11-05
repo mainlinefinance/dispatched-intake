@@ -21,13 +21,13 @@ export const metadata: Metadata = {
   title:
     "Freightliner repair financing — same-day funds for Cascadia, M2, Argosy | Dispatched",
   description:
-    "Freightliner down? Match with trucking-friendly lenders for $5K–$150K. Soft pull, FICO from 500. Funds same banking day after sign-off. Cascadia, M2, Argosy, Coronado, Columbia.",
+    "Freightliner down? Match with trucking-friendly lenders for $5K–$150K. Soft pull, FICO from 500. Funds after lender sign-off; timing depends on documents. Cascadia, M2, Argosy, Coronado, Columbia.",
   alternates: { canonical: "/freightliner-repair-financing" },
   openGraph: {
     title:
       "Freightliner repair financing — same-day funds for Cascadia, M2, Argosy | Dispatched",
     description:
-      "Freightliner down? Match with trucking-friendly lenders for $5K–$150K. Soft pull, FICO from 500. Funds same banking day after sign-off. Cascadia, M2, Argosy, Coronado, Columbia.",
+      "Freightliner down? Match with trucking-friendly lenders for $5K–$150K. Soft pull, FICO from 500. Funds after lender sign-off; timing depends on documents. Cascadia, M2, Argosy, Coronado, Columbia.",
     url: "/freightliner-repair-financing",
     type: "website",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title:
       "Freightliner repair financing — same-day funds for Cascadia, M2, Argosy | Dispatched",
     description:
-      "Freightliner down? Match with trucking-friendly lenders for $5K–$150K. Soft pull, FICO from 500. Funds same banking day after sign-off. Cascadia, M2, Argosy, Coronado, Columbia.",
+      "Freightliner down? Match with trucking-friendly lenders for $5K–$150K. Soft pull, FICO from 500. Funds after lender sign-off; timing depends on documents. Cascadia, M2, Argosy, Coronado, Columbia.",
   },
 };
 
@@ -65,7 +65,7 @@ const faqs = [
   },
   {
     q: "Can I finance the repair if my truck is currently sitting at the shop?",
-    a: "Yes. The Dispatched workflow is built specifically for the case where the truck is at the shop and the operator needs the wire today. There is no requirement that the truck be roadworthy or inspected at the time of application. Soft approval and lender match typically come back within 20 minutes of submitting; the wire lands the same banking day after the chosen lender countersigns, provided it clears before the bank's cutoff.",
+    a: "Yes. The Dispatched workflow is built specifically for the case where the truck is at the shop and the operator needs the wire today. There is no requirement that the truck be roadworthy or inspected at the time of application. Soft approval and lender match depend on underwriting review of submitting; the wire lands the after the chosen lender countersigns, provided it clears before the bank's cutoff.",
   },
   {
     q: "What about a Freightliner with an active recall — does the repair financing change?",
@@ -181,7 +181,7 @@ export default function FreightlinerRepairFinancingPage() {
               the Cascadia, no{" "}
               <Link href="/glossary/ucc-1">UCC-1</Link> filing, no equipment
               appraisal in the way of a wire. That is what lets the money
-              move the same banking day after sign-off. Existing financing on
+              move the after lender sign-off; timing depends on documents. Existing financing on
               the tractor — most Cascadias under five years old are still on
               an equipment loan — does not block the repair financing,
               because the repair financing is not secured against the
@@ -381,7 +381,7 @@ export default function FreightlinerRepairFinancingPage() {
                 <span className="product-example-label">Match output</span>
                 <span className="product-example-value">
                   $25,000 at 22% APR, 18-month term, $1,545 monthly. Funded
-                  the same banking day after sign-off.
+                  the after lender sign-off; timing depends on documents.
                 </span>
               </div>
               <div className="product-example-meta">
@@ -421,7 +421,7 @@ export default function FreightlinerRepairFinancingPage() {
                 a specific lender.
               </li>
               <li>
-                <strong>Wire.</strong> Same banking day after the chosen
+                <strong>Wire.</strong> After the chosen
                 lender signs off, when the wire instruction lands before the
                 bank&rsquo;s cutoff. Direct-to-shop or direct-to-business
                 depending on the term sheet.
@@ -454,7 +454,7 @@ export default function FreightlinerRepairFinancingPage() {
             <h2 className="ins-hero-title">Get the Cascadia back on the road.</h2>
             <p className="ins-hero-sub">
               Soft-pull match first. One hard pull only with the lender you
-              choose. Wire same banking day after sign-off.
+              choose. Timing depends on the lender and your documents.
             </p>
             <div className="product-hero-ctas">
               <Link

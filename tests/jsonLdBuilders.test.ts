@@ -223,7 +223,7 @@ describe("organization builder", () => {
     assertContextAndType(out, "Organization");
     expect(out["@id"]).toBe("https://dispatched.finance/#organization");
     expect(out.name).toBe("Dispatched");
-    expect(out.legalName).toBe("TCopyCats LLC");
+    expect(out.legalName).toBe("Dispatched, Inc.");
     expect(out.url).toBe("https://dispatched.finance");
     expect(obj(out.logo)["@type"]).toBe("ImageObject");
     expect(obj(out.address)["@type"]).toBe("PostalAddress");
@@ -351,7 +351,7 @@ describe("insuranceAgency builder", () => {
       "https://dispatched.finance/#organization",
     );
     expect(obj(out.areaServed)["@type"]).toBe("Country");
-    expect(out.telephone).toBe("+1-307-317-0801");
+    expect(out.telephone).toBeUndefined();
   });
 
   it("does NOT emit the deprecated provider field", () => {

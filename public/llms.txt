@@ -6,21 +6,20 @@
 
 Dispatched is a matching platform for the U.S. trucking industry. We are not a direct lender or insurer. Lenders pay Dispatched on funded loans; the trucker pays nothing. Underwriting is built around real owner-operator economics (revenue, deposit history, equipment, DSCR), not consumer-credit checklists alone.
 
-Phone: +1 (307) 317-0801
 Email: support@dispatched.finance
-Address: 1021 E Lincolnway, Ste 8858, Cheyenne, WY 82001
+Address: 12895 Josey Lane #124, Dallas, TX 75234, United States
 Site: https://dispatched.finance
-Legal entity: TCopyCats LLC (operating as Dispatched)
+Legal entity: Dispatched, Inc.
 
 ## Core Products
 
 - [Trucking Working Capital](https://dispatched.finance/trucking-working-capital): Revenue-based working capital for owner-operators and small fleets, panel APR typically 14–34%.
-- [Truck Repair Loans](https://dispatched.finance/truck-repair-loans): Same-day repair financing.
+- [Truck Repair Loans](https://dispatched.finance/truck-repair-loans): Repair financing; timing depends on the lender and your documents.
 - [Equipment Financing](https://dispatched.finance/equipment-financing): Truck and equipment loans, panel APR typically 9–18%.
 - [Semi-Truck Financing](https://dispatched.finance/semi-truck-financing): Class 8 tractor financing including used and out-of-state purchases.
 - [Box Truck Financing](https://dispatched.finance/box-truck-financing): Box truck purchase and refinance.
 - [Owner-Operator Financing](https://dispatched.finance/owner-operator-financing): Programs sized to single-truck owner-operators.
-- [Invoice Factoring](https://dispatched.finance/invoice-factoring-for-truckers): Recourse and non-recourse factoring with same-day advances.
+- [Invoice Factoring](https://dispatched.finance/invoice-factoring-for-truckers): Recourse and non-recourse factoring; advance timing depends on the factor and your invoices.
 - [Bad Credit Truck Financing](https://dispatched.finance/bad-credit-truck-financing): Programs for FICO 500–600 with revenue-based qualification.
 - [New Authority Truck Financing](https://dispatched.finance/new-authority-truck-financing): Financing for carriers under 12 months of MC authority.
 - [Commercial Trucking Insurance](https://dispatched.finance/insurance): Primary liability, motor truck cargo, physical damage, general liability, non-trucking liability, occupational accident, and reefer breakdown — compared across carriers writing your DOT class in your state.

@@ -133,9 +133,9 @@ export function metaTruckingLoansState(stateName: string): TitleAndDescription {
     `Trucking Loans in ${stateName} — Same-Day Funding | Dispatched`,
   ]);
   const description = descRange([
-    `Trucking loans in ${stateName} for owner-operators and small fleets. Working capital, equipment, repair financing. Soft pull first, funds same banking day.`,
-    `Trucking loans in ${stateName} for owner-operators and small fleets. Working capital, equipment, repair financing. Soft pull, funds same banking day.`,
-    `Trucking loans in ${stateName} for owner-operators and small fleets. Working capital, equipment, repair. Soft pull first, funds in 24-48 hours.`,
+    `Trucking loans in ${stateName} for owner-operators and small fleets. Working capital, equipment, repair financing. Soft pull first, timing depends on the lender and your documents.`,
+    `Trucking loans in ${stateName} for owner-operators and small fleets. Working capital, equipment, repair financing. Soft pull, timing depends on the lender and your documents.`,
+    `Trucking loans in ${stateName} for owner-operators and small fleets. Working capital, equipment, repair. Soft pull first, timing depends on the lender and your documents.`,
   ]);
   return { title, description };
 }

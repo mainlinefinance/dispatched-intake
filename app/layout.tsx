@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   applicationName: "Dispatched",
   authors: [{ name: "Dispatched", url: SITE_URL }],
   creator: "Dispatched",
-  publisher: "TCopyCats LLC",
+  publisher: "Dispatched, Inc.",
   keywords: [
     "trucking financing",
     "commercial truck loans",

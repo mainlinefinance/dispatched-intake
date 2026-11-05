@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     q: "How fast can I get either product?",
-    a: "Working capital on the Dispatched panel funds same banking day for many operators — soft-pull match in about 20 minutes, hard pull only at lender selection, wire same banking day after sign-off. Factoring relationships take longer to set up initially (3 to 7 business days for the broker verifications, UCC-1 filing, and onboarding) but fund individual invoices same or next banking day once the relationship is live. For a money-today need, working capital is faster on day one; for an ongoing cashflow mechanism, factoring is faster over the life of the relationship.",
+    a: "Working capital on the Dispatched panel funding timing depends on the lender and your documents — soft-pull match after underwriting review, hard pull only at lender selection, then wire after lender sign-off. Factoring relationships take longer to set up initially (3 to 7 business days for the broker verifications, UCC-1 filing, and onboarding) but fund individual invoices same or next banking day once the relationship is live. For a money-today need, working capital is faster on day one; for an ongoing cashflow mechanism, factoring is faster over the life of the relationship.",
   },
   {
     q: "What about equipment financing — where does it fit?",
@@ -322,7 +322,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                 <strong>Speed to funding.</strong> Factoring funds the same
                 or next banking day for invoices submitted before cutoff,
                 once the initial relationship is set up (initial setup runs
-                3 to 7 days). Working capital funds the same banking day
+                3 to 7 days). Working capital funding timing depends on the lender and your documents
                 after sign-off in many cases on the panel.
               </li>
               <li>
@@ -608,7 +608,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                   invoice across all three brokers, set up over 5 business
                   days, advancing 92% on submission going forward. (2)
                   working capital loan of $35,000 at 21% APR over 18
-                  months, $2,260 monthly, funded same banking day for the
+                  months, $2,260 monthly, funding timing varies for the
                   repair scope.
                 </span>
               </div>

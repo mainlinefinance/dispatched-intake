@@ -27,12 +27,12 @@ import {
 export const metadata: Metadata = {
   title: "Truck repair loans — same-day funding | Dispatched",
   description:
-    "Truck down? Get matched with repair lenders for $5K–$150K in same-banking-day funds. Soft pull, FICO from 500. Apply now or call (307) 317-0801.",
+    "Truck down? Get matched with repair lenders for $5K–$150K in repair financing. Soft pull, FICO from 500. Apply now.",
   alternates: { canonical: "/truck-repair-loans" },
   openGraph: {
     title: "Truck repair loans — same-day funding | Dispatched",
     description:
-      "Truck down? Get matched with repair lenders for $5K–$150K in same-banking-day funds. Soft pull, FICO from 500. Apply now or call (307) 317-0801.",
+      "Truck down? Get matched with repair lenders for $5K–$150K in repair financing. Soft pull, FICO from 500. Apply now.",
     url: "/truck-repair-loans",
     type: "website",
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Truck repair loans — same-day funding | Dispatched",
     description:
-      "Truck down? Get matched with repair lenders for $5K–$150K in same-banking-day funds. Soft pull, FICO from 500. Apply now or call (307) 317-0801.",
+      "Truck down? Get matched with repair lenders for $5K–$150K in repair financing. Soft pull, FICO from 500. Apply now.",
   },
 };
 
@@ -50,11 +50,11 @@ const PAGE_URL = "https://dispatched.finance/truck-repair-loans";
 const faqs = [
   {
     q: "My truck broke down on the road — can I get financing for the repair today?",
-    a: "Yes. The Dispatched workflow is built around the case where the truck is already at the shop and the operator needs the wire today. Soft approval and lender match typically come back within 20 minutes of submitting the application; the chosen lender wires funds to the operator's business account the same banking day if the countersign clears before bank cutoff. There is no shop-assignment step and no requirement that the truck be roadworthy or inspected at the time of application.",
+    a: "Yes. The Dispatched workflow is built around the case where the truck is already at the shop and the operator needs the wire today. Soft approval and lender match depend on underwriting review of submitting the application; the chosen lender wires funds to the operator's business account after lender sign-off; timing depends on documents and bank cutoffs. There is no shop-assignment step and no requirement that the truck be roadworthy or inspected at the time of application.",
   },
   {
     q: "How fast can I get a truck repair loan?",
-    a: "Soft approval and lender match typically come back within 20 minutes of submitting the application. Funds hit your account the same banking day after the chosen lender countersigns, provided the wire lands before that bank's cutoff. If you apply after cutoff or on a weekend, funds settle the next banking day. The Dispatched workflow is built around the case where the truck is already at the shop and the operator needs the wire today.",
+    a: "Soft approval and lender match depend on underwriting review of submitting the application. Funds hit your account the after the chosen lender countersigns, provided the wire lands before that bank's cutoff. If you apply after cutoff or on a weekend, funds settle the next banking day. The Dispatched workflow is built around the case where the truck is already at the shop and the operator needs the wire today.",
   },
   {
     q: "How much can I borrow for a truck repair?",
@@ -130,7 +130,7 @@ export default function TruckRepairLoansPage() {
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
-              When the truck is down, the wire can land same banking day
+              When the truck is down, the wire timing depends on lender underwriting and bank cutoffs
               after the chosen lender signs off. We match you with
               trucking-friendly lenders who fund repairs without the
               bank&rsquo;s two-year DSCR test. No collateral beyond the
@@ -383,7 +383,7 @@ export default function TruckRepairLoansPage() {
                 specific lender and decide to move forward.
               </li>
               <li>
-                <strong>Wire.</strong> Same banking day after the chosen
+                <strong>Wire.</strong> After the chosen
                 lender signs off, when the wire instruction lands before
                 the bank&rsquo;s cutoff. Direct-to-shop or
                 direct-to-business, depending on the term sheet.
@@ -418,7 +418,7 @@ export default function TruckRepairLoansPage() {
             </h2>
             <p className="ins-hero-sub">
               Soft-pull match first. One hard pull only with the lender
-              you choose. Wire same banking day after sign-off.
+              you choose. Timing depends on the lender and your documents.
             </p>
             <div className="product-hero-ctas">
               <Link

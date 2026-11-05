@@ -19,6 +19,17 @@
   padding: var(--space-12) var(--gutter-mobile);
 }
 
+.apply-disclosure,
+.apply-ssn-notice {
+  margin: 12px 0 0;
+  max-width: 40rem;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-ink-secondary, #3d4650);
+}
+.apply-ssn-notice {
+  margin-top: 8px;
+}
 .apply-header {
   margin-bottom: var(--space-6);
 }

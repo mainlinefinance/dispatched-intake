@@ -23,11 +23,11 @@ const declineReasons: DeclineReason[] = [
   },
   {
     num: "02",
-    title: "Sole-prop doesn't fit their forms.",
-    why: "Regional banks underwrite to W-2 balance sheets. A Schedule C with $180k net, a sole-prop EIN, and a truck on lien doesn't fit the commercial-lending workflow they were built for.",
+    title: "Owner-operator structures often don't fit bank forms.",
+    why: "Regional banks underwrite to W-2 balance sheets. A Schedule C with business net income, a sole-proprietor EIN, and a truck on lien often doesn't fit the commercial-lending workflow they were built for.",
     reframe: (
       <>
-        <strong>Every lender on our panel funds 1099 and sole-prop borrowers.</strong>{" "}
+        <strong>Panel financing partners work with 1099 and sole-proprietor businesses.</strong>{" "}
         Owner-operator is the default, not the exception.
       </>
     ),
@@ -45,7 +45,7 @@ const declineReasons: DeclineReason[] = [
           factoring with no credit check on you
         </Link>{" "}
         is the path most operators in your shoes actually use — the factor
-        underwrites your brokers, not your FICO.
+        underwrites your brokers and receivables, not a consumer credit score alone.
       </>
     ),
   },

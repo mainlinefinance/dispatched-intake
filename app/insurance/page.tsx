@@ -13,7 +13,7 @@ import {
 import CoverdashEmbed, {
   COVERDASH_PARTNER_QUOTE_URL,
 } from "@/components/insurance/CoverdashEmbed";
-import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
+import { HAS_SUPPORT_PHONE, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title:
@@ -202,9 +202,18 @@ function Hero({ today }: { today: string }) {
           >
             Get my quote
           </a>
-          <a href={PHONE_TEL} className="btn btn--secondary btn--lg">
-            Call {PHONE_DISPLAY}
-          </a>
+          {HAS_SUPPORT_PHONE ? (
+            <a href={PHONE_TEL} className="btn btn--secondary btn--lg">
+              Call {PHONE_DISPLAY}
+            </a>
+          ) : (
+            <a
+              href="mailto:support@dispatched.finance"
+              className="btn btn--secondary btn--lg"
+            >
+              Email support
+            </a>
+          )}
         </div>
         <ul className="ins-hero-stats" aria-label="Trust indicators">
           <li>
@@ -492,11 +501,11 @@ function ComplianceFooter() {
       <div className="ins-container">
         <p className="ins-compliance-note">
           Dispatched is a comparison and matching platform operated by
-          TCopyCats LLC dba Dispatched. Coverage is placed by our licensed
-          producer partner and bound by carriers. Dispatched is not a carrier,
-          is not the producer of record, and does not bind coverage. Quote
-          submissions are routed to the producer partner under one-to-one
-          consent disclosed at the quote step.
+          Dispatched, Inc. Coverage is placed by our licensed producer partner
+          and bound by carriers. Dispatched is not a carrier, is not the
+          producer of record, and does not bind coverage. Quote submissions are
+          routed to the producer partner under one-to-one consent disclosed at
+          the quote step.
         </p>
       </div>
     </section>

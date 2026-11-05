@@ -289,7 +289,7 @@ export const TRUST_RAIL = {
       footnote: 2,
     },
     {
-      label: "Wire same banking day after lender sign-off",
+      label: "Timing depends on the lender and your documents",
       footnote: 3,
     },
   ] as { label: string; footnote: number }[],
@@ -313,8 +313,8 @@ export const DISCLOSURES = {
     },
     {
       footnote: 3,
-      heading: "Wire same banking day after lender sign-off",
-      body: "Same-banking-day wires are made when the chosen lender signs off and the wire instruction lands before that bank's cutoff. Wires that miss the cutoff settle the next banking day. Weekend and federal-holiday wires settle the next banking day.",
+      heading: "Timing depends on the lender and your documents",
+      body: "Funding timing depends on the chosen financing partner's underwriting, your document completeness, and banking cutoffs. Individual results vary; timing is not guaranteed.",
     },
     {
       footnote: 4,

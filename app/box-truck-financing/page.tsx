@@ -358,7 +358,7 @@ export default function BoxTruckFinancingPage() {
                 specific lender and decide to move forward.
               </li>
               <li>
-                <strong>Wire.</strong> Same banking day after the chosen
+                <strong>Wire.</strong> After the chosen
                 lender signs off, when the wire instruction lands before
                 the bank&rsquo;s cutoff. Direct-to-seller for equipment
                 purchases; direct-to-business for working capital.
@@ -393,7 +393,7 @@ export default function BoxTruckFinancingPage() {
             </h2>
             <p className="ins-hero-sub">
               Soft-pull match first. One hard pull only with the lender
-              you choose. Wire same banking day after sign-off.
+              you choose. Timing depends on the lender and your documents.
             </p>
             <div className="product-hero-ctas">
               <Link

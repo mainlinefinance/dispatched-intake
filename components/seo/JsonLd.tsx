@@ -161,7 +161,7 @@ export function organization(): JsonLdPayload {
     "@type": "Organization",
     "@id": ORG_ID,
     name: "Dispatched",
-    legalName: "TCopyCats LLC",
+    legalName: "Dispatched, Inc.",
     url: "https://dispatched.finance",
     logo: {
       "@type": "ImageObject",
@@ -170,8 +170,7 @@ export function organization(): JsonLdPayload {
       height: 512,
     },
     description:
-      "A matching platform for commercial trucking working capital and commercial trucking insurance. Operates two product lines: financing routed to a panel of commercial lenders, and insurance comparison routed to a named producer partner.",
-    telephone: "+1-307-317-0801",
+      "A referral and introduction service for commercial trucking working capital and commercial trucking insurance. Operates two product lines: financing introductions to a panel of commercial financing partners, and insurance comparison routed to a named producer partner.",
     email: "support@dispatched.finance",
     foundingDate: "2026",
     founder: { "@id": FOUNDER_ID },
@@ -186,7 +185,6 @@ export function organization(): JsonLdPayload {
     areaServed: { "@type": "Country", name: "United States" },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+1-307-317-0801",
       email: "support@dispatched.finance",
       contactType: "customer service",
       areaServed: "US",
@@ -262,8 +260,8 @@ export function financialService(): JsonLdPayload {
     name: "Trucking Financing",
     url: "https://dispatched.finance/trucking-working-capital",
     // FinancialService inherits from LocalBusiness/Organization; the correct
-    // way to relate it to the parent corporate entity (TCopyCats LLC dba
-    // Dispatched) is parentOrganization, not provider. The schema.org
+    // way to relate it to the parent corporate entity (Dispatched, Inc.)
+    // is parentOrganization, not provider. The schema.org
     // validator flags `provider` here as an unrecognized property.
     parentOrganization: { "@id": ORG_ID },
     areaServed: { "@type": "Country", name: "United States" },
@@ -497,13 +495,12 @@ export function insuranceAgency(): JsonLdPayload {
     name: "Dispatched Trucking Insurance",
     url: "https://dispatched.finance/insurance",
     // InsuranceAgency inherits from LocalBusiness/Organization; the correct
-    // way to relate it to the parent corporate entity (TCopyCats LLC dba
-    // Dispatched) is parentOrganization, not provider. Schema.org validator
+    // way to relate it to the parent corporate entity (Dispatched, Inc.)
+    // is parentOrganization, not provider. Schema.org validator
     // flagged `provider` as not recognized on InsuranceAgency.
     parentOrganization: { "@id": ORG_ID },
     description:
       "Commercial trucking insurance comparison and matching: primary liability, motor truck cargo, physical damage, general liability, non-trucking liability, occupational accident, and reefer breakdown coverage from a panel of carriers writing your DOT class in your state.",
     areaServed: { "@type": "Country", name: "United States" },
-    telephone: "+1-307-317-0801",
   };
 }

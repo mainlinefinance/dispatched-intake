@@ -34,12 +34,12 @@ const TOC_ITEMS = [
 export const metadata: Metadata = {
   title: "Owner-operator financing — single truck up | Dispatched",
   description:
-    "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, funds same banking day. Get matched.",
+    "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, timing depends on the lender and your documents. Get matched.",
   alternates: { canonical: "/owner-operator-financing" },
   openGraph: {
     title: "Owner-operator financing — single truck up | Dispatched",
     description:
-      "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, funds same banking day. Get matched.",
+      "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, timing depends on the lender and your documents. Get matched.",
     url: "/owner-operator-financing",
     type: "website",
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Owner-operator financing — single truck up | Dispatched",
     description:
-      "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, funds same banking day. Get matched.",
+      "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, timing depends on the lender and your documents. Get matched.",
   },
 };
 
@@ -56,7 +56,7 @@ const PAGE_URL = "https://dispatched.finance/owner-operator-financing";
 const faqs = [
   {
     q: "What financing is available for owner-operators?",
-    a: "The Dispatched panel covers four core products for owner-operators: working capital ($25K to $250K, 14% to 34% APR), equipment financing for tractors and trailers ($20K to $200K, 9% to 18% APR), repair loans ($5K to $150K, same banking day funding), and invoice factoring for receivables. One application routes to the right product based on the operator's situation.",
+    a: "The Dispatched panel covers four core products for owner-operators: working capital ($25K to $250K, 14% to 34% APR), equipment financing for tractors and trailers ($20K to $200K, 9% to 18% APR), repair loans ($5K to $150K, repair financing), and invoice factoring for receivables. One application routes to the right product based on the operator's situation.",
   },
   {
     q: "Can I get a loan as a sole proprietor with no LLC?",
@@ -76,7 +76,7 @@ const faqs = [
   },
   {
     q: "How long does owner-operator financing take to fund?",
-    a: "Soft approval and lender match typically come back within 20 minutes of submitting the application. Working capital and repair loans fund the same banking day after the chosen lender countersigns and the wire lands before cutoff. Equipment loans take 2 to 5 banking days because the lender has to verify the title and record the lien before funds release.",
+    a: "Soft approval and lender match depend on underwriting review of submitting the application. Working capital and repair loans fund after lender sign-off after the chosen lender countersigns and the wire lands before cutoff. Equipment loans take 2 to 5 banking days because the lender has to verify the title and record the lien before funds release.",
   },
   {
     q: "Will applying as an owner-operator hurt my credit?",
@@ -109,7 +109,7 @@ export default function OwnerOperatorFinancingPage() {
         payload={financialProduct({
           name: "Owner-operator financing",
           description:
-            "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, funds same banking day.",
+            "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, timing depends on the lender and your documents.",
           url: PAGE_URL,
           category: "Commercial trucking financing",
         })}
@@ -378,7 +378,7 @@ export default function OwnerOperatorFinancingPage() {
                 specific lender and decide to move forward.
               </li>
               <li>
-                <strong>Wire.</strong> Same banking day after the chosen
+                <strong>Wire.</strong> After the chosen
                 lender signs off, when the wire instruction lands before
                 the bank&rsquo;s cutoff.
               </li>
@@ -412,7 +412,7 @@ export default function OwnerOperatorFinancingPage() {
             </h2>
             <p className="ins-hero-sub">
               Soft-pull match first. One hard pull only with the lender
-              you choose. Wire same banking day after sign-off.
+              you choose. Timing depends on the lender and your documents.
             </p>
             <div className="product-hero-ctas">
               <Link
