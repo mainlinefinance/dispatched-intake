@@ -21,13 +21,13 @@ export const metadata: Metadata = {
   title:
     "Semi truck repair loan with bad credit — sub-580 FICO, truck-down options | Dispatched",
   description:
-    "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, same-banking-day funds after sign-off.",
+    "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, repair financing after sign-off.",
   alternates: { canonical: "/bad-credit-truck-repair-financing" },
   openGraph: {
     title:
       "Semi truck repair loan with bad credit — sub-580 FICO, truck-down options | Dispatched",
     description:
-      "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, same-banking-day funds after sign-off.",
+      "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, repair financing after sign-off.",
     url: "/bad-credit-truck-repair-financing",
     type: "website",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title:
       "Semi truck repair loan with bad credit — sub-580 FICO, truck-down options | Dispatched",
     description:
-      "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, same-banking-day funds after sign-off.",
+      "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, repair financing after sign-off.",
   },
 };
 
@@ -102,7 +102,7 @@ export default function BadCreditTruckRepairFinancingPage() {
         payload={financialProduct({
           name: "Bad credit truck repair financing",
           description:
-            "Truck repair financing of $5K–$150K with FICO programs routing from 500. Revenue-based underwriting, same-banking-day funds after sign-off, soft-pull match.",
+            "Truck repair financing of $5K–$150K with FICO programs routing from 500. Revenue-based underwriting, repair financing after sign-off, soft-pull match.",
           url: PAGE_URL,
           category: "Commercial trucking financing",
         })}
@@ -124,7 +124,7 @@ export default function BadCreditTruckRepairFinancingPage() {
               banks make it look like. The Dispatched panel underwrites the
               operation&rsquo;s revenue, deposit history, and equipment
               first — FICO second. Programs route from 500. Repair loans from
-              $5K to $150K, soft-pull match in about 20 minutes, wire same
+              $5K to $150K, soft-pull match after underwriting review, wire same
               banking day after the chosen lender signs off. Higher-end of
               the 14% to 34% APR range, tighter loan ceilings, and a smaller
               subset of the panel — but the funding is real and the process
@@ -384,7 +384,7 @@ export default function BadCreditTruckRepairFinancingPage() {
                 <span className="product-example-label">Match output</span>
                 <span className="product-example-value">
                   $20,000 at 30% APR, 15-month term, $1,635 monthly.
-                  Direct-to-shop disbursement. Funded the same banking day
+                  Direct-to-shop disbursement. Funding timing depends on the lender and your documents
                   after sign-off.
                 </span>
               </div>

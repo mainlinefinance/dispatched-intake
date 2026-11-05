@@ -9,7 +9,7 @@ import {
   type BreadcrumbItem,
 } from "@/components/seo/Breadcrumbs";
 import { JsonLd, breadcrumbList, person } from "@/components/seo/JsonLd";
-import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
+import { HAS_SUPPORT_PHONE, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 
 const FOUNDER_NAME = "Angelo Orru Neto";
 const FOUNDER_TITLE = "Founder";
@@ -125,9 +125,8 @@ export default function AboutPage() {
               <p>
                 I hold a degree from Fundação Getulio Vargas in São Paulo,
                 publish on the intersection of data and access in healthcare
-                and finance, and operate Dispatched out of TCopyCats LLC,
-                the Wyoming entity that holds the MainLine.Finance vertical
-                brand portfolio. Construction (drawn.finance) is next.
+                and finance, and operate Dispatched, Inc. from Dallas, Texas.
+                Construction (drawn.finance) is next.
               </p>
 
               <p className="about-founder-links">
@@ -151,21 +150,25 @@ export default function AboutPage() {
             <dl className="about-org-facts">
               <div>
                 <dt>Legal entity</dt>
-                <dd>TCopyCats LLC (operating as Dispatched)</dd>
+                <dd>Dispatched, Inc.</dd>
               </div>
               <div>
-                <dt>Registered address</dt>
+                <dt>Principal place of business</dt>
                 <dd>
-                  1021 E Lincolnway, Ste 8858
+                  12895 Josey Lane #124
                   <br />
-                  Cheyenne, WY 82001
+                  Dallas, TX 75234
                 </dd>
               </div>
               <div>
                 <dt>Contact</dt>
                 <dd>
-                  <a href={PHONE_TEL}>{PHONE_DISPLAY}</a>
-                  <br />
+                  {HAS_SUPPORT_PHONE ? (
+                    <>
+                      <a href={PHONE_TEL}>{PHONE_DISPLAY}</a>
+                      <br />
+                    </>
+                  ) : null}
                   <a href="mailto:support@dispatched.finance">
                     support@dispatched.finance
                   </a>
@@ -174,10 +177,14 @@ export default function AboutPage() {
               <div>
                 <dt>What we are</dt>
                 <dd>
-                  A matching platform. Not a lender. Not an insurer. We
-                  route applications to a panel of commercial lenders and a
-                  named insurance producer partner, paid by them on funded
-                  loans / bound policies.
+                  A referral and introduction service for commercial /
+                  business financing — not a lender and not a consumer credit
+                  provider. We introduce eligible businesses to financing
+                  partners (including Big Think Capital) and a named insurance
+                  producer partner. Partners pay Dispatched when a loan is
+                  funded or a policy is bound; we do not charge the
+                  trucker a fee to apply. This service is for commercial /
+                  business purposes only.
                 </dd>
               </div>
               <div>
@@ -195,8 +202,20 @@ export default function AboutPage() {
           <section className="about-cta">
             <h2>Have a question about how we route applications?</h2>
             <p>
-              Call <a href={PHONE_TEL}>{PHONE_DISPLAY}</a> &mdash; a human
-              picks up. Or read the{" "}
+              {HAS_SUPPORT_PHONE ? (
+                <>
+                  Call <a href={PHONE_TEL}>{PHONE_DISPLAY}</a> &mdash; a human
+                  picks up. Or read the{" "}
+                </>
+              ) : (
+                <>
+                  Email{" "}
+                  <a href="mailto:support@dispatched.finance">
+                    support@dispatched.finance
+                  </a>{" "}
+                  or read the{" "}
+                </>
+              )}
               <Link href="/methodology">methodology page</Link> for how
               underwriting decisions get made and how rates are observed
               across the panel.

@@ -20,94 +20,97 @@ export const homepageFaqs: HomepageFaqItem[] = [
   {
     q: "What rates can I actually expect?",
     aText:
-      "Rates depend on your revenue, time in business, and credit band. For working capital, most of our borrowers land between 14% – 34% APR. For equipment loans secured by the truck, rates typically run 9% – 18% APR. These are observed panel ranges, not guarantees — see the methodology page for details. You'll see the exact APR, term length, and total cost on every term sheet before you sign — no bait-and-switch.",
+      "Rates depend on your revenue, time in business, and credit profile. For working capital, illustrative panel ranges have often fallen between 14% – 34% APR. For equipment loans secured by the truck, illustrative ranges have often run 9% – 18% APR. These ranges are illustrative only; actual rates are set by lenders and vary. You'll see the exact APR, term length, and total cost on every term sheet before you sign.",
     aJsx: (
       <>
-        Rates depend on your revenue, time in business, and credit band. For
-        working capital, most of our borrowers land between{" "}
+        Rates depend on your revenue, time in business, and credit profile. For
+        working capital, illustrative panel ranges have often fallen between{" "}
         <code>14% – 34% APR</code>. For equipment loans secured by the truck,
-        rates typically run <code>9% – 18% APR</code>. These are observed panel
-        ranges, not guarantees — see{" "}
+        illustrative ranges have often run <code>9% – 18% APR</code>. These
+        ranges are illustrative only; actual rates are set by lenders and vary
+        — see{" "}
         <a href="/methodology#finance-rates">methodology</a>. You&rsquo;ll see
         the exact APR, term length, and total cost on every term sheet before
-        you sign — no bait-and-switch.
+        you sign.
       </>
     ),
   },
   {
     q: "What documents do I need?",
     aText:
-      "The basics: last 3 months of business bank statements, your EIN or SSN, DOT number, and a driver's license. For loans over $75k we'll also ask for your most recent Schedule C or 1120 and current settlement statements from your carrier or broker. No business plan, no tax preparer letter, no IFTA printouts unless a specific lender requests them.",
+      "The basics for commercial / business financing: last 3 months of business bank statements, your EIN (or SSN when required for a sole proprietor business application), DOT number, and a driver's license. SSN/EIN is collected so financing partners can verify your business identity and underwrite a commercial application; it is handled under our Privacy Policy. For loans over $75k we'll also ask for your most recent Schedule C or 1120 and current settlement statements from your carrier or broker. This service is for commercial / business financing only — not personal or consumer credit.",
     aJsx: (
       <>
-        The basics: last 3 months of business bank statements, your EIN or SSN,
-        DOT number, and a driver&rsquo;s license. For loans over $75k we&rsquo;ll
+        The basics for commercial / business financing: last 3 months of
+        business bank statements, your EIN (or SSN when required for a sole
+        proprietor business application), DOT number, and a driver&rsquo;s
+        license. SSN/EIN is collected so financing partners can verify your
+        business identity and underwrite a commercial application; see our{" "}
+        <a href="/privacy">Privacy Policy</a>. For loans over $75k we&rsquo;ll
         also ask for your most recent Schedule C or 1120 and current settlement
-        statements from your carrier or broker. No business plan, no tax
-        preparer letter, no IFTA printouts unless a specific lender requests
-        them.
+        statements from your carrier or broker. This service is for commercial
+        / business financing only — not personal or consumer credit.
       </>
     ),
   },
   {
-    q: "What credit score do I need?",
+    q: "What credit profile do I need?",
     aText:
-      "We route applications starting at a 500 FICO. Lenders on our panel go lower than most banks because they underwrite on revenue and equipment, not just credit. Below 580, expect rates on the higher end of the range and a tighter maximum. Above 680, you qualify for our full product set. For operators below 500 or actively in a credit event, factoring with no credit check on you is often the right product — the factor underwrites the broker who owes the invoice, not the operator.",
+      "We introduce commercial financing applications across a range of credit profiles. Financing partners on our panel often weigh business revenue and equipment alongside credit history. Lower credit profiles may see higher rates and tighter maximums; stronger profiles may see a broader product set. For operators rebuilding credit, factoring that underwrites broker receivables (not a consumer credit score alone) can be an option. Approval is not guaranteed.",
     aJsx: (
       <>
-        We route applications starting at a <code>500 FICO</code>. Lenders on
-        our panel go lower than most banks because they underwrite on revenue
-        and equipment, not just credit. Below 580, expect rates on the higher
-        end of the range and a tighter maximum. Above 680, you qualify for our
-        full product set. For operators below 500 or actively in a credit
-        event,{" "}
+        We introduce commercial financing applications across a range of credit
+        profiles. Financing partners on our panel often weigh business revenue
+        and equipment alongside credit history. Lower credit profiles may see
+        higher rates and tighter maximums; stronger profiles may see a broader
+        product set. For operators rebuilding credit,{" "}
         <a href="/factoring/no-credit-check">
-          factoring with no credit check on you
+          factoring focused on broker receivables
         </a>{" "}
-        is often the right product — the factor underwrites the broker who owes
-        the invoice, not the operator.
+        can be an option — the factor underwrites the broker who owes the
+        invoice, not a consumer credit score alone. Approval is not guaranteed.
       </>
     ),
   },
   {
-    q: "How fast is fast, really?",
+    q: "How long does funding take?",
     aText:
-      "Soft approval and lender match: typically 20 minutes after you complete the application. Funds in your account: same banking day after the chosen lender signs off, when the wire instruction lands before that bank's cutoff. Wires that miss the cutoff settle the next banking day.",
+      "Timing depends on the lender and your documents. Soft matches and term sheets arrive after underwriting review; wires settle after the chosen financing partner signs off and banking cutoffs clear. Individual results vary.",
     aJsx: (
       <>
-        Soft approval and lender match: typically 20 minutes after you complete
-        the application. Funds in your account: same banking day after the
-        chosen lender signs off, when the wire instruction lands before that
-        bank&rsquo;s cutoff. Wires that miss the cutoff settle the next banking
-        day.
+        Timing depends on the lender and your documents. Soft matches and term
+        sheets arrive after underwriting review; wires settle after the chosen
+        financing partner signs off and banking cutoffs clear. Individual
+        results vary.
       </>
     ),
   },
   {
     q: "What happens after I apply?",
     aText:
-      "You get a soft approval range and a shortlist of 2–4 matched lenders. Pick one. The chosen lender runs a hard pull and sends a final term sheet within 4 hours. You review it, ask questions (one phone number, not a call center), e-sign from your phone, and the wire goes out. That's it.",
+      "You may receive a soft match range and a shortlist of financing partners. Pick one. The chosen partner runs a hard pull and sends a final term sheet when underwriting is complete. You review it, ask questions, e-sign if you choose to proceed, and funding follows their process. Approval and timing are not guaranteed.",
     aJsx: (
       <>
-        You get a soft approval range and a shortlist of 2–4 matched lenders.
-        Pick one. The chosen lender runs a hard pull and sends a final term
-        sheet within 4 hours. You review it, ask questions (one phone number,
-        not a call center), e-sign from your phone, and the wire goes out.
-        That&rsquo;s it.
+        You may receive a soft match range and a shortlist of financing
+        partners. Pick one. The chosen partner runs a hard pull and sends a
+        final term sheet when underwriting is complete. You review it, ask
+        questions, e-sign if you choose to proceed, and funding follows their
+        process. Approval and timing are not guaranteed.
       </>
     ),
   },
   {
     q: "Will this hurt my credit?",
     aText:
-      "Not at the start. The Dispatched application is a soft pull — it does not show on your credit report and does not affect your score. A hard pull only happens once you pick a lender and move forward on their term sheet. If you shop around, the hard pulls fall inside a 14-day rate-shopping window and count as one inquiry.",
+      "Not at the start. The Dispatched application is a soft pull — it does not show on your credit report and does not affect your score. A hard pull only happens once you pick a financing partner and move forward on their term sheet. If you shop around, hard pulls that fall inside a typical rate-shopping window are often treated as one inquiry by scoring models.",
     aJsx: (
       <>
         Not at the start. The Dispatched application is a <code>soft pull</code>
         {" "}— it does not show on your credit report and does not affect your
-        score. A hard pull only happens once you pick a lender and move forward
-        on their term sheet. If you shop around, the hard pulls fall inside a
-        14-day rate-shopping window and count as one inquiry.
+        score. A hard pull only happens once you pick a financing partner and
+        move forward on their term sheet. If you shop around, hard pulls that
+        fall inside a typical rate-shopping window are often treated as one
+        inquiry by scoring models.
       </>
     ),
   },

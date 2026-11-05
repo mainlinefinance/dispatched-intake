@@ -18,12 +18,12 @@ import {
 export const metadata: Metadata = {
   title: "Emergency semi truck repair loan — same day | Dispatched",
   description:
-    "Truck down, repair invoice in hand? Emergency repair loans fund the same banking day on the Dispatched panel. $5K–$150K, 500 FICO floor, soft pull.",
+    "Truck down, repair invoice in hand? Emergency repair loans fund after lender sign-off on the Dispatched panel. $5K–$150K, 500 FICO floor, soft pull.",
   alternates: { canonical: "/truck-repair-loans/emergency" },
   openGraph: {
     title: "Emergency semi truck repair loan — same day | Dispatched",
     description:
-      "Truck down, repair invoice in hand? Emergency repair loans fund the same banking day on the Dispatched panel. $5K–$150K, 500 FICO floor, soft pull.",
+      "Truck down, repair invoice in hand? Emergency repair loans fund after lender sign-off on the Dispatched panel. $5K–$150K, 500 FICO floor, soft pull.",
     url: "/truck-repair-loans/emergency",
     type: "website",
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Emergency semi truck repair loan — same day | Dispatched",
     description:
-      "Truck down, repair invoice in hand? Emergency repair loans fund the same banking day on the Dispatched panel. $5K–$150K, 500 FICO floor, soft pull.",
+      "Truck down, repair invoice in hand? Emergency repair loans fund after lender sign-off on the Dispatched panel. $5K–$150K, 500 FICO floor, soft pull.",
   },
 };
 
@@ -40,7 +40,7 @@ const PAGE_URL = "https://dispatched.finance/truck-repair-loans/emergency";
 const faqs = [
   {
     q: "How fast can an emergency truck repair loan actually fund?",
-    a: "Same banking day, when the application clears soft approval before the chosen lender's wire cutoff. Cutoffs are typically 2 PM to 4 PM local for the lender's depository bank. Applications submitted after cutoff fund next banking day morning. The Dispatched panel runs soft pre-qualification in 20 minutes; the chosen lender countersigns the term sheet within 2 hours; the wire goes out within 4 hours of countersignature. Weekend breakdowns: most panel lenders accept Friday afternoon applications for Monday funding; a subset offer 24/7 funding via commercial cards.",
+    a: "Same banking day, when the application clears soft approval before the chosen lender's wire cutoff. Cutoffs are typically 2 PM to 4 PM local for the lender's depository bank. Applications submitted after cutoff fund next banking day morning. The Dispatched panel runs soft pre-qualification in 20 minutes; the chosen lender countersigns the term sheet within 2 hours; the wire goes out after countersignature. Weekend breakdowns: most panel lenders accept Friday afternoon applications for Monday funding; a subset offer 24/7 funding via commercial cards.",
   },
   {
     q: "How much can I borrow for an emergency repair?",
@@ -88,7 +88,7 @@ export default function EmergencyTruckRepairLoanPage() {
       />
       <JsonLd
         payload={article({
-          headline: "Emergency semi truck repair loan — same banking day funding",
+          headline: "Emergency semi truck repair loan — repair financing",
           description:
             "How emergency truck repair loans work on the Dispatched panel: same-day funding mechanics, the wire-to-shop structure, APR band, and what the application actually asks for.",
           url: PAGE_URL,
@@ -123,7 +123,7 @@ export default function EmergencyTruckRepairLoanPage() {
             <p className="ins-hero-sub">
               Truck on the side of a road, repair invoice in hand, every
               day off the road costing revenue. The Dispatched panel funds
-              emergency repair loans the same banking day — soft pull,
+              emergency repair loans after lender sign-off — soft pull,
               500 FICO floor, $5K to $150K, wired direct to your shop or
               your business account.
             </p>

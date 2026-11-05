@@ -25,12 +25,12 @@ import {
 export const metadata: Metadata = {
   title: "Bad credit truck financing — FICO 500+ | Dispatched",
   description:
-    "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply or call (307) 317-0801.",
+    "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply.",
   alternates: { canonical: "/bad-credit-truck-financing" },
   openGraph: {
     title: "Bad credit truck financing — FICO 500+ | Dispatched",
     description:
-      "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply or call (307) 317-0801.",
+      "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply.",
     url: "/bad-credit-truck-financing",
     type: "website",
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bad credit truck financing — FICO 500+ | Dispatched",
     description:
-      "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply or call (307) 317-0801.",
+      "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply.",
   },
 };
 
@@ -366,7 +366,7 @@ export default function BadCreditTruckFinancingPage() {
                 specific lender and decide to move forward.
               </li>
               <li>
-                <strong>Wire.</strong> Same banking day after the chosen
+                <strong>Wire.</strong> After the chosen
                 lender signs off, when the wire instruction lands before
                 the bank&rsquo;s cutoff.
               </li>
@@ -400,7 +400,7 @@ export default function BadCreditTruckFinancingPage() {
             </h2>
             <p className="ins-hero-sub">
               Soft-pull match first. One hard pull only with the lender
-              you choose. Wire same banking day after sign-off.
+              you choose. Timing depends on the lender and your documents.
             </p>
             <div className="product-hero-ctas">
               <Link

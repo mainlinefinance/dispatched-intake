@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
+import { HAS_SUPPORT_PHONE, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 import Logo from "@/components/site/Logo";
 import { IconPhone } from "./icons";
 
@@ -15,11 +15,15 @@ export default function Footer() {
               Built for owner-operators and small fleets — construction and
               other trades next.
             </p>
-            <a href={PHONE_TEL} className="phone-cta">
-              <IconPhone size={16} />
-              Call {PHONE_DISPLAY}
-            </a>
+            {HAS_SUPPORT_PHONE ? (
+              <a href={PHONE_TEL} className="phone-cta">
+                <IconPhone size={16} />
+                Call {PHONE_DISPLAY}
+              </a>
+            ) : null}
             <address className="footer-address">
+              Dispatched, Inc.
+              <br />
               12895 Josey Lane #124
               <br />
               Dallas, TX 75234
@@ -123,7 +127,11 @@ export default function Footer() {
                 <Link href="/calculators">Calculators &amp; tools</Link>
               </li>
               <li>
-                <a href={PHONE_TEL}>Contact us</a>
+                {HAS_SUPPORT_PHONE ? (
+                  <a href={PHONE_TEL}>Contact us</a>
+                ) : (
+                  <a href="mailto:support@dispatched.finance">Contact us</a>
+                )}
               </li>
               <li>
                 <Link href="/disclosures">Disclosures</Link>
@@ -136,39 +144,31 @@ export default function Footer() {
         </div>
         <div className="bottom">
           <div className="compliance">
+            {/* TODO: Add state commercial loan broker / financing license
+                numbers here when registrations are obtained. Until then,
+                geo-exclude states that require a commercial loan broker
+                license from paid Google Ads. */}
             <p>
-              © 2026 Dispatched, Inc. Dispatched is not a lender. We are a
-              commercial loan matching service. We route eligible borrower
-              applications to third-party lenders on our panel. Rates, fees,
-              and loan amounts are determined by each lender and depend on the
+              © 2026 Dispatched, Inc. Dispatched is a referral and introduction
+              service for commercial / business financing — not a lender and not
+              a consumer credit provider. We introduce eligible businesses to
+              third-party financing partners. We do not claim any commercial
+              loan broker or financing license on this site. Rates, fees, and
+              loan amounts are set by each financing partner and depend on the
               borrower&rsquo;s business profile. You&rsquo;ll see full terms
-              before signing anything. Loans subject to credit approval.
-              Dispatched receives a flat referral fee from lenders on funded
-              loans; this fee is disclosed on every term sheet and does not
-              affect the APR you are offered.
-            </p>
-            <p>
-              Statistics footnotes: <sup>1</sup> Principal volume funded to
-              Dispatched-matched borrowers between Mar 20 and Apr 19, 2026, as
-              reported by panel lenders. Includes new originations; excludes
-              renewals. <sup>2</sup> Median time (not mean) from completed
-              application to originating lender wire, measured across funded
-              loans in the trailing 90 days. Individual results vary based on
-              documentation completeness, lender underwriting queue, and
-              banking-partner cutoff times.
-            </p>
-            <p>
-              Commercial loan broker registrations pending in applicable
-              states. State-specific licensing information will be listed
-              here prior to launch. Dispatched does not broker loans to
-              consumers and does not extend credit directly.
+              before signing anything. Loans are subject to credit approval;
+              approval is not guaranteed. Dispatched is paid by its financing
+              partners when a loan is funded; it does not charge businesses a
+              fee to apply or be introduced. Partner compensation is disclosed
+              on term sheets and does not change the APR you are offered.
             </p>
             <p className="footer-partners">
-              Insurance quotes routed through{" "}
-              <strong>Coverdash</strong>, the licensed insurance producer
-              of record. Carrier solvency ratings sourced from{" "}
-              <strong>AM Best</strong>. Capital matching to a panel of
-              commercial lenders; no consumer credit products. Founded
+              Financing referrals may be introduced to partners including{" "}
+              <strong>Big Think Capital</strong>. Insurance quotes routed
+              through <strong>Coverdash</strong>, the licensed insurance
+              producer of record. Carrier solvency ratings sourced from{" "}
+              <strong>AM Best</strong>. Capital matching is for commercial /
+              business financing only; no consumer credit products. Founded
               and operated by{" "}
               <Link href="/about">Angelo Orru Neto</Link>.
             </p>

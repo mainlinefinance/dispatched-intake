@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     q: "How fast can I get funded?",
-    a: "Soft approval and lender match typically come back within 20 minutes of finishing the application. Funds hit your account the same banking day after the chosen lender countersigns and the wire instruction lands before that bank's cutoff. Wires after the cutoff settle the next banking day; weekend and federal-holiday wires settle the next banking day. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
+    a: "Soft approval and lender match depend on underwriting review of finishing the application. Funds hit your account the after the chosen lender countersigns and the wire instruction lands before that bank's cutoff. Wires after the cutoff settle the next banking day; weekend and federal-holiday wires settle the next banking day. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
   },
   {
     q: "Can I apply for more than one product at the same time?",

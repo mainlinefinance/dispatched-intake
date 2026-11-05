@@ -75,7 +75,7 @@ const faqs = [
   },
   {
     q: "How fast can a new LLC get funded after applying?",
-    a: "Soft approval and lender match: typically 20 minutes after application. Equipment loans on a new LLC fund in 3 to 5 banking days after the lender countersigns — slower than a seasoned operation because the title work and lien recording on a brand-new entity need verification. Working capital, when available, funds the same banking day. If the LLC formation paperwork is in process (filed but not yet returned by the Secretary of State), the lender will hold until the certificate lands; that adds 5 to 15 days depending on the state.",
+    a: "Soft approval and lender match: after application. Equipment loans on a new LLC fund in 3 to 5 banking days after the lender countersigns — slower than a seasoned operation because the title work and lien recording on a brand-new entity need verification. Working capital, when available, funds after lender sign-off; timing depends on documents. If the LLC formation paperwork is in process (filed but not yet returned by the Secretary of State), the lender will hold until the certificate lands; that adds 5 to 15 days depending on the state.",
   },
 ];
 

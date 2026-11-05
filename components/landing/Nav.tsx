@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
+import { HAS_SUPPORT_PHONE, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 import Logo from "@/components/site/Logo";
 import { IconClose, IconMenu, IconPhone } from "./icons";
 
@@ -73,10 +73,12 @@ export default function Nav() {
             <a href={faqHref}>FAQ</a>
           </div>
           <div className="nav-right">
-            <a href={PHONE_TEL} className="nav-phone">
-              <IconPhone />
-              {PHONE_DISPLAY}
-            </a>
+            {HAS_SUPPORT_PHONE ? (
+              <a href={PHONE_TEL} className="nav-phone">
+                <IconPhone />
+                {PHONE_DISPLAY}
+              </a>
+            ) : null}
             <Link href="/apply" className="btn btn--primary btn--sm nav-cta">
               {CTA_LABEL}
             </Link>
@@ -133,9 +135,19 @@ export default function Nav() {
           FAQ
         </a>
         <div className="mobile-foot">
-          <a href={PHONE_TEL} className="mobile-phone" onClick={close}>
-            Call {PHONE_DISPLAY}
-          </a>
+          {HAS_SUPPORT_PHONE ? (
+            <a href={PHONE_TEL} className="mobile-phone" onClick={close}>
+              Call {PHONE_DISPLAY}
+            </a>
+          ) : (
+            <a
+              href="mailto:support@dispatched.finance"
+              className="mobile-phone"
+              onClick={close}
+            >
+              Email support
+            </a>
+          )}
           <Link href="/apply" className="btn btn--primary" onClick={close}>
             {CTA_LABEL}
           </Link>

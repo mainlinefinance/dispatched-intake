@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     q: "What information do you collect on the application?",
-    a: "The basics needed to underwrite a trucking finance application: legal name and contact details, EIN or SSN, DOT and MC numbers, monthly revenue range, time in business, and what the funds are for. Bank statements and tax documents are uploaded after the soft-approval step, only to the lenders you choose to move forward with.",
+    a: "The basics needed to underwrite a commercial trucking finance application: legal name and contact details, EIN or SSN (collected so financing partners can verify business identity; protected under our Privacy Policy), DOT and MC numbers, monthly revenue range, time in business, and what the funds are for. This service is for commercial / business financing only — not personal or consumer credit. Bank statements and tax documents are uploaded after the soft-approval step, only to the financing partners you choose to move forward with.",
   },
   {
     q: "How long does the application take?",
@@ -68,6 +68,18 @@ export default function ApplyPage() {
 
       <header className="apply-header">
         <h1 className="t-h1">Apply for funding</h1>
+        <p className="apply-disclosure">
+          Dispatched is a referral service for commercial / business financing
+          only — not a lender and not consumer credit. We are paid by financing
+          partners (including Big Think Capital) when a loan is funded; we do
+          not charge businesses a fee to apply. Approval is not guaranteed.
+        </p>
+        <p className="apply-ssn-notice">
+          If the form asks for an EIN or SSN, it is collected so financing
+          partners can verify your business identity and underwrite a
+          commercial application. See how we protect it in our{" "}
+          <a href="/privacy">Privacy Policy</a>.
+        </p>
       </header>
 
       <ul

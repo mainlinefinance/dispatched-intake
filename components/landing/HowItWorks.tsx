@@ -41,7 +41,7 @@ const flowSteps: FlowStep[] = [
   {
     n: "5",
     label: "Wire to your account",
-    sub: "Wire goes out the same banking day after the lender signs off.",
+    sub: "Timing depends on the lender and your documents.",
     who: "You",
     color: "var(--color-ok-600)",
   },
@@ -56,8 +56,7 @@ export default function HowItWorks() {
           <h2>How the money moves.</h2>
           <p>
             Five steps, in order. One soft check. One hard pull, and only from
-            the lender you pick. The mechanism is the reason we&rsquo;re not a
-            broker.
+            the lender you pick. We are a referral service, not a lender.
           </p>
           <p className="flow-subhead">
             Trucking-friendly lenders on our panel.
@@ -91,12 +90,12 @@ export default function HowItWorks() {
             </span>
             <h3>Built for trucking.</h3>
             <p className="lede">
-              We only fund freight. Every lender on our panel knows what a DOT
+              We focus on freight. Every financing partner on our panel knows what a DOT
               number, ELD, and factoring agreement are before you start
               typing.
             </p>
             <ul>
-              <li>Fuel advances &amp; cash flow — 24-hour turn</li>
+              <li>Fuel advances &amp; cash flow — timing varies by lender</li>
               <li>Truck repair loans — paid direct to your shop</li>
               <li>Owner-op and 2–10 truck fleet working capital</li>
               <li>Equipment loans on Class 8 tractors &amp; trailers</li>
@@ -135,7 +134,7 @@ export default function HowItWorks() {
             <ul>
               <li>Soft-pull match. No impact on your credit score</li>
               <li>One hard pull, only with the lender you choose</li>
-              <li>Wire same banking day after lender sign-off</li>
+              <li>Timing depends on the lender and your documents</li>
               <li>No in-person closings. E-sign from the cab</li>
             </ul>
           </div>

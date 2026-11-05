@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     q: "How long does engine rebuild financing take to fund?",
-    a: "Soft approval and lender match: 20 minutes after application. The chosen lender countersigns a term sheet within 4 business hours. The wire to the shop releases the same banking day if the application clears before cutoff; next morning if past cutoff. Engine rebuilds add a verification step that emergency repair does not — the lender typically calls the shop directly to confirm the scope of work, the parts list, and the expected completion timeline. That call adds 30 to 60 minutes to the funding clock but is non-negotiable on rebuilds because the dollar figure justifies the verification.",
+    a: "Soft approval and lender match: after underwriting review of the application. The chosen lender countersigns a term sheet when underwriting is complete. The wire to the shop releases after lender sign-off; timing depends on documents and bank cutoffs. Engine rebuilds add a verification step that emergency repair does not — the lender typically calls the shop directly to confirm the scope of work, the parts list, and the expected completion timeline. That call adds 30 to 60 minutes to the funding clock but is non-negotiable on rebuilds because the dollar figure justifies the verification.",
   },
   {
     q: "Does the lender pay the shop or pay me?",
@@ -237,7 +237,7 @@ export default function EngineRebuildFinancingPage() {
               The call typically takes 15 to 30 minutes and adds an hour
               to the funding clock. Operators applying after 11 AM local
               should expect funds to land at the shop next morning
-              rather than same banking day.
+              rather than same-day funding.
             </p>
           </div>
         </section>

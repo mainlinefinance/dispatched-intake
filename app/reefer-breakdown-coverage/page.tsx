@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Does reefer breakdown coverage pay for the repair to the unit?",
-    a: "No. The endorsement is cargo coverage — it reimburses the spoiled load value within policy limits and conditions. The repair to the refrigeration unit itself is the operator's expense and runs separately. Funding the unit repair is what the Dispatched repair-financing match is built for: $5K to $150K in same-banking-day funds after the chosen lender signs off, underwritten on revenue, not on the cargo claim.",
+    a: "No. The endorsement is cargo coverage — it reimburses the spoiled load value within policy limits and conditions. The repair to the refrigeration unit itself is the operator's expense and runs separately. Funding the unit repair is what the Dispatched repair-financing match is built for: $5K to $150K in repair financing after the chosen lender signs off, underwritten on revenue, not on the cargo claim.",
   },
   {
     q: "What temperature documentation does the carrier require?",
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: "How fast can I get repair financing for a reefer unit rebuild?",
-    a: "The Dispatched workflow returns soft-approval and lender match typically within 20 minutes of submitting the application. Funds wire to the operator's business account the same banking day after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff. The financing is independent of the cargo claim — the lender underwrites the operation's revenue and equipment, not the reefer breakdown event.",
+    a: "The Dispatched workflow returns soft-approval and lender match after underwriting review of submitting the application. Funds wire to the operator's business account the after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff. The financing is independent of the cargo claim — the lender underwrites the operation's revenue and equipment, not the reefer breakdown event.",
   },
   {
     q: "Can I get reefer breakdown coverage if my truck is over a certain age?",
@@ -378,7 +378,7 @@ export default function ReeferBreakdownCoveragePage() {
                   <Link href="/truck-repair-loans">Truck repair financing</Link>.
                 </strong>{" "}
                 The Dispatched panel funds repair amounts from $5,000 to
-                $150,000, with same-banking-day funds after the chosen lender
+                $150,000, with repair financing after the chosen lender
                 signs off. Reefer-unit work fits this band: engine swap on a
                 Thermo King Precedent, clutch assembly on a Carrier X4 series,
                 microprocessor replacement, condenser coil work. Underwriting
@@ -461,7 +461,7 @@ export default function ReeferBreakdownCoveragePage() {
                   <Link href="/apply?useCase=repairs">/apply?useCase=repairs</Link>{" "}
                   returns a $25,000 working-capital offer at 21% APR over 18
                   months ($1,420 monthly) — covers the $18,500 rebuild plus
-                  operating-expense buffer. Funded the same banking day.
+                  operating-expense buffer. Funding timing depends on the lender and your documents.
                 </span>
               </div>
               <div className="product-example-meta">

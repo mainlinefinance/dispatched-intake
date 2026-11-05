@@ -41,7 +41,7 @@ const scenarios: Scenario[] = [
     who: "Fleet owner, 7 trucks",
     band: "$75K–$100K",
     useCase:
-      "Covering payroll after a broker default on a sizable receivable. Bank said no.",
+      "Covering payroll after a broker default on a sizable receivable. Options may be available even if a bank has declined; approval is not guaranteed.",
     type: "Bridge capital",
   },
 ];

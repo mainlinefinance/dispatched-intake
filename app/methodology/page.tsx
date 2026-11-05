@@ -169,7 +169,7 @@ export default function MethodologyPage() {
                 policies.
               </li>
               <li>
-                <strong>Wire same banking day after lender sign-off.</strong>{" "}
+                <strong>Timing depends on the lender and your documents.</strong>{" "}
                 Same-banking-day wires occur when the chosen lender signs off
                 and the wire instruction lands before the partner bank&apos;s
                 cutoff. Wires that miss the cutoff settle the next banking day;

@@ -40,7 +40,7 @@ const products: Product[] = [
   {
     label: "Factoring",
     title: "Invoice factoring",
-    copy: "Get paid in 24 hours, not 60.",
+    copy: "Advance timing depends on the factor and your invoices.",
     href: "/factoring",
     icon: <IconDollarCircle />,
   },

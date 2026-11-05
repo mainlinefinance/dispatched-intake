@@ -72,7 +72,7 @@ const faqs = [
   },
   {
     q: "How long does the repair-loan application take?",
-    a: "Two minutes to submit inside /apply. Soft approval and lender match typically come back within 20 minutes. Term sheets show APR, term, and total cost. The hard pull and funding step happen after the operator picks a lender. The wire lands the same banking day after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff.",
+    a: "Two minutes to submit inside /apply. Soft approval and lender match depend on underwriting review. Term sheets show APR, term, and total cost. The hard pull and funding step happen after the operator picks a lender. The wire lands the after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff.",
   },
 ];
 
@@ -396,7 +396,7 @@ export default function OwnerOperatorRepairLoansPage() {
                 <span className="product-example-label">Match output</span>
                 <span className="product-example-value">
                   $48,000 (rebuild + 2-week operating buffer) at 24% APR,
-                  24-month term, $2,540 monthly. Funded same banking day
+                  24-month term, $2,540 monthly. Funding timing varies
                   after sign-off.
                 </span>
               </div>

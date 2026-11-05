@@ -14,8 +14,8 @@ const stats: Stat[] = [
   },
   {
     icon: <IconClock size={22} />,
-    amt: "24–48 hrs",
-    label: "Typical time to funds",
+    amt: "Varies",
+    label: "Timing depends on lender & docs",
   },
   {
     icon: <IconShieldCheck size={22} />,
