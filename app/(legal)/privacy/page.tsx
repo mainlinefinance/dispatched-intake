@@ -17,8 +17,8 @@ import Link from "next/link";
    See: docs/superpowers/specs/2026-05-17-privacy-terms-and-footer-cleanup-design.md §4
    =========================================================================== */
 
-const EFFECTIVE_DATE = "2026-05-17";
-const EFFECTIVE_DATE_DISPLAY = "May 17, 2026";
+const EFFECTIVE_DATE = "2026-11-08";
+const EFFECTIVE_DATE_DISPLAY = "November 8, 2026";
 const CONTACT_EMAIL = "angelo@mainline.finance";
 
 export const metadata: Metadata = {
@@ -143,13 +143,11 @@ export default function PrivacyPage() {
             See &sect;6 for what we do (and do not) use this for.
           </li>
           <li>
-            <strong>Credit information.</strong> At intake, our intake
-            partner Lendflow performs a <em>soft pull</em> &mdash; an
-            inquiry that is not visible to other lenders and does not
-            affect your credit score. A <em>hard pull</em> only happens
-            after you select a specific lender from your shortlist and
-            authorize that lender to proceed. We explain this on the apply
-            page before any inquiry runs.
+            <strong>Credit information.</strong> Dispatched, Inc. does not
+            pull your credit. The form embedded on /apply says checking
+            your options does not affect your credit score. If a financing
+            partner later obtains a credit report, that partner does so
+            under its own disclosure.
           </li>
           <li>
             <strong>Communications metadata.</strong> When we call, text, or
@@ -219,11 +217,15 @@ export default function PrivacyPage() {
             information you submit to them after that point.
           </li>
           <li>
-            <strong>Lendflow.</strong> The third-party processor for the
-            intake widget on /apply and the webhook receiver at
-            /api/webhooks/lendflow. Lendflow receives the intake fields
-            described in &sect;3 and runs the initial soft pull on our
-            behalf.
+            <strong>Big Think Capital (recipient).</strong> Dispatched, Inc.
+            operates /apply and every other page on dispatched.finance. The
+            form embedded on /apply is hosted by Mainline (tryoption.ai) for
+            the partner slug dispatched-finance. What you type into that
+            form is submitted from your browser to Mainline for delivery to
+            Big Think Capital. Big Think Capital and Mainline are recipients
+            of that application. They are not the operator of this site.
+            Dispatched does not receive that form submission on its own
+            servers, and this site does not run an intake webhook.
           </li>
           <li>
             <strong>Coverdash.</strong> The named licensed insurance
@@ -240,13 +242,13 @@ export default function PrivacyPage() {
             events.
           </li>
           <li>
-            <strong>Mainline (tryoption.ai).</strong> Our analytics
-            provider, which is focused on AI and search-crawler visibility.
-            Page request metadata (path, user agent, referrer, IP) is sent
-            to Mainline so we can see when AI assistants and search engines
+            <strong>Mainline (tryoption.ai) (recipient).</strong> Mainline
+            also receives page-request metadata (path, user agent, referrer,
+            IP) so Dispatched can see when AI assistants and search engines
             visit the site. Mainline filters by user agent to focus on
-            crawler traffic; we do not use this signal to profile
-            individual human visitors.
+            crawler traffic. That feed is not used to profile individual
+            human visitors. Receiving it does not make Mainline the operator
+            of the site.
           </li>
           <li>
             <strong>Service providers.</strong> Render hosts the site and
@@ -268,20 +270,34 @@ export default function PrivacyPage() {
       <section id="cookies">
         <h2>6. Cookies and tracking</h2>
         <p>
-          The site uses minimal first-party browser storage. The Coverdash
-          insurance widget uses{" "}
-          <code>localStorage</code> to hold widget state between page loads,
-          so a partially filled quote can be resumed without re-typing.
-          Other than that, the site does not set behavioral tracking
-          cookies of its own.
+          When a page URL includes an advertising click identifier (gclid,
+          gbraid, or wbraid) or a campaign parameter (utm_source,
+          utm_medium, utm_campaign, utm_term, or utm_content), Dispatched,
+          Inc. stores those values in session storage for that tab and in a
+          first-party cookie named <code>df_ads_attr</code>. The cookie
+          expires 90 days after it is written. Pages with none of those
+          values do not create the cookie. The site does not show a separate
+          cookie-consent control; this section is the disclosure. The
+          communications consent in &sect;7 is consent to be contacted. It
+          is not consent to this cookie, and this draft does not say counsel
+          has approved the 90-day lifetime. We use the stored values so a
+          campaign click can still be attached when you open the application
+          after moving to another page on this site. We pass the campaign
+          parameters on the application URL. The Coverdash insurance widget
+          may use <code>localStorage</code> for its own quote state.
         </p>
         <p>
-          As of the effective date of this policy, the site does{" "}
-          <strong>not</strong> use Google Analytics, Meta Pixel, LinkedIn
-          Insight Tag, or any third-party advertising tracker. If that
-          changes &mdash; for example, if we add an analytics tool that
-          uses cookies or a similar identifier &mdash; this section will
-          be updated and the effective date at the top will move.
+          The site loads PostHog product analytics. Google Analytics 4 loads
+          when a measurement id is configured and records page views. When a
+          Google Ads tag id and conversion label are also configured, that
+          existing Google tag receives one additional ads configuration. A
+          second copy of the Google tag library is not added in that case.
+          A page view is not an advertising conversion. This site sends an
+          ads conversion only after the embedded form tells this page that
+          Big Think Capital accepted the application and includes an
+          application id. The same id is sent once. A successful response
+          from the form host, by itself, is not that acceptance. We do not
+          use Meta Pixel or the LinkedIn Insight Tag.
         </p>
       </section>
 
@@ -329,21 +345,15 @@ export default function PrivacyPage() {
       <section id="credit-reporting">
         <h2>8. Credit reporting (FCRA)</h2>
         <p>
-          When you submit a funding application, our intake partner Lendflow
-          performs a <em>soft pull</em> on the business credit profile and,
-          where applicable, the owner&rsquo;s personal credit. A soft pull
-          is an inquiry that is not visible to other lenders, does not
-          affect your credit score, and is used solely to match you to
-          lenders whose appetite fits your profile.
-        </p>
-        <p>
-          A <em>hard pull</em> only happens after you select a specific
-          lender from your shortlist and authorize that lender to proceed.
-          The selected lender, not Dispatched, performs the hard pull, and
-          its permissible purpose is the credit transaction you have
-          initiated with them. If you compare offers from multiple lenders,
-          hard pulls inside a 14-day rate-shopping window count as a single
-          inquiry on most scoring models.
+          Dispatched does not obtain your consumer credit report. The
+          funding form states that checking options does not affect your
+          credit score. If you later choose a financing partner and that
+          partner obtains a credit report, that partner &mdash; not
+          Dispatched &mdash; pulls it. A permissible purpose for that pull
+          is the credit transaction you started with them. If you compare
+          offers from multiple lenders, hard pulls inside a 14-day
+          rate-shopping window count as a single inquiry on most scoring
+          models.
         </p>
         <p>
           Under the Fair Credit Reporting Act (FCRA) you have the right to
@@ -384,6 +394,14 @@ export default function PrivacyPage() {
             unsubscribe, plus a short cool-down period during which your
             contact information is held on a suppression list so we do not
             accidentally re-contact you after you have opted out.
+          </li>
+          <li>
+            <strong>Click and campaign parameters in the browser.</strong>{" "}
+            Session storage for the tab, and the <code>df_ads_attr</code>{" "}
+            cookie for 90 days after it is written, and only after a click
+            identifier or campaign parameter was present. [COUNSEL REVIEW:
+            this is the lifetime the site sets. It is not a determination
+            that 90 days is a legally required period, and counsel has not approved it.]
           </li>
           <li>
             <strong>Aggregated and de-identified data.</strong> Statistics

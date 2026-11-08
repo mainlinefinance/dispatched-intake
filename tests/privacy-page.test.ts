@@ -63,4 +63,18 @@ describe("privacy page content invariants", () => {
   it("retains the [COUNSEL REVIEW] markers grep convention", () => {
     expect(SOURCE).toMatch(/\[COUNSEL REVIEW:/);
   });
+
+  it("keeps Dispatched, Inc. as the operator and names recipients only", () => {
+    expect(SOURCE).toContain("Dispatched, Inc.");
+    expect(SOURCE).toContain("Dallas, TX 75234");
+    expect(SOURCE).toContain("They are not the operator");
+    expect(SOURCE).toContain("Big Think Capital");
+    expect(SOURCE).toContain("Mainline");
+    expect(SOURCE).not.toContain("Lendflow");
+    expect(SOURCE).not.toContain("/api/webhooks/lendflow");
+    expect(SOURCE).toContain("df_ads_attr");
+    expect(SOURCE).toContain("90 days after it is written");
+    expect(SOURCE).toContain("counsel has not approved it");
+    expect(SOURCE).not.toMatch(/does\s+not\s+use Google Analytics/i);
+  });
 });

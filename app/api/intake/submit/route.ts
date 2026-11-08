@@ -29,6 +29,9 @@ export async function POST(req: Request) {
 
   const leadId = crypto.randomUUID();
 
+  // Not the live funding form. /apply embeds the Mainline widget, and that
+  // frame posts to the widget host's /api/widget-lead. This UUID is not a
+  // Big Think Capital acceptance and must not be reported as an ads conversion.
   // ANALYTICS_HOOK: intake_lead_received — replace console with structured
   // logger + real persistence (DATABASE_URL) in v2. Render captures stdout.
   console.log(
