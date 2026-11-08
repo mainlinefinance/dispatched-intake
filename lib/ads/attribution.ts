@@ -238,8 +238,11 @@ export function persistAdsAttribution(
     previous,
     attributionFromLocation(href, referrer),
   );
+  const hasCampaign = UTM_KEYS.some((key) => next[key]) || CLICK_KEYS.some((key) => next[key]);
+  if (!hasCampaign) return next;
   try {
-    storage.write(serializeAdsAttribution(next));
+    const serialized = serializeAdsAttribution(next);
+    if (storage.read() !== serialized) storage.write(serialized);
   } catch {
     // Storage is best-effort. The in-memory value is still returned so the
     // current frame can be built even when the browser rejects the write.

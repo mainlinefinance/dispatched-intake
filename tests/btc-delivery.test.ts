@@ -1,36 +1,33 @@
 import { describe, expect, it, vi } from "vitest";
-import {
-  classifyBtcDelivery,
-  conversionForDelivery,
-} from "@/lib/ads/btc-delivery";
+import { classifyWidgetHostDelivery } from "@/lib/ads/btc-delivery";
 
 const LEAD_ID = "btc_lead_12345678";
 
-describe("BTC delivery outcome", () => {
-  it("accepts a 2xx body with a durable id", () => {
+describe("widget-host HTTP is not BTC acceptance", () => {
+  it("does not accept a 2xx body that contains a durable id", () => {
     expect(
-      classifyBtcDelivery({
+      classifyWidgetHostDelivery({
         type: "http",
         status: 200,
         body: { leadId: LEAD_ID },
       }),
     ).toEqual({
-      form: "success",
-      leadId: LEAD_ID,
-      conversion: "fire",
-      reason: "accepted",
+      form: "error",
+      leadId: null,
+      conversion: "skip",
+      reason: "widget_http_not_btc",
     });
     expect(
-      classifyBtcDelivery({
+      classifyWidgetHostDelivery({
         type: "http",
         status: 201,
         body: { data: { id: 123456789 } },
-      }).leadId,
-    ).toBe("123456789");
+      }),
+    ).toMatchObject({ conversion: "skip", reason: "widget_http_not_btc", leadId: null });
   });
 
   it("keeps validation errors on the form with no conversion", () => {
-    expect(classifyBtcDelivery({ type: "validation_error" })).toMatchObject({
+    expect(classifyWidgetHostDelivery({ type: "validation_error" })).toEqual({
       form: "error",
       conversion: "skip",
       reason: "validation_error",
@@ -42,12 +39,12 @@ describe("BTC delivery outcome", () => {
     "keeps HTTP %s on the form even if the body contains an id",
     (status) => {
       expect(
-        classifyBtcDelivery({
+        classifyWidgetHostDelivery({
           type: "http",
           status,
           body: { leadId: LEAD_ID },
         }),
-      ).toMatchObject({
+      ).toEqual({
         form: "error",
         conversion: "skip",
         reason: "http_error",
@@ -56,55 +53,25 @@ describe("BTC delivery outcome", () => {
     },
   );
 
-  it("treats offline as a form error", () => {
-    expect(classifyBtcDelivery({ type: "offline" })).toMatchObject({
-      form: "error",
+  it("treats offline and a 2xx without an id as form errors", () => {
+    expect(classifyWidgetHostDelivery({ type: "offline" })).toMatchObject({
       conversion: "skip",
       reason: "offline",
     });
-  });
-
-  it("does not treat a 2xx without a durable id as success", () => {
-    for (const body of [
-      {},
-      { leadId: "" },
-      { leadId: "short" },
-      { leadId: "not an id" },
-      { ok: true },
-      null,
-    ]) {
+    for (const body of [{}, { leadId: "" }, { leadId: "short" }, { ok: true }, null]) {
       expect(
-        classifyBtcDelivery({ type: "http", status: 200, body }),
-      ).toMatchObject({
-        form: "error",
-        conversion: "skip",
-        reason: "no_id",
-        leadId: null,
-      });
+        classifyWidgetHostDelivery({ type: "http", status: 200, body }),
+      ).toMatchObject({ conversion: "skip", reason: "no_id", leadId: null });
     }
   });
 
-  it("reports only the accepted id", () => {
-    const report = vi.fn();
+  it("does not call the network while classifying", () => {
     const fetchSpy = vi.spyOn(globalThis, "fetch");
-    conversionForDelivery({ type: "validation_error" }, report);
-    conversionForDelivery({ type: "offline" }, report);
-    conversionForDelivery(
-      { type: "http", status: 500, body: { leadId: LEAD_ID } },
-      report,
-    );
-    conversionForDelivery(
-      { type: "http", status: 400, body: { leadId: LEAD_ID } },
-      report,
-    );
-    conversionForDelivery({ type: "http", status: 200, body: {} }, report);
-    const accepted = conversionForDelivery(
-      { type: "http", status: 200, body: { lead_id: LEAD_ID } },
-      report,
-    );
-    expect(accepted.form).toBe("success");
-    expect(report).toHaveBeenCalledTimes(1);
-    expect(report).toHaveBeenCalledWith(LEAD_ID);
+    classifyWidgetHostDelivery({
+      type: "http",
+      status: 200,
+      body: { leadId: LEAD_ID },
+    });
     expect(fetchSpy).not.toHaveBeenCalled();
     fetchSpy.mockRestore();
   });

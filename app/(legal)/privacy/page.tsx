@@ -143,13 +143,11 @@ export default function PrivacyPage() {
             See &sect;6 for what we do (and do not) use this for.
           </li>
           <li>
-            <strong>Credit information.</strong> Dispatched does not pull
-            your credit. The funding form on /apply is Big Think
-            Capital&rsquo;s application, embedded from Mainline. That form
-            says checking your options does not affect your credit score.
-            If a financing partner later obtains a credit report, that
-            partner does so under its own disclosure, not as a pull by
-            Dispatched.
+            <strong>Credit information.</strong> Dispatched, Inc. does not
+            pull your credit. The form embedded on /apply says checking
+            your options does not affect your credit score. If a financing
+            partner later obtains a credit report, that partner does so
+            under its own disclosure.
           </li>
           <li>
             <strong>Communications metadata.</strong> When we call, text, or
@@ -219,13 +217,15 @@ export default function PrivacyPage() {
             information you submit to them after that point.
           </li>
           <li>
-            <strong>Big Think Capital.</strong> The funding partner named
-            on the application embedded at /apply. The form is hosted by
-            Mainline (tryoption.ai) for the partner slug
-            dispatched-finance. What you type into that form is submitted
-            from your browser to Mainline for Big Think Capital. Dispatched
-            does not receive that submission on its own servers, and this
-            site does not run an intake webhook.
+            <strong>Big Think Capital (recipient).</strong> Dispatched, Inc.
+            operates /apply and every other page on dispatched.finance. The
+            form embedded on /apply is hosted by Mainline (tryoption.ai) for
+            the partner slug dispatched-finance. What you type into that
+            form is submitted from your browser to Mainline for delivery to
+            Big Think Capital. Big Think Capital and Mainline are recipients
+            of that application. They are not the operator of this site.
+            Dispatched does not receive that form submission on its own
+            servers, and this site does not run an intake webhook.
           </li>
           <li>
             <strong>Coverdash.</strong> The named licensed insurance
@@ -242,13 +242,13 @@ export default function PrivacyPage() {
             events.
           </li>
           <li>
-            <strong>Mainline (tryoption.ai).</strong> Our analytics
-            provider, which is focused on AI and search-crawler visibility.
-            Page request metadata (path, user agent, referrer, IP) is sent
-            to Mainline so we can see when AI assistants and search engines
+            <strong>Mainline (tryoption.ai) (recipient).</strong> Mainline
+            also receives page-request metadata (path, user agent, referrer,
+            IP) so Dispatched can see when AI assistants and search engines
             visit the site. Mainline filters by user agent to focus on
-            crawler traffic; we do not use this signal to profile
-            individual human visitors.
+            crawler traffic. That feed is not used to profile individual
+            human visitors. Receiving it does not make Mainline the operator
+            of the site.
           </li>
           <li>
             <strong>Service providers.</strong> Render hosts the site and
@@ -270,26 +270,34 @@ export default function PrivacyPage() {
       <section id="cookies">
         <h2>6. Cookies and tracking</h2>
         <p>
-          We store advertising click identifiers (gclid, gbraid, and
-          wbraid) and the campaign parameters utm_source, utm_medium,
-          utm_campaign, utm_term, and utm_content in session storage and in
-          a first-party cookie named <code>df_ads_attr</code>. The cookie
-          lasts 90 days. We use it so those values are still present when
-          you open the application after moving to another page on this
-          site. We pass the campaign parameters on the application URL.
-          The Coverdash insurance widget may use <code>localStorage</code>{" "}
-          for its own quote state.
+          When a page URL includes an advertising click identifier (gclid,
+          gbraid, or wbraid) or a campaign parameter (utm_source,
+          utm_medium, utm_campaign, utm_term, or utm_content), Dispatched,
+          Inc. stores those values in session storage for that tab and in a
+          first-party cookie named <code>df_ads_attr</code>. The cookie
+          expires 90 days after it is written. Pages with none of those
+          values do not create the cookie. The site does not show a separate
+          cookie-consent control; this section is the disclosure. The
+          communications consent in &sect;7 is consent to be contacted. It
+          is not consent to this cookie, and this draft does not say counsel
+          has approved the 90-day lifetime. We use the stored values so a
+          campaign click can still be attached when you open the application
+          after moving to another page on this site. We pass the campaign
+          parameters on the application URL. The Coverdash insurance widget
+          may use <code>localStorage</code> for its own quote state.
         </p>
         <p>
-          The site loads PostHog product analytics. Google Analytics 4
-          loads when a measurement id is configured. A Google Analytics
-          page view is not an advertising conversion. A Google Ads tag
-          loads only when both an ads tag id and a conversion label are
-          configured. That tag does not count a button click or a page
-          view as a conversion. We send a conversion only after the funding
-          application is accepted and returns an application id, and we
-          send a given id once. We do not use Meta Pixel or the LinkedIn
-          Insight Tag.
+          The site loads PostHog product analytics. Google Analytics 4 loads
+          when a measurement id is configured and records page views. When a
+          Google Ads tag id and conversion label are also configured, that
+          existing Google tag receives one additional ads configuration. A
+          second copy of the Google tag library is not added in that case.
+          A page view is not an advertising conversion. This site sends an
+          ads conversion only after the embedded form tells this page that
+          Big Think Capital accepted the application and includes an
+          application id. The same id is sent once. A successful response
+          from the form host, by itself, is not that acceptance. We do not
+          use Meta Pixel or the LinkedIn Insight Tag.
         </p>
       </section>
 
@@ -386,6 +394,14 @@ export default function PrivacyPage() {
             unsubscribe, plus a short cool-down period during which your
             contact information is held on a suppression list so we do not
             accidentally re-contact you after you have opted out.
+          </li>
+          <li>
+            <strong>Click and campaign parameters in the browser.</strong>{" "}
+            Session storage for the tab, and the <code>df_ads_attr</code>{" "}
+            cookie for 90 days after it is written, and only after a click
+            identifier or campaign parameter was present. [COUNSEL REVIEW:
+            this is the lifetime the site sets. It is not a determination
+            that 90 days is a legally required period, and counsel has not approved it.]
           </li>
           <li>
             <strong>Aggregated and de-identified data.</strong> Statistics

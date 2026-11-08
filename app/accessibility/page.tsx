@@ -139,10 +139,11 @@ export default function AccessibilityPage() {
         </p>
         <ul>
           <li>
-            <strong>Funding application (/apply).</strong> The funding
-            intake is an embedded third-party form (Big Think Capital,
-            hosted by Mainline). We have not completed
-            an independent accessibility audit of that widget. Operators who
+            <strong>Funding application embedded on /apply.</strong>{" "}
+            Dispatched, Inc. operates the page. The form inside it is
+            third-party content hosted by Mainline for Big Think Capital.
+            We have not completed
+            an independent accessibility audit of that form. Operators who
             hit a barrier inside the widget can reach a human by calling
             the phone number listed on the page or by emailing the address
             in &sect;6, and we will complete the application by phone.
@@ -178,12 +179,14 @@ export default function AccessibilityPage() {
       <section id="third-party">
         <h2>5. Third-party content</h2>
         <p>
-          Parts of the site embed content or tooling from third parties &mdash;
-          notably the funding application and the Coverdash insurance
-          quote widget. We do not control the internal markup of those
-          embeds. We escalate accessibility issues to those vendors when we
-          find them, and we maintain phone and email fallbacks so an
-          operator is never blocked from applying because of a widget bug.
+          Dispatched, Inc. operates every public page on
+          dispatched.finance. Parts of those pages embed content we do not
+          control, notably the funding form hosted by Mainline for Big Think
+          Capital and the Coverdash insurance quote widget. Those parties
+          are not the operator of the site. We escalate accessibility issues
+          in those embeds to the vendor that provides them, and we maintain
+          phone and email fallbacks so an operator is never blocked from
+          applying because of an embed bug.
         </p>
       </section>
 

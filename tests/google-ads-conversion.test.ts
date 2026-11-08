@@ -2,6 +2,9 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it, vi } from "vitest";
 import {
+  googleAdsConfigOnlySnippet,
+  googleAdsInstallPlan,
+  googleAdsInstallSnippet,
   reportAcceptedLeadConversion,
   resolveGoogleAdsConfig,
   type ConversionDeps,
@@ -102,11 +105,41 @@ describe("Google Ads conversion gate", () => {
     const root = resolve(__dirname, "..");
     const layout = readFileSync(resolve(root, "app/layout.tsx"), "utf8");
     const tag = readFileSync(resolve(root, "components/ads/GoogleAdsTag.tsx"), "utf8");
+    expect(layout).toContain("GoogleAnalytics");
+    expect(layout).toContain("GoogleAdsTag");
     expect(layout).not.toContain("7890276237");
     expect(layout).not.toMatch(/AW-\d+/);
     expect(layout).not.toContain("G-VCFR0WDQL9");
     expect(tag).not.toContain("gtag('event'");
     expect(tag).not.toContain("transaction_id");
     expect(tag).not.toMatch(/AW-\d+/);
+  });
+
+  it("adds an ads config beside GA4 and does not load a second gtag.js", () => {
+    const env = {
+      GOOGLE_ANALYTICS_ID: "G-TESTMEASUREMENT",
+      NEXT_PUBLIC_GOOGLE_ADS_ID: "AW-123456789",
+      NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL: "abcDEF_123",
+    };
+    expect(googleAdsInstallPlan(env)).toBe("config-only");
+    const snippet = googleAdsConfigOnlySnippet("AW-123456789");
+    expect(snippet).toContain('gtag(\'config\',"AW-123456789")');
+    expect(snippet).not.toContain("G-TESTMEASUREMENT");
+    expect(snippet).not.toContain("googletagmanager");
+    expect(snippet).not.toContain("gtag('js'");
+    expect(googleAdsInstallPlan({ GOOGLE_ANALYTICS_ID: "G-TESTMEASUREMENT" })).toBe("off");
+  });
+
+  it("loads gtag.js only when GA4 is not configured", () => {
+    expect(
+      googleAdsInstallPlan({
+        NEXT_PUBLIC_GOOGLE_ADS_ID: "AW-123456789",
+        NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL: "abcDEF_123",
+      }),
+    ).toBe("install");
+    const snippet = googleAdsInstallSnippet("AW-123456789");
+    expect(snippet).toContain("gtag('js'");
+    expect(snippet).toContain('gtag(\'config\',"AW-123456789")');
+    expect(snippet).not.toContain("G-");
   });
 });

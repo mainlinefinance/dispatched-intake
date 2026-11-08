@@ -1,18 +1,33 @@
 import Script from "next/script";
-import { resolveGoogleAdsConfig } from "@/lib/ads/google-ads";
+import {
+  googleAdsConfigOnlySnippet,
+  googleAdsInstallPlan,
+  googleAdsInstallSnippet,
+  resolveGoogleAdsConfig,
+} from "@/lib/ads/google-ads";
 
-// Installs the Google tag for linker / click capture only.
-// A conversion event is never sent from this component. That event is
-// reportBrowserLeadConversion, and only after an accepted lead id.
+// Does not send a conversion. When GA4 is already configured, this adds one
+// ads `config` call on the existing gtag and does not load gtag.js again.
+// When GA4 is absent, this loads gtag.js for the ads id only.
 export default function GoogleAdsTag() {
-  const config = resolveGoogleAdsConfig({
+  const env = {
     NEXT_PUBLIC_GOOGLE_ADS_ID: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID,
     NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL:
       process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL,
-  });
-  if (!config) return null;
+    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
+  };
+  const plan = googleAdsInstallPlan(env);
+  const config = resolveGoogleAdsConfig(env);
+  if (plan === "off" || !config) return null;
 
-  const awId = JSON.stringify(config.awId);
+  if (plan === "config-only") {
+    return (
+      <Script id="google-ads-config" strategy="afterInteractive">
+        {googleAdsConfigOnlySnippet(config.awId)}
+      </Script>
+    );
+  }
+
   return (
     <>
       <Script
@@ -20,7 +35,7 @@ export default function GoogleAdsTag() {
         strategy="afterInteractive"
       />
       <Script id="google-ads-config" strategy="afterInteractive">
-        {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=window.gtag||gtag;gtag('js',new Date());gtag('config',${awId});`}
+        {googleAdsInstallSnippet(config.awId)}
       </Script>
     </>
   );

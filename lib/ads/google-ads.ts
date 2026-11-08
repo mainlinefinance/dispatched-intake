@@ -41,6 +41,29 @@ export function resolveGoogleAdsConfig(
   return { awId, conversionLabel };
 }
 
+// "off": ads tag id or label missing. GA4 is left untouched.
+// "config-only": GA4 already installs gtag.js. Add one ads config call.
+// "install": no GA4 id, so this tag loads gtag.js once for the ads id.
+export type GoogleAdsInstall = "off" | "config-only" | "install";
+
+export function googleAdsInstallPlan(
+  env: Record<string, string | undefined>,
+): GoogleAdsInstall {
+  if (!resolveGoogleAdsConfig(env)) return "off";
+  if ((env.GOOGLE_ANALYTICS_ID ?? "").trim()) return "config-only";
+  return "install";
+}
+
+export function googleAdsConfigOnlySnippet(awId: string): string {
+  const id = JSON.stringify(awId);
+  return `window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};window.gtag('config',${id});`;
+}
+
+export function googleAdsInstallSnippet(awId: string): string {
+  const id = JSON.stringify(awId);
+  return `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=window.gtag||gtag;gtag('js',new Date());gtag('config',${id});`;
+}
+
 export function reportAcceptedLeadConversion(
   leadId: string,
   deps: ConversionDeps,

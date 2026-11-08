@@ -10,10 +10,12 @@ import {
 import { reportBrowserLeadConversion } from "@/lib/ads/google-ads";
 import { leadIdFromAcceptedMessage } from "@/lib/ads/widget-events";
 
-// dispatched.finance is a registered Mainline widget partner. Mainline serves
-// the BTC funding quiz as an embeddable form at /w/<slug>. The framed page
-// posts the application to that host's /api/widget-lead. This repo does not
-// call that API and does not guess a WithFunded route.
+// dispatched.finance is operated by Dispatched, Inc. Mainline hosts the
+// funding quiz for Big Think Capital at /w/<slug>. The frame posts to that
+// host's /api/widget-lead. This repo does not call that API, does not see
+// Big Think Capital's HTTP response, and does not treat the widget host's
+// 2xx as acceptance. A conversion waits for the message defined in
+// lib/ads/widget-events.ts, which the widget repository has to send.
 
 // "standard" variant — Mainline's VARIANT_MIN_HEIGHT.standard is 500px, so we
 // seed the iframe at that height before the first resize message lands.
@@ -60,13 +62,13 @@ export default function MainlineApplyWidget() {
         iframe.style.height = `${Math.ceil(event.data.height)}px`;
         return;
       }
-      // Lead messages have to come from the widget origin. Resize stays
-      // source-checked only, which is the behavior this frame already had.
-      const leadId = leadIdFromAcceptedMessage(
-        event.data,
-        event.origin,
-        WIDGET_ORIGIN,
-      );
+      const leadId = leadIdFromAcceptedMessage({
+        data: event.data,
+        origin: event.origin,
+        source: event.source,
+        iframeWindow: iframe.contentWindow,
+        widgetOrigin: WIDGET_ORIGIN,
+      });
       if (!leadId) return;
       reportBrowserLeadConversion(leadId);
     }

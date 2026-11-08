@@ -90,6 +90,43 @@ describe("ads query persistence", () => {
     expect(stored.gclid).toBe("CLICK123456");
   });
 
+  it("does not write storage for a page with no click id or campaign parameter", () => {
+    const storage = memoryStorage();
+    let writes = 0;
+    const counting = {
+      read: () => storage.raw(),
+      write: (value: string) => {
+        writes += 1;
+        storage.write(value);
+      },
+    };
+    persistAdsAttribution(
+      "https://dispatched.finance/factoring",
+      "https://www.google.com/",
+      counting,
+    );
+    expect(writes).toBe(0);
+  });
+
+  it("writes the campaign once and does not refresh it on a later untagged page", () => {
+    const storage = memoryStorage();
+    let writes = 0;
+    const counting = {
+      read: () => storage.raw(),
+      write: (value: string) => {
+        writes += 1;
+        storage.write(value);
+      },
+    };
+    persistAdsAttribution(LANDING, "https://www.google.com/aclk", counting);
+    persistAdsAttribution(
+      "https://dispatched.finance/apply",
+      "https://dispatched.finance/semi-truck-financing",
+      counting,
+    );
+    expect(writes).toBe(1);
+  });
+
   it("ignores a same-site referrer and a widget host that is not a hostname", () => {
     const storage = memoryStorage();
     const stored = persistAdsAttribution(
