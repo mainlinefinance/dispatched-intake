@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Script from "next/script";
+import { Suspense } from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
+import AdsAttributionCapture from "@/components/ads/AdsAttributionCapture";
+import GoogleAdsTag from "@/components/ads/GoogleAdsTag";
 import { JsonLd, organization, website } from "@/components/seo/JsonLd";
 import { Providers } from "./providers";
 
@@ -146,12 +149,16 @@ export default function RootLayout({
         {/* Providers wraps the tree in PostHog product analytics, reporting
             into the shared Mainline PostHog project. */}
         <Providers>
+          <Suspense fallback={null}>
+            <AdsAttributionCapture />
+          </Suspense>
           <a href="#main-content" className="skip-link">Skip to main content</a>
           {children}
         </Providers>
         {process.env.GOOGLE_ANALYTICS_ID && (
           <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID} />
         )}
+        <GoogleAdsTag />
         {process.env.NEXT_PUBLIC_APOLLO_APP_ID && (
           <Script id="apollo-tracker" strategy="afterInteractive">
             {`function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,o.onload=function(){window.trackingFunctions.onLoad({appId:"${process.env.NEXT_PUBLIC_APOLLO_APP_ID}"})},document.head.appendChild(o)}initApollo();`}

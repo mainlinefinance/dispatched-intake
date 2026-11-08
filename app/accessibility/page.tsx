@@ -16,8 +16,8 @@ import Link from "next/link";
    page is meaningfully re-reviewed.
    =========================================================================== */
 
-const LAST_REVIEWED = "2026-05-26";
-const LAST_REVIEWED_DISPLAY = "May 26, 2026";
+const LAST_REVIEWED = "2026-11-08";
+const LAST_REVIEWED_DISPLAY = "November 8, 2026";
 const CONTACT_EMAIL = "angelo@dispatched.finance";
 
 export const metadata: Metadata = {
@@ -139,8 +139,9 @@ export default function AccessibilityPage() {
         </p>
         <ul>
           <li>
-            <strong>Lendflow intake widget (/apply).</strong> The funding
-            intake is an embedded third-party widget. We have not completed
+            <strong>Funding application (/apply).</strong> The funding
+            intake is an embedded third-party form (Big Think Capital,
+            hosted by Mainline). We have not completed
             an independent accessibility audit of that widget. Operators who
             hit a barrier inside the widget can reach a human by calling
             the phone number listed on the page or by emailing the address
@@ -178,7 +179,7 @@ export default function AccessibilityPage() {
         <h2>5. Third-party content</h2>
         <p>
           Parts of the site embed content or tooling from third parties &mdash;
-          notably the Lendflow funding intake and the Coverdash insurance
+          notably the funding application and the Coverdash insurance
           quote widget. We do not control the internal markup of those
           embeds. We escalate accessibility issues to those vendors when we
           find them, and we maintain phone and email fallbacks so an

@@ -19,8 +19,8 @@ import Link from "next/link";
    See: docs/superpowers/specs/2026-05-17-privacy-terms-and-footer-cleanup-design.md §5
    =========================================================================== */
 
-const EFFECTIVE_DATE = "2026-05-17";
-const EFFECTIVE_DATE_DISPLAY = "May 17, 2026";
+const EFFECTIVE_DATE = "2026-11-08";
+const EFFECTIVE_DATE_DISPLAY = "November 8, 2026";
 const CONTACT_EMAIL = "angelo@mainline.finance";
 
 export const metadata: Metadata = {
@@ -165,15 +165,11 @@ export default function TermsPage() {
           that purpose.
         </p>
         <p>
-          You acknowledge that, at intake, our intake partner Lendflow may
-          perform a <em>soft pull</em> on your business credit profile and,
-          where applicable, the owner&rsquo;s personal credit. A soft pull
-          is not visible to other lenders and does not affect your credit
-          score. A <em>hard pull</em> only happens after you select a
-          specific lender from your shortlist and authorize that lender to
-          proceed; the selected lender, not Dispatched, performs the hard
-          pull. See the Privacy Policy &sect;8 for the full credit-reporting
-          disclosure.
+          The funding application is the Big Think Capital form embedded
+          on /apply and hosted by Mainline. Dispatched does not itself
+          pull your credit. If a financing partner later reviews your
+          credit, that partner performs the inquiry, not Dispatched. See
+          the Privacy Policy &sect;8 for the credit-reporting disclosure.
         </p>
       </section>
 
@@ -290,9 +286,9 @@ export default function TermsPage() {
         </p>
         <ul>
           <li>
-            <strong>Lendflow</strong> &mdash; the intake widget on the
-            apply flow and the partner that performs the initial soft
-            credit pull.
+            <strong>Big Think Capital</strong> &mdash; the funding
+            application embedded on /apply. Mainline (tryoption.ai) hosts
+            that form and receives the submission from your browser.
           </li>
           <li>
             <strong>Coverdash</strong> &mdash; the named licensed

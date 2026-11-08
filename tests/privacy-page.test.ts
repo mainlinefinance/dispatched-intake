@@ -63,4 +63,12 @@ describe("privacy page content invariants", () => {
   it("retains the [COUNSEL REVIEW] markers grep convention", () => {
     expect(SOURCE).toMatch(/\[COUNSEL REVIEW:/);
   });
+
+  it("names the live funding form and does not describe a Lendflow webhook", () => {
+    expect(SOURCE).toContain("Big Think Capital");
+    expect(SOURCE).not.toContain("Lendflow");
+    expect(SOURCE).not.toContain("/api/webhooks/lendflow");
+    expect(SOURCE).toContain("df_ads_attr");
+    expect(SOURCE).not.toMatch(/does\s+not\s+use Google Analytics/i);
+  });
 });

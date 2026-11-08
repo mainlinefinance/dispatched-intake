@@ -13,9 +13,14 @@ services:
         value: 20
       - key: NEXT_TELEMETRY_DISABLED
         value: 1
-      - key: NEXT_PUBLIC_LENDFLOW_WIDGET_SCRIPT_SRC
+      # The Lendflow widget and /api/webhooks/lendflow were removed. Do not
+      # re-add that receiver. Dashboard copies of those old values, if any
+      # remain, are unused by this service and are not rotated here.
+      # Google Ads. Public tag id + conversion label. Both must be set in
+      # the Render dashboard or the ads tag is omitted. Not a secret.
+      - key: NEXT_PUBLIC_GOOGLE_ADS_ID
         sync: false
-      - key: LENDFLOW_WEBHOOK_SECRET
+      - key: NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL
         sync: false
       # IndexNow auto-submit. Generate key with: openssl rand -hex 16
       # Mark INDEXNOW_KEY as secret in the Render dashboard. After setting,
