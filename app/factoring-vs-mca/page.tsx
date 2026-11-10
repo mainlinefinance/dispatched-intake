@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: "Why do MCA funders target trucking?",
-    a: "Three reasons. First, owner-operators run uneven cashflow against fixed expenses (fuel, settlements, insurance, repair), which creates an irresistible 'just need it this week' frame that MCA sales scripts exploit. Second, trucking has visible revenue — broker payments are documented and predictable, which lets MCA funders model future receipts confidently. Third, the industry has a high concentration of credit-constrained operators (new authorities, post-bankruptcy operators, sub-580 FICO) who get declined by conventional lenders and are funneled toward MCAs as a 'next-best' option. Factoring is the actual next-best option for most of them.",
+    a: "Three reasons. First, owner-operators run uneven cashflow against fixed expenses (fuel, settlements, insurance, repair), which creates an irresistible 'just need it this week' frame that MCA sales scripts exploit. Second, trucking has visible revenue — broker payments are documented and predictable, which lets MCA funders model future receipts confidently. Third, the industry has a high concentration of credit-constrained operators (new authorities, post-bankruptcy operators, lower credit profiles) who get declined by conventional lenders and are funneled toward MCAs as a 'next-best' option. Factoring is the actual next-best option for most of them.",
   },
   {
     q: "Can I use factoring to pay off an MCA?",
@@ -144,8 +144,8 @@ export default function FactoringVsMcaPage() {
             <p className="ins-hero-sub">
               <Link href="/factoring">Invoice factoring</Link>{" "}
               is the sale of a specific outstanding invoice at a discount.
-              You get 85% to 97% of the invoice face value the same or
-              next banking day; the factor collects from your broker on
+              You get 85% to 97% of the invoice face value up front, on
+              timing set by the factor; the factor collects from your broker on
               the original payment terms; you receive the reserve minus
               the factoring fee when the broker pays. There is no APR
               because it is not a loan — it is a receivables transaction.
@@ -202,7 +202,8 @@ export default function FactoringVsMcaPage() {
               <Link href="/glossary/fico">FICO</Link> score. This is why
               factoring is often the only product available to
               operators in their first six months after authority, post-
-              bankruptcy operators, and sub-580 FICO owner-operators.
+              bankruptcy operators, and owner-operators with lower credit
+              profiles.
             </p>
             <p className="ins-hero-sub">
               Factoring scales with revenue. The more you haul, the more
@@ -287,11 +288,12 @@ export default function FactoringVsMcaPage() {
                 deposits — typically 3 to 6 months of bank statements.
               </li>
               <li>
-                <strong>Speed to funding.</strong> Factoring funds the
-                same banking day for invoices submitted before cutoff
-                once the relationship is set up; initial setup runs 3–7
-                days. MCA funds in 24–72 hours including setup, which is
-                why it appeals when cashflow is already in crisis.
+                <strong>Speed to funding.</strong> Factoring needs an
+                initial setup (broker verification, onboarding) before
+                the first invoice funds; after that, timing depends on
+                the factor and your invoices. MCAs are marketed on speed,
+                which is why they appeal when cashflow is already in
+                crisis.
               </li>
               <li>
                 <strong>Repayment.</strong> Factoring &ldquo;repays&rdquo; itself —
@@ -386,8 +388,8 @@ export default function FactoringVsMcaPage() {
                 the financing benefit of factoring relative to the fee.
               </li>
               <li>
-                <strong>You are credit-constrained.</strong> Sub-580
-                FICO, post-bankruptcy, less than six months of operating
+                <strong>You are credit-constrained.</strong> A lower
+                credit profile, post-bankruptcy, less than six months of operating
                 authority, or a recent <Link href="/glossary/ucc-1">UCC-1</Link>{" "}
                 filing against the business — these typically lock you
                 out of conventional working capital and equipment loans.
@@ -439,7 +441,7 @@ export default function FactoringVsMcaPage() {
               <li>
                 <Link href="/truck-repair-loans">Truck repair financing</Link>{" "}
                 — direct-to-shop financing for repair invoices, typically
-                with same-day funding and 6–36 month amortization.
+                with 6–36 month amortization.
                 Suitable when the truck is off the road and the operator
                 cannot front the repair from cash. Direct-to-shop
                 structure means the operator never touches the cash,

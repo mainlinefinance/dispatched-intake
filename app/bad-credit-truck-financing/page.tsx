@@ -15,7 +15,8 @@ import {
 /* /bad-credit-truck-financing — second-wave SEO landing.
    Template parent: /truck-repair-loans (#44).
 
-   Editorial frame: borrower-side framing for sub-580 credit. Same panel,
+   Editorial frame: borrower-side framing for lower credit profiles
+   (no numeric score floors — those are set by each financing partner). Same panel,
    different positioning. The trust pass discipline is especially
    important here: do not promise what we can't deliver, do not paper
    over the rate trade-off, do not pretend credit doesn't matter at all.
@@ -24,24 +25,24 @@ import {
    Dispatched panel from a bank. */
 
 export const metadata: Metadata = {
-  title: "Bad credit truck financing — FICO 500+ | Dispatched",
+  title: "Bad Credit Truck Financing | Dispatched",
   description:
-    "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply.",
+    "Truck financing for lower credit profiles: equipment loans, working capital, repair loans. Soft-pull match; approval is not guaranteed.",
   alternates: { canonical: "/bad-credit-truck-financing" },
   openGraph: {
     images: ["/opengraph-image"],
-    title: "Bad credit truck financing — FICO 500+ | Dispatched",
+    title: "Bad Credit Truck Financing | Dispatched",
     description:
-      "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply.",
+      "Truck financing for lower credit profiles: equipment loans, working capital, repair loans. Soft-pull match; approval is not guaranteed.",
     url: "/bad-credit-truck-financing",
     type: "website",
   },
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "Bad credit truck financing — FICO 500+ | Dispatched",
+    title: "Bad Credit Truck Financing | Dispatched",
     description:
-      "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply.",
+      "Truck financing for lower credit profiles: equipment loans, working capital, repair loans. Soft-pull match; approval is not guaranteed.",
   },
 };
 
@@ -49,32 +50,32 @@ const PAGE_URL = "https://dispatched.finance/bad-credit-truck-financing";
 
 const faqs = [
   {
-    q: "Owner-operator with a 600 credit score — can I actually get a truck loan?",
-    a: "Yes. FICO 600 sits in the middle of the panel's working-capital pricing band — most operators at that credit level qualify for the standard product set, with APRs typically quoting in the 24% to 30% range on working capital and 12% to 15% on equipment-secured loans. The Dispatched panel underwrites on monthly business deposits, debt service coverage, and equipment value first, with FICO as a secondary signal — which is why the same FICO-600 operator who gets declined by a bank routinely funds on the panel.",
+    q: "Owner-operator with fair credit — can I actually get a truck loan?",
+    a: "Options may be available; approval is not guaranteed. Fair credit sits in the middle of the panel's working-capital pricing band, with APRs typically quoting in the 24% to 30% range on working capital and 12% to 15% on equipment-secured loans. The Dispatched panel weighs monthly business deposits, debt service coverage, and equipment value alongside credit — which is why an operator a bank declined may still see offers on the panel.",
   },
   {
-    q: "Can I get truck financing with a 500 credit score?",
-    a: "Yes. Programs on the Dispatched panel route from a 500 FICO. Most banks decline below 650 because they underwrite on credit alone; the Dispatched panel underwrites on revenue, debt service coverage, equipment value, and deposit history first, with FICO second. Sub-580 borrowers should expect a higher APR and tighter loan amounts, but approval is realistic.",
+    q: "Can I get truck financing with a low credit score?",
+    a: "Options may be available. Many banks decline lower credit profiles because they underwrite on credit alone; the Dispatched panel weighs revenue, debt service coverage, equipment value, and deposit history alongside credit. Credit requirements are set by each financing partner and approval is not guaranteed. Borrowers with lower credit profiles should expect a higher APR and tighter loan amounts.",
   },
   {
     q: "What APR will I pay with bad credit?",
     a: "Expect rates toward the high end of the published panel ranges. For working capital, that is the 28% to 34% APR end of the 14% to 34% range. For equipment-secured loans, that is the 14% to 18% APR end of the 9% to 18% range. The exact APR depends on revenue, time in business, equipment age, and down payment. The term sheet shows the exact rate before you sign.",
   },
   {
-    q: "Why does Dispatched approve sub-650 borrowers when banks decline them?",
-    a: "Banks underwrite on FICO and personal financial statements. The Dispatched panel underwrites on the operation's bank deposits, equipment value, and time in business — credit is a secondary signal. A trucker pulling $30K a month in deposits with a 580 FICO is a different risk than the FICO alone suggests, and the panel's lenders price for that distinction.",
+    q: "Why can panel lenders consider borrowers that banks decline?",
+    a: "Dispatched is not a lender and does not approve anyone; the financing partners decide. Banks underwrite on credit score and personal financial statements. The panel's lenders also weigh the operation's bank deposits, equipment value, and time in business. A trucker pulling $30K a month in deposits with a low score is a different risk than the score alone suggests, and the panel's lenders price for that distinction.",
   },
   {
     q: "What documents do I need for bad credit truck financing?",
-    a: "Three months of business bank statements, your EIN or SSN, DOT and MC number, and a driver's license. For equipment loans, also include a copy of the title or dealer purchase order. The bank statements are the central document — they tell the lender what the operation actually moves through deposits, which is the underwriting signal that matters most for sub-650 applications.",
+    a: "Three months of business bank statements, your EIN or SSN, DOT and MC number, and a driver's license. For equipment loans, also include a copy of the title or dealer purchase order. The bank statements are the central document — they tell the lender what the operation actually moves through deposits, which is the underwriting signal that matters most for lower-credit applications.",
   },
   {
     q: "Will applying with bad credit hurt my score further?",
     a: "Not at the start. The Dispatched application is a soft-pull match — soft inquiries are not visible to other lenders and do not affect your score. A hard pull only happens after you pick a specific lender and move forward on their term sheet. If you compare offers, hard pulls inside a 14-day rate-shopping window count as one inquiry on most scoring models.",
   },
   {
-    q: "Is there a minimum FICO to apply?",
-    a: "500. Below 500, the Dispatched panel does not currently have a program that funds. Operators below 500 should focus on rebuilding the score (paying down revolving balances, settling charge-offs) before reapplying. Active Chapter 13 plans are reviewed case-by-case; active Chapter 7 cases inside the 12-month post-discharge window are typically declined across the panel.",
+    q: "Is there a minimum credit score to apply?",
+    a: "Dispatched does not set one; credit requirements are set by each financing partner, and approval is not guaranteed. Operators with very low scores may find no program on the panel and should focus on rebuilding the score (paying down revolving balances, settling charge-offs) before reapplying. Active Chapter 13 plans are reviewed case-by-case; active Chapter 7 cases inside the 12-month post-discharge window are typically declined across the panel.",
   },
   {
     q: "Can I refinance an existing high-rate truck loan with bad credit?",
@@ -97,7 +98,7 @@ export default function BadCreditTruckFinancingPage() {
           headline:
             "Bad credit truck financing for owner-operators",
           description:
-            "How sub-580-credit borrowers move on the Dispatched panel: which lenders fund them, what compensating factors matter, and what to expect from the application flow.",
+            "How borrowers with lower credit profiles move on the Dispatched panel: which lenders consider them, what compensating factors matter, and what to expect from the application flow.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -107,7 +108,7 @@ export default function BadCreditTruckFinancingPage() {
         payload={financialProduct({
           name: "Bad credit truck financing",
           description:
-            "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match.",
+            "Truck financing for lower credit profiles: equipment loans, working capital, repair loans. Soft-pull match; approval is not guaranteed.",
           url: PAGE_URL,
           category: "Commercial trucking financing",
         })}
@@ -122,16 +123,16 @@ export default function BadCreditTruckFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Bad credit truck financing</span>
             <h1 className="ins-hero-title">
-              Trucking loans for owner-operators with 500–650 credit.
+              Trucking loans for owner-operators with bad credit.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               The lenders on our panel underwrite revenue and equipment,
-              not just FICO. The marketing FAQ states the panel routes
-              applications starting at a 500 FICO. Below 580 the panel
-              narrows and rates land on the higher end — but the door
-              isn&rsquo;t closed, and the bank&rsquo;s two-year DSCR test
-              isn&rsquo;t how this panel decides.
+              not just credit score. For lower credit profiles the panel
+              narrows and rates land on the higher end — but the
+              bank&rsquo;s two-year DSCR test isn&rsquo;t how this panel
+              decides. Credit requirements are set by each financing
+              partner, and approval is not guaranteed.
             </p>
             <div className="product-hero-ctas">
               <Link
@@ -145,7 +146,7 @@ export default function BadCreditTruckFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -155,23 +156,23 @@ export default function BadCreditTruckFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">The short answer</span>
             <h2 className="ins-hero-title">
-              How sub-580 borrowers move on this panel.
+              How borrowers with lower credit move on this panel.
             </h2>
             <p className="ins-hero-sub">
               Bad-credit truck financing is the same panel, the same
               products, and the same application flow as any other
               borrower — what changes is which lenders see the file and
-              what APR they quote. The lenders on our panel that fund
-              sub-580 borrowers do so because the operation behind the
+              what APR they quote. The lenders on our panel that work with
+              lower credit profiles do so because the operation behind the
               credit score is healthy: consistent revenue, a track record,
               equipment that holds value.
             </p>
             <p className="ins-hero-sub">
-              The honest version of the rate trade-off: a borrower at 540
-              FICO with $40K in monthly revenue and 18 months of operating
+              The honest version of the rate trade-off: a borrower with
+              a low score, $40K in monthly revenue and 18 months of operating
               history will quote on the higher end of the observed
-              14%–34% APR working-capital range. The same borrower with a
-              680 FICO would quote in the middle. We don&rsquo;t hide
+              14%–34% APR working-capital range. The same borrower with
+              stronger credit would quote in the middle. We don&rsquo;t hide
               that. We do route to the lenders that quote at all in that
               band, which is the part that&rsquo;s hard to do alone.
             </p>
@@ -183,16 +184,16 @@ export default function BadCreditTruckFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Who qualifies</span>
             <h2 className="ins-hero-title">
-              What the panel needs to fund a sub-580 file.
+              What the panel looks at on a lower-credit file.
             </h2>
             <ul className="product-list">
               <li>
-                <strong>500+ FICO panel floor.</strong> Below 500 the
-                panel does not have routing for loans. At 500–579 a
-                smaller subset of lenders sees the application; rates are
+                <strong>Credit profile.</strong> Credit requirements are
+                set by each financing partner. With a lower credit profile
+                a smaller subset of lenders sees the application; rates are
                 at the high end and the maximum loan amount is tighter.
-                Operators with active credit events or sub-500 FICO can
-                often still get cash flow through{" "}
+                Operators with active credit events or very low scores
+                may still find cash flow through{" "}
                 <Link href="/factoring/no-credit-check">
                   factoring with no credit check on you
                 </Link>
@@ -203,8 +204,8 @@ export default function BadCreditTruckFinancingPage() {
                 <strong>6+ months of operating history.</strong> The
                 shorter your history, the heavier credit weighs in
                 underwriting. With 12+ months of consistent bank-statement
-                revenue, the working-capital fit becomes available even
-                for sub-580 borrowers.
+                revenue, the working-capital fit can become available even
+                for lower credit profiles.
               </li>
               <li>
                 <strong>$10K+ monthly revenue (panel-level baseline).</strong>{" "}
@@ -262,7 +263,7 @@ export default function BadCreditTruckFinancingPage() {
               </li>
               <li>
                 <strong>Lower amount, shorter term.</strong> A $20K loan
-                over 12 months is easier to underwrite for a sub-580
+                over 12 months is easier to underwrite for a lower-credit
                 borrower than a $80K loan over 36. A short-duration{" "}
                 <Link href="/glossary/term-loan">term loan</Link> at the amount
                 you actually need tightens the rate versus a higher-cost{" "}
@@ -298,7 +299,7 @@ export default function BadCreditTruckFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Composite scenario</span>
             <h2 className="ins-hero-title">
-              What a sub-580 application looks like on this panel.
+              What a lower-credit application looks like on this panel.
             </h2>
             <p className="ins-hero-sub">
               Composite illustrative scenario — not a specific borrower.
@@ -310,8 +311,8 @@ export default function BadCreditTruckFinancingPage() {
               <div className="product-example-meta">
                 <span className="product-example-label">Operator</span>
                 <span className="product-example-value">
-                  Owner-operator, 1 truck, 22 months in business, FICO
-                  ~545, $35K monthly revenue.
+                  Owner-operator, 1 truck, 22 months in business, a lower
+                  credit profile, $35K monthly revenue.
                 </span>
               </div>
               <div className="product-example-meta">
@@ -350,7 +351,7 @@ export default function BadCreditTruckFinancingPage() {
             <h2 className="ins-hero-title">From application to wire.</h2>
             <ol className="product-process">
               <li>
-                <strong>Application.</strong> Two minutes inside{" "}
+                <strong>Application.</strong> Inside{" "}
                 <Link href="/apply">/apply</Link>. We route on revenue,
                 time in business, equipment, and credit — in that order.
                 Soft-pull only.
@@ -382,7 +383,7 @@ export default function BadCreditTruckFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">FAQ</span>
             <h2 className="ins-hero-title">
-              Questions sub-580 borrowers ask.
+              Questions borrowers with bad credit ask.
             </h2>
             <dl className="product-faq">
               {faqs.map((qa) => (
@@ -399,7 +400,7 @@ export default function BadCreditTruckFinancingPage() {
         <section className="ins-sunken">
           <div className="ins-container">
             <h2 className="ins-hero-title">
-              Bad credit isn&rsquo;t a no on this panel.
+              Bad credit isn&rsquo;t an automatic no on this panel.
             </h2>
             <p className="ins-hero-sub">
               Soft-pull match first. One hard pull only with the lender

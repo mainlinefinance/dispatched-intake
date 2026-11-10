@@ -255,13 +255,9 @@
     "published": "2026-04-27",
     "modified": "2026-04-27"
   },
-  "app/lenders/[state]/[city]/page.tsx": {
-    "published": "2026-05-10",
-    "modified": "2026-05-10"
-  },
   "app/lenders/[state]/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-10"
+    "modified": "2026-11-10"
   },
   "app/lenders/page.tsx": {
     "published": "2026-05-10",

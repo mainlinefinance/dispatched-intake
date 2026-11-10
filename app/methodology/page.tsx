@@ -172,10 +172,10 @@ export default function MethodologyPage() {
               </li>
               <li>
                 <strong>Timing depends on the lender and your documents.</strong>{" "}
-                Same-banking-day wires occur when the chosen lender signs off
-                and the wire instruction lands before the partner bank&apos;s
-                cutoff. Wires that miss the cutoff settle the next banking day;
-                weekend and federal-holiday wires settle the next banking day.
+                Funds are released after the chosen lender signs off, and
+                when they arrive depends on the wire instruction and the
+                partner bank&apos;s cutoff; weekends and federal holidays
+                push settlement later.
                 This is constrained by the Federal Reserve&apos;s wire window
                 and partner banking cutoffs, not a Dispatched-controlled
                 throughput target.

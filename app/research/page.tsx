@@ -76,6 +76,38 @@ export default function ResearchIndexPage() {
             </ul>
           </section>
           <section className="research-section">
+            <h2>What the reports cover</h2>
+            <p>
+              Each annual report takes one part of running a trucking
+              business (capital, insurance, fuel, regulation, technology,
+              broker relations, owner-operator economics) and sets out what
+              changed over the year and what it means for a one-truck
+              operator or a small fleet. The reports are written to be read
+              start to finish, but every section stands on its own, so you
+              can go straight to the question you have.
+            </p>
+            <h2>How to read a report</h2>
+            <p>
+              Numbers in a report come with the source they were taken from
+              and the period they describe. Where a figure is our own
+              estimate or an illustration, the text says so. Where public
+              sources disagree, we show the range instead of picking one.
+              Treat a report as background for a decision, then check the
+              current figure at the source before you act on it: rates,
+              rules, and prices move between editions.
+            </p>
+            <h2>Corrections</h2>
+            <p>
+              If you find an error or a source that has been superseded,
+              email{" "}
+              <a href="mailto:support@dispatched.finance">
+                support@dispatched.finance
+              </a>
+              . Corrections are made in the report itself and the page&apos;s
+              updated date changes with them.
+            </p>
+          </section>
+          <section className="research-section">
             <h2>Methodology</h2>
             <p>
               Reports draw on three categories of source: published public

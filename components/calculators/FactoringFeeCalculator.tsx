@@ -169,7 +169,7 @@ export default function FactoringFeeCalculator() {
             aria-describedby="advance-hint"
           />
           <p id="advance-hint" className="calc-field-hint">
-            What the factor wires within 24 hours. Typical range is 90 – 97%.
+            What the factor advances up front. Typical range is 90 – 97%.
           </p>
         </div>
 
@@ -249,7 +249,7 @@ export default function FactoringFeeCalculator() {
               {formatMoney(Math.round(results.advanceAmount))}
             </span>
             <span className="calc-meta-explainer">
-              Wired to you within 24 hours of invoice upload.
+              Advanced to you after invoice upload.
             </span>
           </div>
           <div>

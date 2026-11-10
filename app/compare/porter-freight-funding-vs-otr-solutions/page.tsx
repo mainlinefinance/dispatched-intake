@@ -165,7 +165,7 @@ export default function PorterVsOtrPage() {
               <Link href="/apply?useCase=factoring&creditPull=soft">
                 /apply?useCase=factoring&amp;creditPull=soft
               </Link>{" "}
-              takes two minutes.
+              is where to start.
             </p>
 
             <table className="ins-carrier-table">

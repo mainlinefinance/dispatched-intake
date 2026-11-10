@@ -145,7 +145,7 @@ export default function ApexVsTbsFactoringPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              does it in two minutes.
+              does it.
             </p>
 
             <table className="ins-carrier-table">

@@ -854,7 +854,7 @@ export default function StateOfTruckingTech2026() {
               brokerage book), and has continued to operate as one
               significant player among many in the U.S. freight market.
               The platform&apos;s technology — automated load posting,
-              instant booking, transparent pricing — has set
+              one-step booking, transparent pricing — has set
               expectations in the market that competitors have had to
               match. The Transplace acquisition was, in retrospect, the
               critical strategic move: it gave Uber Freight a

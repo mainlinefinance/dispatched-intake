@@ -15,8 +15,9 @@ import {
 /* /bad-credit-truck-repair-financing — combo of /bad-credit-truck-financing
    and /truck-repair-loans. Captures the explicit "semi truck repair loans
    with bad credit" intent from the GSC log without duplicating either
-   parent page. Sub-580 lender subset routing is the page's editorial
-   center of gravity. */
+   parent page. How the lender mix changes for lower credit profiles is the
+   page's editorial center of gravity. No numeric credit-score floors:
+   those are set by each financing partner. */
 
 export const metadata: Metadata = {
   title:
@@ -49,7 +50,7 @@ const PAGE_URL =
 const faqs = [
   {
     q: "What's the minimum credit score for truck repair financing on your panel?",
-    a: "The panel floor is 500 FICO. Below 500, no lender on the panel currently underwrites repair financing. From 500 to 579, a smaller specialist subset routes at higher rates (24% to 34% APR). From 580 to 679, most of the panel routes at middle-of-range rates. 680+ unlocks the full panel including equipment-secured products at 9% to 18% APR. The two-question fit at /qualify shows the operator which tier they land in without any credit pull.",
+    a: "Dispatched does not set a minimum credit score; credit requirements are set by each financing partner, and approval is not guaranteed. In practice the panel behaves in tiers. For lower credit profiles, a smaller specialist subset routes at higher rates (24% to 34% APR). For fair credit, most of the panel routes at middle-of-range rates. Stronger credit opens the full panel, including equipment-secured products at 9% to 18% APR. The two-question fit at /qualify gives a first read without any credit pull.",
   },
   {
     q: "Will applying with bad credit hurt my score further?",
@@ -57,27 +58,27 @@ const faqs = [
   },
   {
     q: "Why do my rates run so much higher with bad credit?",
-    a: "Two reasons. First, the lender's credit-loss model assigns higher expected loss to sub-580 borrowers based on observed default rates across the broader market, and pricing covers that loss. Second, the smaller lender subset that funds sub-580 borrowers has less competition, which keeps the rate spread wider. The exact APR on the term sheet is locked at sign-off — no surprise increases — and the operator sees it side-by-side with any other offers before deciding.",
+    a: "Two reasons. First, the lender's credit-loss model assigns higher expected loss to borrowers with lower credit profiles based on observed default rates across the broader market, and pricing covers that loss. Second, the smaller lender subset that works with lower credit profiles has less competition, which keeps the rate spread wider. The exact APR on the term sheet is locked at sign-off — no surprise increases — and the operator sees it side-by-side with any other offers before deciding.",
   },
   {
     q: "What if I'm in active bankruptcy?",
-    a: "Active Chapter 7 or Chapter 13 generally takes the operator out of the panel entirely — most lenders cannot fund during an active proceeding. Post-discharge, the panel routes normally based on the post-discharge FICO and the time since discharge. Operators recently discharged from Chapter 13 with a year of stable operating history routinely fund on the sub-580 subset.",
+    a: "Active Chapter 7 or Chapter 13 generally takes the operator out of the panel entirely — most lenders cannot fund during an active proceeding. Post-discharge, the panel routes based on the post-discharge credit profile and the time since discharge. Operators recently discharged from Chapter 13 with a year of stable operating history are typically considered by the specialist lender subset; approval is not guaranteed.",
   },
   {
     q: "Can I get a co-signer to help my repair financing application?",
-    a: "Some lenders on the sub-580 subset accept a co-signer or guarantor with stronger credit; others do not. When accepted, the co-signer's credit usually moves the rate down by 200 to 600 basis points and may unlock a larger loan amount or longer term. The application captures the co-signer's information at the lender-selection step, not at the initial soft-pull stage.",
+    a: "Some lenders in the specialist subset accept a co-signer or guarantor with stronger credit; others do not. When accepted, the co-signer's credit usually moves the rate down by 200 to 600 basis points and may unlock a larger loan amount or longer term. The application captures the co-signer's information at the lender-selection step, not at the initial soft-pull stage.",
   },
   {
     q: "My truck is in the shop right now. Can I still apply if I haven't paid the shop anything yet?",
-    a: "Yes. The Dispatched workflow is built specifically for that case. The application is two minutes inside /apply. The lender funds the approved amount to the operator's business account or direct to the shop (depending on the term sheet), and the shop releases the truck. There is no requirement that the operator have already paid the shop, and no requirement that the truck be picked up before funding.",
+    a: "Yes. The Dispatched workflow is built specifically for that case. The application is inside /apply. The lender funds the approved amount to the operator's business account or direct to the shop (depending on the term sheet), and the shop releases the truck. There is no requirement that the operator have already paid the shop, and no requirement that the truck be picked up before funding.",
   },
   {
     q: "Are these MCAs?",
-    a: "No. Merchant cash advances are a structurally different product — daily ACH debits, factor-rate pricing, no APR disclosure, and often confessions of judgment in the contract. The Dispatched panel routes away from MCA funders by default. Sub-580 offers on the panel are conventional term loans with monthly payment, fixed APR, and standard borrower protections. See /factoring-vs-mca for the structural distinction.",
+    a: "No. Merchant cash advances are a structurally different product — daily ACH debits, factor-rate pricing, no APR disclosure, and often confessions of judgment in the contract. The Dispatched panel routes away from MCA funders by default. Offers for lower credit profiles on the panel are conventional term loans with monthly payment, fixed APR, and standard borrower protections. See /factoring-vs-mca for the structural distinction.",
   },
   {
     q: "What documents do I need with bad credit?",
-    a: "Same document set as the standard repair-loan application: three months of business bank statements, EIN or SSN, DOT number, driver's license, and the shop estimate. Loans over $75K (less common in the sub-580 tier) add Schedule C or 1120 and current settlement statements. The lender may request additional revenue documentation — copies of broker contracts or 90-day settlement detail — at higher loan sizes or on borderline applications.",
+    a: "Same document set as the standard repair-loan application: three months of business bank statements, EIN or SSN, DOT number, driver's license, and the shop estimate. Loans over $75K (less common for lower credit profiles) add Schedule C or 1120 and current settlement statements. The lender may request additional revenue documentation — copies of broker contracts or 90-day settlement detail — at higher loan sizes or on borderline applications.",
   },
 ];
 
@@ -93,9 +94,9 @@ export default function BadCreditTruckRepairFinancingPage() {
       />
       <JsonLd
         payload={article({
-          headline: "Bad credit truck repair financing for sub-580 FICO operators",
+          headline: "Bad credit truck repair financing for owner-operators",
           description:
-            "How the Dispatched panel routes bad-credit truck-repair financing applications: three FICO tiers, what changes at each tier, what the panel underwrites instead of FICO, and the decline-handling routes.",
+            "How the Dispatched panel routes bad-credit truck-repair financing applications: three credit tiers, what changes at each tier, what the panel weighs alongside credit, and the decline-handling routes.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -105,7 +106,7 @@ export default function BadCreditTruckRepairFinancingPage() {
         payload={financialProduct({
           name: "Bad credit truck repair financing",
           description:
-            "Truck repair financing of $5K–$150K with FICO programs routing from 500. Revenue-based underwriting, repair financing after sign-off, soft-pull match.",
+            "Truck repair financing of $5K–$150K for operators with lower credit profiles. Revenue-based underwriting, soft-pull match; approval is not guaranteed.",
           url: PAGE_URL,
           category: "Commercial trucking financing",
         })}
@@ -123,15 +124,16 @@ export default function BadCreditTruckRepairFinancingPage() {
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
-              A 500 FICO with a truck in the shop is not the dead end most
-              banks make it look like. The Dispatched panel underwrites the
-              operation&rsquo;s revenue, deposit history, and equipment
-              first — FICO second. Programs route from 500. Repair loans from
-              $5K to $150K, soft-pull match after underwriting review, wire same
-              banking day after the chosen lender signs off. Higher-end of
-              the 14% to 34% APR range, tighter loan ceilings, and a smaller
-              subset of the panel — but the funding is real and the process
-              is built for the case where the truck is already down.
+              Bad credit with a truck in the shop is not always the dead end
+              a bank decline makes it look like. The Dispatched panel weighs
+              the operation&rsquo;s revenue, deposit history, and equipment
+              alongside credit. Repair loans from $5K to $150K, soft-pull
+              match after underwriting review, and a wire after the chosen
+              lender signs off; timing depends on the lender and your
+              documents. Expect the higher end of the 14% to 34% APR range,
+              tighter loan ceilings, and a smaller subset of the panel.
+              Credit requirements are set by each financing partner and
+              approval is not guaranteed.
             </p>
             <div className="product-hero-ctas">
               <Link
@@ -145,7 +147,7 @@ export default function BadCreditTruckRepairFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -157,25 +159,25 @@ export default function BadCreditTruckRepairFinancingPage() {
             <p className="ins-hero-sub">
               Bad credit changes the lender mix, the rate, and the loan cap —
               it does not eliminate the product. The Dispatched panel splits
-              into roughly three tiers by FICO band:
+              into roughly three tiers by credit profile:
             </p>
             <ul className="product-list">
               <li>
-                <strong>680+ FICO.</strong> Full panel access. Rates toward
+                <strong>Stronger credit.</strong> Full panel access. Rates toward
                 the lower end of the 14% to 34% APR range. Loan amounts up to
                 the panel cap of $150K. Equipment-secured products available
                 at 9% to 18% APR for tractors with sufficient residual value.
               </li>
               <li>
-                <strong>580 to 679 FICO.</strong> Most of the panel still
+                <strong>Fair credit.</strong> Most of the panel still
                 routes. Rates middle of the range. Loan amounts modestly
                 tighter. Equipment-secured product available with stricter
                 conditions.
               </li>
               <li>
-                <strong>500 to 579 FICO.</strong> A smaller subset of the
+                <strong>Lower credit profiles.</strong> A smaller subset of the
                 panel — specialist lenders that underwrite on revenue and
-                deposit history more heavily than FICO. Rates toward the high
+                deposit history more heavily than credit score. Rates toward the high
                 end of the range, often 24% to 34% APR. Loan amounts
                 typically capped lower, $5K to $50K. Equipment-secured
                 products usually not available — the financing is unsecured
@@ -183,20 +185,20 @@ export default function BadCreditTruckRepairFinancingPage() {
               </li>
             </ul>
             <p className="ins-hero-sub">
-              The reason the sub-580 subset exists at all is that trucking
+              The reason this specialist subset exists at all is that trucking
               has structurally higher concentration of credit-constrained
               operators — new authorities post-COVID, owner-ops working
               through a tax lien, post-bankruptcy operators rebuilding — and
               the revenue these operators generate is real, documentable, and
-              stable enough to underwrite even when the FICO does not look
-              stable.
+              stable enough to underwrite even when the credit report does
+              not look stable.
             </p>
             <p className="ins-hero-sub">
               What does not exist on the panel: predatory MCAs disguised as
               repair loans. The Dispatched panel routes away from
               confession-of-judgment contracts, daily-ACH receivables
               purchases, and stacking-tolerant funders by default. The
-              sub-580 product is a higher-rate term loan with monthly
+              product for lower credit profiles is a higher-rate term loan with monthly
               payment, not a daily-debit advance. See{" "}
               <Link href="/factoring-vs-mca">factoring vs MCA</Link> for the
               structural distinction.
@@ -211,40 +213,40 @@ export default function BadCreditTruckRepairFinancingPage() {
             <ul className="product-list">
               <li>
                 <strong>Rate band.</strong> Working-capital repair financing
-                in the 24% to 34% APR range for sub-580 borrowers, compared
-                to 14% to 24% for 680+. The spread is the lender&rsquo;s
+                in the 24% to 34% APR range for lower credit profiles, compared
+                to 14% to 24% for stronger credit. The spread is the lender&rsquo;s
                 compensation for credit risk and is set on the term sheet —
                 no surprise increases later.
               </li>
               <li>
                 <strong>Loan ceiling.</strong> The panel&rsquo;s $150K
-                repair-loan cap typically does not apply to sub-580
-                borrowers. Practical ceilings in this tier run $5K to $50K
+                repair-loan cap typically does not apply to borrowers with
+                lower credit profiles. Practical ceilings in this tier run $5K to $50K
                 depending on monthly revenue and time in business. Higher
                 repair amounts route to layered products (partial financing
                 plus parts deferral with the shop, or a working-capital plus
                 factoring combination).
               </li>
               <li>
-                <strong>Term length.</strong> Sub-580 offers usually run 6 to
+                <strong>Term length.</strong> Offers in this tier usually run 6 to
                 18 months. Longer terms (24 to 36 months) tend to require
-                600+ FICO or strong equipment collateral.
+                stronger credit or strong equipment collateral.
               </li>
               <li>
-                <strong>Direct-to-shop disbursement.</strong> Some sub-580
-                offers route the wire directly to the shop rather than to the
+                <strong>Direct-to-shop disbursement.</strong> Some
+                offers in this tier route the wire directly to the shop rather than to the
                 operator&rsquo;s business account. This is a lender-side risk
                 control, not a borrower restriction — the operator still
                 chooses the shop.
               </li>
               <li>
-                <strong>Personal guarantee on LLCs.</strong> Sub-580 offers on
+                <strong>Personal guarantee on LLCs.</strong> Offers in this tier on
                 LLC-organized operations typically require a personal
-                guarantee from the principal. Higher-FICO offers on the same
+                guarantee from the principal. Stronger-credit offers on the same
                 operation may not.
               </li>
               <li>
-                <strong>Soft-pull match unchanged.</strong> The FICO band
+                <strong>Soft-pull match unchanged.</strong> The credit tier
                 does not change the soft-pull-first process. The hard pull
                 only happens after the operator picks a specific lender.
               </li>
@@ -257,8 +259,8 @@ export default function BadCreditTruckRepairFinancingPage() {
             <span className="ins-eyebrow">What the panel underwrites instead</span>
             <h2 className="ins-hero-title">Revenue, DSCR, equipment, history.</h2>
             <p className="ins-hero-sub">
-              For sub-580 borrowers, FICO is the smallest of the underwriting
-              inputs. The lenders in this tier weight:
+              For lower credit profiles, the credit score is only one of the
+              underwriting inputs. The lenders in this tier weight:
             </p>
             <ul className="product-list">
               <li>
@@ -276,10 +278,10 @@ export default function BadCreditTruckRepairFinancingPage() {
                 runs the same math the lender does.
               </li>
               <li>
-                <strong>Time in business.</strong> 6 months is the panel
-                floor; 12+ months opens more of the sub-580 lender subset;
-                24+ months opens the equipment-secured option even at lower
-                FICO.
+                <strong>Time in business.</strong> Under 6 months narrows the
+                options sharply; 12+ months opens more of the specialist
+                lender subset; 24+ months can open the equipment-secured
+                option even with a lower credit profile.
               </li>
               <li>
                 <strong>Equipment in the fleet.</strong> A tractor with three
@@ -308,7 +310,7 @@ export default function BadCreditTruckRepairFinancingPage() {
               Alternative routes the match logic tries.
             </h2>
             <p className="ins-hero-sub">
-              A sub-580 decline on a repair-financing application does not
+              A decline on a repair-financing application does not always
               mean no financing exists for the situation. The match logic
               routes through alternatives:
             </p>
@@ -318,9 +320,9 @@ export default function BadCreditTruckRepairFinancingPage() {
                   <Link href="/trucking-working-capital">Working capital</Link>{" "}
                   with a different lender subset.
                 </strong>{" "}
-                If the operation has revenue but FICO declined the
-                repair-specific lenders, working-capital lenders with broader
-                underwriting may fit.
+                If the operation has revenue but credit led the
+                repair-specific lenders to decline, working-capital lenders with
+                broader underwriting may fit.
               </li>
               <li>
                 <strong>
@@ -352,7 +354,7 @@ export default function BadCreditTruckRepairFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Composite scenario</span>
             <h2 className="ins-hero-title">
-              What a sub-580 transmission-rebuild request looks like.
+              What a bad-credit transmission-rebuild request looks like.
             </h2>
             <p className="ins-hero-sub">
               Composite illustrative scenario — not a specific borrower. See{" "}
@@ -362,7 +364,7 @@ export default function BadCreditTruckRepairFinancingPage() {
               <div className="product-example-meta">
                 <span className="product-example-label">Operator</span>
                 <span className="product-example-value">
-                  Owner-op, 558 FICO post a 2024 medical bankruptcy
+                  Owner-op, a lower credit profile after a 2024 medical bankruptcy
                   discharge, one 2018 Cascadia, 18 months of operating
                   history in the current authority.
                 </span>
@@ -378,7 +380,7 @@ export default function BadCreditTruckRepairFinancingPage() {
               <div className="product-example-meta">
                 <span className="product-example-label">Estimator output</span>
                 <span className="product-example-value">
-                  Best fit: truck repair financing in the sub-580 lender
+                  Best fit: truck repair financing in the specialist lender
                   subset. Working capital also evaluated but lower fit due
                   to credit and time-in-business mix.
                 </span>
@@ -394,8 +396,8 @@ export default function BadCreditTruckRepairFinancingPage() {
               <div className="product-example-meta">
                 <span className="product-example-label">Outcome</span>
                 <span className="product-example-value mono">
-                  Truck back on the road on day six. Monthly payment fits the
-                  operator&rsquo;s run rate at 1.28 DSCR.
+                  Monthly payment fits the operator&rsquo;s run rate at 1.28
+                  DSCR.
                 </span>
               </div>
             </div>
@@ -422,12 +424,12 @@ export default function BadCreditTruckRepairFinancingPage() {
         <section className="ins-sunken">
           <div className="ins-container">
             <h2 className="ins-hero-title">
-              Bad credit doesn&rsquo;t disqualify the operation.
+              Bad credit is not the whole application.
             </h2>
             <p className="ins-hero-sub">
-              500 FICO floor. Revenue-first underwriting. Soft-pull match in
-              about 20 minutes. One hard pull only with the lender you
-              choose.
+              Revenue weighed alongside credit. Soft-pull match first. One
+              hard pull only with the lender you choose. Approval is not
+              guaranteed.
             </p>
             <div className="product-hero-ctas">
               <Link

@@ -165,7 +165,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              takes two minutes.
+              is where to start.
             </p>
 
             <table className="ins-carrier-table">

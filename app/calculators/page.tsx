@@ -144,6 +144,22 @@ export default function CalculatorsIndexPage() {
             </ul>
           </div>
         </section>
+
+        <section className="calc-form-wrap">
+          <div className="container">
+            <h2>Common questions about the calculators</h2>
+            <dl>
+              {faqs.map((qa) => (
+                <div key={qa.q}>
+                  <dt>
+                    <strong>{qa.q}</strong>
+                  </dt>
+                  <dd>{qa.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

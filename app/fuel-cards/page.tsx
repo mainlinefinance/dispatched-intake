@@ -463,9 +463,9 @@ export default function FuelCardsPage() {
               When fuel is eating cash flow faster than the card
               discount can fix, the answer is not a different card. It
               is a <Link href="/factoring">fuel advance via factoring</Link> or short-term{" "}
-              <Link href="/trucking-working-capital">trucking working capital</Link>. Dispatched matches
-              owner-operators to lenders that fund both in 24–48 hours,
-              soft-pull first.
+              <Link href="/trucking-working-capital">trucking working capital</Link>. Dispatched introduces
+              owner-operators to financing partners for both, soft-pull
+              first; timing depends on the lender and your documents.
             </p>
             <div className="product-hero-ctas">
               <Link

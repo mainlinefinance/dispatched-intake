@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     q: "What APR should I expect on a repair line of credit?",
-    a: "On the Dispatched panel, repair lines of credit typically run 14% to 22% APR on the drawn balance, with the exact rate depending on FICO, time in business, revenue, and the requested limit. The rate is usually 200 to 600 basis points higher than an equivalent term loan, reflecting the open-ended commitment. The line APR is fixed at sign-off and you see it on the term sheet.",
+    a: "On the Dispatched panel, repair lines of credit typically run 14% to 22% APR on the drawn balance, with the exact rate depending on credit, time in business, revenue, and the requested limit. The rate is usually 200 to 600 basis points higher than an equivalent term loan, reflecting the open-ended commitment. The line APR is fixed at sign-off and you see it on the term sheet.",
   },
   {
     q: "Do I have to draw the full limit?",
@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: "What credit score do I need for a repair line of credit?",
-    a: "Lines underwrite tighter than term loans. The Dispatched panel's line-of-credit subset typically requires 600+ FICO, 12+ months operating, and $250K+ annual revenue. Operators below these floors may still qualify on the term-loan subset or the working-capital subset.",
+    a: "Lines underwrite tighter than term loans. The Dispatched panel's line-of-credit subset typically looks for stronger credit than a term loan, 12+ months operating, and $250K+ annual revenue. Credit requirements are set by each financing partner and approval is not guaranteed. Operators who do not fit a line may still be considered on the term-loan subset or the working-capital subset.",
   },
   {
     q: "Can I use a line of credit for things other than repairs?",
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: "How long does line approval take?",
-    a: "Lines underwrite slower than term loans because the underwriting covers an open-ended commitment rather than a specific transaction. Typical timeline is 3 to 7 business days from application to a signed term sheet, vs. same-day for many term loans. The line's value is its availability for the next year — operators applying for a line should not need same-day funding for an active repair.",
+    a: "Timing depends on the lender and your documents. Lines usually involve more underwriting than term loans because the underwriting covers an open-ended commitment rather than a specific transaction. The line's value is its availability for the next year — it is something to set up before a repair, not during one.",
   },
   {
     q: "What happens at renewal?",
@@ -192,7 +192,7 @@ export default function TruckRepairLineOfCreditPage() {
             </p>
             <p className="ins-hero-sub">
               Lines of credit underwrite tighter than single-purpose repair
-              loans. Expect a higher FICO floor (typically 600+), longer
+              loans. Expect a stronger credit requirement, longer
               time-in-business minimum (12+ months), and higher revenue
               threshold ($250K+ annual). The Dispatched panel routes
               line-of-credit applications to a specific lender subset; the
@@ -213,7 +213,7 @@ export default function TruckRepairLineOfCreditPage() {
                 <strong>Approval.</strong> The application underwrites the
                 operation against the credit limit, not against a specific
                 repair scope. Bank statements, time in business, revenue,
-                and FICO are weighted similarly to a working-capital loan
+                and credit are weighted similarly to a working-capital loan
                 application.
               </li>
               <li>
@@ -224,10 +224,10 @@ export default function TruckRepairLineOfCreditPage() {
               <li>
                 <strong>Draw.</strong> The operator initiates a draw — through
                 the lender&rsquo;s portal, app, or sometimes a debit card
-                linked to the line — for a specific repair. Funds typically
-                land in the operator&rsquo;s business account or direct to
-                the shop within one to two business days. Some lenders fund
-                draws same-day for additional fee.
+                linked to the line — for a specific repair. Funds go to
+                the operator&rsquo;s business account or direct to
+                the shop; draw timing and any expedite fee are set by the
+                lender&rsquo;s term sheet.
               </li>
               <li>
                 <strong>Interest accrual.</strong> Interest accrues only on
@@ -282,7 +282,7 @@ export default function TruckRepairLineOfCreditPage() {
               </li>
               <li>
                 <strong>Operators with strong credit but irregular spend.</strong>{" "}
-                A 700+ FICO owner-operator with $400K annual revenue and a
+                An owner-operator with strong credit, $400K annual revenue and a
                 one-truck operation may not need a $150K term loan today but
                 wants the line available for whatever the year brings.
               </li>
@@ -307,10 +307,10 @@ export default function TruckRepairLineOfCreditPage() {
                 provides no benefit; the term loan typically prices lower.
               </li>
               <li>
-                <strong>Operators just under the line-of-credit floor.</strong>{" "}
-                A 540 FICO operator does not access the line product but
-                does access the sub-580 term-loan subset. The term loan is
-                the only available product.
+                <strong>Operators who do not fit a line of credit.</strong>{" "}
+                An operator with a lower credit profile is unlikely to fit
+                the line product but may be considered by the specialist
+                term-loan subset. The term loan is the realistic product.
               </li>
               <li>
                 <strong>One-off accident repair.</strong> A collision repair
@@ -369,11 +369,12 @@ export default function TruckRepairLineOfCreditPage() {
         <section>
           <div className="ins-container">
             <span className="ins-eyebrow">Who qualifies</span>
-            <h2 className="ins-hero-title">Line-of-credit eligibility floors.</h2>
+            <h2 className="ins-hero-title">What line-of-credit lenders look for.</h2>
             <ul className="product-list">
               <li>
-                <strong>600+ FICO</strong> (vs 500 floor on term loans).
-                Lines underwrite tighter.
+                <strong>Stronger credit</strong> than a term loan requires.
+                Lines underwrite tighter; each financing partner sets its
+                own requirements.
               </li>
               <li>
                 <strong>12+ months operating</strong> under the current
@@ -423,7 +424,7 @@ export default function TruckRepairLineOfCreditPage() {
                 <span className="product-example-label">Operator</span>
                 <span className="product-example-value">
                   Small fleet, three 2019–2020 Cascadias, LLC, 4 years
-                  operating, 695 FICO on the managing member, monthly
+                  operating, good credit on the managing member, monthly
                   revenue $74K.
                 </span>
               </div>

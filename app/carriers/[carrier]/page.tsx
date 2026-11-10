@@ -8,7 +8,8 @@ import {
   type Carrier,
   type CarrierSlug,
 } from "@/lib/data/carriers";
-import { getProduct } from "@/lib/data/products";
+import { getProduct, type ProductSlug } from "@/lib/data/products";
+import { getProductGuide } from "@/lib/data/productGuides";
 import { getAllInsuranceStates } from "@/lib/data/states";
 import {
   JsonLd,
@@ -100,6 +101,7 @@ export default async function CarrierReviewPage({
         {c.notes ? <AboutBlock carrier={c} /> : null}
         <ProductsBlock carrier={c} products={products} />
         <StatesBlock carrier={c} states={stateAppearances} />
+        <QuoteChecklist carrier={c} products={products} />
         <MethodologyFooter />
       </main>
     </div>
@@ -123,6 +125,24 @@ function Hero({ carrier, today }: { carrier: Carrier; today: string }) {
   );
 }
 
+/* What the AM Best category on this page means, in AM Best's own terms. The
+   letter grades are Financial Strength Ratings: an opinion on an insurer's
+   ability to pay claims, not on its prices or its service. */
+function ratingMeaning(carrier: Carrier): string {
+  if (carrier.notRated === true) {
+    return "Not Rated means AM Best has not assigned a Financial Strength Rating to this company. It is a statement about the rating, not a judgment that the company is weak. Brokers and shippers often set a minimum AM Best rating in their carrier agreements, so check your contracts before binding with an unrated insurer.";
+  }
+  const rating =
+    carrier.amBestRating && carrier.amBestVerifiedAt ? carrier.amBestRating : "";
+  if (rating.startsWith("A++") || rating.startsWith("A+")) {
+    return "A++ and A+ are AM Best's Superior category, the highest of its Financial Strength Rating groups. The rating is AM Best's opinion of the insurer's ability to meet its ongoing policy and claim obligations. It says nothing about price or claims service, and it clears the minimum rating most broker and shipper agreements set.";
+  }
+  if (rating.startsWith("A")) {
+    return "A and A- are AM Best's Excellent category, the second of its Financial Strength Rating groups. The rating is AM Best's opinion of the insurer's ability to meet its ongoing policy and claim obligations. Many broker and shipper agreements set A- as the minimum they accept, so compare the rating with the wording in your own contracts.";
+  }
+  return "An AM Best Financial Strength Rating is an opinion of an insurer's ability to meet its ongoing policy and claim obligations. Until we have verified this company's current rating, look it up on ambest.com and compare it with the minimum your broker and shipper agreements set.";
+}
+
 function RatingBlock({ carrier }: { carrier: Carrier }) {
   const ratingCopy =
     carrier.notRated === true
@@ -135,6 +155,7 @@ function RatingBlock({ carrier }: { carrier: Carrier }) {
       <div className="ins-container">
         <span className="ins-eyebrow">Financial strength</span>
         <h2 className="ins-hero-title">{ratingCopy}</h2>
+        <p className="ins-hero-sub">{ratingMeaning(carrier)}</p>
         {carrier.naicGroupCode ? (
           <p className="ins-compliance-note">
             NAIC group code: <code>{carrier.naicGroupCode}</code>.
@@ -186,18 +207,28 @@ function ProductsBlock({
             appetite.
           </p>
         ) : (
-          <div className="ins-state-grid">
-            {products.map((p) => (
-              <Link
-                key={p.slug}
-                href={`/insurance/${p.slug}`}
-                className="ins-state-tile"
-              >
-                <span>{p.shortLabel}</span>
-                <span className="ins-state-tile-tag">View product</span>
-              </Link>
-            ))}
-          </div>
+          <>
+            <div className="ins-state-grid">
+              {products.map((p) => (
+                <Link
+                  key={p.slug}
+                  href={`/insurance/${p.slug}`}
+                  className="ins-state-tile"
+                >
+                  <span>{p.shortLabel}</span>
+                  <span className="ins-state-tile-tag">View product</span>
+                </Link>
+              ))}
+            </div>
+            <dl className="ins-faq">
+              {products.map((p) => (
+                <div key={p.slug} className="ins-faq-item">
+                  <dt>{p.name}</dt>
+                  <dd>{getProductGuide(p.slug as ProductSlug).inBrief}</dd>
+                </div>
+              ))}
+            </dl>
+          </>
         )}
       </div>
     </section>
@@ -246,6 +277,44 @@ function StatesBlock({
           the licensure list separately once we have completed direct
           verification with the carrier.
         </p>
+      </div>
+    </section>
+  );
+}
+
+/* Questions to put to the producer, built from the lines this carrier
+   writes: the first check for each one. */
+function QuoteChecklist({
+  carrier,
+  products,
+}: {
+  carrier: Carrier;
+  products: ReadonlyArray<NonNullable<ReturnType<typeof getProduct>>>;
+}) {
+  if (products.length === 0) return null;
+  return (
+    <section>
+      <div className="ins-container">
+        <span className="ins-eyebrow">Before you bind</span>
+        <h2 className="ins-hero-title">
+          What to check on a {carrier.name} quote
+        </h2>
+        <p className="ins-hero-sub">
+          A carrier review tells you who stands behind the policy. The quote
+          tells you what the policy does. For the {products.length === 1 ? "line" : "lines"}{" "}
+          {carrier.name} writes, start with these:
+        </p>
+        <ul>
+          {products.map((p) => {
+            const guide = getProductGuide(p.slug as ProductSlug);
+            return (
+              <li key={p.slug}>
+                <strong>{p.shortLabel}:</strong>{" "}
+                {guide.checkOnQuote.slice(0, 2).join(" ")}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );

@@ -38,7 +38,7 @@ const PAGE_URL = "https://dispatched.finance/semi-truck-financing/no-money-down"
 const faqs = [
   {
     q: "Can I really get a semi truck with no money down?",
-    a: "Yes, but only with the right profile. On the Dispatched panel, zero-down approvals typically require a 700+ FICO, two-plus years of active MC authority, and a clean motor vehicle record — or, alternatively, 12+ months of bank statements showing consistent revenue above the truck's payment threshold. Sub-700 FICO operators usually need at least 10% down to qualify.",
+    a: "Yes, but only with the right profile. On the Dispatched panel, zero-down approvals typically require strong personal credit, two-plus years of active MC authority, and a clean motor vehicle record — or, alternatively, 12+ months of bank statements showing consistent revenue above the truck's payment threshold. Operators without that profile usually need at least 10% down to qualify.",
   },
   {
     q: "How much more does zero-down cost in APR?",
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "What about \"no credit check\" semi truck financing — is that the same thing?",
-    a: "No. \"No credit check\" usually refers to predatory lease-purchase programs run by carriers, not real ownership financing. Real semi truck loans require a credit check. The Dispatched panel underwrites from a 500 FICO; that's not the same as no check, but it's broader than what banks offer.",
+    a: "No. \"No credit check\" usually refers to predatory lease-purchase programs run by carriers, not real ownership financing. Real semi truck loans require a credit check. Financing partners on the Dispatched panel set their own credit requirements; that's not the same as no check, but it can be broader than what banks offer. Approval is not guaranteed.",
   },
   {
     q: "If I qualify for zero-down, should I still put money down?",
@@ -115,7 +115,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · 2 minutes to qualify.
+              No hard credit pull to start. · Approval is not guaranteed.
             </p>
           </div>
         </section>
@@ -158,7 +158,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
               you never actually own the truck and the{" "}
               <Link href="/glossary/balloon-payment">balloon payment</Link>
               at the end is structured to push you into a refinance. Third:
-              a real zero-down <Link href="/glossary/equipment-loan">equipment loan</Link>, but only after a 700+ FICO and two
+              a real zero-down <Link href="/glossary/equipment-loan">equipment loan</Link>, but only with strong credit and two
               years of authority — the dealer just doesn&rsquo;t mention that
               in the ad.
             </p>
@@ -178,9 +178,9 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
             <span className="ins-eyebrow">Who qualifies</span>
             <h2 className="ins-hero-title">Who qualifies for zero-down semi truck financing on the Dispatched panel.</h2>
 
-            <h3>Profile A — 700+ FICO + 2 years authority + clean MVR</h3>
+            <h3>Profile A — strong credit + 2 years authority + clean MVR</h3>
             <p className="ins-hero-sub">
-              The cleanest path. A 700-plus personal FICO, an <Link href="/glossary/mc-number">MC number</Link> that
+              The cleanest path. Strong personal credit, an <Link href="/glossary/mc-number">MC number</Link> that
               has been active and unrevoked for at least 24 months, and a
               motor vehicle record with no DUIs, no major accidents in the
               last 36 months, and no more than one minor moving violation.
@@ -196,7 +196,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
 
             <h3>Profile B — strong revenue history (12+ months bank statements above payment threshold)</h3>
             <p className="ins-hero-sub">
-              The revenue path. A 650 to 699 FICO with 12 or more months of
+              The revenue path. Fair-to-good credit with 12 or more months of
               business bank statements showing consistent monthly deposits at
               least 5x the proposed truck payment. If the proposed payment is
               $2,500, the lender wants to see $12,500-plus per month in
@@ -243,7 +243,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
               loan-to-value is 100% and depreciation puts the loan upside-down
               the day the truck rolls off the lot. The APR premium covers
               that risk, full stop. On the Dispatched panel, the delta runs
-              2 to 4 percentage points: a 700 FICO operator who prices at
+              2 to 4 percentage points: a strong-credit operator who prices at
               10% APR with 15% down will price at 12% to 14% APR at zero
               down on the same truck.
             </p>
@@ -269,7 +269,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
               The table below shows three structures on a $130,000 Class 8
               tractor financed over 60 months. The APR for each row is a
               representative panel rate at that down-payment level for a
-              700-FICO operator. Use the{" "}
+              strong-credit operator. Use the{" "}
               <Link href="/calculators/semi-truck-loan">semi truck loan calculator</Link>{" "}
               to model your own numbers.
             </p>
@@ -426,8 +426,8 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
             <span className="ins-eyebrow">Bad credit + no money down</span>
             <h2 className="ins-hero-title">Bad credit + no money down — does that combo exist?</h2>
             <p className="ins-hero-sub">
-              The honest answer: rarely, and the math is brutal. A sub-580
-              FICO operator with no down payment is asking the lender to
+              The honest answer: rarely, and the math is brutal. An
+              operator with challenged credit and no down payment is asking the lender to
               fund 100% of an asset to a borrower whose credit history
               suggests an elevated default rate. Lenders that will write
               this paper at all do so with three protections stacked on top
@@ -443,7 +443,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
             <p className="ins-hero-sub">
               The Dispatched panel will quote this structure when it&rsquo;s
               the operator&rsquo;s only path forward, but we&rsquo;ll also
-              tell you out loud that 10% to 15% down at the same FICO opens
+              tell you out loud that 10% to 15% down at the same credit profile opens
               a materially better APR and term. If you&rsquo;re working the
               bad-credit corner of the market, read{" "}
               <Link href="/bad-credit-truck-financing">bad credit truck financing</Link>{" "}
@@ -480,7 +480,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
             </h2>
             <p className="ins-hero-sub">
               Soft-pull match first. One hard pull only with the lender you
-              choose. Two minutes to a real answer.
+              choose. Approval is not guaranteed.
             </p>
             <div className="product-hero-ctas">
               <Link href="/apply?useCase=equipment&downPayment=0" className="btn btn--primary btn--lg">

@@ -254,7 +254,7 @@ export default function StateOfTruckingCapital2026() {
               continues to be served by a small set of specialty
               programs — Apex Capital&apos;s startup program, eCapital&apos;s
               new-authority track, and a handful of independent equipment
-              lenders with 500+ FICO programs — and the bulk of headline
+              lenders with programs for lower credit profiles — and the bulk of headline
               &quot;no money down&quot; advertising remains bait for
               new-authority operators who will end up financing the down
               payment elsewhere. Fifth, state-level regulatory pressure
@@ -281,10 +281,10 @@ export default function StateOfTruckingCapital2026() {
             <p>
               On the Dispatched panel, equipment-loan APRs for used
               Class 8 buyers band <strong>9–18%</strong> in 2026, with
-              the lower bound reserved for owner-operators with 700+
-              FICO and 24+ months in business and the upper bound
-              applied to recent new-authority operators with under-650
-              FICO. The spread within that band is doing most of the
+              the lower bound reserved for owner-operators with strong
+              credit and 24+ months in business and the upper bound
+              applied to recent new-authority operators with weaker
+              credit. The spread within that band is doing most of the
               work: specialty lenders pricing residual-value risk into
               the rate are charging 200–400 basis points above
               prime-anchored programs, and that premium has been sticky
@@ -427,7 +427,7 @@ export default function StateOfTruckingCapital2026() {
               losers. The winners are the players with diversified
               product sets (factoring + equipment + working capital
               cross-sell at the same operator), strong technology
-              (instant-fund factoring on submitted loads, automated
+              (app-based factoring payouts on submitted loads, automated
               underwriting on equipment paper, integrated dispatch and
               load-board data), and consolidated balance sheets.
               Love&apos;s Financial fits this profile post-TBS.
@@ -587,7 +587,7 @@ export default function StateOfTruckingCapital2026() {
             </p>
             <p>
               New-authority <strong>equipment financing</strong> is
-              harder. The accessible programs require 500+ FICO,
+              harder. The accessible programs set their own credit requirements, expect
               10–20% down (zero-down programs for new authority are
               effectively nonexistent except as bait), and run 12–18%
               APR at the typical file profile. The dominant lender
@@ -643,7 +643,7 @@ export default function StateOfTruckingCapital2026() {
               and factoring. The financing experience is closer to a
               small business than to a leased asset. Equipment loans
               in 2026 for independent owner-ops with 24+ months in
-              business and 700+ FICO band on the lower half of the
+              business and strong credit band on the lower half of the
               9–18% range; working capital is accessible at the lower
               half of the 14–34% band. The Dispatched first-time
               owner-operator guide at{" "}
@@ -756,9 +756,8 @@ export default function StateOfTruckingCapital2026() {
               dramatically cheaper than MCA at 40–150% APR on a 3–9
               month ACH schedule, and the monthly payment is usually
               lower in absolute terms. The reason MCA persists despite
-              being more expensive is some combination of speed (MCA
-              funds same-day or next-day; working capital funds in
-              3–10 business days), qualification flexibility (MCA
+              being more expensive is some combination of speed (MCAs
+              are marketed on how quickly they pay out), qualification flexibility (MCA
               underwrites primarily on deposit history, working
               capital underwrites on credit + revenue + time in
               business), and aggressive sales practices in the MCA
@@ -843,7 +842,7 @@ export default function StateOfTruckingCapital2026() {
               is typical for older used equipment. Down payment
               requirements have stayed at 10–20% for the typical
               owner-operator file, with zero-down available for the
-              strongest profiles (700+ FICO, 24+ months in business,
+              strongest profiles (strong credit, 24+ months in business,
               clean MVR, strong revenue history) and 20–25% required
               at the weaker end of the panel. The down-payment band
               has barely moved year over year despite the prime-rate

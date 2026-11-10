@@ -1001,7 +1001,7 @@ export default function StateOfBrokerRelations2026() {
               book), and operates in 2026 as one significant player
               among many in the U.S. freight market. The
               platform&apos;s technology — automated load posting,
-              instant booking, transparent pricing — has set
+              one-step booking, transparent pricing — has set
               expectations in the market that competitors have had
               to match. The Transplace acquisition was, in
               retrospect, the critical strategic move: it gave Uber

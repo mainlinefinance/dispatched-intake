@@ -43,7 +43,7 @@ const nextConfig: NextConfig = {
       {
         // The /trucking-loans geo family was an early template (placeholder
         // phone, hard-coded stats, retired speed claims). /lenders covers the
-        // same states and cities, so every old URL maps one to one.
+        // same states. City pages now live as a section of their state page.
         source: "/trucking-loans",
         destination: "/lenders",
         permanent: true,
@@ -55,7 +55,15 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/trucking-loans/:state/:city",
-        destination: "/lenders/:state/:city",
+        destination: "/lenders/:state",
+        permanent: true,
+      },
+      {
+        // The 25 city pages were ~65% identical to each other and carried
+        // unsourced local statistics; their city-specific content was folded
+        // into the state page.
+        source: "/lenders/:state/:city",
+        destination: "/lenders/:state",
         permanent: true,
       },
       {

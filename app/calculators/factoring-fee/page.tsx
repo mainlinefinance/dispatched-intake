@@ -113,8 +113,8 @@ export default function FactoringFeeCalculatorPage() {
                 factoring runs 4 – 5%, long-term contract factoring 1.5 – 2.5%.
               </li>
               <li>
-                <strong>Advance rate</strong> — the percent the factor wires to
-                you within 24 hours of invoice upload. The rest is held back
+                <strong>Advance rate</strong> — the percent the factor advances to
+                you up front after invoice upload. The rest is held back
                 until the broker actually pays.
               </li>
               <li>
@@ -187,7 +187,7 @@ export default function FactoringFeeCalculatorPage() {
               </li>
               <li>
                 <strong>No contract-specific fees.</strong> ACH fees,
-                same-day-funding upcharges, fuel-advance fees, lockbox fees,
+                expedited-funding upcharges, fuel-advance fees, lockbox fees,
                 and monthly minimums are not modeled. Read the contract.
               </li>
               <li>

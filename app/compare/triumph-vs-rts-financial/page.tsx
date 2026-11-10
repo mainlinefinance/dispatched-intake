@@ -145,7 +145,7 @@ export default function TriumphVsRtsFinancialPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              matches you in two minutes.
+              matches you.
             </p>
 
             <table className="ins-carrier-table">
@@ -984,7 +984,7 @@ export default function TriumphVsRtsFinancialPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              does in two minutes &mdash; one application, profile-
+              does &mdash; one application, profile-
               aware match, no double-pull, and no spam from the one
               that isn&rsquo;t the fit. To check fit before applying,
               the two-question tool at{" "}

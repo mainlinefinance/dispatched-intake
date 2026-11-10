@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "The truck isn't running. Does that block the application?",
-    a: "No. The Dispatched workflow is built specifically for the case where the truck is at the shop, not running, and the operator needs the wire today. There is no roadworthiness or inspection requirement at application time. The lender funds the approved amount; the operator pays the shop; the truck moves.",
+    a: "No. The Dispatched workflow is built specifically for the case where the truck is at the shop and not running. There is no roadworthiness or inspection requirement at application time. The lender funds the approved amount; the operator pays the shop; the truck moves.",
   },
   {
     q: "Can I bundle the repair plus operating-expense buffer into one loan?",
@@ -75,7 +75,7 @@ const faqs = [
   },
   {
     q: "How long does the repair-loan application take?",
-    a: "Two minutes to submit inside /apply. Soft approval and lender match depend on underwriting review. Term sheets show APR, term, and total cost. The hard pull and funding step happen after the operator picks a lender. The wire lands the after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff.",
+    a: "The application is submitted inside /apply. Soft approval and lender match depend on underwriting review. Term sheets show APR, term, and total cost. The hard pull and funding step happen after the operator picks a lender. The wire goes out after the chosen lender countersigns; timing depends on the lender, your documents and that bank's cutoff.",
   },
 ];
 
@@ -103,7 +103,7 @@ export default function OwnerOperatorRepairLoansPage() {
         payload={financialProduct({
           name: "Owner-operator truck repair financing",
           description:
-            "Truck repair financing of $5K–$150K for one-truck owner-operators. Schedule C income fits; sole-prop and LLC both fit. Underwriting accounts for revenue interruption while the truck is down. Same-banking-day funds after sign-off.",
+            "Truck repair financing of $5K–$150K for one-truck owner-operators. Schedule C income fits; sole-prop and LLC both fit. Underwriting accounts for revenue interruption while the truck is down. Timing depends on the lender and your documents.",
           url: PAGE_URL,
           category: "Commercial trucking financing",
         })}
@@ -159,8 +159,8 @@ export default function OwnerOperatorRepairLoansPage() {
               broader{" "}
               <Link href="/truck-repair-loans">truck repair financing</Link> —
               short unsecured commercial term lending against working
-              capital, $5K to $150K, soft-pull-first, same-banking-day wire
-              after sign-off. The structural difference is the underwriting
+              capital, $5K to $150K, soft-pull-first, wired after lender
+              sign-off. The structural difference is the underwriting
               question.
             </p>
             <p className="ins-hero-sub">
@@ -251,19 +251,20 @@ export default function OwnerOperatorRepairLoansPage() {
         <section className="ins-sunken">
           <div className="ins-container">
             <span className="ins-eyebrow">Who qualifies</span>
-            <h2 className="ins-hero-title">Owner-operator panel floors.</h2>
+            <h2 className="ins-hero-title">What panel lenders look at.</h2>
             <ul className="product-list">
               <li>
                 <strong>Active DOT number</strong> in good standing with{" "}
                 <Link href="/glossary/fmcsa">FMCSA</Link>.
               </li>
               <li>
-                <strong>500+ FICO.</strong> Programs route from 500. Sub-580
-                borrowers price higher; see{" "}
+                <strong>Credit profile.</strong> Credit requirements are set
+                by each financing partner. Lower credit profiles price
+                higher; see{" "}
                 <Link href="/bad-credit-truck-repair-financing">
                   bad credit truck repair financing
                 </Link>{" "}
-                for the sub-580-specific guidance.
+                for the bad-credit-specific guidance.
               </li>
               <li>
                 <strong>6+ months operating</strong> under the current
@@ -383,7 +384,7 @@ export default function OwnerOperatorRepairLoansPage() {
                 <span className="product-example-value">
                   Owner-op, single 2019 Peterbilt 579 with a Cummins X15,
                   three brokers, 3 years operating authority under an LLC.
-                  642 FICO. Monthly revenue $28K average.
+                  Fair credit. Monthly revenue $28K average.
                 </span>
               </div>
               <div className="product-example-meta">
@@ -437,8 +438,8 @@ export default function OwnerOperatorRepairLoansPage() {
             <h2 className="ins-hero-title">Built for the one-truck operation.</h2>
             <p className="ins-hero-sub">
               Schedule C fits. Sole-prop fits. The lender accounts for
-              downtime. Soft-pull-first, same-banking-day wire after
-              sign-off.
+              downtime. Soft-pull-first; timing depends on the lender and
+              your documents.
             </p>
             <div className="product-hero-ctas">
               <Link

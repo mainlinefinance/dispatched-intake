@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Does my personal credit affect my factoring rate?",
-    a: "Less than people think. Factoring rates are primarily driven by your broker mix's credit, not yours. Some factors do a soft pull on you for fraud prevention but don't price based on it. This is why factoring works for operators with sub-580 FICO who can't access traditional financing.",
+    a: "Less than people think. Factoring rates are primarily driven by your broker mix's credit, not yours. Some factors do a soft pull on you for fraud prevention but don't price based on it. This is why factoring can work for operators with lower credit profiles who can't access traditional financing.",
   },
   {
     q: "What's the effective annualized rate of factoring?",
@@ -237,7 +237,7 @@ export default function WhatsMyFactoringRatePage() {
               <li>
                 <strong>ACH fees.</strong> Some factors charge $5 – $25 per
                 ACH wire on top of the rate. At 20 wires a month, that&rsquo;s
-                $100 – $500 — material on a small-volume account. Same-day
+                $100 – $500 — material on a small-volume account. Expedited
                 wires often carry an additional $15 – $30 premium. Negotiate
                 a flat ACH allowance or fee waiver before signing.
               </li>

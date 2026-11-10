@@ -37,6 +37,10 @@ export async function generateStaticParams(): Promise<Params[]> {
 const ORIGIN = "https://dispatched.finance";
 const SET_URL = `${ORIGIN}/lenders`;
 
+function sentenceCase(text: string): string {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -213,13 +217,18 @@ export default async function LendersStatePage({
 
           {cities.length > 0 ? (
             <section className="research-section" id="cities">
-              <h2>Trucking lenders by city in {s.name}</h2>
+              <h2>Freight markets in {s.name}</h2>
+              <p>
+                The lender list is the same in every {s.name} city. What
+                changes locally is the freight mix and the costs that put
+                pressure on cash flow.
+              </p>
               <ul className="research-list">
                 {cities.map((c) => (
-                  <li key={c.citySlug}>
-                    <Link href={`/lenders/${s.slug}/${c.citySlug}`}>
-                      Trucking lenders in {c.city}, {c.stateAbbr}
-                    </Link>
+                  <li key={c.citySlug} id={c.citySlug}>
+                    <strong>{c.city}.</strong>{" "}
+                    {sentenceCase(c.cityWeatherContext)}. Carriers based
+                    here typically budget for {c.cityCostPressure}.
                   </li>
                 ))}
               </ul>
@@ -388,8 +397,8 @@ export default async function LendersStatePage({
             <section className="research-section" id="bad-credit">
               <h2>Bad credit / non-traditional underwriting in {s.name}</h2>
               <p>
-                Sub-580 FICOs, recent bankruptcies, and thin-credit-file
-                operators in {s.name} should start with factors that
+                Operators in {s.name} with lower credit profiles, a recent
+                bankruptcy, or a thin credit file should start with factors that
                 underwrite the broker, not the trucker — and with
                 marketplaces that shop across multiple lender appetites
                 rather than locking you into one underwriting box.
@@ -480,7 +489,7 @@ export default async function LendersStatePage({
             </p>
             <div className="research-cta-grid">
               <Link href="/qualify" className="research-cta-card">
-                <h3>Qualify in 3 minutes</h3>
+                <h3>See your funding options</h3>
                 <p>
                   Soft pull, no credit impact. Routed to the lender panel
                   matching your authority age, credit profile, and capital

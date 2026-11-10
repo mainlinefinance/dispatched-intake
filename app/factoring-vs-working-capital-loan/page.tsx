@@ -87,7 +87,7 @@ const faqs = [
   },
   {
     q: "How fast can I get either product?",
-    a: "Working capital on the Dispatched panel funding timing depends on the lender and your documents — soft-pull match after underwriting review, hard pull only at lender selection, then wire after lender sign-off. Factoring relationships take longer to set up initially (3 to 7 business days for the broker verifications, UCC-1 filing, and onboarding) but fund individual invoices same or next banking day once the relationship is live. For a money-today need, working capital is faster on day one; for an ongoing cashflow mechanism, factoring is faster over the life of the relationship.",
+    a: "Working capital on the Dispatched panel funding timing depends on the lender and your documents — soft-pull match after underwriting review, hard pull only at lender selection, then wire after lender sign-off. Factoring relationships take longer to set up initially (3 to 7 business days for the broker verifications, UCC-1 filing, and onboarding) but once the relationship is live, invoice funding timing depends on the factor and your invoices. For a one-off need, a working capital loan avoids the factoring setup; for an ongoing cashflow mechanism, factoring keeps working over the life of the relationship.",
   },
   {
     q: "What about equipment financing — where does it fit?",
@@ -169,7 +169,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               <Link href="/factoring">Factoring</Link> is the sale of a
               specific outstanding invoice. The factor advances 85% to 97%
               of the face value of the invoice to the operator&rsquo;s
-              account the same or next banking day; the factor collects from
+              account on timing set by the factor; the factor collects from
               the broker on the original payment terms; the factor releases
               the reserve (the 3% to 15% held back) minus the factoring fee
               when the broker pays. The fee on the Dispatched panel
@@ -233,7 +233,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               <Link href="/glossary/fico">FICO</Link> score. This is why
               factoring is often the only product available to operators in
               their first six months after authority, post-bankruptcy
-              operators, and sub-580 FICO owner-operators.
+              operators, and owner-operators with lower credit profiles.
             </p>
             <p className="ins-hero-sub">
               Factoring scales with revenue. The more you haul, the more
@@ -322,11 +322,11 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                 FICO, time in business, deposit history, and DSCR.
               </li>
               <li>
-                <strong>Speed to funding.</strong> Factoring funds the same
-                or next banking day for invoices submitted before cutoff,
-                once the initial relationship is set up (initial setup runs
-                3 to 7 days). Working capital funding timing depends on the lender and your documents
-                after sign-off in many cases on the panel.
+                <strong>Speed to funding.</strong> Factoring needs an
+                initial setup before the first invoice funds; after that,
+                timing depends on the factor and your invoices. Working
+                capital funding timing depends on the lender and your
+                documents.
               </li>
               <li>
                 <strong>Use of proceeds.</strong> Factoring proceeds become
@@ -439,8 +439,8 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                 is.
               </li>
               <li>
-                <strong>You are credit-constrained.</strong> Sub-580 FICO,
-                post-bankruptcy, less than six months of operating
+                <strong>You are credit-constrained.</strong> A lower credit
+                profile, post-bankruptcy, less than six months of operating
                 authority — factoring underwrites the broker, not the
                 operator.
               </li>
@@ -480,8 +480,8 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               </li>
               <li>
                 <strong>You have strong credit and stable revenue.</strong>{" "}
-                The 14% to 34% APR range works in your favor when the FICO
-                is 680+. At that band, the working capital loan can be
+                The 14% to 34% APR range works in your favor when your
+                credit is strong. At that band, the working capital loan can be
                 cheaper than factoring for one-off needs that don&rsquo;t
                 justify factoring an entire receivables book.
               </li>
@@ -554,7 +554,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
             <p className="ins-hero-sub">
               For new operators setting up the cashflow stack from scratch,
               the sequence is: establish the factoring relationship first
-              (lower bar to set up; funds in 3-7 days), use factoring to
+              (lower bar to set up), use factoring to
               smooth receivables for the first 90 to 180 days, then add a
               working capital relationship when an actual scale event
               creates the need. Reverse-sequencing — taking a working
@@ -580,7 +580,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                 <span className="product-example-label">Operator</span>
                 <span className="product-example-value">
                   Small fleet, two 2020 Cascadias, LLC, 2.5 years operating
-                  authority. 660 FICO on the managing member. Three
+                  authority. Fair credit on the managing member. Three
                   brokers, two on Net-45, one on Net-30. Monthly revenue
                   $52K average.
                 </span>

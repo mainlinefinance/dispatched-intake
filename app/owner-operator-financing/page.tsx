@@ -79,7 +79,7 @@ const faqs = [
   },
   {
     q: "How long does owner-operator financing take to fund?",
-    a: "Soft approval and lender match depend on underwriting review of submitting the application. Working capital and repair loans fund after lender sign-off after the chosen lender countersigns and the wire lands before cutoff. Equipment loans take 2 to 5 banking days because the lender has to verify the title and record the lien before funds release.",
+    a: "Soft approval and lender match depend on underwriting review of submitting the application. Working capital and repair loans fund after lender sign-off after the chosen lender countersigns and the wire lands before cutoff. Equipment loans take longer because the lender has to verify the title and record the lien before funds release.",
   },
   {
     q: "Will applying as an owner-operator hurt my credit?",
@@ -112,7 +112,7 @@ export default function OwnerOperatorFinancingPage() {
         payload={financialProduct({
           name: "Owner-operator financing",
           description:
-            "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, timing depends on the lender and your documents.",
+            "Financing built for owner-operators: working capital, equipment loans, repair loans. Soft-pull match; timing depends on the lender and your documents.",
           url: PAGE_URL,
           category: "Commercial trucking financing",
         })}
@@ -215,10 +215,12 @@ export default function OwnerOperatorFinancingPage() {
             </h2>
             <ul className="product-list">
               <li>
-                <strong>500+ FICO panel floor.</strong> Below 580, expect
-                rates on the higher end of the observed panel range and a
-                tighter maximum loan amount; 680+ unlocks the panel&rsquo;s
-                full product set.
+                <strong>Credit.</strong> Credit requirements are set by
+                each financing partner, and approval is not guaranteed.
+                With a lower credit profile, expect rates on the higher end
+                of the observed panel range and a tighter maximum loan
+                amount; stronger credit unlocks the panel&rsquo;s full
+                product set.
               </li>
               <li>
                 <strong>6+ months of operating history.</strong> Drivers
@@ -321,7 +323,7 @@ export default function OwnerOperatorFinancingPage() {
                 <span className="product-example-value">
                   <Link href="/glossary/owner-operator">Owner-operator</Link>, 1 Class 8 tractor, 4 years under own
                   authority with an active <Link href="/glossary/mc-number">MC number</Link>,
-                  primarily Texas–Midwest van freight, 660 FICO,
+                  primarily Texas–Midwest van freight, fair credit,
                   $55K monthly revenue.
                 </span>
               </div>

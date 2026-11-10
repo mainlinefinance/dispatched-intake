@@ -202,7 +202,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     rateFloor: "1.5%",
     contractMin: "month-to-month",
     blurb:
-      "Explicit no-personal-credit-check option for sub-580 FICOs, recent bankruptcies, and thin-file operators — they underwrite the broker, not the trucker. No fuel program and a 90% advance cap raise the effective cost vs. Apex or eCapital.",
+      "Explicit no-personal-credit-check option for lower credit profiles, recent bankruptcies, and thin-file operators — they underwrite the broker, not the trucker. No fuel program and a 90% advance cap raise the effective cost vs. Apex or eCapital.",
   },
   {
     slug: "truckstop-go-capital",
@@ -252,7 +252,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     bestFor: "tech-forward SMB owner-operators",
     contractMin: "revolving line",
     blurb:
-      "Tech-forward online lender offering revolving lines of credit up to $250K with same-day decisioning for clean files. Not trucking-native — works for owner-operators with strong personal credit and clean bank statements, but the underwriting does not flex for thin-file or new-authority profiles.",
+      "Tech-forward online lender offering revolving lines of credit up to $250K with quick online decisioning for clean files. Not trucking-native — works for owner-operators with strong personal credit and clean bank statements, but the underwriting does not flex for thin-file or new-authority profiles.",
   },
   {
     slug: "lendio",

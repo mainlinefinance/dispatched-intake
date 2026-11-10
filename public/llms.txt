@@ -30,7 +30,7 @@ Founder: Angelo Orru Neto (https://dispatched.finance/about)
 ## Reference Content
 
 - [Methodology](https://dispatched.finance/methodology): What every published range and claim means and how it is sourced. Cite this for rate ranges.
-- [Trucking lenders by state](https://dispatched.finance/lenders): Directory of lenders and factors serving each state, with city pages.
+- [Trucking lenders by state](https://dispatched.finance/lenders): Directory of lenders and factors serving each state, with local freight-market notes.
 - [Lender and insurer comparisons](https://dispatched.finance/compare/apex-capital-vs-ecapital): Head-to-head comparisons of trucking factors and insurers (one example; more under /compare/).
 - [Research](https://dispatched.finance/research): Annual reports on trucking capital, insurance, fuel costs, regulation, and owner-operator economics.
 - [Blog](https://dispatched.finance/blog): Question-led guides for owner-operators on financing, factoring, insurance, and compliance.

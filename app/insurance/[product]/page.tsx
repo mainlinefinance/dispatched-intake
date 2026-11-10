@@ -1,3 +1,4 @@
+import { getProductGuide } from "@/lib/data/productGuides";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -98,6 +99,7 @@ export default async function ProductHubPage({
         </div>
         <Hero product={p} today={today} />
         <RegulatoryBlock product={p} />
+        <GuideBlock product={p} />
         <StateDirectory product={p} states={states} />
         <ComplianceFooter />
       </main>
@@ -138,6 +140,45 @@ function RegulatoryBlock({ product }: { product: Product }) {
             contract for the binding number.
           </p>
         ) : null}
+      </div>
+    </section>
+  );
+}
+
+function GuideBlock({ product }: { product: Product }) {
+  const guide = getProductGuide(product.slug);
+  return (
+    <section>
+      <div className="ins-container">
+        <span className="ins-eyebrow">Coverage guide</span>
+        <h2 className="ins-hero-title">What {product.shortLabel} pays for</h2>
+        <p className="ins-hero-sub">{guide.covers}</p>
+        <dl className="ins-faq">
+          <div className="ins-faq-item">
+            <dt>What it does not cover</dt>
+            <dd>
+              <ul>
+                {guide.doesNotCover.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+          <div className="ins-faq-item">
+            <dt>Federal context</dt>
+            <dd>{guide.federalContext}</dd>
+          </div>
+          <div className="ins-faq-item">
+            <dt>What to check on a quote</dt>
+            <dd>
+              <ul>
+                {guide.checkOnQuote.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+        </dl>
       </div>
     </section>
   );

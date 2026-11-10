@@ -116,7 +116,7 @@ export default function ReeferBreakdownCoveragePage() {
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               A reefer breakdown is two losses at once. The perishable load
-              behind the bulkhead starts to spoil within hours, and the
+              behind the bulkhead starts to spoil quickly, and the
               refrigeration unit itself usually needs immediate work to get the
               truck moving again. Refrigeration breakdown coverage is a
               cargo-policy endorsement that pays for the spoiled load if the

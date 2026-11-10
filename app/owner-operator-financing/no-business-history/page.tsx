@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "What does the lender look at when there are no business bank statements?",
-    a: "Four signals replace the missing business statements: (1) the operator's W-2 driving history — pay stubs, employer verification, last 12 to 24 months of income, (2) personal bank statements showing actual cash flow discipline — at least 3 months, ideally 6, (3) personal credit profile with the panel floor at 500 FICO, and (4) the truck itself as collateral with the appraised value and down payment driving loan-to-value math. A new operator with strong signals across those four can fund the same week.",
+    a: "Four signals replace the missing business statements: (1) the operator's W-2 driving history — pay stubs, employer verification, last 12 to 24 months of income, (2) personal bank statements showing actual cash flow discipline — at least 3 months, ideally 6, (3) personal credit profile, with requirements set by each financing partner, and (4) the truck itself as collateral with the appraised value and down payment driving loan-to-value math.",
   },
   {
     q: "How is this different from new LLC truck financing or first-time owner-operator financing?",
@@ -186,11 +186,12 @@ export default function NoBusinessHistoryTruckFinancingPage() {
                 see consistent monthly inflows of at least $4K to $6K.
               </li>
               <li>
-                <strong>Personal credit (FICO floor 500).</strong>{" "}
+                <strong>Personal credit.</strong>{" "}
                 Credit matters more at no-history than at seasoned
                 because the personal guarantee is doing more of the
-                underwriting work. The panel floor stays at 500 FICO,
-                but no-history operators below 580 see a tighter lender
+                underwriting work. Credit requirements are set by each
+                financing partner; no-history operators with lower credit
+                profiles see a tighter lender
                 subset and rates at the high end of the 14% to 22%
                 equipment band.
               </li>
@@ -331,8 +332,8 @@ export default function NoBusinessHistoryTruckFinancingPage() {
             <ul className="product-list">
               <li>
                 <strong>Operator:</strong> 4 years W-2 driving for a
-                regional carrier, $68K average annual income, 620
-                FICO, CDL Class A with tanker and doubles
+                regional carrier, $68K average annual income, fair
+                credit, CDL Class A with tanker and doubles
                 endorsements.
               </li>
               <li>

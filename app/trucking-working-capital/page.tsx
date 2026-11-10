@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "How fast can I get a trucking working capital loan?",
-    a: "Soft approval and lender match depend on underwriting review of finishing the application. Funds hit your account the after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff. Wires that miss the cutoff settle the next banking day; weekend and federal-holiday wires settle the next banking day. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
+    a: "Soft approval and lender match depend on underwriting review of finishing the application. Funds are released after the chosen lender countersigns; timing depends on the lender, your documents, and bank wire cutoffs. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
   },
   {
     q: "What can I use a trucking working capital loan for?",
@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "What APR can I expect on a trucking working capital loan?",
-    a: "The observed panel range is 14% to 34% APR for working capital. The exact APR depends on credit band, time in business, monthly revenue, and the chosen lender's underwriting. Higher credit bands and longer operating histories quote toward the lower end; sub-580 borrowers quote toward the high end. You see the exact APR, term length, and total cost on the term sheet before signing.",
+    a: "The observed panel range is 14% to 34% APR for working capital. The exact APR depends on credit band, time in business, monthly revenue, and the chosen lender's underwriting. Higher credit bands and longer operating histories quote toward the lower end; borrowers with lower credit profiles quote toward the high end. You see the exact APR, term length, and total cost on the term sheet before signing.",
   },
   {
     q: "How much can a trucking operation borrow?",
@@ -166,7 +166,8 @@ export default function TruckingWorkingCapitalPage() {
             <h2 className="ins-hero-title">Eligibility floors.</h2>
             <ul className="product-list">
               <li>
-                <strong>500+ FICO panel floor.</strong> Below 580 expect
+                <strong>Credit.</strong> Credit requirements are set by
+                each financing partner. With a lower credit profile expect
                 rates on the higher end of the 14%–34% range and a tighter
                 maximum.
               </li>
@@ -267,7 +268,7 @@ export default function TruckingWorkingCapitalPage() {
                 <span className="product-example-label">Operator</span>
                 <span className="product-example-value">
                   Fleet owner, 4 trucks, 3.5 years operating, primarily
-                  Ohio Valley dedicated van freight, FICO 670, $90K
+                  Ohio Valley dedicated van freight, good credit, $90K
                   monthly revenue.
                 </span>
               </div>

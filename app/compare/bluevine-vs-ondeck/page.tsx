@@ -157,7 +157,7 @@ export default function BluevineVsOnDeckPage() {
               <Link href="/apply?useCase=working-capital">
                 /apply?useCase=working-capital
               </Link>{" "}
-              takes two minutes and pulls no credit.
+              starts with a soft pull, no hard credit pull.
             </p>
 
             <table className="ins-carrier-table">

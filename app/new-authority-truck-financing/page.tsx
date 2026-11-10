@@ -15,13 +15,13 @@ import {
 export const metadata: Metadata = {
   title: "New authority truck financing — under 12mo | Dispatched",
   description:
-    "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match. Apply now.",
+    "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. Soft-pull match. Approval is not guaranteed.",
   alternates: { canonical: "/new-authority-truck-financing" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "New authority truck financing — under 12mo | Dispatched",
     description:
-      "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match. Apply now.",
+      "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. Soft-pull match. Approval is not guaranteed.",
     url: "/new-authority-truck-financing",
     type: "website",
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "New authority truck financing — under 12mo | Dispatched",
     description:
-      "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match. Apply now.",
+      "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. Soft-pull match. Approval is not guaranteed.",
   },
 };
 
@@ -90,7 +90,7 @@ export default function NewAuthorityFinancingPage() {
       <JsonLd payload={financialProduct({
         name: "New authority truck financing",
         description:
-          "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match.",
+          "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. Soft-pull match.",
         url: PAGE_URL,
         category: "Commercial trucking financing",
       })} />
@@ -209,7 +209,7 @@ export default function NewAuthorityFinancingPage() {
               <li>
                 <strong>Down payment expectation: 15%–25%.</strong> Higher
                 than seasoned-operator equipment loans. Stronger credit
-                (680+) and newer equipment can push the requirement
+                and newer equipment can push the requirement
                 lower.
               </li>
               <li>
@@ -251,7 +251,7 @@ export default function NewAuthorityFinancingPage() {
                 <span className="product-example-value">
                   Owner-operator, 1 truck (financed), 4 months under own
                   MC authority, 6 years prior driving experience as a
-                  company driver, FICO 640.
+                  company driver, fair credit.
                 </span>
               </div>
               <div className="product-example-meta">

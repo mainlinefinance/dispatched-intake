@@ -78,7 +78,7 @@ const faqs = [
   },
   {
     q: "How fast can a new LLC get funded after applying?",
-    a: "Soft approval and lender match: after application. Equipment loans on a new LLC fund in 3 to 5 banking days after the lender countersigns — slower than a seasoned operation because the title work and lien recording on a brand-new entity need verification. Working capital, when available, funds after lender sign-off; timing depends on documents. If the LLC formation paperwork is in process (filed but not yet returned by the Secretary of State), the lender will hold until the certificate lands; that adds 5 to 15 days depending on the state.",
+    a: "Soft approval and lender match: after application. Equipment loans on a new LLC fund after the lender countersigns — slower than a seasoned operation because the title work and lien recording on a brand-new entity need verification. Working capital, when available, funds after lender sign-off; timing depends on documents. If the LLC formation paperwork is in process (filed but not yet returned by the Secretary of State), the lender will hold until the certificate lands; how long that takes depends on the state.",
   },
 ];
 
@@ -181,7 +181,7 @@ export default function NewLlcTruckFinancingPage() {
                 </strong>{" "}
                 The factor underwrites the broker who owes the invoice — not
                 the LLC. A one-week-old LLC with a freshly issued MC# and
-                one signed load is fundable on the same day the invoice
+                one signed load can be fundable once the invoice
                 clears.{" "}
                 <Link href="/factoring/no-credit-check">
                   Factoring with no credit check on you
@@ -236,9 +236,9 @@ export default function NewLlcTruckFinancingPage() {
                 <strong>Personal credit (carries more weight here).</strong>{" "}
                 FICO matters more on a new-LLC equipment loan than on a
                 seasoned-operator loan because the personal guarantee is
-                doing more of the underwriting work. The panel floor is
-                still 500 FICO, but new-LLC borrowers below 580 see a
-                tighter lender subset and rates at the high end of the
+                doing more of the underwriting work. Credit requirements
+                are set by each financing partner; new-LLC borrowers with
+                lower credit profiles see a tighter lender subset and rates at the high end of the
                 12% to 18% equipment range.
               </li>
               <li>
@@ -322,7 +322,7 @@ export default function NewLlcTruckFinancingPage() {
             <ul className="product-list">
               <li>
                 <strong>Operator:</strong> 4 years W-2 driving for a major
-                carrier, $72K average annual income, 640 FICO, CDL Class A
+                carrier, $72K average annual income, fair credit, CDL Class A
                 with hazmat endorsement.
               </li>
               <li>
@@ -398,7 +398,7 @@ export default function NewLlcTruckFinancingPage() {
                 <Link href="/bad-credit-truck-financing">
                   Bad credit truck financing
                 </Link>{" "}
-                — for new-LLC operators with sub-580 personal FICO.
+                — for new-LLC operators with challenged personal credit.
               </li>
               <li>
                 <Link href="/methodology">Methodology</Link> — how the

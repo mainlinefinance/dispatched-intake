@@ -191,6 +191,38 @@ export default async function PulseIndexPage() {
           </section>
 
           <section className="pulse-section">
+            <h2>How to use Pulse</h2>
+            <p>
+              Each dataset page shows one public number, how it moved since
+              the last release, and the short history behind it. Start with
+              the week-over-week change to see what moved, then check the
+              year-over-year figure to tell a seasonal swing from a real
+              shift in your costs.
+            </p>
+            <p>
+              The diesel pages are the ones most operators need every week:
+              fuel surcharge schedules in broker and shipper contracts are
+              usually keyed to the weekly retail diesel average the U.S.
+              Energy Information Administration publishes, either the
+              national number or the one for a named region. Knowing the
+              number your contract points at is how you check a surcharge
+              before you accept the load.
+            </p>
+          </section>
+
+          <section className="pulse-section">
+            <h2>FAQ</h2>
+            <dl className="pulse-faq">
+              {INDEX_FAQS.map((qa) => (
+                <div key={qa.q}>
+                  <dt>{qa.q}</dt>
+                  <dd>{qa.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+
+          <section className="pulse-section">
             <PulseDigestSignup defaultInterest="digest" source="pulse-index" />
           </section>
 

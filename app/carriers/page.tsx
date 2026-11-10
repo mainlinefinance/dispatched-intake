@@ -128,6 +128,32 @@ export default function CarriersIndexPage() {
           </div>
         </section>
 
+        <section>
+          <div className="ins-container">
+            <span className="ins-eyebrow">How to use this list</span>
+            <h2 className="ins-hero-title">Reading a carrier review</h2>
+            <p className="ins-hero-sub">
+              The tag next to each name is the carrier&apos;s AM Best
+              Financial Strength Rating as we last verified it. Open a review
+              to see the date of that check, the trucking lines the carrier
+              writes, and the states where we list it. A rating tells you
+              whether an insurer is expected to be able to pay its claims; it
+              does not tell you whether the carrier will write your
+              operation, or at what price. That depends on your equipment,
+              radius, commodities, and loss history, and the answer comes
+              from a quote.
+            </p>
+            <dl className="ins-faq">
+              {faqs.map((qa) => (
+                <div key={qa.q} className="ins-faq-item">
+                  <dt>{qa.q}</dt>
+                  <dd>{qa.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
         <section className="ins-sunken">
           <div className="ins-container">
             <p className="ins-compliance-note">

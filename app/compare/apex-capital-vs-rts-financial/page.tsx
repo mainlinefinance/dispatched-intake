@@ -167,7 +167,7 @@ export default function ApexVsRtsFinancialPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              does in two minutes.
+              does.
             </p>
 
             <table className="ins-carrier-table">

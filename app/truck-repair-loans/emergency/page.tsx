@@ -14,27 +14,27 @@ import {
 
 /* /truck-repair-loans/emergency — repair financing pillar spoke.
    Editorial frame: truck broken down on the side of a road, operator
-   needs cash today, not in 30 days. Same banking day funding. */
+   needs a repair funded so the truck can get back to work. */
 
 export const metadata: Metadata = {
-  title: "Emergency semi truck repair loan — same day | Dispatched",
+  title: "Emergency Semi Truck Repair Loans | Dispatched",
   description:
-    "Truck down, repair invoice in hand? Emergency repair loans fund after lender sign-off on the Dispatched panel. $5K–$150K, 500 FICO floor, soft pull.",
+    "Truck down, repair invoice in hand? Emergency repair loans of $5K–$150K through the Dispatched panel. Soft pull to start; timing depends on the lender.",
   alternates: { canonical: "/truck-repair-loans/emergency" },
   openGraph: {
     images: ["/opengraph-image"],
-    title: "Emergency semi truck repair loan — same day | Dispatched",
+    title: "Emergency Semi Truck Repair Loans | Dispatched",
     description:
-      "Truck down, repair invoice in hand? Emergency repair loans fund after lender sign-off on the Dispatched panel. $5K–$150K, 500 FICO floor, soft pull.",
+      "Truck down, repair invoice in hand? Emergency repair loans of $5K–$150K through the Dispatched panel. Soft pull to start; timing depends on the lender.",
     url: "/truck-repair-loans/emergency",
     type: "website",
   },
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "Emergency semi truck repair loan — same day | Dispatched",
+    title: "Emergency Semi Truck Repair Loans | Dispatched",
     description:
-      "Truck down, repair invoice in hand? Emergency repair loans fund after lender sign-off on the Dispatched panel. $5K–$150K, 500 FICO floor, soft pull.",
+      "Truck down, repair invoice in hand? Emergency repair loans of $5K–$150K through the Dispatched panel. Soft pull to start; timing depends on the lender.",
   },
 };
 
@@ -43,7 +43,7 @@ const PAGE_URL = "https://dispatched.finance/truck-repair-loans/emergency";
 const faqs = [
   {
     q: "How fast can an emergency truck repair loan actually fund?",
-    a: "Same banking day, when the application clears soft approval before the chosen lender's wire cutoff. Cutoffs are typically 2 PM to 4 PM local for the lender's depository bank. Applications submitted after cutoff fund next banking day morning. The Dispatched panel runs soft pre-qualification in 20 minutes; the chosen lender countersigns the term sheet within 2 hours; the wire goes out after countersignature. Weekend breakdowns: most panel lenders accept Friday afternoon applications for Monday funding; a subset offer 24/7 funding via commercial cards.",
+    a: "Timing depends on the lender and your documents, and Dispatched does not promise a funding time. The steps are fixed: a soft-pull pre-qualification, a term sheet from the lender you pick, your countersignature, and then the lender's wire, which is subject to its bank's cutoff and to weekends and federal holidays. The things you control are having the repair invoice or written estimate, the shop's payment details, and recent business bank statements ready before you apply.",
   },
   {
     q: "How much can I borrow for an emergency repair?",
@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "What does an emergency truck repair loan cost?",
-    a: "Same-day repair loans on the panel typically land in the 18% to 30% APR band, with the trade-off being speed versus cost. The fastest funding (truly same-banking-day) sits at the high end because the lender is taking on documentation and verification risk. Operators with 600+ FICO and 6+ months of consistent deposits see the lower end. Sub-580 operators with a real shop invoice in hand still fund — the truck-down urgency is a signal lenders price for — but rates are at the top of the band.",
+    a: "Emergency repair loans on the panel typically land in the 18% to 30% APR band. Urgent files sit toward the high end because the lender is taking on documentation and verification risk. Operators with stronger credit and 6+ months of consistent deposits see the lower end. Operators with lower credit profiles should expect rates at the top of the band; credit requirements are set by each financing partner and approval is not guaranteed.",
   },
   {
     q: "Do I need to have the repair shop in mind before applying?",
@@ -63,15 +63,15 @@ const faqs = [
   },
   {
     q: "Can I get an emergency repair loan with bad credit?",
-    a: "Yes. The panel floor is 500 FICO and the truck-down urgency is itself a credit-supportive signal — the lender knows that the alternative to funding is loss of income, which makes the operator more likely to prioritize the loan payment. Sub-580 operators should expect APR at the top of the 18% to 30% range and a slightly smaller maximum loan amount, but approval rates on emergency repair are higher than on unsecured working capital because the loan use is verifiable and bounded.",
+    a: "Options may be available. Credit requirements are set by each financing partner and approval is not guaranteed. A verifiable repair invoice helps, because the loan use is bounded and the lender knows a working truck is how the loan gets repaid. Operators with lower credit profiles should expect APR at the top of the 18% to 30% range and a smaller maximum loan amount.",
   },
   {
     q: "Can I get an emergency repair loan as a new owner-operator?",
-    a: "Yes, with caveats. Operators under 6 months of operating history qualify for a narrower lender subset. The substitute signal is the truck and the repair invoice: the lender knows that a working truck is the operator's only path to revenue, so funding the repair is more underwritable than funding general working capital to a new operator. Plan for higher APR and a smaller maximum loan than a seasoned operator would see for the same repair scope.",
+    a: "Possibly, with caveats. Operators under 6 months of operating history are considered by a narrower lender subset, and approval is not guaranteed. The substitute signal is the truck and the repair invoice: the lender knows that a working truck is the operator's only path to revenue, so funding the repair is more underwritable than funding general working capital to a new operator. Plan for higher APR and a smaller maximum loan than a seasoned operator would see for the same repair scope.",
   },
   {
     q: "What if my repair turns out to be more expensive than the loan I qualified for?",
-    a: "Scope creep on truck repair is the rule, not the exception. The application asks for a buffer (typically 10% to 20% above the initial invoice) so a Tuesday quote of $12K with a Thursday revised invoice of $14K does not require re-applying. If the actual repair lands materially above the loan, the lender will either fund a top-up wire (typically 24-hour turnaround) or work with the shop on a partial-payment structure. A repair that doubles in scope (in-frame engine rebuild discovered during a clutch job) typically pivots into a longer-term equipment-secured loan rather than the repair-loan product.",
+    a: "Scope creep on truck repair is the rule, not the exception. The application asks for a buffer (typically 10% to 20% above the initial invoice) so a Tuesday quote of $12K with a Thursday revised invoice of $14K does not require re-applying. If the actual repair lands materially above the loan, the lender may either fund a top-up or work with the shop on a partial-payment structure. A repair that doubles in scope (in-frame engine rebuild discovered during a clutch job) typically pivots into a longer-term equipment-secured loan rather than the repair-loan product.",
   },
 ];
 
@@ -93,7 +93,7 @@ export default function EmergencyTruckRepairLoanPage() {
         payload={article({
           headline: "Emergency semi truck repair loan — repair financing",
           description:
-            "How emergency truck repair loans work on the Dispatched panel: same-day funding mechanics, the wire-to-shop structure, APR band, and what the application actually asks for.",
+            "How emergency truck repair loans work on the Dispatched panel: the funding steps, the wire-to-shop structure, APR band, and what the application actually asks for.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -104,7 +104,7 @@ export default function EmergencyTruckRepairLoanPage() {
         payload={financialProduct({
           name: "Emergency truck repair loan",
           description:
-            "Same-banking-day truck repair financing. $5K to $150K, 500 FICO floor, 18% to 30% APR. Wire-to-shop or wire-to-operator structures. Soft-pull pre-qualification.",
+            "Emergency truck repair financing. $5K to $150K, 18% to 30% APR. Wire-to-shop or wire-to-operator structures. Soft-pull pre-qualification; timing depends on the lender and your documents.",
           url: PAGE_URL,
           category: "Truck repair financing",
         })}
@@ -120,74 +120,74 @@ export default function EmergencyTruckRepairLoanPage() {
               Truck repair loans · Emergency
             </span>
             <h1 className="ins-hero-title">
-              Emergency truck repair loan — funds today.
+              Emergency truck repair loans.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               Truck on the side of a road, repair invoice in hand, every
               day off the road costing revenue. The Dispatched panel funds
               emergency repair loans after lender sign-off — soft pull,
-              500 FICO floor, $5K to $150K, wired direct to your shop or
-              your business account.
+              $5K to $150K, wired direct to your shop or your business
+              account. Approval is not guaranteed.
             </p>
             <div className="product-hero-ctas">
               <Link
                 href="/apply?useCase=repair&urgency=emergency"
                 className="btn btn--primary btn--lg"
               >
-                See same-day repair lenders →
+                See emergency repair lenders →
               </Link>
               <Link href="/qualify" className="btn btn--secondary btn--lg">
                 Two-question fit (no credit pull)
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft pull only · Same banking day before lender cutoff.
+              Soft pull only · Timing depends on the lender and your documents.
             </p>
           </div>
         </section>
 
         <section className="ins-sunken">
           <div className="ins-container">
-            <span className="ins-eyebrow">How same-day actually works</span>
+            <span className="ins-eyebrow">How funding actually works</span>
             <h2 className="ins-hero-title">
-              The funding clock from breakdown to wire.
+              The steps from breakdown to wire.
             </h2>
             <ol className="product-list">
               <li>
-                <strong>00:00 — Soft pre-qualification</strong> at /qualify
-                or by phone. 20 minutes to soft approval and a 2–4 lender
-                shortlist. No credit hit.
+                <strong>Step 1 — Soft pre-qualification</strong> at /qualify
+                or by phone, leading to a 2–4 lender shortlist. No credit
+                hit.
               </li>
               <li>
-                <strong>00:30 — Pick a lender, upload the invoice.</strong>{" "}
+                <strong>Step 2 — Pick a lender, upload the invoice.</strong>{" "}
                 The shop&rsquo;s W-9 or wire instructions either comes from you
                 or the lender calls the shop directly to verify. Hard pull
                 happens here.
               </li>
               <li>
-                <strong>02:00 — Term sheet countersigned.</strong> APR,
+                <strong>Step 3 — Term sheet countersigned.</strong> APR,
                 term length, payment schedule, total cost — all on one
                 page. E-sign from your phone.
               </li>
               <li>
-                <strong>04:00 — Wire instruction released.</strong> The
+                <strong>Step 4 — Wire instruction released.</strong> The
                 lender&rsquo;s depository sends the wire to the shop&rsquo;s bank (or
                 to your business account on operator-direct structures).
               </li>
               <li>
-                <strong>End of banking day — Funds land at the shop.</strong>{" "}
-                Wires submitted before the depository&rsquo;s cutoff (typically
-                2–4 PM local) settle the same day. Past cutoff, settlement
-                is the next banking morning.
+                <strong>Step 5 — Funds land at the shop.</strong>{" "}
+                Settlement follows the depository bank&rsquo;s wire schedule,
+                including its daily cutoff, weekends and federal holidays.
+                Timing depends on the lender and your documents.
               </li>
             </ol>
             <p className="ins-hero-sub">
               The discipline that makes this work: the application asks for
               the repair scope up front (engine, transmission, brakes, DPF,
               EGR, electrical) so the lender match is to a panel lender that
-              specifically funds that category. Generalist underwriting
-              slows the wire by hours; specialist underwriting compresses it.
+              specifically funds that category. A lender that knows the repair category
+              has fewer questions to ask before it can decide.
             </p>
           </div>
         </section>
@@ -196,20 +196,20 @@ export default function EmergencyTruckRepairLoanPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">What the panel funds</span>
             <h2 className="ins-hero-title">
-              Repair categories that match same-day funding.
+              Repair categories the panel funds.
             </h2>
             <ul className="product-list">
               <li>
                 <strong>Engine and major-component repair.</strong>{" "}
                 In-frame rebuilds, head jobs, cracked blocks, turbo
-                replacement. Typical invoice $8K to $40K. Fastest funding
-                category because the diagnosis is bounded and the
-                shop relationship is usually stable.
+                replacement. Typical invoice $8K to $40K. A straightforward
+                category to underwrite because the diagnosis is bounded and
+                the shop relationship is usually stable.
               </li>
               <li>
                 <strong>Transmission repair and replacement.</strong>{" "}
                 Clutch jobs, full rebuilds, automated-manual gear-set
-                work. Typical invoice $6K to $25K. Same-day funding routine.
+                work. Typical invoice $6K to $25K.
               </li>
               <li>
                 <strong>DPF, EGR, SCR emissions repair.</strong>{" "}
@@ -225,8 +225,8 @@ export default function EmergencyTruckRepairLoanPage() {
               <li>
                 <strong>Brakes, suspension, steering.</strong>{" "}
                 Air-brake system overhaul, ABS, leaf springs, kingpin
-                replacement. Typical invoice $2K to $12K. Often funded as
-                same-day combined with related maintenance.
+                replacement. Typical invoice $2K to $12K. Often funded
+                together with related maintenance.
               </li>
               <li>
                 <strong>Electrical and ECM.</strong>{" "}
@@ -257,7 +257,7 @@ export default function EmergencyTruckRepairLoanPage() {
             <ul className="product-list">
               <li>
                 <strong>Operator:</strong> Owner-operator, 14 months of
-                MC authority, 1-truck operation, 580 FICO, $32K average
+                MC authority, 1-truck operation, a lower credit profile, $32K average
                 monthly business deposits.
               </li>
               <li>
@@ -266,20 +266,19 @@ export default function EmergencyTruckRepairLoanPage() {
                 cooler replacement quoted at $9,400.
               </li>
               <li>
-                <strong>Application:</strong> Tuesday 5:42 PM soft
-                pre-qualification, 2 lender match, picked the trucking-
-                specialty repair lender with 24% APR quote.
+                <strong>Application:</strong> Soft pre-qualification,
+                2 lender match, picked the trucking-specialty repair lender
+                with 24% APR quote.
               </li>
               <li>
-                <strong>Funding:</strong> Wednesday 9:30 AM term sheet
-                countersigned, Wednesday 1:15 PM wire to the dealer&rsquo;s
-                business account, Wednesday 4:00 PM funds confirmed at
-                shop, parts pulled.
+                <strong>Funding:</strong> Term sheet countersigned, then
+                a wire to the dealer&rsquo;s business account once the lender
+                signed off; funds confirmed at the shop, parts pulled.
               </li>
               <li>
                 <strong>Loan terms:</strong> $10,400 principal (invoice
                 + 10% scope buffer), 24% APR, 18-month term, monthly
-                payment $657. Truck back on the road Thursday morning.
+                payment $657.
               </li>
             </ul>
           </div>
@@ -327,7 +326,7 @@ export default function EmergencyTruckRepairLoanPage() {
                 <Link href="/bad-credit-truck-repair-financing">
                   Bad credit truck repair financing
                 </Link>{" "}
-                — repair financing for sub-580 FICO operators.
+                — repair financing for operators with lower credit profiles.
               </li>
               <li>
                 <Link href="/owner-operator-repair-loans">

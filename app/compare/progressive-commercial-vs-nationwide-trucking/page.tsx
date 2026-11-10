@@ -156,7 +156,7 @@ export default function ProgressiveVsNationwidePage() {
               you&rsquo;d rather skip the read and have our producer
               partner quote both alongside the specialty panel,
               that&rsquo;s what{" "}
-              <Link href="/insurance">/insurance</Link> does in two minutes.
+              <Link href="/insurance">/insurance</Link> does.
             </p>
 
             <table className="ins-carrier-table">

@@ -432,7 +432,7 @@ export default function StateOfOwnerOperatorEconomics2026() {
               Insurance — primary liability, cargo, physical damage,
               non-trucking liability — runs $0.10–$0.18 per mile for
               owner-operators in 2026. The lower end is a seasoned
-              owner-op with clean MVR and a 700+ FICO operating in a
+              owner-op with clean MVR and strong credit operating in a
               low-severity state on standard freight; the upper end
               is a new-authority operator in a high-severity venue
               (Cook County, Miami-Dade) on higher-value freight. This

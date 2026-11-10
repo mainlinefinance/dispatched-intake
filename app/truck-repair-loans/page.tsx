@@ -26,24 +26,24 @@ import {
    examples are explicitly composite, never "real loans". */
 
 export const metadata: Metadata = {
-  title: "Truck repair loans — same-day funding | Dispatched",
+  title: "Truck Repair Loans for Owner-Operators | Dispatched",
   description:
-    "Truck down? Get matched with repair lenders for $5K–$150K in repair financing. Soft pull, FICO from 500. Apply now.",
+    "Truck down? Get introduced to repair lenders for $5K–$150K in repair financing. Soft pull to start; approval is not guaranteed.",
   alternates: { canonical: "/truck-repair-loans" },
   openGraph: {
     images: ["/opengraph-image"],
-    title: "Truck repair loans — same-day funding | Dispatched",
+    title: "Truck Repair Loans for Owner-Operators | Dispatched",
     description:
-      "Truck down? Get matched with repair lenders for $5K–$150K in repair financing. Soft pull, FICO from 500. Apply now.",
+      "Truck down? Get introduced to repair lenders for $5K–$150K in repair financing. Soft pull to start; approval is not guaranteed.",
     url: "/truck-repair-loans",
     type: "website",
   },
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "Truck repair loans — same-day funding | Dispatched",
+    title: "Truck Repair Loans for Owner-Operators | Dispatched",
     description:
-      "Truck down? Get matched with repair lenders for $5K–$150K in repair financing. Soft pull, FICO from 500. Apply now.",
+      "Truck down? Get introduced to repair lenders for $5K–$150K in repair financing. Soft pull to start; approval is not guaranteed.",
   },
 };
 
@@ -52,12 +52,12 @@ const PAGE_URL = "https://dispatched.finance/truck-repair-loans";
 // SECTION: FAQ (also drives FAQPage JSON-LD)
 const faqs = [
   {
-    q: "My truck broke down on the road — can I get financing for the repair today?",
-    a: "Yes. The Dispatched workflow is built around the case where the truck is already at the shop and the operator needs the wire today. Soft approval and lender match depend on underwriting review of submitting the application; the chosen lender wires funds to the operator's business account after lender sign-off; timing depends on documents and bank cutoffs. There is no shop-assignment step and no requirement that the truck be roadworthy or inspected at the time of application.",
+    q: "My truck broke down on the road — can I get financing for the repair?",
+    a: "You can apply while the truck is at the shop; the Dispatched workflow is built around that case. Soft approval and lender match depend on underwriting review of the application; the chosen lender wires funds to the operator's business account after lender sign-off; timing depends on the lender, your documents and bank cutoffs. There is no shop-assignment step and no requirement that the truck be roadworthy or inspected at the time of application.",
   },
   {
     q: "How fast can I get a truck repair loan?",
-    a: "Soft approval and lender match depend on underwriting review of submitting the application. Funds hit your account the after the chosen lender countersigns, provided the wire lands before that bank's cutoff. If you apply after cutoff or on a weekend, funds settle the next banking day. The Dispatched workflow is built around the case where the truck is already at the shop and the operator needs the wire today.",
+    a: "Timing depends on the lender and your documents, and Dispatched does not promise a funding time. Soft approval and lender match depend on underwriting review of the application. The wire goes out after the chosen lender countersigns and follows that bank's cutoff, weekend and holiday schedule. Having bank statements and the shop's estimate ready before you apply is the part you control.",
   },
   {
     q: "How much can I borrow for a truck repair?",
@@ -65,7 +65,7 @@ const faqs = [
   },
   {
     q: "Can I get a truck repair loan with bad credit?",
-    a: "Yes. Programs route from a 500 FICO. Most banks decline below 650 because they underwrite on credit alone; the Dispatched panel underwrites on revenue, DSCR, equipment, and deposit history first, with FICO second. Sub-580 borrowers should expect rates toward the high end of the 14% to 34% APR working-capital range and tighter loan amounts.",
+    a: "Options may be available. Many banks decline lower credit profiles because they underwrite on credit alone; the Dispatched panel weighs revenue, DSCR, equipment, and deposit history alongside credit. Credit requirements are set by each financing partner and approval is not guaranteed. Borrowers with lower credit profiles should expect rates toward the high end of the 14% to 34% APR working-capital range and tighter loan amounts.",
   },
   {
     q: "Do I need a quote from the shop before applying?",
@@ -114,7 +114,7 @@ export default function TruckRepairLoansPage() {
         payload={financialProduct({
           name: "Truck repair financing",
           description:
-            "Truck repair financing of $5K–$150K for owner-operators and small fleets. Same-banking-day funds, soft-pull match, FICO from 500.",
+            "Truck repair financing of $5K–$150K for owner-operators and small fleets. Soft-pull match; timing depends on the lender and your documents.",
           url: PAGE_URL,
           category: "Commercial trucking financing",
         })}
@@ -129,7 +129,7 @@ export default function TruckRepairLoansPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Truck repair loans</span>
             <h1 className="ins-hero-title">
-              Same-day truck repair loans for owner-operators and small fleets.
+              Truck repair loans for owner-operators and small fleets.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
@@ -154,7 +154,7 @@ export default function TruckRepairLoansPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -180,9 +180,9 @@ export default function TruckRepairLoansPage() {
               <Link href="/glossary/working-capital">working capital</Link> — the lender underwrites the operation&rsquo;s
               cashflow, not the equipment. That&rsquo;s the operational
               difference from equipment financing (where the truck itself
-              is collateral). It&rsquo;s also the reason these loans fund
-              quickly: there&rsquo;s no <Link href="/glossary/ucc-1">UCC-1</Link> filing, no title work, no
-              equipment appraisal in the way of a wire.
+              is collateral). It&rsquo;s also why the process has fewer
+              steps: there&rsquo;s no <Link href="/glossary/ucc-1">UCC-1</Link> filing, no title work, no
+              equipment appraisal.
             </p>
             <p className="ins-hero-sub">
               Keep the parts invoices and shop work orders with your
@@ -198,7 +198,7 @@ export default function TruckRepairLoansPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Who qualifies</span>
             <h2 className="ins-hero-title">
-              Eligibility floors on our panel.
+              What lenders on our panel look at.
             </h2>
             <ul className="product-list">
               <li>
@@ -209,11 +209,12 @@ export default function TruckRepairLoansPage() {
                 rebuild-from-decline situations.
               </li>
               <li>
-                <strong>500+ FICO.</strong> The marketing FAQ states the
-                panel accepts applications starting at a 500 FICO.
-                Borrowers under 580 should expect rates on the higher end
-                of the observed panel range and a tighter maximum loan
-                amount; 680+ unlocks the panel&rsquo;s full product set.
+                <strong>Credit profile.</strong> Credit requirements are
+                set by each financing partner, and approval is not
+                guaranteed. Borrowers with lower credit profiles should
+                expect rates on the higher end of the observed panel range
+                and a tighter maximum loan amount; stronger credit opens
+                more of the panel&rsquo;s product set.
               </li>
               <li>
                 <strong>6+ months of business history.</strong> Operators
@@ -365,8 +366,8 @@ export default function TruckRepairLoansPage() {
             <h2 className="ins-hero-title">From application to wire.</h2>
             <ol className="product-process">
               <li>
-                <strong>Application.</strong> Two minutes inside{" "}
-                <Link href="/apply">/apply</Link>. Revenue, time in
+                <strong>Application.</strong> Inside{" "}
+                <Link href="/apply">/apply</Link>: revenue, time in
                 business, DOT number, the truck, the repair amount, the
                 shop. Soft-pull only.
               </li>

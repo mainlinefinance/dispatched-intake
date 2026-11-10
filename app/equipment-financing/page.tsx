@@ -15,13 +15,13 @@ import {
 export const metadata: Metadata = {
   title: "Trucking equipment financing 9–18% APR | Dispatched",
   description:
-    "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. Get matched today.",
+    "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months. Soft-pull match. Approval is not guaranteed.",
   alternates: { canonical: "/equipment-financing" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "Trucking equipment financing 9–18% APR | Dispatched",
     description:
-      "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. Get matched today.",
+      "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months. Soft-pull match. Approval is not guaranteed.",
     url: "/equipment-financing",
     type: "website",
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Trucking equipment financing 9–18% APR | Dispatched",
     description:
-      "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. Get matched today.",
+      "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months. Soft-pull match. Approval is not guaranteed.",
   },
 };
 
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "What APR should I expect on a trucking equipment loan?",
-    a: "The observed panel range is 9% to 18% APR for equipment loans secured by the financed asset. APR depends on credit band, age and mileage of the equipment, term length, and down payment. New equipment with a higher down payment and a 600+ FICO quotes toward the low end; older equipment, no down payment, or sub-580 FICO quotes toward the high end.",
+    a: "The observed panel range is 9% to 18% APR for equipment loans secured by the financed asset. APR depends on credit band, age and mileage of the equipment, term length, and down payment. New equipment with a higher down payment and stronger credit quotes toward the low end; older equipment, no down payment, or a lower credit profile quotes toward the high end.",
   },
   {
     q: "How much down payment do I need on an equipment loan?",
@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "Can I get equipment financing with bad credit?",
-    a: "Yes. Programs route from a 500 FICO. Equipment loans are easier to underwrite at lower credit bands than working capital because the lender holds collateral on the asset. Sub-580 borrowers should expect a higher APR, a larger down payment requirement, and a shorter maximum term, but approval rates are higher than on unsecured products.",
+    a: "Options may be available; credit requirements are set by each financing partner and approval is not guaranteed. Equipment loans are easier to underwrite at lower credit bands than working capital because the lender holds collateral on the asset. Borrowers with lower credit profiles should expect a higher APR, a larger down payment requirement, and a shorter maximum term, but approval rates are higher than on unsecured products.",
   },
   {
     q: "How long are typical trucking equipment loan terms?",
@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "Can I finance used equipment from a private seller?",
-    a: "Yes, with conditions. The lender requires a clean title, a current inspection (DOT or independent), and a bill of sale that matches the appraised value. Private-party sales close more slowly than dealer sales because the lender needs the title pulled and the lien recorded before funds release. Plan for an extra 3 to 5 banking days versus a dealer transaction.",
+    a: "Yes, with conditions. The lender requires a clean title, a current inspection (DOT or independent), and a bill of sale that matches the appraised value. Private-party sales close more slowly than dealer sales because the lender needs the title pulled and the lien recorded before funds release.",
   },
   {
     q: "Will applying for equipment financing hurt my credit?",
@@ -86,7 +86,7 @@ export default function EquipmentFinancingPage() {
       <JsonLd payload={financialProduct({
         name: "Trucking equipment financing",
         description:
-          "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match.",
+          "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months. Soft-pull match.",
         url: PAGE_URL,
         category: "Equipment financing",
       })} />
@@ -185,10 +185,12 @@ export default function EquipmentFinancingPage() {
                 .
               </li>
               <li>
-                <strong>500+ FICO panel floor.</strong> Below 580, expect
+                <strong>Credit.</strong> Credit requirements are set by
+                each financing partner. With a lower credit profile, expect
                 rates on the higher end of the 9%–18% range, a tighter
                 maximum loan amount, and a higher down payment requirement.
-                680+ unlocks the panel&rsquo;s best equipment-loan pricing.
+                Stronger credit unlocks the panel&rsquo;s best
+                equipment-loan pricing.
               </li>
               <li>
                 <strong>Active <Link href="/glossary/dot-number">DOT number</Link>.</strong> The borrower&rsquo;s
@@ -238,7 +240,7 @@ export default function EquipmentFinancingPage() {
                 <span className="product-example-label">Operator</span>
                 <span className="product-example-value">
                   Small fleet, 4 tractors + 6 trailers, 5 years operating,
-                  primarily Midwest van freight, fleet owner FICO 685.
+                  primarily Midwest van freight, fleet owner with good credit.
                 </span>
               </div>
               <div className="product-example-meta">

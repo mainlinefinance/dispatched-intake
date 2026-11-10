@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "Can I get freight factoring with bad credit?",
-    a: "Yes. Operators with sub-580 FICO routinely qualify because factoring approval depends on broker credit, not yours. Bad credit factoring is mainstream in trucking — it's not a \"subprime\" product, it's how the industry works. Rates may be 0.5–1% higher than for operators with strong credit, but approval is the rule, not the exception.",
+    a: "Often, yes. Operators with lower credit profiles regularly use factoring because approval depends mainly on broker credit, not yours. Bad credit factoring is mainstream in trucking — it's not a \"subprime\" product, it's how the industry works. Rates may be 0.5–1% higher than for operators with strong credit, but approval is not guaranteed.",
   },
   {
     q: "What if I have a prior bankruptcy?",
@@ -65,7 +65,7 @@ const faqs = [
   },
   {
     q: "How fast can I get funded after signing up for no-credit-check factoring?",
-    a: "Setup typically takes 24–72 hours (account, broker verification, first invoice review). After that, same-day funding is standard once the invoice + POD upload. Some factors on the panel offer instant funding through a Visa commercial card 24/7, including weekends.",
+    a: "Setup comes first (account, broker verification, first invoice review). After that, advance timing depends on the factor and your invoices; each factor publishes its own cutoffs and payout options, and some pay out on weekends.",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function NoCreditCheckFactoringPage() {
         payload={financialProduct({
           name: "No credit check trucking factoring",
           description:
-            "Freight factoring for owner-operators with bad credit, prior bankruptcy, or new authority. Approval based on broker credit, not personal FICO. Rates 1.5%–5% per invoice; same-day funding after onboarding.",
+            "Freight factoring for owner-operators with bad credit, prior bankruptcy, or new authority. Approval based on broker credit, not personal FICO. Rates 1.5%–5% per invoice; timing depends on the factor and your invoices.",
           url: PAGE_URL,
           category: "Invoice factoring",
         })}
@@ -131,7 +131,7 @@ export default function NoCreditCheckFactoringPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft pull only · same-day funding after onboarding.
+              Soft pull only · Approval is not guaranteed.
             </p>
           </div>
         </section>
@@ -157,7 +157,7 @@ export default function NoCreditCheckFactoringPage() {
               </Link>{" "}
               is structurally different. You&rsquo;re selling a paid
               load&rsquo;s receivable to a third party. The factor pays
-              you 90%–97% of the invoice face value today — the{" "}
+              you 90%–97% of the invoice face value up front — the{" "}
               <Link href="/glossary/advance-rate">advance rate</Link> — and waits to
               collect the full amount from your broker on the broker&rsquo;s
               normal payment terms. There&rsquo;s no loan, no APR, no
@@ -185,8 +185,8 @@ export default function NoCreditCheckFactoringPage() {
               business owner, that there&rsquo;s no active fraud alert.
               A soft pull does not affect your FICO and doesn&rsquo;t
               show up on the credit report lenders see. Even when a
-              soft pull happens, sub-580 operators still routinely
-              qualify. The pull is a verification step, not an approval
+              soft pull happens, operators with lower credit profiles
+              can still qualify. The pull is a verification step, not an approval
               gate.
             </p>
           </div>
@@ -199,15 +199,15 @@ export default function NoCreditCheckFactoringPage() {
               Who gets approved for no-credit-check trucking factoring.
             </h2>
             <h3 className="ins-hero-sub">
-              <strong>Bad credit operators (sub-580 FICO).</strong>
+              <strong>Bad credit operators.</strong>
             </h3>
             <p className="ins-hero-sub">
-              Sub-580 is the band where most unsecured working-capital
+              Challenged credit is where most unsecured working-capital
               products start declining or pricing toward 30%+ APR.
-              Factoring doesn&rsquo;t care. The Dispatched panel
-              routinely funds operators in the 480–580 range at the
-              same fee tier as 700+ FICO peers, because the broker
-              behind the invoice is the credit risk. If you&rsquo;ve
+              Factoring weighs it far less: factors on the Dispatched
+              panel underwrite the broker behind the invoice, because
+              that is where the credit risk sits. Approval is not
+              guaranteed. If you&rsquo;ve
               been rejected for{" "}
               <Link href="/bad-credit-truck-financing">
                 bad credit truck financing
@@ -293,11 +293,11 @@ export default function NoCreditCheckFactoringPage() {
               two-question fit check first.
             </p>
             <h3 className="ins-hero-sub">
-              <strong>First load funded — typical timeline 24–72 hours from setup.</strong>
+              <strong>First load funded — after setup clears.</strong>
             </h3>
             <p className="ins-hero-sub">
-              From the moment the factoring agreement is signed, the
-              first invoice typically funds within 24–72 hours. The
+              After the factoring agreement is signed, the first
+              invoice funds once setup clears. The
               gating items are broker verification (the factor
               confirms the broker has a good credit file and accepts
               factor relationships), filing of a <Link href="/glossary/ucc-1">UCC-1</Link> against
@@ -307,16 +307,15 @@ export default function NoCreditCheckFactoringPage() {
               invoice advance hits your account by <Link href="/glossary/ach">ACH</Link>.
             </p>
             <h3 className="ins-hero-sub">
-              <strong>Funding speed thereafter — same-day on most loads.</strong>
+              <strong>Funding timing thereafter — set by the factor.</strong>
             </h3>
             <p className="ins-hero-sub">
-              Once the relationship is live, ongoing invoices fund
-              same-day if you submit before the factor&rsquo;s daily
-              cutoff (usually 11am–1pm Eastern). Late-cutoff and
-              weekend invoices fund the next banking day. Several
-              factors on the panel offer 24/7 instant funding through
-              a Visa commercial card — invoice approves at midnight
-              Saturday, you have the cash on the card immediately.
+              Once the relationship is live, advance timing depends on
+              the factor and your invoices. Each factor has a daily
+              submission cutoff, and late or weekend submissions roll
+              to a later cycle. Some factors also offer card-based
+              payouts outside banking hours; ask for the schedule in
+              writing before you sign.
             </p>
           </div>
         </section>
@@ -392,7 +391,7 @@ export default function NoCreditCheckFactoringPage() {
               your books. For operators who can qualify for clean
               working-capital pricing, that&rsquo;s the cheaper path.
               For operators who can&rsquo;t, factoring is the only
-              realistic source of next-day cash.
+              realistic source of near-term cash.
             </p>
             <h3 className="ins-hero-sub">
               <strong>Some factors require minimum monthly volume.</strong>
@@ -445,7 +444,7 @@ export default function NoCreditCheckFactoringPage() {
               See your factoring options without a credit pull.
             </h2>
             <p className="ins-hero-sub">
-              Soft-pull match. Same-day funding after onboarding. The
+              Soft-pull match. Approval is not guaranteed. The
               factor checks your brokers, not your FICO.
             </p>
             <div className="product-hero-ctas">
