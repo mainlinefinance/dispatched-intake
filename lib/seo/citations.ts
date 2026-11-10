@@ -202,7 +202,7 @@ const SOURCES = {
     url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-383",
   },
   nacha: {
-    name: "Same Day ACH",
+    name: "ACH payments and settlement options",
     publisher: "Nacha",
     url: "https://www.nacha.org/content/same-day-ach",
   },

@@ -331,7 +331,7 @@ export default function FuelCardsPage() {
               takes the AtoB card, which covers 99%+ of US gas stations
               and truck stops. Useful for non-fuel spend too (tires,
               tolls, maintenance) with category-level spending controls.
-              Check the issuer's current sign-up requirements for each plan.
+              Check the issuer&apos;s current sign-up requirements for each plan.
             </p>
 
             <h3 className="product-h3">RTS Pro</h3>

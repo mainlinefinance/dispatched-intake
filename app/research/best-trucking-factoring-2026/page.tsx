@@ -371,7 +371,7 @@ export default function BestTruckingFactoring2026Page() {
               Truckers with lower credit profiles, recent bankruptcies, or MC numbers
               less than 90 days old struggle with most working-capital
               lenders. Factoring underwrites mainly on the broker&apos;s credit, with a review of the carrier — which is why factoring is often a working-capital tool open to brand-new authorities. Porter Freight Funding and TBS
-              specialize here. Both consider operators with credit profiles that other factors often decline. Porter says its underwriting rests mainly on the broker's credit. TBS onboards brand-new MC numbers and is supportive of post-bankruptcy operators. Each factor sets its own requirements, and approval is not guaranteed.
+              specialize here. Both consider operators with credit profiles that other factors often decline. Porter says its underwriting rests mainly on the broker&apos;s credit. TBS onboards brand-new MC numbers and is supportive of post-bankruptcy operators. Each factor sets its own requirements, and approval is not guaranteed.
             </p>
 
             <h3>
@@ -544,7 +544,7 @@ export default function BestTruckingFactoring2026Page() {
 
             <h3>Best for bad credit — Porter Freight Funding</h3>
             <p>
-              <strong>What they do well.</strong> Porter says its underwriting rests mainly on the broker's credit. That makes them a fit for operators with lower credit profiles, recent bankruptcies, or thin credit files; approval is not guaranteed. Porter is also
+              <strong>What they do well.</strong> Porter says its underwriting rests mainly on the broker&apos;s credit. That makes them a fit for operators with lower credit profiles, recent bankruptcies, or thin credit files; approval is not guaranteed. Porter is also
               tolerant of low-volume operators where Apex and eCapital
               would push for higher invoice volume to make the
               relationship economical. There is no minimum-volume
