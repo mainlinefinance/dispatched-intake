@@ -275,7 +275,7 @@ export function buildMainlineWidgetSrc(input: {
   attribution: AdsAttribution;
   /* Answers given before the application (home hero, /qualify), already
      reduced to known slugs by parseQuickStartAnswers. */
-  prefill?: QuickStartAnswers;
+  prefill?: Partial<QuickStartAnswers>;
 }): string | null {
   const origin = widgetOriginForHost(input.widgetHost);
   if (!origin) return null;

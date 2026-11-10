@@ -132,7 +132,7 @@ describe("ads query persistence", () => {
     persistAdsAttribution(LANDING, "https://www.google.com/aclk", storage);
     // The hero form sends the operator to /apply with the answers in the URL.
     const stored = persistAdsAttribution(
-      "https://dispatched.finance/apply?monthlyRevenue=20k-50k&timeInBusiness=1y-3y",
+      "https://dispatched.finance/apply?fundingAmount=25k-100k&revenue=50k-100k",
       "https://dispatched.finance/",
       storage,
     );
@@ -143,21 +143,23 @@ describe("ads query persistence", () => {
     const prefilled = buildMainlineWidgetSrc({
       widgetHost: "mainline.tryoption.ai",
       attribution: stored,
-      prefill: { monthlyRevenue: "20k-50k", timeInBusiness: "1y-3y" },
+      prefill: { fundingAmount: "25k-100k", revenue: "50k-100k" },
     });
     const url = new URL(prefilled!);
-    expect(url.searchParams.get("prefill_monthly_revenue")).toBe("20k-50k");
-    expect(url.searchParams.get("prefill_time_in_business")).toBe("1y-3y");
+    expect(url.searchParams.get("prefill_loan_amount_range")).toBe(
+      "$25K–$100K",
+    );
+    expect(url.searchParams.get("prefill_revenue")).toBe("$50K–$100K");
 
     // Everything the frame carried before is byte-identical; the answers
     // are appended and never folded into the landing URL the lead stores.
-    url.searchParams.delete("prefill_monthly_revenue");
-    url.searchParams.delete("prefill_time_in_business");
+    url.searchParams.delete("prefill_loan_amount_range");
+    url.searchParams.delete("prefill_revenue");
     expect(url.toString()).toBe(plain);
     const page = new URL(url.searchParams.get("page")!);
     expect(page.pathname).toBe("/semi-truck-financing");
-    expect(page.search).not.toContain("monthlyRevenue");
-    expect(page.search).not.toContain("timeInBusiness");
+    expect(page.search).not.toContain("fundingAmount");
+    expect(page.search).not.toContain("revenue=");
   });
 
   it("adds no prefill keys when nothing was answered", () => {
