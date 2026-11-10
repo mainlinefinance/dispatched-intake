@@ -239,7 +239,7 @@ export default function StateOfTruckingCapital2026() {
               consolidation target. Second, working-capital APRs on the
               Dispatched panel currently band 14–34% with the lower end
               concentrated in bank-adjacent term lenders and the upper
-              end in fast-funding online lenders; merchant cash advance
+              end in online lenders; merchant cash advance
               (MCA) effective APRs continue to run 40–150%, and MCA
               stacking remains the single largest driver of small-fleet
               insolvency we observe.
@@ -298,7 +298,7 @@ export default function StateOfTruckingCapital2026() {
               Working-capital APRs band <strong>14–34%</strong> on the
               panel. The lower end is concentrated in bank-adjacent term
               loans and SBA-supported product structures; the upper end
-              is concentrated in online fast-funding term lenders
+              is concentrated in online term lenders
               writing 6–24 month paper to owner-ops and small fleets
               with thinner files. The shape of this band did soften in
               2025 as competition picked up among online lenders, but

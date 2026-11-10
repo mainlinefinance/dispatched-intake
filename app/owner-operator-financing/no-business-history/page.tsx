@@ -226,7 +226,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
               </li>
               <li>
                 <strong>
-                  Invoice factoring &mdash; available immediately.
+                  Invoice factoring &mdash; open to new authorities.
                 </strong>{" "}
                 Available as soon as the operator has an active MC#
                 and one signed load. The factor underwrites the broker

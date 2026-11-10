@@ -21,7 +21,7 @@ const products: Product[] = [
   {
     label: "Repair",
     title: "Truck repair loans",
-    copy: "Get back on the road fast.",
+    copy: "Get back on the road.",
     href: "/truck-repair-loans",
     icon: <IconWrench />,
   },
@@ -53,7 +53,7 @@ export default function ProductCards() {
     <section className="product-cards" aria-labelledby="product-cards-title">
       <div className="container">
         <header className="product-cards-header">
-          <span className="product-cards-eyebrow">Trucker approved</span>
+          <span className="product-cards-eyebrow">Built for truckers</span>
           <h2 className="product-cards-title" id="product-cards-title">
             Funding for the moments that keep your wheels turning.
           </h2>

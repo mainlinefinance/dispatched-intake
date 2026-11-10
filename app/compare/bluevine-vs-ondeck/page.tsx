@@ -128,7 +128,7 @@ export default function BluevineVsOnDeckPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No spam from either lender.
+              Soft-pull match. · No spam from either lender.
             </p>
           </div>
         </section>

@@ -381,7 +381,7 @@ export default function BestTruckingFactoring2026Page() {
 
             <h3>Bad-credit and new-authority acceptance</h3>
             <p>
-              Truckers with sub-580 FICOs, recent bankruptcies, or MC numbers
+              Truckers with lower credit profiles, recent bankruptcies, or MC numbers
               less than 90 days old struggle with most working-capital
               lenders. Factoring is one of the few products that underwrites
               the broker&apos;s credit, not the trucker&apos;s — which is

@@ -396,7 +396,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
             <h3>What we ask up front (FICO range, authority age, revenue, truck age)</h3>
             <p className="ins-hero-sub">
               The application at <Link href="/apply?useCase=equipment&downPayment=0">/apply</Link>{" "}
-              takes about two minutes. Four data points drive the routing:
+              is short. Four data points drive the routing:
               FICO range (you self-report a band, not an exact number), age
               of MC authority in months, average monthly bank deposits over
               the last 12 months, and the truck&rsquo;s year and mileage. We

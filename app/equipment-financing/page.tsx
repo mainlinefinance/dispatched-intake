@@ -122,7 +122,7 @@ export default function EquipmentFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -280,7 +280,7 @@ export default function EquipmentFinancingPage() {
             <h2 className="ins-hero-title">From application to title.</h2>
             <ol className="product-process">
               <li>
-                <strong>Application.</strong> Two minutes inside{" "}
+                <strong>Application.</strong> Start inside{" "}
                 <Link href="/apply">/apply</Link>. Revenue, time in
                 business, the equipment, the seller. Soft-pull only.
               </li>

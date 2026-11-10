@@ -130,7 +130,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No double sales pitch.
+              Soft-pull match. · No double sales pitch.
             </p>
           </div>
         </section>

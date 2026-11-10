@@ -130,7 +130,7 @@ export default function FactoringVsMcaPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Takes about 2 minutes.
+              Soft-pull match.
             </p>
           </div>
         </section>
@@ -168,7 +168,7 @@ export default function FactoringVsMcaPage() {
               face value. The same need solved by an MCA at a 1.35 factor
               rate costs $17,500 of cash repayment over 6 to 9 months.
               That is not a typo. The two products are routinely framed
-              as equivalent by sales reps because both fund quickly with
+              as equivalent by sales reps because both rely on
               minimal credit underwriting — but the cost gap is roughly
               an order of magnitude.
             </p>
@@ -360,7 +360,7 @@ export default function FactoringVsMcaPage() {
               one, against a $50,000 actual cashflow need. The fee at
               3% across that $250,000 is $7,500, paid out of the reserve
               over the next 45 days as the brokers pay. The operator
-              gets more cash, faster, at less than half the dollar cost
+              gets more cash at less than half the dollar cost
               of the MCA, with no daily ACH debit and no second-position
               filing against receivables. That is the structural reason
               factoring should be tried first whenever the operator has

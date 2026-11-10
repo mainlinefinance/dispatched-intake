@@ -252,7 +252,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     bestFor: "tech-forward SMB owner-operators",
     contractMin: "revolving line",
     blurb:
-      "Tech-forward online lender offering revolving lines of credit up to $250K with quick online decisioning for clean files. Not trucking-native — works for owner-operators with strong personal credit and clean bank statements, but the underwriting does not flex for thin-file or new-authority profiles.",
+      "Tech-forward online lender offering revolving lines of credit up to $250K with online decisioning for clean files. Not trucking-native — works for owner-operators with strong personal credit and clean bank statements, but the underwriting does not flex for thin-file or new-authority profiles.",
   },
   {
     slug: "lendio",

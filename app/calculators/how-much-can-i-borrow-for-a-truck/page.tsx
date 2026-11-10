@@ -366,7 +366,7 @@ export default function HowMuchCanIBorrowForATruckPage() {
             <h2>Get matched with the right lender</h2>
             <p>
               The calculator gives you a directional answer. The application
-              gives you a real one. Two minutes, soft-pull only, with a panel
+              gives you a real one. Soft-pull only, with a panel
               that funds your truck make, age, and credit profile.
             </p>
             <p>

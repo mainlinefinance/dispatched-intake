@@ -83,7 +83,7 @@ const PRODUCTS: Record<FinancingProductSlug, FinancingProduct> = {
     slug: "invoice-factoring",
     name: "Invoice factoring",
     oneLine:
-      "Sell broker or carrier invoices for an immediate cash advance instead of waiting 30–60 days. Not a loan: no APR, no monthly payment.",
+      "Sell broker or carrier invoices for a cash advance instead of waiting 30–60 days. Not a loan: no APR, no monthly payment.",
     url: "/factoring",
     category: "Cashflow",
     rangeLabel: "Recourse and non-recourse",

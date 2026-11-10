@@ -129,7 +129,7 @@ export default function SemiTruckFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -308,7 +308,7 @@ export default function SemiTruckFinancingPage() {
             <span className="ins-eyebrow">How the money moves</span>
             <h2 className="ins-hero-title">From application to title.</h2>
             <ol className="product-process">
-              <li><strong>Application.</strong> Two minutes inside <Link href="/apply">/apply</Link>. Revenue, time in business, the truck, the seller. Soft-pull only.</li>
+              <li><strong>Application.</strong> Start inside <Link href="/apply">/apply</Link>. Revenue, time in business, the truck, the seller. Soft-pull only.</li>
               <li><strong>Soft-pull match.</strong> Redacted profile to the panel subset that funds the truck&rsquo;s make / age / mileage and your credit band.</li>
               <li><strong>Offers.</strong> APR, term, total cost, down payment requirement on each term sheet, side by side, before any hard pull.</li>
               <li><strong>One hard pull.</strong> Only after you pick a specific lender and decide to move forward.</li>

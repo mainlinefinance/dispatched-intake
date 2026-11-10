@@ -567,7 +567,7 @@ export default function StateOfBrokerRelations2026() {
               exists, at root, to bridge the gap between when the
               carrier delivers the load and when the broker pays the
               invoice. The factor advances 90–97% of invoice face
-              value at delivery (typically within 24 hours), holds
+              value after delivery, holds
               the reserve until the broker pays, and remits the
               reserve net of the factoring fee once payment lands.
               The factor effectively buys the broker&apos;s

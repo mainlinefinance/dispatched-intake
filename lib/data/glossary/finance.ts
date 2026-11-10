@@ -21,7 +21,7 @@ export const FINANCE_TERMS: ReadonlyArray<GlossaryTerm> = [
       {
         h2: "Why it matters for trucking finance",
         body:
-          "For an owner-operator running tight cash flow, the difference between 90% and 97% advance can be the difference between making payroll and not — on $80K of outstanding receivables, that's $5,600 of immediate working capital. Advance rate is one of the three numbers that actually matter when comparing factoring offers, alongside the rate and the contract length. Some working-capital lenders also size facilities against outstanding factoring receivables, which means advance rate also affects total borrowing capacity beyond the factor itself.",
+          "For an owner-operator running tight cash flow, the difference between 90% and 97% advance can be the difference between making payroll and not — on $80K of outstanding receivables, that's $5,600 of additional working capital. Advance rate is one of the three numbers that actually matter when comparing factoring offers, alongside the rate and the contract length. Some working-capital lenders also size facilities against outstanding factoring receivables, which means advance rate also affects total borrowing capacity beyond the factor itself.",
       },
     ],
     relatedTerms: ["recourse-factoring", "non-recourse-factoring"],
@@ -47,7 +47,7 @@ export const FINANCE_TERMS: ReadonlyArray<GlossaryTerm> = [
       {
         h2: "Why it matters for trucking finance",
         body:
-          "Factoring funding speed often hinges on ACH timing. Same-Day ACH costs slightly more but lets a Friday-afternoon invoice fund Friday night versus Monday morning — often the difference between making weekend fuel and parking the truck. Some factors charge per-transaction ACH fees (small, but adds up over hundreds of advances). Wire transfers settle faster but are 10–50× more expensive. Knowing the ACH cutoff windows (typically 4–5 PM ET for Same-Day) helps you time invoice submissions around them.",
+          "Factoring funding speed often hinges on ACH timing. Same-Day ACH costs slightly more but can move a Friday-afternoon payment ahead of the weekend — often the difference between making weekend fuel and parking the truck. Some factors charge per-transaction ACH fees (small, but adds up over hundreds of advances). Wire transfers settle faster but are 10–50× more expensive. Knowing the ACH cutoff windows (typically 4–5 PM ET for Same-Day) helps you time invoice submissions around them.",
       },
     ],
     relatedTerms: ["advance-rate", "lockbox", "recourse-factoring"],

@@ -114,8 +114,7 @@ export default function InvoiceFactoringPage() {
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
-              Sell broker or carrier invoices for an immediate cash
-              advance instead of waiting 30–60 days for payment.
+              Sell broker or carrier invoices for a cash advance instead of waiting 30–60 days for payment.
               Different product class than a loan: no APR, no monthly
               payment, no debt on the books — but the fee comes out of
               the invoice. <Link href="/glossary/recourse-factoring">Recourse</Link>{" "}
@@ -131,7 +130,7 @@ export default function InvoiceFactoringPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Takes about 2 minutes.
+              Soft-pull match.
             </p>
           </div>
         </section>
@@ -145,7 +144,7 @@ export default function InvoiceFactoringPage() {
             <p className="ins-hero-sub">
               Invoice factoring is the sale of a specific outstanding
               invoice to a third party (the factor) at a discount, in
-              exchange for an immediate cash advance. The factor collects
+              exchange for a cash advance. The factor collects
               the full invoice amount from your broker or carrier when
               the invoice matures; you keep the difference between the
               <Link href="/glossary/advance-rate">{" "}advance rate</Link> and the face value, minus the factoring fee.
@@ -307,7 +306,7 @@ export default function InvoiceFactoringPage() {
             <span className="ins-eyebrow">How the relationship moves</span>
             <h2 className="ins-hero-title">Onboarding to first advance.</h2>
             <ol className="product-process">
-              <li><strong>Application.</strong> Two minutes inside <Link href="/apply">/apply</Link>. Brokers, payment terms, average invoice size, time in business. Soft-pull where applicable.</li>
+              <li><strong>Application.</strong> Start inside <Link href="/apply">/apply</Link>. Brokers, payment terms, average invoice size, time in business. Soft-pull where applicable.</li>
               <li><strong>Factor match.</strong> A redacted profile goes to the trucking factors most likely to fund your broker mix and ticket size.</li>
               <li><strong>Onboarding.</strong> Notice of Assignment goes to your brokers; account setup; factoring agreement signed. The factor files a <Link href="/glossary/ucc-1">UCC-1</Link> against your receivables and may route broker payments through a <Link href="/glossary/lockbox">lockbox</Link>.</li>
               <li><strong>First invoice.</strong> Submit a verified invoice; the factor advances 90–98% of face value, typically sent via <Link href="/glossary/ach">ACH</Link>.</li>

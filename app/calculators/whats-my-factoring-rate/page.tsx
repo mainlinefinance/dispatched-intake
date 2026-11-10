@@ -371,7 +371,7 @@ export default function WhatsMyFactoringRatePage() {
             <h2>Get matched with the right factor</h2>
             <p>
               The calculator shows you the math. The application shows you
-              the panel. Two minutes, no credit pull, no obligation — and a
+              the panel. No credit pull, no obligation — and a
               factor that prices your specific broker mix, volume, and
               history.
             </p>

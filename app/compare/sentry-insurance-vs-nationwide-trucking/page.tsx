@@ -130,7 +130,7 @@ export default function SentryVsNationwidePage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Two minutes. · No spam from every carrier at once. · Quotes
+              No spam from every carrier at once. · Quotes
               placed by a licensed producer partner.
             </p>
           </div>

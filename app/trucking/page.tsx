@@ -83,7 +83,7 @@ const faqs = [
   },
   {
     q: "What's the difference between a working-capital loan and invoice factoring?",
-    a: "Working capital is a loan you pay back from operations over a fixed term; factoring is selling specific outstanding invoices for an immediate cash advance. Working capital costs more in APR (the panel range is 14%–34% APR) but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring settles in days rather than weeks but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems — both live on this panel.",
+    a: "Working capital is a loan you pay back from operations over a fixed term; factoring is selling specific outstanding invoices for a cash advance. Working capital costs more in APR (the panel range is 14%–34% APR) but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring settles in days rather than weeks but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems — both live on this panel.",
   },
   {
     q: "Does Dispatched fund the loans, or who does?",
@@ -148,7 +148,7 @@ export default function TruckingHubPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -214,7 +214,7 @@ export default function TruckingHubPage() {
                 <Link href="/factoring">
                   invoice factoring
                 </Link>
-                . Sell specific invoices for immediate cash. Recourse and
+                . Sell specific invoices for cash. Recourse and
                 non-recourse routes available.
               </li>
               <li>

@@ -152,7 +152,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Takes about 2 minutes.
+              Soft-pull match.
             </p>
           </div>
         </section>
@@ -547,7 +547,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               with the factor&rsquo;s receivables claim. Operators with an
               active MCA usually need the MCA paid off before a factor will
               fund — or the working capital loan needs to be sized to cover
-              both the immediate cash need and the MCA payoff. The
+              both the current cash need and the MCA payoff. The
               Dispatched panel handles this routing automatically when the
               application discloses an active MCA.
             </p>
@@ -618,7 +618,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               <div className="product-example-meta">
                 <span className="product-example-label">Outcome</span>
                 <span className="product-example-value mono">
-                  Engine work funded immediately by the working capital
+                  Engine work funded by the working capital
                   loan. Ongoing receivables timing smoothed by the
                   factoring relationship. Monthly cashflow becomes
                   predictable instead of swinging with Net-45 payment

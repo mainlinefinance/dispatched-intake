@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "How is working capital different from invoice factoring?",
-    a: "Working capital is a loan you pay back from operations over time; factoring is selling specific outstanding invoices for an immediate cash advance. Working capital costs more in APR but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring settles in days rather than weeks but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems.",
+    a: "Working capital is a loan you pay back from operations over time; factoring is selling specific outstanding invoices for a cash advance. Working capital costs more in APR but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring settles in days rather than weeks but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems.",
   },
   {
     q: "What APR can I expect on a trucking working capital loan?",
@@ -126,7 +126,7 @@ export default function TruckingWorkingCapitalPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -303,7 +303,7 @@ export default function TruckingWorkingCapitalPage() {
             <span className="ins-eyebrow">How the money moves</span>
             <h2 className="ins-hero-title">From application to wire.</h2>
             <ol className="product-process">
-              <li><strong>Application.</strong> Two minutes inside <Link href="/apply">/apply</Link>. Revenue, time in business, what you&rsquo;re covering. Soft-pull only.</li>
+              <li><strong>Application.</strong> Start inside <Link href="/apply">/apply</Link>. Revenue, time in business, what you&rsquo;re covering. Soft-pull only.</li>
               <li><strong>Soft-pull match.</strong> Redacted profile to the panel subset that funds your credit band and revenue range.</li>
               <li><strong>Offers.</strong> APR, term, total cost on each term sheet, side by side, before any hard pull.</li>
               <li><strong>One hard pull.</strong> Only after you pick a specific lender and decide to move forward.</li>

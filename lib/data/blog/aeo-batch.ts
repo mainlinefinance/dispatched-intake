@@ -24,7 +24,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
     readTimeMinutes: 10,
     sections: [
       {
-        h2: "TL;DR — how fast can you actually fund a truck repair?",
+        h2: "TL;DR — what decides when a truck repair gets funded?",
         body:
           "No one can promise a day, but emergency repair funding is available through lenders that underwrite on bank deposits rather than on equipment collateral or FICO — a soft-pull application matched on the Dispatched panel returns offers after underwriting review, and the chosen lender wires the approved amount to the operator's business account after lender sign-off; timing depends on documents and that bank's cutoff.\n\nThe approved repair-loan band on the Dispatched panel is $5,000 to $150,000. APRs sit in the 14% to 34% working-capital range for unsecured repair advances, or 9% to 18% if the repair is large enough and the tractor has enough remaining value to roll the work into an equipment-secured product. Operators with lower credit profiles are considered — the panel underwrites on monthly business deposits, DSCR, and equipment first, with FICO second — though approval is not guaranteed.\n\nThe critical detail most operators miss: the wire goes to your business account, not to the shop. You pay the shop yourself. There is no shop-assignment requirement, no invoice-pledge step, no third-party verification call that adds days. Speed comes from removing those steps, not from skipping underwriting.",
       },

@@ -122,7 +122,7 @@ export default function NewAuthorityFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -176,7 +176,7 @@ export default function NewAuthorityFinancingPage() {
             </h2>
             <p className="ins-hero-sub">
               Factoring sells your outstanding invoices to a factor for
-              an immediate cash advance — usually 90–98% of face value,
+              a cash advance — usually 90–98% of face value,
               minus a per-invoice fee. The factor underwrites the
               broker&rsquo;s credit (the entity paying the invoice),
               which means a new-authority trucker working with strong
@@ -288,7 +288,7 @@ export default function NewAuthorityFinancingPage() {
             <span className="ins-eyebrow">How the money moves</span>
             <h2 className="ins-hero-title">From application to first advance.</h2>
             <ol className="product-process">
-              <li><strong>Application.</strong> Two minutes inside <Link href="/apply">/apply</Link>. MC authority date, your <Link href="/glossary/dot-number">DOT number</Link>, the truck, brokers (if you have them). Soft-pull only.</li>
+              <li><strong>Application.</strong> Start inside <Link href="/apply">/apply</Link>. MC authority date, your <Link href="/glossary/dot-number">DOT number</Link>, the truck, brokers (if you have them). Soft-pull only.</li>
               <li><strong>Soft-pull match.</strong> Redacted profile to the panel subset that funds new-authority operators (factors and the equipment-finance subset).</li>
               <li><strong>Offers.</strong> Factor agreements + equipment loan term sheets, side by side, before any hard pull or factoring agreement signature.</li>
               <li><strong>One commitment.</strong> Pick a factor or a lender. Factoring agreements aren&rsquo;t loans, but they are commitments — read the recourse clause.</li>

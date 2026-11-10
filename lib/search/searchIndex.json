@@ -1460,7 +1460,7 @@
   {
     "url": "/lenders/bluevine",
     "title": "Bluevine",
-    "description": "Tech-forward online lender offering revolving lines of credit up to $250K with quick online decisioning for clean files. Not trucking-native — works for owner-operators with strong personal credit and clean bank statements, but the underwriting does not flex for thin-file or new-authority profiles.",
+    "description": "Tech-forward online lender offering revolving lines of credit up to $250K with online decisioning for clean files. Not trucking-native — works for owner-operators with strong personal credit and clean bank statements, but the underwriting does not flex for thin-file or new-authority profiles.",
     "type": "lender",
     "category": "working-capital · abl"
   },
