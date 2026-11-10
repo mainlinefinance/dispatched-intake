@@ -288,14 +288,33 @@ export interface SelectionResult {
   excluded: Record<ExclusionReason, number>;
 }
 
-const UPPER_WORDS = /\b(Llc|Inc|Llp|Lp|Usa|Ii|Iii|Iv|Dba)\b/g;
+const UPPER_WORDS = new Set(["LLC", "LLP", "LP", "USA", "II", "III", "IV", "DBA"]);
+const SHORT_WORDS = new Set([
+  "OF", "MY", "TO", "IN", "ON", "BY", "AT", "OR", "IS", "IT", "GO", "UP", "SO", "NO", "DO", "WE", "ME", "BE",
+]);
 
+/**
+ * FMCSA names are all caps. Title-case real words, but keep initials upper
+ * case: tokens with a digit (A2Z), no vowel (JCN, TNT), or two letters that
+ * are not a common word (UK, AJ). "Jcn Trucking" in a subject line looks
+ * machine-made.
+ */
 export function titleCase(s: string | undefined): string {
   return (s ?? "")
     .trim()
-    .toLowerCase()
-    .replace(/\b([a-z])/g, (c) => c.toUpperCase())
-    .replace(UPPER_WORDS, (w) => w.toUpperCase());
+    .replace(/[A-Za-z0-9]+/g, (word) => {
+      const upper = word.toUpperCase();
+      if (
+        UPPER_WORDS.has(upper) ||
+        /\d/.test(word) ||
+        !/[AEIOUY]/.test(upper) ||
+        (upper.length <= 2 && !SHORT_WORDS.has(upper))
+      ) {
+        return upper;
+      }
+      return upper[0] + upper.slice(1).toLowerCase();
+    })
+    .replace(/([A-Za-z])'S\b/g, "$1's");
 }
 
 /** Cargo flags are columns like crgo_genfreight = "X". */

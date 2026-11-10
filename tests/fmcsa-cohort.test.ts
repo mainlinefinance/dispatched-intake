@@ -142,9 +142,15 @@ describe("record shaping", () => {
     expect(status.get("MC2")).toBe("Active");
   });
 
-  it("title-cases names and keeps entity suffixes upper case", () => {
+  it("title-cases names but keeps initials, digits and LLC upper case", () => {
     expect(titleCase("S & P JONES LLC")).toBe("S & P Jones LLC");
-    expect(titleCase("acme freight inc")).toBe("Acme Freight INC");
+    expect(titleCase("acme freight inc")).toBe("Acme Freight Inc");
+    expect(titleCase("JCN TRUCKING LLC")).toBe("JCN Trucking LLC");
+    expect(titleCase("A2Z LOGISTICS")).toBe("A2Z Logistics");
+    expect(titleCase("O'BRIEN HAULING")).toBe("O'Brien Hauling");
+    expect(titleCase("JGARCIA'S GARAGE")).toBe("Jgarcia's Garage");
+    expect(titleCase("UK EXPRESS")).toBe("UK Express");
+    expect(titleCase("KINGS OF THE ROAD")).toBe("Kings Of The Road");
   });
 
   it("escapes SoQL string literals", () => {

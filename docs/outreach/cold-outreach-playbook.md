@@ -297,6 +297,10 @@ transactional mail. It never sends cold email.
 
 ### Sequencer settings
 
+We use Instantly. The import file builder, the copy in Instantly's syntax
+and the exact campaign settings are in
+[instantly-campaign.md](./instantly-campaign.md).
+
 - Connect all 8 inboxes and **turn warm-up on immediately. Leave it on for as
   long as you send cold email.**
 - **Turn open and click tracking off.** Pixels and rewritten links hurt
