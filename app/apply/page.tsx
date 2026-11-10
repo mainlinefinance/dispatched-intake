@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import ApplyAnswers from "./_components/ApplyAnswers";
 import MainlineApplyWidget from "./_components/MainlineApplyWidget";
 import ApplyFaq from "./_components/ApplyFaq";
 import { JsonLd, faqPage } from "@/components/seo/JsonLd";
@@ -100,6 +102,10 @@ export default function ApplyPage() {
           <span>Bank-grade encryption</span>
         </li>
       </ul>
+
+      <Suspense fallback={null}>
+        <ApplyAnswers />
+      </Suspense>
 
       <MainlineApplyWidget />
 

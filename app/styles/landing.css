@@ -257,6 +257,39 @@
   margin: 0 0 var(--space-6);
   max-width: 520px;
 }
+/* Two-question start. The fields are ordinary light inputs sitting straight
+   on the scrim: they read as "fill me in" without a card that would cover
+   the photo. Side by side from 720px up, stacked on phones. */
+.landing .hero--photo .hero-start-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+.landing .hero--photo .hero-start-title {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-family: var(--font-body); font-weight: 700;
+  font-size: var(--fs-eyebrow); line-height: var(--lh-eyebrow);
+  letter-spacing: var(--tr-eyebrow); text-transform: uppercase;
+  color: var(--color-trail-green-soft);
+}
+.landing .hero--photo .hero-start-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 0;
+}
+.landing .hero--photo .hero-start-field label {
+  font-family: var(--font-body); font-weight: 500;
+  font-size: var(--fs-small);
+  color: var(--color-ink-inverse-90);
+}
+@media (min-width: 720px) {
+  .landing .hero--photo .hero-start-fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 .landing .hero--photo .hero-ctas {
   display: flex; flex-wrap: wrap; gap: var(--space-3);
   margin-bottom: var(--space-3);

@@ -26,6 +26,8 @@ const HOW_IT_WORKS = source("components/landing/HowItWorks.tsx");
 const DECLINE = source("components/landing/DeclineSection.tsx");
 const PRODUCT_CARDS = source("components/landing/ProductCards.tsx");
 const APPLY = source("app/apply/page.tsx");
+const HERO = source("components/landing/Hero.tsx");
+const QUALIFIER = source("components/landing/QualificationCalc.tsx");
 
 describe("home copy agrees with /apply", () => {
   it("quotes the same lender shortlist size", () => {
@@ -73,5 +75,28 @@ describe("apply CTA placement on the home", () => {
 
   it("the product cards do not send funding visitors to insurance", () => {
     expect(PRODUCT_CARDS).not.toContain('href: "/insurance"');
+  });
+});
+
+describe("quick-start answers reach /apply", () => {
+  it("the hero is a GET form to /apply named with the shared params", () => {
+    expect(HERO).toContain("action={APPLY_HREF}");
+    expect(HERO).toContain("name={MONTHLY_REVENUE_PARAM}");
+    expect(HERO).toContain("name={TIME_IN_BUSINESS_PARAM}");
+    // Optional on purpose: the CTA must work with nothing picked.
+    expect(HERO).not.toMatch(/\brequired\b/);
+  });
+
+  it("/qualify hands its two answers on instead of dropping them", () => {
+    expect(QUALIFIER).toContain("applyHrefWithAnswers(APPLY_HREF");
+  });
+
+  it("/apply reads the answers back above the widget", () => {
+    const recap = APPLY.indexOf("<ApplyAnswers />");
+    const widget = APPLY.indexOf("<MainlineApplyWidget />");
+    expect(recap).toBeGreaterThan(-1);
+    expect(widget).toBeGreaterThan(recap);
+    // useSearchParams on a prerendered route needs the boundary.
+    expect(APPLY).toMatch(/<Suspense fallback=\{null\}>\s*<ApplyAnswers \/>/);
   });
 });

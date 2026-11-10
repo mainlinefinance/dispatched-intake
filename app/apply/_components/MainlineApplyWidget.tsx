@@ -9,6 +9,7 @@ import {
 } from "@/lib/ads/attribution";
 import { reportBrowserLeadConversion } from "@/lib/ads/google-ads";
 import { leadIdFromAcceptedMessage } from "@/lib/ads/widget-events";
+import { parseQuickStartAnswers } from "@/lib/quickStart";
 
 // dispatched.finance is operated by Dispatched, Inc. Mainline hosts the
 // funding quiz for Big Think Capital at /w/<slug>. The frame posts to that
@@ -46,11 +47,22 @@ export default function MainlineApplyWidget() {
   // parameters. The iframe renders without a src on the server. We mount the
   // iframe directly (not widget.js) because that loader keys off
   // document.currentScript, which is null under Next.js.
+  //
+  // Answers a visitor gave before landing here (home hero, /qualify) ride
+  // along on the frame URL. Whether the quiz starts from them is up to the
+  // widget: see the contract note in lib/quickStart.ts.
   useEffect(() => {
     const iframe = iframeRef.current;
     if (!iframe) return;
     const attribution = persistAdsAttributionFromBrowser();
-    const src = buildMainlineWidgetSrc({ widgetHost: WIDGET_HOST, attribution });
+    const prefill = parseQuickStartAnswers(
+      new URLSearchParams(window.location.search),
+    );
+    const src = buildMainlineWidgetSrc({
+      widgetHost: WIDGET_HOST,
+      attribution,
+      prefill,
+    });
     if (src) iframe.src = src;
   }, []);
 

@@ -8,8 +8,8 @@ export const CTA_LABEL = "See my funding options";
 export const APPLY_HREF = "/apply";
 
 /* Elements the mobile sticky bar watches on the home page. It stands in for
-   the hero CTA once that scrolls away, and steps aside again while the
-   closing band's own CTA is on screen. */
+   the hero's apply form once that scrolls away, and steps aside again while
+   the closing band's own CTA is on screen. */
 export const HERO_CTA_ID = "hero-cta";
 export const CLOSING_CTA_ID = "closing-cta";
 

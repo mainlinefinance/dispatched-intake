@@ -127,6 +127,56 @@ describe("ads query persistence", () => {
     expect(writes).toBe(1);
   });
 
+  it("carries quick-start answers on the frame without touching attribution", () => {
+    const storage = memoryStorage();
+    persistAdsAttribution(LANDING, "https://www.google.com/aclk", storage);
+    // The hero form sends the operator to /apply with the answers in the URL.
+    const stored = persistAdsAttribution(
+      "https://dispatched.finance/apply?monthlyRevenue=20k-50k&timeInBusiness=1y-3y",
+      "https://dispatched.finance/",
+      storage,
+    );
+    const plain = buildMainlineWidgetSrc({
+      widgetHost: "mainline.tryoption.ai",
+      attribution: stored,
+    });
+    const prefilled = buildMainlineWidgetSrc({
+      widgetHost: "mainline.tryoption.ai",
+      attribution: stored,
+      prefill: { monthlyRevenue: "20k-50k", timeInBusiness: "1y-3y" },
+    });
+    const url = new URL(prefilled!);
+    expect(url.searchParams.get("prefill_monthly_revenue")).toBe("20k-50k");
+    expect(url.searchParams.get("prefill_time_in_business")).toBe("1y-3y");
+
+    // Everything the frame carried before is byte-identical; the answers
+    // are appended and never folded into the landing URL the lead stores.
+    url.searchParams.delete("prefill_monthly_revenue");
+    url.searchParams.delete("prefill_time_in_business");
+    expect(url.toString()).toBe(plain);
+    const page = new URL(url.searchParams.get("page")!);
+    expect(page.pathname).toBe("/semi-truck-financing");
+    expect(page.search).not.toContain("monthlyRevenue");
+    expect(page.search).not.toContain("timeInBusiness");
+  });
+
+  it("adds no prefill keys when nothing was answered", () => {
+    const storage = memoryStorage();
+    const stored = persistAdsAttribution(LANDING, null, storage);
+    const plain = buildMainlineWidgetSrc({
+      widgetHost: "mainline.tryoption.ai",
+      attribution: stored,
+    });
+    expect(
+      buildMainlineWidgetSrc({
+        widgetHost: "mainline.tryoption.ai",
+        attribution: stored,
+        prefill: { monthlyRevenue: null, timeInBusiness: null },
+      }),
+    ).toBe(plain);
+    expect(plain).not.toContain("prefill_");
+  });
+
   it("ignores a same-site referrer and a widget host that is not a hostname", () => {
     const storage = memoryStorage();
     const stored = persistAdsAttribution(

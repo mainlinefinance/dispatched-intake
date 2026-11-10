@@ -16,7 +16,9 @@ import { IconArrowRight, IconPhone } from "./icons";
    the sticky nav already carries the CTA).
 
    The rule is "one apply CTA on screen, never two": the bar is up whenever
-   neither the hero CTA nor the closing band's CTA is visible. It is always
+   neither the hero's apply form nor the closing band's CTA is visible. (The
+   whole form counts, not just its button, so the bar never covers a field
+   someone is filling in on a short screen.) It is always
    in the DOM so it can slide in; while down it is inert, which keeps it out
    of the tab order and the accessibility tree. */
 export default function HomeStickyCta() {

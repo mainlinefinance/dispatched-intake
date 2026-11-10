@@ -3,11 +3,18 @@
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import HdyhauSurvey from "@/components/hdyhau/HdyhauSurvey";
+import {
+  MONTHLY_REVENUE_OPTIONS,
+  TIME_IN_BUSINESS_OPTIONS,
+  applyHrefWithAnswers,
+  type MonthlyRevenue,
+  type TimeInBusiness,
+} from "@/lib/quickStart";
 import { IconArrowRight, IconLock } from "./icons";
-import { CTA_LABEL } from "./cta";
+import { APPLY_HREF, CTA_LABEL } from "./cta";
 
-type Revenue = "" | "under-20" | "20-50" | "50-100" | "100-plus";
-type Years = "" | "under 6 months" | "6–12 months" | "1–3 years" | "3+ years";
+type Revenue = "" | MonthlyRevenue;
+type Years = "" | TimeInBusiness;
 
 type Fit = {
   apr: string;
@@ -24,15 +31,12 @@ type Fit = {
    Equipment financing requires 1+ year in business; everyone else fits
    working capital + repair financing. */
 function computeFit(rev: Revenue, yrs: Years): Fit {
-  const revScore = { "under-20": 1, "20-50": 2, "50-100": 3, "100-plus": 4 }[
-    rev as Exclude<Revenue, "">
-  ] ?? 0;
-  const yrsScore = {
-    "under 6 months": 1,
-    "6–12 months": 2,
-    "1–3 years": 3,
-    "3+ years": 4,
-  }[yrs as Exclude<Years, "">] ?? 0;
+  // Both option lists run low to high, so position is the score: 1–4, and 0
+  // for an unanswered question.
+  const revScore =
+    MONTHLY_REVENUE_OPTIONS.findIndex((o) => o.value === rev) + 1;
+  const yrsScore =
+    TIME_IN_BUSINESS_OPTIONS.findIndex((o) => o.value === yrs) + 1;
   const tier = revScore + yrsScore;
   const apr =
     tier >= 7 ? "9% – 18% APR"
@@ -100,7 +104,13 @@ export default function QualificationCalc() {
           .
         </p>
 
-        <Link href="/apply" className="btn btn--primary qual-cta">
+        <Link
+          href={applyHrefWithAnswers(APPLY_HREF, {
+            monthlyRevenue: revenue || null,
+            timeInBusiness: yrs || null,
+          })}
+          className="btn btn--primary qual-cta"
+        >
           {CTA_LABEL}
           <IconArrowRight />
         </Link>
@@ -146,10 +156,11 @@ export default function QualificationCalc() {
           <option value="" disabled>
             Pick a range
           </option>
-          <option value="under-20">Under $20,000</option>
-          <option value="20-50">$20,000 – $50,000</option>
-          <option value="50-100">$50,000 – $100,000</option>
-          <option value="100-plus">$100,000+</option>
+          {MONTHLY_REVENUE_OPTIONS.map((o) => (
+            <option key={o.value} value={o.value}>
+              {o.label}
+            </option>
+          ))}
         </select>
       </div>
 
@@ -168,10 +179,11 @@ export default function QualificationCalc() {
           <option value="" disabled>
             How long have you been operating?
           </option>
-          <option value="under 6 months">Under 6 months</option>
-          <option value="6–12 months">6 – 12 months</option>
-          <option value="1–3 years">1 – 3 years</option>
-          <option value="3+ years">3+ years</option>
+          {TIME_IN_BUSINESS_OPTIONS.map((o) => (
+            <option key={o.value} value={o.value}>
+              {o.label}
+            </option>
+          ))}
         </select>
       </div>
 
