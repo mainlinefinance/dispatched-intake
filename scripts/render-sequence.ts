@@ -25,6 +25,10 @@
  *   npm run outreach:render -- --in outreach-data/instantly-m6-icp1-2026-11-10.csv
  *   npm run outreach:render -- --in <file> --count 3 --sender Angelo \
  *     --address "Dispatched, Inc., PO Box 123, Dallas, TX 75201"
+ *
+ * With --send-plan it also writes outreach-data/send-plan.json: every row's
+ * full sequence with the carrier's address, for scripts/agentmail-outreach.ts.
+ * It refuses while --address or --sender is missing.
  */
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -273,10 +277,57 @@ export function previewMarkdown(emails: RenderedEmail[], generatedOn: string, ad
 
 interface CliOptions {
   in: string;
-  count: number;
+  /** null = every row (send plans); previews default to 5. */
+  count: number | null;
   sender: string;
   address: string | null;
   outDir: string;
+  /** Also write send-plan.json, with carrier addresses, for the AgentMail runner. */
+  sendPlan: boolean;
+}
+
+export const SENDER_PLACEHOLDER = "[SENDER]";
+
+export interface SendPlanEntry {
+  email: string;
+  dot: string;
+  company: string;
+  tier: string;
+  steps: { step: number; subject: string; text: string }[];
+}
+
+/**
+ * Every carrier's full sequence, with addresses, for real sends. Refuses to
+ * build while the footer address or sender name is still a placeholder.
+ */
+export function buildSendPlan(
+  rows: Record<string, string>[],
+  headers: string[],
+  steps: SequenceStep[],
+  sender: string,
+  address: string | null,
+): SendPlanEntry[] {
+  if (!address || address.includes(ADDRESS_PLACEHOLDER)) {
+    throw new Error("a send plan needs --address (the postal address CAN-SPAM requires in every email)");
+  }
+  if (!sender || sender === SENDER_PLACEHOLDER) throw new Error("a send plan needs --sender (the first name that signs the emails)");
+  return rows.map((row) => {
+    const vars = varsForRow(row, headers, sender);
+    if (!vars.email) throw new Error(`row without an email: ${JSON.stringify(row).slice(0, 120)}`);
+    const emails = renderSequence(steps, vars, vars.companyName, vars.email, address);
+    for (const e of emails) {
+      if (e.text.includes(ADDRESS_PLACEHOLDER) || e.text.includes(SENDER_PLACEHOLDER)) {
+        throw new Error(`placeholder left in step ${e.step} for ${vars.email}`);
+      }
+    }
+    return {
+      email: vars.email.toLowerCase(),
+      dot: vars.DOT_Number ?? "",
+      company: vars.companyName ?? "",
+      tier: vars.Tier ?? "",
+      steps: emails.map((e) => ({ step: e.step, subject: e.subject, text: e.text })),
+    };
+  });
 }
 
 export function parseArgs(argv: string[]): CliOptions {
@@ -286,21 +337,29 @@ export function parseArgs(argv: string[]): CliOptions {
     if (!arg.startsWith("--")) continue;
     const eq = arg.indexOf("=");
     if (eq !== -1) flags.set(arg.slice(2, eq), arg.slice(eq + 1));
-    else {
-      flags.set(arg.slice(2), argv[i + 1] ?? "");
+    else if (argv[i + 1] === undefined || argv[i + 1].startsWith("--")) {
+      flags.set(arg.slice(2), ""); // switch without a value, e.g. --send-plan
+    } else {
+      flags.set(arg.slice(2), argv[i + 1]);
       i++;
     }
   }
   const input = flags.get("in");
   if (!input) throw new Error("--in <instantly import file> is required (output of npm run outreach:instantly)");
-  const count = Number(flags.get("count") || 5);
-  if (!Number.isInteger(count) || count < 1) throw new Error("--count must be a positive whole number");
+  const sendPlan = flags.has("send-plan");
+  const rawCount = flags.get("count");
+  let count: number | null = sendPlan ? null : 5;
+  if (rawCount) {
+    count = Number(rawCount);
+    if (!Number.isInteger(count) || count < 1) throw new Error("--count must be a positive whole number");
+  }
   return {
     in: input,
     count,
-    sender: flags.get("sender") || "[SENDER]",
+    sender: flags.get("sender") || SENDER_PLACEHOLDER,
     address: flags.get("address") || null,
     outDir: flags.get("out-dir") || "outreach-data",
+    sendPlan,
   };
 }
 
@@ -309,11 +368,22 @@ async function main() {
   const steps = parseSequenceDoc(readFileSync(resolve(SEQUENCE_DOC), "utf8"));
   const text = readFileSync(resolve(opts.in), "utf8");
   const headers = parseCsv(text)[0] ?? [];
-  const rows = csvRecords(text).slice(0, opts.count);
+  const allRows = csvRecords(text);
+  const rows = opts.count === null ? allRows : allRows.slice(0, opts.count);
   if (rows.length === 0) throw new Error(`no rows in ${opts.in}`);
+  const log = (msg: string) => process.stderr.write(`[render] ${msg}\n`);
 
+  if (opts.sendPlan) {
+    const plan = buildSendPlan(rows, headers, steps, opts.sender, opts.address);
+    const planPath = resolve(opts.outDir, "send-plan.json");
+    mkdirSync(dirname(planPath), { recursive: true });
+    writeFileSync(planPath, JSON.stringify(plan, null, 2) + "\n");
+    log(`wrote ${planPath}: ${plan.length} carriers × ${steps.length} steps, with carrier addresses (gitignored)`);
+  }
+
+  const previewRows = rows.slice(0, 5);
   const emails: RenderedEmail[] = [];
-  rows.forEach((row, index) => {
+  previewRows.forEach((row, index) => {
     const vars = varsForRow(row, headers, opts.sender);
     const label = `${vars.companyName} (DOT ${vars.DOT_Number ?? "?"}, ${vars.Tier ?? "?"}, ${vars.Trucks ?? "?"} trucks)`;
     const seed = vars.email || String(index);
@@ -331,8 +401,7 @@ async function main() {
   writeFileSync(mdPath, previewMarkdown(emails, today, opts.address !== null));
   writeFileSync(jsonPath, JSON.stringify(emails, null, 2) + "\n");
 
-  const log = (msg: string) => process.stderr.write(`[render] ${msg}\n`);
-  log(`${steps.length} steps × ${rows.length} carriers (+ ICP-2 check) = ${emails.length} emails`);
+  log(`preview: ${steps.length} steps × ${previewRows.length} carriers (+ ICP-2 check) = ${emails.length} emails`);
   log(`wrote ${mdPath}`);
   log(`wrote ${jsonPath} (no carrier addresses: for test sends to your own inboxes)`);
   if (!opts.address) log(`footer still has ${ADDRESS_PLACEHOLDER}: pass --address before any real send`);

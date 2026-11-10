@@ -18,7 +18,8 @@
     "indexnow:dry-run": "INDEXNOW_DRY_RUN=true node scripts/submit-indexnow.mjs",
     "outreach:cohort": "node --no-warnings --experimental-strip-types scripts/fmcsa-cohort.ts",
     "outreach:instantly": "node --no-warnings --experimental-strip-types scripts/instantly-import.ts",
-    "outreach:render": "node --no-warnings --experimental-strip-types scripts/render-sequence.ts"
+    "outreach:render": "node --no-warnings --experimental-strip-types scripts/render-sequence.ts",
+    "outreach:agentmail": "node --no-warnings --experimental-strip-types scripts/agentmail-outreach.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

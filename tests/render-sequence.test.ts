@@ -5,6 +5,7 @@ import {
   ADDRESS_PLACEHOLDER,
   SEQUENCE_DOC,
   applyConditions,
+  buildSendPlan,
   parseArgs,
   parseSequenceDoc,
   previewMarkdown,
@@ -132,6 +133,32 @@ describe("varsForRow", () => {
 describe("parseArgs", () => {
   it("requires --in and defaults sender and address to visible placeholders", () => {
     expect(() => parseArgs([])).toThrow(/--in/);
-    expect(parseArgs(["--in", "f.csv"])).toEqual({ in: "f.csv", count: 5, sender: "[SENDER]", address: null, outDir: "outreach-data" });
+    expect(parseArgs(["--in", "f.csv"])).toEqual({ in: "f.csv", count: 5, sender: "[SENDER]", address: null, outDir: "outreach-data", sendPlan: false });
+  });
+
+  it("treats --send-plan as a switch and then covers every row", () => {
+    const o = parseArgs(["--in", "f.csv", "--send-plan", "--sender", "Angelo"]);
+    expect(o).toMatchObject({ sendPlan: true, sender: "Angelo", count: null });
+  });
+});
+
+describe("buildSendPlan", () => {
+  const headers = ["Email", "Company Name", "Six_Month_Date", "Tier", "Trucks", "DOT_Number"];
+  const row = { email: "Owner@TMJ.com", "company name": "TMJ Transport", six_month_date: "November 3", tier: "ICP-1", trucks: "4", dot_number: "4512345" };
+
+  it("renders every step with the carrier address and the real footer", () => {
+    const [entry] = buildSendPlan([row], headers, steps, "Angelo", "Dispatched, Inc., PO Box 1, Dallas, TX");
+    expect(entry).toMatchObject({ email: "owner@tmj.com", dot: "4512345", company: "TMJ Transport", tier: "ICP-1" });
+    expect(entry.steps.map((s) => s.step)).toEqual([1, 2, 3]);
+    for (const s of entry.steps) {
+      expect(s.text).toContain("PO Box 1");
+      expect(s.text).not.toMatch(/\[POSTAL ADDRESS\]|\[SENDER\]|\{\{|\{%/);
+    }
+    expect(entry.steps[0].text).toContain("With 4 trucks running");
+  });
+
+  it("refuses to build without a postal address or a sender name", () => {
+    expect(() => buildSendPlan([row], headers, steps, "Angelo", null)).toThrow(/--address/);
+    expect(() => buildSendPlan([row], headers, steps, "[SENDER]", "PO Box 1")).toThrow(/--sender/);
   });
 });
