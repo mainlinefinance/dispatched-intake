@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "How do their payment options differ?",
-    a: "Apex's blynk® is a payment rail that runs around the clock, including weekends and holidays. TBS pays on a standard business-day schedule. If you need payments outside banking hours, that is the difference to weigh; it matters most for cash-tight first-year operators.",
+    a: "Apex's blynk® is a payment rail that runs around the clock, including weekends and holidays. TBS pays on a standard business-day schedule. Timing on any invoice depends on the factor and your paperwork.",
   },
   {
     q: "I have a brand-new MC#. Which should I use?",

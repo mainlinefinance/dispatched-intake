@@ -60,7 +60,7 @@ const faqs = [
   },
   {
     q: "I'm rebuilding credit. Should I skip Apex?",
-    a: "Not necessarily. Apex says it does not decline on credit alone, though lower credit profiles and prior bankruptcies come with structural adjustments. Porter is worth comparing if you want underwriting centered on your brokers' credit, or if Apex prices your effective rate toward the top of its range because of the credit profile. The right move is to compare offers: if Apex's price is close, the premium service and fuel program usually win; if Apex prices wide of Porter, Porter is the closer fit.",
+    a: "Not necessarily. Apex says it considers lower credit profiles and prior bankruptcies, with structural adjustments; approval is not guaranteed. Porter is worth comparing if you want underwriting centered on your brokers' credit, or if Apex prices your effective rate toward the top of its range because of the credit profile. The right move is to compare offers: if Apex's price is close, the premium service and fuel program usually win; if Apex prices wide of Porter, Porter is the closer fit.",
   },
   {
     q: "Which is better for brand-new authority?",
@@ -527,28 +527,22 @@ export default function ApexVsPorterPage() {
               Apex blynk&reg; &mdash; a payment rail that runs around the clock.
             </h3>
             <p className="ins-hero-sub">
-              Apex&rsquo;s blynk&reg; funding system is genuinely
-              differentiated. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. For a driver who delivers on a Friday evening, that is the feature that matters. The infrastructure was built in-house
-              and has been running at scale for several years. For
-              high-utilization operators &mdash; team drivers, dedicated
-              lanes, weekend-heavy operations &mdash; this is one of the
-              single most valuable factoring features available.
+              Apex runs blynk&reg;, its own payment rail. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was built in-house
+              and has been running at scale for several years. Timing on any invoice depends on the factor and your paperwork.
             </p>
 
             <h3>
               Porter &mdash; standard business-hours funding.
             </h3>
             <p className="ins-hero-sub">
-              Porter Freight Funding pays verified invoices on a standard business-hours schedule. Submissions outside business hours are processed when the business day resumes. For steady weekday operations that covers the need. For weekends and after hours, Apex&rsquo;s around-the-clock rail is the structural difference.
+              Porter Freight Funding pays verified invoices on a standard business-hours schedule. Submissions outside business hours are processed when the business day resumes. Timing on any invoice depends on the factor and your paperwork.
             </p>
 
             <h3>
-              For operators who need payments outside banking hours &mdash; Apex.
+              Difference: Apex offers a payment option outside banking hours; Porter does not.
             </h3>
             <p className="ins-hero-sub">
-              If your operation routinely needs cash on Friday nights,
-              Saturday mornings, or holiday weekends, Apex&rsquo;s
-              blynk&reg; is the structural fit. Porter&rsquo;s business-hours schedule covers most needs but doesn&rsquo;t solve the weekend case. For predictable Monday&ndash;Friday operations that never need after-hours cash, either factor works.
+              Apex&rsquo;s blynk&reg; operates around the clock, including weekends and holidays. Porter pays on a business-hours schedule. Which matters depends on when your loads deliver; timing on any invoice depends on the factor and your paperwork.
             </p>
           </div>
         </section>
@@ -698,9 +692,9 @@ export default function ApexVsPorterPage() {
               </li>
               <li>
                 <strong>
-                  Operators who need payments outside banking hours.
+                  Operators who want a payment option outside banking hours.
                 </strong>{" "}
-                blynk&reg; runs around the clock, including weekends. If you deliver on a Friday night, this is the feature to weigh. Porter&rsquo;s business-hours schedule doesn&rsquo;t solve the weekend case.
+                blynk&reg; operates around the clock, including weekends; Porter pays on a business-hours schedule.
               </li>
               <li>
                 <strong>
@@ -739,11 +733,7 @@ export default function ApexVsPorterPage() {
                 <strong>
                   Operators with prior bankruptcy on file.
                 </strong>{" "}
-                Porter considers operators with a recent or historical BK without the structural pricing adjustment that
-                Apex applies. For operators rebuilding after a BK who
-                want a clean factoring relationship without the credit
-                profile dominating the conversation, Porter is the
-                cleaner pick.
+                Porter says it considers operators with a recent or historical BK and underwrites mainly on broker credit. Confirm its current policy with Porter; approval is not guaranteed.
               </li>
               <li>
                 <strong>
@@ -819,8 +809,7 @@ export default function ApexVsPorterPage() {
               onboarding before authority activation. For day-one
               operators who want a turnkey package (factoring +
               filings + fuel), TBS is often the cleaner fit than
-              either Apex&rsquo;s startup program or Porter&rsquo;s
-              minimal-credit onboarding.
+              either Apex&rsquo;s startup program or Porter&rsquo;s onboarding.
             </p>
 
             <p className="ins-hero-sub">

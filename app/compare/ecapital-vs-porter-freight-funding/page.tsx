@@ -795,7 +795,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
                 <strong>
                   Operators with prior bankruptcy on file.
                 </strong>{" "}
-                Recent or historical BK is not an automatic decline at Porter. Broker mix and operating profile carry the decision. eCapital can work with a BK at the margin; for Porter it is a regular part of the book.
+                Porter says a recent or historical BK is not an automatic decline, and eCapital says it can work with one in some cases. Confirm current policy with each; approval is not guaranteed.
               </li>
               <li>
                 <strong>
@@ -833,7 +833,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               Apex is the dominant choice for owner-operators and small
               fleets running 1&ndash;10 trucks: 30 years in the business,
               4.7+ average review score, the deepest fuel discount on
-              the market at roughly 51&cent;/gal, and the blynk&reg; payment rail, which runs around the clock. Neither eCapital nor Porter competes with Apex on the owner-operator profile or on after-hours payment options.
+              the market at roughly 51&cent;/gal, and the blynk&reg; payment rail, which runs around the clock. Apex is a third option built around owner-operators.
             </p>
 
             <h3>

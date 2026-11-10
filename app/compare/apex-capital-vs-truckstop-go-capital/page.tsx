@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: "Why pick Apex over Truckstop Go Capital?",
-    a: "Three reasons: customer service depth, fuel program, and payment options. Apex carries 700+ five-star reviews and won the BBB Torch Award (2018). The blynk® payment rail runs around the clock. The 51¢/gallon fuel discount network is the deepest in the industry. Those matter most to owner-operators who escalate issues occasionally, who put 1,500+ gallons monthly, or who want a payment option that operates outside banking hours.",
+    a: "Three differences: customer service depth, fuel program, and payment options. Apex carries 700+ five-star reviews and won the BBB Torch Award (2018). The blynk® payment rail runs around the clock. The 51¢/gallon fuel discount network is the deepest in the industry. Which of those matters depends on how you operate.",
   },
   {
     q: "Does Truckstop Go Capital require me to use the Truckstop load board?",
