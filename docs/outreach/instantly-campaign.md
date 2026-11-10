@@ -36,7 +36,8 @@ that contain a vowel read as words ("Atr Transport"); fix those by hand.
 | Location | Location (predefined) | — |
 | Six_Month_Date | Custom variable | `{{Six_Month_Date}}`, e.g. "November 3" |
 | Tier | Custom variable | Liquid condition |
-| Trucks, Email_Type, DOT_Number, MC_Docket, Authority_Date, Cargo, Officer | Custom variable | Not in copy. Used for reply handling and the readout. |
+| Trucks | Custom variable | `{{Trucks}}` in the fleet line |
+| Email_Type, DOT_Number, MC_Docket, Authority_Date, Cargo, Officer | Custom variable | Not in copy. Used for reply handling and the readout. |
 
 Upload settings:
 - **Check for duplicates: on.** Leads already in another campaign are
@@ -58,7 +59,7 @@ Subject:
 
 Body:
 ```
-{{RANDOM | The MC authority for {{companyName}} | The operating authority for {{companyName}}}} turned 6 months old on {{Six_Month_Date}}. {{RANDOM | That's usually | That's typically | For most lenders, that's}} the minimum time in business for working capital and equipment financing{% if Tier == "ICP-1" %}, and {{RANDOM | the point where | when}} adding a truck through equipment financing starts to make sense{% endif %}.
+{{RANDOM | The MC authority for {{companyName}} | The operating authority for {{companyName}}}} turned 6 months old on {{Six_Month_Date}}. {{RANDOM | That's usually | That's typically | For most lenders, that's}} the minimum time in business for working capital and equipment financing.{% if Tier == "ICP-1" %} With {{Trucks}} trucks running, it's also {{RANDOM | the point where | when}} financing the next one starts to make sense.{% endif %}
 
 {{RANDOM | Want | Should I send | Would it help to see}} a one-page readout of what carriers at your stage typically qualify for, including what {{RANDOM | actually lands | lands}} in your account and what comes out each week? {{RANDOM | Yes or no works. | A yes or no is fine. | Just reply yes or no.}}
 
@@ -101,7 +102,7 @@ You're getting this because {{companyName}} is listed in FMCSA's public carrier 
 
 ### Preview before launch (Preview → Load data for lead)
 
-1. Load a lead with Tier `ICP-1` and check that the fleet line appears.
+1. Load a lead with Tier `ICP-1` and check that the fleet line appears ("With 3 trucks running, …").
 2. Load an `ICP-2` lead (a test row is fine) and check that the line
    disappears cleanly, ending in "…equipment financing."
 3. Refresh a few times to see the spintax variants.

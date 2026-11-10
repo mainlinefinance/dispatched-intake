@@ -207,8 +207,8 @@ The rules:
 > factoring usually fits better than a loan. Want our factoring comparison
 > instead?
 
-**ICP-1 variant line for email 1:** "…and the point where adding a truck
-through equipment financing starts to make sense."
+**ICP-1 variant line for email 1:** "With {trucks} trucks running, it's also
+the point where financing the next one starts to make sense."
 
 ### Track B: repair shop
 

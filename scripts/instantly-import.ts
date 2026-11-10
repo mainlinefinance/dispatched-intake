@@ -35,6 +35,9 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
+import { csvRecords, parseCsv } from "./csv.mjs";
+
+export { csvRecords, parseCsv };
 
 // ---------------------------------------------------------------------------
 // Options
@@ -109,58 +112,7 @@ export function parseArgs(argv: string[], today: string): ImportOptions {
 // CSV
 // ---------------------------------------------------------------------------
 
-/** RFC 4180 parser: quoted fields, escaped quotes, commas and newlines inside quotes, CRLF. */
-export function parseCsv(text: string): string[][] {
-  const rows: string[][] = [];
-  let row: string[] = [];
-  let field = "";
-  let quoted = false;
-  const src = text.replace(/^﻿/, "");
-
-  for (let i = 0; i < src.length; i++) {
-    const ch = src[i];
-    if (quoted) {
-      if (ch === '"') {
-        if (src[i + 1] === '"') {
-          field += '"';
-          i++;
-        } else {
-          quoted = false;
-        }
-      } else {
-        field += ch;
-      }
-    } else if (ch === '"') {
-      quoted = true;
-    } else if (ch === ",") {
-      row.push(field);
-      field = "";
-    } else if (ch === "\n" || ch === "\r") {
-      if (ch === "\r" && src[i + 1] === "\n") i++;
-      row.push(field);
-      rows.push(row);
-      row = [];
-      field = "";
-    } else {
-      field += ch;
-    }
-  }
-  if (field !== "" || row.length > 0) {
-    row.push(field);
-    rows.push(row);
-  }
-  return rows.filter((r) => r.some((cell) => cell.trim() !== ""));
-}
-
 export type CsvRecord = Record<string, string>;
-
-/** Rows keyed by lower-cased header. */
-export function csvRecords(text: string): CsvRecord[] {
-  const [header, ...rows] = parseCsv(text);
-  if (!header) return [];
-  const keys = header.map((h) => h.trim().toLowerCase());
-  return rows.map((r) => Object.fromEntries(keys.map((k, i) => [k, (r[i] ?? "").trim()])));
-}
 
 function cell(v: unknown): string {
   const s = String(v ?? "");
