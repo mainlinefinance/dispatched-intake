@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import HdyhauSurvey from "@/components/hdyhau/HdyhauSurvey";
 import { IconArrowRight, IconLock } from "./icons";
-import { CTA_LABEL } from "./Nav";
+import { CTA_LABEL } from "./cta";
 
 type Revenue = "" | "under-20" | "20-50" | "50-100" | "100-plus";
 type Years = "" | "under 6 months" | "6–12 months" | "1–3 years" | "3+ years";

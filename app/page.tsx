@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import ClosingCta from "@/components/landing/ClosingCta";
 import DeclineSection from "@/components/landing/DeclineSection";
 import FAQ from "@/components/landing/FAQ";
 import { homepageFaqs } from "@/components/landing/FAQ.data";
 import Footer from "@/components/landing/Footer";
 import Hero from "@/components/landing/Hero";
-import HomeStatStrip from "@/components/landing/HomeStatStrip";
+import HomeStickyCta from "@/components/landing/HomeStickyCta";
 import HowItWorks from "@/components/landing/HowItWorks";
 import InsuranceCrossSell from "@/components/landing/InsuranceCrossSell";
 import Nav from "@/components/landing/Nav";
@@ -29,9 +30,16 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
+/* Section order is the funnel, top to bottom:
+     offer (Hero) → how it works → why a bank said no → products and example
+     requests → objections (FAQ) → closing apply CTA.
+   Every stretch of it ends on a way to apply: the hero and the closing band
+   carry the CTA, HowItWorks and DeclineSection end on one, and on phones
+   HomeStickyCta covers the gaps in between. Insurance is a different funnel,
+   so it sits below the close instead of interrupting the pitch. */
 export default function LandingPage() {
   return (
-    <div className="landing">
+    <div className="landing landing--sticky-cta">
       <JsonLd
         payload={faqPage(
           homepageFaqs.map((f) => ({ q: f.q, a: f.aText })),
@@ -41,15 +49,16 @@ export default function LandingPage() {
       <main id="main-content">
         <Hero />
         <TruckerVocab />
-        <ProductCards />
-        <HomeStatStrip />
         <HowItWorks />
         <DeclineSection />
+        <ProductCards />
         <ProofSection />
-        <InsuranceCrossSell />
         <FAQ />
+        <ClosingCta />
+        <InsuranceCrossSell />
       </main>
       <Footer />
+      <HomeStickyCta />
     </div>
   );
 }

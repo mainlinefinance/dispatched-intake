@@ -204,6 +204,10 @@
       var(--color-steel-900-50) 55%,
       var(--color-steel-900-00) 100%);
 }
+/* The container puts the hero column on the same grid as the nav and every
+   section below it. The column is capped so the type stays on the dark side
+   of the scrim, clear of the photo subject. */
+.landing .hero--photo > .container { width: 100%; }
 .landing .hero--photo .hero-content {
   position: relative;
   z-index: 1;
@@ -250,14 +254,15 @@
   font-size: var(--fs-body-lg);
   line-height: 1.5;
   color: var(--color-ink-inverse-90);
-  margin: 0 0 var(--space-8);
-  max-width: 460px;
+  margin: 0 0 var(--space-6);
+  max-width: 520px;
 }
 .landing .hero--photo .hero-ctas {
   display: flex; flex-wrap: wrap; gap: var(--space-3);
   margin-bottom: var(--space-3);
 }
-.landing .hero--photo .hero-cta-primary {
+.landing .hero--photo .hero-cta-primary,
+.landing .closing-cta-primary {
   min-height: 64px;
   padding-left: var(--space-8);
   padding-right: var(--space-8);
@@ -266,9 +271,10 @@
   font-weight: 800;
   letter-spacing: -0.01em;
 }
-/* Secondary "Call a funding specialist" CTA — quiet ghost on the navy
-   scrim. Lower visual weight than the green primary so it reads as the
-   second-choice action, not a competing CTA. */
+/* Secondary "Call / Email a funding specialist" CTA — quiet ghost on the
+   navy scrim, and the only other action in the hero. Lower visual weight
+   than the green primary so it reads as the second-choice action, not a
+   competing CTA. */
 .landing .hero--photo .hero-call-cta {
   display: inline-flex;
   align-items: center;
@@ -294,52 +300,71 @@
   height: 16px;
   color: var(--color-trail-green-soft);
 }
-.landing .hero--photo .hero-disclosure {
-  margin: 12px 0 0;
-  max-width: 36rem;
-  font-size: 13px;
-  line-height: 1.45;
-  color: rgba(255, 255, 255, 0.82);
-}
 .landing .hero--photo .hero-cta-note {
-  margin: 0 0 var(--space-4);
+  margin: 0;
   font-family: var(--font-body);
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: var(--fs-small);
+  line-height: var(--lh-small);
   color: var(--color-ink-inverse-70);
   text-align: center;
 }
 .landing .hero--photo .hero-cta-note-sep {
-  margin: 0 4px;
+  margin: 0 var(--space-1);
   color: var(--color-ink-inverse-50);
 }
-.landing .hero--photo .hero-quietlinks {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
+/* The structural facts of the offer (see /methodology), kept inside the
+   hero so they are read with the headline instead of a screen later. One
+   line each on phones, three columns from 720px up. */
+.landing .hero--photo .hero-facts {
+  list-style: none;
+  margin: var(--space-6) 0 0;
+  padding: var(--space-4) 0 0;
+  border-top: 1px solid var(--color-ink-inverse-25);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2);
 }
-.landing .hero--photo .hero-secondary-link {
-  display: inline-flex;
+.landing .hero--photo .hero-fact {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
-  align-self: flex-start;
+  column-gap: var(--space-2);
   font-family: var(--font-body);
+  font-size: var(--fs-small);
+  line-height: var(--lh-small);
+}
+.landing .hero--photo .hero-fact-icon {
+  display: inline-flex;
+  color: var(--color-trail-green-soft);
+}
+.landing .hero--photo .hero-fact-title {
   font-weight: 600;
-  font-size: 15px;
   color: var(--color-ink-inverse);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1px;
-  padding: 8px 0;
-  min-height: 36px;
+}
+.landing .hero--photo .hero-fact-detail {
+  color: var(--color-ink-inverse-70);
+}
+.landing .hero--photo .hero-disclosure {
+  margin: var(--space-3) 0 0;
+  max-width: 36rem;
+  font-size: var(--fs-caption);
+  line-height: 1.45;
+  color: var(--color-ink-inverse-90);
 }
 @media (min-width: 720px) {
   .landing .hero--photo .hero-cta-note { text-align: left; }
-  .landing .hero--photo .hero-quietlinks {
-    flex-direction: row;
-    gap: var(--space-6);
+  .landing .hero--photo .hero-facts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: var(--space-6);
   }
+  /* Icon beside a two-line label: title over detail. */
+  .landing .hero--photo .hero-fact {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+  }
+  .landing .hero--photo .hero-fact-icon { grid-row: 1 / span 2; }
+  .landing .hero--photo .hero-fact-detail { grid-column: 2; }
 }
 
 /* Mobile portrait — the photo subject sits to the right of the type stack;
@@ -444,7 +469,7 @@
    money problems we solve" rather than "here are four products". */
 .landing .product-cards {
   background: var(--color-bg-paper);
-  padding: var(--space-8) 0 0;
+  padding: var(--space-16) 0 0;
 }
 .landing .product-cards-header {
   margin: 0 0 var(--space-6);
@@ -557,7 +582,7 @@
 .landing .product-card-arrow svg { width: 14px; height: 14px; }
 
 @media (min-width: 720px) {
-  .landing .product-cards { padding-top: var(--space-12); }
+  .landing .product-cards { padding-top: var(--space-24); }
   .landing .product-cards-title { font-size: 32px; }
   .landing .product-cards-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -568,64 +593,6 @@
   .landing .product-card-icon svg { width: 28px; height: 28px; }
   .landing .product-card-title { font-size: 22px; }
   .landing .product-card-copy { font-size: 15px; }
-}
-
-/* ---------- HOME STAT STRIP (3 items, no unverified claims) ---------- */
-.landing .home-stat-strip {
-  background: var(--color-bg-paper);
-  padding: var(--space-4) 0 var(--space-8);
-}
-.landing .home-stat-strip-grid {
-  list-style: none;
-  margin: 0;
-  padding: var(--space-4) var(--space-3);
-  background: var(--color-bg-sunken);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-}
-.landing .home-stat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 6px;
-  padding: 0 var(--space-2);
-  border-right: 1px solid var(--color-border);
-}
-.landing .home-stat-item:last-child { border-right: 0; }
-.landing .home-stat-icon {
-  color: var(--color-trail-green);
-  width: 28px;
-  height: 28px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2px;
-}
-.landing .home-stat-amt {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 17px;
-  letter-spacing: -0.005em;
-  color: var(--color-ink-primary);
-  line-height: 1.15;
-}
-.landing .home-stat-label {
-  font-family: var(--font-body);
-  font-size: 12px;
-  line-height: 1.35;
-  color: var(--color-ink-secondary);
-}
-@media (min-width: 720px) {
-  .landing .home-stat-strip { padding: var(--space-8) 0 var(--space-12); }
-  .landing .home-stat-strip-grid {
-    padding: var(--space-6) var(--space-8);
-  }
-  .landing .home-stat-amt { font-size: 22px; }
-  .landing .home-stat-label { font-size: 14px; }
 }
 
 /* ---------- QUALIFICATION CALCULATOR ---------- */
@@ -1109,6 +1076,172 @@
   .landing .section-head p { font-size: 16px; }
 }
 
+/* ---------- SECTION CTA ----------
+   Apply prompt at the foot of a persuasion section. Centered so it reads
+   as the section's conclusion under either a full-width grid (HowItWorks)
+   or the centered brand callout (DeclineSection). */
+.landing .section-cta {
+  margin-top: var(--space-12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+.landing .section-cta-lead {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--color-ink-primary);
+}
+.landing .section-cta-note {
+  margin: 0;
+  max-width: 46ch;
+  font-size: var(--fs-small);
+  line-height: var(--lh-small);
+  color: var(--color-ink-secondary);
+}
+@media (max-width: 720px) {
+  .landing .section-cta { margin-top: var(--space-8); }
+  .landing .section-cta .btn { width: 100%; }
+}
+
+/* ---------- CLOSING CTA BAND ----------
+   Dark band under the FAQ: the last word of the funding pitch. Same green
+   CTA as the hero so the page opens and closes on the same action. */
+.landing .closing-cta {
+  background: var(--color-steel-900);
+  color: var(--color-ink-inverse);
+  padding: var(--space-24) 0;
+  text-align: center;
+}
+.landing .closing-cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing .closing-cta-eyebrow {
+  font-family: var(--font-body); font-weight: 700;
+  font-size: var(--fs-eyebrow); line-height: var(--lh-eyebrow);
+  letter-spacing: var(--tr-eyebrow); text-transform: uppercase;
+  color: var(--color-trail-green-soft);
+  margin-bottom: var(--space-4);
+}
+.landing .closing-cta-title {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: var(--fs-h1); line-height: 1.08; letter-spacing: -0.018em;
+  color: var(--color-ink-inverse);
+  margin: 0 0 var(--space-4);
+}
+.landing .closing-cta-sub {
+  font-size: var(--fs-body-lg); line-height: var(--lh-body-lg);
+  color: var(--color-ink-inverse-70);
+  max-width: 52ch;
+  margin: 0 0 var(--space-8);
+}
+.landing .closing-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3) var(--space-6);
+  margin-bottom: var(--space-4);
+}
+.landing .closing-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  font-family: var(--font-body); font-weight: 600;
+  font-size: var(--fs-body);
+  color: var(--color-ink-inverse);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+.landing .closing-cta-secondary svg {
+  width: 16px; height: 16px;
+  color: var(--color-trail-green-soft);
+}
+.landing .closing-cta-note {
+  margin: 0;
+  font-size: var(--fs-small); line-height: var(--lh-small);
+  color: var(--color-ink-inverse-70);
+}
+.landing .closing-cta-note-sep {
+  margin: 0 var(--space-1);
+  color: var(--color-ink-inverse-50);
+}
+@media (max-width: 720px) {
+  .landing .closing-cta { padding: var(--space-16) 0; }
+  .landing .closing-cta-title { font-size: 32px; }
+  .landing .closing-cta-sub { font-size: var(--fs-body); }
+  .landing .closing-cta-actions { flex-direction: column; align-self: stretch; }
+  .landing .closing-cta-primary { width: 100%; }
+}
+
+/* ---------- HOME STICKY CTA (phones only) ----------
+   Above 720px the sticky nav already carries the apply CTA, so the bar is
+   never shown there. On phones it slides up from the bottom edge whenever
+   no in-page apply CTA is on screen (see HomeStickyCta.tsx). z-index sits
+   under the mobile menu (40) and the nav (50) so an open menu covers it. */
+.landing .home-sticky-cta { display: none; }
+@media (max-width: 720px) {
+  .landing .home-sticky-cta {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 30;
+    display: flex;
+    gap: var(--space-3);
+    padding:
+      var(--space-3)
+      var(--gutter-mobile)
+      calc(var(--space-3) + env(safe-area-inset-bottom, 0px));
+    background: var(--color-bg-paper);
+    border-top: 1px solid var(--color-border);
+    box-shadow: 0 -8px 24px var(--color-steel-900-10);
+    transform: translateY(100%);
+    visibility: hidden;
+    transition:
+      transform var(--motion-page) var(--ease-out),
+      visibility 0s linear var(--motion-page);
+  }
+  .landing .home-sticky-cta[data-visible="true"] {
+    transform: translateY(0);
+    visibility: visible;
+    transition:
+      transform var(--motion-page) var(--ease-out),
+      visibility 0s;
+  }
+  .landing .home-sticky-cta .btn { min-height: 52px; }
+  .landing .home-sticky-cta-apply { flex: 1 1 auto; min-width: 0; }
+  .landing .home-sticky-cta-call { flex: 0 0 auto; }
+  /* Keep the last lines of the footer clear of the bar. */
+  .landing.landing--sticky-cta .footer {
+    padding-bottom: calc(var(--space-8) + var(--space-24));
+  }
+}
+/* Narrowest phones: both buttons no longer fit with their full content, so
+   the call button drops to its icon (the label stays for screen readers)
+   and the apply button gives up its arrow. */
+@media (max-width: 350px) {
+  .landing .home-sticky-cta .btn {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+  .landing .home-sticky-cta-apply svg { display: none; }
+  .landing .home-sticky-cta-call-label {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
 /* ---------- DECLINE EXPLAINER (3-col) ---------- */
 .landing .decline-grid {
   display: grid;
@@ -1581,9 +1714,11 @@
   border-radius: var(--radius-md);
 }
 
-/* Footer dark-background focus: flip ring to hiviz-400 for contrast */
+/* Dark-background focus (footer, closing band, median card): flip ring to
+   hiviz-400 for contrast */
 .landing .footer a:focus-visible,
 .landing .footer button:focus-visible,
+.landing .closing-cta a:focus-visible,
 .landing .feat-card.median :focus-visible {
   outline-color: var(--color-hiviz-400);
 }

@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import SectionCta from "./SectionCta";
 
 type DeclineReason = {
   num: string;
@@ -81,6 +82,11 @@ export default function DeclineSection() {
             If the wheels are turning, the revenue is real.
           </p>
         </aside>
+        <SectionCta
+          placement="home-decline"
+          lead="One soft check. One application."
+          note="Options may be available even if a bank has declined you; approval is not guaranteed."
+        />
       </div>
     </section>
   );

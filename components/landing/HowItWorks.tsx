@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { IconClock, IconDollar, IconFlowArrow, IconTruck } from "./icons";
+import SectionCta from "./SectionCta";
 
 type FlowStep = {
   n: string;
@@ -9,17 +10,21 @@ type FlowStep = {
   color: string;
 };
 
+/* Keep the step copy in line with what /apply and /methodology say about
+   the same flow: the application asks for no documents (statements are
+   requested later, by the lender the operator picks), and the shortlist is
+   2 to 4 lenders. tests/home-funnel.test.ts holds the two pages together. */
 const flowSteps: FlowStep[] = [
   {
     n: "1",
     label: "Application",
-    sub: "Revenue, time in business, DOT number, bank account. 2 min.",
+    sub: "Revenue, time in business, DOT number. No document uploads to start.",
     who: "You",
     color: "var(--color-steel-600)",
   },
   {
     n: "2",
-    label: "3–5 matched lenders",
+    label: "2–4 matched lenders",
     sub: "Business metrics shared. Name, phone, EIN stay with us.",
     who: "Dispatched",
     color: "var(--color-steel-600)",
@@ -139,6 +144,12 @@ export default function HowItWorks() {
             </ul>
           </div>
         </div>
+
+        <SectionCta
+          placement="home-how-it-works"
+          lead="Step 1 is a soft pull."
+          note="No impact on your credit, and no fee to apply."
+        />
       </div>
     </section>
   );

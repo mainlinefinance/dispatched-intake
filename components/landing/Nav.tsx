@@ -5,9 +5,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { HAS_SUPPORT_PHONE, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 import Logo from "@/components/site/Logo";
+import { APPLY_HREF, CTA_LABEL, ctaPlacement } from "./cta";
 import { IconClose, IconMenu, IconPhone } from "./icons";
-
-export const CTA_LABEL = "See my funding options";
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -79,7 +78,11 @@ export default function Nav() {
                 {PHONE_DISPLAY}
               </a>
             ) : null}
-            <Link href="/apply" className="btn btn--primary btn--sm nav-cta">
+            <Link
+              href={APPLY_HREF}
+              className="btn btn--primary btn--sm nav-cta"
+              {...ctaPlacement("nav")}
+            >
               {CTA_LABEL}
             </Link>
             <button
@@ -148,7 +151,12 @@ export default function Nav() {
               Email support
             </a>
           )}
-          <Link href="/apply" className="btn btn--primary" onClick={close}>
+          <Link
+            href={APPLY_HREF}
+            className="btn btn--primary"
+            {...ctaPlacement("nav-mobile-menu")}
+            onClick={close}
+          >
             {CTA_LABEL}
           </Link>
         </div>
