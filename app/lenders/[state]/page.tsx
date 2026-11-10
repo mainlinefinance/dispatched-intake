@@ -21,10 +21,7 @@ import {
   type LenderType,
   type StateInfo,
 } from "@/lib/data/lenders";
-import {
-  getStateContext,
-  type StateContextEntry,
-} from "@/lib/data/lenderStateContext";
+import { getStateContext } from "@/lib/data/lenderStateContext";
 
 type Params = { state: string };
 
@@ -98,36 +95,15 @@ function lenderCard(l: LenderEntry) {
   );
 }
 
-/* Group the lenders that fit a particular operator profile within a state.
-   Returns lenders that match any of the supplied bestFor keywords. */
-function filterByBestFor(
-  lenders: ReadonlyArray<LenderEntry>,
-  needles: ReadonlyArray<string>,
-): ReadonlyArray<LenderEntry> {
-  return lenders.filter((l) =>
-    needles.some((n) => l.bestFor.toLowerCase().includes(n)),
-  );
-}
-
-function stateFAQs(s: StateInfo, ctx?: StateContextEntry) {
-  const lenderListFaq = ctx?.procedural.faqLine ??
-    `Yes. The Dispatched lender panel includes 12 factoring, equipment financing, and working capital providers serving ${s.name}-based carriers.`;
+function stateFAQs(s: StateInfo) {
   return [
     {
       q: `Which trucking lenders serve ${s.name}?`,
-      a: `All 12 lenders in the Dispatched directory serve ${s.name}: Apex Capital, eCapital, RTS Financial, Triumph Business Capital, TBS Factoring, OTR Solutions, Porter Freight Funding, Truckstop Go Capital, 1st Commercial Credit, Riviera Finance, Bluevine, and Lendio. Each is nationwide — the operational answer changes state-by-state because of IRP base state, IFTA filing, UCR, and state DOT requirements, but the lender list is the same. ${lenderListFaq}`,
+      a: `All 12 lenders in the Dispatched directory are nationwide and serve ${s.name}-based carriers. The directory page compares them by operator profile.`,
     },
     {
       q: `What's different about financing a trucking business in ${s.name}?`,
-      a: `The lender panel is the same nationwide, but compliance is local. ${s.name} carriers need to file the federal MC# and DOT#, then handle ${s.name}-administered IRP apportioned registration, IFTA fuel-tax filing (if running interstate), UCR registration (paid through your base state), and any ${s.name}-specific commercial-financing disclosure rules. Lenders underwriting equipment financing on Class 8 tractors expect IRP and IFTA in place, particularly for first-year owner-operators ramping into multi-state operations.`,
-    },
-    {
-      q: `Is invoice factoring legal in ${s.name}?`,
-      a: `Yes. Invoice factoring is legal in all 50 states including ${s.name}. The factoring contract is a commercial-receivables purchase, not a loan, so most state lending licenses do not apply. California, New York, and a handful of other states have commercial-financing disclosure laws (California SB 1235 is the most prescriptive) that require certain rate and total-cost disclosures before a small business signs a factoring or merchant-cash-advance contract.`,
-    },
-    {
-      q: `Do I need to be based in ${s.name} to factor through these lenders?`,
-      a: `No. All 12 lenders in this directory underwrite based on your operating authority and broker mix, not your physical address. If you have an active MC# and run loads through brokers, the lender will factor your invoices regardless of which state houses your DOT-registered base of operations.`,
+      a: `The lender list is the same as in every state. What is local is compliance: ${s.name} is your base state for IRP apportioned registration, IFTA fuel-tax filing and UCR, and any ${s.name} commercial-financing disclosure rules apply to contracts signed there.`,
     },
   ];
 }
@@ -152,16 +128,7 @@ export default async function LendersStatePage({
       c.stateSlug === s.slug &&
       c.stateLenderPanelCount >= LOW_COVERAGE_THRESHOLD,
   );
-  const faqs = stateFAQs(s, ctx);
-
-  const ownerOpLenders = filterByBestFor(lenders, ["owner-operator"]);
-  const fleetLenders = filterByBestFor(lenders, ["fleet"]);
-  const newAuthorityLenders = filterByBestFor(lenders, ["new-authority"]);
-  const badCreditLenders = filterByBestFor(lenders, [
-    "bad-credit",
-    "transparency-first",
-    "marketplace",
-  ]);
+  const faqs = stateFAQs(s);
 
   return (
     <div className="research-page">
@@ -284,23 +251,14 @@ export default async function LendersStatePage({
           ) : null}
 
           <section className="research-section" id="state-context">
-            <h2>The {s.name} trucking-finance picture</h2>
-            <p>
-              {s.name} carriers operate under the same federal regime —
-              MC#, DOT#, BOC-3, UCR — as every other state, with{" "}
-              {s.name}-administered IRP apportioned registration and IFTA
-              quarterly fuel-tax filing on top. Lenders underwriting
-              equipment financing on Class 8 tractors expect IRP and IFTA
-              in place, particularly for first-year owner-operators
-              ramping into multi-state operations.
-            </p>
+            <h2>What changes for lenders in {s.name}</h2>
             <p>
               The 12 lenders in this directory all underwrite nationally,
               so what changes in {s.name} is your IRP base state, your
               IFTA filing jurisdiction, and any state commercial-financing
               disclosure rules. The{" "}
               <Link href="/lenders">directory overview</Link> covers the
-              national picture.
+              national picture and compares lenders by operator profile.
             </p>
           </section>
 
@@ -318,138 +276,18 @@ export default async function LendersStatePage({
             </div>
           </section>
 
-          {ownerOpLenders.length > 0 ? (
-            <section className="research-section" id="owner-operators">
-              <h2>Owner-operators in {s.name}</h2>
-              <p>
-                Single-truck and two-truck operators with their own MC# get
-                the most leverage from factoring + fuel-card economics. The
-                lenders below are owner-operator-native: rate, contract
-                terms, and ancillary value are tuned for the single-truck
-                profile.
-              </p>
-              <ul className="research-list">
-                {ownerOpLenders.map((l) => (
-                  <li key={l.slug}>
-                    <strong>{l.name}</strong> — best for {l.bestFor}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ) : null}
-
-          {fleetLenders.length > 0 ? (
-            <section className="research-section" id="mid-fleets">
-              <h2>Mid-fleets in {s.name}</h2>
-              <p>
-                Fleets of 5 or more trucks need factoring + ancillary credit
-                products (asset-based lending, equipment financing) under one
-                roof. The lenders below scale cleanly from a 5-truck
-                operation into 50+ trucks without forcing a product change
-                at each tier.
-              </p>
-              <ul className="research-list">
-                {fleetLenders.map((l) => (
-                  <li key={l.slug}>
-                    <strong>{l.name}</strong> — best for {l.bestFor}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ) : null}
-
-          {newAuthorityLenders.length > 0 ? (
-            <section className="research-section" id="new-authority">
-              <h2>New authority in {s.name}</h2>
-              <p>
-                First-year MC# operators (under 90 days of broker history)
-                struggle with most working-capital lenders. Factoring is
-                often the only working-capital tool available, and a small
-                subset of factors specializes in brand-new authority.
-              </p>
-              <ul className="research-list">
-                {newAuthorityLenders.map((l) => (
-                  <li key={l.slug}>
-                    <strong>{l.name}</strong> — best for {l.bestFor}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ) : null}
-
-          {badCreditLenders.length > 0 ? (
-            <section className="research-section" id="bad-credit">
-              <h2>Bad credit / non-traditional underwriting in {s.name}</h2>
-              <p>
-                Operators in {s.name} with lower credit profiles, a recent
-                bankruptcy, or a thin credit file should start with factors that
-                underwrite the broker, not the trucker — and with
-                marketplaces that shop across multiple lender appetites
-                rather than locking you into one underwriting box.
-              </p>
-              <ul className="research-list">
-                {badCreditLenders.map((l) => (
-                  <li key={l.slug}>
-                    <strong>{l.name}</strong> — best for {l.bestFor}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ) : null}
-
           <section className="research-section" id="compliance">
             <h2>{s.name} compliance reminders</h2>
             <p>
-              State-level compliance matters more to lenders than most
-              owner-operators expect. A clean DOT pull, current MCS-150,
-              correct BOC-3 process-agent designation, and unbroken UCR +
-              IFTA filings are what get the lender past intake. Bookmark
-              these glossary entries:
+              Lenders look at the same filings in {s.name} as anywhere
+              else: an active <Link href="/glossary/mc-number">MC number</Link>,
+              a current <Link href="/glossary/mcs-150">MCS-150</Link>, a{" "}
+              <Link href="/glossary/boc-3">BOC-3</Link> on file, and
+              unbroken <Link href="/glossary/ucr">UCR</Link>,{" "}
+              <Link href="/glossary/ifta">IFTA</Link> and{" "}
+              <Link href="/glossary/irp">IRP</Link> filings through your
+              base state.
             </p>
-            <ul className="research-list">
-              <li>
-                <Link href="/glossary/dot-number">
-                  <strong>DOT Number</strong>
-                </Link>{" "}
-                — federal safety registration; pull is the first thing a
-                lender checks.
-              </li>
-              <li>
-                <Link href="/glossary/mc-number">
-                  <strong>MC Number</strong>
-                </Link>{" "}
-                — for-hire interstate operating authority; required for
-                factoring on any standard lender panel.
-              </li>
-              <li>
-                <Link href="/glossary/ifta">
-                  <strong>IFTA</strong>
-                </Link>{" "}
-                — quarterly fuel-tax filing administered by your base state;
-                audit triggers compress cash flow fast.
-              </li>
-              <li>
-                <Link href="/glossary/irp">
-                  <strong>IRP</strong>
-                </Link>{" "}
-                — apportioned registration; required for most interstate
-                Class 8 operations.
-              </li>
-              <li>
-                <Link href="/glossary/ucr">
-                  <strong>UCR</strong>
-                </Link>{" "}
-                — annual federal fee funding state-level enforcement;
-                lapses flag during underwriting.
-              </li>
-              <li>
-                <Link href="/glossary/boc-3">
-                  <strong>BOC-3</strong>
-                </Link>{" "}
-                — process-agent designation; required to activate operating
-                authority and to keep it active.
-              </li>
-            </ul>
           </section>
 
           <section className="research-section" id="faq">
