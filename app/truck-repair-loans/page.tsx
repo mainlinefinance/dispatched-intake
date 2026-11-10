@@ -56,7 +56,7 @@ const faqs = [
     a: "You can apply while the truck is at the shop; the Dispatched workflow is built around that case. Soft approval and lender match depend on underwriting review of the application; the chosen lender wires funds to the operator's business account after lender sign-off; timing depends on the lender, your documents and bank cutoffs. There is no shop-assignment step and no requirement that the truck be roadworthy or inspected at the time of application.",
   },
   {
-    q: "How fast can I get a truck repair loan?",
+    q: "What affects when a truck repair loan funds?",
     a: "Timing depends on the lender and your documents, and Dispatched does not promise a funding time. Soft approval and lender match depend on underwriting review of the application. The wire goes out after the chosen lender countersigns and follows that bank's cutoff, weekend and holiday schedule. Having bank statements and the shop's estimate ready before you apply is the part you control.",
   },
   {

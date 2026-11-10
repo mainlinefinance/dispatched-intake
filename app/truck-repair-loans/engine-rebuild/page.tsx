@@ -56,7 +56,7 @@ const faqs = [
     a: "Yes, with one underwriting nuance. The panel funds rebuilds on trucks at any mileage — there is no panel-level mileage cutoff because the rebuild itself is what restores the asset value. The lender does ask the shop to confirm the post-rebuild expected remaining life (typically 400K to 600K miles for a quality in-frame on an ISX or DD15). Trucks over 1.2M total miles, especially those on a second or third rebuild, see a tighter lender mix and the loan term shortens to keep payments aligned with the realistic remaining service life of the truck.",
   },
   {
-    q: "How long does engine rebuild financing take to fund?",
+    q: "What affects when engine rebuild financing funds?",
     a: "Soft approval and lender match: after underwriting review of the application. The chosen lender countersigns a term sheet when underwriting is complete. The wire to the shop releases after lender sign-off; timing depends on documents and bank cutoffs. Engine rebuilds add a verification step that emergency repair does not — the lender typically calls the shop directly to confirm the scope of work, the parts list, and the expected completion timeline. That call is an extra step but is non-negotiable on rebuilds because the dollar figure justifies the verification.",
   },
   {

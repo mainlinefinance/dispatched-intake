@@ -68,7 +68,7 @@ const faqs = [
     a: "Some lines are restricted to repair and maintenance spend; others are general business lines of credit that can be used for any operating expense. The Dispatched panel routes both. If the operator wants the broader-use product, the application captures that and routes to general working-capital lines instead — see /trucking-working-capital.",
   },
   {
-    q: "How long does line approval take?",
+    q: "What does line approval depend on?",
     a: "Timing depends on the lender and your documents. Lines usually involve more underwriting than term loans because the underwriting covers an open-ended commitment rather than a specific transaction. The line's value is its availability for the next year — it is something to set up before a repair, not during one.",
   },
   {

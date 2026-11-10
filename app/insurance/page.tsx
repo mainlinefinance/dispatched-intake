@@ -81,7 +81,7 @@ const faqs = [
     a: "Yes. Premium financing is standard for commercial trucking policies. The producer offers premium-finance options through the major premium-finance companies (typically 25% down and 9 monthly payments). You can also pay annual or use a working-capital line to fund the premium directly — see /trucking-working-capital.",
   },
   {
-    q: "How fast can I get a Certificate of Insurance?",
+    q: "How do I get a Certificate of Insurance?",
     a: "The producer issues COIs once a policy is bound; timing depends on the producer and the carrier. The producer can also issue COIs to specific shippers, brokers, or terminal facilities on request.",
   },
 ];

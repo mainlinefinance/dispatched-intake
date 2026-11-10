@@ -116,9 +116,9 @@ export function metaInsuranceDeep(args: {
       ? args.productName
       : args.productShortLabel;
   const description = descRange([
-    `${usePN} for ${dcLower} owner-operators in ${args.stateName}. Compare carriers writing your class today. Soft pull, no credit impact.`,
+    `${usePN} for ${dcLower} owner-operators in ${args.stateName}. Compare carriers that write your class. Soft pull, no credit impact.`,
     `${usePN} for ${dcLower} owner-operators in ${args.stateName}. Compare carriers writing your class. Soft pull, no credit impact.`,
-    `${args.productShortLabel} for ${dcLower} owner-operators in ${args.stateName}. Compare carriers writing your class today. Soft pull, no credit impact.`,
+    `${args.productShortLabel} for ${dcLower} owner-operators in ${args.stateName}. Compare carriers that write your class. Soft pull, no credit impact.`,
     `${args.productShortLabel} for ${dcLower} operators in ${args.stateName}. Compare carriers writing your class. Soft pull, no credit impact.`,
     `${usePN} for ${dcLower} operators in ${args.stateName}. Compare carriers writing your class. Soft pull, no credit impact.`,
   ]);

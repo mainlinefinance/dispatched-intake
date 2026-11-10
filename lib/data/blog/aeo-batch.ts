@@ -351,7 +351,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
         a: "Yes — and many do. Factoring covers the receivables-aging problem on slow-pay brokers; working capital covers fuel float, payroll bridge, and opportunistic uses. The combination is appropriate as long as the factoring isn't being layered on the same invoices the working-capital lender is counting in revenue, and as long as total monthly debt service still passes DSCR. Adding an MCA on top of factoring and working capital is the distressed-fleet pattern and typically signals it's time to restructure the debt stack.",
       },
       {
-        q: "How long does it take to get a fleet working-capital line funded?",
+        q: "What affects when a fleet working-capital line funds?",
         a: "Matched offers return after underwriting review of the intake. Hard underwriting and document review follow once the operator picks an offer. Funding timing depends on the lender, the loan size, and your documents. SBA 7(a) loans for fleets take 45 to 120 days to close — substantially longer, but at materially lower APR for fleets that qualify.",
       },
     ],

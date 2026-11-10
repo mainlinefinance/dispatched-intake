@@ -21,13 +21,13 @@ import {
 export const metadata: Metadata = {
   title: "Commercial truck insurance companies — AM Best | Dispatched",
   description:
-    "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears. Get matched today.",
+    "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears.",
   alternates: { canonical: "/carriers" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "Commercial truck insurance companies — AM Best | Dispatched",
     description:
-      "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears. Get matched today.",
+      "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears.",
     url: "/carriers",
     type: "website",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Commercial truck insurance companies — AM Best | Dispatched",
     description:
-      "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears. Get matched today.",
+      "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears.",
   },
 };
 

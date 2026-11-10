@@ -78,7 +78,7 @@ const faqs = [
     a: "Three months of business bank statements, your EIN or SSN, DOT and MC number, and a driver's license. For loans above $75K the chosen lender also asks for the most recent Schedule C or 1120 and current settlement statements from your carrier or broker. No business plan, no tax preparer letter.",
   },
   {
-    q: "How long does owner-operator financing take to fund?",
+    q: "What affects when owner-operator financing funds?",
     a: "Soft approval and lender match depend on underwriting review of submitting the application. Working capital and repair loans fund after the chosen lender countersigns; timing depends on the lender and your documents. Equipment loans take longer because the lender has to verify the title and record the lien before funds release.",
   },
   {

@@ -72,7 +72,7 @@ export const homepageFaqs: HomepageFaqItem[] = [
     ),
   },
   {
-    q: "How long does funding take?",
+    q: "What affects funding timing?",
     aText:
       "Timing depends on the lender and your documents. Soft matches and term sheets arrive after underwriting review; wires settle after the chosen financing partner signs off and banking cutoffs clear. Individual results vary.",
     aJsx: (

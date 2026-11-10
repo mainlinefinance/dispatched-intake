@@ -42,7 +42,7 @@ const PAGE_URL = "https://dispatched.finance/truck-repair-loans/emergency";
 
 const faqs = [
   {
-    q: "How fast can an emergency truck repair loan actually fund?",
+    q: "What affects when an emergency truck repair loan funds?",
     a: "Timing depends on the lender and your documents, and Dispatched does not promise a funding time. The steps are fixed: a soft-pull pre-qualification, a term sheet from the lender you pick, your countersignature, and then the lender's wire, which is subject to its bank's cutoff and to weekends and federal holidays. The things you control are having the repair invoice or written estimate, the shop's payment details, and recent business bank statements ready before you apply.",
   },
   {
