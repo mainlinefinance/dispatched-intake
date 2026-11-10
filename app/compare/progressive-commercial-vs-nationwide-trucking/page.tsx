@@ -743,9 +743,7 @@ export default function ProgressiveVsNationwidePage() {
                 competitive position tightens.
               </li>
               <li>
-                <strong>Operators who need a quote today, not next
-                week.</strong> Direct online quoting compresses the
-                shopping cycle. For renewal week, lost COIs, or new MC activations, Progressive&rsquo;s self-serve channel is the practical advantage.
+                <strong>Operators who want a self-serve quote.</strong> Direct online quoting shortens the shopping steps. For renewal week, lost COIs, or new MC activations, Progressive&rsquo;s self-serve channel is the practical advantage.
               </li>
               <li>
                 <strong>Operators with mixed commercial auto needs.</strong>{" "}
