@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     q: "How often are the rate ranges and program rules updated?",
-    a: "The panel APR ranges are reviewed quarterly against the trailing 12 months of funded-loan data. Program rules (FICO floors, loan amount bands, document requirements) are updated within 14 days of a material panel change — for example, if a lender exits the panel or changes their FICO floor. Updates are reflected on this page and on the affected money pages.",
+    a: "The panel APR ranges are reviewed quarterly against the trailing 12 months of funded-loan data. Program rules (FICO floors, loan amount bands, document requirements) are updated inside 14 days of a material panel change — for example, if a lender exits the panel or changes their FICO floor. Updates are reflected on this page and on the affected money pages.",
   },
 ];
 

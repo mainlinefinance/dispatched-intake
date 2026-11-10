@@ -472,8 +472,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
             <h3>OTR &mdash; all-in single-number pricing.</h3>
             <p className="ins-hero-sub">
               OTR&rsquo;s headline rate is the total cost. No ACH, no
-              per-invoice processing, no monthly, no credit-check
-              fees per broker, no minimums. A factor that charges
+              per-invoice processing, no monthly, no fees for credit-checking a broker, no minimums. A factor that charges
               $15/invoice processing on a 3% rate is materially more
               expensive than a flat 3.25% factor on small invoices,
               but the headline looks lower. &ldquo;Rate is the

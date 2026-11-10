@@ -52,8 +52,8 @@ const faqs = [
     a: "A resolved bankruptcy is not always a disqualifier, because the factor is buying invoices rather than lending. Active proceedings usually are. Factors ask about bankruptcies at onboarding and each decides for itself; approval is not guaranteed.",
   },
   {
-    q: "How is this different from \"no credit check\" truck loans?",
-    a: "\"No credit check truck loans\" usually refer to predatory lease-purchase programs run by carriers — high failure rates, no equity built. Factoring is a mainstream product in trucking that underwrites mainly on broker credit and still reviews the carrier. Different mechanism, different risk profile, different outcomes.",
+    q: "How is this different from truck loans advertised without a credit check?",
+    a: "Truck loans advertised that way usually refer to predatory lease-purchase programs run by carriers — high failure rates, no equity built. Factoring is a mainstream product in trucking that underwrites mainly on broker credit and still reviews the carrier. Different mechanism, different risk profile, different outcomes.",
   },
   {
     q: "Do I need to factor every load once I sign up?",
@@ -114,7 +114,7 @@ export default function NoCreditCheckFactoringPage() {
               Trucking factoring that underwrites your brokers.
             </h1>
             <p className="ins-hero-sub">
-              Freight factors underwrite mainly on the broker who owes the invoice. This is what people usually mean when they search for &ldquo;no credit check&rdquo; factoring &mdash; though many factors still review the carrier, and approval is not guaranteed. Here&rsquo;s how it actually works.
+              Freight factors underwrite mainly on the broker who owes the invoice. This is what people usually mean when they search for factoring without a credit check &mdash; though many factors still review the carrier, and approval is not guaranteed. Here&rsquo;s how it actually works.
             </p>
             <div className="product-hero-ctas">
               <Link

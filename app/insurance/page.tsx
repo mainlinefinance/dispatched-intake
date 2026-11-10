@@ -82,7 +82,7 @@ const faqs = [
   },
   {
     q: "How fast can I get a Certificate of Insurance?",
-    a: "Once a policy is bound by the producer, COIs are available the same day, often within minutes of binding. The producer can also issue COIs to specific shippers, brokers, or terminal facilities on request.",
+    a: "Once a policy is bound by the producer, COIs are issued by the producer after binding. The producer can also issue COIs to specific shippers, brokers, or terminal facilities on request.",
   },
 ];
 
@@ -193,8 +193,7 @@ function Hero({ today }: { today: string }) {
         <p className="ins-hero-sub">
           Primary liability, cargo, physical damage, and the rest of the
           coverage stack — quoted by our licensed producer partner across the
-          carriers writing your DOT class and your state. Quote in minutes,
-          bind the same day.
+          carriers writing your DOT class and your state. Compare quotes, then bind with the producer.
         </p>
         <div className="ins-hero-ctas">
           <a
@@ -232,7 +231,7 @@ function Hero({ today }: { today: string }) {
             <span>Quotes returned</span>
           </li>
           <li>
-            <strong>Same day</strong>
+            <strong>After binding</strong>
             <span>Bind &amp; COI</span>
           </li>
         </ul>
@@ -270,8 +269,7 @@ function ThreeStepRibbon() {
             <span className="ins-three-step-num">3</span>
             <h3>Bind and get your COI</h3>
             <p>
-              Pick the quote you want, e-sign with the producer, and the COI
-              is issued the same day. Premium financing available — 25% down
+              Pick the quote you want, e-sign with the producer, and the producer issues the COI. Premium financing available — 25% down
               with 9 monthly payments is standard.
             </p>
           </li>
@@ -286,7 +284,7 @@ function QuoteSection({ anchorId }: { anchorId: string }) {
     <section id={anchorId} className="ins-quote-section">
       <div className="ins-container">
         <span className="ins-eyebrow">Get a quote</span>
-        <h2 className="ins-hero-title">Quote in minutes.</h2>
+        <h2 className="ins-hero-title">Compare quotes.</h2>
         <p className="ins-hero-sub">
           Quotes are placed by our licensed producer partner. They pull from
           the carrier panel writing your DOT class in your state and return

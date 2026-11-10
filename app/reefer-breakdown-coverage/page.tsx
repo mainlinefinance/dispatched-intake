@@ -329,7 +329,7 @@ export default function ReeferBreakdownCoveragePage() {
               </li>
               <li>
                 <strong>Call the carrier immediately.</strong> Most cargo
-                policies require notification within 24 hours of discovery.
+                policies require notification inside 24 hours of discovery.
                 The claim file opens with the call.
               </li>
               <li>

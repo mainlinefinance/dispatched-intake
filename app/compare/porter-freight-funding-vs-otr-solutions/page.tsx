@@ -382,7 +382,7 @@ export default function PorterVsOtrPage() {
               is the structural answer.
             </h3>
             <p className="ins-hero-sub">
-              OTR doesn&rsquo;t advertise &ldquo;no credit check.&rdquo; A
+              OTR doesn&rsquo;t advertise skipping the credit check. A
               soft pull happens during onboarding for identity verification
               and fraud detection, according to OTR. What OTR does instead is
               solve the concentrated-broker-risk problem that hits operators rebuilding credit: damaged credit often correlates with

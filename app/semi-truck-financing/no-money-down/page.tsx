@@ -57,8 +57,8 @@ const faqs = [
     a: "The match step is a soft pull — no impact. The lender's hard pull happens only after you accept a term sheet. One hard pull total, regardless of how many lenders the panel quoted.",
   },
   {
-    q: "What about \"no credit check\" semi truck financing — is that the same thing?",
-    a: "No. \"No credit check\" usually refers to predatory lease-purchase programs run by carriers, not real ownership financing. Real semi truck loans require a credit check. Financing partners on the Dispatched panel set their own credit requirements; that's not the same as no check, but it can be broader than what banks offer. Approval is not guaranteed.",
+    q: "What about semi truck financing advertised with no check of your credit — is that the same thing?",
+    a: "No. That pitch usually refers to predatory lease-purchase programs run by carriers, not real ownership financing. Real semi truck loans require a credit check. Financing partners on the Dispatched panel set their own credit requirements; that's not the same as no check, but it can be broader than what banks offer. Approval is not guaranteed.",
   },
   {
     q: "If I qualify for zero-down, should I still put money down?",

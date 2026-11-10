@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "Which has better pricing transparency?",
-    a: "OTR. The all-in pricing model means rate × invoice equals total cost — no ACH fees, no monthly minimums, no per-invoice processing charges, no credit-check fees per broker. TBS uses membership-tier pricing where the rate depends on which tier you sign into and additional bundled-service fees can apply. OTR is easier to plan against.",
+    a: "OTR. The all-in pricing model means rate × invoice equals total cost — no ACH fees, no monthly minimums, no per-invoice processing charges, no fees for credit-checking a broker. TBS uses membership-tier pricing where the rate depends on which tier you sign into and additional bundled-service fees can apply. OTR is easier to plan against.",
   },
   {
     q: "What changed with Love's acquisition of TBS?",
@@ -406,7 +406,7 @@ export default function TbsVsOtrSolutionsPage() {
               tiers, no add-ons. Pricing is one calculation &mdash; rate
               &times; invoice equals total cost. No ACH fees, no
               processing fees, no monthly fees, no minimum-volume
-              penalties, no credit-check fees per broker. For an
+              penalties, no fees for credit-checking a broker. For an
               established operator who already has a CPA, an IFTA cadence,
               and active authority, OTR&rsquo;s stripped-down model is
               cheaper in both absolute dollars and cognitive overhead.

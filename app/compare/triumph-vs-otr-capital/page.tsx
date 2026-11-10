@@ -491,8 +491,7 @@ export default function TriumphVsOtrCapitalPage() {
               with volume discounts available for higher factored volumes.
               The structural feature is what isn&rsquo;t there: no ACH
               fees, no per-invoice processing fees, no monthly fees, no
-              minimum-volume penalties, no credit-check fees per new
-              broker. The math is clean &mdash; rate &times; invoice
+              minimum-volume penalties, no fees for credit-checking a new broker. The math is clean &mdash; rate &times; invoice
               equals total cost &mdash; and that&rsquo;s the entire
               pricing surface. The headline floor is higher than
               Triumph&rsquo;s 1.5%, but the floor at Triumph is reserved
@@ -530,8 +529,7 @@ export default function TriumphVsOtrCapitalPage() {
             <p className="ins-hero-sub">
               OTR&rsquo;s pricing surface is one number: the headline
               rate. No ACH fees, no wire fees, no per-invoice processing
-              charges on standard accounts, no monthly minimums, no
-              credit-check fees per new broker, no separate non-recourse
+              charges on standard accounts, no monthly minimums, no fees for credit-checking a new broker, no separate non-recourse
               upgrade tier. For an owner-op who runs their own books, the
               monthly factoring expense is a single multiplication &mdash;
               total factored volume times the rate &mdash; and the
@@ -968,7 +966,7 @@ export default function TriumphVsOtrCapitalPage() {
                 </strong>{" "}
                 The all-in pricing model means rate &times; invoice
                 equals total cost. No ACH fees, no monthly minimums, no
-                processing charges, no credit-check fees per broker. For
+                processing charges, no fees for credit-checking a broker. For
                 operators who run their own books, the cognitive
                 simplicity is the biggest feature.
               </li>

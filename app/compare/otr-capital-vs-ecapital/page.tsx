@@ -454,8 +454,7 @@ export default function OtrVsEcapitalPage() {
               OTR&rsquo;s pricing is structurally one number. The rate is
               the rate &mdash; against invoice face value &mdash; and
               that&rsquo;s the total cost. No ACH fee. No processing fee.
-              No monthly minimum penalty. No credit-check fee on new
-              brokers. No surcharge for BOLT. Monthly factoring expense
+              No monthly minimum penalty. No fee for credit-checking new brokers. No surcharge for BOLT. Monthly factoring expense
               becomes a one-line calculation: invoiced volume &times; rate.
               The same operator at eCapital tracks wire fees, ACH fees,
               processing fees by program tier, credit-check fees per

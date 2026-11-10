@@ -287,7 +287,7 @@ export const FINANCE_TERMS: ReadonlyArray<GlossaryTerm> = [
     termCode: "FICO",
     category: "trucking-finance",
     shortDefinition:
-      "Fair Isaac Corporation consumer credit score (300–850); the dominant US credit metric. In trucking finance, FICO is a secondary underwriting signal — revenue, debt-service coverage, and equipment value lead.",
+      "Fair Isaac Corporation consumer credit score; the dominant US credit metric. The scale runs from 300 to 850. In trucking finance, FICO is a secondary underwriting signal — revenue, debt-service coverage, and equipment value lead.",
     sections: [
       {
         h2: "What it is",
