@@ -13,18 +13,18 @@ import {
 
 export const metadata: Metadata = fitMeta({
   title:
-    "Porter Freight Funding vs OTR Solutions — Bad Credit Factoring 2026 | Dispatched",
+    "Porter Freight Funding vs OTR Solutions 2026 | Dispatched",
   description:
-    "Porter Freight Funding vs OTR Solutions: which bad-credit/non-traditional factor wins in 2026? Rates, credit policies, contracts, and reviews compared.",
+    "Porter Freight Funding vs OTR Solutions for operators rebuilding credit: rates, underwriting approach, contracts, and reviews compared for 2026.",
   alternates: {
     canonical: "/compare/porter-freight-funding-vs-otr-solutions",
   },
   openGraph: {
     images: ["/opengraph-image"],
     title:
-      "Porter Freight Funding vs OTR Solutions — Bad Credit Factoring 2026 | Dispatched",
+      "Porter Freight Funding vs OTR Solutions 2026 | Dispatched",
     description:
-      "Porter Freight Funding vs OTR Solutions: which bad-credit/non-traditional factor wins in 2026? Rates, credit policies, contracts, and reviews compared.",
+      "Porter Freight Funding vs OTR Solutions for operators rebuilding credit: rates, underwriting approach, contracts, and reviews compared for 2026.",
     url: "/compare/porter-freight-funding-vs-otr-solutions",
     type: "website",
   },
@@ -32,9 +32,9 @@ export const metadata: Metadata = fitMeta({
     images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
-      "Porter Freight Funding vs OTR Solutions — Bad Credit Factoring 2026 | Dispatched",
+      "Porter Freight Funding vs OTR Solutions 2026 | Dispatched",
     description:
-      "Porter Freight Funding vs OTR Solutions: which bad-credit/non-traditional factor wins in 2026? Rates, credit policies, contracts, and reviews compared.",
+      "Porter Freight Funding vs OTR Solutions for operators rebuilding credit: rates, underwriting approach, contracts, and reviews compared for 2026.",
   },
 });
 
@@ -43,8 +43,8 @@ const PAGE_URL =
 
 const faqs = [
   {
-    q: "Which is better for bad credit operators?",
-    a: "It depends on what you need. Porter says it underwrites broker credit (the customer side) rather than the operator's personal credit, and operators report onboarding without a personal credit pull. OTR Solutions does a soft pull for fraud detection and says it does not price on the operator's personal credit. Both work with lower credit profiles; Porter is the structural fit for operators who want to limit credit-bureau activity. Approval is not guaranteed with either.",
+    q: "Which fits operators who are rebuilding credit?",
+    a: "It depends on what you need. Porter says it underwrites mainly on the credit of the brokers who owe the invoices; how it reviews the carrier is its own policy, so confirm it with Porter. OTR Solutions runs a soft pull for fraud detection and says it does not price on the operator's personal credit. Both work with lower credit profiles. Approval is not guaranteed with either.",
   },
   {
     q: "Which has lower rates?",
@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: "Which is better for new authority?",
-    a: "Both work, but for slightly different reasons. Porter onboards new authority with minimal credit underwriting on the operator side. OTR onboards new authority with its standard underwriting (soft pull). Porter has fewer onboarding steps for brand-new operators; OTR provides better long-term value once authority and history are established.",
+    a: "Both work, but for slightly different reasons. Porter onboards new authority with underwriting focused on the brokers you haul for. OTR onboards new authority with its standard underwriting (soft pull). Porter has fewer onboarding steps for brand-new operators; OTR provides better long-term value once authority and history are established.",
   },
   {
     q: "What about non-recourse coverage?",
@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     q: "When should I pick Porter over OTR (or vice versa)?",
-    a: "Pick Porter if: (1) You want zero credit-bureau activity, (2) You're brand-new authority and want the fewest onboarding steps, (3) You value smaller-team personalized US service. Pick OTR if: (1) You want true non-recourse coverage on concentrated broker risk, (2) You value contract flexibility (no long-term lock-in), (3) You want all-in pricing without surprise fees, (4) You're comfortable with mostly-online support.",
+    a: "Pick Porter if: (1) You want underwriting that centers on your brokers' credit (confirm Porter's carrier review with Porter), (2) You're brand-new authority and want the fewest onboarding steps, (3) You value smaller-team personalized US service. Pick OTR if: (1) You want true non-recourse coverage on concentrated broker risk, (2) You value contract flexibility (no long-term lock-in), (3) You want all-in pricing without surprise fees, (4) You're comfortable with mostly-online support.",
   },
 ];
 
@@ -86,7 +86,7 @@ export default function PorterVsOtrPage() {
       <JsonLd
         payload={article({
           headline:
-            "Porter Freight Funding vs OTR Solutions — bad-credit factoring in 2026?",
+            "Porter Freight Funding vs OTR Solutions — which fits in 2026?",
           description:
             "Head-to-head comparison of Porter Freight Funding and OTR Solutions across credit policies, rates, non-recourse coverage, and contracts for 2026.",
           url: PAGE_URL,
@@ -105,13 +105,12 @@ export default function PorterVsOtrPage() {
               Dispatched · Updated May 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
-              Porter Freight Funding vs OTR Solutions — bad-credit factoring
-              in 2026?
+              Porter Freight Funding vs OTR Solutions — which fits in 2026?
             </h1>
             <p className="ins-hero-sub">
               Porter Freight Funding and OTR Solutions both serve operators
               who don&rsquo;t fit the standard credit profile — bad credit,
-              new authority, prior bankruptcy. Porter underwrites the broker rather than the operator&rsquo;s personal credit. OTR uses true non-recourse and all-in pricing. Different approaches to the same segment.
+              new authority, prior bankruptcy. Porter says it underwrites mainly on the credit of the brokers who owe the invoices. OTR uses true non-recourse and all-in pricing. Different approaches to the same segment.
             </p>
             <div className="product-hero-ctas">
               <Link
@@ -142,8 +141,7 @@ export default function PorterVsOtrPage() {
             <p className="ins-hero-sub">
               Porter Freight Funding and OTR Solutions are the two factors
               that show up most when operators with damaged credit, new
-              authority, or prior bankruptcy look for a factor. Porter&rsquo;s structural move is its credit policy &mdash; many operators report onboarding with no personal credit pull, because Porter
-              underwrites the broker side of the receivable. Rates run
+              authority, or prior bankruptcy look for a factor. Porter&rsquo;s structural move is its underwriting focus &mdash; Porter says it underwrites mainly on the credit of the brokers who owe the invoices; how it reviews the carrier is its own policy, so confirm it with Porter. Rates run
               1.5&ndash;4% with a 12-month contract and a smaller,
               personalized US-based team. OTR Solutions (2011, rebranded
               from OTR Capital around 2022) takes a different path: a soft
@@ -152,8 +150,7 @@ export default function PorterVsOtrPage() {
               requirement. Rates run 2.5&ndash;5%, and the review base is
               the strongest in the category &mdash; Google 4.7 across 883+,
               Trustpilot 4.5 across 323+, and fewest BBB complaints among
-              major factors. Choice is structural: zero credit-bureau
-              activity (Porter) or transparency-first non-recourse with
+              major factors. Choice is structural: broker-credit underwriting (Porter) or transparency-first non-recourse with
               contract flexibility (OTR). To skip the read and get matched,{" "}
               <Link href="/apply?useCase=factoring&creditPull=soft">
                 /apply?useCase=factoring&amp;creditPull=soft
@@ -201,7 +198,7 @@ export default function PorterVsOtrPage() {
                     <strong>Best for</strong>
                   </td>
                   <td data-label="Porter Freight Funding">
-                    Bad credit, new authority, prior BK operators
+                    Operators rebuilding credit, new authority, prior BK
                   </td>
                   <td data-label="OTR Solutions">
                     Transparency-first, true non-recourse, contract
@@ -217,12 +214,12 @@ export default function PorterVsOtrPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Credit underwriting</strong>
+                    <strong>Underwriting focus</strong>
                   </td>
                   <td data-label="Porter Freight Funding">
-                    Broker-side underwriting
+                    Broker credit
                   </td>
-                  <td data-label="OTR Solutions">Soft pull for fraud only</td>
+                  <td data-label="OTR Solutions">Carrier and broker credit</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -317,11 +314,7 @@ export default function PorterVsOtrPage() {
               Porter Freight Funding is a smaller, owner-operator-focused
               factor purpose-built for the segment most factors decline at
               the front door: lower-credit operators, new MC authorities,
-              and operators with prior bankruptcy. The defining choice is the credit policy &mdash; many operators report onboarding with no personal credit pull, because Porter
-              underwrites the broker (the entity actually paying the
-              receivable) instead of the operator. That&rsquo;s a real
-              shift from how factoring underwriting normally works, and
-              it&rsquo;s the reason Porter shows up in the searches that drive the bad-credit category. The team is modest, the tech is functional rather
+              and operators with prior bankruptcy. The defining choice is the underwriting focus &mdash; Porter says it underwrites mainly on the credit of the broker (the entity actually paying the receivable). How it reviews the carrier is its own policy, which you should confirm with Porter, and approval is not guaranteed. The team is modest, the tech is functional rather
               than polished, and the footprint is primarily US trucking
               &mdash; but the underwriting flexibility is the draw. Rates
               run 1.5&ndash;4% with a 12-month contract default. (See{" "}
@@ -354,8 +347,7 @@ export default function PorterVsOtrPage() {
               company rebranded to OTR Solutions to reflect a broader
               product set: fuel cards, broker tools, ELD integration, and
               credit-check workflows in the portal. The headline feature is
-              true non-recourse priced into the rate. On the bad-credit
-              dimension, OTR&rsquo;s approach differs from Porter&rsquo;s:
+              true non-recourse priced into the rate. On credit, OTR&rsquo;s approach differs from Porter&rsquo;s:
               a soft pull happens for fraud detection, but OTR says the operator&rsquo;s personal credit score isn&rsquo;t the pricing input. Rates 2.5&ndash;5%, no
               long-term contract, customer support partially overseas.
               Aggregate reviews are the strongest in the category &mdash;
@@ -375,7 +367,7 @@ export default function PorterVsOtrPage() {
 
         <section className="ins-sunken">
           <div className="ins-container">
-            <span className="ins-eyebrow">The bad-credit angle</span>
+            <span className="ins-eyebrow">The credit angle</span>
             <h2 className="ins-hero-title">
               Two approaches to the same segment. Pick the one that fits.
             </h2>
@@ -384,16 +376,7 @@ export default function PorterVsOtrPage() {
               Porter &mdash; broker-side underwriting is the structural answer.
             </h3>
             <p className="ins-hero-sub">
-              Porter&rsquo;s answer is to remove the operator from the
-              credit-decision equation entirely. Underwriting evaluates the
-              broker side: who is paying the invoice, what their credit
-              profile and payment history look like. Porter says the operator&rsquo;s personal credit score is not part of that calculation, and many operators report no personal credit pull during onboarding. For operators who don&rsquo;t want any
-              credit-bureau activity tied to the factoring relationship
-              &mdash; rebuilding credit after a BK, minimizing inquiries
-              before a separate financing application, or simply not wanting their credit file touched &mdash; Porter is the structural
-              fit. The category Porter owns isn&rsquo;t &ldquo;bad credit
-              accepted,&rdquo; it&rsquo;s &ldquo;your credit isn&rsquo;t
-              part of the equation.&rdquo;
+              Porter&rsquo;s answer is to center underwriting on the broker side: who is paying the invoice, and what their credit profile and payment history look like. Porter says it underwrites mainly on the credit of the brokers who owe the invoices. How it reviews the carrier is its own policy, so confirm it with Porter before you apply. For operators rebuilding credit after a BK, that focus is why Porter comes up; approval is not guaranteed.
             </p>
 
             <h3>
@@ -404,8 +387,7 @@ export default function PorterVsOtrPage() {
               OTR doesn&rsquo;t advertise &ldquo;no credit check.&rdquo; A
               soft pull happens during onboarding for identity verification
               and fraud detection &mdash; no impact on credit score, and OTR says personal credit doesn&rsquo;t price the rate. What OTR does instead is
-              solve the concentrated-broker-risk problem that hits
-              bad-credit operators: damaged credit often correlates with
+              solve the concentrated-broker-risk problem that hits operators rebuilding credit: damaged credit often correlates with
               thinner broker diversification, which makes broker insolvency
               existential. By pricing true non-recourse into the headline
               rate, OTR transfers broker-credit risk off the operator.
@@ -417,12 +399,11 @@ export default function PorterVsOtrPage() {
               more.
             </h3>
             <p className="ins-hero-sub">
-              For operators rebuilding credit and minimizing all
-              credit-bureau activity, Porter&rsquo;s credit policy is the cleaner fit &mdash; the credit profile stays untouched. For
+              For operators rebuilding credit, Porter&rsquo;s broker-credit underwriting is the closer fit; confirm with Porter how it reviews the carrier. For
               operators with concentrated broker risk who can&rsquo;t
               survive a single broker insolvency, OTR&rsquo;s
-              non-recourse-first model is the structural protection. Both factors work with bad-credit operators that Apex, eCapital, or Triumph often decline; approval is not guaranteed. For the broader
-              product profile of credit-friendly factoring, see{" "}
+              non-recourse-first model is the structural protection. Both factors work with operators rebuilding credit; approval is not guaranteed. For the broader
+              product profile of broker-credit factoring, see{" "}
               <Link href="/factoring/no-credit-check">
                 factoring that underwrites your brokers
               </Link>
@@ -507,8 +488,7 @@ export default function PorterVsOtrPage() {
               processing fee, no per-broker credit-check fee, no surcharge
               for BOLT. For operators who run their own books, predictable
               monthly factoring expense compounds into better cash-flow
-              planning, and fewer line-item surprises on the statement. For
-              bad-credit operators specifically, this matters &mdash; the
+              planning, and fewer line-item surprises on the statement. For operators rebuilding credit, this matters &mdash; the
               category is full of factors that take on damaged credit and then layer in fees that drift effective rate well above
               headline. OTR doesn&rsquo;t do that.
             </p>
@@ -523,8 +503,7 @@ export default function PorterVsOtrPage() {
               effective rate isn&rsquo;t a single multiplication. Operators
               priced low with a clean fee mix stay low. Mid-range operators
               who hit add-on fees can drift 30&ndash;60 basis points above
-              headline. The structure isn&rsquo;t unusual for the
-              bad-credit category; it&rsquo;s just not as simple as
+              headline. The structure isn&rsquo;t unusual for this category; it&rsquo;s just not as simple as
               OTR&rsquo;s.
             </p>
 
@@ -601,8 +580,7 @@ export default function PorterVsOtrPage() {
               <Link href="/factoring/no-credit-check">
                 factoring that underwrites your brokers
               </Link>{" "}
-              &mdash; many of the same flexibility tradeoffs apply across
-              the bad-credit segment.
+              &mdash; many of the same flexibility tradeoffs apply across this segment.
             </p>
           </div>
         </section>
@@ -717,22 +695,21 @@ export default function PorterVsOtrPage() {
             <ul className="product-list">
               <li>
                 <strong>
-                  Operators who want zero credit-bureau activity.
+                  Operators who want underwriting centered on their brokers.
                 </strong>{" "}
-                Porter&rsquo;s broker-side underwriting is the structural answer for operators who are rebuilding credit, minimizing inquiries before a separate financing application, or simply don&rsquo;t want their credit file touched. Many operators report no personal credit pull during onboarding.
+                Porter says it underwrites mainly on the credit of the brokers who owe the invoices, which is why it comes up for operators who are rebuilding credit. How it reviews the carrier is its own policy; confirm it with Porter. Approval is not guaranteed.
               </li>
               <li>
                 <strong>
-                  Lower-credit operators who&rsquo;ve been declined elsewhere.
+                  Lower-credit operators looking for another option.
                 </strong>{" "}
-                Porter works with credit profiles that Apex, eCapital, or Triumph often decline. The underwriting evaluates the broker side of the receivable, not the operator&rsquo;s personal credit; approval is not guaranteed.
+                Porter says it works with lower credit profiles and underwrites mainly on the broker side of the receivable; approval is not guaranteed.
               </li>
               <li>
                 <strong>
                   Brand-new authorities who want the fewest onboarding steps.
                 </strong>{" "}
-                With minimal credit underwriting on the operator side,
-                Porter has fewer onboarding steps for new MCs than factors that run a hard credit decision. For broader new-authority context, see{" "}
+                Porter&rsquo;s onboarding for new MCs is built around the brokers you haul for. For broader new-authority context, see{" "}
                 <Link href="/new-authority-truck-financing">
                   new authority truck financing
                 </Link>
@@ -819,12 +796,11 @@ export default function PorterVsOtrPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">When neither fits</span>
             <h2 className="ins-hero-title">
-              The other names on the bad-credit panel.
+              The other names on the panel.
             </h2>
             <p className="ins-hero-sub">
               Porter Freight Funding and OTR Solutions are the two factors
-              that show up most often for bad-credit and non-traditional
-              underwriting, but they&rsquo;re not the only names on the
+              that show up most often for operators rebuilding credit, but they&rsquo;re not the only names on the
               Dispatched panel. A few specific cases route to different
               factors first:
             </p>
@@ -857,7 +833,7 @@ export default function PorterVsOtrPage() {
             </p>
 
             <h3>
-              For deeper bad-credit + new-authority context.
+              For deeper credit-rebuilding and new-authority context.
             </h3>
             <p className="ins-hero-sub">
               The full panel, the criteria we use to pick between them,
@@ -886,10 +862,7 @@ export default function PorterVsOtrPage() {
               You don&rsquo;t need to apply to both.
             </h2>
             <p className="ins-hero-sub">
-              Porter and OTR are both on Dispatched&rsquo;s panel, and both
-              factor operators that Apex, eCapital, and Triumph decline at
-              the front door. Approval is not guaranteed with either. The question is which path fits: zero credit-bureau activity (Porter) or soft
-              fraud pull with non-recourse coverage (OTR); 12-month
+              Porter and OTR are both on Dispatched&rsquo;s panel, and both work with operators who are rebuilding credit. Approval is not guaranteed with either. The question is which path fits: broker-credit underwriting (Porter) or non-recourse coverage (OTR); 12-month
               lock-in (Porter) or month-to-month (OTR); concentrated broker
               risk needing non-recourse (OTR) or diversified (either);
               around-the-clock payment on BOLT (OTR) or business-hours funding enough (Porter); smaller-team US service (Porter) or
@@ -928,7 +901,7 @@ export default function PorterVsOtrPage() {
         <section>
           <div className="ins-container">
             <h2 className="ins-hero-title">
-              Stop guessing. Get matched to the right bad-credit factor.
+              Stop guessing. See which factor fits your operation.
             </h2>
             <p className="ins-hero-sub">
               One application, one profile-aware match, no spam from the
