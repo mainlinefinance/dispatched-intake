@@ -128,9 +128,9 @@ export function metaInsuranceDeep(args: {
 /* /trucking-loans/{state} */
 export function metaTruckingLoansState(stateName: string): TitleAndDescription {
   const title = titleRange([
-    `${stateName} Trucking Loans — Same-Day Funding | Dispatched`,
-    `${stateName} Trucking Loans · Same-Day Funding | Dispatched`,
-    `Trucking Loans in ${stateName} — Same-Day Funding | Dispatched`,
+    `${stateName} Trucking Loans — Owner-Operators | Dispatched`,
+    `${stateName} Trucking Loans · Owner-Operators | Dispatched`,
+    `Trucking Loans in ${stateName} — Soft Pull First | Dispatched`,
   ]);
   const description = descRange([
     `Trucking loans in ${stateName} for owner-operators and small fleets. Working capital, equipment, repair financing. Soft pull first, timing depends on the lender and your documents.`,
@@ -147,7 +147,7 @@ export function metaTruckingLoansCity(args: {
 }): TitleAndDescription {
   const title = titleRange([
     `${args.cityName}, ${args.stateAbbr} Trucking Loans · Apply Today | Dispatched`,
-    `${args.cityName}, ${args.stateAbbr} Trucking Loans — Same-Day Funding | Dispatched`,
+    `${args.cityName}, ${args.stateAbbr} Trucking Loans — Soft Pull | Dispatched`,
     `${args.cityName}, ${args.stateAbbr} Trucking Loans — Apply Today | Dispatched`,
   ]);
   const description = descRange([

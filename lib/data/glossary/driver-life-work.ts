@@ -70,7 +70,7 @@ export const DRIVER_LIFE_WORK_TERMS: ReadonlyArray<GlossaryTerm> = [
       {
         h2: "Why it matters for trucking finance",
         body:
-          "Team operations have meaningfully different financing dynamics — higher revenue per truck but two driver salaries (if the drivers are not the owners). The doubled mileage drives faster equipment depreciation and earlier replacement cycles. Lender underwriting for team operations focuses on per-truck revenue against the higher operating cost structure. Insurance pricing reflects the higher miles and exposure but is often offset by the team-lane rate premium. Some factoring companies offer team-specific programs to match the faster cash-cycle needs.",
+          "Team operations have meaningfully different financing dynamics — higher revenue per truck but two driver salaries (if the drivers are not the owners). The doubled mileage drives faster equipment depreciation and earlier replacement cycles. Lender underwriting for team operations focuses on per-truck revenue against the higher operating cost structure. Insurance pricing reflects the higher miles and exposure but is often offset by the team-lane rate premium. Some factoring companies offer team-specific programs to match the cash-cycle needs of team operations.",
       },
     ],
     relatedTerms: ["slip-seat", "expedited", "sleeper-berth", "hos"],

@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "Is the qualifier the same as applying?",
-    a: "No. The qualifier is a fit estimator, not an application. You see the product category that matches your inputs and the typical panel APR range, but you do not get a soft-approval, a lender shortlist, or a term sheet. Those come from the full application at /apply, which takes about 7 minutes and runs a soft pull.",
+    a: "No. The qualifier is a fit estimator, not an application. You see the product category that matches your inputs and the typical panel APR range, but you do not get a soft-approval, a lender shortlist, or a term sheet. Those come from the full application at /apply, which runs a soft pull.",
   },
   {
     q: "What information do you collect on the qualifier?",

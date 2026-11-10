@@ -118,7 +118,7 @@ export default function GlossaryIndexPage() {
             </p>
             <div className="research-cta-grid">
               <Link href="/qualify" className="research-cta-card">
-                <h3>Qualify in 3 minutes</h3>
+                <h3>Check your funding fit</h3>
                 <p>
                   Soft pull, no credit impact. We route you to the lender
                   panel matching your authority age, credit profile, and

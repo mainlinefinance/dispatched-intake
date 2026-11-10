@@ -41,7 +41,7 @@ export const TOPIC_INFO: Record<ContentTopic, TopicInfo> = {
     slug: "factoring",
     label: "Factoring & Cash Flow",
     description:
-      "Invoice factoring is how most owner-operators turn 30-60 day broker pay into same-day cash. This topic covers recourse vs non-recourse, advance rates, broker credit, factoring contracts, chargebacks, fuel-card programs, and head-to-head comparisons of the major trucking-factoring desks. If your revenue is hostage to broker payment cycles, the playbook here is the one you actually need — built around the math of the rate spread, the broker-credit infrastructure, and the contract terms that decide whether factoring helps you or eats your margin.",
+      "Invoice factoring is how most owner-operators turn 30-60 day broker pay into cash they can use now. This topic covers recourse vs non-recourse, advance rates, broker credit, factoring contracts, chargebacks, fuel-card programs, and head-to-head comparisons of the major trucking-factoring desks. If your revenue is hostage to broker payment cycles, the playbook here is the one you actually need — built around the math of the rate spread, the broker-credit infrastructure, and the contract terms that decide whether factoring helps you or eats your margin.",
   },
   "equipment-financing": {
     slug: "equipment-financing",

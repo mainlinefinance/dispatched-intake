@@ -60,7 +60,7 @@ const STATIC_VERTICALS: ReadonlyArray<SearchableItem> = [
     url: "/trucking",
     title: "Trucking capital — match with trucking-friendly lenders",
     description:
-      "Working capital, equipment financing, repair loans, and factoring for owner-operators and small fleets. Match in minutes.",
+      "Working capital, equipment financing, repair loans, and factoring for owner-operators and small fleets. Soft pull to start.",
     type: "vertical",
   },
   {
@@ -95,7 +95,7 @@ const STATIC_VERTICALS: ReadonlyArray<SearchableItem> = [
     url: "/bad-credit-truck-financing",
     title: "Bad credit truck financing",
     description:
-      "Truck financing options for sub-580 FICO borrowers and recent bankruptcies. Honest about trade-offs in rate and down payment.",
+      "Truck financing options for borrowers with lower credit profiles and recent bankruptcies. Honest about trade-offs in rate and down payment.",
     type: "vertical",
   },
   {
@@ -170,7 +170,7 @@ const STATIC_VERTICALS: ReadonlyArray<SearchableItem> = [
   },
   {
     url: "/qualify",
-    title: "Qualify in 3 minutes — see your funding options",
+    title: "Check your funding fit — see your options",
     description:
       "Soft pull, no credit impact. Match with the lender panel that fits your authority age, credit profile, and capital need.",
     type: "vertical",
@@ -310,7 +310,7 @@ const STATIC_COMPARISONS: ReadonlyArray<ComparisonEntry> = [
     slug: "bluevine-vs-ondeck",
     title: "Bluevine vs OnDeck",
     description:
-      "Online working-capital lines for SMB owner-operators — same-day decisioning compared on file profile and ceiling.",
+      "Online working-capital lines for SMB owner-operators — decision speed, file profile, and ceiling compared.",
   },
   {
     slug: "porter-freight-funding-vs-otr-solutions",
@@ -346,7 +346,7 @@ const STATIC_COMPARISONS: ReadonlyArray<ComparisonEntry> = [
     slug: "apex-capital-vs-porter-freight-funding",
     title: "Apex Capital vs Porter Freight Funding",
     description:
-      "Clean-file owner-operator factoring (Apex) vs sub-580 FICO factoring (Porter).",
+      "Clean-file owner-operator factoring (Apex) vs bad-credit factoring (Porter).",
   },
   {
     slug: "ecapital-vs-porter-freight-funding",

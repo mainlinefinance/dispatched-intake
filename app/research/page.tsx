@@ -96,6 +96,27 @@ export default function ResearchIndexPage() {
               current figure at the source before you act on it: rates,
               rules, and prices move between editions.
             </p>
+            <h2>Who the reports are for</h2>
+            <p>
+              The reader we write for is an owner-operator or the owner of
+              a small fleet who has to make a decision this quarter: whether
+              to renew with the same insurer, whether a factoring contract
+              is still worth its fee, whether to replace a truck or repair
+              it. Brokers, lenders, and insurance producers who work with
+              those operators use the same reports to see the market from
+              the carrier&apos;s side. We keep trade jargon to what a
+              working driver already uses and define the rest in the{" "}
+              <Link href="/glossary">glossary</Link>.
+            </p>
+            <h2>How often they are updated</h2>
+            <p>
+              Annual reports are revised when a source they rely on
+              publishes a new edition or when a rule they describe changes.
+              Weekly and monthly numbers, such as diesel prices, are not
+              kept in the reports; they live on{" "}
+              <Link href="/pulse">Dispatched Pulse</Link>, which refreshes on
+              a fixed schedule.
+            </p>
             <h2>Corrections</h2>
             <p>
               If you find an error or a source that has been superseded,
