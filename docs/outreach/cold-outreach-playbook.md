@@ -252,31 +252,99 @@ Each rule comes from a 1★ review, a lawsuit or a regulation.
 
 ## 6. Infrastructure
 
-**Domains and inboxes:**
-- Use separate sending domains (not dispatched.finance), each with SPF, DKIM
-  and DMARC set.
-- Google Workspace: 2 inboxes per domain, ramped by 5/day each week up to
-  15/day.
-- Azure: under 5/day per inbox.
-- Start warming replacement domains in month 2.
-- Sending: EmailBison or similar, with a one-click unsubscribe header.
-- Domain health: Peeker or similar.
+### Phase 1 setup: 4 domains, 8 inboxes
 
-**Verify before every import.** Use MillionVerifier or NeverBounce. For the
-first sends, drop catch-all and unknown results. The FMCSA form is refiled
-only every two years, so expect stale addresses.
+| Piece | Choice | Cost (checked Nov 2026) |
+|---|---|---|
+| Sending domains | 4 `.com` lookalikes of the brand (e.g. getdispatched.com, trydispatched.com). No hyphens or numbers. Each one 301-redirects to dispatched.finance. | Registrar price, roughly $10–15/year each |
+| Inboxes | Google Workspace Business Starter, 2 users per domain = 8 | $8.40/user/month flexible, $7 annual; a 50%-off intro is running |
+| Sequencer + warm-up | A small plan on Instantly, Smartlead or PlusVibe (PlusVibe: $37/month for 25,000 emails) | Tens of dollars a month |
+| Later | EmailBison ($599/month for 500,000 emails, dedicated IPs) once volume passes ~25–50K emails/month | Not for phase 1 |
+| Verification | MillionVerifier or NeverBounce, pay as you go | Small |
+| Domain health | Peeker, plus Google Postmaster Tools (free) | — |
 
-**Gmail is the binding limit.** 85% of the cohort is on free mail. Google asks
-senders to keep spam complaints under 0.1%, which is 1 per 1,000 emails, and
-never reach 0.3%. Small, tight batches beat volume.
+**Put the sending domains in their own Google Workspace account,** not the one
+that hosts dispatched.finance mail. If Google suspends a cold email account,
+your real inbox and lead notifications stay up. One account can hold all four
+sending domains (one primary, three secondary).
 
-**Inbox count:**
+**Use real people as senders.** CAN-SPAM requires an accurate From name, and
+BTC's 1★ reviews complain about spoofing. For example, "{first name} at Dispatched",
+not an invented persona.
+
+### DNS for each sending domain
+
+| Record | Host | Value |
+|---|---|---|
+| MX | `@` | `smtp.google.com` (priority 1) |
+| SPF (TXT) | `@` | `v=spf1 include:_spf.google.com ~all` |
+| DKIM (TXT) | `google._domainkey` | Generated in Admin console → Apps → Google Workspace → Gmail → Authenticate email (2048-bit), then click Start authentication |
+| DMARC (TXT) | `_dmarc` | `v=DMARC1; p=none; rua=mailto:<reports address>`. Move to `p=quarantine` after 3–4 clean weeks. |
+| Postmaster (TXT) | `@` | Verification string from postmaster.google.com |
+| Redirect | `@`, `www` | 301 to https://dispatched.finance |
+
+Check each domain once DNS has propagated:
+
+```bash
+for d in getdispatched.com trydispatched.com; do
+  echo "== $d"; dig +short MX "$d"; dig +short TXT "$d"
+  dig +short TXT "google._domainkey.$d"; dig +short TXT "_dmarc.$d"
+done
+```
+
+Also confirm dispatched.finance has its own SPF, DKIM and DMARC for its
+transactional mail. It never sends cold email.
+
+### Sequencer settings
+
+- Connect all 8 inboxes and **turn warm-up on immediately. Leave it on for as
+  long as you send cold email.**
+- **Turn open and click tracking off.** Pixels and rewritten links hurt
+  delivery, and email 1 has no link anyway. Replies are the metric.
+- Plain text, sent on weekday mornings in the recipient's time zone.
+- Stop the sequence on any reply.
+- One global suppression list. A "stop" reply is suppressed the same day; the
+  law allows 10 business days, we don't need them. Turn on a one-click
+  unsubscribe header if the tool supports it.
+- Custom variables come straight from the cohort CSV: `legal_name`,
+  `six_month_date`, `tier`, `state`.
+- **Labels in the shared inbox:** `yes`, `not-now`, `factoring`, `stop`,
+  `wrong-contact`. Answer `yes` the same day.
+
+### Ramp
+
+| Week | Cold sends per inbox per day | 8 inboxes per day | Per week |
+|---|---|---|---|
+| 1–2 | 0 (warm-up only) | 0 | 0 |
+| 3 | 5 | 40 | 200 |
+| 4 | 10 | 80 | 400 |
+| 5+ | 15 | 120 | 600 |
+
+Before the first cold send, run one inbox placement test (built into most
+sequencers, or GlockApps).
+
+Add domains in pairs when the scale gates in section 8 pass. Start warming
+replacement domains in month 2. Microsoft inboxes (under 5/day each) are an
+option later to spread risk, not a phase 1 need.
 
 ```
 inboxes = (carriers per week × emails per carrier) ÷ (5 days × 15 per inbox per day)
 ```
 
-300 ICP-1 carriers a week × 3 emails ÷ 75 ≈ 12 inboxes (6 domains).
+### Lists and limits
+
+**Verify before every import.** Use MillionVerifier or NeverBounce. For the
+first sends, import only addresses that come back as valid; drop catch-all,
+unknown and invalid. The FMCSA form is refiled only every two years, so
+expect stale addresses.
+
+**Gmail is the binding limit.** 85% of the cohort is on free mail. Google asks
+senders to keep spam complaints under 0.1%, which is 1 per 1,000 emails, and
+never reach 0.3%. Small, tight batches beat volume.
+
+**Postal address.** The CAN-SPAM footer needs a real postal address. A P.O.
+box registered with USPS, or a private mailbox registered with a commercial
+mail receiving agency, both qualify.
 
 ## 7. Where the yes lands: intake changes
 
@@ -322,7 +390,8 @@ lead. Ask BTC for a funded-deal export to close the loop.
 
 **Week 1:**
 - Ask BTC the open questions below.
-- Buy 3 sending domains, set up inboxes and DNS, start warm-up.
+- Buy 4 sending domains and set up 8 inboxes and DNS (section 6).
+- Connect the sequencer and start warm-up.
 - Verify the ICP-1 list.
 - Write the footer with the real postal address.
 
@@ -332,7 +401,10 @@ lead. Ask BTC for a funded-deal export to close the loop.
   any yes arrives.
 
 **Week 3:**
-- First sends: about 300 ICP-1 carriers and 100 shops, at warm-up limits.
+- First cold sends at 5 per inbox per day (40/day across 8 inboxes), rising
+  to 15 by week 5.
+- The first 300 ICP-1 carriers and 100 shops go out over weeks 3–4, with
+  follow-ups after.
 - Answer every yes the same day; Claude drafts each readout from the carrier
   row.
 
