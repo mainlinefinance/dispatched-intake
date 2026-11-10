@@ -156,7 +156,7 @@ export default function LendersIndexPage() {
             <p className="research-subhead">
               12 curated trucking lenders covering factoring, equipment
               financing, working capital, and asset-based lending. Filterable
-              by state and use case. Updated May 2026.
+              by state and use case.
             </p>
             <p className="research-meta">
               {lenders.length} lenders · {STATE_INFO.length} state pages ·

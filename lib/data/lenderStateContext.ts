@@ -60,7 +60,7 @@ const CURATED: Record<
       "California is a principal US import gateway. The Ports of Los Angeles and Long Beach anchor a large drayage market, and Inland Empire warehousing in Riverside and San Bernardino counties forms a second freight hub that feeds long-haul outbound to the Midwest and East Coast. The Central Valley generates seasonal produce reefer freight, and the Port of Oakland serves Northern California. The regulatory environment is demanding for trucking: CARB emissions rules govern which diesel engines may operate in the state, AB 5 has reshaped lease-on owner-operator arrangements, and SB 1235 requires standardized cost disclosures on many small-business financing contracts. Compliant equipment is a real cost consideration for carriers entering California lanes.",
     corridors: [
       "I-5 Los Angeles-Sacramento (the Central Valley spine)",
-      "I-15 Los Angeles-Las Vegas (the Inland Empire to Nevada warehouse corridor)",
+      "I-15 Inland Empire-Barstow-Las Vegas (the Nevada warehouse corridor)",
       "I-10 Los Angeles-Phoenix (Southern California to the Sun Belt)",
       "Port of LA/Long Beach drayage routes (San Pedro and Wilmington terminals to the Inland Empire)",
     ],
@@ -191,7 +191,7 @@ const CURATED: Record<
       "Detroit-Windsor and Port Huron-Sarnia border crossings",
     ],
     regulatoryNote:
-      "Cross-border loads into Ontario require an ACE eManifest filed before arrival, and FAST enrolment gives access to dedicated lanes at the crossings. Michigan permits heavier gross weights on multi-axle configurations than most states, which matters for equipment choice on intrastate work.",
+      "Cross-border loads require an eManifest filed before arrival (ACI into Canada, ACE into the US), and FAST enrolment gives access to dedicated lanes at the crossings. Michigan permits heavier gross weights on multi-axle configurations than most states, which matters for equipment choice on intrastate work.",
   },
   MO: {
     market:

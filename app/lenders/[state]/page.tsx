@@ -146,7 +146,7 @@ export default async function LendersStatePage({
             <p className="research-subhead">
               Curated lenders serving {s.name} carriers: factoring,
               equipment, working capital, and ABL. State-specific context
-              on registration, IFTA, and IRP. Updated May 2026.
+              on registration, IFTA, and IRP.
             </p>
             <p className="research-meta">
               {lenders.length} lenders · Updated {today} ·{" "}
@@ -299,7 +299,7 @@ export default async function LendersStatePage({
               </Link>
             </div>
             <p style={{ marginTop: "1.25rem" }}>
-              Nearby states:{" "}
+              Other states:{" "}
               {STATE_INFO.filter((x) => x.code !== s.code)
                 .slice(0, 6)
                 .map((x, i, arr) => (
