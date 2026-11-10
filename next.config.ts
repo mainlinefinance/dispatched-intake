@@ -6,6 +6,11 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 
 const nextConfig: NextConfig = {
+  // The AgentMail SDK lazily imports an optional payments peer
+  // (@x402/fetch) that is not installed. Bundling fails on that import;
+  // loading the SDK with Node's own require leaves it unresolved until
+  // used, which the outreach routes never do.
+  serverExternalPackages: ["agentmail"],
   // Defensive code-splitting for packages with many named exports. Today these
   // deps are tree-shaken out of the production bundle entirely (nothing in
   // app/ imports them — they're only referenced from the orphaned intake

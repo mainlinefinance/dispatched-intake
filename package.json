@@ -15,12 +15,16 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "indexnow:submit": "node scripts/submit-indexnow.mjs",
-    "indexnow:dry-run": "INDEXNOW_DRY_RUN=true node scripts/submit-indexnow.mjs"
+    "indexnow:dry-run": "INDEXNOW_DRY_RUN=true node scripts/submit-indexnow.mjs",
+    "outreach:preview": "node --no-warnings --experimental-strip-types scripts/outreach/preview.ts",
+    "outreach:import": "node --no-warnings --experimental-strip-types scripts/outreach/import-fmcsa.ts",
+    "outreach:send": "node --no-warnings --experimental-strip-types scripts/outreach/send.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@next/third-parties": "^16.2.6",
     "@xstate/react": "^6.1.0",
+    "agentmail": "^0.5.53",
     "framer-motion": "^12.38.0",
     "libphonenumber-js": "^1.12.41",
     "next": "16.2.4",
