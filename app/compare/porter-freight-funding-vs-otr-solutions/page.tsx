@@ -616,8 +616,7 @@ export default function PorterVsOtrPage() {
               Difference: OTR offers a payment option outside business hours; Porter does not.
             </h3>
             <p className="ins-hero-sub">
-              OTR&rsquo;s BOLT operates around the clock, including weekends and holidays; Porter pays on a business-hours schedule. Porter&rsquo;s business-hours
-              process doesn&rsquo;t cover that case. For operators on
+              OTR&rsquo;s BOLT operates around the clock, including weekends and holidays; Porter pays on a business-hours schedule. For operators on
               predictable Monday&ndash;Friday lanes, either factor works.
               Timing on any invoice depends on the factor and your
               paperwork.

@@ -842,8 +842,7 @@ export default function ApexVsTbsFactoringPage() {
             </h2>
             <p className="ins-hero-sub">
               Apex and TBS are both legitimate factors with
-              legitimate use cases. The question is which one fits; approval is not guaranteed with either.
-              The question is which fits the specific shape of your
+              legitimate use cases. Approval is not guaranteed with either. The question is which fits the specific shape of your
               operation right now: whether you have an active MC#,
               whether you&rsquo;re in your first year or your fifth,
               how much you spend on outsourced bookkeeping today,

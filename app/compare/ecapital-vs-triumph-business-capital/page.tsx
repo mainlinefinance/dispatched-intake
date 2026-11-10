@@ -395,8 +395,7 @@ export default function EcapitalVsTriumphPage() {
               tier volume on long-tenured accounts. Most mid-fleets quote
               2&ndash;2.75% recourse and 2.5&ndash;3.25% non-recourse. The
               advance rate is conservative: 85&ndash;95% versus
-              eCapital&rsquo;s up-to-100%. That&rsquo;s the trade-off &mdash;
-              less per invoice, but less up front. The $20M ceiling is
+              eCapital&rsquo;s up-to-100%. That&rsquo;s the trade-off: a lower advance on each invoice. The $20M ceiling is
               structural: above that, Triumph routes you into ABL through
               the parent bank.
             </p>

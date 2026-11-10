@@ -432,7 +432,7 @@ export default function ApexVsEcapitalPage() {
             <h3>Difference by use case.</h3>
             <p className="ins-hero-sub">
               <strong>Payment options.</strong> Apex offers blynk&reg;, a payment option that operates outside banking hours; eCapital&rsquo;s InstaPay operates during business hours. Timing on any invoice depends on the factor and your paperwork.{" "}
-              <strong>eCapital on integrations and reporting.</strong>{" "}
+              <strong>Integrations and reporting.</strong>{" "}
               The eCapital portal exposes deeper analytics, multi-entity
               roll-ups, broker credit dashboards, and accounting
               integrations (QuickBooks, Sage, NetSuite) that are
@@ -699,7 +699,7 @@ export default function ApexVsEcapitalPage() {
             </h2>
             <p className="ins-hero-sub">
               Apex Capital and eCapital are both on Dispatched&rsquo;s
-              panel, and they&rsquo;re both legitimate factors. The question is which one fits; approval is not guaranteed with either. The question is which
+              panel, and they&rsquo;re both legitimate factors. Approval is not guaranteed with either. The question is which
               one fits the specific shape of your operation: how many
               trucks you run, how much you factor monthly, what your
               broker mix looks like, how much you spend on fuel, whether

@@ -965,8 +965,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
             <p className="ins-hero-sub">
               Apex Capital and Triumph Business Capital are both on
               Dispatched&rsquo;s panel, and both are legitimate
-              factors. The question is which one fits; approval is not guaranteed with either. The question
-              is which structural lever matters most: premium service,
+              factors. Approval is not guaranteed with either. The question is which structural lever matters most: premium service,
               the deepest fuel program, the around-the-clock payment rail,
               and the cleanest contract exit (Apex), or bank-grade
               non-recourse reserves and a direct path into ABL through

@@ -871,8 +871,7 @@ export default function ApexVsRtsFinancialPage() {
             <p className="ins-hero-sub">
               Apex Capital and RTS Financial are both on Dispatched&rsquo;s
               factoring panel, and they&rsquo;re both legitimate
-              factors. The question is which one fits; approval is not guaranteed with either. The question
-              is which one fits the specific shape of your operation:
+              factors. Approval is not guaranteed with either. The question is which one fits the specific shape of your operation:
               how many loads you run per month, what your contract
               tolerance looks like, how much fuel you burn, whether you
               prefer recourse or non-recourse, and whether you

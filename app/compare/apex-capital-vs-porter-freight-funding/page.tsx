@@ -832,9 +832,7 @@ export default function ApexVsPorterPage() {
             <p className="ins-hero-sub">
               Apex Capital and Porter Freight Funding are both on
               Dispatched&rsquo;s panel, and both are legitimate factors
-              with real specialisms. The question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed,
-              though at very different effective rates depending on your
-              credit profile. The question is which one fits the
+              with real specialisms. Approval is not guaranteed with either, and effective rates differ depending on your credit profile. The question is which one fits the
               specific shape of your operation: where your credit sits, whether you&rsquo;ve had a recent BK, how much you
               spend on fuel, whether you need weekend cash, and where
               you expect your credit to be in 24 months. Apply to both

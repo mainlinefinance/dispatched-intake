@@ -945,8 +945,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
             <p className="ins-hero-sub">
               Apex Capital and Truckstop Go Capital are both on
               Dispatched&rsquo;s panel, and they&rsquo;re both
-              legitimate factors. The question is which one fits; approval is not guaranteed with either.
-              The question is which one fits the specific shape of your
+              legitimate factors. Approval is not guaranteed with either. The question is which one fits the specific shape of your
               operation: how much of your dispatch runs through the
               Truckstop board, how much you spend on fuel, how often you
               expect to need weekend payments, whether you want a named

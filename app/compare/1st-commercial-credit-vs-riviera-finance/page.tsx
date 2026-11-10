@@ -869,8 +869,7 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
             </h2>
             <p className="ins-hero-sub">
               Both 1CC and Riviera are on Dispatched&rsquo;s panel, and
-              both are legitimate. The question is which one fits; approval is not guaranteed with either. The
-              question is which fits the shape of your operation: how
+              both are legitimate. Approval is not guaranteed with either. The question is which fits the shape of your operation: how
               many trucks, growing toward the ABL threshold or
               stabilizing in mid-tier, purely U.S. or cross-border,
               multiple verticals or pure trucking, factoring as utility
