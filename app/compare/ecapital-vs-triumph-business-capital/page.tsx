@@ -892,8 +892,7 @@ export default function EcapitalVsTriumphPage() {
             <p className="ins-hero-sub">
               eCapital and Triumph Business Capital are both on
               Dispatched&rsquo;s panel, and they&rsquo;re both legitimate
-              factors with deep books and real non-recourse programs. The
-              question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed. The question is
+              factors with deep books and real non-recourse programs. Approval is not guaranteed with either. The question is
               which one fits the specific shape of your operation: how
               much non-recourse depth you actually need, whether you
               operate cross-border, whether you want a bank relationship

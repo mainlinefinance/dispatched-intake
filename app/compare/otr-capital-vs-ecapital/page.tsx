@@ -919,7 +919,7 @@ export default function OtrVsEcapitalPage() {
             </h2>
             <p className="ins-hero-sub">
               OTR Solutions and eCapital are both on Dispatched&rsquo;s
-              panel and both legitimate factors. The question is which one fits; approval is not guaranteed with either. The question is which one fits your operation: do you
+              panel and both legitimate factors. Approval is not guaranteed with either. The question is which one fits your operation: do you
               operate cross-border, do you anticipate graduating into ABL,
               how concentrated is your broker risk, how predictable do you
               need monthly factoring expense to be. Apply to both directly

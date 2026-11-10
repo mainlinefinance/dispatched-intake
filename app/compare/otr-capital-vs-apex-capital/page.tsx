@@ -994,7 +994,7 @@ export default function OtrVsApexPage() {
             <p className="ins-hero-sub">
               OTR Solutions and Apex Capital are both on
               Dispatched&rsquo;s panel, and they&rsquo;re both legitimate
-              factors with strong review bases. The question is which one fits; approval is not guaranteed with either. The question is which one fits the specific
+              factors with strong review bases. Approval is not guaranteed with either. The question is which one fits the specific
               shape of your operation: how concentrated your broker risk
               is, whether you need non-recourse priced into the headline
               rate or available as an upgrade, whether you want a

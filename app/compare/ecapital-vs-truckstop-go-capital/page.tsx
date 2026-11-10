@@ -887,7 +887,7 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
             <p className="ins-hero-sub">
               eCapital and Truckstop Go Capital are both on
               Dispatched&rsquo;s panel, and they are both legitimate
-              factors. The question is which one fits; approval is not guaranteed with either. The question is which one fits
+              factors. Approval is not guaranteed with either. The question is which one fits
               the specific shape of your operation: how many trucks you
               run, how much you factor monthly, where your freight comes
               from, whether you run any Canadian volume, whether you want

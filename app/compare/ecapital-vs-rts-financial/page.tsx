@@ -971,9 +971,7 @@ export default function EcapitalVsRtsFinancialPage() {
             </h2>
             <p className="ins-hero-sub">
               eCapital and RTS Financial are both on Dispatched&rsquo;s
-              factoring panel, and both are legitimate factors. The
-              question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed. The
-              question is which one fits the specific shape of your
+              factoring panel, and both are legitimate factors. Approval is not guaranteed with either. The question is which one fits the specific shape of your
               operation: how many loads per month you run, whether
               you cross the Canadian border, whether you want a single
               specialist or a multi-product platform, whether the
