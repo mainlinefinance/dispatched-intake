@@ -614,33 +614,28 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               Apex blynk&reg; &mdash; a payment rail that runs around the clock.
             </h3>
             <p className="ins-hero-sub">
-              Apex&rsquo;s blynk&reg; funding system is genuinely
-              differentiated. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was
+              Apex&rsquo;s blynk&reg; is a payment option that operates outside banking hours. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was
               built in-house and has been running at scale for several
-              years. blynk&reg; is the single most differentiated
-              owner-op funding rail in the category, full stop.
+              years.
             </p>
 
             <h3>
               Triumph &mdash; a business-hours ACH rail.
             </h3>
             <p className="ins-hero-sub">
-              Triumph pays verified invoices during business hours, on standard ACH cutoffs. There&rsquo;s no around-the-clock payout product. Bank-grade verification means Triumph will sometimes pause an invoice for additional broker credit review. The pause protects the non-recourse program &mdash; a
-              feature, not a bug &mdash; but for weekend or after-hours payment needs, Triumph doesn&rsquo;t fit.
+              Triumph pays verified invoices during business hours, on standard ACH cutoffs. There&rsquo;s no around-the-clock payout product. Bank-grade verification means Triumph will sometimes pause an invoice for additional broker credit review. The pause protects the non-recourse program &mdash; a feature, not a bug &mdash; and Triumph does not offer a payment option outside banking hours.
             </p>
 
-            <h3>Apex for weekend payments, no real difference on weekdays.</h3>
+            <h3>Difference: when each payment option operates.</h3>
             <p className="ins-hero-sub">
               <strong>
-                Operators who need weekend or after-hours payments: Apex.
+                Outside banking hours:
               </strong>{" "}
-              blynk&reg; is best-in-class for the owner-op profile that
-              cares about Friday-night funding.{" "}
+              Apex offers blynk&reg;; Triumph does not offer an equivalent.{" "}
               <strong>
-                Day-to-day steady-state operators: roughly a tie.
+                During business hours:
               </strong>{" "}
-              Both pay during business hours, and the gap shrinks to almost nothing for operators who don&rsquo;t
-              need cash before Monday morning.
+              both pay on standard cutoffs. Timing on any invoice depends on the factor and your paperwork.
             </p>
           </div>
         </section>
@@ -764,7 +759,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Lower credit profiles and new authority</span>
             <h2 className="ins-hero-title">
-              Both accept. Apex is built for it.
+              Two program structures: a startup program and bank-owned underwriting.
             </h2>
 
             <h3>Apex &mdash; structured startup program.</h3>
@@ -774,21 +769,17 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               bankruptcy isn&rsquo;t an automatic decline; minimum
               monthly volume is set low enough that single-truck
               owner-ops fit. This is the segment Apex was built for, and
-              the underwriting reflects that. For a brand-new owner-op
-              activating MC# this week, Apex is the right call.
+              the underwriting reflects that. Approval is not guaranteed.
             </p>
 
             <h3>
-              Triumph &mdash; accepts, priced conservatively.
+              Triumph &mdash; considered, priced conservatively.
             </h3>
             <p className="ins-hero-sub">
-              Triumph factors bad credit and new authority, but bank-
-              owned underwriting prices them conservatively. Lower credit profiles are considered; prior bankruptcy isn&rsquo;t an
+              Triumph considers lower credit profiles and new authorities; approval is not guaranteed, and bank-owned underwriting prices them conservatively. Lower credit profiles are considered; prior bankruptcy isn&rsquo;t an
               automatic decline; but a new MC will land near the top
               of the 1.5&ndash;3.5% range and at 85% advance until
-              volume and broker mix prove out. The program works
-              &mdash; Triumph isn&rsquo;t turning new authorities away
-              &mdash; but the pricing penalty is real, and the
+              volume and broker mix prove out. The program is open to new authorities, but the pricing penalty is real, and the
               relationship economics are tilted toward established
               mid-fleets rather than week-one operators. For the
               broader category and what to expect when factoring with
@@ -826,8 +817,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
                 <strong>
                   Operators who need payments outside banking hours.
                 </strong>{" "}
-                blynk&reg; runs around the clock, including weekends. Triumph&rsquo;s business-hours rail
-                doesn&rsquo;t fit this use case.
+                blynk&reg; operates outside banking hours, including weekends; Triumph&rsquo;s rail operates during business hours.
               </li>
               <li>
                 <strong>
