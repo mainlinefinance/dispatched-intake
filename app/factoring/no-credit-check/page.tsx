@@ -358,7 +358,7 @@ export default function NoCreditCheckFactoringPage() {
               The real cost of factoring.
             </h2>
             <h3 className="ins-hero-sub">
-              <strong>Rates run 1.5–5%, higher than working-capital APRs equivalent.</strong>
+              <strong>Rates run 1.5–5% per invoice, which works out higher than a working-capital APR.</strong>
             </h3>
             <p className="ins-hero-sub">
               A 3% factoring fee on a Net-30 invoice is roughly

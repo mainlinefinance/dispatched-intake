@@ -72,7 +72,7 @@ const faqs = [
   },
   {
     q: "What affects funding timing for a reefer unit rebuild?",
-    a: "The Dispatched workflow returns soft-approval and lender match after underwriting review once you submit the application. Funds wire to the operator's business account after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff. The financing is independent of the cargo claim — the lender underwrites the operation's revenue and equipment, not the reefer breakdown event.",
+    a: "The Dispatched workflow returns soft-approval and lender match after underwriting review once you submit the application. Funds wire to the operator's business account after the chosen lender countersigns; timing depends on the lender and your documents. The financing is independent of the cargo claim — the lender underwrites the operation's revenue and equipment, not the reefer breakdown event.",
   },
   {
     q: "Can I get reefer breakdown coverage if my truck is over a certain age?",
@@ -381,8 +381,7 @@ export default function ReeferBreakdownCoveragePage() {
                   <Link href="/truck-repair-loans">Truck repair financing</Link>.
                 </strong>{" "}
                 The Dispatched panel funds repair amounts from $5,000 to
-                $150,000, with repair financing after the chosen lender
-                signs off. Reefer-unit work fits this band: engine swap on a
+                $150,000, released after the chosen lender signs off. Reefer-unit work fits this band: engine swap on a
                 Thermo King Precedent, clutch assembly on a Carrier X4 series,
                 microprocessor replacement, condenser coil work. Underwriting
                 is on revenue, not on the cargo claim.

@@ -404,7 +404,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
               step is a soft pull only.
             </p>
 
-            <h3>Which lenders on the panel underwrite zero-down (don&rsquo;t name names; describe profile)</h3>
+            <h3>Which kinds of lenders on the panel underwrite zero-down</h3>
             <p className="ins-hero-sub">
               We don&rsquo;t name lenders on the marketing site because the
               panel rotates and credit policies move quarterly. Roughly: a

@@ -387,9 +387,7 @@ export default function TruckRepairLoansPage() {
                 specific lender and decide to move forward.
               </li>
               <li>
-                <strong>Wire.</strong> After the chosen
-                lender signs off, when the wire instruction lands before
-                the bank&rsquo;s cutoff. Direct-to-shop or
+                <strong>Wire.</strong> Sent after the chosen lender signs off; timing depends on the lender and your documents. Direct-to-shop or
                 direct-to-business, depending on the term sheet.
               </li>
             </ol>

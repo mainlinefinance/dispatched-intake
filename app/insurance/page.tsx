@@ -82,7 +82,7 @@ const faqs = [
   },
   {
     q: "How fast can I get a Certificate of Insurance?",
-    a: "Once a policy is bound by the producer, COIs are issued by the producer after binding. The producer can also issue COIs to specific shippers, brokers, or terminal facilities on request.",
+    a: "The producer issues COIs once a policy is bound; timing depends on the producer and the carrier. The producer can also issue COIs to specific shippers, brokers, or terminal facilities on request.",
   },
 ];
 
@@ -231,8 +231,7 @@ function Hero({ today }: { today: string }) {
             <span>Quotes returned</span>
           </li>
           <li>
-            <strong>After binding</strong>
-            <span>Bind &amp; COI</span>
+            <strong>Producer-issued</strong> <span>Bind &amp; COI</span>
           </li>
         </ul>
       </div>

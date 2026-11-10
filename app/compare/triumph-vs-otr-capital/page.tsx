@@ -598,9 +598,6 @@ export default function TriumphVsOtrCapitalPage() {
 
             <h3>The difference: OTR has an after-hours payment option.</h3>
             <p className="ins-hero-sub">
-              <strong>
-                Difference in payment options.
-              </strong>{" "}
               BOLT operates around the clock; Triumph&rsquo;s rail runs during business hours.{" "}
               <strong>
                 Operators on steady weekday volume: practical tie.
