@@ -76,7 +76,7 @@ function stateFAQs(s: StateInfo) {
     },
     {
       q: `What's different about financing a trucking business in ${s.name}?`,
-      a: `The lender list is the same as in every state. What is local is compliance: ${s.name} is your base state for IRP apportioned registration, IFTA fuel-tax filing and UCR, and any ${s.name} commercial-financing disclosure rules apply to contracts signed there.`,
+      a: `The lender list is the same as in every state. What is local is compliance: registration and fuel-tax filings (IRP, IFTA and UCR, where they apply) run through your base state, and any ${s.name} commercial-financing disclosure rules may apply to your contracts.`,
     },
   ];
 }
@@ -227,9 +227,9 @@ export default async function LendersStatePage({
             <h2>What changes for lenders in {s.name}</h2>
             <p>
               The 12 lenders in this directory all underwrite nationally,
-              so what changes in {s.name} is your IRP base state, your
-              IFTA filing jurisdiction, and any state commercial-financing
-              disclosure rules. The{" "}
+              so what changes in {s.name} is where your registration and
+              fuel-tax filings run and which state commercial-financing
+              disclosure rules apply. The{" "}
               <Link href="/lenders">directory overview</Link> covers the
               national picture and compares lenders by operator profile.
             </p>
@@ -256,8 +256,8 @@ export default async function LendersStatePage({
               <Link href="/glossary/boc-3">BOC-3</Link> on file, and
               unbroken <Link href="/glossary/ucr">UCR</Link>,{" "}
               <Link href="/glossary/ifta">IFTA</Link> and{" "}
-              <Link href="/glossary/irp">IRP</Link> filings through your
-              base state.
+              <Link href="/glossary/irp">IRP</Link> filings where they
+              apply to your operation.
             </p>
           </section>
 
@@ -274,8 +274,8 @@ export default async function LendersStatePage({
           <section className="research-section research-cta">
             <h2>Ready to qualify in {s.name}?</h2>
             <p>
-              The directory is the upper-funnel layer. If you are an{" "}
-              {s.name} carrier ready to move on financing or factoring,
+              The directory is the upper-funnel layer. If your operation is based in{" "}
+              {s.name} and you are ready to move on financing or factoring,
               start the matching flow — soft pull, no credit impact to
               begin. We route you to the lender panel matching your
               authority age, credit profile, and capital need.
@@ -290,7 +290,7 @@ export default async function LendersStatePage({
                 </p>
               </Link>
               <Link href="/lenders" className="research-cta-card">
-                <h3>Browse all 50 states</h3>
+                <h3>Browse all states</h3>
                 <p>
                   Same 12 lenders, state-specific operational context. Pick
                   your state to see the compliance reminders that change

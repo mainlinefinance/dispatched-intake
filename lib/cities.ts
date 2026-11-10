@@ -522,7 +522,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "32",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "Border-staging dwell on the Bridge of the Americas and Santa Teresa, plus desert dust load, drive higher cabin-filter and brake replacement frequency",
+        "Border-staging dwell at the Bridge of the Americas and Ysleta-Zaragoza crossings, plus desert dust load, drive higher cabin-filter and brake replacement frequency",
       cityCostPressure:
         "long border-wait delays and elevated wear from desert routing on I-10",
       citySeasonalMonth: "July",

@@ -47,10 +47,10 @@ const CURATED: Record<
     market:
       "Texas is the largest trucking origin state by registered owner-operators — and the state hosts the highest concentration of factoring-company headquarters in the country. The freight base splits three ways: Port of Houston container drayage and chemical tankers feeding the Gulf Coast petrochem complex; long-haul dry van and reefer through the Texas Triangle (Dallas-Fort Worth, Houston, San Antonio) that handles intra-state and Mexico-bound traffic; and Permian Basin oilfield service trucking running specialized loads through Midland-Odessa. Apex Capital (Fort Worth), Triumph Business Capital (Dallas), and 1st Commercial Credit (Austin) are all Texas-headquartered — three of the twelve directory lenders are operating from inside the state, which gives Texas carriers unusual access to in-region account management. New-authority operators benefit from Texas's relatively low operating costs and absence of state income tax, but the trade-off is heavy congestion on I-35 through Austin and growing weight-enforcement on I-10 east of San Antonio. Class 8 equipment financing has the most competitive rates here because every major trucking lender wants Texas paper on the book.",
     corridors: [
-      "I-10 Houston-El Paso (Gulf Coast to West Texas, 880 miles)",
+      "I-10 Houston-San Antonio-El Paso (Gulf Coast to West Texas)",
       "I-35 San Antonio-Dallas-Austin (the Texas Triangle backbone)",
       "I-45 Houston-Dallas (the highest-volume intra-state lane)",
-      "I-20 Dallas-Fort Worth-El Paso (the long-haul West Texas spine)",
+      "I-20 Dallas-Fort Worth-Midland-Odessa (the West Texas spine, joining I-10 east of El Paso)",
     ],
     regulatoryNote:
       "Texas has no state income tax which makes the state a popular IRP base state for cross-country owner-operators. The Texas Office of Consumer Credit Commissioner regulates some factoring activity, though invoice-factoring contracts (true-sale receivables purchases) are not classified as loans. Texas is one of several states without a small-business commercial-financing disclosure law — California-style SB 1235 disclosures do not apply to contracts signed in Texas, which keeps factoring documentation simpler than in California or New York.",
@@ -65,13 +65,13 @@ const CURATED: Record<
     market:
       "California is the largest US import gateway — the combined Port of Los Angeles and Port of Long Beach handle roughly 40% of US containerized imports, and the resulting drayage market employs more port-trucking owner-operators than any other state. Inland Empire warehousing (Riverside, San Bernardino counties) created a secondary freight hub that feeds long-haul outbound to the Midwest and East Coast. California's regulatory environment is the most restrictive in the country for trucking: CARB emissions rules force pre-2010 diesel trucks off the road on aggressive timelines, AB 5 misclassification penalties have reshaped lease-on owner-operator economics, and SB 1235 commercial-financing disclosures require lenders to provide standardized APR and total-cost-of-credit disclosures before any small-business financing contract is signed. The lender panel underwrites California carriers without restriction, but contract documents differ — every factoring company signing a California carrier must comply with SB 1235 disclosure obligations. Owner-operators with new authority face additional friction because the cost of compliant equipment (clean-engine Class 8) sits 15-25% above national average.",
     corridors: [
-      "I-5 Los Angeles-Sacramento-Bay Area (the California spine, ~800 miles intrastate)",
+      "I-5 Los Angeles-Sacramento (the Central Valley spine)",
       "I-15 Los Angeles-Las Vegas (the I.E. to Nevada warehouse corridor)",
       "I-10 Los Angeles-Phoenix (Southern California to Sun Belt)",
       "Port of LA/Long Beach drayage routes (San Pedro and Wilmington terminals to Inland Empire)",
     ],
     regulatoryNote:
-      "CARB's Advanced Clean Fleets rule requires diesel Class 8 trucks operating in California to meet 2010-or-newer engine standards, with Phase 3 GHG standards taking effect for new tractor purchases by 2027. AB 5 makes lease-on owner-operator arrangements high-risk for misclassification penalties — the ABC test for independent-contractor status is the strictest in the country. SB 1235 commercial-financing disclosure law applies to factoring, MCA, and equipment-financing contracts under $500K signed by California-based small businesses; lenders must provide standardized APR, finance-charge, and total-cost-of-credit disclosures.",
+      "CARB's Truck and Bus Regulation requires diesel trucks operating in California to run 2010-or-newer engines, and CARB's emissions rules continue to change; check current requirements before buying equipment for California lanes. AB 5 makes lease-on owner-operator arrangements high-risk for misclassification penalties — the ABC test for independent-contractor status is the strictest in the country. SB 1235 commercial-financing disclosure law applies to factoring, MCA, and equipment-financing contracts under $500K signed by California-based small businesses; lenders must provide standardized APR, finance-charge, and total-cost-of-credit disclosures.",
     regionalLenders: ["Pacific Premier Bank (Irvine, commercial trucking desk)"],
     economicNote:
       "Port of LA/Long Beach combined container volume returned to pre-pandemic levels through 2025, with drayage spot rates compressing as warehouse capacity caught up to inbound containers. California intra-state reefer demand (Central Valley produce outbound) remains the most stable rate environment for Western-region carriers.",
@@ -92,7 +92,7 @@ const CURATED: Record<
   },
   GA: {
     market:
-      "Georgia trucking is anchored by two distinct hubs: Atlanta is the dominant inland logistics market in the Southeast (third-largest US city by warehouse square footage), and Port of Savannah is one of the fastest-growing US container ports — Savannah surpassed New York/New Jersey in some quarters of 2024 by container volume. The intersection of I-75, I-85, and I-95 at Atlanta makes the metro a natural transshipment point for Southeast freight flowing between Florida, the Carolinas, and the Mid-Atlantic. Owner-operator density is highest in Atlanta's southern suburbs (Henry, Clayton, Fayette counties) and in Savannah/Chatham County around the port drayage market. Lenders see meaningful Georgia volume across all twelve directory entries, and Georgia's relatively low cost of operation compared to Northeast neighbors keeps the state attractive for new-authority operators. The Georgia Department of Public Safety operates aggressive weight and inspection enforcement at fixed scales on I-75 and I-95, which surfaces in DOT records and matters at lender underwriting for equipment financing.",
+      "Georgia trucking is anchored by two distinct hubs: Atlanta is the dominant inland logistics market in the Southeast (third-largest US city by warehouse square footage), and Port of Savannah is one of the fastest-growing US container ports — Savannah surpassed New York/New Jersey in some quarters of 2024 by container volume. The intersection of I-75, I-85, and I-20 at Atlanta makes the metro a natural transshipment point for Southeast freight flowing between Florida, the Carolinas, and the Mid-Atlantic. Owner-operator density is highest in Atlanta's southern suburbs (Henry, Clayton, Fayette counties) and in Savannah/Chatham County around the port drayage market. Lenders see meaningful Georgia volume across all twelve directory entries, and Georgia's relatively low cost of operation compared to Northeast neighbors keeps the state attractive for new-authority operators. The Georgia Department of Public Safety operates aggressive weight and inspection enforcement at fixed scales on I-75 and I-95, which surfaces in DOT records and matters at lender underwriting for equipment financing.",
     corridors: [
       "I-75 Florida-Atlanta-Tennessee (the produce-and-Southeast backbone)",
       "I-85 Charlotte-Atlanta-Alabama (the Piedmont manufacturing corridor)",
@@ -114,7 +114,7 @@ const CURATED: Record<
       "Florida's Turnpike (Miami to Wildwood, intra-state freight)",
     ],
     regulatoryNote:
-      "Florida is one of the most-used IRP base states in the country for owner-operators running multi-state operations — no state income tax and competitive IRP fees make residency economically attractive. Florida has not enacted SB 1235-style commercial-financing disclosures, so factoring contracts use national standard documentation.",
+      "Florida is one of the most-used IRP base states in the country for owner-operators running multi-state operations — no state income tax and competitive IRP fees make residency economically attractive. Florida has its own commercial-financing disclosure law, which covers some factoring and other receivables-purchase transactions.",
     economicNote:
       "Florida intra-state produce reefer rates remain seasonal and predictable, with the strongest pricing in March-May as winter strawberry and citrus harvests outbound to Northeast markets compete for reefer capacity.",
   },
@@ -135,7 +135,7 @@ const CURATED: Record<
       "The Pennsylvania Turnpike (I-76) is one of the highest-volume freight corridors in the country, running 360 miles east-west across the state and serving as the dominant Northeast-to-Midwest pass-through route. Pennsylvania's freight mix is bimodal: heavy intermodal and warehousing around Philadelphia (especially the Lehigh Valley I-78 corridor, where Amazon, Walmart, and major 3PLs run some of the largest distribution centers on the East Coast), plus a Western Pennsylvania industrial freight base (steel, glass, manufacturing) around Pittsburgh. Owner-operator density is meaningful in both metros. Pennsylvania's fuel taxes are among the highest in the country, which affects IFTA reconciliation for carriers based in the state — the trade-off is that PA's IFTA filings produce credits when running through lower-tax neighboring states. Lenders see strong Pennsylvania volume from mid-fleet operators (5-50 trucks) running Pennsylvania-Ohio-NY lanes, and the I-78 / I-80 corridor for the warehouse network feeding the Northeast.",
     corridors: [
       "I-76 Pennsylvania Turnpike (Pittsburgh-Harrisburg-Philadelphia)",
-      "I-80 cross-state (Pittsburgh to NYC via north-central PA)",
+      "I-80 cross-state (Ohio line to the New Jersey line via north-central PA)",
       "I-78 Lehigh Valley-Newark (the e-commerce warehouse corridor)",
       "I-95 Philadelphia-Northeast",
     ],
@@ -146,7 +146,7 @@ const CURATED: Record<
   },
   NY: {
     market:
-      "New York trucking is shaped by tri-state freight density and by the operational difficulty of running trucks in and around New York City. The Port of NY/NJ (shared between the two states) is the third-largest US container port and the largest on the East Coast — drayage volume is enormous and concentrated in Newark, Elizabeth, and Staten Island terminals on the NJ side, with delivery destinations spread across all five boroughs and Long Island. Manhattan delivery is particularly constrained: truck-size limits, time-of-day restrictions, and the toll structure on every East River and Hudson River crossing make NYC-area operations materially more expensive than anywhere else in the country. Outside the metro, Upstate New York runs a more conventional Northeast freight mix — the NYS Thruway (I-87, I-90) carries cross-state and Canada-bound traffic. Lender panel sees the same twelve options nationally, but New York is one of the states with SB 1235-equivalent commercial-financing disclosure rules, which means factoring contracts signed by NY-based carriers carry standardized APR and total-cost-of-credit disclosure pages.",
+      "New York trucking is shaped by tri-state freight density and by the operational difficulty of running trucks in and around New York City. The Port of NY/NJ (shared between the two states) is the third-largest US container port and the largest on the East Coast — drayage volume is enormous and concentrated in the Newark and Elizabeth terminals on the NJ side, with a further terminal on Staten Island, with delivery destinations spread across all five boroughs and Long Island. Manhattan delivery is particularly constrained: truck-size limits, time-of-day restrictions, and the toll structure on every East River and Hudson River crossing make NYC-area operations materially more expensive than anywhere else in the country. Outside the metro, Upstate New York runs a more conventional Northeast freight mix — the NYS Thruway (I-87, I-90) carries cross-state and Canada-bound traffic. Lender panel sees the same twelve options nationally, but New York is one of the states with SB 1235-equivalent commercial-financing disclosure rules, which means factoring contracts signed by NY-based carriers carry standardized APR and total-cost-of-credit disclosure pages.",
     corridors: [
       "I-87 NYC-Albany-Montreal (the Hudson Valley to Canada backbone)",
       "I-90 NYS Thruway (cross-state east-west, Albany to Buffalo)",
@@ -172,7 +172,7 @@ const CURATED: Record<
   },
   TN: {
     market:
-      "Memphis is the dominant Tennessee freight hub — FedEx Express's global SuperHub is in Memphis, and the city is one of the largest US intermodal markets (BNSF, UP, NS, and CSX all operate large yards). The resulting freight ecosystem makes Memphis the third-largest intermodal market in the country behind Chicago and Los Angeles. Nashville's growth as a logistics and manufacturing market (Nissan, GM, the Amazon HQ2 spillover) has created a secondary Tennessee freight hub, and I-40 connects Memphis-Nashville-Knoxville as the dominant cross-state corridor. Owner-operator density is meaningful in both Memphis and the Nashville metro. Tennessee has no state income tax, which makes IRP-base-state residency attractive for cross-country owner-operators choosing between Tennessee, Texas, and Florida. The lender panel sees particularly strong Tennessee volume from FedEx-adjacent contract carriers and from mid-fleet operators running East-Coast-to-California through Memphis. Factoring desk competition in Memphis is unusually deep because of the volume of regional and ICCMC-style fleet contractors.",
+      "Memphis is the dominant Tennessee freight hub — FedEx Express's global SuperHub is in Memphis, and the city is one of the largest US intermodal markets (BNSF, UP, NS, and CSX all operate large yards). The resulting freight ecosystem makes Memphis the third-largest intermodal market in the country behind Chicago and Los Angeles. Nashville's growth as a logistics and manufacturing market (Nissan, GM, Amazon's Nashville operations center) has created a secondary Tennessee freight hub, and I-40 connects Memphis-Nashville-Knoxville as the dominant cross-state corridor. Owner-operator density is meaningful in both Memphis and the Nashville metro. Tennessee has no state income tax, which makes IRP-base-state residency attractive for cross-country owner-operators choosing between Tennessee, Texas, and Florida. The lender panel sees particularly strong Tennessee volume from FedEx-adjacent contract carriers and from mid-fleet operators running East-Coast-to-California through Memphis. Factoring desk competition in Memphis is unusually deep because of the volume of regional and fleet contractors.",
     corridors: [
       "I-40 Memphis-Nashville-Knoxville (cross-country backbone, ~450 miles)",
       "I-65 Nashville-Louisville-Birmingham (north-south spine)",
@@ -187,14 +187,14 @@ const CURATED: Record<
       "North Carolina trucking is anchored by Charlotte's logistics market (the largest banking and 3PL hub in the Southeast outside Atlanta) and by the Research Triangle (Raleigh-Durham-Chapel Hill) manufacturing base. The state's geography puts NC on the I-85 corridor that runs Atlanta-Charlotte-Richmond, one of the highest-volume freight corridors in the Southeast, and on the I-95 corridor that connects Southeast-to-Northeast through the state. Owner-operator density is meaningful in both Charlotte and Raleigh metros. NC's manufacturing freight mix (textiles, furniture, pharmaceuticals, and increasingly semiconductor-related) has shifted over the last two decades from heavy seasonal swings to more stable year-round demand. The lender panel underwrites NC carriers identically to other states; what matters operationally is that NC-based fleets running I-85 and I-95 see relatively consistent freight rates and a deep broker market.",
     corridors: [
       "I-85 Atlanta-Charlotte-Richmond (the Piedmont manufacturing corridor)",
-      "I-95 Charlotte-Northeast (the Southeast-to-Northeast spine)",
+      "I-95 Fayetteville-Rocky Mount (the Southeast-to-Northeast spine through eastern NC)",
       "I-40 Asheville-Raleigh-coast (cross-state east-west)",
       "I-77 Charlotte-Virginia (north-south through the Carolinas)",
     ],
   },
   IN: {
     market:
-      'Indiana calls itself "The Crossroads of America" because every major Midwest interstate (I-65, I-70, I-74, I-80/90, I-94) converges on Indianapolis — the geography makes Indiana the most-traveled-through state in the country by long-haul freight. Indianapolis has built one of the largest logistics and distribution markets in the Midwest (FedEx Ground hub, Amazon distribution centers, automotive supply-chain warehouses), and southern Indiana along the Ohio River carries steel and manufacturing freight. The state\'s central position makes it a natural fleet domicile for Midwest-regional operators — Indiana-based fleets frequently run dry van between Chicago, Cincinnati, Louisville, and St. Louis on short-to-medium-haul lanes. Indiana IFTA fuel taxes are reasonable relative to Ohio and Illinois neighbors, which makes the state attractive for IRP base-state residency.',
+      'Indiana calls itself "The Crossroads of America" because every major Midwest interstate (I-65, I-69, I-70, I-74) converges on Indianapolis — the geography makes Indiana the most-traveled-through state in the country by long-haul freight. Indianapolis has built one of the largest logistics and distribution markets in the Midwest (FedEx Ground hub, Amazon distribution centers, automotive supply-chain warehouses), and southern Indiana along the Ohio River carries steel and manufacturing freight. The state\'s central position makes it a natural fleet domicile for Midwest-regional operators — Indiana-based fleets frequently run dry van between Chicago, Cincinnati, Louisville, and St. Louis on short-to-medium-haul lanes. Indiana IFTA fuel taxes are reasonable relative to Ohio and Illinois neighbors, which makes the state attractive for IRP base-state residency.',
     corridors: [
       "I-65 Chicago-Indianapolis-Louisville (the north-south backbone)",
       "I-70 Indianapolis-Columbus-Pittsburgh (cross-country east-west)",
@@ -235,11 +235,11 @@ const CURATED: Record<
     corridors: [
       "I-5 Seattle-Portland-California (the West Coast spine)",
       "I-90 Seattle-Spokane-East (the cross-country east-west)",
-      "I-405 Bellevue-Seattle-Renton (the Eastside corridor)",
+      "I-405 Lynnwood-Bellevue-Renton (the Eastside corridor)",
       "Port of Seattle/Tacoma drayage routes",
     ],
     regulatoryNote:
-      "Washington has no state income tax, which makes the state competitive for owner-operator residency. WSP and WSDOT commercial-vehicle enforcement at I-5 and I-90 scales is standard. Cross-border crossings into British Columbia at Blaine (Pacific Highway, Peace Arch) require standard ACE/ACI manifests and FAST enrolment for time-of-day priority.",
+      "Washington has no state income tax, which makes the state competitive for owner-operator residency. WSP and WSDOT commercial-vehicle enforcement at I-5 and I-90 scales is standard. Cross-border crossings into British Columbia at Blaine (the Pacific Highway commercial crossing) require standard ACE/ACI manifests and FAST enrolment for time-of-day priority.",
   },
 };
 

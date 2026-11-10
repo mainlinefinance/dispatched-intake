@@ -360,8 +360,7 @@ export default function ApexVsPorterPage() {
               That pull does not affect the operator&rsquo;s credit score and is not visible to other lenders evaluating the file,
               but it does generate a soft-inquiry record on the operator
               side. More importantly, credit is part of the pricing input:
-              an operator with strong credit and clean payment history prices closer to Apex&rsquo;s 1% floor than an operator with a lower credit profile and a recent BK, even at the same factored volume. Apex will consider lower-credit and prior-BK operators &mdash; the company doesn&rsquo;t hard-decline
-              on credit alone &mdash; but the effective rate often
+              an operator with strong credit and clean payment history prices closer to Apex&rsquo;s 1% floor than an operator with a lower credit profile and a recent BK, even at the same factored volume. Apex says it considers lower-credit and prior-BK operators (approval is not guaranteed), but the effective rate often
               widens to the upper end of the 1&ndash;5% range, which is
               where Porter becomes structurally competitive.
             </p>

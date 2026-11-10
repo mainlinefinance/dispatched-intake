@@ -396,7 +396,7 @@ export default function BadCreditTruckFinancingPage() {
         <section className="ins-sunken">
           <div className="ins-container">
             <h2 className="ins-hero-title">
-              Bad credit isn&rsquo;t an automatic no on this panel.
+              See which panel lenders may consider your profile.
             </h2>
             <p className="ins-hero-sub">
               Soft-pull match first. One hard pull only with the lender
