@@ -823,10 +823,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
                 <strong>
                   New authorities and operators rebuilding credit.
                 </strong>{" "}
-                The structured startup program clears underwriting
-                paths and prices in a way Triumph&rsquo;s bank-grade
-                conservative posture doesn&rsquo;t for week-one
-                operators.
+                Apex runs a structured startup program; Triumph&rsquo;s bank-grade underwriting prices new authorities conservatively. Approval is not guaranteed with either.
               </li>
               <li>
                 <strong>

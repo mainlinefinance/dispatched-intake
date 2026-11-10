@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: "Why pick Apex over Truckstop Go Capital?",
-    a: "Three reasons: customer service depth, fuel program, and payment options. Apex carries 700+ five-star reviews and won the BBB Torch Award (2018). The blynk® payment rail runs around the clock. The 51¢/gallon fuel discount network is the deepest in the industry. For owner-operators who escalate issues occasionally, who put 1,500+ gallons monthly, or who run weekend freight and need payments outside banking hours, Apex consistently outperforms.",
+    a: "Three reasons: customer service depth, fuel program, and payment options. Apex carries 700+ five-star reviews and won the BBB Torch Award (2018). The blynk® payment rail runs around the clock. The 51¢/gallon fuel discount network is the deepest in the industry. Those matter most to owner-operators who escalate issues occasionally, who put 1,500+ gallons monthly, or who want a payment option that operates outside banking hours.",
   },
   {
     q: "Does Truckstop Go Capital require me to use the Truckstop load board?",
@@ -403,7 +403,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
               budget.
             </p>
 
-            <h3>Winner by use case.</h3>
+            <h3>Difference by use case.</h3>
             <p className="ins-hero-sub">
               <strong>Rate-sensitive owner-ops: Apex.</strong> The
               2.5&ndash;3.5% typical band is meaningfully better than
@@ -492,8 +492,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
 
             <h3>Apex blynk&reg; &mdash; a payment rail that runs around the clock.</h3>
             <p className="ins-hero-sub">
-              Apex&rsquo;s blynk&reg; funding system is genuinely
-              differentiated. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was built in-house
+              Apex&rsquo;s blynk&reg; is a payment option that operates outside banking hours. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was built in-house
               and has been running at scale for several years.
             </p>
 
@@ -501,19 +500,16 @@ export default function ApexVsTruckstopGoCapitalPage() {
               Truckstop Go Capital &mdash; standard business-hours funding.
             </h3>
             <p className="ins-hero-sub">
-              Truckstop Go Capital pays verified invoices on a standard business-hours schedule. Invoices submitted after the daily cutoff, or on a Friday evening, are processed when the business day resumes. For steady weekday operations that covers the need; it does not cover weekends or holidays the way blynk&reg; does.
+              Truckstop Go Capital pays verified invoices on a standard business-hours schedule. Invoices submitted after the daily cutoff are processed when the business day resumes. For steady weekday operations that covers the need; it does not cover weekends or holidays the way blynk&reg; does.
             </p>
 
-            <h3>Winner by use case.</h3>
+            <h3>Difference by use case.</h3>
             <p className="ins-hero-sub">
-              <strong>Apex on payment options.</strong> blynk&reg; suits the owner-op profile that needs Friday-night and weekend payments.{" "}
+              <strong>Payment options.</strong> Apex offers blynk&reg;, a payment option that operates outside banking hours; Truckstop Go Capital does not.{" "}
               <strong>
                 Truckstop is competitive for steady weekday operations.
               </strong>{" "}
-              If your loads deliver Monday through Thursday and you
-              never need cash outside business hours, a business-hours schedule is plenty.
-              If your operation runs weekends, blynk&reg; pays for
-              itself in avoided drama.
+              If your loads deliver on weekdays, a business-hours schedule covers the need. Timing on any invoice depends on the factor and your paperwork.
             </p>
           </div>
         </section>
@@ -563,7 +559,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
               its scale.
             </p>
 
-            <h3>Winner by use case.</h3>
+            <h3>Difference by use case.</h3>
             <p className="ins-hero-sub">
               <strong>
                 Operators who want optionality: Truckstop.
@@ -728,22 +724,19 @@ export default function ApexVsTruckstopGoCapitalPage() {
               Apex&rsquo;s mobile app is solid &mdash; not as
               workflow-integrated as FleetDocs because there is no
               parent load board for it to plug into, but the
-              fundamentals work. BOL scanner is fast, invoice submission
-              is straightforward, blynk&reg; funding status updates in
-              real time, and the fuel-card balance and discount tracking
+              fundamentals work. The BOL scanner and invoice submission are straightforward, blynk&reg; payment status is shown in the app, and the fuel-card balance and discount tracking
               sit inside the same app. For carriers who maintain a TMS
               or use third-party dispatch software, exporting load data
               to Apex is a manageable workflow rather than an
               integration. The platform&rsquo;s strength isn&rsquo;t
               one killer feature &mdash; it is that every common task
-              is one or two taps away and the funding side of the
-              experience is best-in-class.
+              is one or two taps away.
             </p>
 
             <h3>Winner: tied, by use case.</h3>
             <p className="ins-hero-sub">
               For pure load-to-invoice workflow inside Truckstop:
-              FleetDocs wins. For payment options and fuel-discount integration: Apex wins. Neither app is the bottleneck.
+              FleetDocs wins. For fuel-discount integration: Apex. Payment options differ as described above. Neither app is the bottleneck.
               The question is which integration matters more to your
               actual operation.
             </p>
@@ -754,7 +747,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Lower credit profiles and new authority</span>
             <h2 className="ins-hero-title">
-              Both approve, with different paths.
+              Two onboarding paths: a startup program and a platform-led model.
             </h2>
 
             <h3>Apex &mdash; structured startup program.</h3>
@@ -767,11 +760,9 @@ export default function ApexVsTruckstopGoCapitalPage() {
               the underwriting reflects that.
             </p>
 
-            <h3>Truckstop Go Capital &mdash; approves, less hand-holding.</h3>
+            <h3>Truckstop Go Capital &mdash; platform-led, less hand-holding.</h3>
             <p className="ins-hero-sub">
-              Truckstop Go Capital factors operators with new authority
-              and bad credit, and the platform-led model means
-              underwriting is largely automated. The trade-off
+              Truckstop Go Capital considers new authorities and lower credit profiles; approval is not guaranteed, and the platform-led model means underwriting is largely automated. The trade-off
               is the same trade-off everywhere else in the product: less
               hand-holding through the early-stage operational
               questions. New owner-operators with thin documentation
@@ -821,7 +812,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
                 <strong>
                   Operators who need weekend or holiday payments.
                 </strong>{" "}
-                blynk&reg; runs around the clock. Friday-night delivery, Saturday-morning fuel money &mdash; this is the feature to weigh.
+                blynk&reg; operates outside banking hours, including weekends and holidays.
               </li>
               <li>
                 <strong>
@@ -829,8 +820,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
                 </strong>{" "}
                 The structured startup program walks new operators
                 through their first invoices, NOAs, and broker setup
-                with a dedicated exec. Truckstop will approve you, but
-                you&rsquo;ll be figuring it out yourself.
+                with a dedicated exec. With Truckstop you&rsquo;ll be figuring more of it out yourself.
               </li>
             </ul>
           </div>

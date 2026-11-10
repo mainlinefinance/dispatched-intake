@@ -841,11 +841,11 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
               panel. A few specific cases route to other factors first:
             </p>
 
-            <h3>Owner-operator wanting best-in-class fuel and an around-the-clock payment rail: Apex Capital.</h3>
+            <h3>Owner-operator wanting a deep fuel program and a payment option outside banking hours: Apex Capital.</h3>
             <p className="ins-hero-sub">
               Apex is the owner-operator-native factor. The ~51&cent;/gal
-              fuel discount and the blynk&reg; around-the-clock payment rail are both features eCapital and Truckstop do not match for the single-truck profile. If you are an
-              owner-op who runs 8,000+ miles per month and wants payment options outside banking hours, Apex is the structural choice.
+              fuel discount and the blynk&reg; around-the-clock payment rail are both features eCapital and Truckstop do not offer in the same form. If you are an
+              owner-op who runs 8,000+ miles per month and wants a payment option that operates outside banking hours, Apex offers one. Timing on any invoice depends on the factor and your paperwork.
             </p>
 
             <h3>Brand-new authority: TBS Factoring.</h3>

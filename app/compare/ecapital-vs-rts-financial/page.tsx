@@ -924,7 +924,7 @@ export default function EcapitalVsRtsFinancialPage() {
               fleets running 1&ndash;10 trucks: 30 years in the
               business, 4.7+ average review score, the deepest fuel
               discount on the market at roughly 51&cent;/gal, and the
-              blynk&reg; payment rail, which runs around the clock. Neither eCapital nor RTS competes with Apex on the owner-operator profile or on after-hours payment options.
+              blynk&reg; payment rail, which runs around the clock. Neither eCapital nor RTS is built around the owner-operator profile the way Apex is, and neither offers a comparable payment option outside banking hours.
             </p>
 
             <h3>
