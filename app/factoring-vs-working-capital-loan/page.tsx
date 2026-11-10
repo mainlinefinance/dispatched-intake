@@ -227,10 +227,11 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               subsequent application because legally it is not one. Second,
               the cost is a fixed fee per invoice; there is no compounding
               and no early-payoff penalty, because there is no schedule.
-              Third, the underwriting is on the broker&rsquo;s credit, not
-              yours. A factor cares whether the broker will pay; they do
-              not care much about your{" "}
-              <Link href="/glossary/fico">FICO</Link> score. This is why
+              Third, the underwriting is mainly on the broker&rsquo;s
+              credit. A factor cares most about whether the broker will pay,
+              though many still review the carrier and its{" "}
+              <Link href="/glossary/fico">FICO</Link> profile, and approval
+              is not guaranteed. This is why
               factoring is often the product considered first by operators in
               their first six months after authority, post-bankruptcy
               operators, and owner-operators with lower credit profiles.

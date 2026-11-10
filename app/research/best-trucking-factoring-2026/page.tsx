@@ -712,8 +712,7 @@ export default function BestTruckingFactoring2026Page() {
               relative to Apex, eCapital, and Truckstop Go. Riviera is
               the right pick if you specifically value an in-person
               branch relationship — they are the only factor on this list
-              with that footprint. For everyone else, the lack of an around-the-clock payment rail and modern document-capture tooling means
-              there are better choices.
+              with that footprint. For everyone else, the older document-capture tooling means other factors on this list may suit better.
             </p>
           </section>
 

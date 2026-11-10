@@ -368,8 +368,7 @@ export default function BadCreditTruckFinancingPage() {
               </li>
               <li>
                 <strong>Wire.</strong> After the chosen
-                lender signs off, when the wire instruction lands before
-                the bank&rsquo;s cutoff.
+                lender signs off, timing depends on the lender and your documents.
               </li>
             </ol>
           </div>
