@@ -71,7 +71,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     title: "How to calculate true cost per mile for your trucking operation",
     metaTitle: "True Cost Per Mile: A Trucker's Calculation Guide | Dispatched",
     metaDescription:
-      "Stop guessing. Calculate your real cost per mile in 8 steps, including fuel, fixed costs, factoring, depreciation, and deadhead. Plus the diagnostic number that tells you if you're profitable.",
+      "Calculate your real cost per mile in 8 steps: fuel, fixed costs, factoring, depreciation, and deadhead. Plus the one number that shows if you're profitable.",
     subhead:
       "If you don't know your cost per mile, you don't know if you're profitable. Here's the math, step by step — including the deadhead correction most operators miss.",
     publishedDate: "2026-05-10",
@@ -132,7 +132,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     title: "What new owner-operators get wrong about commercial trucking insurance",
     metaTitle: "New Owner-Operator Insurance Mistakes 2026 | Dispatched",
     metaDescription:
-      "Insurance is 4-8% of revenue for owner-operators — and most new operators get it wrong. Coverage gaps, broker assumptions, premium financing traps, and CSA score impact.",
+      "Insurance runs 4-8% of revenue for owner-operators, and most new operators get it wrong: coverage gaps, broker assumptions, premium financing traps, CSA impact.",
     subhead:
       "Insurance is the largest single line item most new owner-operators get wrong. Five expensive mistakes, the math behind them, and what to do instead.",
     publishedDate: "2026-05-10",
@@ -268,7 +268,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     title: "Picking your first factoring company: a decision framework",
     metaTitle: "Picking Your First Factoring Company: A 2026 Framework | Dispatched",
     metaDescription:
-      "Stop comparing rates alone. The 6-factor framework for picking the right factor: contract terms, advance rate, fuel program, recourse structure, customer service tier, and growth fit.",
+      "A 6-factor framework for picking your first factor: contract terms, advance rate, fuel program, recourse structure, customer service tier, and growth fit.",
     subhead:
       "Rate alone is a bad way to pick a factor. Here's the 6-factor framework for matching the right factoring company to your operation.",
     publishedDate: "2026-05-10",
@@ -329,7 +329,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     title: "How to read a freight broker rate confirmation",
     metaTitle: "How to Read a Broker Rate Confirmation: Trucker's Guide | Dispatched",
     metaDescription:
-      "Rate cons hide details that matter. Detention windows, fuel surcharges, accessorial pay, lumper reimbursement, and the clauses that decide if a load is profitable.",
+      "What rate cons hide: detention windows, fuel surcharges, accessorial pay, lumper reimbursement, and the clauses that decide whether a load is profitable.",
     subhead:
       "Brokers send rate confirmations with the dollar amount front and center. The actual profitability of the load lives in the fine print. Here's what to look for.",
     publishedDate: "2026-05-10",
@@ -385,7 +385,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     title: "What to do when your MC# is deactivated",
     metaTitle: "MC# Deactivation: Recovery Playbook 2026 | Dispatched",
     metaDescription:
-      "MC# deactivation stops your revenue overnight. The five causes, the recovery process, and how to avoid it. Plus how factoring and lending react to the deactivation event.",
+      "MC# deactivation stops your revenue cold. The five causes, the recovery process, how to avoid it, and how factors and lenders react when it happens.",
     subhead:
       "MC# deactivation is a revenue-stopping event. Here's the playbook: what causes it, how to fix it fast, and what your factoring company and lenders will do.",
     publishedDate: "2026-05-10",
@@ -441,7 +441,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     title: "The hidden costs of accepting low-rate spot freight",
     metaTitle: "Hidden Costs of Low-Rate Spot Freight | Dispatched",
     metaDescription:
-      "Accepting a $1.80/mile load to fill the truck looks like revenue. The math says it's a loss. Operating costs, deadhead, opportunity cost, and the rate floor every operator should know.",
+      "A $1.80/mile load that fills the truck looks like revenue; the math says it's a loss. Operating costs, deadhead, opportunity cost, and your real rate floor.",
     subhead:
       "Low-rate freight feels like better than empty miles. The math often says otherwise. Here's how to know your rate floor — and what accepting under it really costs.",
     publishedDate: "2026-05-10",
@@ -496,7 +496,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     title: "Building business credit as an owner-operator",
     metaTitle: "Building Business Credit as an Owner-Operator 2026 | Dispatched",
     metaDescription:
-      "Business credit takes 18-24 months to build properly. The 6-step path from MC# activation to a real Paydex score and the SBA loan that unlocks. Practical playbook.",
+      "Business credit takes 18-24 months to build properly. The 6-step path from MC# activation to a real Paydex score and the SBA loan that it unlocks.",
     subhead:
       "Most new owner-operators run on personal credit. Building separate business credit unlocks better financing terms — but only if you do it deliberately. Here's the path.",
     publishedDate: "2026-05-10",
@@ -675,7 +675,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     title: "How much down payment do you actually need on a truck?",
     metaTitle: "Truck Down Payment Strategy 2026 | Dispatched",
     metaDescription:
-      "10%, 15%, 20% down? Zero down? The right down payment depends on credit, revenue history, and truck age. Plus the trade-off between lower monthly and total interest cost.",
+      "How much to put down on a truck: how credit, revenue history, and truck age set the number, and the trade-off between monthly payment and total interest.",
     subhead:
       "Most operators put down too little or too much. The right down payment depends on three variables — and the difference can mean $20K+ in total interest over the loan.",
     publishedDate: "2026-05-10",
@@ -902,7 +902,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     title: "Motor truck cargo insurance: what you actually need",
     metaTitle: "Motor Truck Cargo Insurance Explained 2026 | Dispatched",
     metaDescription:
-      "$100K minimum is the default but rarely the right answer. Coverage limits by freight type, what's excluded, claim filing mechanics, and reefer breakdown gotchas.",
+      "A $100K cargo limit is the default but rarely the right answer. Limits by freight type, what's excluded, how claims are filed, and reefer breakdown gotchas.",
     subhead:
       "Motor truck cargo insurance is the coverage broker contracts require — and the one most operators have wrong. Here's what you actually need based on freight type.",
     publishedDate: "2026-05-10",
@@ -957,7 +957,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
     title: "How to vet a freight broker before booking the load",
     metaTitle: "How to Vet a Freight Broker: Owner-Operator Guide | Dispatched",
     metaDescription:
-      "Most broker disputes start with brokers you shouldn't have booked with. The pre-booking checks, MC# verification, factoring-company broker credit, and red flags.",
+      "Most broker disputes start with brokers you shouldn't have booked. The pre-booking checks: MC# verification, your factor's broker credit, and the red flags.",
     subhead:
       "Most carrier-broker disputes start with brokers you shouldn't have booked with in the first place. Here's the 5-minute vetting framework before you accept a load.",
     publishedDate: "2026-05-10",

@@ -12,7 +12,7 @@ export const OPERATIONS_COMPLIANCE_POSTS: ReadonlyArray<BlogPost> = [
     title: "Insurance claim filing for owner-operators: a step-by-step playbook",
     metaTitle: "Insurance Claim Filing Playbook for Truckers 2026 | Dispatched",
     metaDescription:
-      "When a claim happens, the next 48 hours matter most. The 7-step filing process, what to document, when to involve an attorney, and the mistakes that hurt your premium.",
+      "When a claim happens, the next 48 hours matter most. The 7-step filing process, what to document, when to call an attorney, and the mistakes that cost you.",
     subhead:
       "When you're at an accident scene or just discovered cargo damage, the next 48 hours determine the outcome. Here's the step-by-step process every owner-operator should know cold.",
     publishedDate: "2026-05-11",
@@ -86,7 +86,7 @@ export const OPERATIONS_COMPLIANCE_POSTS: ReadonlyArray<BlogPost> = [
     title: "Factoring contract walk-through: what every line actually means",
     metaTitle: "Factoring Contract Walk-Through: Line-by-Line | Dispatched",
     metaDescription:
-      "Most factoring contracts use the same boilerplate. The 12 sections that matter, the clauses that trap operators, and the negotiation language that gets you better terms.",
+      "Most factoring contracts share the same boilerplate. The 12 sections that matter, the clauses that trap operators, and the language that wins better terms.",
     subhead:
       "Factoring contracts are 15-30 pages of boilerplate. The same 12 sections appear in every one. Here's what each section means — and the clauses that actually decide whether the deal is good or bad.",
     publishedDate: "2026-05-11",
@@ -299,7 +299,7 @@ export const OPERATIONS_COMPLIANCE_POSTS: ReadonlyArray<BlogPost> = [
     title: "The new-authority Year 1 compliance calendar",
     metaTitle: "New Authority Year 1 Compliance Calendar 2026 | Dispatched",
     metaDescription:
-      "Day 1, Month 1, Month 6, Year 1. The compliance milestones every new MC# operator must hit. Filing deadlines, renewals, and the things that trip up first-year carriers.",
+      "Day 1, Month 1, Month 6, Year 1: the compliance milestones every new MC# operator must hit, with filing deadlines, renewals, and common first-year mistakes.",
     subhead:
       "The first year of operating authority is full of compliance deadlines that aren't always obvious. Miss one — UCR, MCS-150 update, IFTA filing, insurance renewal — and the MC# deactivates. Here's the month-by-month calendar that keeps you compliant.",
     publishedDate: "2026-05-11",

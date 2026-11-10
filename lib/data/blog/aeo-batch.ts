@@ -107,7 +107,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
     title: "Can an owner-operator with bad credit get a trucking loan?",
     metaTitle: "Owner-Operator Trucking Loan With Bad Credit | Dispatched",
     metaDescription:
-      "Owner-operators with bad credit can still get trucking loans from lenders that underwrite on bank deposits, DSCR, and equipment first. Approval is not guaranteed.",
+      "Owner-operators with bad credit can still get trucking loans from lenders that underwrite on deposits, DSCR, and equipment first. Approval is not guaranteed.",
     subhead:
       "The bank declined and the operator is being told the credit score makes them uninvestable. The bank is using the wrong underwriting model — and the lenders that fund owner-operators do not.",
     publishedDate: "2026-05-16",
@@ -202,7 +202,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
     title: "How do I finance a truck with less than 12 months of MC authority?",
     metaTitle: "New Authority Truck Financing Under 12 Months MC | Dispatched",
     metaDescription:
-      "Equipment-secured loans and small working-capital lines for new-authority owner-operators (under 12 months MC). Lenders that accept new authority as standard, not exception. APR ranges, down payment, what changes at month 12.",
+      "Equipment loans and small working-capital lines for owner-operators under 12 months of MC authority: APR ranges, down payments, and what changes at month 12.",
     subhead:
       "The freshly minted MC authority is the hardest credit case in trucking — lenders haven't seen the operation perform yet. The narrower program set that exists for under-12-month operators, what the down payment and APR look like, and what changes after the 12-month mark.",
     publishedDate: "2026-05-16",
@@ -294,7 +294,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
     title: "What are the best working capital options for a small trucking fleet?",
     metaTitle: "Small Trucking Fleet Working Capital Options | Dispatched",
     metaDescription:
-      "Working capital for 2–10 truck fleets: $50K–$250K lines, 14%–24% APR, underwritten on fleet revenue and settlement statements. The decision matrix vs lines of credit, factoring, and term loans.",
+      "Working capital for 2–10 truck fleets: $50K–$250K lines at 14%–24% APR, underwritten on fleet revenue. How it compares with lines of credit and factoring.",
     subhead:
       "Small fleets at 2–10 trucks operate with different cash-flow mechanics than solo owner-operators — and qualify for working-capital structures solo owner-operators don't. The product menu, the decision matrix, and what the math actually looks like.",
     publishedDate: "2026-05-16",
@@ -385,7 +385,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
     title: "How does Dispatched.finance match owner-operators with lenders?",
     metaTitle: "How Dispatched Matches Trucking Loans | Dispatched",
     metaDescription:
-      "Dispatched routes a single soft-pull application to 2–4 matched lenders from a vetted panel. Operators see APR, term, and total cost side by side before any hard pull. The mechanics, the panel curation, and what makes it different from a broker.",
+      "Dispatched routes one soft-pull application to 2–4 matched lenders. You see APR, term, and total cost side by side before any hard pull. How the panel works.",
     subhead:
       "How a single soft-pull application turns into 2–4 competing term sheets, why the panel is curated the way it is, and what makes the model different from a traditional broker or a single-lender direct application.",
     publishedDate: "2026-05-16",

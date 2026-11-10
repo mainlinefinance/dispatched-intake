@@ -332,7 +332,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
               loan than the zero-down operator on the same truck. The
               10%-down operator pays $11,842 less. Those are real dollars,
               not theoretical — and they&rsquo;re the cost of preserving
-              cash today.
+              cash up front.
             </p>
             <p className="ins-hero-sub">
               Worth noting on the tax side: regardless of down payment, the

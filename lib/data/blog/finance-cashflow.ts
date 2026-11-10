@@ -12,7 +12,7 @@ export const FINANCE_CASHFLOW_POSTS: ReadonlyArray<BlogPost> = [
     title: "Equipment buyback offers: when to take them and when to walk",
     metaTitle: "Equipment Buyback Math 2026 | Dispatched",
     metaDescription:
-      "Dealer or carrier buyback offers feel like an easy exit. The math reveals when they're fair and when they're undercutting your equity. The framework, plus 3 worked examples.",
+      "Dealer and carrier buyback offers feel like an easy exit. The math that shows when an offer is fair and when it undercuts your equity, with 3 worked examples.",
     subhead:
       "When a dealer offers to buy back your truck, or a lease-purchase carrier offers a \"settlement,\" the offer almost always undervalues your equity. Here's the math that tells you whether to take it.",
     publishedDate: "2026-05-10",
@@ -73,7 +73,7 @@ export const FINANCE_CASHFLOW_POSTS: ReadonlyArray<BlogPost> = [
     title: "Working capital vs factoring vs MCA: the decision matrix",
     metaTitle: "Working Capital vs Factoring vs MCA: Decision Matrix | Dispatched",
     metaDescription:
-      "Three cash-flow tools, three completely different products. The decision matrix that tells you which to use when, and the trap of using all three simultaneously.",
+      "Three cash-flow tools, three very different products. A decision matrix for which to use when, and the trap of running all three at the same time.",
     subhead:
       "Operators in cash-flow stress often use working capital, factoring, AND MCA simultaneously — paying for three products when one would solve the problem. Here's the decision matrix.",
     publishedDate: "2026-05-10",
@@ -195,7 +195,7 @@ export const FINANCE_CASHFLOW_POSTS: ReadonlyArray<BlogPost> = [
     title: "SBA loans for owner-operators: eligibility, timeline, and the trade-off",
     metaTitle: "SBA Loans for Owner-Operators: Complete Guide 2026 | Dispatched",
     metaDescription:
-      "SBA loans offer the lowest commercial rates available — but the 60-90 day timeline and paperwork burden disqualify them for emergency needs. The eligibility, the math, the path.",
+      "SBA loans carry the lowest commercial rates, but the 60-90 day timeline and paperwork rule them out for emergencies. The eligibility, the math, and the path.",
     subhead:
       "SBA 7(a) and SBA 504 loans offer commercial financing rates 3-7 points lower than non-SBA alternatives — but the application process takes 60-90+ days. Here's when it's worth it and when it isn't.",
     publishedDate: "2026-05-10",
@@ -256,7 +256,7 @@ export const FINANCE_CASHFLOW_POSTS: ReadonlyArray<BlogPost> = [
     title: "Reading your settlement statement: what every line means",
     metaTitle: "Reading Your Settlement Statement: A Lease-On Guide | Dispatched",
     metaDescription:
-      "Your weekly settlement statement has 30+ line items. The categories that matter, the deductions that get miscoded, and the math that reveals whether your carrier is treating you fairly.",
+      "Your weekly settlement has 30+ line items. Which categories matter, which deductions get miscoded, and the math that shows if your carrier is paying you fairly.",
     subhead:
       "Lease-on owner-operators receive weekly settlement statements with 30+ line items. Auditing them for accuracy is real money — and most operators leave $50-$200 per week on the table by not checking.",
     publishedDate: "2026-05-10",

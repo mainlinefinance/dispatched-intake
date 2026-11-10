@@ -11,7 +11,7 @@ export const INSURANCE_RISK_POSTS: ReadonlyArray<BlogPost> = [
     title: "Nuclear verdict defense: what your dash cam needs to capture",
     metaTitle: "Nuclear Verdict Defense for Truckers 2026 | Dispatched",
     metaDescription:
-      "Trucking nuclear verdicts (over $10M) grew 800%+ since 2014. The dash cam evidence that defends carriers, the 7 angles to capture, and the storage rules that protect the evidence.",
+      "Trucking nuclear verdicts (over $10M) grew 800%+ since 2014. The dash cam evidence that defends carriers, the 7 angles to capture, and how to store footage.",
     subhead:
       "Nuclear verdicts — trucking-related awards over $10 million — grew 800%+ between 2014 and 2024. The single most important defense is video evidence. Here's what your dash cam needs to capture, and how to preserve it.",
     publishedDate: "2026-05-10",
@@ -72,7 +72,7 @@ export const INSURANCE_RISK_POSTS: ReadonlyArray<BlogPost> = [
     title: "Cargo claim filing: the playbook that protects your factoring relationship",
     metaTitle: "Cargo Claim Filing Playbook for Truckers 2026 | Dispatched",
     metaDescription:
-      "Cargo claims hit your motor truck cargo policy AND your factoring relationship. The 6-step filing process, settlement math, and how to avoid the chargeback trap.",
+      "Cargo claims hit your motor truck cargo policy and your factoring relationship. The 6-step filing process, settlement math, and avoiding the chargeback trap.",
     subhead:
       "Cargo claims have two effects: a motor truck cargo policy claim and a potential factoring chargeback on the affected load. The filing process protects both — but only if you follow it.",
     publishedDate: "2026-05-10",
@@ -133,7 +133,7 @@ export const INSURANCE_RISK_POSTS: ReadonlyArray<BlogPost> = [
     title: "Premium financing math: when monthly payments beat paying cash",
     metaTitle: "Premium Financing Math for Truckers 2026 | Dispatched",
     metaDescription:
-      "Premium financing spreads annual insurance into monthly payments at 8-15% APR. The math comparing premium financing vs cash pay, plus the cancellation risk most operators don't model.",
+      "Premium financing spreads annual insurance into monthly payments at 8-15% APR. The math against paying cash, and the cancellation risk most operators miss.",
     subhead:
       "Premium financing turns a once-a-year insurance cash bomb into a manageable monthly line. The cost is 8-15% APR. The math says it's worth it for most operators — but only if you understand the cancellation risk.",
     publishedDate: "2026-05-10",
@@ -194,7 +194,7 @@ export const INSURANCE_RISK_POSTS: ReadonlyArray<BlogPost> = [
     title: "Bobtail and non-trucking liability decoded for lease-on operators",
     metaTitle: "Bobtail / Non-Trucking Liability Decoded 2026 | Dispatched",
     metaDescription:
-      "Lease-on operators have coverage gaps the carrier's primary doesn't fill. NTL/bobtail coverage, what it does and doesn't cover, and the $400/year decision that protects $1M of exposure.",
+      "Lease-on operators have gaps the carrier's primary policy doesn't fill. What NTL and bobtail coverage do and don't cover, and why $400 a year is worth it.",
     subhead:
       "Lease-on owner-operators driving the truck for personal use — to the store, to home, between dispatched loads — aren't covered by the carrier's primary liability. NTL (non-trucking liability) fills the gap. Here's what it actually covers.",
     publishedDate: "2026-05-10",
@@ -250,7 +250,7 @@ export const INSURANCE_RISK_POSTS: ReadonlyArray<BlogPost> = [
     title: "Hot-shot vs Class 8 insurance pricing — what actually drives the difference",
     metaTitle: "Hot-Shot vs Class 8 Insurance Pricing 2026 | Dispatched",
     metaDescription:
-      "Hot-shot insurance can be 30-50% cheaper than Class 8. Or it can be more expensive. The variables that drive the pricing gap, and the underwriting logic behind it.",
+      "Hot-shot insurance can run 30-50% below Class 8, or above it. The variables that drive the pricing gap and the underwriting logic behind them.",
     subhead:
       "Hot-shot operators sometimes pay less than half what Class 8 owner-operators pay for primary liability. Sometimes more. The difference comes down to four underwriting variables most operators don't track.",
     publishedDate: "2026-05-10",

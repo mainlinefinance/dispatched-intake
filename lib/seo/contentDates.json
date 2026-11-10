@@ -21,27 +21,27 @@
   },
   "app/bad-credit-truck-financing/chapter-7-discharge/page.tsx": {
     "published": "2026-05-31",
-    "modified": "2026-05-31"
+    "modified": "2026-11-10"
   },
   "app/bad-credit-truck-financing/page.tsx": {
     "published": "2026-05-06",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/bad-credit-truck-repair-financing/page.tsx": {
     "published": "2026-05-23",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/blog/[slug]/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-11"
+    "modified": "2026-11-10"
   },
   "app/blog/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/box-truck-financing/page.tsx": {
     "published": "2026-05-06",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/calculators/commercial-truck-loan/page.tsx": {
     "published": "2026-05-10",
@@ -53,11 +53,11 @@
   },
   "app/calculators/factoring-fee/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/calculators/how-much-can-i-borrow-for-a-truck/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-10"
+    "modified": "2026-11-10"
   },
   "app/calculators/lease-vs-buy/page.tsx": {
     "published": "2026-05-10",
@@ -69,7 +69,7 @@
   },
   "app/calculators/page.tsx": {
     "published": "2026-05-06",
-    "modified": "2026-05-10"
+    "modified": "2026-11-10"
   },
   "app/calculators/semi-truck-loan/page.tsx": {
     "published": "2026-05-10",
@@ -81,79 +81,79 @@
   },
   "app/calculators/whats-my-factoring-rate/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/carriers/[carrier]/page.tsx": {
     "published": "2026-04-27",
-    "modified": "2026-05-15"
+    "modified": "2026-11-10"
   },
   "app/carriers/page.tsx": {
     "published": "2026-04-27",
-    "modified": "2026-05-10"
+    "modified": "2026-11-10"
   },
   "app/compare/1st-commercial-credit-vs-riviera-finance/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/apex-capital-vs-ecapital/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/apex-capital-vs-porter-freight-funding/page.tsx": {
     "published": "2026-05-11",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/apex-capital-vs-rts-financial/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/apex-capital-vs-tbs-factoring/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/apex-capital-vs-triumph-business-capital/page.tsx": {
     "published": "2026-05-11",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/apex-capital-vs-truckstop-go-capital/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/bluevine-vs-ondeck/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/ecapital-vs-porter-freight-funding/page.tsx": {
     "published": "2026-05-11",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/ecapital-vs-rts-financial/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/ecapital-vs-triumph-business-capital/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/ecapital-vs-truckstop-go-capital/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/otr-capital-vs-apex-capital/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/otr-capital-vs-ecapital/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/porter-freight-funding-vs-otr-solutions/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/progressive-commercial-vs-nationwide-trucking/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-10"
+    "modified": "2026-11-10"
   },
   "app/compare/progressive-commercial-vs-sentry-insurance/page.tsx": {
     "published": "2026-05-10",
@@ -161,11 +161,11 @@
   },
   "app/compare/rts-financial-vs-otr-solutions/page.tsx": {
     "published": "2026-05-11",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/rts-financial-vs-tbs-factoring/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/sentry-insurance-vs-nationwide-trucking/page.tsx": {
     "published": "2026-05-10",
@@ -173,59 +173,59 @@
   },
   "app/compare/tbs-factoring-vs-otr-solutions/page.tsx": {
     "published": "2026-05-11",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/tbs-factoring-vs-triumph-business-capital/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/triumph-vs-otr-capital/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/compare/triumph-vs-rts-financial/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/disclosures/page.tsx": {
     "published": "2026-04-21",
-    "modified": "2026-04-21"
+    "modified": "2026-11-10"
   },
   "app/equipment-financing/page.tsx": {
     "published": "2026-05-06",
-    "modified": "2026-05-15"
+    "modified": "2026-11-10"
   },
   "app/factoring-vs-mca/page.tsx": {
     "published": "2026-05-23",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/factoring-vs-working-capital-loan/page.tsx": {
     "published": "2026-05-23",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/factoring/no-credit-check/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-31"
+    "modified": "2026-11-10"
   },
   "app/factoring/page.tsx": {
     "published": "2026-05-06",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/freightliner-repair-financing/page.tsx": {
     "published": "2026-05-23",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/fuel-cards/page.tsx": {
     "published": "2026-05-23",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/glossary/[slug]/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-10"
+    "modified": "2026-11-10"
   },
   "app/glossary/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/insurance/[product]/[state]/[dotClass]/page.tsx": {
     "published": "2026-04-27",
@@ -237,7 +237,7 @@
   },
   "app/insurance/[product]/page.tsx": {
     "published": "2026-04-27",
-    "modified": "2026-05-15"
+    "modified": "2026-11-10"
   },
   "app/insurance/page.tsx": {
     "published": "2026-04-27",
@@ -249,11 +249,11 @@
   },
   "app/insurance/tools/page.tsx": {
     "published": "2026-04-27",
-    "modified": "2026-04-27"
+    "modified": "2026-11-10"
   },
   "app/insurance/tools/premium-estimator/page.tsx": {
     "published": "2026-04-27",
-    "modified": "2026-04-27"
+    "modified": "2026-11-10"
   },
   "app/lenders/[state]/page.tsx": {
     "published": "2026-05-10",
@@ -261,35 +261,35 @@
   },
   "app/lenders/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-27"
+    "modified": "2026-11-10"
   },
   "app/methodology/page.tsx": {
     "published": "2026-04-27",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/new-authority-truck-financing/page.tsx": {
     "published": "2026-05-06",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/owner-operator-financing/first-time/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-16"
+    "modified": "2026-11-10"
   },
   "app/owner-operator-financing/new-llc/page.tsx": {
     "published": "2026-05-31",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/owner-operator-financing/no-business-history/page.tsx": {
     "published": "2026-05-31",
-    "modified": "2026-05-31"
+    "modified": "2026-11-10"
   },
   "app/owner-operator-financing/page.tsx": {
     "published": "2026-05-06",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/owner-operator-repair-loans/page.tsx": {
     "published": "2026-05-23",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/page.tsx": {
     "published": "2026-04-21",
@@ -297,7 +297,7 @@
   },
   "app/pulse/diesel/[padd]/page.tsx": {
     "published": "2026-05-25",
-    "modified": "2026-05-26"
+    "modified": "2026-11-10"
   },
   "app/pulse/diesel/page.tsx": {
     "published": "2026-05-25",
@@ -305,15 +305,15 @@
   },
   "app/pulse/page.tsx": {
     "published": "2026-05-25",
-    "modified": "2026-05-26"
+    "modified": "2026-11-10"
   },
   "app/qualify/page.tsx": {
     "published": "2026-05-06",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/reefer-breakdown-coverage/page.tsx": {
     "published": "2026-05-23",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/research/best-trucking-factoring-2026/page.tsx": {
     "published": "2026-05-10",
@@ -321,11 +321,11 @@
   },
   "app/research/page.tsx": {
     "published": "2026-04-27",
-    "modified": "2026-04-27"
+    "modified": "2026-11-10"
   },
   "app/research/state-of-broker-relations-2026/page.tsx": {
     "published": "2026-05-11",
-    "modified": "2026-05-31"
+    "modified": "2026-11-10"
   },
   "app/research/state-of-commercial-trucking-insurance-2026/page.tsx": {
     "published": "2026-04-27",
@@ -333,15 +333,15 @@
   },
   "app/research/state-of-owner-operator-economics-2026/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-31"
+    "modified": "2026-11-10"
   },
   "app/research/state-of-trucking-capital-2026/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-31"
+    "modified": "2026-11-10"
   },
   "app/research/state-of-trucking-fuel-costs-2026/page.tsx": {
     "published": "2026-05-11",
-    "modified": "2026-05-31"
+    "modified": "2026-11-10"
   },
   "app/research/state-of-trucking-insurance-claims-2026/page.tsx": {
     "published": "2026-05-10",
@@ -353,7 +353,7 @@
   },
   "app/research/state-of-trucking-tech-2026/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-31"
+    "modified": "2026-11-10"
   },
   "app/search/page.tsx": {
     "published": "2026-05-11",
@@ -361,42 +361,42 @@
   },
   "app/semi-truck-financing/no-money-down/page.tsx": {
     "published": "2026-05-10",
-    "modified": "2026-05-11"
+    "modified": "2026-11-10"
   },
   "app/semi-truck-financing/page.tsx": {
     "published": "2026-05-06",
-    "modified": "2026-05-15"
+    "modified": "2026-11-10"
   },
   "app/topics/[slug]/page.tsx": {
     "published": "2026-05-11",
-    "modified": "2026-05-11"
+    "modified": "2026-11-10"
   },
   "app/topics/page.tsx": {
     "published": "2026-05-11",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/truck-repair-line-of-credit/page.tsx": {
     "published": "2026-05-23",
-    "modified": "2026-05-23"
+    "modified": "2026-11-10"
   },
   "app/truck-repair-loans/emergency/page.tsx": {
     "published": "2026-05-31",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/truck-repair-loans/engine-rebuild/page.tsx": {
     "published": "2026-05-31",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/truck-repair-loans/page.tsx": {
     "published": "2026-05-06",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/trucking-working-capital/page.tsx": {
     "published": "2026-05-06",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   },
   "app/trucking/page.tsx": {
     "published": "2026-04-24",
-    "modified": "2026-11-04"
+    "modified": "2026-11-10"
   }
 }
