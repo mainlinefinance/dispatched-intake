@@ -1088,8 +1088,7 @@ export default function TbsVsTriumphPage() {
             <p className="ins-hero-sub">
               TBS and Triumph are both legitimate factors with
               legitimate use cases &mdash; they just don&rsquo;t serve
-              the same operator. The question isn&rsquo;t whether
-              either will fund you; in most cases, both will. The
+              the same operator. The question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed. The
               question is which fits the specific shape of your
               operation: whether you have an active MC# or are about
               to file one, whether you&rsquo;re in your first year or
@@ -1110,8 +1109,7 @@ export default function TbsVsTriumphPage() {
               exists for. One application, profile-aware match, no
               double-pull on your credit, no spam from the one
               that isn&rsquo;t the fit. If you&rsquo;d rather check fit
-              first, <Link href="/qualify">/qualify</Link> takes 30
-              seconds and pulls no credit.
+              first, <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

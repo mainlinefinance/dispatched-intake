@@ -14,13 +14,13 @@ import {
 export const metadata: Metadata = fitMeta({
   title: "OTR Solutions vs eCapital — 2026 Comparison | Dispatched",
   description:
-    "OTR Solutions (formerly OTR Capital) vs eCapital: transparency-first all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
+    "OTR Solutions (formerly OTR Capital) vs eCapital: all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
   alternates: { canonical: "/compare/otr-capital-vs-ecapital" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "OTR Solutions vs eCapital — 2026 Comparison | Dispatched",
     description:
-      "OTR Solutions (formerly OTR Capital) vs eCapital: transparency-first all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
+      "OTR Solutions (formerly OTR Capital) vs eCapital: all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
     url: "/compare/otr-capital-vs-ecapital",
     type: "website",
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = fitMeta({
     card: "summary_large_image",
     title: "OTR Solutions vs eCapital — 2026 Comparison | Dispatched",
     description:
-      "OTR Solutions (formerly OTR Capital) vs eCapital: transparency-first all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
+      "OTR Solutions (formerly OTR Capital) vs eCapital: all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
   },
 });
 
@@ -929,9 +929,7 @@ export default function OtrVsEcapitalPage() {
             </h2>
             <p className="ins-hero-sub">
               OTR Solutions and eCapital are both on Dispatched&rsquo;s
-              panel and both legitimate factors. The question isn&rsquo;t
-              whether either will fund you &mdash; in most cases, both
-              will. The question is which one fits your operation: do you
+              panel and both legitimate factors. The question is which one fits; approval is not guaranteed with either. The question is which one fits your operation: do you
               operate cross-border, do you anticipate graduating into ABL,
               how concentrated is your broker risk, how predictable do you
               need monthly factoring expense to be. Apply to both directly
@@ -945,8 +943,7 @@ export default function OtrVsEcapitalPage() {
               exists. One application, profile-aware match, no double-pull
               on credit, no spam from the one that isn&rsquo;t the fit. To
               check fit before going further, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30 seconds
-              and pulls no credit. For the broader category, see{" "}
+              <Link href="/qualify">/qualify</Link> pulls no credit. For the broader category, see{" "}
               <Link href="/factoring">
                 invoice factoring for truckers
               </Link>{" "}

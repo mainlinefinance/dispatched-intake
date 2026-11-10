@@ -73,7 +73,7 @@ export const FINANCE_TERMS: ReadonlyArray<GlossaryTerm> = [
       {
         h2: "Why it matters for trucking finance",
         body:
-          "MCAs are fast but expensive. Legitimate use cases exist — emergency repair, time-sensitive opportunity — but stacking multiple MCAs is the leading cause of owner-operator insolvency. Lenders evaluating any other working-capital application will heavily discount or decline applicants with active MCA balances. Aggressive MCA providers also file blanket UCC-1s on \"all assets,\" which can block other lenders from securing collateral for years afterward.",
+          "MCAs are expensive. Legitimate use cases exist — emergency repair, time-sensitive opportunity — but stacking multiple MCAs is the leading cause of owner-operator insolvency. Lenders evaluating any other working-capital application will heavily discount or decline applicants with active MCA balances. Aggressive MCA providers also file blanket UCC-1s on \"all assets,\" which can block other lenders from securing collateral for years afterward.",
       },
     ],
     relatedTerms: ["working-capital", "term-loan", "ucc-1"],
@@ -148,7 +148,7 @@ export const FINANCE_TERMS: ReadonlyArray<GlossaryTerm> = [
       {
         h2: "Why it matters for trucking finance",
         body:
-          "Working capital is the trucking carrier's cushion for unexpected events. A blown engine doesn't have to mean a missed truck payment if working capital is in place. APR is higher than equipment loans because the loan is unsecured, short-term, and priced for speed. For first-time owner-operators, working capital is harder to qualify for than equipment financing — there's no asset to underwrite, so build 6+ months of bank statements first. Misuse — covering persistent operational losses — accelerates insolvency.",
+          "Working capital is the trucking carrier's cushion for unexpected events. A blown engine doesn't have to mean a missed truck payment if working capital is in place. APR is higher than equipment loans because the loan is unsecured, and short-term. For first-time owner-operators, working capital is harder to qualify for than equipment financing — there's no asset to underwrite, so build 6+ months of bank statements first. Misuse — covering persistent operational losses — accelerates insolvency.",
       },
     ],
     relatedTerms: ["mca", "line-of-credit", "term-loan"],

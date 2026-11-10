@@ -13,13 +13,13 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Trucking working capital — fuel & payroll fast | Dispatched",
+  title: "Trucking working capital — Fuel & Payroll | Dispatched",
   description:
     "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, timing depends on the lender and your documents.",
   alternates: { canonical: "/trucking-working-capital" },
   openGraph: {
     images: ["/opengraph-image"],
-    title: "Trucking working capital — fuel & payroll fast | Dispatched",
+    title: "Trucking working capital — Fuel & Payroll | Dispatched",
     description:
       "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, timing depends on the lender and your documents.",
     url: "/trucking-working-capital",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "Trucking working capital — fuel & payroll fast | Dispatched",
+    title: "Trucking working capital — Fuel & Payroll | Dispatched",
     description:
       "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, timing depends on the lender and your documents.",
   },
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "How fast can I get a trucking working capital loan?",
-    a: "Soft approval and lender match depend on underwriting review of finishing the application. Funds are released after the chosen lender countersigns; timing depends on the lender, your documents, and bank wire cutoffs. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
+    a: "Soft approval and lender match depend on underwriting review after you finish the application. Funds are released after the chosen lender countersigns; timing depends on the lender, your documents, and bank wire cutoffs. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
   },
   {
     q: "What can I use a trucking working capital loan for?",
@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "How is working capital different from invoice factoring?",
-    a: "Working capital is a loan you pay back from operations over time; factoring is selling specific outstanding invoices for a cash advance. Working capital costs more in APR but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring settles in days rather than weeks but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems.",
+    a: "Working capital is a loan you pay back from operations over time; factoring is selling specific outstanding invoices for a cash advance. Working capital costs more in APR but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring pays out ahead of the broker's terms but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems.",
   },
   {
     q: "What APR can I expect on a trucking working capital loan?",
@@ -307,7 +307,7 @@ export default function TruckingWorkingCapitalPage() {
               <li><strong>Soft-pull match.</strong> Redacted profile to the panel subset that funds your credit band and revenue range.</li>
               <li><strong>Offers.</strong> APR, term, total cost on each term sheet, side by side, before any hard pull.</li>
               <li><strong>One hard pull.</strong> Only after you pick a specific lender and decide to move forward.</li>
-              <li><strong>Wire.</strong> After the chosen lender signs off, before the bank&rsquo;s cutoff.</li>
+              <li><strong>Wire.</strong> After the chosen lender signs off; timing depends on the lender and your documents.</li>
             </ol>
           </div>
         </section>

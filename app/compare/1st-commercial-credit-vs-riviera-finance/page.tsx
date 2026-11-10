@@ -875,8 +875,7 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
             </h2>
             <p className="ins-hero-sub">
               Both 1CC and Riviera are on Dispatched&rsquo;s panel, and
-              both are legitimate. The question isn&rsquo;t whether
-              either will fund you &mdash; in most cases, both will. The
+              both are legitimate. The question is which one fits; approval is not guaranteed with either. The
               question is which fits the shape of your operation: how
               many trucks, growing toward the ABL threshold or
               stabilizing in mid-tier, purely U.S. or cross-border,
@@ -892,8 +891,7 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
               exists. One application, profile-aware match, no
               double-pull on your credit, no spam from the one
               that isn&rsquo;t the fit. To check fit first,{" "}
-              <Link href="/qualify">/qualify</Link> takes 30 seconds
-              and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

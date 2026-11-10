@@ -79,7 +79,7 @@ const faqs = [
   },
   {
     q: "How long does owner-operator financing take to fund?",
-    a: "Soft approval and lender match depend on underwriting review of submitting the application. Working capital and repair loans fund after lender sign-off after the chosen lender countersigns and the wire lands before cutoff. Equipment loans take longer because the lender has to verify the title and record the lien before funds release.",
+    a: "Soft approval and lender match depend on underwriting review of submitting the application. Working capital and repair loans fund after the chosen lender countersigns; timing depends on the lender and your documents. Equipment loans take longer because the lender has to verify the title and record the lien before funds release.",
   },
   {
     q: "Will applying as an owner-operator hurt my credit?",
@@ -197,8 +197,7 @@ export default function OwnerOperatorFinancingPage() {
               </li>
               <li>
                 <strong>Invoice factoring.</strong> Cash advance against
-                outstanding invoices from your carrier or broker. Settles
-                in days, not weeks. Different cost structure from a loan —
+                outstanding invoices from your carrier or broker. Paid ahead of the broker&rsquo;s terms. Different cost structure from a loan —
                 see <Link href="/glossary/recourse-factoring">recourse factoring</Link>{" "}
                 for the typical fee and chargeback structure.
               </li>

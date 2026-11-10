@@ -702,8 +702,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
             <p className="ins-hero-sub">
               RTS funds verified invoices same-day on most loads
               submitted during business hours. Competitive against
-              the broader market &mdash; most non-instant factors
-              run next-banking-day &mdash; but a tier behind BOLT for
+              the broader market &mdash; but a tier behind BOLT for
               weekend or evening emergencies. For fleets running
               predictable Monday-Friday delivery, same-day is
               sufficient. For owner-ops with irregular schedules,
@@ -1069,9 +1068,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
             <p className="ins-hero-sub">
               RTS Financial and OTR Solutions are both on
               Dispatched&rsquo;s factoring panel, and they&rsquo;re
-              both legitimate factors. The question isn&rsquo;t
-              whether either will fund you &mdash; in most cases, both
-              will. The question is which one fits the shape of your
+              both legitimate factors. The question is which one fits; approval is not guaranteed with either. The question is which one fits the shape of your
               operation: how many loads/month, whether non-recourse is
               a hard requirement, how much fuel you burn, whether you
               can commit to 12&ndash;24 months or need flexibility,
@@ -1088,8 +1085,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
               double-pull on credit, no spam from the one that
               isn&rsquo;t the fit. If you&rsquo;d rather check fit
               first, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes 30 seconds
-              and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

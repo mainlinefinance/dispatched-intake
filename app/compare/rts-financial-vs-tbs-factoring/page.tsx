@@ -609,8 +609,7 @@ export default function RtsVsTbsFactoringPage() {
             <p className="ins-hero-sub">
               RTS funds verified invoices same-day on most loads
               submitted during business hours. Competitive against the
-              broader market (most non-instant factors run
-              next-banking-day at best), but a tier behind instant-funding
+              broader market, but a tier behind instant-funding
               rails. Submissions outside business hours wait for the
               next morning. Fine for steady-state factoring; not the
               right tool for Friday-night fuel emergencies.
@@ -979,8 +978,7 @@ export default function RtsVsTbsFactoringPage() {
             <p className="ins-hero-sub">
               RTS Financial and TBS Factoring are both legitimate
               factors &mdash; they just don&rsquo;t share an operator
-              profile. The question isn&rsquo;t whether either will
-              fund you; in most cases, both will. The question is
+              profile. The question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed. The question is
               which fits the specific shape of your operation right
               now: whether you&rsquo;ve filed authority yet, whether
               projected volume hits 30+ loads/month, how much you
@@ -997,8 +995,7 @@ export default function RtsVsTbsFactoringPage() {
               </Link>{" "}
               exists. One application, profile-aware match, no
               double-pull on your credit. Or check fit first at{" "}
-              <Link href="/qualify">/qualify</Link> &mdash; 30 seconds,
-              no credit pull.
+              <Link href="/qualify">/qualify</Link> &mdash; no credit pull.
             </p>
           </div>
         </section>

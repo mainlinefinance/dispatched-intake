@@ -877,8 +877,7 @@ export default function ApexVsTbsFactoringPage() {
             </h2>
             <p className="ins-hero-sub">
               Apex and TBS are both legitimate factors with
-              legitimate use cases. The question isn&rsquo;t whether
-              either will fund you &mdash; in most cases, both will.
+              legitimate use cases. The question is which one fits; approval is not guaranteed with either.
               The question is which fits the specific shape of your
               operation right now: whether you have an active MC#,
               whether you&rsquo;re in your first year or your fifth,
@@ -895,8 +894,7 @@ export default function ApexVsTbsFactoringPage() {
               exists. One application, profile-aware match, no
               double-pull on your credit. If you&rsquo;d rather check
               fit before going further,{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30
-              seconds and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

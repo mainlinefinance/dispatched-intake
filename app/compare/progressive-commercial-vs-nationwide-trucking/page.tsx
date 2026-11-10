@@ -916,8 +916,7 @@ export default function ProgressiveVsNationwidePage() {
               real bindable numbers side-by-side with the same
               limits, deductibles, and endorsements. If you&rsquo;d
               rather check fit before going further, the two-question
-              tool at <Link href="/qualify">/qualify</Link> takes
-              about 30 seconds and pulls no credit.
+              tool at <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

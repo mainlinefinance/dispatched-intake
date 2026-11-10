@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "Do I need to have an MC number to apply?",
-    a: "No for soft pre-qualification at /qualify — the application accepts MC pending or MC not yet filed. Yes for funding on equipment loans where the loan structure assumes the truck will be moving freight under your authority. The standard sequence: soft pre-qualification first to confirm fit and max budget, MC filing and DOT number registration in parallel, then funding when the MC becomes active. The total timeline is typically 3 to 6 weeks from soft pre-qualification to truck on the road. Operators leasing on to a carrier's authority can fund without their own MC; the carrier's authority and the operator's CDL substitute.",
+    a: "No for soft pre-qualification at /qualify — the application accepts MC pending or MC not yet filed. Yes for funding on equipment loans where the loan structure assumes the truck will be moving freight under your authority. The standard sequence: soft pre-qualification first to confirm fit and max budget, MC filing and DOT number registration in parallel, then funding when the MC becomes active. The total timeline depends on the lender, your documents, and how long the MC takes to become active. Operators leasing on to a carrier's authority can fund without their own MC; the carrier's authority and the operator's CDL substitute.",
   },
   {
     q: "What documents do I need with no business history?",
@@ -358,11 +358,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
                 underwrites driver-to-operator transitions.
               </li>
               <li>
-                <strong>Timeline:</strong> Day 0 soft pre-qualification,
-                Day 2 truck selected and VIN submitted, Day 5 lender
-                term sheet countersigned, Day 8 title verification,
-                Day 10 wire to dealer. MC went active Day 14. First
-                load Day 17.
+                <strong>Sequence:</strong> soft pre-qualification, truck selected and VIN submitted, lender term sheet countersigned, title verification, wire to dealer. The MC went active after that, then the first load.
               </li>
             </ul>
           </div>
@@ -424,8 +420,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
                 <Link href="/factoring/no-credit-check">
                   Factoring with no credit check on you
                 </Link>{" "}
-                &mdash; the cash-flow product for any new operator
-                with an active MC# and a load on the books.
+                &mdash; the cash-flow product for a new operator with an active MC# and a load on the books.
               </li>
               <li>
                 <Link href="/methodology">Methodology</Link> &mdash;

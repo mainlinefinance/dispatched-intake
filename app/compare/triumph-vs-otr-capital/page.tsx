@@ -154,7 +154,7 @@ export default function TriumphVsOtrCapitalPage() {
               primary factoring product, all-in pricing that strips out
               ACH/monthly/minimum fees, and the highest customer-review
               aggregate among major factors (Google 4.7 across 883+
-              reviews, Trustpilot 4.5 across 323+). Both will fund non-
+              reviews, Trustpilot 4.5 across 323+). Both serve non-
               recourse-required mid-fleets and owner-ops. The right answer
               depends on whether you optimize for bank-grade reserve depth
               and integrated ABL (Triumph) or for transparency-first
@@ -1104,9 +1104,7 @@ export default function TriumphVsOtrCapitalPage() {
               Triumph Business Capital and OTR Solutions are both on
               Dispatched&rsquo;s panel, and they&rsquo;re both legitimate
               non-recourse factors with real product behind the
-              marketing. The question isn&rsquo;t whether either one will
-              fund you &mdash; in most non-recourse-required cases, both
-              will. The question is which structural lever matters most
+              marketing. The question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed. The question is which structural lever matters most
               for your operation: bank-grade reserve depth and integrated
               ABL graduation (Triumph), or transparency-first all-in
               pricing, contract flexibility, and the strongest
@@ -1127,7 +1125,7 @@ export default function TriumphVsOtrCapitalPage() {
               and no spam from the one that isn&rsquo;t the fit. If
               you&rsquo;d rather check fit before going further, the
               two-question tool at <Link href="/qualify">/qualify</Link>{" "}
-              takes about 30 seconds and pulls no credit.
+              pulls no credit.
             </p>
           </div>
         </section>

@@ -74,7 +74,7 @@ const faqs = [
   },
   {
     q: "What about factoring after Chapter 7?",
-    a: "The 12-month wait does not apply to factoring. Invoice factoring underwrites the broker who owes the invoice, not the operator's credit history. A discharge that is 30 days old is not a barrier to factoring as long as the operator has an active MC#, a load on the books, and the broker on the load is on the factor's approved list.{' '} See factoring with no credit check for the specific product structure.",
+    a: "The 12-month wait does not apply to factoring. Invoice factoring underwrites the broker who owes the invoice, not the operator's credit history. A discharge that is 30 days old is not a barrier to factoring as long as the operator has an active MC#, a load on the books, and the broker on the load is on the factor's approved list. See factoring with no credit check for the specific product structure.",
   },
 ];
 
@@ -327,7 +327,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
                 <Link href="/factoring/no-credit-check">
                   Factoring with no credit check on you
                 </Link>{" "}
-                — the product open to any operator
+                — the product open to operators
                 with an active MC# and a load on the books, because the factor underwrites the broker.
               </li>
               <li>

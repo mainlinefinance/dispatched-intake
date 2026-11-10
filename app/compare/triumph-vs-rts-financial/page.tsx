@@ -137,7 +137,7 @@ export default function TriumphVsRtsFinancialPage() {
               1.5% at 30+ loads/month, the advance hits 97% (the
               industry leader), and the fuel program lands up to
               $0.40/gallon at the truck stops fleets actually use.
-              Both will fund mid-fleets. The right answer depends on
+              Both serve mid-fleets. The right answer depends on
               whether you optimize for non-recourse depth and future
               ABL (Triumph) or for headline rate, advance rate, and
               fuel economics (RTS). If you&rsquo;d rather skip the
@@ -968,8 +968,7 @@ export default function TriumphVsRtsFinancialPage() {
               Triumph Business Capital and RTS Financial are both on
               Dispatched&rsquo;s panel, and both are legitimate
               factors with real product behind the marketing. The
-              question isn&rsquo;t whether either will fund you
-              &mdash; in most mid-fleet cases, both will. The
+              question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed. The
               question is which structural lever matters most for
               your operation: non-recourse reserve depth and an
               integrated bank path to ABL (Triumph), or headline rate
@@ -988,8 +987,7 @@ export default function TriumphVsRtsFinancialPage() {
               aware match, no double-pull, and no spam from the one
               that isn&rsquo;t the fit. To check fit before applying,
               the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes 30 seconds
-              and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

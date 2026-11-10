@@ -989,8 +989,7 @@ export default function TbsVsOtrSolutionsPage() {
             </h2>
             <p className="ins-hero-sub">
               TBS and OTR are both on Dispatched&rsquo;s panel and both are
-              legitimate factors. The question isn&rsquo;t whether either
-              will fund you &mdash; in most cases, both will. The question
+              legitimate factors. The question is which one fits; approval is not guaranteed with either. The question
               is which fits your operation right now: whether you have an
               active MC#, whether you&rsquo;re in your first year or your
               fifth, how concentrated your broker risk is, whether your
@@ -1005,8 +1004,7 @@ export default function TbsVsOtrSolutionsPage() {
               </Link>{" "}
               exists: one application, profile-aware match, no double-pull
               on credit. If you&rsquo;d rather check fit first,{" "}
-              <Link href="/qualify">/qualify</Link> takes 30 seconds with
-              no credit pull. First-time operators: the capital-strategy
+              <Link href="/qualify">/qualify</Link> runs with no credit pull. First-time operators: the capital-strategy
               primer at{" "}
               <Link href="/owner-operator-financing/first-time">
                 first-time owner-operator financing

@@ -87,7 +87,7 @@ export default function NoCreditCheckFactoringPage() {
         payload={article({
           headline: "Trucking factoring with no credit check on you",
           description:
-            "How freight factoring evaluates broker credit instead of personal credit — bad credit, new authority, and prior bankruptcy operators all qualify.",
+            "How freight factoring evaluates broker credit instead of personal credit — how bad credit, new authority, and a prior bankruptcy are treated.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -116,8 +116,7 @@ export default function NoCreditCheckFactoringPage() {
             <p className="ins-hero-sub">
               Freight factoring underwrites the broker who owes the
               invoice — not you. That&rsquo;s why operators with bad
-              credit, new authority, or a prior bankruptcy still get
-              funded. Here&rsquo;s how it actually works.
+              credit, new authority, or a prior bankruptcy are still considered. Here&rsquo;s how it actually works.
             </p>
             <div className="product-hero-ctas">
               <Link
@@ -186,8 +185,7 @@ export default function NoCreditCheckFactoringPage() {
               A soft pull does not affect your FICO and doesn&rsquo;t
               show up on the credit report lenders see. Even when a
               soft pull happens, operators with lower credit profiles
-              can still qualify. The pull is a verification step, not an approval
-              gate.
+              may still be considered. Where a factor runs one, the pull is mainly a verification step; approval is not guaranteed.
             </p>
           </div>
         </section>
@@ -196,7 +194,7 @@ export default function NoCreditCheckFactoringPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Who qualifies</span>
             <h2 className="ins-hero-title">
-              Who gets approved for no-credit-check trucking factoring.
+              Who no-credit-check trucking factoring fits.
             </h2>
             <h3 className="ins-hero-sub">
               <strong>Bad credit operators.</strong>
@@ -386,8 +384,7 @@ export default function NoCreditCheckFactoringPage() {
               A 3% factoring fee on a Net-30 invoice is roughly
               equivalent to a 36%+ effective APR if you ran the same
               cashflow through a working-capital line. Factoring
-              isn&rsquo;t cheap — you&rsquo;re paying for speed, for
-              broker-credit underwriting, and for not putting debt on
+              isn&rsquo;t cheap — you&rsquo;re paying for earlier access to your receivables, for broker-credit underwriting, and for not putting debt on
               your books. For operators who can qualify for clean
               working-capital pricing, that&rsquo;s the cheaper path.
               For operators who can&rsquo;t, factoring is the only

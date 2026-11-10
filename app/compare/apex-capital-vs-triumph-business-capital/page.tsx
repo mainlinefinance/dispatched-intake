@@ -160,7 +160,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               &mdash; with a non-recourse program backed by federally
               regulated reserves, a $20M factoring ceiling, and a
               direct path into bank ABL for fleets that scale past the
-              factoring window. Both will fund mid-sized carriers. The
+              factoring window. Both serve mid-sized carriers. The
               right answer depends on whether you optimize for service
               quality, fuel economics, and contract clarity (Apex) or
               for non-recourse depth and future ABL graduation
@@ -1000,8 +1000,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
             <p className="ins-hero-sub">
               Apex Capital and Triumph Business Capital are both on
               Dispatched&rsquo;s panel, and both are legitimate
-              factors. The question isn&rsquo;t whether either will
-              fund you &mdash; in most cases, both will. The question
+              factors. The question is which one fits; approval is not guaranteed with either. The question
               is which structural lever matters most: premium service,
               the deepest fuel program, the 24/7 instant-funding rail,
               and the cleanest contract exit (Apex), or bank-grade
@@ -1018,8 +1017,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               profile-aware match, no double-pull, and no spam from
               the one that isn&rsquo;t the fit. To check fit before
               applying, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes 30 seconds
-              and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

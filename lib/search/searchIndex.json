@@ -286,7 +286,7 @@
   {
     "url": "/glossary/cdl-class-a",
     "title": "CDL Class A (CDL-A)",
-    "description": "Commercial Driver's License Class A — required for combination vehicles over 26,001 lbs GCWR with a towed unit over 10,000 lbs; the standard CDL for OTR trucking.",
+    "description": "Commercial Driver's License Class A: required for combination vehicles over 26,001 lbs GCWR with a towed unit over 10,000 lbs. The standard CDL for OTR.",
     "type": "glossary",
     "category": "Operating Authority & Compliance"
   },
@@ -1119,7 +1119,7 @@
   {
     "url": "/glossary/carrier-deduction",
     "title": "Carrier Deduction",
-    "description": "Any deduction taken by a motor carrier from a lease-on owner-operator's settlement; includes fuel, escrow, insurance, dispatch, communications, and miscellaneous.",
+    "description": "Any deduction a motor carrier takes from a lease-on owner-operator's settlement: fuel, escrow, insurance, dispatch, communications, and miscellaneous.",
     "type": "glossary",
     "category": "Driver Life & Work"
   },

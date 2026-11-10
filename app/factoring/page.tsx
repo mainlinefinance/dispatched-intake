@@ -74,7 +74,7 @@ const faqs = [
   },
   {
     q: "How is factoring different from a working-capital loan?",
-    a: "Factoring is selling specific receivables for an immediate advance; working capital is borrowing a lump sum you repay from operations over time. Factoring scales with revenue (the more you haul, the more cash you can pull) and has no APR — it has a flat fee per invoice. Working capital is fixed-amount, has a payment schedule, and reports as debt on the balance sheet. Different cost structures for different cashflow problems.",
+    a: "Factoring is selling specific receivables for an advance; working capital is borrowing a lump sum you repay from operations over time. Factoring scales with revenue (the more you haul, the more cash you can pull) and has no APR — it has a flat fee per invoice. Working capital is fixed-amount, has a payment schedule, and reports as debt on the balance sheet. Different cost structures for different cashflow problems.",
   },
 ];
 
@@ -172,8 +172,7 @@ export default function InvoiceFactoringPage() {
             <ul className="product-list">
               <li>
                 <strong>Brokers paying on long terms (Net-30, Net-45, Net-60).</strong>{" "}
-                Factoring trades a 1%–4% fee for getting paid in days
-                instead of weeks. The longer the broker&rsquo;s
+                Factoring trades a 1%–4% fee for getting paid ahead of the broker&rsquo;s terms. The longer the broker&rsquo;s
                 payment terms, the more factoring is worth.
               </li>
               <li>
@@ -335,7 +334,7 @@ export default function InvoiceFactoringPage() {
         <section className="ins-sunken">
           <div className="ins-container">
             <h2 className="ins-hero-title">
-              Trade waiting on invoice age for cashflow now.
+              Trade waiting on invoice age for cashflow.
             </h2>
             <p className="ins-hero-sub">
               Soft-pull match. One factoring agreement only with the

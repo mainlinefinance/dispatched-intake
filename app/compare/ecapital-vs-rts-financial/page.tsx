@@ -139,7 +139,7 @@ export default function EcapitalVsRtsFinancialPage() {
             </h2>
             <p className="ins-hero-sub">
               eCapital and RTS Financial both sit on the Dispatched
-              factoring panel, and both will fund mid-sized fleets and
+              factoring panel, and both serve mid-sized fleets and
               brokers in the US. The DNA is different. eCapital was
               assembled through acquisition starting in 2006 &mdash;
               most recently LSQ &mdash; and claims the title of largest
@@ -654,8 +654,7 @@ export default function EcapitalVsRtsFinancialPage() {
             <p className="ins-hero-sub">
               eCapital&rsquo;s InstaPay funds verified invoices within
               roughly an hour during business hours &mdash; competitive
-              versus the broader market (most factors fund next
-              banking day at best), a tier faster than RTS&rsquo;s
+              versus the broader market, a tier faster than RTS&rsquo;s
               same-day standard. Submissions outside business hours
               wait for next morning. For day-to-day funding, InstaPay
               is a clear improvement; for weekend or evening
@@ -990,8 +989,7 @@ export default function EcapitalVsRtsFinancialPage() {
             <p className="ins-hero-sub">
               eCapital and RTS Financial are both on Dispatched&rsquo;s
               factoring panel, and both are legitimate factors. The
-              question isn&rsquo;t whether either will fund you
-              &mdash; in most fleet and broker cases, both will. The
+              question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed. The
               question is which one fits the specific shape of your
               operation: how many loads per month you run, whether
               you cross the Canadian border, whether you want a single
@@ -1013,8 +1011,7 @@ export default function EcapitalVsRtsFinancialPage() {
               credit, no double sales pitch, and no spam from the one
               that isn&rsquo;t the fit. If you&rsquo;d rather check
               fit before going further, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30
-              seconds and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

@@ -341,10 +341,7 @@ export default function NewLlcTruckFinancingPage() {
                 trucking-specialty equipment finance company on the panel.
               </li>
               <li>
-                <strong>Funding timeline:</strong> Day 0 application, Day 1
-                lender match + soft approval, Day 4 term sheet
-                countersigned, Day 5 title verification, Day 7 wire to
-                dealer. Truck on the road Day 8.
+                <strong>Sequence:</strong> application, lender match and soft approval, term sheet countersigned, title verification, wire to dealer. Timing depended on the lender and the documents.
               </li>
             </ul>
           </div>
@@ -391,7 +388,7 @@ export default function NewLlcTruckFinancingPage() {
                 <Link href="/factoring/no-credit-check">
                   Factoring with no credit check on you
                 </Link>{" "}
-                — the working-capital substitute for any new LLC with at
+                — the working-capital substitute for a new LLC with at
                 least one signed load.
               </li>
               <li>

@@ -110,8 +110,7 @@ export default function FactoringVsMcaPage() {
             </h1>
             <EditorialByline updated={today} format="iso" />
             <p className="ins-hero-sub">
-              Invoice factoring and merchant cash advances both put cash
-              in your account in a few days, but they are not the same
+              Invoice factoring and merchant cash advances both put cash in your account, but they are not the same
               product class and the real cost difference is enormous.
               Factoring sells specific receivables for a flat fee in the
               1%–4% range. An MCA advances cash against future revenue at
@@ -356,8 +355,7 @@ export default function FactoringVsMcaPage() {
               Now run the same $50,000 cash need through factoring.
               Assume the operator has roughly $250,000 in outstanding
               receivables across two brokers paying on net-45. A factor
-              advances 92% on submission — about $230,000 of cash on day
-              one, against a $50,000 actual cashflow need. The fee at
+              advances 92% on submission — about $230,000 of cash, against a $50,000 actual cashflow need. The fee at
               3% across that $250,000 is $7,500, paid out of the reserve
               over the next 45 days as the brokers pay. The operator
               gets more cash at less than half the dollar cost

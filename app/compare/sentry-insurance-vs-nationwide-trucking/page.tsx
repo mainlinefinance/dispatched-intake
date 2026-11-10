@@ -164,8 +164,7 @@ export default function SentryVsNationwidePage() {
               the line-by-line breakdown and a verdict by use case. If
               you&rsquo;d rather skip the read and get a side-by-side
               quote from both through an independent producer,{" "}
-              <Link href="/qualify">/qualify</Link> takes 30 seconds and
-              pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
 
             <table className="ins-carrier-table">

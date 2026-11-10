@@ -896,8 +896,7 @@ export default function EcapitalVsTriumphPage() {
               eCapital and Triumph Business Capital are both on
               Dispatched&rsquo;s panel, and they&rsquo;re both legitimate
               factors with deep books and real non-recourse programs. The
-              question isn&rsquo;t whether either one will fund you
-              &mdash; in most mid-fleet cases, both will. The question is
+              question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed. The question is
               which one fits the specific shape of your operation: how
               much non-recourse depth you actually need, whether you
               operate cross-border, whether you want a bank relationship
@@ -916,7 +915,7 @@ export default function EcapitalVsTriumphPage() {
               and no spam from the one that isn&rsquo;t the fit. If
               you&rsquo;d rather check fit before going further, the
               two-question tool at <Link href="/qualify">/qualify</Link>{" "}
-              takes about 30 seconds and pulls no credit.
+              pulls no credit.
             </p>
           </div>
         </section>

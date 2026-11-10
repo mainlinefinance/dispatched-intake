@@ -436,8 +436,7 @@ export default function ApexVsEcapitalPage() {
             <p className="ins-hero-sub">
               eCapital&rsquo;s InstaPay funds verified invoices within
               roughly an hour during business hours. That&rsquo;s
-              competitive against the broader factoring market &mdash;
-              most factors fund the next banking day at best &mdash; but
+              competitive against the broader factoring market &mdash; but
               it&rsquo;s a tier behind blynk&reg;. Submissions outside
               business hours wait for the next morning. For day-to-day
               steady-state funding, InstaPay is fine. For weekend
@@ -725,9 +724,7 @@ export default function ApexVsEcapitalPage() {
             </h2>
             <p className="ins-hero-sub">
               Apex Capital and eCapital are both on Dispatched&rsquo;s
-              panel, and they&rsquo;re both legitimate factors. The
-              question isn&rsquo;t whether either one will fund you
-              &mdash; in most cases, both will. The question is which
+              panel, and they&rsquo;re both legitimate factors. The question is which one fits; approval is not guaranteed with either. The question is which
               one fits the specific shape of your operation: how many
               trucks you run, how much you factor monthly, what your
               broker mix looks like, how much you spend on fuel, whether
@@ -744,8 +741,7 @@ export default function ApexVsEcapitalPage() {
               factor for your operation, no double-pull on your credit,
               and no spam from the one that isn&rsquo;t the fit. If you&rsquo;d
               rather check fit before going further, the two-question
-              tool at <Link href="/qualify">/qualify</Link> takes about
-              30 seconds and pulls no credit.
+              tool at <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

@@ -167,8 +167,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
               don&rsquo;t inflate the price; we don&rsquo;t do lease-purchase;
               we tell you up front whether your profile prices at zero down or
               whether you&rsquo;re going to need 10 to 15%. The two-question
-              fit at <Link href="/qualify">/qualify</Link> takes about a minute
-              and tells you which bucket you&rsquo;re in.
+              fit at <Link href="/qualify">/qualify</Link> tells you which bucket you&rsquo;re in.
             </p>
           </div>
         </section>

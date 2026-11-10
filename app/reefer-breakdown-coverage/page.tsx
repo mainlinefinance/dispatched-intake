@@ -72,7 +72,7 @@ const faqs = [
   },
   {
     q: "How fast can I get repair financing for a reefer unit rebuild?",
-    a: "The Dispatched workflow returns soft-approval and lender match after underwriting review of submitting the application. Funds wire to the operator's business account the after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff. The financing is independent of the cargo claim — the lender underwrites the operation's revenue and equipment, not the reefer breakdown event.",
+    a: "The Dispatched workflow returns soft-approval and lender match after underwriting review of submitting the application. Funds wire to the operator's business account after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff. The financing is independent of the cargo claim — the lender underwrites the operation's revenue and equipment, not the reefer breakdown event.",
   },
   {
     q: "Can I get reefer breakdown coverage if my truck is over a certain age?",

@@ -197,8 +197,7 @@ export default function FactoringFeeCalculatorPage() {
               </li>
               <li>
                 <strong>Reserve release timing varies.</strong> Most factors
-                release the reserve within 1 – 2 business days of broker pay;
-                some hold for 5 – 10 days. Cash-flow modeling should add a
+                release the reserve shortly after the broker pays; others hold it longer. Cash-flow modeling should add a
                 buffer.
               </li>
               <li>

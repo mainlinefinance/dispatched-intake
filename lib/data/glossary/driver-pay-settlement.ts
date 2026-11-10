@@ -274,7 +274,7 @@ export const DRIVER_PAY_SETTLEMENT_TERMS: ReadonlyArray<GlossaryTerm> = [
     term: "Carrier Deduction",
     category: "driver-life-work",
     shortDefinition:
-      "Any deduction taken by a motor carrier from a lease-on owner-operator's settlement; includes fuel, escrow, insurance, dispatch, communications, and miscellaneous.",
+      "Any deduction a motor carrier takes from a lease-on owner-operator's settlement: fuel, escrow, insurance, dispatch, communications, and miscellaneous.",
     sections: [
       {
         h2: "What it is",

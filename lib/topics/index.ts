@@ -41,7 +41,7 @@ export const TOPIC_INFO: Record<ContentTopic, TopicInfo> = {
     slug: "factoring",
     label: "Factoring & Cash Flow",
     description:
-      "Invoice factoring is how most owner-operators turn 30-60 day broker pay into cash they can use now. This topic covers recourse vs non-recourse, advance rates, broker credit, factoring contracts, chargebacks, fuel-card programs, and head-to-head comparisons of the major trucking-factoring desks. If your revenue is hostage to broker payment cycles, the playbook here is the one you actually need — built around the math of the rate spread, the broker-credit infrastructure, and the contract terms that decide whether factoring helps you or eats your margin.",
+      "Invoice factoring is how most owner-operators turn 30-60 day broker pay into working cash ahead of the broker's terms. This topic covers recourse vs non-recourse, advance rates, broker credit, factoring contracts, chargebacks, fuel-card programs, and head-to-head comparisons of the major trucking-factoring desks. If your revenue is hostage to broker payment cycles, the playbook here is the one you actually need — built around the math of the rate spread, the broker-credit infrastructure, and the contract terms that decide whether factoring helps you or eats your margin.",
   },
   "equipment-financing": {
     slug: "equipment-financing",
@@ -592,7 +592,7 @@ const STATIC_CONTENT: ReadonlyArray<StaticContentItem> = [
   {
     url: "/factoring/no-credit-check",
     title: "No Credit Check Factoring",
-    description: "Factoring programs that approve on broker credit, not personal FICO — built for new authority and credit-rebuilding owners.",
+    description: "Factoring programs that underwrite mainly on broker credit — used by new authorities and credit-rebuilding owners.",
     contentType: "vertical",
     topics: ["factoring", "new-authority"],
   },
@@ -783,3 +783,29 @@ export function getContentByTopic(
 
   return items;
 }
+
+/* Search-result descriptions for the topic hubs. The `description` above is
+   the page's opening paragraph and runs far past what a result shows, so
+   each hub gets a short one written to fit (see lib/seo/meta.ts). */
+export const TOPIC_META_DESCRIPTIONS: Record<ContentTopic, string> = {
+  factoring:
+    "Recourse vs non-recourse, advance rates, broker credit, contracts, chargebacks and fuel-card programs: the factoring guides, terms and comparisons.",
+  "equipment-financing":
+    "Semi-truck and box-truck loans, balloon payments, down payments, lease-vs-buy math, refinancing and SBA loans: guides, terms and calculators.",
+  "working-capital":
+    "Term loans, lines of credit, asset-based lending and MCAs, and how to choose between working capital, factoring and an MCA.",
+  insurance:
+    "Primary liability, cargo, physical damage, non-trucking liability, occupational accident, premium financing and deductibles for truckers.",
+  "owner-operator-life":
+    "Pay models, settlement statements, deductions, taxes, hometime, and lease-on versus own authority: the working life of an owner-operator.",
+  compliance:
+    "MC and DOT numbers, BOC-3, UCR, IRP, IFTA, MCS-150, CSA scores, HOS rules, ELDs and the Clearinghouse: what keeps authority active.",
+  operations:
+    "Freight types, accessorials like detention and layover, dispatch, broker vetting, rate confirmations, and BOL and POD paperwork.",
+  "tech-and-telematics":
+    "ELDs, AI dash cams, TMS and dispatch software, load boards, fleet-management platforms, IFTA software and driver scorecards.",
+  "new-authority":
+    "The first 18 months of a new MC: the New Entrant program, financing and insurance for new authorities, and the compliance calendar.",
+  "industry-trends":
+    "Annual research reports on trucking finance, insurance, capital, fuel, regulation, broker relations and technology. Source-cited.",
+};

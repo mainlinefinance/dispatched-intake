@@ -537,8 +537,7 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
             <p className="ins-hero-sub">
               eCapital&rsquo;s InstaPay funds verified invoices within
               roughly an hour during business hours. That is competitive
-              against the broader factoring market — most factors fund the
-              next banking day at best — but submissions outside business
+              against the broader factoring market — but submissions outside business
               hours wait for the next morning. For day-to-day steady-state
               funding, InstaPay is fine. For Friday-night-to-Saturday-morning
               fuel needs, it is not the product.
@@ -895,8 +894,7 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
             <p className="ins-hero-sub">
               eCapital and Truckstop Go Capital are both on
               Dispatched&rsquo;s panel, and they are both legitimate
-              factors. The question is not whether either one will fund you
-              — in most cases, both will. The question is which one fits
+              factors. The question is which one fits; approval is not guaranteed with either. The question is which one fits
               the specific shape of your operation: how many trucks you
               run, how much you factor monthly, where your freight comes
               from, whether you run any Canadian volume, whether you want
@@ -914,8 +912,7 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
               factor for your operation, no double-pull on your credit, and
               no spam from the one that is not the fit. If you would
               rather check fit before going further, the two-question tool
-              at <Link href="/qualify">/qualify</Link> takes about 30
-              seconds and pulls no credit.
+              at <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

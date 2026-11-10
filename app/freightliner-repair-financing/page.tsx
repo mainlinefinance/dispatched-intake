@@ -184,8 +184,7 @@ export default function FreightlinerRepairFinancingPage() {
               against the operation&rsquo;s cashflow. There is no lien against
               the Cascadia, no{" "}
               <Link href="/glossary/ucc-1">UCC-1</Link> filing, no equipment
-              appraisal in the way of a wire. That is what lets the money
-              move the after lender sign-off; timing depends on documents. Existing financing on
+              appraisal in the way of a wire. Funds move after lender sign-off; timing depends on the lender and your documents. Existing financing on
               the tractor — most Cascadias under five years old are still on
               an equipment loan — does not block the repair financing,
               because the repair financing is not secured against the

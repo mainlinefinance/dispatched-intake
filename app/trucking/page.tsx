@@ -71,7 +71,7 @@ const faqs = [
   },
   {
     q: "How fast can I get funded?",
-    a: "Soft approval and lender match depend on underwriting review of finishing the application. Funds are released after the chosen lender countersigns; timing depends on the lender, your documents, and bank wire cutoffs. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
+    a: "Soft approval and lender match depend on underwriting review after you finish the application. Funds are released after the chosen lender countersigns; timing depends on the lender, your documents, and bank wire cutoffs. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
   },
   {
     q: "Can I apply for more than one product at the same time?",
@@ -83,7 +83,7 @@ const faqs = [
   },
   {
     q: "What's the difference between a working-capital loan and invoice factoring?",
-    a: "Working capital is a loan you pay back from operations over a fixed term; factoring is selling specific outstanding invoices for a cash advance. Working capital costs more in APR (the panel range is 14%–34% APR) but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring settles in days rather than weeks but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems — both live on this panel.",
+    a: "Working capital is a loan you pay back from operations over a fixed term; factoring is selling specific outstanding invoices for a cash advance. Working capital costs more in APR (the panel range is 14%–34% APR) but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring pays out ahead of the broker's terms but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems — both live on this panel.",
   },
   {
     q: "Does Dispatched fund the loans, or who does?",

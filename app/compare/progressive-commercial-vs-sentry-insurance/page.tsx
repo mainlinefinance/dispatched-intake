@@ -892,8 +892,7 @@ export default function ProgressiveVsSentryPage() {
               producer placing the policy with the right market. If
               you&rsquo;d rather check fit before going further, the
               two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30 seconds
-              and pulls no MVR.
+              <Link href="/qualify">/qualify</Link> pulls no MVR.
             </p>
           </div>
         </section>

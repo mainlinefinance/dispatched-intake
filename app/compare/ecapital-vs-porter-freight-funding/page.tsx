@@ -344,7 +344,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
             <p className="ins-hero-sub">
               Porter Freight Funding is a smaller, owner-operator-focused
               factor purpose-built for the segment most factors decline
-              at the front door: sub-580 FICO operators, new MC
+              at the front door: lower-credit operators, new MC
               authorities, and operators with prior bankruptcy. The
               defining choice is the no-personal-credit-check policy
               &mdash; many operators report onboarding with no FICO pull
@@ -691,8 +691,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
             <p className="ins-hero-sub">
               eCapital&rsquo;s InstaPay funds verified invoices within
               roughly an hour during business hours. That&rsquo;s
-              competitive against the broader factoring market &mdash;
-              most factors fund the next banking day at best &mdash; and
+              competitive against the broader factoring market &mdash; and
               a tier faster than Porter&rsquo;s same-day standard.
               Submissions outside business hours wait for the next
               morning. For day-to-day funding, InstaPay is fine; for
@@ -978,8 +977,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
             <p className="ins-hero-sub">
               eCapital and Porter Freight Funding both sit on
               Dispatched&rsquo;s factoring panel, but they barely
-              compete for the same operator. The question isn&rsquo;t
-              whether either will fund you &mdash; it&rsquo;s which
+              compete for the same operator. The question is which
               structural product fits the shape of your operation:
               credit-bureau cleanliness or scale, single-product
               specialty or multi-product platform, US-only or
@@ -1001,8 +999,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               no double sales pitch, and no spam from the one that
               isn&rsquo;t the fit. If you&rsquo;d rather check fit
               before going further, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30
-              seconds and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

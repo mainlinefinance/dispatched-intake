@@ -518,9 +518,7 @@ export default function ApexVsRtsFinancialPage() {
             <p className="ins-hero-sub">
               RTS funds verified invoices same-day on most loads. For
               day-to-day steady-state factoring, that&rsquo;s
-              competitive against the broader market &mdash; most
-              non-instant factors still run next-banking-day at best
-              &mdash; but it&rsquo;s a tier behind blynk&reg; for
+              competitive against the broader market &mdash; but it&rsquo;s a tier behind blynk&reg; for
               weekend or evening emergencies. The structural advantage
               RTS holds is on the advance rate: up to 97% of invoice
               face value on factoring, the highest in the industry
@@ -897,8 +895,7 @@ export default function ApexVsRtsFinancialPage() {
             <p className="ins-hero-sub">
               Apex Capital and RTS Financial are both on Dispatched&rsquo;s
               factoring panel, and they&rsquo;re both legitimate
-              factors. The question isn&rsquo;t whether either one will
-              fund you &mdash; in most cases, both will. The question
+              factors. The question is which one fits; approval is not guaranteed with either. The question
               is which one fits the specific shape of your operation:
               how many loads you run per month, what your contract
               tolerance looks like, how much fuel you burn, whether you
@@ -918,8 +915,7 @@ export default function ApexVsRtsFinancialPage() {
               credit, no double sales pitch, and no spam from the one
               that isn&rsquo;t the fit. If you&rsquo;d rather check
               fit before going further, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30
-              seconds and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

@@ -997,7 +997,7 @@ export default function BestTruckingFactoring2026Page() {
               days old has limited choices — TBS or Porter are realistic;
               Apex and Triumph are unlikely to underwrite cleanly until
               you have broker history. A single-truck owner-operator at
-              90+ days authority with 600+ FICO has the full menu open
+              90+ days authority and solid credit has the full menu open
               and should optimize for the fuel-program economics; Apex
               tends to win this profile. A 2–4 truck operation is
               squarely in Apex&apos;s sweet spot but should also quote

@@ -514,8 +514,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
               Truckstop Go Capital funds verified invoices on a
               standard same-day timeline during business hours.
               That&rsquo;s competitive against most of the factoring
-              market &mdash; many factors still fund next banking day
-              at best &mdash; but it&rsquo;s a tier behind blynk&reg;.
+              market &mdash; but it&rsquo;s a tier behind blynk&reg;.
               Invoices submitted after the daily cutoff wait for the
               next morning. Friday-evening submissions wait until
               Monday in most cases. For day-to-day steady-state funding,
@@ -985,8 +984,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
             <p className="ins-hero-sub">
               Apex Capital and Truckstop Go Capital are both on
               Dispatched&rsquo;s panel, and they&rsquo;re both
-              legitimate factors. The question isn&rsquo;t whether
-              either one will fund you &mdash; in most cases, both will.
+              legitimate factors. The question is which one fits; approval is not guaranteed with either.
               The question is which one fits the specific shape of your
               operation: how much of your dispatch runs through the
               Truckstop board, how much you spend on fuel, how often you
@@ -1007,7 +1005,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
               and no spam from the one that isn&rsquo;t the fit. If
               you&rsquo;d rather check fit before going further, the
               two-question tool at <Link href="/qualify">/qualify</Link>{" "}
-              takes about 30 seconds and pulls no credit.
+              pulls no credit.
             </p>
           </div>
         </section>

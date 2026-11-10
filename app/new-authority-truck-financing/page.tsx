@@ -292,7 +292,7 @@ export default function NewAuthorityFinancingPage() {
               <li><strong>Soft-pull match.</strong> Redacted profile to the panel subset that funds new-authority operators (factors and the equipment-finance subset).</li>
               <li><strong>Offers.</strong> Factor agreements + equipment loan term sheets, side by side, before any hard pull or factoring agreement signature.</li>
               <li><strong>One commitment.</strong> Pick a factor or a lender. Factoring agreements aren&rsquo;t loans, but they are commitments — read the recourse clause.</li>
-              <li><strong>Onboarding + advance.</strong> Factoring: Notice of Assignment + first invoice within days. Equipment: title work + dealer wire.</li>
+              <li><strong>Onboarding + advance.</strong> Factoring: Notice of Assignment + first invoice. Equipment: title work + dealer wire.</li>
             </ol>
           </div>
         </section>

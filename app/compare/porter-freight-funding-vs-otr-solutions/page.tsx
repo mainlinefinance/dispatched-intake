@@ -323,7 +323,7 @@ export default function PorterVsOtrPage() {
             <p className="ins-hero-sub">
               Porter Freight Funding is a smaller, owner-operator-focused
               factor purpose-built for the segment most factors decline at
-              the front door: sub-580 FICO operators, new MC authorities,
+              the front door: lower-credit operators, new MC authorities,
               and operators with prior bankruptcy. The defining choice is
               the no-personal-credit-check policy &mdash; many operators
               report onboarding with no FICO pull at all, because Porter
@@ -661,8 +661,7 @@ export default function PorterVsOtrPage() {
               industry-standard same-day model: verified invoices submitted
               during business hours fund within 24 hours, with most clean
               submissions landing the same day. That&rsquo;s competitive
-              against the broader factoring market &mdash; many factors
-              fund the next banking day at best &mdash; but it&rsquo;s a
+              against the broader factoring market &mdash; but it&rsquo;s a
               clear tier behind OTR&rsquo;s BOLT. Submissions outside
               business hours wait for the next morning. For day-to-day
               steady-state funding, Porter is fine. For weekend or
@@ -938,8 +937,7 @@ export default function PorterVsOtrPage() {
             <p className="ins-hero-sub">
               Porter and OTR are both on Dispatched&rsquo;s panel, and both
               factor operators that Apex, eCapital, and Triumph decline at
-              the front door. The question isn&rsquo;t whether either will
-              fund you &mdash; in most cases, both will. It&rsquo;s which
+              the front door. The question is which one fits; approval is not guaranteed with either. It&rsquo;s which
               path fits: zero credit-bureau activity (Porter) or soft
               fraud pull with non-recourse coverage (OTR); 12-month
               lock-in (Porter) or month-to-month (OTR); concentrated broker
@@ -956,8 +954,7 @@ export default function PorterVsOtrPage() {
               </Link>{" "}
               exists. One application, profile-aware match, no double-pull,
               no spam from the one that isn&rsquo;t the fit. To check fit
-              first, <Link href="/qualify">/qualify</Link> takes 30 seconds
-              and pulls no credit.
+              first, <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

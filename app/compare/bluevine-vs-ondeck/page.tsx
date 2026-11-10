@@ -794,7 +794,7 @@ export default function BluevineVsOnDeckPage() {
             <p className="ins-hero-sub">
               Imagine a $20K Net 60 invoice from a broker. Three ways to
               bridge the 60-day gap:{" "}
-              <strong>(1) Factor at 3%:</strong> advance $19,400 immediately,
+              <strong>(1) Factor at 3%:</strong> advance $19,400,
               cost $600. <strong>(2) Bluevine LOC at 12% APR:</strong> draw
               $20K, carry for 60 days, cost roughly $400 in interest &mdash;
               cheaper on paper, but only if the broker pays on day 60 and
@@ -866,8 +866,7 @@ export default function BluevineVsOnDeckPage() {
               or factoring), no double credit pull, and no spam from the
               one that isn&rsquo;t the fit. If you&rsquo;d rather check fit
               before applying, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30 seconds
-              and pulls nothing. The methodology behind how Dispatched
+              <Link href="/qualify">/qualify</Link> pulls no credit. The methodology behind how Dispatched
               compares lenders is in{" "}
               <Link href="/methodology">/methodology</Link>.
             </p>

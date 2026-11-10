@@ -12,7 +12,7 @@ export const COMPLIANCE_LICENSING_TERMS: ReadonlyArray<GlossaryTerm> = [
     termCode: "CDL-A",
     category: "operating-authority-compliance",
     shortDefinition:
-      "Commercial Driver's License Class A — required for combination vehicles over 26,001 lbs GCWR with a towed unit over 10,000 lbs; the standard CDL for OTR trucking.",
+      "Commercial Driver's License Class A: required for combination vehicles over 26,001 lbs GCWR with a towed unit over 10,000 lbs. The standard CDL for OTR.",
     sections: [
       {
         h2: "What it is",

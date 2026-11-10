@@ -87,7 +87,7 @@ const faqs = [
   },
   {
     q: "How fast can I get either product?",
-    a: "Working capital on the Dispatched panel funding timing depends on the lender and your documents — soft-pull match after underwriting review, hard pull only at lender selection, then wire after lender sign-off. Factoring relationships take longer to set up initially (3 to 7 business days for the broker verifications, UCC-1 filing, and onboarding) but once the relationship is live, invoice funding timing depends on the factor and your invoices. For a one-off need, a working capital loan avoids the factoring setup; for an ongoing cashflow mechanism, factoring keeps working over the life of the relationship.",
+    a: "Working capital on the Dispatched panel funding timing depends on the lender and your documents — soft-pull match after underwriting review, hard pull only at lender selection, then wire after lender sign-off. Factoring relationships take longer to set up initially (broker verifications, UCC-1 filing, and onboarding) but once the relationship is live, invoice funding timing depends on the factor and your invoices. For a one-off need, a working capital loan avoids the factoring setup; for an ongoing cashflow mechanism, factoring keeps working over the life of the relationship.",
   },
   {
     q: "What about equipment financing — where does it fit?",
@@ -375,7 +375,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               <strong>Solved with factoring.</strong> Assume the operator
               has roughly $250,000 in outstanding receivables across two
               brokers paying on Net-45. The factor advances 92% on
-              submission — about $230,000 of cash on day one, against a
+              submission — about $230,000 of cash, against a
               $50,000 actual cashflow need. The fee at 3% across that
               $250,000 is $7,500, paid out of the reserve over the next 45
               days as the brokers pay. Net cost for solving the $50,000
@@ -608,8 +608,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                 <span className="product-example-label">Match output</span>
                 <span className="product-example-value">
                   Two products: (1) factoring relationship at 2.8% per
-                  invoice across all three brokers, set up over 5 business
-                  days, advancing 92% on submission going forward. (2)
+                  invoice across all three brokers, advancing 92% on submission going forward. (2)
                   working capital loan of $35,000 at 21% APR over 18
                   months, $2,260 monthly, funding timing varies for the
                   repair scope.

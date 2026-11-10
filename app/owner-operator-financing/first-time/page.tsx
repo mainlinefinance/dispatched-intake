@@ -134,7 +134,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
           name: "How to finance your first truck as a new owner-operator",
           description:
             "Step-by-step process from CDL to a funded first truck on the Dispatched lender panel.",
-          totalTime: "P10D",
+          
           steps: [
             {
               name: "Get your authority filed (or know your timing)",

@@ -328,7 +328,7 @@ export default function ApexVsPorterPage() {
             <p className="ins-hero-sub">
               Porter Freight Funding is a smaller, owner-operator-focused
               factor purpose-built for the segment most factors decline
-              at the front door: sub-580 FICO operators, new MC
+              at the front door: lower-credit operators, new MC
               authorities with damaged or thin credit, and operators with
               prior bankruptcy. The defining choice is the
               no-personal-credit-check policy &mdash; many operators
@@ -595,8 +595,7 @@ export default function ApexVsPorterPage() {
               industry-standard same-day model: verified invoices
               submitted during business hours fund within 24 hours, with
               most clean submissions landing the same day. That&rsquo;s
-              competitive against the broader factoring market &mdash;
-              many factors fund the next banking day at best &mdash; but
+              competitive against the broader factoring market &mdash; but
               it&rsquo;s a clear tier behind Apex&rsquo;s blynk&reg;.
               Submissions outside business hours wait for the next
               morning. For day-to-day steady-state funding, Porter is
@@ -932,8 +931,7 @@ export default function ApexVsPorterPage() {
             <p className="ins-hero-sub">
               Apex Capital and Porter Freight Funding are both on
               Dispatched&rsquo;s panel, and both are legitimate factors
-              with real specialisms. The question isn&rsquo;t whether
-              either one will fund you &mdash; in most cases, both will,
+              with real specialisms. The question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed,
               though at very different effective rates depending on your
               credit profile. The question is which one fits the
               specific shape of your operation: where your FICO sits,
@@ -954,7 +952,7 @@ export default function ApexVsPorterPage() {
               and no spam from the one that isn&rsquo;t the fit. If
               you&rsquo;d rather check fit before going further, the
               two-question tool at <Link href="/qualify">/qualify</Link>{" "}
-              takes about 30 seconds and pulls no credit.
+              pulls no credit.
             </p>
           </div>
         </section>
