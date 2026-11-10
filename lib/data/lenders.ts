@@ -177,7 +177,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     rateFloor: "1.2%",
     contractMin: "12 months",
     blurb:
-      "Funds brand-new MC numbers in their first 30 days where most factors require 90+ days of broker history. Supportive of post-bankruptcy operators and includes a fuel card plus dispatch support; customer service is functional rather than high-touch.",
+      "Works with brand-new MC numbers, where most factors look for 90+ days of broker history. Supportive of post-bankruptcy operators and includes a fuel card plus dispatch support; customer service is functional rather than high-touch.",
   },
   {
     slug: "otr-solutions",
@@ -202,7 +202,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     rateFloor: "1.5%",
     contractMin: "month-to-month",
     blurb:
-      "Explicit no-personal-credit-check option for lower credit profiles, recent bankruptcies, and thin-file operators — they underwrite the broker, not the trucker. No fuel program and a 90% advance cap raise the effective cost vs. Apex or eCapital.",
+      "Underwrites mainly on broker credit, which is why operators with lower credit profiles, recent bankruptcies, or thin files often start here; approval is not guaranteed. No fuel program and a 90% advance cap raise the effective cost vs. Apex or eCapital.",
   },
   {
     slug: "truckstop-go-capital",

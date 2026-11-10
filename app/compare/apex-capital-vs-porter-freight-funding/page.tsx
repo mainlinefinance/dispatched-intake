@@ -15,7 +15,7 @@ export const metadata: Metadata = fitMeta({
   title:
     "Apex Capital vs Porter Freight Funding — 2026 Comparison | Dispatched",
   description:
-    "Apex vs Porter Freight Funding: premium owner-op factor vs broker-credit specialist. Rates, credit pull policies, contracts, and use cases compared.",
+    "Apex vs Porter Freight Funding: premium owner-op factor vs broker-credit specialist. Rates, underwriting approach, contracts, and use cases compared.",
   alternates: {
     canonical: "/compare/apex-capital-vs-porter-freight-funding",
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = fitMeta({
     title:
       "Apex Capital vs Porter Freight Funding — 2026 Comparison | Dispatched",
     description:
-      "Apex vs Porter Freight Funding: premium owner-op factor vs broker-credit specialist. Rates, credit pull policies, contracts, and use cases compared.",
+      "Apex vs Porter Freight Funding: premium owner-op factor vs broker-credit specialist. Rates, underwriting approach, contracts, and use cases compared.",
     url: "/compare/apex-capital-vs-porter-freight-funding",
     type: "website",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = fitMeta({
     title:
       "Apex Capital vs Porter Freight Funding — 2026 Comparison | Dispatched",
     description:
-      "Apex vs Porter Freight Funding: premium owner-op factor vs broker-credit specialist. Rates, credit pull policies, contracts, and use cases compared.",
+      "Apex vs Porter Freight Funding: premium owner-op factor vs broker-credit specialist. Rates, underwriting approach, contracts, and use cases compared.",
   },
 });
 
@@ -44,23 +44,23 @@ const PAGE_URL =
 const faqs = [
   {
     q: "Why would I pick Porter over Apex?",
-    a: "Two reasons, and they're structural. First, Porter typically does no personal credit pull at all — many operators report onboarding without a single FICO inquiry on the bureaus. Apex does a soft pull. If you're rebuilding credit, minimizing inquiries before a separate financing application, or simply don't want any credit-bureau activity tied to factoring, Porter wins. Second, Porter specializes in operators with lower credit profiles or a past bankruptcy — the profile Apex will sometimes onboard but tends to price uncompetitively. Porter says its underwriting evaluates the broker side of the receivable.",
+    a: "Two reasons, and they're structural. First, underwriting focus: Porter says it underwrites mainly on the credit of the brokers who owe the invoices; how it reviews the carrier is its own policy, so confirm it with Porter. Apex runs a soft pull during onboarding. Second, Porter specializes in operators with lower credit profiles or a past bankruptcy — a profile Apex says it considers but tends to price toward the top of its range. Approval is not guaranteed with either.",
   },
   {
     q: "Which is better for established owner-ops with strong credit?",
-    a: "Apex, with no real debate. The premium service model (dedicated US-based account executive by name), the BBB Torch Award and 700+ five-star reviews, the ~51¢/gal fuel discount, and the around-the-clock blynk® payment rail all stack the same direction. Porter's structural advantage — no credit pull — doesn't matter for an operator whose credit is in good shape. At that profile, Apex's deeper product set and premium service deliver materially more value per factoring dollar.",
+    a: "Apex, with no real debate. The premium service model (dedicated US-based account executive by name), the BBB Torch Award and 700+ five-star reviews, the ~51¢/gal fuel discount, and the around-the-clock blynk® payment rail all stack the same direction. Porter's broker-credit underwriting focus matters less for an operator whose credit is in good shape. At that profile, Apex's deeper product set and premium service deliver materially more value per factoring dollar.",
   },
   {
     q: "Does Apex pull credit?",
-    a: "Yes, Apex runs a soft credit pull during onboarding. A soft pull does not affect your FICO score and is not visible to lenders pulling your file for a future application, but it does appear briefly on your own credit-report inquiries section. For most operators this is irrelevant — soft pulls don't hurt — but operators specifically minimizing all bureau activity prefer Porter, which often pulls nothing at all.",
+    a: "Yes, Apex runs a soft credit pull during onboarding. A soft pull does not affect your FICO score and is not visible to lenders pulling your file for a future application, but it does appear briefly on your own credit-report inquiries section. For most operators this is not a concern. How Porter reviews the carrier is its own policy; confirm it with Porter.",
   },
   {
     q: "How do their payment options differ?",
     a: "Apex's blynk® is a payment rail that runs around the clock, including weekends and holidays. Porter pays on a standard business-hours schedule. For Monday–Friday operations both work; if you need payments outside banking hours, Apex's rail is the structural difference.",
   },
   {
-    q: "I'm a bad-credit operator. Should I skip Apex?",
-    a: "Not necessarily. Apex says it does not decline on credit alone, though lower credit profiles and prior bankruptcies come with structural adjustments. The cleaner pick is Porter if you specifically want zero credit-bureau activity or if Apex prices your effective rate uncompetitively because of the credit profile. The right move is to compare offers: if Apex's price is close, the premium service and fuel program usually win; if Apex prices wide of Porter, take Porter for the cleaner credit experience.",
+    q: "I'm rebuilding credit. Should I skip Apex?",
+    a: "Not necessarily. Apex says it does not decline on credit alone, though lower credit profiles and prior bankruptcies come with structural adjustments. Porter is worth comparing if you want underwriting centered on your brokers' credit, or if Apex prices your effective rate toward the top of its range because of the credit profile. The right move is to compare offers: if Apex's price is close, the premium service and fuel program usually win; if Apex prices wide of Porter, Porter is the closer fit.",
   },
   {
     q: "Which is better for brand-new authority?",
@@ -88,7 +88,7 @@ export default function ApexVsPorterPage() {
           headline:
             "Apex Capital vs Porter Freight Funding — premium service vs broker-credit specialist in 2026?",
           description:
-            "Head-to-head comparison of Apex Capital and Porter Freight Funding across credit pull policy, rates, service quality, payment options, fuel, contracts, and use cases for 2026.",
+            "Head-to-head comparison of Apex Capital and Porter Freight Funding across underwriting approach, rates, service quality, payment options, fuel, contracts, and use cases for 2026.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -110,8 +110,7 @@ export default function ApexVsPorterPage() {
             <p className="ins-hero-sub">
               Apex Capital is the established owner-op factor with premium
               service and an around-the-clock payment rail. Porter Freight Funding
-              specializes in no-personal-credit-check factoring for
-              bad-credit operators. Very different operator profiles —
+              says it underwrites mainly on the credit of the brokers who owe the invoices, and works with operators rebuilding credit. Very different operator profiles —
               almost no overlap.
             </p>
             <div className="product-hero-ctas">
@@ -150,16 +149,11 @@ export default function ApexVsPorterPage() {
               on the market (~51&cent;/gal), and the around-the-clock blynk&reg; payment rail. Porter Freight Funding is
               the specialist for the segment Apex would price
               uncompetitively: lower credit profiles, prior bankruptcy, new
-              authority with damaged or thin credit. Porter&rsquo;s
-              defining choice is the no-personal-credit-check policy
-              &mdash; many operators report onboarding with no FICO pull
-              at all, because Porter underwrites the broker (the entity
-              actually paying the receivable) instead of the operator.
+              authority with damaged or thin credit. Porter&rsquo;s defining choice is its underwriting focus: Porter says it underwrites mainly on the credit of the broker (the entity actually paying the receivable). How it reviews the carrier is its own policy, so confirm it with Porter.
               Rates run 1&ndash;5% at Apex and 1.5&ndash;4% at Porter, both
               with 12-month contracts as the standard. Choice is
               structural: premium service plus deep fuel discount on
-              established credit (Apex), or zero credit-bureau activity
-              and bad-credit-friendly underwriting (Porter). To skip the
+              established credit (Apex), or broker-credit underwriting (Porter). Approval is not guaranteed with either. To skip the
               read and get matched,{" "}
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
@@ -197,7 +191,7 @@ export default function ApexVsPorterPage() {
                     Established owner-ops, premium service
                   </td>
                   <td data-label="Porter Freight Funding">
-                    Bad credit, post-BK, new authority
+                    Rebuilding credit, post-BK, new authority
                   </td>
                 </tr>
                 <tr>
@@ -209,11 +203,11 @@ export default function ApexVsPorterPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Personal credit pull</strong>
+                    <strong>Underwriting focus</strong>
                   </td>
-                  <td data-label="Apex Capital">Soft pull</td>
+                  <td data-label="Apex Capital">Carrier and broker credit</td>
                   <td data-label="Porter Freight Funding">
-                    None or no pull
+                    Broker credit
                   </td>
                 </tr>
                 <tr>
@@ -221,14 +215,14 @@ export default function ApexVsPorterPage() {
                     <strong>Lower credit profiles</strong>
                   </td>
                   <td data-label="Apex Capital">Possible</td>
-                  <td data-label="Porter Freight Funding">Routine</td>
+                  <td data-label="Porter Freight Funding">Considered</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
                     <strong>Prior bankruptcy</strong>
                   </td>
                   <td data-label="Apex Capital">Possible</td>
-                  <td data-label="Porter Freight Funding">Routine</td>
+                  <td data-label="Porter Freight Funding">Considered</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -305,7 +299,7 @@ export default function ApexVsPorterPage() {
               financing. They factor freight invoices for trucking
               companies. The concentration is the point. The result is a
               factor that competes on premium service and tooling rather
-              than on bad-credit underwriting, which is why Apex&rsquo;s
+              than on credit-rebuilding underwriting, which is why Apex&rsquo;s
               700+ five-star reviews and 2018 BBB Torch Award for
               Marketplace Ethics matter &mdash; they&rsquo;re the
               evidence of a service tier most factors don&rsquo;t hit.
@@ -321,22 +315,13 @@ export default function ApexVsPorterPage() {
             </p>
 
             <h3>
-              Porter Freight Funding &mdash; the no-credit-pull specialist.
+              Porter Freight Funding &mdash; the broker-credit specialist.
             </h3>
             <p className="ins-hero-sub">
               Porter Freight Funding is a smaller, owner-operator-focused
-              factor purpose-built for the segment most factors decline
-              at the front door: lower-credit operators, new MC
+              factor built for a specific segment: lower-credit operators, new MC
               authorities with damaged or thin credit, and operators with
-              prior bankruptcy. The defining choice is the
-              no-personal-credit-check policy &mdash; many operators
-              report onboarding with no FICO pull at all, because Porter
-              underwrites the broker (the entity actually paying the
-              receivable) instead of the operator. That&rsquo;s a real
-              shift from how factoring underwriting normally works, and
-              it&rsquo;s the reason Porter shows up in the &ldquo;who
-              would actually approve me&rdquo; searches that drive the
-              bad-credit category. The team is modest, the tech is
+              prior bankruptcy. The defining choice is the underwriting focus: Porter says it underwrites mainly on the credit of the broker (the entity actually paying the receivable). How it reviews the carrier is its own policy, which you should confirm with Porter, and approval is not guaranteed. The team is modest, the tech is
               functional rather than polished, and the footprint is
               primarily US trucking. Rates run 1.5&ndash;4% with a
               12-month contract default. The team is small, US-based, and
@@ -372,10 +357,9 @@ export default function ApexVsPorterPage() {
             </h3>
             <p className="ins-hero-sub">
               Apex Capital runs a soft credit pull during onboarding.
-              That pull does not affect the operator&rsquo;s FICO score
-              and is not visible to other lenders evaluating the file,
+              That pull does not affect the operator&rsquo;s credit score and is not visible to other lenders evaluating the file,
               but it does generate a soft-inquiry record on the operator
-              side. More importantly, FICO is part of the pricing input:
+              side. More importantly, credit is part of the pricing input:
               an operator with strong credit and clean payment history prices closer to Apex&rsquo;s 1% floor than an operator with a lower credit profile and a recent BK, even at the same factored volume. Apex will consider lower-credit and prior-BK operators &mdash; the company doesn&rsquo;t hard-decline
               on credit alone &mdash; but the effective rate often
               widens to the upper end of the 1&ndash;5% range, which is
@@ -383,34 +367,17 @@ export default function ApexVsPorterPage() {
             </p>
 
             <h3>
-              Porter &mdash; &ldquo;no credit pull at all&rdquo; is the
-              structural answer.
+              Porter &mdash; broker-credit underwriting is the structural answer.
             </h3>
             <p className="ins-hero-sub">
-              Porter&rsquo;s answer is to remove the operator from the
-              credit-decision equation entirely. Underwriting evaluates
-              the broker side: who is paying the invoice, what their
-              credit profile and payment history look like. Operator
-              FICO doesn&rsquo;t enter the calculation, and many
-              operators report no credit pull at all during onboarding
-              &mdash; not even a soft one. For operators who don&rsquo;t
-              want any credit-bureau activity tied to the factoring
-              relationship &mdash; rebuilding credit after a BK,
-              minimizing inquiries before a separate financing
-              application, or simply not wanting their FICO touched
-              &mdash; Porter is the structural fit. The category Porter
-              owns isn&rsquo;t &ldquo;bad credit accepted,&rdquo;
-              it&rsquo;s &ldquo;your credit isn&rsquo;t part of the
-              equation.&rdquo;
+              Porter&rsquo;s answer is to center underwriting on the broker side: who is paying the invoice, and what their credit profile and payment history look like. Porter says it underwrites mainly on the credit of the brokers who owe the invoices. How it reviews the carrier is its own policy, so confirm it with Porter before you apply. For operators rebuilding credit after a BK, that focus is why Porter comes up; approval is not guaranteed.
             </p>
 
             <h3>Which approach matches your situation.</h3>
             <p className="ins-hero-sub">
               For operators with credit in good standing &mdash; solid credit, no recent BK &mdash; Apex&rsquo;s soft pull
               is a non-event and the credit profile gets rewarded with
-              better effective pricing. For operators rebuilding credit,
-              minimizing all bureau activity, or carrying a lower credit profile or recent BK on file, Porter&rsquo;s no-pull policy is cleaner. The
-              broader bad-credit category context is in{" "}
+              better effective pricing. For operators rebuilding credit, or carrying a lower credit profile or recent BK on file, Porter&rsquo;s broker-credit underwriting is the closer fit. The broader category context is in{" "}
               <Link href="/factoring/no-credit-check">
                 factoring that underwrites your brokers </Link>{" "}
               and{" "}
@@ -472,7 +439,7 @@ export default function ApexVsPorterPage() {
               The 2.5&ndash;3.5% effective rate combined with the absence
               of per-invoice fees lands lower than Porter&rsquo;s 3% mid-
               range on most realistic profiles, before any fuel-program
-              consideration. <strong>Bad-credit operators: Porter.</strong>{" "}
+              consideration. <strong>Operators rebuilding credit: Porter.</strong>{" "}
               The 1.5&ndash;4% headline runs structurally lower than
               Apex&rsquo;s damaged-credit pricing &mdash; Apex&rsquo;s
               upper end (4&ndash;5%) is where operators with lower credit profiles tend to land, and Porter&rsquo;s mid-range underprices
@@ -618,11 +585,10 @@ export default function ApexVsPorterPage() {
               policy are the structural advantages, not the
               ancillary-product depth. For operators where fuel volume
               dominates total operating cost, Porter&rsquo;s smaller
-              fuel program is a real cost gap that has to be weighed
-              against the no-credit-pull benefit.
+              fuel program is a real cost gap that has to be weighed against the underwriting fit.
             </p>
 
-            <h3>When fuel matters more than credit policy.</h3>
+            <h3>When fuel matters more than underwriting focus.</h3>
             <p className="ins-hero-sub">
               For high-mileage operators &mdash; long-haul OTR, team
               drivers, dedicated lanes &mdash; the fuel discount can
@@ -683,9 +649,7 @@ export default function ApexVsPorterPage() {
             <h3>The 24-month graduation pattern.</h3>
             <p className="ins-hero-sub">
               The most common operator trajectory across these two
-              factors is the Porter-to-Apex graduation: bad-credit
-              operator starts at Porter for the no-pull policy and
-              credit-friendly underwriting, factors cleanly for
+              factors is the Porter-to-Apex graduation: an operator rebuilding credit starts at Porter for its broker-credit underwriting, factors cleanly for
               18&ndash;24 months while rebuilding credit, then moves to
               Apex once credit is rebuilt and the credit-decision
               equation works in their favor. The timing aligns
@@ -761,25 +725,15 @@ export default function ApexVsPorterPage() {
             <ul className="product-list">
               <li>
                 <strong>
-                  Operators who want zero credit-bureau activity.
+                  Operators who want underwriting centered on their brokers.
                 </strong>{" "}
-                Porter&rsquo;s no-personal-credit-check policy is the
-                structural answer for operators who are rebuilding
-                credit, minimizing inquiries before a separate financing
-                application, or simply don&rsquo;t want their FICO
-                touched. Many operators report no pull at all during
-                onboarding &mdash; not even soft, which is the standard
-                at Apex.
+                Porter says it underwrites mainly on the credit of the brokers who owe the invoices, which is why it comes up for operators who are rebuilding credit. How it reviews the carrier is its own policy; confirm it with Porter. Approval is not guaranteed.
               </li>
               <li>
                 <strong>
                   Operators with lower credit profiles who&rsquo;d be priced uncompetitively elsewhere.
                 </strong>{" "}
-                Porter routinely approves credit profiles that Apex
-                would onboard but price toward the top of the 1&ndash;5%
-                range. The underwriting evaluates the broker side of
-                the receivable, not operator FICO, which removes the
-                credit-driven rate widening.
+                Porter says it works with credit profiles that Apex would price toward the top of the 1&ndash;5% range, and that its underwriting centers on the broker side of the receivable. Approval is not guaranteed.
               </li>
               <li>
                 <strong>
@@ -796,10 +750,7 @@ export default function ApexVsPorterPage() {
                   Brand-new authorities with damaged or thin credit.
                 </strong>{" "}
                 Apex&rsquo;s structured startup program is great for
-                clean new-authority profiles; Porter&rsquo;s minimal
-                operator-side credit underwriting is the better fit for
-                new authorities who would otherwise stall on credit
-                review. For broader new-authority context, see{" "}
+                clean new-authority profiles; Porter&rsquo;s broker-credit underwriting focus is the closer fit for new authorities with damaged or thin credit. For broader new-authority context, see{" "}
                 <Link href="/new-authority-truck-financing">
                   new authority truck financing
                 </Link>
@@ -810,8 +761,7 @@ export default function ApexVsPorterPage() {
                   Operators bridging to a premium factor later.
                 </strong>{" "}
                 The most common pattern: factor at Porter for 18&ndash;24
-                months while credit rebuilds, then graduate to Apex once
-                FICO supports it. Porter is the bridge; Apex is the
+                months while credit rebuilds, then graduate to Apex once credit supports it. Porter is the bridge; Apex is the
                 destination. For operators on this trajectory,
                 Porter&rsquo;s 12-month structure aligns with the
                 graduation timing.
@@ -897,9 +847,7 @@ export default function ApexVsPorterPage() {
               with real specialisms. The question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed,
               though at very different effective rates depending on your
               credit profile. The question is which one fits the
-              specific shape of your operation: where your FICO sits,
-              whether you&rsquo;ve had a recent BK, how much credit-
-              bureau activity you want to keep clean, how much you
+              specific shape of your operation: where your credit sits, whether you&rsquo;ve had a recent BK, how much you
               spend on fuel, whether you need weekend cash, and where
               you expect your credit to be in 24 months. Apply to both
               directly and you&rsquo;ll spend the next two weeks

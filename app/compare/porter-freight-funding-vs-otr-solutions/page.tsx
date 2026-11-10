@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: "Which is better for new authority?",
-    a: "Both work, but for slightly different reasons. Porter onboards new authority with underwriting focused on the brokers you haul for. OTR onboards new authority with its standard underwriting (soft pull). Porter has fewer onboarding steps for brand-new operators; OTR provides better long-term value once authority and history are established.",
+    a: "Both work, but for slightly different reasons. Porter onboards new authority with underwriting focused on the brokers you haul for. OTR onboards new authority with its standard underwriting (soft pull). Porter's onboarding is built around the brokers you haul for; OTR provides better long-term value once authority and history are established.",
   },
   {
     q: "What about non-recourse coverage?",
@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     q: "When should I pick Porter over OTR (or vice versa)?",
-    a: "Pick Porter if: (1) You want underwriting that centers on your brokers' credit (confirm Porter's carrier review with Porter), (2) You're brand-new authority and want the fewest onboarding steps, (3) You value smaller-team personalized US service. Pick OTR if: (1) You want true non-recourse coverage on concentrated broker risk, (2) You value contract flexibility (no long-term lock-in), (3) You want all-in pricing without surprise fees, (4) You're comfortable with mostly-online support.",
+    a: "Pick Porter if: (1) You want underwriting that centers on your brokers' credit (confirm Porter's carrier review with Porter), (2) You're brand-new authority and want onboarding built around your brokers, (3) You value smaller-team personalized US service. Pick OTR if: (1) You want true non-recourse coverage on concentrated broker risk, (2) You value contract flexibility (no long-term lock-in), (3) You want all-in pricing without surprise fees, (4) You're comfortable with mostly-online support.",
   },
 ];
 
@@ -303,8 +303,7 @@ export default function PorterVsOtrPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Company background</span>
             <h2 className="ins-hero-title">
-              Two different shapes, one shared base: operators other factors
-              decline.
+              Two different shapes, one shared base: operators rebuilding credit.
             </h2>
 
             <h3>
@@ -312,8 +311,7 @@ export default function PorterVsOtrPage() {
             </h3>
             <p className="ins-hero-sub">
               Porter Freight Funding is a smaller, owner-operator-focused
-              factor purpose-built for the segment most factors decline at
-              the front door: lower-credit operators, new MC authorities,
+              factor built for a specific segment: lower-credit operators, new MC authorities,
               and operators with prior bankruptcy. The defining choice is the underwriting focus &mdash; Porter says it underwrites mainly on the credit of the broker (the entity actually paying the receivable). How it reviews the carrier is its own policy, which you should confirm with Porter, and approval is not guaranteed. The team is modest, the tech is functional rather
               than polished, and the footprint is primarily US trucking
               &mdash; but the underwriting flexibility is the draw. Rates
@@ -348,7 +346,7 @@ export default function PorterVsOtrPage() {
               product set: fuel cards, broker tools, ELD integration, and
               credit-check workflows in the portal. The headline feature is
               true non-recourse priced into the rate. On credit, OTR&rsquo;s approach differs from Porter&rsquo;s:
-              a soft pull happens for fraud detection, but OTR says the operator&rsquo;s personal credit score isn&rsquo;t the pricing input. Rates 2.5&ndash;5%, no
+              OTR says it runs a soft pull for fraud detection; how credit affects pricing is OTR&rsquo;s own policy. Rates 2.5&ndash;5%, no
               long-term contract, customer support partially overseas.
               Aggregate reviews are the strongest in the category &mdash;
               Google 4.7 across 883+, Trustpilot 4.5 across 323+, fewest
@@ -386,7 +384,7 @@ export default function PorterVsOtrPage() {
             <p className="ins-hero-sub">
               OTR doesn&rsquo;t advertise &ldquo;no credit check.&rdquo; A
               soft pull happens during onboarding for identity verification
-              and fraud detection &mdash; no impact on credit score, and OTR says personal credit doesn&rsquo;t price the rate. What OTR does instead is
+              and fraud detection, according to OTR. What OTR does instead is
               solve the concentrated-broker-risk problem that hits operators rebuilding credit: damaged credit often correlates with
               thinner broker diversification, which makes broker insolvency
               existential. By pricing true non-recourse into the headline
@@ -544,7 +542,7 @@ export default function PorterVsOtrPage() {
               because recurring volume is what makes the unit economics
               work &mdash; and OTR sustains the model because the all-in
               pricing produces enough margin without needing volume
-              lock-in. For bad-credit operators who plan to graduate to a
+              lock-in. For operators rebuilding credit who plan to graduate to a
               lower-rate factor after 12 months of clean payment history,
               the optionality is real.
             </p>
@@ -707,7 +705,7 @@ export default function PorterVsOtrPage() {
               </li>
               <li>
                 <strong>
-                  Brand-new authorities who want the fewest onboarding steps.
+                  Brand-new authorities.
                 </strong>{" "}
                 Porter&rsquo;s onboarding for new MCs is built around the brokers you haul for. For broader new-authority context, see{" "}
                 <Link href="/new-authority-truck-financing">
@@ -719,7 +717,7 @@ export default function PorterVsOtrPage() {
                 <strong>
                   Operators with prior bankruptcy on file.
                 </strong>{" "}
-                Recent or historical BK is not an automatic decline at Porter. Broker mix and operating profile carry the decision.
+                Porter says a recent or historical BK is not an automatic decline; broker mix and operating profile weigh heavily. Approval is not guaranteed.
               </li>
               <li>
                 <strong>
@@ -759,7 +757,7 @@ export default function PorterVsOtrPage() {
                 No long-term contract requirement, no 12-month
                 auto-renewal. For operators who anticipate switching
                 factors mid-year or running variable monthly volume, the
-                optionality is real &mdash; particularly for bad-credit
+                optionality is real &mdash; particularly for credit-rebuilding
                 operators who plan to re-shop the market after a credit
                 rebuild.
               </li>

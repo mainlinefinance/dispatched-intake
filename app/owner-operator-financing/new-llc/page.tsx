@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "How old does my LLC have to be to qualify?",
-    a: "The panel floor is one month of formation with active EIN and a state-issued certificate of formation in good standing. LLCs at 3 to 6 months see a slightly wider lender mix; at 12 months with consistent business bank deposits the full product set opens. Below one month, the lender will typically wait for the certificate to be filed and the EIN to populate IRS records — which is days, not weeks.",
+    a: "The panel floor is one month of formation with active EIN and a state-issued certificate of formation in good standing. LLCs at 3 to 6 months see a slightly wider lender mix; at 12 months with consistent business bank deposits the full product set opens. Below one month, the lender will typically wait for the certificate to be filed and the EIN to populate IRS records — which depends on state and IRS processing.",
   },
   {
     q: "Do I need an MC number before applying with a new LLC?",

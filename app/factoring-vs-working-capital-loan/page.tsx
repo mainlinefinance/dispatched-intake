@@ -131,7 +131,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               Both products solve cashflow gaps. The difference is the shape
               of the gap. Factoring smooths a timing problem — you have
               invoiced loads sitting on Net-30, Net-45, or Net-60 terms and
-              need the money now. A working capital loan funds a scale
+              need the money before the broker pays. A working capital loan funds a scale
               problem — you need cash for something that hasn&rsquo;t been
               invoiced yet, like a repair, an equipment down payment, or a
               buffer through a slow stretch. Most operators end up using
@@ -231,7 +231,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               yours. A factor cares whether the broker will pay; they do
               not care much about your{" "}
               <Link href="/glossary/fico">FICO</Link> score. This is why
-              factoring is often the only product available to operators in
+              factoring is often the product considered first by operators in
               their first six months after authority, post-bankruptcy
               operators, and owner-operators with lower credit profiles.
             </p>
@@ -374,8 +374,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
             <p className="ins-hero-sub">
               <strong>Solved with factoring.</strong> Assume the operator
               has roughly $250,000 in outstanding receivables across two
-              brokers paying on Net-45. The factor advances 92% on
-              submission — about $230,000 of cash, against a
+              brokers paying on Net-45. The factor advances 92% of the receivables — about $230,000 of cash, against a
               $50,000 actual cashflow need. The fee at 3% across that
               $250,000 is $7,500, paid out of the reserve over the next 45
               days as the brokers pay. Net cost for solving the $50,000
@@ -451,7 +450,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               </li>
               <li>
                 <strong>Your problem is timing, not scale.</strong>{" "}
-                I&rsquo;ll be paid eventually, I just need it now is the
+                I&rsquo;ll be paid eventually, I need it before the broker pays is the
                 factoring use case. Factoring smooths receivables. It does
                 not enlarge the business.
               </li>
@@ -607,7 +606,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                 <span className="product-example-label">Match output</span>
                 <span className="product-example-value">
                   Two products: (1) factoring relationship at 2.8% per
-                  invoice across all three brokers, advancing 92% on submission going forward. (2)
+                  invoice across all three brokers, advancing 92% of each invoice going forward. (2)
                   working capital loan of $35,000 at 21% APR over 18
                   months, $2,260 monthly, funding timing varies for the
                   repair scope.

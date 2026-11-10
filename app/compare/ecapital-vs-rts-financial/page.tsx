@@ -940,12 +940,12 @@ export default function EcapitalVsRtsFinancialPage() {
             </p>
 
             <h3>
-              For new authority, week one &mdash; TBS Factoring.
+              For new authority: TBS Factoring.
             </h3>
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
               startup program is the deepest in the industry &mdash;
-              approval before MC activation &mdash; and TBS bundles
+              onboarding that can start before MC activation &mdash; and TBS bundles
               authority filings into the relationship. Neither
               eCapital nor RTS targets the brand-new owner-operator
               the way TBS does.

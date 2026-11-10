@@ -848,11 +848,10 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
               owner-op who runs 8,000+ miles per month and wants payment options outside banking hours, Apex is the structural choice.
             </p>
 
-            <h3>Brand-new authority, week one: TBS Factoring.</h3>
+            <h3>Brand-new authority: TBS Factoring.</h3>
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
-              startup program is the deepest in the industry — you can be
-              approved before your MC is even active — and the per-load
+              startup program is the deepest in the industry — onboarding can start before your MC is active — and the per-load
               fee structure works for operators with irregular early-stage
               volume.
             </p>

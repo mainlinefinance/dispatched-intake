@@ -53,7 +53,7 @@ const faqs = [
     a: "Reviews favor Apex strongly. Apex has 700+ 5-star reviews and won the BBB Torch Award for marketplace ethics. eCapital reviews are mixed — many positive (account managers praised by name), some complaints about fee transparency and contract exit difficulty.",
   },
   {
-    q: "Which is better for bad credit or new authority?",
+    q: "Which is built for new authority or lower credit profiles?",
     a: "Both work with lower credit profiles and new authority; neither guarantees approval. Apex has a dedicated startup program for new operators. eCapital's programs are more rigid on minimum volume thresholds.",
   },
   {
@@ -216,10 +216,10 @@ export default function ApexVsEcapitalPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Bad credit</strong>
+                    <strong>Lower credit profiles</strong>
                   </td>
-                  <td data-label="Apex Capital">Yes</td>
-                  <td data-label="eCapital">Yes (volume floors)</td>
+                  <td data-label="Apex Capital">Considered</td>
+                  <td data-label="eCapital">Considered (volume floors)</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -343,7 +343,7 @@ export default function ApexVsEcapitalPage() {
               under-budget the effective cost.
             </p>
 
-            <h3>Winner by use case.</h3>
+            <h3>Difference by use case.</h3>
             <p className="ins-hero-sub">
               <strong>Owner-operators (1&ndash;4 trucks): Apex.</strong>{" "}
               Effective rates run 30&ndash;60 basis points lower for the
@@ -420,8 +420,7 @@ export default function ApexVsEcapitalPage() {
 
             <h3>Apex blynk® &mdash; a payment rail that runs around the clock.</h3>
             <p className="ins-hero-sub">
-              Apex&rsquo;s blynk&reg; funding system is genuinely
-              differentiated. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. For a driver who delivers on a Friday evening, that is the feature that matters. The infrastructure was built in-house
+              Apex&rsquo;s blynk&reg; is a payment option that operates outside banking hours. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was built in-house
               and has been running at scale for several years.
             </p>
 
@@ -430,9 +429,9 @@ export default function ApexVsEcapitalPage() {
               eCapital&rsquo;s InstaPay pays verified invoices during business hours. Submissions outside business hours are processed when the business day resumes. For steady weekday operations that covers the need; it does not cover weekends the way blynk&reg; does.
             </p>
 
-            <h3>Winner by use case.</h3>
+            <h3>Difference by use case.</h3>
             <p className="ins-hero-sub">
-              <strong>Apex on payment options.</strong> blynk&reg; suits the owner-op profile that needs payments outside banking hours.{" "}
+              <strong>Payment options.</strong> Apex offers blynk&reg;, a payment option that operates outside banking hours; eCapital&rsquo;s InstaPay operates during business hours. Timing on any invoice depends on the factor and your paperwork.{" "}
               <strong>eCapital on integrations and reporting.</strong>{" "}
               The eCapital portal exposes deeper analytics, multi-entity
               roll-ups, broker credit dashboards, and accounting
@@ -538,9 +537,9 @@ export default function ApexVsEcapitalPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Bad credit and new authority</span>
+            <span className="ins-eyebrow">Lower credit profiles and new authority</span>
             <h2 className="ins-hero-title">
-              Both work. Apex is more flexible.
+              Two program structures: a startup program and volume floors.
             </h2>
 
             <h3>Apex &mdash; structured startup program.</h3>
@@ -552,10 +551,9 @@ export default function ApexVsEcapitalPage() {
               the underwriting reflects that.
             </p>
 
-            <h3>eCapital &mdash; works, with volume floors.</h3>
+            <h3>eCapital &mdash; volume floors apply.</h3>
             <p className="ins-hero-sub">
-              eCapital factors operators with bad credit or new
-              authority, but the programs are more rigid on minimum
+              eCapital considers lower credit profiles and new authorities; approval is not guaranteed, and the programs are more rigid on minimum
               monthly volume thresholds. New authorities with under
               roughly $20K/month in projected factored volume sometimes
               don&rsquo;t clear underwriting. The product set is
@@ -589,12 +587,11 @@ export default function ApexVsEcapitalPage() {
               </li>
               <li>
                 <strong>Operators who need payments outside banking hours.</strong>{" "}
-                blynk&reg; runs around the clock, including weekends. If you deliver on a Friday night, this is the feature to weigh.
+                blynk&reg; runs around the clock, including weekends.
               </li>
               <li>
-                <strong>New authorities and bad-credit operators.</strong>{" "}
-                The structured startup program clears underwriting paths
-                that eCapital&rsquo;s volume thresholds don&rsquo;t.
+                <strong>New authorities and operators rebuilding credit.</strong>{" "}
+                Apex runs a structured startup program; eCapital applies volume thresholds. Approval is not guaranteed with either.
               </li>
               <li>
                 <strong>Operators who value contract clarity.</strong>{" "}
@@ -666,11 +663,11 @@ export default function ApexVsEcapitalPage() {
               in a way that protects you on broker insolvency.
             </p>
 
-            <h3>Brand-new authority, week one: TBS Factoring.</h3>
+            <h3>Brand-new authority: TBS Factoring.</h3>
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
               startup program is the deepest in the industry &mdash;
-              you can be approved before your MC is even active &mdash;
+              onboarding can start before your MC is active &mdash;
               and the per-load fee structure works for operators with
               irregular early-stage volume.
             </p>
@@ -679,8 +676,7 @@ export default function ApexVsEcapitalPage() {
             <p className="ins-hero-sub">
               OTR runs no-contract spot factoring with per-invoice
               pricing. Higher fees per load, but zero commitment, no
-              auto-renewal, no whole-ledger requirement. For operators
-              who want the cash-when-needed option without the
+              auto-renewal, no whole-ledger requirement. For operators who want to factor selectively without the
               relationship overhead, OTR is the cleanest fit.
             </p>
 

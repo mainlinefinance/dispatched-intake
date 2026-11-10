@@ -47,7 +47,7 @@ export const TOPIC_INFO: Record<ContentTopic, TopicInfo> = {
     slug: "equipment-financing",
     label: "Equipment Financing",
     description:
-      "Equipment financing is how truckers buy their next tractor, trailer, or specialized unit without writing a six-figure check up front. This topic covers semi-truck loans, box-truck financing, balloon payments, down-payment strategy, lease-vs-buy math, refinancing, SBA loans for owner-operators, and the bad-credit and no-money-down programs that actually fund. Built for owner-operators and small fleets making the most expensive purchase of their career — with the diligence the truck dealer is not going to do for you.",
+      "Equipment financing is how truckers buy their next tractor, trailer, or specialized unit without writing a six-figure check up front. This topic covers semi-truck loans, box-truck financing, balloon payments, down-payment strategy, lease-vs-buy math, refinancing, SBA loans for owner-operators, and how bad-credit and no-money-down programs work. Built for owner-operators and small fleets making the most expensive purchase of their career — with the diligence the truck dealer is not going to do for you.",
   },
   "working-capital": {
     slug: "working-capital",
@@ -627,14 +627,14 @@ const STATIC_CONTENT: ReadonlyArray<StaticContentItem> = [
   {
     url: "/bad-credit-truck-financing",
     title: "Bad Credit Truck Financing",
-    description: "Truck financing programs that approve on revenue and authority strength when FICO is the obstacle.",
+    description: "Truck financing programs that weigh revenue and authority strength alongside credit.",
     contentType: "vertical",
     topics: ["equipment-financing"],
   },
   {
     url: "/truck-repair-loans",
     title: "Truck Repair Loans",
-    description: "Emergency capital for major truck repairs — engine, transmission, after-market — to keep the truck earning.",
+    description: "Capital for major truck repairs — engine, transmission, after-market — to keep the truck earning.",
     contentType: "vertical",
     topics: ["working-capital", "equipment-financing"],
   },

@@ -493,7 +493,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
             <h3>Apex blynk&reg; &mdash; a payment rail that runs around the clock.</h3>
             <p className="ins-hero-sub">
               Apex&rsquo;s blynk&reg; funding system is genuinely
-              differentiated. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. For a driver who delivers on a Friday evening, that is the feature that matters. The infrastructure was built in-house
+              differentiated. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was built in-house
               and has been running at scale for several years.
             </p>
 
@@ -752,7 +752,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Bad credit and new authority</span>
+            <span className="ins-eyebrow">Lower credit profiles and new authority</span>
             <h2 className="ins-hero-title">
               Both approve, with different paths.
             </h2>
@@ -917,11 +917,11 @@ export default function ApexVsTruckstopGoCapitalPage() {
               nor Truckstop offer ABL as a co-product.
             </p>
 
-            <h3>Brand-new authority, week one: TBS Factoring.</h3>
+            <h3>Brand-new authority: TBS Factoring.</h3>
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
               startup program is the deepest in the industry &mdash;
-              you can be approved before your MC is even active &mdash;
+              onboarding can start before your MC is active &mdash;
               and the per-load fee structure works for operators with
               irregular early-stage volume.
             </p>
@@ -930,8 +930,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
             <p className="ins-hero-sub">
               OTR runs no-contract spot factoring with per-invoice
               pricing. Higher fees per load, but zero commitment, no
-              auto-renewal, and no whole-ledger requirement. For
-              operators who want the cash-when-needed option without
+              auto-renewal, and no whole-ledger requirement. For operators who want to factor selectively without
               the platform overhead, OTR is the cleanest fit.
             </p>
 

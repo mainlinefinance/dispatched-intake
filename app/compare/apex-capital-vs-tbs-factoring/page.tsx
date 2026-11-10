@@ -362,10 +362,7 @@ export default function ApexVsTbsFactoringPage() {
               release one from a prior factor. If you&rsquo;re still
               in the &ldquo;haven&rsquo;t filed anything yet&rdquo;
               phase, Apex isn&rsquo;t structured to help you get
-              there. Apex&rsquo;s startup program accelerates
-              underwriting for new authorities &mdash; a new MC#
-              isn&rsquo;t a decline reason &mdash; but it
-              doesn&rsquo;t replace the filing services. For what
+              there. Apex&rsquo;s startup program structures underwriting for new authorities &mdash; a new MC# is considered, though approval is not guaranteed &mdash; but it doesn&rsquo;t replace the filing services. For what
               new authorities should prepare before approaching any
               factor, see{" "}
               <Link href="/new-authority-truck-financing">
@@ -494,23 +491,19 @@ export default function ApexVsTbsFactoringPage() {
 
             <h3>Apex blynk&reg; — a payment rail that runs around the clock.</h3>
             <p className="ins-hero-sub">
-              Apex&rsquo;s blynk&reg; funding system is the
-              differentiated piece of the product set. Verified
-              invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. For a driver who delivers on a Friday evening, that is the feature that matters. The infrastructure was built in-house and
+              Apex&rsquo;s blynk&reg; is a payment option that operates outside banking hours. Verified
+              invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was built in-house and
               has been running at scale for several years.
             </p>
 
             <h3>TBS — business-day funding.</h3>
             <p className="ins-hero-sub">
-              TBS pays verified invoices on a standard business-day schedule. Submissions outside business hours are processed when the business day resumes, and weekend submissions wait until business resumes. With predictable broker payment cycles that covers the need. For weekends and cash-tight first-year operators, the difference from blynk&reg; matters.
+              TBS pays verified invoices on a standard business-day schedule. Submissions outside business hours are processed when the business day resumes, and weekend submissions wait until business resumes. With predictable broker payment cycles that covers the need. It does not operate on weekends the way blynk&reg; does.
             </p>
 
-            <h3>Apex has the wider payment window.</h3>
+            <h3>Difference: when each payment option operates.</h3>
             <p className="ins-hero-sub">
-              On payment options alone Apex offers more. The question is how often weekend payments actually matter in your operation. For team drivers, dedicated lanes, and
-              high-mileage OTR, blynk&reg; pays for itself in fuel
-              flexibility alone. For regional operators who deliver
-              Monday&ndash;Friday and are home for the weekend, the advantage is real but less load-bearing.
+              Apex offers blynk&reg;, a payment option that operates outside banking hours; TBS pays on a business-day schedule. Whether that difference matters depends on when your loads deliver. Timing on any invoice depends on the factor and your paperwork.
             </p>
           </div>
         </section>
@@ -659,12 +652,12 @@ export default function ApexVsTbsFactoringPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Bad credit and new authority</span>
+            <span className="ins-eyebrow">Lower credit profiles and new authority</span>
             <h2 className="ins-hero-title">
-              Bad credit and new authority acceptance.
+              How each handles lower credit profiles and new authority.
             </h2>
 
-            <h3>Apex — yes, with the right structure; dedicated startup program.</h3>
+            <h3>Apex — a dedicated startup program.</h3>
             <p className="ins-hero-sub">
               Apex runs a dedicated startup program for new authorities
               that can begin before MC activation. Lower credit profiles are considered; prior
@@ -672,14 +665,12 @@ export default function ApexVsTbsFactoringPage() {
               monthly volume is set low enough that single-truck
               owner-ops fit. The catch is that Apex still expects the
               operator to arrive with the authority filed and
-              insurance bound &mdash; the program accelerates
-              underwriting, not the regulatory paperwork.
+              insurance bound &mdash; the program structures underwriting, not the regulatory paperwork.
             </p>
 
-            <h3>TBS — yes, and the free authority filing is the strongest new-authority value-add in the market.</h3>
+            <h3>TBS — free authority filing is the strongest new-authority value-add in the market.</h3>
             <p className="ins-hero-sub">
-              TBS approves new authorities and bad-credit profiles
-              routinely. The structural advantage is what comes
+              TBS works with new authorities and considers lower credit profiles; approval is not guaranteed. The structural advantage is what comes
               before the underwriting decision: TBS files the
               authority for the operator, processes the BOC-3, and
               walks them through IFTA. By the time the operator
@@ -726,7 +717,7 @@ export default function ApexVsTbsFactoringPage() {
               </li>
               <li>
                 <strong>Operators who need payments on weekends or holidays.</strong>{" "}
-                blynk&reg; runs around the clock. For team drivers, dedicated lanes, and high-mileage OTR profiles, that capability is the deciding feature.
+                blynk&reg; operates outside banking hours, including weekends and holidays.
               </li>
               <li>
                 <strong>High-mileage operators with broad fueling networks.</strong>{" "}
@@ -783,7 +774,7 @@ export default function ApexVsTbsFactoringPage() {
               <li>
                 <strong>Operators who don&rsquo;t need weekend payments.</strong>{" "}
                 If your delivery cadence is Monday&ndash;Friday with
-                home weekends, business-day funding is fine and the rate premium for an around-the-clock rail isn&rsquo;t justified.
+                home weekends, business-day funding covers the need.
               </li>
             </ul>
           </div>

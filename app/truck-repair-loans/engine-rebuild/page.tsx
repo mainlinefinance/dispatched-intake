@@ -207,7 +207,7 @@ export default function EngineRebuildFinancingPage() {
               Why engine rebuild underwriting takes a phone call.
             </h2>
             <p className="ins-hero-sub">
-              Emergency repair loans fund without a shop call &mdash; the
+              Smaller repair loans may not involve a shop call &mdash; the
               invoice and the operator&rsquo;s application are enough at
               that dollar figure. Engine rebuilds add one verification
               step: the lender calls the rebuild shop directly to confirm

@@ -151,7 +151,7 @@ export default function FactoringVsMcaPage() {
             </p>
             <p className="ins-hero-sub">
               A merchant cash advance is the sale of a percentage of
-              future revenue at a discount. You receive a lump sum today
+              future revenue at a discount. You receive a lump sum up front
               and repay it by handing over a fixed percentage of every
               future deposit (or a fixed daily or weekly ACH debit) until
               you have delivered the full agreed payback amount. The
@@ -221,7 +221,7 @@ export default function FactoringVsMcaPage() {
             <p className="ins-hero-sub">
               A merchant cash advance is a contract in which the funder
               buys a percentage of your future revenue at a discount, in
-              exchange for a lump sum delivered today. The two key
+              exchange for a lump sum paid up front. The two key
               numbers in any MCA are the <em>factor rate</em> and the{" "}
               <em>holdback</em>. The factor rate (typically 1.20 to 1.50)
               multiplies against the advance amount to determine the
@@ -349,7 +349,7 @@ export default function FactoringVsMcaPage() {
               Now run the same $50,000 cash need through factoring.
               Assume the operator has roughly $250,000 in outstanding
               receivables across two brokers paying on net-45. A factor
-              advances 92% on submission — about $230,000 of cash, against a $50,000 actual cashflow need. The fee at
+              advances 92% of the receivables — about $230,000 of cash, against a $50,000 actual cashflow need. The fee at
               3% across that $250,000 is $7,500, paid out of the reserve
               over the next 45 days as the brokers pay. The operator
               gets more cash at less than half the dollar cost
@@ -402,7 +402,7 @@ export default function FactoringVsMcaPage() {
                 <strong>Your problem is timing, not scale.</strong>{" "}
                 Factoring smooths receivables. It does not enlarge the
                 business. If your cashflow problem is &ldquo;I will be paid
-                eventually, I just need it now,&rdquo; factoring is the
+                eventually, I need it before the broker pays,&rdquo; factoring is the
                 surgical fit.
               </li>
             </ul>

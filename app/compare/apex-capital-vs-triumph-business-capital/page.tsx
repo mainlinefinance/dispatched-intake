@@ -615,7 +615,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
             </h3>
             <p className="ins-hero-sub">
               Apex&rsquo;s blynk&reg; funding system is genuinely
-              differentiated. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. For a driver who delivers on a Friday evening, that is the feature that matters. The infrastructure was
+              differentiated. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was
               built in-house and has been running at scale for several
               years. blynk&reg; is the single most differentiated
               owner-op funding rail in the category, full stop.
@@ -762,7 +762,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Bad credit and new authority</span>
+            <span className="ins-eyebrow">Lower credit profiles and new authority</span>
             <h2 className="ins-hero-title">
               Both accept. Apex is built for it.
             </h2>
@@ -826,12 +826,12 @@ export default function ApexVsTriumphBusinessCapitalPage() {
                 <strong>
                   Operators who need payments outside banking hours.
                 </strong>{" "}
-                blynk&reg; runs around the clock, including weekends. If you deliver on a Friday night, this is the feature to weigh. Triumph&rsquo;s business-hours rail
+                blynk&reg; runs around the clock, including weekends. Triumph&rsquo;s business-hours rail
                 doesn&rsquo;t fit this use case.
               </li>
               <li>
                 <strong>
-                  New authorities and bad-credit operators.
+                  New authorities and operators rebuilding credit.
                 </strong>{" "}
                 The structured startup program clears underwriting
                 paths and prices in a way Triumph&rsquo;s bank-grade
@@ -948,11 +948,11 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               is the only panel option at that scale.
             </p>
 
-            <h3>For brand-new authority, week one: TBS Factoring.</h3>
+            <h3>For brand-new authority: TBS Factoring.</h3>
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
               startup program is the deepest in the industry &mdash;
-              you can be approved before your MC is even active &mdash;
+              onboarding can start before your MC is active &mdash;
               and free authority filings sweeten the package for
               week-one operators who want a one-stop intake.
             </p>

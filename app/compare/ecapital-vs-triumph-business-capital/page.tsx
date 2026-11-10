@@ -749,7 +749,7 @@ export default function EcapitalVsTriumphPage() {
                 The up-to-100% advance rate vs Triumph&rsquo;s 85&ndash;95%
                 is a 5&ndash;15 percentage point swing on every invoice.
                 For a fleet doing $400K/month, that&rsquo;s $20&ndash;60K
-                more cash in your account on day one.
+                more cash advanced.
               </li>
               <li>
                 <strong>Brokers with deep technology needs.</strong>{" "}
@@ -855,8 +855,7 @@ export default function EcapitalVsTriumphPage() {
             <h3>For new authority + free filings: TBS Factoring.</h3>
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
-              startup program is the deepest in the industry &mdash; you
-              can be approved before your MC is even active &mdash; and
+              startup program is the deepest in the industry &mdash; onboarding can start before your MC is active &mdash; and
               the per-load fee structure works for operators with
               irregular early-stage volume. Free authority filings and
               broker-credit-check inclusion sweeten the package.

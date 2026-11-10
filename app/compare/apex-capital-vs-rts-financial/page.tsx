@@ -498,8 +498,7 @@ export default function ApexVsRtsFinancialPage() {
               Apex blynk&reg; &mdash; a payment rail that runs around the clock.
             </h3>
             <p className="ins-hero-sub">
-              Apex&rsquo;s blynk&reg; funding system is genuinely
-              differentiated. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. For a driver who delivers on a Friday evening, that is the feature that matters. The infrastructure was
+              Apex&rsquo;s blynk&reg; is a payment option that operates outside banking hours. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was
               built in-house and has been running at scale for several
               years.
             </p>
@@ -520,14 +519,13 @@ export default function ApexVsRtsFinancialPage() {
             </p>
 
             <h3>
-              Apex on payment options, RTS on advance; it depends on what you optimize.
+              Payment options differ and so do advance rates; it depends on what you optimize.
             </h3>
             <p className="ins-hero-sub">
               <strong>
-                If your bottleneck is Friday-night fuel money or
-                weekend cash, Apex.
+                If you need a payment option that operates outside banking hours, Apex offers one.
               </strong>{" "}
-              Blynk&reg; is built for that use case.{" "}
+              RTS does not. Timing on any invoice depends on the factor and your paperwork.{" "}
               <strong>
                 If your bottleneck is working-capital headroom inside a
                 growing fleet, RTS.
@@ -651,10 +649,10 @@ export default function ApexVsRtsFinancialPage() {
         <section>
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Bad credit and new authority
+              Lower credit profiles and new authority
             </span>
             <h2 className="ins-hero-title">
-              Both work. Apex is built for it.
+              Two program structures: a startup program and volume tiers.
             </h2>
 
             <h3>Apex &mdash; dedicated startup program.</h3>
@@ -672,12 +670,10 @@ export default function ApexVsRtsFinancialPage() {
             </p>
 
             <h3>
-              RTS &mdash; accepts new authority, but volume tiers
-              penalize sub-30-loads/month.
+              RTS &mdash; considers new authority, but volume tiers penalize sub-30-loads/month.
             </h3>
             <p className="ins-hero-sub">
-              RTS factors operators with bad credit or new authority,
-              but the program isn&rsquo;t built around them. The
+              RTS considers lower credit profiles and new authorities; approval is not guaranteed, and the program isn&rsquo;t built around them. The
               volume-tiered rate structure that makes RTS attractive
               to high-volume fleets works against new authorities by
               definition: a brand-new MC running 8 loads in month one
@@ -727,14 +723,13 @@ export default function ApexVsRtsFinancialPage() {
                 <strong>
                   Operators who need payments outside banking hours.
                 </strong>{" "}
-                Blynk&reg; runs around the clock, including weekends. If you deliver on a Friday night, this is the feature to weigh.
+                Blynk&reg; runs around the clock, including weekends.
               </li>
               <li>
                 <strong>
-                  New authorities and bad-credit operators.
+                  New authorities and operators rebuilding credit.
                 </strong>{" "}
-                The structured startup program clears underwriting
-                paths that RTS&rsquo;s volume-tier pricing penalizes.
+                Apex runs a structured startup program; RTS&rsquo;s volume-tier pricing penalizes low early volume. Approval is not guaranteed with either.
               </li>
               <li>
                 <strong>
@@ -780,8 +775,7 @@ export default function ApexVsRtsFinancialPage() {
                 </strong>{" "}
                 The 97% advance is structural. On a $300K/month
                 factored volume, that&rsquo;s $21K extra monthly
-                working capital versus a 90% advance &mdash; real
-                money, real fast.
+                working capital versus a 90% advance &mdash; real money.
               </li>
               <li>
                 <strong>
@@ -838,7 +832,7 @@ export default function ApexVsRtsFinancialPage() {
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
               startup program is the deepest in the industry &mdash;
-              you can be approved before your MC is even active
+              onboarding can start before your MC is active
               &mdash; and TBS bundles authority filings into the
               relationship. If you&rsquo;re a week from MC activation,
               TBS is a stronger first stop than RTS.

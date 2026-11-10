@@ -187,7 +187,7 @@ export default function EmergencyTruckRepairLoanPage() {
               the repair scope up front (engine, transmission, brakes, DPF,
               EGR, electrical) so the lender match is to a panel lender that
               specifically funds that category. A lender that knows the repair category
-              has fewer questions to ask before it can decide.
+              has fewer questions to ask about the repair itself.
             </p>
           </div>
         </section>

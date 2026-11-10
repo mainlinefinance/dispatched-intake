@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = {
   title: "Semi truck loan after Chapter 7 discharge | Dispatched",
   description:
-    "Discharged Chapter 7 bankruptcy and trying to finance a truck? The Dispatched panel funds post-discharge operators from month 13. What lenders need.",
+    "Discharged Chapter 7 bankruptcy and trying to finance a truck? How panel lenders look at post-discharge operators. What lenders need.",
   alternates: {
     canonical: "/bad-credit-truck-financing/chapter-7-discharge",
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     title: "Semi truck loan after Chapter 7 discharge | Dispatched",
     description:
-      "Discharged Chapter 7 bankruptcy and trying to finance a truck? The Dispatched panel funds post-discharge operators from month 13. What lenders need.",
+      "Discharged Chapter 7 bankruptcy and trying to finance a truck? How panel lenders look at post-discharge operators. What lenders need.",
     url: "/bad-credit-truck-financing/chapter-7-discharge",
     type: "website",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Semi truck loan after Chapter 7 discharge | Dispatched",
     description:
-      "Discharged Chapter 7 bankruptcy and trying to finance a truck? The Dispatched panel funds post-discharge operators from month 13. What lenders need.",
+      "Discharged Chapter 7 bankruptcy and trying to finance a truck? How panel lenders look at post-discharge operators. What lenders need.",
   },
 };
 
@@ -46,15 +46,15 @@ const PAGE_URL =
 const faqs = [
   {
     q: "Can I get a semi truck loan after a Chapter 7 discharge?",
-    a: "Yes, after the 12-month post-discharge window. Active Chapter 7 cases — between filing and discharge — are typically declined across the panel because the trustee can claw back asset purchases. Once the discharge order is final and 12 months have passed, the panel reopens. Equipment-secured loans are the first product to come back; unsecured working capital takes longer (typically 24 to 36 months post-discharge).",
+    a: "It can be, generally after about a year post-discharge; approval is not guaranteed. Active Chapter 7 cases — between filing and discharge — are typically declined across the panel because the trustee can claw back asset purchases. Once the discharge order is final and about a year has passed, some panel lenders will consider an application. Equipment-secured loans are the first product to come back; unsecured working capital takes longer (typically 24 to 36 months post-discharge).",
   },
   {
     q: "How long after Chapter 7 discharge do I have to wait?",
-    a: "The panel floor for equipment-secured truck financing is 12 months from the discharge date (not the filing date). At month 13, a narrower lender subset will quote — usually trucking-specialty equipment finance companies that underwrite the asset more aggressively than the credit. By month 24, the lender mix widens and APR comes down. By month 36, most operators see the same lender pool as a non-BK applicant with a similar credit profile.",
+    a: "Lenders generally count from the discharge date (not the filing date), and most want about a year of history after it. After that, a narrower lender subset may quote — usually trucking-specialty equipment finance companies that underwrite the asset more aggressively than the credit. By month 24, the lender mix widens and APR comes down. By month 36, most operators see the same lender pool as a non-BK applicant with a similar credit profile.",
   },
   {
     q: "What credit score do I need after Chapter 7?",
-    a: "Dispatched does not set a minimum score; credit requirements are set by each financing partner, and approval is not guaranteed. In practice lenders expect more recovery from a post-BK operator than from a non-BK one: a discharge plus a score that has not moved signals a credit profile that has not recovered enough to underwrite. Operators who have actively rebuilt — secured credit card, on-time payments, low utilization — are the ones who tend to see quotes at month 13. With stronger credit, the discharge effectively becomes a footnote rather than the headline of the file.",
+    a: "Dispatched does not set a minimum score; credit requirements are set by each financing partner, and approval is not guaranteed. In practice lenders expect more recovery from a post-BK operator than from a non-BK one: a discharge plus a score that has not moved signals a credit profile that has not recovered enough to underwrite. Operators who have actively rebuilt — secured credit card, on-time payments, low utilization — are the ones who tend to see quotes earliest. With stronger credit, the discharge effectively becomes a footnote rather than the headline of the file.",
   },
   {
     q: "Do lenders care if the bankruptcy was personal vs. business?",
@@ -107,7 +107,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
         payload={financialProduct({
           name: "Truck financing after Chapter 7 discharge",
           description:
-            "Equipment financing for operators with a discharged Chapter 7 bankruptcy. Panel reopens at 12 months post-discharge. 14% to 22% APR equipment band. Soft-pull pre-qualification.",
+            "Equipment financing for operators with a discharged Chapter 7 bankruptcy. Lenders generally look for about a year of history after discharge. 14% to 22% APR equipment band. Soft-pull pre-qualification.",
           url: PAGE_URL,
           category: "Commercial trucking financing",
         })}
@@ -128,7 +128,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               The bank says no for seven years. The Dispatched panel
-              reopens at month 13 post-discharge — equipment-secured loans
+              generally reopens about a year after discharge — equipment-secured loans
               first, then working capital and the full product set as the
               recovery signal compounds. No omission required, no
               indefinite wait.
@@ -145,7 +145,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft pull only · Panel floor: 12 months post-discharge.
+              Soft pull only · Approval is not guaranteed.
             </p>
           </div>
         </section>
@@ -173,8 +173,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
                 demonstrate the recovery.
               </li>
               <li>
-                <strong>Months 13 to 24 post-discharge:</strong> Equipment
-                financing opens to a trucking-specialty lender subset.
+                <strong>The second year after discharge:</strong> Equipment financing may open with a trucking-specialty lender subset.
                 APR runs 14% to 22% in this band for rebuilt credit.
                 Down payment requirement: 15% to 25%. Working capital
                 still closed for most operators in this window unless the
