@@ -68,7 +68,7 @@ export const INSURANCE_RISK_TERMS: ReadonlyArray<GlossaryTerm> = [
       {
         h2: "Why it matters for trucking finance",
         body:
-          "Physical damage is mandatory while the truck is financed — lapsed coverage triggers lender-placed insurance (significantly more expensive) and can create technical default. For paid-off trucks, owners can drop coverage but assume the full risk of total loss, which for a $150,000+ Class 8 tractor is rarely a sensible bet.\n\nDeductible choice has real cash-flow implications: a $5,000 vs. $1,000 deductible saves premium but means a fender-bender stresses working capital. Lenders verify coverage at policy renewal and after claims, and a missed renewal can trigger same-day force-placed coverage at 2–3x market rates that gets added directly to the loan balance.",
+          "Physical damage is mandatory while the truck is financed — lapsed coverage triggers lender-placed insurance (significantly more expensive) and can create technical default. For paid-off trucks, owners can drop coverage but assume the full risk of total loss, which for a $150,000+ Class 8 tractor is rarely a sensible bet.\n\nDeductible choice has real cash-flow implications: a $5,000 vs. $1,000 deductible saves premium but means a fender-bender stresses working capital. Lenders verify coverage at policy renewal and after claims, and a missed renewal can trigger force-placed coverage at 2–3x market rates that gets added directly to the loan balance.",
       },
     ],
     relatedTerms: ["motor-truck-cargo", "primary-liability", "equipment-loan"],

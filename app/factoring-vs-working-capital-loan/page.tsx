@@ -86,7 +86,7 @@ const faqs = [
     a: "Mechanically yes, but it rarely saves money. The factoring fees on enough invoices to retire a $50K working capital loan are roughly the same as the remaining interest on the loan. Factoring's value comes from the off-balance-sheet treatment and the receivables-timing smoothing, not from being a cheaper alternative for an already-issued loan. Operators looking to retire a working capital loan early are usually better off making lump-sum prepayments out of normal operating cash.",
   },
   {
-    q: "How fast can I get either product?",
+    q: "What affects funding timing for each product?",
     a: "Working capital on the Dispatched panel funding timing depends on the lender and your documents — soft-pull match after underwriting review, hard pull only at lender selection, then wire after lender sign-off. Factoring relationships take longer to set up initially (broker verifications, UCC-1 filing, and onboarding) but once the relationship is live, invoice funding timing depends on the factor and your invoices. For a one-off need, a working capital loan avoids the factoring setup; for an ongoing cashflow mechanism, factoring keeps working over the life of the relationship.",
   },
   {
@@ -322,7 +322,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                 FICO, time in business, deposit history, and DSCR.
               </li>
               <li>
-                <strong>Speed to funding.</strong> Factoring needs an
+                <strong>Funding timing.</strong> Factoring needs an
                 initial setup before the first invoice funds; after that,
                 timing depends on the factor and your invoices. Working
                 capital funding timing depends on the lender and your
@@ -441,8 +441,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               <li>
                 <strong>You are credit-constrained.</strong> A lower credit
                 profile, post-bankruptcy, less than six months of operating
-                authority — factoring underwrites the broker, not the
-                operator.
+                authority — factoring underwrites mainly on the broker, though the factor still reviews the operator.
               </li>
               <li>
                 <strong>You want to keep debt off the balance sheet.</strong>{" "}

@@ -74,7 +74,7 @@ const faqs = [
     a: "Lenders fund Class 8 sleeper and day-cab tractors most readily. Avoid trucks over 10 years old (term caps short, monthly is high) and avoid sticker prices above appraised value. The lender appraises and finances up to that value minus down — if the dealer is 20% over market, you cover the gap or walk away.",
   },
   {
-    q: "How fast can I get funded for my first truck?",
+    q: "What affects funding timing for a first truck?",
     a: "Pre-qualification on the Dispatched panel is a soft pull. After you accept a term sheet come the hard pull and underwriting, then title work and inspection, which take longer on private-party deals than from dealers. Timing depends on the lender and your documents.",
   },
 ];
@@ -91,7 +91,7 @@ const STEP_3_TEXT =
 const STEP_4_TEXT =
   "Once you have a term sheet, shop trucks the lender will actually fund: Class 8 tractors (Cascadia, T680, 579, VNL, Anthem) under 10 years old with under 700K miles, clean title, and a sticker price at or below appraised value. Avoid auction trucks unless the lender pre-approves the auction house. Bring the VIN to your lender before signing anything with the seller — five minutes of validation prevents a deal that falls apart at funding.";
 const STEP_5_TEXT =
-  "The lender orders a third-party inspection (typically $250–$450, often rolled into the loan) and an appraisal. Private-party deals also need a title pull and lien recording, which takes longer in some states than others. Dealer deals are faster because the dealer holds the title and processes the lien in-house. Expect to sign a pre-funding checklist confirming proof of insurance, IFTA registration, and a binding bill of sale.";
+  "The lender orders a third-party inspection (typically $250–$450, often rolled into the loan) and an appraisal. Private-party deals also need a title pull and lien recording, which takes longer in some states than others. Dealer deals involve fewer steps because the dealer holds the title and processes the lien in-house. Expect to sign a pre-funding checklist confirming proof of insurance, IFTA registration, and a binding bill of sale.";
 const STEP_6_TEXT =
   "After inspection clears and title work is recorded, you sign final loan documents (often electronically) and the lender wires funds to the seller or dealer. The truck is yours subject to the lien. First payment typically lands 30 days after funding. Set up auto-pay from the same business account you used on the application — missed payments in the first 6 months hurt your credit hardest and damage your standing with the lender for refinance later.";
 

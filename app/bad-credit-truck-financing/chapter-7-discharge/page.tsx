@@ -74,7 +74,7 @@ const faqs = [
   },
   {
     q: "What about factoring after Chapter 7?",
-    a: "The 12-month wait does not apply to factoring. Invoice factoring underwrites the broker who owes the invoice, not the operator's credit history. A discharge that is 30 days old is not a barrier to factoring as long as the operator has an active MC#, a load on the books, and the broker on the load is on the factor's approved list. See factoring with no credit check for the specific product structure.",
+    a: "The 12-month wait does not apply to factoring. Invoice factoring underwrites mainly on the broker who owes the invoice. A recent discharge is not always a barrier to factoring when the operator has an active MC#, a load on the books, and the broker on the load is on the factor's approved list. Each factor reviews the carrier and decides for itself; approval is not guaranteed. See the broker-credit factoring page for the product structure.",
   },
 ];
 
@@ -167,8 +167,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
               </li>
               <li>
                 <strong>Months 0 to 12 post-discharge:</strong> Equipment
-                financing closed. Working capital closed. Factoring open
-                from day one. This is the rebuilding window — the right
+                financing closed. Working capital closed. Factoring may be open during this window. This is the rebuilding window — the right
                 move is to operate via factoring while accumulating 6 to
                 12 months of clean business bank statements that
                 demonstrate the recovery.
@@ -325,10 +324,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  Factoring with no credit check on you
-                </Link>{" "}
-                — the product open to operators
-                with an active MC# and a load on the books, because the factor underwrites the broker.
+                  Factoring that underwrites your brokers </Link>{" "} — a product for operators with an active MC# and a load on the books, because the factor underwrites mainly on the broker.
               </li>
               <li>
                 <Link href="/owner-operator-financing/first-time">

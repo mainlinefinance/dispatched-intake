@@ -169,6 +169,10 @@ function GuideBlock({ product }: { product: Product }) {
             <dd>{guide.federalContext}</dd>
           </div>
           <div className="ins-faq-item">
+            <dt>How it works in practice</dt>
+            <dd>{guide.inPractice}</dd>
+          </div>
+          <div className="ins-faq-item">
             <dt>What to check on a quote</dt>
             <dd>
               <ul>

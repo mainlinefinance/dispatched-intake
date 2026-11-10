@@ -89,7 +89,7 @@ export const TOPIC_INFO: Record<ContentTopic, TopicInfo> = {
     slug: "new-authority",
     label: "New Authority",
     description:
-      "New authority is the first 18 months of operation — the FMCSA New Entrant Safety Assurance Program, the financing programs sized to first-time owner-operators, the insurance carriers that will write a brand-new MC#, and the compliance calendar that keeps you out of trouble. This topic covers MC# activation, BOC-3, UCR, CDL classes and endorsements, ELDT, EIN, the medical card, no-money-down truck financing, no-credit-check factoring, and the playbook that takes a CDL holder from authority application to a profitable first year.",
+      "New authority is the first 18 months of operation — the FMCSA New Entrant Safety Assurance Program, the financing programs sized to first-time owner-operators, the insurance carriers that will write a brand-new MC#, and the compliance calendar that keeps you out of trouble. This topic covers MC# activation, BOC-3, UCR, CDL classes and endorsements, ELDT, EIN, the medical card, no-money-down truck financing, factoring that underwrites your brokers, and the playbook that takes a CDL holder from authority application to a profitable first year.",
   },
   "industry-trends": {
     slug: "industry-trends",
@@ -591,7 +591,7 @@ const STATIC_CONTENT: ReadonlyArray<StaticContentItem> = [
   },
   {
     url: "/factoring/no-credit-check",
-    title: "No Credit Check Factoring",
+    title: "Broker-Credit Factoring",
     description: "Factoring programs that underwrite mainly on broker credit — used by new authorities and credit-rebuilding owners.",
     contentType: "vertical",
     topics: ["factoring", "new-authority"],

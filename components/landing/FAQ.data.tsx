@@ -67,8 +67,7 @@ export const homepageFaqs: HomepageFaqItem[] = [
         <a href="/factoring/no-credit-check">
           factoring focused on broker receivables
         </a>{" "}
-        can be an option — the factor underwrites the broker who owes the
-        invoice, not a consumer credit score alone. Approval is not guaranteed.
+        can be an option — the factor underwrites mainly on the broker who owes the invoice and still reviews the carrier. Approval is not guaranteed.
       </>
     ),
   },

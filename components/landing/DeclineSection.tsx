@@ -36,17 +36,14 @@ const declineReasons: DeclineReason[] = [
   {
     num: "03",
     title: "Stacking declines compound the problem.",
-    why: "A bank decline lands on your file as a negative mark. The next bank sees it, declines faster, and you lose two weeks per application chasing no's that were already predictable.",
+    why: "A bank decline lands on your file as a negative mark. The next bank sees it, declines too, and you lose two weeks per application chasing no's that were already predictable.",
     reframe: (
       <>
         <strong>One soft check. One application.</strong> We route to the
         lenders most likely to fund it — declines don&rsquo;t stack against you
         here. When credit is the wall,{" "}
         <Link href="/factoring/no-credit-check">
-          factoring with no credit check on you
-        </Link>{" "}
-        is the path most operators in your shoes actually use — the factor
-        underwrites your brokers and receivables, not a consumer credit score alone.
+          factoring that underwrites your brokers </Link>{" "} is a path many operators look at — the factor underwrites mainly on your brokers and receivables, and approval is not guaranteed.
       </>
     ),
   },

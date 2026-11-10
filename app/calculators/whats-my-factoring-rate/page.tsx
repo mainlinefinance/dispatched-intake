@@ -40,11 +40,11 @@ const faqs = [
   },
   {
     q: "Does my personal credit affect my factoring rate?",
-    a: "Less than people think. Factoring rates are primarily driven by your broker mix's credit, not yours. Some factors do a soft pull on you for fraud prevention but don't price based on it. This is why factoring can work for operators with lower credit profiles who can't access traditional financing.",
+    a: "Less than people think. Factoring rates are driven mainly by your broker mix's credit. Many factors also review the carrier, sometimes with a soft pull, and each sets its own requirements. That is why some operators with lower credit profiles use factoring; approval is not guaranteed.",
   },
   {
     q: "What's the effective annualized rate of factoring?",
-    a: "Factoring at 3% per 30 days is roughly 36% APR-equivalent. That sounds high compared to a 14% working capital loan, but the math is different — factoring isn't borrowing, it's selling the invoice. The 36% is the implied cost of accelerating cash flow by 30–60 days. For operators with broker payment terms of Net 60+, factoring almost always beats waiting.",
+    a: "Factoring at 3% per 30 days is roughly 36% APR-equivalent. That sounds high compared to a 14% working capital loan, but the math is different — factoring isn't borrowing, it's selling the invoice. The 36% is the implied cost of being paid 30–60 days ahead of the broker's terms. For operators with broker payment terms of Net 60+, factoring almost always beats waiting.",
   },
 ];
 
@@ -341,7 +341,7 @@ export default function WhatsMyFactoringRatePage() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  Factoring without a credit check →
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

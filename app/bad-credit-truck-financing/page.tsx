@@ -195,10 +195,7 @@ export default function BadCreditTruckFinancingPage() {
                 Operators with active credit events or very low scores
                 may still find cash flow through{" "}
                 <Link href="/factoring/no-credit-check">
-                  factoring with no credit check on you
-                </Link>
-                {" "}— the factor underwrites the broker who owes the
-                invoice, not you.
+                  factoring that underwrites your brokers </Link> {" "}— the factor underwrites mainly on the broker who owes the invoice, and approval is not guaranteed.
               </li>
               <li>
                 <strong>6+ months of operating history.</strong> The
@@ -452,7 +449,7 @@ export default function BadCreditTruckFinancingPage() {
               </li>
               <li>
                 <Link href="/qualify">
-                  Two-question funding fit (no credit check) →
+                  Two-question funding fit (no credit pull) →
                 </Link>
               </li>
             </ul>

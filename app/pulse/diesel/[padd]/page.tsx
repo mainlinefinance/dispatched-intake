@@ -31,7 +31,13 @@ const ORIGIN = "https://dispatched.finance";
    supply notes are structural (where the fuel comes from), not forecasts. */
 const PADD_NOTES: Record<
   Exclude<PaddSlug, "national">,
-  { states: string; supply: string; reading: string }
+  {
+    states: string;
+    supply: string;
+    reading: string;
+    lanes: string;
+    planning: string;
+  }
 > = {
   "padd-1": {
     states:
@@ -40,6 +46,10 @@ const PADD_NOTES: Record<
       "The region uses far more diesel than it refines. Most of the difference arrives by pipeline from the Gulf Coast and by tanker at the ports, so anything that interrupts those two routes shows up at the pump here before it shows up elsewhere. Winter adds a second pull on the same barrel: heating oil is a distillate, like diesel, and the Northeast burns a lot of it.",
     reading:
       "A single PADD 1 average hides a wide range between the Lower Atlantic and New England. If you run I-95 end to end, treat the regional figure as a midpoint and expect to pay more the farther north you fuel.",
+    lanes:
+      "The freight that crosses PADD 1 mostly runs north and south along I-95 and I-81, with port drayage at New York and New Jersey, Baltimore, Norfolk, Charleston, Savannah, and Jacksonville feeding it. A carrier based in the Carolinas or Georgia that delivers into New England buys at both ends of the district's price range on the same trip, which is why the sub-district matters more here than in any other region. Tolls and congestion on the Northeast corridor add to operating cost separately from fuel, so a lane that looks acceptable on the regional diesel number can still run thin.",
+    planning:
+      "For planning, use the sub-district your truck actually fuels in. When you quote a northbound load, check the gap between the Lower Atlantic and the New England or Central Atlantic figure and decide where the last fill before the higher-priced states should be. In the heating season, watch the regional number week to week rather than assuming it will follow the national average: cold weather can tighten distillate supply in the Northeast while prices elsewhere stay flat. If your fuel surcharge schedule is tied to the national average, a persistent positive spread in the north is a reason to raise it with the broker or shipper when the contract renews.",
   },
   "padd-2": {
     states:
@@ -48,6 +58,10 @@ const PADD_NOTES: Record<
       "The Midwest has substantial refining of its own, much of it running Canadian crude, and takes additional product by pipeline from the Gulf Coast. Demand has a farm calendar: planting in spring and harvest in fall both raise distillate use across the region, which is why prices here can firm up while the national number is flat.",
     reading:
       "Because the region is large and well connected by pipeline, the PADD 2 average usually sits close to the national one. A widening gap between the two is the thing to watch; it tends to mean a refinery outage or a seasonal demand peak rather than a change in crude prices.",
+    lanes:
+      "PADD 2 is the country's crossroads. I-80, I-70, I-90, and I-94 carry east-west freight through it, I-65, I-55, I-35, and I-75 carry it north and south, and Chicago is one of the continent's main rail and intermodal interchanges. Most long-haul carriers buy a meaningful share of their fuel in this district whether or not they are based in it. Prices are not uniform across it: the Chicago area and the upper Great Lakes often price differently from the Plains states that sit closer to refineries and pipeline terminals in Oklahoma and Kansas, and state fuel taxes vary widely from one side of a state line to the other.",
+    planning:
+      "That variation makes the Midwest the region where fuel-stop planning pays most reliably. The regional average tells you the direction of the market; the state you buy in decides the price. Remember that IFTA settles fuel tax by the miles you run in each state, not by where you bought, so compare pump prices net of state tax before routing a fill to a cheaper-looking state. Around spring planting and fall harvest, expect the regional figure to firm up for a few weeks, and budget for it on lanes that stay inside the district instead of waiting for the national number to confirm the move.",
   },
   "padd-3": {
     states:
@@ -56,6 +70,10 @@ const PADD_NOTES: Record<
       "More than half of U.S. refining capacity sits in this region, and it ships product by pipeline to the East Coast and the Midwest. Fuel sold here has the shortest trip from refinery to pump, which is the main reason the Gulf Coast average is usually the lowest of the five. The exposure is weather: a hurricane that shuts refineries or ports on the Texas or Louisiana coast moves prices in every region the Gulf supplies.",
     reading:
       "For carriers running long hauls out of Texas, the spread between PADD 3 and the destination region is a planning number: it tells you how much it is worth to leave with full tanks.",
+    lanes:
+      "PADD 3 freight is shaped by the Texas Triangle of Dallas-Fort Worth, Houston, and San Antonio, by cross-border traffic through Laredo and El Paso, by the ports of Houston, New Orleans, and Mobile, and by oilfield and petrochemical freight in the Permian Basin and along the Gulf. I-10 runs the length of the district from New Mexico to Alabama, and I-20, I-30, I-35, and I-45 tie it to the Midwest and the Southeast. Because so much diesel is refined here, carriers based in the region start most trips with the cheapest fuel they will see until they return.",
+    planning:
+      "The practical use of the Gulf Coast number is as a baseline. Compare it with the figure for the region you are delivering into and you have the fuel cost difference between buying at origin and buying at destination. On an outbound load to the West Coast or the Northeast the gap is usually wide enough to justify filling to capacity before leaving, within your weight limits. On the return, it argues for buying only what you need to get back. During hurricane season, check the number before committing to a rate on a long outbound lane: a storm that closes Gulf refineries or ports can change the baseline for a few weeks, and it changes prices in the regions the Gulf supplies as well.",
   },
   "padd-4": {
     states:
@@ -64,6 +82,10 @@ const PADD_NOTES: Record<
       "This is the smallest of the five districts by fuel consumption. It is supplied mostly by a handful of small refineries inside the region and has limited pipeline links to the rest of the country, so local supply and local demand set the price more than they do elsewhere. A maintenance shutdown at one refinery can move the regional average on its own.",
     reading:
       "Expect the PADD 4 average to lag the national number in both directions. Long distances between truck stops also mean the price you actually pay can differ from the regional average more than it does in denser regions.",
+    lanes:
+      "PADD 4 is mostly a region trucks cross. I-80 through Wyoming and Utah, I-70 through Colorado, I-90 and I-94 through Montana, and I-15 and I-84 through Utah and Idaho carry freight between the Midwest and the West Coast, and the main consuming markets inside the district are the Denver Front Range and the Salt Lake City area. Mountain grades, winter chain laws, and wind closures on I-80 raise fuel burn and add delay on these lanes, so the number of gallons a trip takes can vary more here than the price per gallon does.",
+    planning:
+      "Use the Rocky Mountain figure with two cautions. First, because the regional market is small and adjusts slowly, a price move you have already seen at the national level may not have reached pumps here yet, in either direction; when prices are rising nationally the region can be a relatively cheap place to fill, and when they are falling it can be the opposite. Second, plan fuel stops by distance, not by price alone: on the longer stretches between truck stops, the cheapest station is often not worth the risk of arriving low. For a through-haul, compare this number with PADD 2 and PADD 5 to decide how much to carry into the mountains and how much to buy before entering California.",
   },
   "padd-5": {
     states:
@@ -72,6 +94,10 @@ const PADD_NOTES: Record<
       "The West Coast is largely cut off from the rest of the U.S. fuel system: few pipelines cross the Rockies, so the region depends on its own refineries and on imports by sea. California also requires its own diesel formulation under California Air Resources Board rules and carries higher fuel taxes and program costs than most states, which lifts the regional average.",
     reading:
       "The PADD 5 figure is pulled up by California. If you fuel in Arizona or Nevada before crossing the state line, your cost will sit below the regional average; the EIA publishes a separate California number for exactly this reason.",
+    lanes:
+      "PADD 5 freight starts at the ports. Los Angeles and Long Beach, Oakland, Seattle, and Tacoma generate drayage and transload moves that feed I-5 north and south and I-10, I-40, I-15, and I-80 eastbound, and California's Central Valley adds seasonal produce and reefer demand. Alaska and Hawaii are part of the district on paper but are supplied and priced separately from the mainland states. For most carriers the question this region poses is not what the average is but how many gallons they have to buy inside California.",
+    planning:
+      "That is the planning use of the West Coast number. The EIA publishes California separately from the rest of the district, and the difference between the two is the cost of fueling inside the state compared with fueling just outside it. On an inbound load from Arizona or Nevada, filling before the state line and buying the minimum inside California is the standard practice, subject to weight. On lanes that stay inside California there is no way around the higher price, so it belongs in the rate: a fuel surcharge keyed to the national average will under-recover here week after week. If your contracts allow a regional index, the California or West Coast figure is the one to ask for.",
   },
 };
 
@@ -290,6 +316,10 @@ export default async function PaddDieselPage({
             <p>{PADD_NOTES[padd].supply}</p>
             <h3>Reading this number</h3>
             <p>{PADD_NOTES[padd].reading}</p>
+            <h3>Freight lanes in the region</h3>
+            <p>{PADD_NOTES[padd].lanes}</p>
+            <h3>Using the number to plan fuel</h3>
+            <p>{PADD_NOTES[padd].planning}</p>
             <p>
               The spread against the U.S. average in the table above is this
               region&rsquo;s price minus the national price for the same

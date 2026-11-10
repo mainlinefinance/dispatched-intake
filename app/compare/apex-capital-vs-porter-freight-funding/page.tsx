@@ -44,31 +44,31 @@ const PAGE_URL =
 const faqs = [
   {
     q: "Why would I pick Porter over Apex?",
-    a: "Two reasons, and they're structural. First, Porter typically does no personal credit pull at all — many operators report onboarding without a single FICO inquiry on the bureaus. Apex does a soft pull. If you're rebuilding credit, minimizing inquiries before a separate financing application, or simply don't want any credit-bureau activity tied to factoring, Porter wins. Second, Porter is the specialist for sub-580 FICO and post-bankruptcy operators — the profile Apex will sometimes onboard but tends to price uncompetitively. Porter's underwriting evaluates the broker side of the receivable, so operator credit isn't the gating input.",
+    a: "Two reasons, and they're structural. First, Porter typically does no personal credit pull at all — many operators report onboarding without a single FICO inquiry on the bureaus. Apex does a soft pull. If you're rebuilding credit, minimizing inquiries before a separate financing application, or simply don't want any credit-bureau activity tied to factoring, Porter wins. Second, Porter specializes in operators with lower credit profiles or a past bankruptcy — the profile Apex will sometimes onboard but tends to price uncompetitively. Porter says its underwriting evaluates the broker side of the receivable.",
   },
   {
     q: "Which is better for established owner-ops with strong credit?",
-    a: "Apex, with no real debate. The premium service model (dedicated US-based account executive by name), the BBB Torch Award and 700+ five-star reviews, the ~51¢/gal fuel discount, and blynk® instant funding 24/7/365 all stack the same direction. Porter's structural advantage — no credit pull — doesn't matter for an operator whose credit is in good shape. At that profile, Apex's deeper product set and premium service deliver materially more value per factoring dollar.",
+    a: "Apex, with no real debate. The premium service model (dedicated US-based account executive by name), the BBB Torch Award and 700+ five-star reviews, the ~51¢/gal fuel discount, and the around-the-clock blynk® payment rail all stack the same direction. Porter's structural advantage — no credit pull — doesn't matter for an operator whose credit is in good shape. At that profile, Apex's deeper product set and premium service deliver materially more value per factoring dollar.",
   },
   {
     q: "Does Apex pull credit?",
     a: "Yes, Apex runs a soft credit pull during onboarding. A soft pull does not affect your FICO score and is not visible to lenders pulling your file for a future application, but it does appear briefly on your own credit-report inquiries section. For most operators this is irrelevant — soft pulls don't hurt — but operators specifically minimizing all bureau activity prefer Porter, which often pulls nothing at all.",
   },
   {
-    q: "Which has faster funding?",
-    a: "Apex, decisively. blynk® funds verified invoices in minutes, 24/7/365, including weekends and holidays. Porter runs a standard same-day model — verified submissions during business hours fund within the same business day. For day-to-day Monday–Friday operations, both work. For Friday-night deliveries that need fuel by Saturday morning, Apex's 24/7/365 instant payment is the structural advantage.",
+    q: "How do their payment options differ?",
+    a: "Apex's blynk® is a payment rail that runs around the clock, including weekends and holidays. Porter pays on a standard business-hours schedule. For Monday–Friday operations both work; if you need payments outside banking hours, Apex's rail is the structural difference.",
   },
   {
     q: "I'm a bad-credit operator. Should I skip Apex?",
-    a: "Not necessarily. Apex onboards sub-580 FICO operators and prior-bankruptcy operators with structural adjustments — the credit profile doesn't auto-decline. The cleaner pick is Porter if you specifically want zero credit-bureau activity or if Apex prices your effective rate uncompetitively because of the credit profile. The right move is to compare offers: if Apex's price is close, the premium service and fuel program usually win; if Apex prices wide of Porter, take Porter for the cleaner credit experience.",
+    a: "Not necessarily. Apex says it does not decline on credit alone, though lower credit profiles and prior bankruptcies come with structural adjustments. The cleaner pick is Porter if you specifically want zero credit-bureau activity or if Apex prices your effective rate uncompetitively because of the credit profile. The right move is to compare offers: if Apex's price is close, the premium service and fuel program usually win; if Apex prices wide of Porter, take Porter for the cleaner credit experience.",
   },
   {
     q: "Which is better for brand-new authority?",
-    a: "Either works, with slightly different angles. Apex runs a dedicated startup program with structured pre-approvals — you can be pre-qualified before MC activation and start factoring from invoice one. Porter onboards new authority with minimal credit underwriting on the operator side, which is faster for operators with damaged or thin credit. For a clean new-authority profile with decent credit, Apex's dedicated startup program is the cleaner fit. For new authority with credit issues or recent BK, Porter is the faster path.",
+    a: "Either works, with slightly different angles. Apex runs a dedicated startup program for new authorities that can begin before MC activation. Porter onboards new authority with its underwriting focused on the broker side, which suits operators with damaged or thin credit. For a clean new-authority profile with decent credit, Apex's dedicated startup program is the cleaner fit. For new authority with credit issues or recent BK, Porter is the more natural fit.",
   },
   {
     q: "Should I switch from Porter to Apex once my credit improves?",
-    a: "Often yes, at the 24-month mark. Porter is the right factor when credit is the gating issue — sub-580 FICO, recent BK, the kind of profile Apex would price uncompetitively. Once you've factored cleanly for 18–24 months and your credit is rebuilt (mid-600s+ FICO), Apex's lower effective cost (better rates, deeper fuel program, no nickel-and-dime fees) usually wins on total cost-of-factoring. The 24-month review is also when the original Porter contract is up for renegotiation, so the timing aligns naturally. Use Dispatched's match flow at that point — you don't need to re-shop every factor yourself.",
+    a: "Often yes, at the 24-month mark. Porter is the right factor when credit is the gating issue — a lower credit profile or a recent BK, the kind of profile Apex would price uncompetitively. Once you've factored cleanly for 18–24 months and your credit is rebuilt, Apex's lower effective cost (better rates, deeper fuel program, no nickel-and-dime fees) usually wins on total cost-of-factoring. The 24-month review is also when the original Porter contract is up for renegotiation, so the timing aligns naturally. Use Dispatched's match flow at that point — you don't need to re-shop every factor yourself.",
   },
 ];
 
@@ -88,7 +88,7 @@ export default function ApexVsPorterPage() {
           headline:
             "Apex Capital vs Porter Freight Funding — premium service vs no-credit-check specialist in 2026?",
           description:
-            "Head-to-head comparison of Apex Capital and Porter Freight Funding across credit pull policy, rates, service quality, funding speed, fuel, contracts, and use cases for 2026.",
+            "Head-to-head comparison of Apex Capital and Porter Freight Funding across credit pull policy, rates, service quality, payment options, fuel, contracts, and use cases for 2026.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -110,7 +110,7 @@ export default function ApexVsPorterPage() {
             </h1>
             <p className="ins-hero-sub">
               Apex Capital is the established owner-op factor with premium
-              service and instant payment tech. Porter Freight Funding
+              service and an around-the-clock payment rail. Porter Freight Funding
               specializes in no-personal-credit-check factoring for
               bad-credit operators. Very different operator profiles —
               almost no overlap.
@@ -148,10 +148,9 @@ export default function ApexVsPorterPage() {
               established owner-operators with decent credit: three decades
               in the market since 1995, 700+ five-star reviews, the BBB
               Torch Award for Marketplace Ethics, the deepest fuel discount
-              on the market (~51&cent;/gal), and blynk&reg; instant funding
-              that pays out in minutes 24/7/365. Porter Freight Funding is
+              on the market (~51&cent;/gal), and the around-the-clock blynk&reg; payment rail. Porter Freight Funding is
               the specialist for the segment Apex would price
-              uncompetitively: sub-580 FICO, prior bankruptcy, new
+              uncompetitively: lower credit profiles, prior bankruptcy, new
               authority with damaged or thin credit. Porter&rsquo;s
               defining choice is the no-personal-credit-check policy
               &mdash; many operators report onboarding with no FICO pull
@@ -220,7 +219,7 @@ export default function ApexVsPorterPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Sub-580 FICO</strong>
+                    <strong>Lower credit profiles</strong>
                   </td>
                   <td data-label="Apex Capital">Possible</td>
                   <td data-label="Porter Freight Funding">Routine</td>
@@ -234,12 +233,12 @@ export default function ApexVsPorterPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
                   <td data-label="Apex Capital">
-                    Minutes (blynk®) 24/7/365
+                    Around-the-clock rail (blynk®)
                   </td>
-                  <td data-label="Porter Freight Funding">Same-day</td>
+                  <td data-label="Porter Freight Funding">Business-hours funding</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -299,7 +298,7 @@ export default function ApexVsPorterPage() {
               specialized in trucking. The company was built around
               owner-operators &mdash; the segment most factors treat as
               an afterthought &mdash; and the product set reflects that
-              focus: the blynk&reg; instant-funding rail, a fuel card
+              focus: the blynk&reg; around-the-clock payment rail, a fuel card
               with the deepest network discount in the industry, equipment
               financing, dispatch and roadside add-ons, and a startup
               program for new authorities. Apex doesn&rsquo;t cross-sell
@@ -354,8 +353,7 @@ export default function ApexVsPorterPage() {
               </a>{" "}
               for company-stated details; for the broader category, see{" "}
               <Link href="/factoring/no-credit-check">
-                no credit check factoring
-              </Link>
+                factoring that underwrites your brokers </Link>
               .)
             </p>
           </div>
@@ -379,11 +377,7 @@ export default function ApexVsPorterPage() {
               and is not visible to other lenders evaluating the file,
               but it does generate a soft-inquiry record on the operator
               side. More importantly, FICO is part of the pricing input:
-              an operator with a 720 FICO and clean payment history
-              prices closer to Apex&rsquo;s 1% floor than an operator
-              with a 580 FICO and a recent BK, even at the same factored
-              volume. Apex will onboard sub-580 FICO and prior-BK
-              operators &mdash; the company doesn&rsquo;t hard-decline
+              an operator with strong credit and clean payment history prices closer to Apex&rsquo;s 1% floor than an operator with a lower credit profile and a recent BK, even at the same factored volume. Apex will consider lower-credit and prior-BK operators &mdash; the company doesn&rsquo;t hard-decline
               on credit alone &mdash; but the effective rate often
               widens to the upper end of the 1&ndash;5% range, which is
               where Porter becomes structurally competitive.
@@ -413,17 +407,13 @@ export default function ApexVsPorterPage() {
 
             <h3>Which approach matches your situation.</h3>
             <p className="ins-hero-sub">
-              For operators with credit in good standing &mdash; mid-600s
-              FICO or higher, no recent BK &mdash; Apex&rsquo;s soft pull
+              For operators with credit in good standing &mdash; solid credit, no recent BK &mdash; Apex&rsquo;s soft pull
               is a non-event and the credit profile gets rewarded with
               better effective pricing. For operators rebuilding credit,
-              minimizing all bureau activity, or carrying sub-580 FICO
-              or recent BK on file, Porter&rsquo;s no-pull policy is
-              cleaner and the underwriting outcome more reliable. The
+              minimizing all bureau activity, or carrying a lower credit profile or recent BK on file, Porter&rsquo;s no-pull policy is cleaner. The
               broader bad-credit category context is in{" "}
               <Link href="/factoring/no-credit-check">
-                no credit check trucking factoring
-              </Link>{" "}
+                factoring that underwrites your brokers </Link>{" "}
               and{" "}
               <Link href="/bad-credit-truck-financing">
                 bad credit truck financing
@@ -464,10 +454,10 @@ export default function ApexVsPorterPage() {
               Porter publishes a headline range of 1.5&ndash;4% per
               invoice. The 1.5% floor is reserved for higher-volume
               operators with diversified broker mix; new authorities and
-              sub-580 FICO operators routinely land 2.5&ndash;3.5%.
+              operators with lower credit profiles typically land 2.5&ndash;3.5%.
               That&rsquo;s competitive against Apex&rsquo;s effective
               pricing on the same profile, and structurally lower than
-              what Apex would price a sub-580 FICO operator. Pricing is
+              what Apex would price an operator with a lower credit profile. Pricing is
               a standard factoring model: rate per invoice, with the
               usual potential for ACH fees, monthly charges, and
               minimum-volume requirements depending on the agreement.
@@ -486,8 +476,7 @@ export default function ApexVsPorterPage() {
               consideration. <strong>Bad-credit operators: Porter.</strong>{" "}
               The 1.5&ndash;4% headline runs structurally lower than
               Apex&rsquo;s damaged-credit pricing &mdash; Apex&rsquo;s
-              upper end (4&ndash;5%) is where sub-580 FICO operators
-              tend to land, and Porter&rsquo;s mid-range underprices
+              upper end (4&ndash;5%) is where operators with lower credit profiles tend to land, and Porter&rsquo;s mid-range underprices
               that. For a wider view of how factor pricing maps to credit
               profile, see{" "}
               <Link href="/factoring">
@@ -556,31 +545,24 @@ export default function ApexVsPorterPage() {
               escalation depth: Apex&rsquo;s scale means broader
               expertise on edge cases (broker insolvency workouts,
               international hauls, equipment-finance interactions),
-              while Porter&rsquo;s smaller team is faster on standard
-              owner-op issues but thinner on uncommon scenarios.
+              while Porter&rsquo;s smaller team is more direct on standard owner-op issues but thinner on uncommon scenarios.
             </p>
           </div>
         </section>
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              Apex blynk&reg; 24/7/365. Porter same-day, business-hours.
+              Apex blynk&reg; around the clock. Porter on business hours.
             </h2>
 
             <h3>
-              Apex blynk&reg; &mdash; minutes-level funding, 24/7/365.
+              Apex blynk&reg; &mdash; a payment rail that runs around the clock.
             </h3>
             <p className="ins-hero-sub">
               Apex&rsquo;s blynk&reg; funding system is genuinely
-              differentiated. Verified invoices submitted through the
-              app fund in minutes, around the clock, including weekends
-              and holidays. For a driver who delivers Friday at 6pm and
-              needs fuel money before a Saturday morning departure, this
-              is the product feature that ends the conversation. No
-              business-hours dependency, no ACH cutoff, no &ldquo;next
-              banking day.&rdquo; The infrastructure was built in-house
+              differentiated. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. For a driver who delivers on a Friday evening, that is the feature that matters. The infrastructure was built in-house
               and has been running at scale for several years. For
               high-utilization operators &mdash; team drivers, dedicated
               lanes, weekend-heavy operations &mdash; this is one of the
@@ -588,32 +570,19 @@ export default function ApexVsPorterPage() {
             </p>
 
             <h3>
-              Porter &mdash; standard same-day funding.
+              Porter &mdash; standard business-hours funding.
             </h3>
             <p className="ins-hero-sub">
-              Porter Freight Funding&rsquo;s funding timeline is the
-              industry-standard same-day model: verified invoices
-              submitted during business hours fund within 24 hours, with
-              most clean submissions landing the same day. That&rsquo;s
-              competitive against the broader factoring market &mdash; but
-              it&rsquo;s a clear tier behind Apex&rsquo;s blynk&reg;.
-              Submissions outside business hours wait for the next
-              morning. For day-to-day steady-state funding, Porter is
-              fine. For weekend or after-hours emergencies, Apex&rsquo;s
-              24/7/365 instant payment is the structural advantage.
+              Porter Freight Funding pays verified invoices on a standard business-hours schedule. Submissions outside business hours are processed when the business day resumes. For steady weekday operations that covers the need. For weekends and after hours, Apex&rsquo;s around-the-clock rail is the structural difference.
             </p>
 
             <h3>
-              For operators who need weekend funding &mdash; Apex.
+              For operators who need payments outside banking hours &mdash; Apex.
             </h3>
             <p className="ins-hero-sub">
               If your operation routinely needs cash on Friday nights,
               Saturday mornings, or holiday weekends, Apex&rsquo;s
-              blynk&reg; is the structural fit. Porter&rsquo;s
-              business-hours same-day timing covers most needs but
-              doesn&rsquo;t solve the weekend case. For predictable
-              Monday&ndash;Friday operations that never need after-hours
-              cash, either factor works on speed.
+              blynk&reg; is the structural fit. Porter&rsquo;s business-hours schedule covers most needs but doesn&rsquo;t solve the weekend case. For predictable Monday&ndash;Friday operations that never need after-hours cash, either factor works.
             </p>
           </div>
         </section>
@@ -719,7 +688,7 @@ export default function ApexVsPorterPage() {
               operator starts at Porter for the no-pull policy and
               credit-friendly underwriting, factors cleanly for
               18&ndash;24 months while rebuilding credit, then moves to
-              Apex once FICO is mid-600s+ and the credit-decision
+              Apex once credit is rebuilt and the credit-decision
               equation works in their favor. The timing aligns
               naturally with Porter&rsquo;s second 12-month renewal
               checkpoint, which is the cleanest moment to switch
@@ -738,7 +707,7 @@ export default function ApexVsPorterPage() {
             <ul className="product-list">
               <li>
                 <strong>
-                  Established owner-ops with mid-600s+ FICO.
+                  Established owner-ops with solid credit.
                 </strong>{" "}
                 The premium service model, dedicated account exec, and
                 fee-light pricing structure all reward an established
@@ -766,12 +735,9 @@ export default function ApexVsPorterPage() {
               </li>
               <li>
                 <strong>
-                  Operators who need weekend funding.
+                  Operators who need payments outside banking hours.
                 </strong>{" "}
-                blynk&reg; pays in minutes, 24/7/365. If you deliver
-                Friday night and need fuel by Saturday morning, this is
-                the product. Porter&rsquo;s business-hours same-day
-                model doesn&rsquo;t solve the weekend case.
+                blynk&reg; runs around the clock, including weekends. If you deliver on a Friday night, this is the feature to weigh. Porter&rsquo;s business-hours schedule doesn&rsquo;t solve the weekend case.
               </li>
               <li>
                 <strong>
@@ -808,8 +774,7 @@ export default function ApexVsPorterPage() {
               </li>
               <li>
                 <strong>
-                  Sub-580 FICO operators who&rsquo;d be priced
-                  uncompetitively elsewhere.
+                  Operators with lower credit profiles who&rsquo;d be priced uncompetitively elsewhere.
                 </strong>{" "}
                 Porter routinely approves credit profiles that Apex
                 would onboard but price toward the top of the 1&ndash;5%
@@ -821,8 +786,7 @@ export default function ApexVsPorterPage() {
                 <strong>
                   Operators with prior bankruptcy on file.
                 </strong>{" "}
-                Recent or historical BK is routinely approvable at
-                Porter without the structural pricing adjustment that
+                Porter considers operators with a recent or historical BK without the structural pricing adjustment that
                 Apex applies. For operators rebuilding after a BK who
                 want a clean factoring relationship without the credit
                 profile dominating the conversation, Porter is the
@@ -903,7 +867,7 @@ export default function ApexVsPorterPage() {
               TBS is purpose-built for the new-authority segment and is
               Love&rsquo;s-owned, which adds an integrated fuel network.
               The startup program includes free MC and DOT filings and
-              pre-approval before authority activation. For day-one
+              onboarding before authority activation. For day-one
               operators who want a turnkey package (factoring +
               filings + fuel), TBS is often the cleaner fit than
               either Apex&rsquo;s startup program or Porter&rsquo;s
@@ -1008,7 +972,7 @@ export default function ApexVsPorterPage() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

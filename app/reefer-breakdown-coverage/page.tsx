@@ -71,8 +71,8 @@ const faqs = [
     a: "Both, in parallel, in this order: (1) call the carrier within the policy notification window to open the claim file, (2) call the authorized service center for an estimate and ETA on the unit, (3) protect or salvage the load with the adjuster's coordination, (4) download the temperature log before service work touches the unit, (5) start the repair financing application if the rebuild estimate exceeds the operating account. The cargo claim and the unit repair are administratively independent — the lender does not wait for the claim, and the adjuster does not wait for the repair.",
   },
   {
-    q: "How fast can I get repair financing for a reefer unit rebuild?",
-    a: "The Dispatched workflow returns soft-approval and lender match after underwriting review of submitting the application. Funds wire to the operator's business account after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff. The financing is independent of the cargo claim — the lender underwrites the operation's revenue and equipment, not the reefer breakdown event.",
+    q: "What affects funding timing for a reefer unit rebuild?",
+    a: "The Dispatched workflow returns soft-approval and lender match after underwriting review once you submit the application. Funds wire to the operator's business account after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff. The financing is independent of the cargo claim — the lender underwrites the operation's revenue and equipment, not the reefer breakdown event.",
   },
   {
     q: "Can I get reefer breakdown coverage if my truck is over a certain age?",
@@ -342,7 +342,7 @@ export default function ReeferBreakdownCoveragePage() {
                 transferring to another reefer, the carrier expects that
                 effort. Document mitigation attempts. Salvage operations
                 should be coordinated with the adjuster — destroying a load
-                before the adjuster sees it is a fast path to a denied claim.
+                before the adjuster sees it is a common path to a denied claim.
               </li>
               <li>
                 <strong>Download the temperature log.</strong> Pull the data
@@ -368,7 +368,7 @@ export default function ReeferBreakdownCoveragePage() {
           <div className="ins-container">
             <span className="ins-eyebrow">The financing gap</span>
             <h2 className="ins-hero-title">
-              Funding the emergency unit rebuild.
+              Funding the unit rebuild.
             </h2>
             <p className="ins-hero-sub">
               Reefer breakdown coverage closes the cargo-loss half of the
@@ -402,8 +402,7 @@ export default function ReeferBreakdownCoveragePage() {
                   invoices.
                 </strong>{" "}
                 If the operator has receivables out on Net-45 or Net-60 terms,
-                factoring can fund the rebuild without taking on debt. The
-                factor cares about broker credit, not the operator&rsquo;s.
+                factoring can fund the rebuild without taking on debt. The factor underwrites mainly on broker credit and still reviews the carrier.
               </li>
             </ul>
             <p className="ins-hero-sub">

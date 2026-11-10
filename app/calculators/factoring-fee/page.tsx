@@ -163,8 +163,7 @@ export default function FactoringFeeCalculatorPage() {
               that can&rsquo;t qualify for a line yet, or for carriers running
               brokers with 60-day pay cycles, factoring is the only realistic
               tool that bridges the cash-flow gap. The right framing isn&rsquo;t
-              &ldquo;is factoring expensive&rdquo; — it&rsquo;s &ldquo;is the
-              cash-flow speedup worth the spread.&rdquo;
+              &ldquo;is factoring expensive&rdquo; — it&rsquo;s &ldquo;is getting paid ahead of the broker&rsquo;s terms worth the spread.&rdquo;
             </p>
             <p>
               The 0.5 – 1% non-recourse premium is, in this frame, cheap
@@ -219,7 +218,7 @@ export default function FactoringFeeCalculatorPage() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  Factoring without a credit check →
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

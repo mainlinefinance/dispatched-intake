@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "What underwriting signals do the panel lenders weight most?",
-    a: "For working capital and repair loans: monthly business deposits, deposit consistency over the trailing 3 to 6 months, debt service coverage ratio (DSCR), and time in business. FICO is secondary. For equipment loans: the asset's appraised value and remaining useful life, the operator's down payment, and revenue. For factoring: the broker's credit, not the operator's.",
+    a: "For working capital and repair loans: monthly business deposits, deposit consistency over the trailing 3 to 6 months, debt service coverage ratio (DSCR), and time in business. FICO is secondary. For equipment loans: the asset's appraised value and remaining useful life, the operator's down payment, and revenue. For factoring: mainly the broker's credit, with a review of the carrier.",
   },
   {
     q: "Is Dispatched a direct lender?",

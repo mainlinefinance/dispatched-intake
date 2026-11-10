@@ -135,9 +135,9 @@ const STATIC_VERTICALS: ReadonlyArray<SearchableItem> = [
   },
   {
     url: "/factoring/no-credit-check",
-    title: "No credit check factoring for truckers",
+    title: "Broker-credit factoring for truckers",
     description:
-      "Factoring options with no personal credit pull. The factor underwrites the broker, not the trucker — useful for thin-file and bad-credit operators.",
+      "Factoring that underwrites mainly on the brokers who owe your invoices. Factors still review the carrier; approval is not guaranteed.",
     type: "vertical",
   },
   {
@@ -310,7 +310,7 @@ const STATIC_COMPARISONS: ReadonlyArray<ComparisonEntry> = [
     slug: "bluevine-vs-ondeck",
     title: "Bluevine vs OnDeck",
     description:
-      "Online working-capital lines for SMB owner-operators — decision speed, file profile, and ceiling compared.",
+      "Online working-capital lines for SMB owner-operators — underwriting, file profile, and ceiling compared.",
   },
   {
     slug: "porter-freight-funding-vs-otr-solutions",

@@ -135,8 +135,7 @@ export default function NewAuthorityFinancingPage() {
             </h2>
             <p className="ins-hero-sub">
               Two products dominate the new-authority segment on our
-              panel: invoice factoring (where the factor underwrites the
-              broker&rsquo;s credit, not yours) and higher-down-payment{" "}
+              panel: invoice factoring (where the factor underwrites mainly on the broker&rsquo;s credit) and higher-down-payment{" "}
               <Link href="/glossary/equipment-loan">equipment loan</Link> financing
               (where the truck itself is the lender&rsquo;s primary collateral).{" "}
               <Link href="/glossary/working-capital">Working capital</Link> lines
@@ -180,7 +179,7 @@ export default function NewAuthorityFinancingPage() {
               minus a per-invoice fee. The factor underwrites the
               broker&rsquo;s credit (the entity paying the invoice),
               which means a new-authority trucker working with strong
-              brokers can get factored at competitive fees from day one.
+              brokers may be able to factor at competitive fees early on; approval is not guaranteed.
             </p>
             <p className="ins-hero-sub">
               For a deeper read on factoring mechanics, recourse vs

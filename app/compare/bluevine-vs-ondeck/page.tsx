@@ -49,15 +49,15 @@ const faqs = [
   },
   {
     q: "What's the underwriting difference?",
-    a: "Both are cash-flow-based using bank statements + credit. Bluevine requires 6+ months in business and $10K+ monthly revenue. OnDeck requires 1+ year in business and $100K+ annual revenue. OnDeck is slightly more lenient on credit (635 FICO works for OnDeck if revenue is strong). Bluevine's tech-forward underwriting moves faster but rejects more applications.",
+    a: "Both are cash-flow-based using bank statements + credit. Bluevine requires 6+ months in business and $10K+ monthly revenue. OnDeck requires 1+ year in business and $100K+ annual revenue. OnDeck is somewhat more flexible on credit when revenue is strong. Bluevine's underwriting is more automated but declines more applications.",
   },
   {
     q: "Why don't I just use trucking factoring instead?",
-    a: "For most trucking businesses, you should. Factoring (1.5-5%) is structured around trucking's broker-payment cycles. Bluevine and OnDeck working capital (6-50% APR effective) doesn't accelerate broker payments — it just lends you money. For an owner-operator running Net-60 broker terms, factoring at 3% is structurally cheaper than borrowing working capital at 14%+. The exception: emergency situations where factoring isn't fast enough, or non-revenue-cycle needs (truck repair, expansion, equipment purchase) where SMB working capital fits the use case.",
+    a: "For most trucking businesses, you should. Factoring (1.5-5%) is structured around trucking's broker-payment cycles. Bluevine and OnDeck working capital (6-50% APR effective) doesn't accelerate broker payments — it just lends you money. For an owner-operator running Net-60 broker terms, factoring at 3% is structurally cheaper than borrowing working capital at 14%+. The exception: non-revenue-cycle needs (truck repair, expansion, equipment purchase) where SMB working capital fits the use case.",
   },
   {
     q: "Bluevine vs OnDeck for a new owner-operator?",
-    a: "Neither is ideal. Both require 6+ months to 1+ year of operating history that new owner-operators don't have. For new authority operators with under 6 months in business, the better paths are: factoring (most factors onboard new authority within 90 days of MC# activation, with rate spread until clean payment history is established), or first-time owner-operator equipment financing.",
+    a: "Neither is ideal. Both require 6+ months to 1+ year of operating history that new owner-operators don't have. For new authority operators with under 6 months in business, the better paths are: factoring (many factors work with new authorities, with a rate spread until clean payment history is established), or first-time owner-operator equipment financing.",
   },
   {
     q: "Which has better customer service?",
@@ -144,12 +144,10 @@ export default function BluevineVsOnDeckPage() {
               lenders serving the U.S. small-business market. Bluevine,
               founded in 2013, is the tighter shop &mdash; business checking
               plus a line of credit up to $250K, headline 6.2% APR, 6+ months
-              in business, $10K+ monthly revenue, 625+ FICO, funding within
-              24 hours. OnDeck, founded in 2007 and acquired by Enova
+              in business, $10K+ monthly revenue, and a published credit minimum. OnDeck, founded in 2007 and acquired by Enova
               International in 2020, is the broader shop &mdash; term loans
               from $5K to $250K plus LOCs from $6K to $100K, rates 6&ndash;50%
-              APR, 1+ year in business, $100K+ annual revenue, 625+ FICO,
-              often same-day funding. Both work for trucking on paper.
+              APR, 1+ year in business, $100K+ annual revenue, and a published credit minimum. Both work for trucking on paper.
               Neither is built for trucking. For owner-operators and small
               fleets, that distinction usually matters more than the headline
               rate. If you&rsquo;d rather skip the read and get matched to
@@ -199,8 +197,7 @@ export default function BluevineVsOnDeckPage() {
                     Tech-comfortable SMBs, low-rate LOC, business banking
                   </td>
                   <td data-label="OnDeck">
-                    Established SMBs needing fast term loans, broader rate
-                    range
+                    Established SMBs needing term loans, broader rate range
                   </td>
                 </tr>
                 <tr>
@@ -237,17 +234,17 @@ export default function BluevineVsOnDeckPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Min FICO</strong>
+                    <strong>Credit</strong>
                   </td>
-                  <td data-label="Bluevine">625</td>
-                  <td data-label="OnDeck">625</td>
+                  <td data-label="Bluevine">Published minimum</td>
+                  <td data-label="OnDeck">Published minimum; more flexible</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Application</strong>
                   </td>
-                  <td data-label="Bluevine">24 hours</td>
-                  <td data-label="OnDeck">Same-day common</td>
+                  <td data-label="Bluevine">Fully online</td>
+                  <td data-label="OnDeck">Online plus phone</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -290,8 +287,7 @@ export default function BluevineVsOnDeckPage() {
               neobank-lender space: FDIC-insured business checking via
               partner banks, a working-capital line of credit, and shrinking
               factoring emphasis. The LOC is the centerpiece today &mdash;
-              up to $250K, headline 6.2% APR, monthly draws, fast online
-              decisioning. The underwriting model is tighter and more
+              up to $250K, headline 6.2% APR, monthly draws, automated online decisioning. The underwriting model is tighter and more
               automated than OnDeck&rsquo;s; the trade-off is a higher
               decline rate. (See{" "}
               <a
@@ -395,10 +391,10 @@ export default function BluevineVsOnDeckPage() {
             <h3>Bluevine underwriting.</h3>
             <p className="ins-hero-sub">
               Bluevine requires 6+ months in business, $10K+ monthly revenue
-              (roughly $120K/year), and a 625+ FICO. The decision is largely
+              (roughly $120K/year), and a minimum credit score it publishes. The decision is largely
               automated: Bluevine pulls 3&ndash;12 months of business bank
               statements via Plaid, runs them against a proprietary cash-flow
-              model, layers in personal credit, and decisions in minutes. The
+              model, layers in personal credit, and returns an automated decision. The
               model prioritizes deposit consistency over total revenue
               &mdash; lumpy broker payments (Net 30&ndash;60 freight invoice
               timing) can read worse to the model than the underlying
@@ -408,14 +404,11 @@ export default function BluevineVsOnDeckPage() {
             <h3>OnDeck underwriting.</h3>
             <p className="ins-hero-sub">
               OnDeck requires 1+ year in business, $100K+ in annual revenue,
-              and a 625+ FICO &mdash; though OnDeck approves down to 600 FICO
-              on a case-by-case basis if revenue and time in business are
-              strong. The OnDeck Score (proprietary) factors in industry
+              and a minimum credit score it publishes &mdash; though OnDeck says it makes case-by-case exceptions when revenue and time in business are strong. The OnDeck Score (proprietary) factors in industry
               risk, deposit pattern, average daily balance, NSF history, and
               credit. OnDeck is more willing than Bluevine to look past a
               weak credit profile if the bank statements are strong. The
-              trade-off is rate: a borrower who gets approved at OnDeck with
-              a 620 FICO and inconsistent deposits gets priced accordingly
+              trade-off is rate: a borrower who gets approved at OnDeck with weaker credit and inconsistent deposits gets priced accordingly
               &mdash; often in the 25&ndash;40% APR band.
             </p>
 
@@ -490,26 +483,21 @@ export default function BluevineVsOnDeckPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Application and funding</span>
             <h2 className="ins-hero-title">
-              OnDeck is faster. Bluevine is fast enough.
+              Bluevine is fully online. OnDeck adds a person.
             </h2>
 
             <h3>Bluevine approval and funding.</h3>
             <p className="ins-hero-sub">
-              Bluevine&rsquo;s automated decisioning returns an approval or
-              decline within minutes. Approved draws fund within 24 hours via
-              ACH; for operators on Bluevine checking, internal transfers
-              are effectively same-day during business hours. Entirely online
+              Bluevine&rsquo;s decisioning is automated. Approved draws are paid by ACH, or by internal transfer for operators on Bluevine checking. Entirely online
               &mdash; works for tech-comfortable operators, irritates
               operators who want to talk to a human.
             </p>
 
             <h3>OnDeck approval and funding.</h3>
             <p className="ins-hero-sub">
-              OnDeck approves in minutes and routinely funds the same day for
-              applications submitted before the early-afternoon Eastern
-              cutoff. The flow pairs online application with phone-based
+              OnDeck&rsquo;s flow pairs online application with phone-based
               account management &mdash; useful for negotiating term
               structure, but adds steps the fully-automated Bluevine path
               doesn&rsquo;t require.
@@ -517,14 +505,7 @@ export default function BluevineVsOnDeckPage() {
 
             <h3>For trucking, this almost never decides the outcome.</h3>
             <p className="ins-hero-sub">
-              Both fund inside the window that matters for normal
-              working-capital needs. Same-day vs 24-hour is rarely the
-              constraint &mdash; underwriting fit, rate, and repayment
-              cadence usually are. For true emergencies (breakdown, fuel
-              shortage stopping a load), neither lender is fast enough
-              relative to factoring &mdash; a verified invoice advance
-              clears in minutes (Apex&rsquo;s blynk&reg;) to hours
-              (eCapital&rsquo;s InstaPay).
+              Funding mechanics are rarely the constraint &mdash; underwriting fit, rate, and repayment cadence usually are. For cash tied to a delivered load, factoring is the more direct tool, because it advances against the invoice itself.
             </p>
           </div>
         </section>
@@ -630,8 +611,7 @@ export default function BluevineVsOnDeckPage() {
             <p className="ins-hero-sub">
               Factoring is the default working-capital solution for trucking
               because it&rsquo;s structurally aligned with broker-payment
-              timing. The factor advances 90&ndash;97% of an invoice
-              immediately, takes assignment of the receivable, and collects
+              timing. The factor advances 90&ndash;97% of an invoice, takes assignment of the receivable, and collects
               from the broker on the original Net 30/45/60 terms. The cost
               is a 1.5&ndash;5% discount per invoice depending on operator
               profile and broker mix. For a 30-day broker payment cycle, a
@@ -705,7 +685,7 @@ export default function BluevineVsOnDeckPage() {
               <li>
                 <strong>
                   Established trucking businesses with 12+ months of clean
-                  bank statements and 700+ FICO.
+                  bank statements and strong credit.
                 </strong>{" "}
                 This profile prices toward the bottom of Bluevine&rsquo;s
                 range (closer to 6.2% than 14%), which is genuinely
@@ -716,8 +696,7 @@ export default function BluevineVsOnDeckPage() {
                 <strong>
                   Operators who value automation over phone support.
                 </strong>{" "}
-                Bluevine&rsquo;s fully-online workflow is faster and lower
-                friction than OnDeck&rsquo;s phone-assisted flow if
+                Bluevine&rsquo;s fully-online workflow is lower friction than OnDeck&rsquo;s phone-assisted flow if
                 you&rsquo;re comfortable closing a loan without talking to
                 anyone.
               </li>
@@ -735,8 +714,7 @@ export default function BluevineVsOnDeckPage() {
                   Established trucking operators with weaker credit and
                   strong revenue.
                 </strong>{" "}
-                OnDeck&rsquo;s willingness to approve down to 600&ndash;620
-                FICO when revenue is strong opens a door Bluevine usually
+                OnDeck&rsquo;s willingness to make credit exceptions when revenue is strong opens a door Bluevine usually
                 doesn&rsquo;t. The rate will be higher (25&ndash;40% APR
                 band), but for operators who&rsquo;d otherwise be priced
                 into MCAs at 60&ndash;100%+ effective rates, OnDeck is a
@@ -744,13 +722,9 @@ export default function BluevineVsOnDeckPage() {
               </li>
               <li>
                 <strong>
-                  Operators who need same-day funding for non-emergency use
-                  cases.
+                  Operators who want a person in the loop.
                 </strong>{" "}
-                OnDeck&rsquo;s same-day funding (before the early-afternoon
-                cutoff) is faster than Bluevine&rsquo;s 24-hour cycle for
-                operators who decide they need capital in the morning and
-                want it deployed by close of business.
+                OnDeck&rsquo;s phone-based account management suits operators who want to discuss term structure before they sign.
               </li>
               <li>
                 <strong>

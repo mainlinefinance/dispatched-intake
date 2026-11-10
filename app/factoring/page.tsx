@@ -62,10 +62,10 @@ const faqs = [
   },
   {
     q: "Can I factor invoices with bad credit?",
-    a: "Yes. Factoring underwrites the broker's credit, not the operator's, because the broker is the entity actually paying the invoice. Operators with lower credit profiles regularly use factoring. The factor checks the operator for fraud history and active bankruptcies, but FICO score itself is not the underwriting driver.",
+    a: "Sometimes. Factors underwrite mainly on the broker's credit, because the broker is the entity actually paying the invoice, and operators with lower credit profiles do use factoring. The factor still reviews the operator, including fraud history and active bankruptcies, and each factor sets its own requirements. Approval is not guaranteed.",
   },
   {
-    q: "How fast does invoice factoring fund?",
+    q: "When does invoice factoring fund?",
     a: "Advance timing depends on the factor and your invoices. Each factor has a daily submission cutoff, and late or weekend submissions roll to a later cycle. Initial setup with a new factor takes longer because of credit checks, broker verification, and notice of assignment.",
   },
   {
@@ -188,13 +188,9 @@ export default function InvoiceFactoringPage() {
                 <strong>New authorities (under 6 months).</strong>{" "}
                 Factoring is sometimes the only product available to
                 operators with under six months of operating history,
-                because the factor underwrites the broker&rsquo;s credit
-                rather than the trucker&rsquo;s. This is also why{" "}
+                because the factor underwrites mainly on the broker&rsquo;s credit. This is also why{" "}
                 <Link href="/factoring/no-credit-check">
-                  no credit check trucking factoring
-                </Link>{" "}
-                is the standard path for challenged-credit and post-BK
-                operators.
+                  factoring that underwrites your brokers </Link>{" "} is a path challenged-credit and post-BK operators often look at; approval is not guaranteed.
               </li>
               <li>
                 <strong>Operators who don&rsquo;t want debt.</strong>{" "}
@@ -229,10 +225,9 @@ export default function InvoiceFactoringPage() {
                 works at the operation level.
               </li>
               <li>
-                <strong>Brokers paying quickly.</strong> If your brokers
+                <strong>Brokers on short payment terms.</strong> If your brokers
                 are 7-day or QuickPay terms, the factoring fee may
-                exceed the financing benefit of getting paid even
-                faster.
+                exceed the benefit of being paid earlier.
               </li>
               <li>
                 <strong>Equipment purchases or repairs.</strong>{" "}

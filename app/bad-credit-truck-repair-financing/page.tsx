@@ -330,9 +330,7 @@ export default function BadCreditTruckRepairFinancingPage() {
                   invoices.
                 </strong>{" "}
                 If the operator has invoiced receivables on Net-30 or longer
-                terms, factoring funds without underwriting the
-                operator&rsquo;s credit — the factor cares about broker
-                credit.
+                terms, factoring may be an option — the factor underwrites mainly on broker credit and still reviews the carrier.
               </li>
               <li>
                 <strong>Direct-to-shop with deferral.</strong> Some shops

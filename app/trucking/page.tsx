@@ -70,7 +70,7 @@ const faqs = [
     a: "No. Credit requirements are set by each financing partner, and approval is not guaranteed. With a lower credit profile the lender mix narrows and APRs sit on the high end of the observed band. The lenders we introduce you to underwrite revenue and equipment, not just credit — three months of bank statements, time in business, and the operation itself carry meaningful weight.",
   },
   {
-    q: "How fast can I get funded?",
+    q: "What affects funding timing?",
     a: "Soft approval and lender match depend on underwriting review after you finish the application. Funds are released after the chosen lender countersigns; timing depends on the lender, your documents, and bank wire cutoffs. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
   },
   {

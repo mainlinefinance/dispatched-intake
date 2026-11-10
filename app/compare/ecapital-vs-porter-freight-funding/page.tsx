@@ -15,7 +15,7 @@ export const metadata: Metadata = fitMeta({
   title:
     "eCapital vs Porter Freight Funding — 2026 Comparison | Dispatched",
   description:
-    "eCapital vs Porter: largest North American factor vs no-credit-check bad-credit specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
+    "eCapital vs Porter: largest North American factor vs a broker-credit underwriting specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
   alternates: {
     canonical: "/compare/ecapital-vs-porter-freight-funding",
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = fitMeta({
     title:
       "eCapital vs Porter Freight Funding — 2026 Comparison | Dispatched",
     description:
-      "eCapital vs Porter: largest North American factor vs no-credit-check bad-credit specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
+      "eCapital vs Porter: largest North American factor vs a broker-credit underwriting specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
     url: "/compare/ecapital-vs-porter-freight-funding",
     type: "website",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = fitMeta({
     title:
       "eCapital vs Porter Freight Funding — 2026 Comparison | Dispatched",
     description:
-      "eCapital vs Porter: largest North American factor vs no-credit-check bad-credit specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
+      "eCapital vs Porter: largest North American factor vs a broker-credit underwriting specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
   },
 });
 
@@ -44,7 +44,7 @@ const PAGE_URL =
 const faqs = [
   {
     q: "Why pick Porter over eCapital?",
-    a: "Porter's structural advantage is no personal credit pull at all, layered with bad-credit niche specialty. eCapital's broader underwriting may price uncompetitively for sub-580 FICO operators, and it runs a soft pull during onboarding. If you don't want any credit-bureau activity on the factoring application — rebuilding credit, minimizing inquiries before a separate financing app, or post-bankruptcy — Porter is the structural fit. eCapital approves bad credit but isn't built around it.",
+    a: "Porter says it underwrites the broker paying the invoice rather than the operator's personal credit, and operators report onboarding without a personal credit pull. eCapital runs a soft pull during onboarding and may price lower credit profiles uncompetitively. If you want to limit credit-bureau activity on the factoring application — rebuilding credit, minimizing inquiries before a separate financing app, or post-bankruptcy — Porter is built around that profile and eCapital is not. Approval is not guaranteed with either.",
   },
   {
     q: "Which is better for mid-fleets (5-25 trucks)?",
@@ -63,12 +63,12 @@ const faqs = [
     a: "eCapital. ABL is a genuine product line at eCapital, integrated with the factoring line so the graduation from factoring to a working-capital revolver happens internally. Porter is factoring-focused with no parallel ABL product. For mid-fleets approaching $5M+ annual revenue who anticipate needing a working-capital line on top of factored receivables, eCapital provides that path; Porter doesn't.",
   },
   {
-    q: "Which has faster funding?",
-    a: "eCapital's InstaPay funds verified invoices within roughly an hour during business hours — typically a tier faster than Porter's same-day standard. But functionally both are fast: an hour vs same-day rarely changes operating decisions. Neither matches the 24/7 minutes-level instant pay of factors like Apex's blynk® or OTR's BOLT. For weekend or evening emergencies, neither factor is the structural answer.",
+    q: "How do their payment options differ?",
+    a: "eCapital offers InstaPay, a separate payment option for verified invoices that runs during business hours. Porter funds through its standard process. Neither runs an around-the-clock payment rail like Apex's blynk® or OTR's BOLT, so if payment outside business hours matters, neither is the structural answer. Timing on any invoice depends on the factor and your paperwork.",
   },
   {
     q: "Should I pick by lowest rate?",
-    a: "No — the use cases barely overlap. Porter's specialty is the credit profile (no pull, sub-580 friendly, post-BK routine). eCapital's specialty is scale and product breadth (cross-border, ABL, broker financing, payroll). An operator who genuinely fits one rarely fits the other. The headline rate gap (Porter 1.5-4% vs eCapital 1.95-4.5%) is real but not the deciding dimension; the credit policy and product breadth are.",
+    a: "No — the use cases barely overlap. Porter's specialty is the credit policy (underwriting the broker, not the operator's personal credit). eCapital's specialty is scale and product breadth (cross-border, ABL, broker financing, payroll). An operator who genuinely fits one rarely fits the other. The headline rate gap (Porter 1.5-4% vs eCapital 1.95-4.5%) is real but not the deciding dimension; the credit policy and product breadth are.",
   },
 ];
 
@@ -148,14 +148,11 @@ export default function EcapitalVsPorterFreightFundingPage() {
               factoring company in North America &mdash; 30,000+
               businesses across the US, Canada, and the UK, with a
               multi-product platform pairing factoring with ABL, broker
-              financing, and payroll. Rates 1.95&ndash;4.5%, InstaPay
-              within an hour during business hours, advance up to 100%
+              financing, and payroll. Rates 1.95&ndash;4.5%, the InstaPay payment option during business hours, advance up to 100%
               on top-tier accounts, fuel program around 20&cent;/gal.
               Porter is a smaller, owner-operator-focused factor
-              purpose-built for sub-580 FICO, prior bankruptcy, and new
-              authority operators &mdash; with a no-personal-credit-check
-              policy as the structural feature. Rates 1.5&ndash;4%,
-              90&ndash;95% advance, same-day funding, 12-month contracts,
+              purpose-built for lower credit profiles, prior bankruptcy, and new authority operators &mdash; with broker-side underwriting as the structural feature. Rates 1.5&ndash;4%,
+              90&ndash;95% advance, 12-month contracts,
               smaller US-based team. The choice isn&rsquo;t between two
               substitutes &mdash; it&rsquo;s between two structurally
               different products. Scale, geography, and ABL graduation
@@ -225,17 +222,17 @@ export default function EcapitalVsPorterFreightFundingPage() {
                   </td>
                   <td data-label="eCapital">Soft pull</td>
                   <td data-label="Porter Freight Funding">
-                    None or no pull
+                    Broker-side underwriting
                   </td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
                   <td data-label="eCapital">
-                    InstaPay 1-hr business hours
+                    InstaPay (business hours)
                   </td>
-                  <td data-label="Porter Freight Funding">Same-day</td>
+                  <td data-label="Porter Freight Funding">Standard ACH/wire</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -346,14 +343,11 @@ export default function EcapitalVsPorterFreightFundingPage() {
               factor purpose-built for the segment most factors decline
               at the front door: lower-credit operators, new MC
               authorities, and operators with prior bankruptcy. The
-              defining choice is the no-personal-credit-check policy
-              &mdash; many operators report onboarding with no FICO pull
-              at all, because Porter underwrites the broker (the entity
+              defining choice is the credit policy &mdash; many operators report onboarding with no personal credit pull, because Porter underwrites the broker (the entity
               actually paying the receivable) instead of the operator.
               That&rsquo;s a real shift from how factoring underwriting
               normally works, and it&rsquo;s the reason Porter shows up
-              in the &ldquo;who would actually approve me&rdquo; searches
-              that drive the bad-credit category. The team is modest, the
+              in the searches that drive the bad-credit category. The team is modest, the
               tech is functional rather than polished, and the footprint
               is primarily US trucking &mdash; but the underwriting
               flexibility is the draw. Rates run 1.5&ndash;4% with a
@@ -367,7 +361,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               </a>{" "}
               for company-stated details; for the broader category, see{" "}
               <Link href="/factoring/no-credit-check">
-                no credit check factoring
+                factoring that underwrites your brokers
               </Link>
               .)
             </p>
@@ -387,19 +381,14 @@ export default function EcapitalVsPorterFreightFundingPage() {
               from the credit-decision equation entirely. Underwriting
               evaluates the broker side: who is paying the invoice, what
               their credit profile and payment history look like.
-              Operator FICO doesn&rsquo;t enter the calculation, and
-              many operators report no credit pull at all during
-              onboarding &mdash; not even a soft one. The category
+              Porter says the operator&rsquo;s personal credit score is not part of that calculation, and many operators report no personal credit pull during onboarding. The category
               Porter owns isn&rsquo;t &ldquo;bad credit accepted,&rdquo;
               it&rsquo;s &ldquo;your credit isn&rsquo;t part of the
               equation.&rdquo; For operators who don&rsquo;t want any
               credit-bureau activity tied to the factoring relationship
               &mdash; rebuilding credit after a BK, minimizing inquiries
               before a separate equipment-finance or revolver
-              application, or simply protecting a borderline FICO score
-              from incremental wear &mdash; Porter is the structural fit.
-              Sub-580 FICO is routinely approvable. Recent bankruptcy
-              isn&rsquo;t an automatic decline.
+              application, or simply protecting a borderline credit profile from incremental wear &mdash; Porter is the structural fit. A lower credit profile or a recent bankruptcy is not an automatic decline, though approval is not guaranteed.
             </p>
 
             <h3>
@@ -411,8 +400,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               credit pull happens for identity and fraud detection, and
               operator credit profile enters the pricing decision. The
               platform technically accepts bad-credit operators &mdash;
-              flexible enough to clear sub-580 FICO and prior bankruptcy
-              in many cases &mdash; but pricing isn&rsquo;t built around
+              it can work with lower credit profiles and prior bankruptcy in some cases &mdash; but pricing isn&rsquo;t built around
               that segment. New authority and very-low-volume operators
               with damaged credit often quote uncompetitively because
               scale-driven fee structure and volume floors penalize the
@@ -469,15 +457,13 @@ export default function EcapitalVsPorterFreightFundingPage() {
             <p className="ins-hero-sub">
               Porter publishes a 1.5&ndash;4% headline range. The 1.5%
               floor is reserved for higher-volume operators with
-              diversified broker mix; new authorities and sub-580 FICO
-              operators routinely land 2.5&ndash;3.5%. The lower bound is
+              diversified broker mix; new authorities and lower-credit operators routinely land 2.5&ndash;3.5%. The lower bound is
               below eCapital&rsquo;s 1.95% floor &mdash; for operators
               priced toward the bottom, that&rsquo;s a real advantage.
               Pricing is a traditional factoring model: rate per invoice,
               with the usual potential for ACH fees, monthly charges, and
               minimum-volume requirements depending on the agreement.
-              For mid-range, the gap closes; for sub-580 FICO single-truck
-              operators specifically, Porter&rsquo;s pricing on this
+              For mid-range, the gap closes; for lower-credit single-truck operators specifically, Porter&rsquo;s pricing on this
               profile beats eCapital&rsquo;s by a meaningful margin
               because eCapital&rsquo;s underwriting prices the same
               profile up while Porter&rsquo;s prices it normally.
@@ -490,8 +476,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               on credit profile, broker mix, and product mix. For a
               high-volume diversified mid-fleet, eCapital&rsquo;s
               bundled pricing can pull effective economics below
-              Porter&rsquo;s headline floor. For a single-truck sub-580
-              FICO operator, Porter&rsquo;s standard pricing on the
+              Porter&rsquo;s headline floor. For a single-truck lower-credit operator, Porter&rsquo;s standard pricing on the
               friendly-credit-policy underwriting beats eCapital&rsquo;s
               repriced bad-credit quote even though the headline ranges
               overlap. For one comparison angle on this, see{" "}
@@ -549,7 +534,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               face value on whole-ledger contracts &mdash; the highest
               published &mdash; versus Porter&rsquo;s 90&ndash;95%. On a
               $50K outstanding receivable, the 100% vs 95% gap is $2,500
-              in immediate working capital per invoice. Mid-fleets
+              in additional working capital per invoice. Mid-fleets
               factoring $500K+/month see effective economics at eCapital
               that single-product specialists aren&rsquo;t structured to
               deliver.
@@ -575,14 +560,9 @@ export default function EcapitalVsPorterFreightFundingPage() {
               Where Porter&rsquo;s narrowness becomes the advantage.
             </h2>
 
-            <h3>No-pull policy as a product, not a flag.</h3>
+            <h3>Broker-side underwriting as the product.</h3>
             <p className="ins-hero-sub">
-              Porter&rsquo;s no-personal-credit-check policy isn&rsquo;t
-              a marketing claim layered on top of standard underwriting
-              &mdash; it&rsquo;s the underwriting framework itself. The
-              broker-side credit decision is the credit decision; the
-              operator&rsquo;s FICO is genuinely not pulled in many
-              onboardings. For operators who&rsquo;ve been declined
+              Porter&rsquo;s credit policy isn&rsquo;t a marketing claim layered on top of standard underwriting &mdash; it&rsquo;s the underwriting framework itself. The broker-side credit decision is the credit decision; operators report that personal credit is not pulled in many onboardings. For operators who&rsquo;ve been declined
               elsewhere, the structural answer at Porter is different
               from the structural answer at any multi-product factor:
               not &ldquo;we&rsquo;ll work with bad credit&rdquo; but
@@ -592,11 +572,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
 
             <h3>Post-bankruptcy and thin-file friendliness.</h3>
             <p className="ins-hero-sub">
-              Recent BK is routinely approvable. Thin-file new authority
-              operators &mdash; less than 90 days since MC activation,
-              no payment history yet &mdash; are routinely approvable.
-              Sub-580 FICO without explanation is routinely approvable.
-              The category Porter owns is the post-decline category:
+              Recent BK, thin-file new authority (less than 90 days since MC activation, no payment history yet) and lower credit profiles are all part of Porter&rsquo;s regular book; none is an automatic decline, and none is a guarantee. The category Porter owns is the post-decline category:
               operators turned down by Apex, eCapital, RTS, or Triumph
               who need a factor that underwrites differently. eCapital
               can occasionally do this; Porter does it every day.
@@ -680,50 +656,41 @@ export default function EcapitalVsPorterFreightFundingPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              InstaPay vs same-day &mdash; functionally both fast.
+              InstaPay vs standard funding.
             </h2>
 
             <h3>
-              eCapital InstaPay &mdash; 1-hour funding, business hours.
+              eCapital InstaPay &mdash; a business-hours payment option.
             </h3>
             <p className="ins-hero-sub">
-              eCapital&rsquo;s InstaPay funds verified invoices within
-              roughly an hour during business hours. That&rsquo;s
-              competitive against the broader factoring market &mdash; and
-              a tier faster than Porter&rsquo;s same-day standard.
-              Submissions outside business hours wait for the next
-              morning. For day-to-day funding, InstaPay is fine; for
-              weekend emergencies, it&rsquo;s still business-hours-bound
-              and 24/7 instant-pay competitors like Apex Capital&rsquo;s
-              blynk&reg; and OTR&rsquo;s BOLT are in a different
-              category.
+              eCapital&rsquo;s InstaPay is a separate payment option for
+              verified invoices that runs during business hours.
+              Submissions outside business hours are handled once
+              business hours resume. It is business-hours-bound, unlike
+              the around-the-clock rails run by Apex Capital
+              (blynk&reg;) and OTR (BOLT).
             </p>
 
-            <h3>Porter &mdash; standard same-day funding.</h3>
+            <h3>Porter &mdash; standard funding.</h3>
             <p className="ins-hero-sub">
-              Porter Freight Funding&rsquo;s funding timeline is the
-              industry-standard same-day model: verified invoices
-              submitted during business hours fund within 24 hours, with
-              most clean submissions landing the same day. That&rsquo;s
-              competitive against the broader factoring market but a
-              clear tier behind eCapital&rsquo;s InstaPay. For
-              steady-state day-to-day funding, Porter is fine; for the
-              edge case where an hour matters operationally, eCapital is
-              the structural pick.
+              Porter Freight Funding funds verified invoices submitted
+              during business hours through its standard process. It
+              does not offer a separate payment option comparable to
+              InstaPay.
             </p>
 
-            <h3>Functionally both fast.</h3>
+            <h3>The difference rarely decides it.</h3>
             <p className="ins-hero-sub">
-              The InstaPay vs same-day gap is real but rarely changes
-              operating decisions. Both factors fund verified invoices
-              within the business day; neither offers true 24/7 instant
-              pay. If after-hours cash is a real constraint &mdash;
-              Friday-night fuel needs, holiday-weekend cash gaps &mdash;
-              neither factor is the structural answer, and the
-              comparison shouldn&rsquo;t stop at these two. For the
-              names that lead the 24/7 instant-pay category, see the{" "}
+              The payment-option difference is real but rarely changes
+              operating decisions. Neither factor runs an
+              around-the-clock payment rail. If payment outside
+              business hours is a real constraint, neither factor is
+              the structural answer, and the comparison shouldn&rsquo;t
+              stop at these two. Timing on any invoice depends on the
+              factor and your paperwork. For the factors that run
+              around-the-clock rails, see the{" "}
               <Link href="/research/best-trucking-factoring-2026">
                 2026 factoring ranking
               </Link>
@@ -842,22 +809,16 @@ export default function EcapitalVsPorterFreightFundingPage() {
                 <strong>
                   Operators who want zero credit-bureau activity.
                 </strong>{" "}
-                Porter&rsquo;s no-personal-credit-check policy is the
-                structural answer. Many operators report no pull at all
-                during onboarding. For operators rebuilding credit,
+                Porter&rsquo;s broker-side underwriting is the structural answer. Many operators report no personal credit pull during onboarding. For operators rebuilding credit,
                 minimizing inquiries before a separate financing
                 application, or post-bankruptcy, this is the deciding
                 feature.
               </li>
               <li>
                 <strong>
-                  Sub-580 FICO operators who&rsquo;ve been declined
-                  elsewhere.
+                  Lower-credit operators who&rsquo;ve been declined elsewhere.
                 </strong>{" "}
-                Porter routinely approves credit profiles that eCapital,
-                Apex, RTS, or Triumph decline at the front door. The
-                underwriting evaluates the broker side of the receivable,
-                not the operator&rsquo;s FICO. For broader context, see{" "}
+                Porter works with credit profiles that eCapital, Apex, RTS, or Triumph often decline. The underwriting evaluates the broker side of the receivable, not the operator&rsquo;s personal credit; approval is not guaranteed. For broader context, see{" "}
                 <Link href="/bad-credit-truck-financing">
                   bad credit truck financing
                 </Link>
@@ -868,12 +829,11 @@ export default function EcapitalVsPorterFreightFundingPage() {
                   Brand-new authority owner-operators.
                 </strong>{" "}
                 With minimal credit underwriting on the operator side,
-                Porter onboards new MCs faster than factors that run a
-                hard credit decision. eCapital onboards new authorities
+                Porter has fewer onboarding steps for new MCs than factors that run a hard credit decision. eCapital onboards new authorities
                 but at scale-driven pricing that penalizes day-one
                 operators. For new-authority context, see{" "}
                 <Link href="/factoring/no-credit-check">
-                  no credit check trucking factoring
+                  factoring that underwrites your brokers
                 </Link>
                 .
               </li>
@@ -881,11 +841,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
                 <strong>
                   Operators with prior bankruptcy on file.
                 </strong>{" "}
-                Recent or historical BK is routinely approvable at
-                Porter. The credit profile isn&rsquo;t the gating
-                factor &mdash; broker mix and operating profile are.
-                eCapital can clear BK at the margin; Porter clears it as
-                a matter of course.
+                Recent or historical BK is not an automatic decline at Porter. Broker mix and operating profile carry the decision. eCapital can work with a BK at the margin; for Porter it is a regular part of the book.
               </li>
               <li>
                 <strong>
@@ -923,10 +879,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               Apex is the dominant choice for owner-operators and small
               fleets running 1&ndash;10 trucks: 30 years in the business,
               4.7+ average review score, the deepest fuel discount on
-              the market at roughly 51&cent;/gal, and a 24/7/365
-              blynk&reg; instant-funding product that pays in minutes.
-              Neither eCapital nor Porter competes with Apex on the
-              owner-operator profile or on after-hours funding speed.
+              the market at roughly 51&cent;/gal, and the blynk&reg; payment rail, which runs around the clock. Neither eCapital nor Porter competes with Apex on the owner-operator profile or on after-hours payment options.
             </p>
 
             <h3>
@@ -1058,7 +1011,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

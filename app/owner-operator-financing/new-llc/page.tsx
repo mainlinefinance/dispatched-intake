@@ -74,10 +74,10 @@ const faqs = [
   },
   {
     q: "Is a new LLC better or worse than running as a sole proprietor for truck financing?",
-    a: "Slightly better in the equipment-secured product set, neutral-to-worse in working capital. An LLC adds limited liability and looks more institutional to a lender; the panel quotes a fractionally lower APR on equipment loans to LLCs than to sole props at the same FICO and revenue band. On working capital, the LLC needs 6+ months of business bank statements to qualify at all — a sole prop with 12 months of Schedule C activity in the same depository can sometimes qualify faster because the deposit history is longer.",
+    a: "Slightly better in the equipment-secured product set, neutral-to-worse in working capital. An LLC adds limited liability and looks more institutional to a lender; the panel quotes a fractionally lower APR on equipment loans to LLCs than to sole props at the same FICO and revenue band. On working capital, the LLC needs 6+ months of business bank statements to qualify at all — a sole prop with 12 months of Schedule C activity in the same depository can sometimes be an easier file because the deposit history is longer.",
   },
   {
-    q: "How fast can a new LLC get funded after applying?",
+    q: "What affects funding timing for a new LLC?",
     a: "Soft approval and lender match: after application. Equipment loans on a new LLC fund after the lender countersigns — slower than a seasoned operation because the title work and lien recording on a brand-new entity need verification. Working capital, when available, funds after lender sign-off; timing depends on documents. If the LLC formation paperwork is in process (filed but not yet returned by the Secretary of State), the lender will hold until the certificate lands; how long that takes depends on the state.",
   },
 ];
@@ -179,14 +179,9 @@ export default function NewLlcTruckFinancingPage() {
                 <strong>
                   Invoice factoring (no LLC age minimum at all).
                 </strong>{" "}
-                The factor underwrites the broker who owes the invoice — not
-                the LLC. A one-week-old LLC with a freshly issued MC# and
-                one signed load can be fundable once the invoice
-                clears.{" "}
+                The factor underwrites mainly on the broker who owes the invoice. A new LLC with an active MC# and a delivered load can be eligible; the factor still reviews the carrier, and approval is not guaranteed.{" "}
                 <Link href="/factoring/no-credit-check">
-                  Factoring with no credit check on you
-                </Link>{" "}
-                is the standard structure here.
+                  Factoring that underwrites your brokers </Link>{" "} is the usual structure here.
               </li>
               <li>
                 <strong>
@@ -273,7 +268,7 @@ export default function NewLlcTruckFinancingPage() {
               <li>
                 <strong>IRS EIN confirmation letter (CP 575).</strong> The
                 IRS-issued employer identification number letter — applied
-                for at irs.gov, returned in minutes for SSN-eligible
+                for at irs.gov; issued online for SSN-eligible
                 operators. The EIN is the LLC&rsquo;s tax ID and is required on
                 every lender application.
               </li>
@@ -386,9 +381,7 @@ export default function NewLlcTruckFinancingPage() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  Factoring with no credit check on you
-                </Link>{" "}
-                — the working-capital substitute for a new LLC with at
+                  Factoring that underwrites your brokers </Link>{" "} — the working-capital substitute for a new LLC with at
                 least one signed load.
               </li>
               <li>

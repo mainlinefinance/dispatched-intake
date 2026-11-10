@@ -61,8 +61,8 @@ const faqs = [
     a: "OTR. No long-term contract requirement; flexible terms. Triumph defaults to auto-renewal with $2,500 early termination plus BBB-flagged auto-renewal practices. For operators wanting optionality, OTR wins. For stable mid-fleets willing to lock in for lower rates, Triumph's contracts are acceptable.",
   },
   {
-    q: "Which has faster funding?",
-    a: "OTR. BOLT instant payment runs 24/7/365. Triumph offers same-day funding decisions but typical funding lands within standard business hours. For weekend or holiday emergencies, OTR wins. For day-to-day funding, both are competitive.",
+    q: "How do their payment options differ?",
+    a: "OTR offers BOLT, a payment option that also operates outside banking hours, including weekends and holidays. Triumph funds during standard business hours on ACH cutoffs and has no after-hours rail on the factoring line. Timing on any invoice depends on the factor and your invoices.",
   },
   {
     q: "Should I pick by lowest rate alone?",
@@ -229,10 +229,10 @@ export default function TriumphVsOtrCapitalPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
-                  <td data-label="Triumph">Same-day decisions</td>
-                  <td data-label="OTR Solutions">BOLT (24/7/365 instant)</td>
+                  <td data-label="Triumph">Business-hours funding</td>
+                  <td data-label="OTR Solutions">Around-the-clock rail (BOLT)</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -583,58 +583,31 @@ export default function TriumphVsOtrCapitalPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              Same-day decisions vs BOLT 24/7/365.
+              A business-hours rail vs an around-the-clock option.
             </h2>
 
-            <h3>Triumph &mdash; same-day decisions, business-hours rail.</h3>
+            <h3>Triumph &mdash; a business-hours rail.</h3>
             <p className="ins-hero-sub">
-              Triumph funds verified invoices same-day on most submissions
-              during business hours, on standard ACH cutoffs. There&rsquo;s
-              no 24/7 instant-payout product on the factoring line.
-              Bank-grade verification means Triumph will sometimes pause
-              an invoice for additional broker credit review, pushing a
-              same-day fund into next-day. The pause protects the
-              non-recourse program; it&rsquo;s a feature, not a bug, but
-              plan around it. For day-to-day funding during the work
-              week, the speed is competitive with any major factor. For
-              Friday-night deliveries or Saturday-morning fuel
-              emergencies, Triumph&rsquo;s rail isn&rsquo;t the right
-              product.
+              Triumph funds verified invoices submitted during business hours, on standard ACH cutoffs. There&rsquo;s no after-hours payout product on the factoring line. Bank-grade verification means Triumph will sometimes pause an invoice for additional broker credit review. The pause protects the non-recourse program; it&rsquo;s a feature, not a bug, but plan around it. Operators who regularly deliver outside banking hours should weigh that.
             </p>
 
-            <h3>OTR BOLT &mdash; 24/7/365 instant payment.</h3>
+            <h3>OTR BOLT &mdash; a payment option outside banking hours.</h3>
             <p className="ins-hero-sub">
-              OTR&rsquo;s BOLT instant payment funds verified invoices in
-              minutes, around the clock, including weekends and holidays.
-              Submissions hit the factoring portal, the credit check
-              clears (most broker IDs are pre-cached), and the payment
-              lands in minutes. The product is included on the standard
-              factoring line at no additional rate; there&rsquo;s no
-              surcharge tier. For an owner-op who delivers Friday at 6pm
-              and needs fuel money before Saturday departure, BOLT is the
-              product feature that ends the conversation. No business-
-              hours dependency, no ACH cutoff, no &ldquo;next banking
-              day.&rdquo; This is the dimension where the gap between the
-              two factors is widest.
+              OTR&rsquo;s BOLT is a payment option for verified invoices that also operates outside banking hours, including weekends and holidays. The product is included on the standard factoring line at no additional rate; there&rsquo;s no surcharge tier. Timing on any given invoice still depends on verification and the receiving bank. This is the dimension where the two factors differ most.
             </p>
 
-            <h3>Winner: OTR on weekend/holiday funding.</h3>
+            <h3>The difference: OTR has an after-hours payment option.</h3>
             <p className="ins-hero-sub">
               <strong>
-                Operators who need weekend or holiday funding: OTR.
+                Operators who deliver outside banking hours: OTR.
               </strong>{" "}
-              BOLT is the structural lever, and Triumph&rsquo;s
-              business-hours rail can&rsquo;t match it.{" "}
+              BOLT is the relevant feature; Triumph&rsquo;s rail runs during business hours.{" "}
               <strong>
                 Operators on steady weekday volume: practical tie.
               </strong>{" "}
-              Both fund same-day during business hours, and the marginal
-              difference between &ldquo;same-day before ACH cutoff&rdquo;
-              and &ldquo;minutes via BOLT&rdquo; is meaningful but rarely
-              operationally decisive for a fleet running predictable
-              Monday-Friday schedules.
+              Both fund during business hours, and the difference in payment options is rarely decisive for a fleet running predictable Monday-Friday schedules.
             </p>
           </div>
         </section>
@@ -657,7 +630,7 @@ export default function TriumphVsOtrCapitalPage() {
               factoring-to-ABL transition is a normal progression as
               receivables grow and unit economics tighten. Doing that
               transition without changing lenders is meaningfully
-              cheaper, faster, and less disruptive than re-shopping the
+              cheaper and less disruptive than re-shopping the
               entire credit relationship with an outside ABL provider.
               The bank ABL prices at SOFR plus a margin &mdash; genuinely
               cheaper than non-bank receivables lines &mdash; and the
@@ -883,15 +856,13 @@ export default function TriumphVsOtrCapitalPage() {
               Pricing flexibility isn&rsquo;t constrained by regulatory
               capital ratios, so the advance rate can run higher and the
               all-in pricing structure is easier to maintain.
-              Decision-making isn&rsquo;t slowed by bank examination
-              cycles or risk-committee approvals, so broker credit
-              decisions can be faster and product launches (BOLT 24/7/365
-              instant payment is the clearest example) ship without
+              Decision-making isn&rsquo;t routed through bank examination cycles or risk-committee approvals, so broker credit
+              decisions involve fewer layers and product launches (the BOLT payment option is the clearest example) ship without
               regulatory review. Customer-service culture isn&rsquo;t
               constrained by bank-style escalation processes, which is
               part of why OTR&rsquo;s aggregate review score outperforms
               every major bank-backed factor. For carriers who optimize
-              for speed, transparency, and product flexibility over
+              for transparency and product flexibility over
               balance-sheet depth, independence is a feature.
             </p>
 
@@ -966,7 +937,7 @@ export default function TriumphVsOtrCapitalPage() {
                 </strong>{" "}
                 Bank-grade documentation discipline matters to acquirers
                 and investors. The diligence cycle on a Triumph factoring
-                relationship is faster and cleaner than on an independent
+                relationship is cleaner than on an independent
                 factor&rsquo;s relationship.
               </li>
             </ul>
@@ -1013,12 +984,9 @@ export default function TriumphVsOtrCapitalPage() {
               </li>
               <li>
                 <strong>
-                  Operators who need weekend or holiday funding.
+                  Operators who deliver outside banking hours.
                 </strong>{" "}
-                BOLT 24/7/365 instant payment is the structural lever.
-                Triumph&rsquo;s business-hours rail can&rsquo;t match it.
-                For Friday-night deliveries and Saturday-morning fuel
-                emergencies, this is the product.
+                BOLT is a payment option that operates around the clock; Triumph&rsquo;s rail runs during business hours.
               </li>
               <li>
                 <strong>
@@ -1051,8 +1019,7 @@ export default function TriumphVsOtrCapitalPage() {
             <h3>For owner-op service quality: Apex Capital.</h3>
             <p className="ins-hero-sub">
               Apex is the dominant choice for owner-operators and small
-              fleets running 1&ndash;10 trucks. The 24/7/365 instant
-              funding (blynk&reg;), the ~51&cent;/gal fuel discount, and
+              fleets running 1&ndash;10 trucks. The around-the-clock payment option (blynk&reg;), the ~51&cent;/gal fuel discount, and
               the 700+ five-star review base with the BBB Torch Award
               for Marketplace Ethics (2018) genuinely differentiate it.
               For escalation-heavy operations where US-based dedicated
@@ -1075,7 +1042,7 @@ export default function TriumphVsOtrCapitalPage() {
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
               startup program includes free MC and DOT filings,
-              pre-approval before authority activation, and a per-load
+              onboarding that can start before authority activation, and a per-load
               fee structure that works for operators with irregular
               early-stage volume. For day-one single-truck owner-ops
               activating MC# this week, neither Triumph nor OTR is the
@@ -1104,7 +1071,7 @@ export default function TriumphVsOtrCapitalPage() {
               Triumph Business Capital and OTR Solutions are both on
               Dispatched&rsquo;s panel, and they&rsquo;re both legitimate
               non-recourse factors with real product behind the
-              marketing. The question isn&rsquo;t whether either will fund you &mdash; neither is guaranteed. The question is which structural lever matters most
+              marketing. Approval is not guaranteed with either. The question is which structural lever matters most
               for your operation: bank-grade reserve depth and integrated
               ABL graduation (Triumph), or transparency-first all-in
               pricing, contract flexibility, and the strongest
@@ -1181,7 +1148,7 @@ export default function TriumphVsOtrCapitalPage() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

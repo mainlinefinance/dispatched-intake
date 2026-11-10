@@ -334,8 +334,7 @@ export default function StateOfTruckingCapital2026() {
               hard (covered in <a href="#insurance-premium-financing">section 9</a>).
               MCA effective APRs continue to run 40–150% and in some
               stacked-position structures into the high triple digits;
-              MCA is not a rate-environment product — it is a
-              cash-flow-emergency product — and Fed actions do not move
+              MCA is not a rate-environment product — it is a cash-crunch product — and Fed actions do not move
               its pricing meaningfully.
             </p>
           </section>
@@ -756,8 +755,7 @@ export default function StateOfTruckingCapital2026() {
               dramatically cheaper than MCA at 40–150% APR on a 3–9
               month ACH schedule, and the monthly payment is usually
               lower in absolute terms. The reason MCA persists despite
-              being more expensive is some combination of speed (MCAs
-              are marketed on how quickly they pay out), qualification flexibility (MCA
+              being more expensive is some combination of how they are marketed to operators in a cash crunch, qualification flexibility (MCA
               underwrites primarily on deposit history, working
               capital underwrites on credit + revenue + time in
               business), and aggressive sales practices in the MCA
@@ -1160,8 +1158,7 @@ export default function StateOfTruckingCapital2026() {
               >
                 <h3>Invoice factoring</h3>
                 <p>
-                  Compare factors on rate, contract terms, funding
-                  speed, and bad-credit acceptance. Volume-tiered
+                  Compare factors on rate, contract terms, payment options, and credit acceptance. Volume-tiered
                   pricing is standard in 2026; the panel covers
                   flat-rate, single-tier, and graded structures.
                 </p>

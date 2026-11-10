@@ -14,13 +14,13 @@ import {
 export const metadata: Metadata = fitMeta({
   title: "OTR Solutions vs Apex Capital — 2026 Comparison | Dispatched",
   description:
-    "OTR Solutions (formerly OTR Capital) vs Apex Capital: rates, all-in pricing, non-recourse, instant pay, and customer reviews compared. Best owner-op factor for 2026?",
+    "OTR Solutions (formerly OTR Capital) vs Apex Capital: rates, all-in pricing, non-recourse, payment options, and customer reviews compared. Best owner-op factor for 2026?",
   alternates: { canonical: "/compare/otr-capital-vs-apex-capital" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "OTR Solutions vs Apex Capital — 2026 Comparison | Dispatched",
     description:
-      "OTR Solutions (formerly OTR Capital) vs Apex Capital: rates, all-in pricing, non-recourse, instant pay, and customer reviews compared. Best owner-op factor for 2026?",
+      "OTR Solutions (formerly OTR Capital) vs Apex Capital: rates, all-in pricing, non-recourse, payment options, and customer reviews compared. Best owner-op factor for 2026?",
     url: "/compare/otr-capital-vs-apex-capital",
     type: "website",
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = fitMeta({
     card: "summary_large_image",
     title: "OTR Solutions vs Apex Capital — 2026 Comparison | Dispatched",
     description:
-      "OTR Solutions (formerly OTR Capital) vs Apex Capital: rates, all-in pricing, non-recourse, instant pay, and customer reviews compared. Best owner-op factor for 2026?",
+      "OTR Solutions (formerly OTR Capital) vs Apex Capital: rates, all-in pricing, non-recourse, payment options, and customer reviews compared. Best owner-op factor for 2026?",
   },
 });
 
@@ -50,8 +50,8 @@ const faqs = [
     a: "OTR. True non-recourse is OTR's primary factoring product — broker insolvency risk is fully transferred on clean deliveries. Apex offers non-recourse but defaults to recourse, with non-recourse adding 0.5–1% to the rate. For operators with concentrated broker risk, OTR's non-recourse-first model is the structural advantage.",
   },
   {
-    q: "Which has faster instant funding?",
-    a: "Practical tie. OTR's BOLT and Apex's blynk® both fund in minutes, 24/7/365. Apex's longer track record (3+ years of $1B+ in instant payments) gives it a slight reliability edge on weekends and holidays, but functionally both are minutes-level instant.",
+    q: "How do their payment options differ?",
+    a: "They are similar. OTR's BOLT and Apex's blynk® are both payment options that run outside banking hours, including weekends and holidays. Apex's blynk® has the longer track record ($1B+ processed), which gives it a slight reliability edge; in everyday use the two work alike. Timing on any invoice depends on the factor and your paperwork.",
   },
   {
     q: "Which has better customer service?",
@@ -83,7 +83,7 @@ export default function OtrVsApexPage() {
           headline:
             "OTR Solutions vs Apex Capital — best owner-operator factor in 2026?",
           description:
-            "Head-to-head comparison of OTR Solutions (formerly OTR Capital) and Apex Capital across rates, all-in pricing, non-recourse, instant pay, and customer service for 2026.",
+            "Head-to-head comparison of OTR Solutions (formerly OTR Capital) and Apex Capital across rates, all-in pricing, non-recourse, payment options, and customer service for 2026.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -106,7 +106,7 @@ export default function OtrVsApexPage() {
             <p className="ins-hero-sub">
               OTR Solutions (rebranded from OTR Capital) and Apex Capital
               are the two highest-rated owner-operator factors by customer
-              reviews. Both run instant payment tech, both target similar
+              reviews. Both run around-the-clock payment rails, both target similar
               operators, both score in the high 4s on Google. The
               differences are in pricing structure, non-recourse approach,
               and contract flexibility.
@@ -145,8 +145,7 @@ export default function OtrVsApexPage() {
               ones.&rdquo; OTR carries a Google score of 4.7 across 883+
               reviews and a Trustpilot score of 4.5 across 323+ reviews.
               Apex carries 700+ aggregate five-star reviews and the BBB
-              Torch Award for Marketplace Ethics (2018). Both run
-              minutes-level instant payment products that work 24/7/365.
+              Torch Award for Marketplace Ethics (2018). Both run payment rails that work around the clock.
               Where they diverge is structural: OTR&rsquo;s pricing is
               all-in (rate &times; invoice equals total cost), its
               non-recourse coverage is the primary factoring product, and
@@ -228,13 +227,13 @@ export default function OtrVsApexPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
                   <td data-label="OTR Solutions">
-                    BOLT instant (24/7/365)
+                    Around-the-clock rail (BOLT)
                   </td>
                   <td data-label="Apex Capital">
-                    blynk® minutes (24/7/365)
+                    Around-the-clock rail (blynk®)
                   </td>
                 </tr>
                 <tr>
@@ -242,7 +241,7 @@ export default function OtrVsApexPage() {
                     <strong>Advance</strong>
                   </td>
                   <td data-label="OTR Solutions">
-                    Same-day on AM submissions
+                    Varies by account
                   </td>
                   <td data-label="Apex Capital">Up to 97%</td>
                 </tr>
@@ -359,14 +358,13 @@ export default function OtrVsApexPage() {
               specialized in trucking. The company was built around
               owner-operators &mdash; the segment most factors treat as
               an afterthought &mdash; and the product set reflects that
-              focus: fuel cards, instant payouts, dispatch software,
+              focus: fuel cards, an around-the-clock payment rail, dispatch software,
               startup programs for new authorities. Apex doesn&rsquo;t
               cross-sell ABL, equipment loans, or healthcare receivables.
               They factor freight invoices for trucking companies, full
               stop. The longer track record matters for two reasons.
               First, the company has compounded a deep network of
-              broker-credit relationships that improves underwriting
-              speed and accuracy. Second, the dedicated-account-exec
+              broker-credit relationships that improves underwriting accuracy. Second, the dedicated-account-exec
               model has been refined across thirty years of operator
               feedback, which is a meaningful piece of why the review
               base looks the way it does. (See{" "}
@@ -404,9 +402,7 @@ export default function OtrVsApexPage() {
               than a flat 3.25% factor on small invoices, but the
               headline rate looks lower. OTR&rsquo;s &ldquo;rate is the
               cost&rdquo; structure removes that arithmetic entirely.
-              Same-day funding is included on morning submissions; BOLT
-              instant payment is included on the standard product line
-              with no surcharge.
+              Standard funding and the BOLT payment option are both included on the standard product line with no surcharge.
             </p>
 
             <h3>Apex&rsquo;s standard pricing.</h3>
@@ -445,27 +441,23 @@ export default function OtrVsApexPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Instant payment</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              Instant payment head-to-head &mdash; a practical tie.
+              Payment rails head-to-head &mdash; a practical tie.
             </h2>
 
             <h3>
-              OTR BOLT &mdash; 24/7/365 instant payment, similar speed to
-              blynk&reg;.
+              OTR BOLT &mdash; a payment option that runs around the
+              clock.
             </h3>
             <p className="ins-hero-sub">
-              OTR&rsquo;s BOLT instant payment funds verified invoices in
-              minutes, around the clock, including weekends and holidays.
-              Submissions hit the factoring portal, the credit check
-              clears (most broker IDs are pre-cached), and the payment
-              lands in minutes. The product is included on the standard
+              OTR&rsquo;s BOLT is a payment option for verified invoices
+              that runs outside banking hours, including weekends and
+              holidays. The product is included on the standard
               factoring line at no additional rate; there&rsquo;s no
-              surcharge tier. For an owner-op who delivers Friday at 6pm
-              and needs fuel money before Saturday departure, BOLT
-              functions identically to the way Apex&rsquo;s blynk&reg;
-              functions: minutes-level, weekend-friendly, no business
-              hours dependency.
+              surcharge tier. In design it mirrors Apex&rsquo;s
+              blynk&reg;: weekend-friendly, with no business-hours
+              dependency.
             </p>
 
             <h3>
@@ -473,29 +465,26 @@ export default function OtrVsApexPage() {
             </h3>
             <p className="ins-hero-sub">
               Apex&rsquo;s blynk&reg; system has been in market for
-              several years and has processed over $1 billion in instant
+              several years and has processed over $1 billion in
               payments. The infrastructure was built in-house and the
               reliability profile across weekends and holidays is well
-              documented in the review base. Same minutes-level funding,
-              same 24/7/365 availability. The longer track record is the
-              advantage: blynk&reg; has been stress-tested through more
-              edge cases (long holiday weekends, peak-season volume
+              documented in the review base. The longer track record is
+              the advantage: blynk&reg; has been stress-tested through
+              more edge cases (long holiday weekends, peak-season volume
               spikes, banking outages) than BOLT has, simply because
               it&rsquo;s been running longer.
             </p>
 
-            <h3>Both are minutes-level. Practical tie.</h3>
+            <h3>Both run around the clock. Practical tie.</h3>
             <p className="ins-hero-sub">
               For most operators, the difference between BOLT and
-              blynk&reg; in steady-state usage is invisible. Both fund
-              in minutes, both work 24/7/365, both are included in the
+              blynk&reg; in steady-state usage is invisible. Both run
+              outside banking hours and both are included in the
               standard product line. The reliability edge goes to
-              blynk&reg; on the longest-tail edge cases, but for the
-              99% of submissions that aren&rsquo;t edge cases, the
-              experience is functionally identical. This is the dimension
-              where the comparison stops mattering &mdash; pick the
-              factor that wins on the other dimensions and you&rsquo;ll
-              get instant payment either way.
+              blynk&reg; on the longest-tail edge cases. This is the
+              dimension where the comparison stops mattering &mdash;
+              pick the factor that wins on the other dimensions. Timing
+              on any invoice depends on the factor and your paperwork.
             </p>
           </div>
         </section>
@@ -622,7 +611,7 @@ export default function OtrVsApexPage() {
               For one comparison angle on commitment-free factoring
               broadly, see{" "}
               <Link href="/factoring/no-credit-check">
-                no credit check trucking factoring
+                factoring that underwrites your brokers
               </Link>{" "}
               &mdash; many of the same flexibility tradeoffs apply.
             </p>
@@ -773,8 +762,7 @@ export default function OtrVsApexPage() {
               First, escalation friction tied to the partially-overseas
               support team &mdash; language barriers, longer hold times,
               and occasional difficulty getting senior intervention on
-              broker disputes. Second, occasional same-day funding
-              inconsistency for new accounts during the first few weeks
+              broker disputes. Second, occasional funding inconsistency for new accounts during the first few weeks
               of the relationship, before the broker-credit cache is
               built out for that operator&rsquo;s typical lanes. Neither
               theme dominates the review base &mdash; the aggregate
@@ -955,8 +943,7 @@ export default function OtrVsApexPage() {
               includes free MC and DOT filings, pre-approval before
               authority activation, and a per-load fee structure that
               works for operators with irregular early-stage volume.
-              For day-one single-truck owner-ops, TBS is often the
-              fastest path to first invoice funded.
+              For day-one single-truck owner-ops, TBS is often the simplest path to a first funded invoice.
             </p>
 
             <h3>
@@ -1087,7 +1074,7 @@ export default function OtrVsApexPage() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

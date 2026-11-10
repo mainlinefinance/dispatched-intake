@@ -195,11 +195,7 @@ export default function FactoringVsMcaPage() {
               loan on any subsequent application because legally it is
               not one. Second, the cost is a fixed fee per invoice; there
               is no compounding and no early-payoff penalty, because
-              there is no schedule. Third, the underwriting is on the
-              broker&rsquo;s credit, not yours. A factor cares whether the
-              broker will pay; they do not care much about your{" "}
-              <Link href="/glossary/fico">FICO</Link> score. This is why
-              factoring is often the only product available to
+              there is no schedule. Third, the underwriting is mainly on the broker&rsquo;s credit. A factor cares most about whether the broker will pay, though many still review the carrier and its{" "} <Link href="/glossary/fico">FICO</Link> profile. This is why factoring is often a product open to
               operators in their first six months after authority, post-
               bankruptcy operators, and owner-operators with lower credit
               profiles.
@@ -241,7 +237,7 @@ export default function FactoringVsMcaPage() {
               because trucker deposits are lumpy and a percentage model
               would be unpredictable. A $67,500 payback at $556 per
               business day works out to roughly 121 business days, or
-              just under six months. That speed is exactly what makes
+              just under six months. That short payback is exactly what makes
               the effective APR so brutal: the funder collects their
               fixed dollar return on an aggressive timeline, which means
               the borrowed money is outstanding for a short window, which
@@ -287,12 +283,10 @@ export default function FactoringVsMcaPage() {
                 deposits — typically 3 to 6 months of bank statements.
               </li>
               <li>
-                <strong>Speed to funding.</strong> Factoring needs an
+                <strong>Funding timing.</strong> Factoring needs an
                 initial setup (broker verification, onboarding) before
                 the first invoice funds; after that, timing depends on
-                the factor and your invoices. MCAs are marketed on speed,
-                which is why they appeal when cashflow is already in
-                crisis.
+                the factor and your invoices. MCAs are marketed to operators whose cashflow is already in crisis.
               </li>
               <li>
                 <strong>Repayment.</strong> Factoring &ldquo;repays&rdquo; itself —

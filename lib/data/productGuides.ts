@@ -18,6 +18,9 @@ export type ProductGuide = {
   doesNotCover: readonly string[];
   federalContext: string;
   checkOnQuote: readonly string[];
+  /* How the coverage is structured and underwritten, how it sits beside the
+     other coverages, and the mistakes operators most often make with it. */
+  inPractice: string;
 };
 
 const GUIDES: Record<ProductSlug, ProductGuide> = {
@@ -39,6 +42,8 @@ const GUIDES: Record<ProductSlug, ProductGuide> = {
       "The operating radius and the commodities listed on the application; hauling outside them can void coverage.",
       "Which drivers and which power units are scheduled on the policy.",
     ],
+    inPractice:
+      "Primary liability is written with a combined single limit per accident, and the limit most broker-carrier agreements ask for is higher than the federal minimum for general freight. Underwriters price it on the people and the operation: driver motor vehicle records and years of experience, the garaging location, the operating radius, the commodities hauled, the age of the authority, and loss runs from prior insurers. Roadside inspection and crash data in FMCSA's safety systems are part of the picture too. The policy is usually scheduled, meaning it lists specific power units and drivers, so adding a truck or a driver mid-term has to be reported before the unit rolls. A common mistake is treating the certificate of insurance as the policy. The certificate shows that coverage exists on the day it was issued; the radius, commodity, and driver conditions that decide whether a claim is paid are in the policy itself.",
   },
   "motor-truck-cargo": {
     inBrief:
@@ -59,6 +64,8 @@ const GUIDES: Record<ProductSlug, ProductGuide> = {
       "The unattended-vehicle and theft conditions.",
       "Whether the deductible applies per occurrence or per vehicle.",
     ],
+    inPractice:
+      "Cargo coverage is written with a limit per vehicle or per load and its own deductible, and many forms add a separate, lower limit for certain commodities or for theft. Underwriters ask what you haul, the usual and maximum load values, where equipment is parked overnight, and what the loss history looks like. It sits next to primary liability and does not overlap with it: liability pays third parties for injury and property damage on the road, cargo pays the owner of the freight. Where a broker or shipper asks to be listed as certificate holder, the certificate shows the limit but not the exclusions, so a load can be booked on a certificate that looks adequate and still be uncovered. The usual mistakes are carrying a limit sized for average loads and then accepting one worth more, and assuming a commodity is covered because it was never specifically discussed.",
   },
   "physical-damage": {
     inBrief:
@@ -79,6 +86,8 @@ const GUIDES: Record<ProductSlug, ProductGuide> = {
       "That the lender or lessor is listed as loss payee exactly as the finance agreement names it.",
       "Whether towing and storage after a covered loss are included.",
     ],
+    inPractice:
+      "Physical damage is the only trucking coverage whose limit is tied to the value of your own equipment, so it should be reviewed whenever a unit is added, sold, or refinanced. Each power unit and trailer is listed with a stated value, and the insurer will usually pay the lesser of that stated value and the actual cash value at the time of loss, which means overstating the value raises the premium without raising the payout. Underwriters ask for the year, make, and value of each unit, the garaging address, the driver list, and prior losses. Collision and comprehensive can carry different deductibles, and a higher deductible lowers the premium at the cost of more out of pocket after a loss. Common mistakes: leaving the stated value unchanged for years as the truck depreciates, and forgetting that a trailer owned by someone else is not covered unless trailer interchange or non-owned trailer coverage has been added.",
   },
   "general-liability": {
     inBrief:
@@ -99,6 +108,8 @@ const GUIDES: Record<ProductSlug, ProductGuide> = {
       "How the policy treats loading and unloading, where the line between auto and general liability is drawn.",
       "Whether the carrier offers it packaged with primary liability, which keeps both policies on the same renewal date and with the same claims contact.",
     ],
+    inPractice:
+      "General liability is written with a limit per occurrence and an annual aggregate, and for trucking operations it is typically a small policy sitting beside the much larger auto liability policy. Underwriters ask about premises you own or lease, whether you load and unload freight yourself, your revenue or payroll, and what contracts you sign. The practical question is where auto liability ends and general liability begins. A claim that arises from operating the truck belongs to the auto policy; a claim from a pallet jack at a receiver's dock, a visitor falling in your yard, or an allegation in your advertising belongs to general liability. Buying both from the same insurer reduces the chance that each points at the other. The common mistake is to skip the coverage because no regulation requires it, and then find that a broker or shipper agreement did, with additional-insured wording the existing policies cannot provide.",
   },
   "non-trucking-liability": {
     inBrief:
@@ -118,6 +129,8 @@ const GUIDES: Record<ProductSlug, ProductGuide> = {
       "Whether the limit matches what the lease requires.",
       "Whether coverage applies with a trailer attached.",
     ],
+    inPractice:
+      "Non-trucking liability is priced as a flat charge per power unit because the exposure is narrow: the truck is covered only while it is not being used in the business of the motor carrier it is leased to. Underwriters ask who the motor carrier is, what the lease says about insurance, and how the truck is used off duty. Bobtail coverage is a related but different form; depending on the wording it can apply whenever the tractor runs without a trailer, including under dispatch, so the two names should not be treated as interchangeable. The coverage works only alongside the motor carrier's primary liability, which is why the lease and the policy have to be read together. The usual mistakes are assuming the policy covers the drive home with an empty trailer after a delivery, which many forms treat as business use, and buying it when running under your own authority, where it does not replace primary liability.",
   },
   "occupational-accident": {
     inBrief:
@@ -137,6 +150,8 @@ const GUIDES: Record<ProductSlug, ProductGuide> = {
       "The waiting period before disability benefits begin.",
       "Whether the definition of on the job matches how you actually work, including time spent waiting at a dock.",
     ],
+    inPractice:
+      "Occupational accident coverage is built from separate benefits, each with its own limit: accident medical expense, temporary and continuous total disability income, accidental death and dismemberment, and sometimes a survivor benefit. Each benefit has a maximum amount and a maximum period, and the disability benefit starts after a waiting period. Insurers ask for the motor carrier you are leased to, how you are paid, and confirmation of independent-contractor status. Many motor carriers arrange a group policy and deduct the premium from settlements, so the first step is to find out whether you are already enrolled and under what limits. It does not replace health insurance, because it responds only to covered work accidents. The common mistake is to treat it as equivalent to workers' compensation. Workers' compensation benefits are set by state law; occupational accident benefits are set by the policy, and they stop when the stated limit or time period is reached.",
   },
   "reefer-breakdown": {
     inBrief:
@@ -157,6 +172,8 @@ const GUIDES: Record<ProductSlug, ProductGuide> = {
       "The deductible, which is often separate from the cargo deductible.",
       "Whether the unit's age affects eligibility.",
     ],
+    inPractice:
+      "Reefer breakdown is an endorsement, so it takes its limit and conditions from the cargo policy it is attached to and usually adds a deductible and conditions of its own. Underwriters ask the age and make of each refrigeration unit, how often it is serviced and by whom, and what commodities are hauled. Because the coverage turns on why the load spoiled, records decide most claims: maintenance invoices for the unit, the temperature download for the trip, the set point written on the bill of lading, and evidence that the trailer was pre-cooled. A load rejected for temperature without a mechanical failure behind it is generally not a breakdown claim. The common mistakes are assuming that a cargo policy covers spoilage without the endorsement, running past the service interval the policy requires, and carrying a limit sized for dry freight when a single load of meat, produce, or pharmaceuticals is worth considerably more.",
   },
 };
 

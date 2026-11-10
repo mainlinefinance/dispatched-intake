@@ -228,13 +228,9 @@ export default function NoBusinessHistoryTruckFinancingPage() {
                 <strong>
                   Invoice factoring &mdash; open to new authorities.
                 </strong>{" "}
-                Available as soon as the operator has an active MC#
-                and one signed load. The factor underwrites the broker
-                who owes the invoice, not the operator&rsquo;s history.{" "}
+                Open to operators with an active MC# and one signed load. The factor underwrites mainly on the broker who owes the invoice and still reviews the carrier.{" "}
                 <Link href="/factoring/no-credit-check">
-                  Factoring with no credit check on you
-                </Link>{" "}
-                is the right link for the structural detail.
+                  Factoring that underwrites your brokers </Link>{" "} is the right link for the structural detail.
               </li>
               <li>
                 <strong>
@@ -251,8 +247,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
                 <strong>
                   Repair loans &mdash; available, narrowly.
                 </strong>{" "}
-                Some repair lenders on the panel will fund an emergency
-                repair for a no-history operator, particularly when the
+                Some repair lenders on the panel will consider a repair loan for a no-history operator, particularly when the
                 operator can show they are actively running loads under
                 a carrier&rsquo;s authority. See{" "}
                 <Link href="/truck-repair-loans/emergency">
@@ -301,7 +296,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
               </li>
               <li>
                 <strong>IRS EIN confirmation letter (CP 575).</strong>{" "}
-                Once applied for. Returned by the IRS in minutes for
+                Once applied for. Issued online by the IRS for
                 SSN-eligible operators.
               </li>
               <li>
@@ -418,9 +413,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  Factoring with no credit check on you
-                </Link>{" "}
-                &mdash; the cash-flow product for a new operator with an active MC# and a load on the books.
+                  Factoring that underwrites your brokers </Link>{" "} &mdash; a cash-flow product for a new operator with an active MC# and a load on the books.
               </li>
               <li>
                 <Link href="/methodology">Methodology</Link> &mdash;

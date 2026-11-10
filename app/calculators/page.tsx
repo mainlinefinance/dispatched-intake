@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "Which calculator should I use first?",
-    a: "If a truck is already at the shop and you have a written estimate, use the truck repair financing fit estimator. If you are not sure which Dispatched product fits your operation at all, use the two-question funding fit at /qualify — it routes you to the right product (working capital, equipment, repair, or factoring) in two answers and no credit pull. Standalone calculators for working capital and equipment financing are on the roadmap; until they ship, /qualify is the fastest path to the right product category.",
+    a: "If a truck is already at the shop and you have a written estimate, use the truck repair financing fit estimator. If you are not sure which Dispatched product fits your operation at all, use the two-question funding fit at /qualify — it routes you to the right product (working capital, equipment, repair, or factoring) in two answers and no credit pull. Standalone calculators for working capital and equipment financing are on the roadmap; until they ship, /qualify is the most direct path to the right product category.",
   },
 ];
 

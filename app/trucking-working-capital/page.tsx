@@ -42,7 +42,7 @@ const faqs = [
     a: "Small fleets in the 2 to 5 truck range typically access working-capital lines from $50K to $125K through lenders that underwrite on fleet revenue, deposit consistency, and settlement-statement quality. APRs run 18% to 28% for fleets with 12 to 24 months of operating history; 14% to 22% for fleets above 24 months. Revolving lines of credit (interest only on drawn balance) usually price 2 to 4 APR points lower than equivalent term loans and are the right structure when the capital need is recurring fuel-and-payroll bridging rather than a one-time gap.",
   },
   {
-    q: "How fast can I get a trucking working capital loan?",
+    q: "What affects funding timing for a working capital loan?",
     a: "Soft approval and lender match depend on underwriting review after you finish the application. Funds are released after the chosen lender countersigns; timing depends on the lender, your documents, and bank wire cutoffs. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
   },
   {
@@ -196,9 +196,7 @@ export default function TruckingWorkingCapitalPage() {
                 <strong>Operational tooling (helpful, not required).</strong>{" "}
                 Operators running a <Link href="/glossary/tms">TMS</Link>,
                 a <Link href="/glossary/fleet-management-platform">fleet management platform</Link>,
-                or basic <Link href="/glossary/vehicle-telematics">vehicle telematics</Link> tend
-                to underwrite faster because revenue, miles, and uptime
-                are documented rather than self-reported.
+                or basic <Link href="/glossary/vehicle-telematics">vehicle telematics</Link> tend to be easier files to underwrite because revenue, miles, and uptime are documented rather than self-reported.
               </li>
             </ul>
           </div>

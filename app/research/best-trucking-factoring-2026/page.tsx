@@ -17,7 +17,7 @@ import { getRelatedContent } from "@/lib/related";
 export const metadata: Metadata = {
   title: "Best Trucking Factoring Companies 2026 | Dispatched",
   description:
-    "We reviewed 12 trucking factors on rate, contract terms, funding speed, and bad-credit acceptance. Here's the honest 2026 ranking by use case — not a paid list.",
+    "We reviewed 12 trucking factors on rate, contract terms, payment options, and credit acceptance. Here's the honest 2026 ranking by use case — not a paid list.",
   alternates: {
     canonical: "/research/best-trucking-factoring-2026",
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     title: "Best Trucking Factoring Companies 2026 | Dispatched",
     description:
-      "We reviewed 12 trucking factors on rate, contract terms, funding speed, and bad-credit acceptance. Here's the honest 2026 ranking by use case — not a paid list.",
+      "We reviewed 12 trucking factors on rate, contract terms, payment options, and credit acceptance. Here's the honest 2026 ranking by use case — not a paid list.",
     url: "/research/best-trucking-factoring-2026",
     type: "article",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Best Trucking Factoring Companies 2026 | Dispatched",
     description:
-      "We reviewed 12 trucking factors on rate, contract terms, funding speed, and bad-credit acceptance. Here's the honest 2026 ranking by use case — not a paid list.",
+      "We reviewed 12 trucking factors on rate, contract terms, payment options, and credit acceptance. Here's the honest 2026 ranking by use case — not a paid list.",
   },
 };
 
@@ -89,7 +89,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     rate: "1–5%",
     contract: "12-mo auto-renew",
     advance: "100%",
-    speed: "Minutes (blynk®)",
+    speed: "Around-the-clock rail (blynk®)",
     credit: "Lower credit considered",
     fuel: "~51¢/gal off",
     recourse: "Both",
@@ -99,7 +99,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     rate: "1.95–4.5%",
     contract: "Varies",
     advance: "Up to 100%",
-    speed: "~1 hour",
+    speed: "Business-hours funding",
     credit: "Lower credit considered",
     fuel: "~20¢/gal, 16K stops",
     recourse: "Both",
@@ -109,7 +109,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     rate: "1.2–3%",
     contract: "12-mo",
     advance: "90–95%",
-    speed: "Same-day",
+    speed: "Standard ACH/wire",
     credit: "Lower credit considered",
     fuel: "Yes",
     recourse: "Recourse default",
@@ -119,8 +119,8 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     rate: "1.5–4%",
     contract: "No minimum",
     advance: "90%",
-    speed: "24h",
-    credit: "No minimum",
+    speed: "Standard ACH/wire",
+    credit: "Broker-credit underwriting",
     fuel: "No",
     recourse: "Recourse",
   },
@@ -129,7 +129,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     rate: "2.5–5%",
     contract: "No minimum",
     advance: "95%",
-    speed: "Same-day",
+    speed: "Standard ACH/wire",
     credit: "Lower credit considered",
     fuel: "Yes",
     recourse: "Recourse",
@@ -139,7 +139,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     rate: "3.25%+",
     contract: "Cancel anytime",
     advance: "95%",
-    speed: "24h",
+    speed: "Standard ACH/wire",
     credit: "Lower credit considered",
     fuel: "Via WEX",
     recourse: "Recourse default",
@@ -149,7 +149,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     rate: "1.5–4%",
     contract: "12-mo typical",
     advance: "90–95%",
-    speed: "24h",
+    speed: "Standard ACH/wire",
     credit: "Lower credit considered",
     fuel: "Yes",
     recourse: "Both (strong non-recourse)",
@@ -251,8 +251,7 @@ export default function BestTruckingFactoring2026Page() {
               Best trucking factoring companies of 2026 — honest review.
             </h1>
             <p className="research-subhead">
-              We reviewed 12 freight factors on rates, contract length, funding
-              speed, fuel discounts, and bad-credit acceptance. No paid
+              We reviewed 12 freight factors on rates, contract length, payment options, fuel discounts, and credit acceptance. No paid
               placements. Updated Q2 2026.
             </p>
             <ResearchByline
@@ -280,8 +279,7 @@ export default function BestTruckingFactoring2026Page() {
               TBS Factoring&apos;s integration with Love&apos;s Financial
               is progressing through 2026 with no immediate rate changes
               for existing customers. Apex Capital&apos;s blynk® system
-              processed its $1B+ milestone in cumulative instant
-              payments. eCapital announced expanded UK operations.
+              processed its $1B+ milestone in cumulative payments. eCapital announced expanded UK operations.
               Rankings unchanged.
             </p>
           </section>
@@ -340,7 +338,7 @@ export default function BestTruckingFactoring2026Page() {
               Every factor advertises a rate. Almost none of those advertised
               rates are what you actually pay after fees. The honest rate is
               the <em>effective</em> rate: factor fee plus ACH fees, plus
-              same-day-funding surcharges, plus minimum-volume penalties,
+              expedited-payment surcharges, plus minimum-volume penalties,
               minus fuel-program offsets. We pulled current rate cards,
               compared them against operator-reported invoices, and ranked
               factors on how closely their advertised rate matched what
@@ -363,34 +361,18 @@ export default function BestTruckingFactoring2026Page() {
               the cancellation window or you are locked in another year.
             </p>
 
-            <h3>Funding speed (setup + per-load)</h3>
+            <h3>Onboarding and payment options</h3>
             <p>
-              Two speed dimensions matter. First, time-to-first-fund: how
-              long from signed contract to your first invoice paid? TBS and
-              Apex both close inside 24–48 hours for clean files. eCapital
-              can take three to five business days for larger fleet
-              onboarding. Second, per-load funding speed: how fast does the
-              advance hit your account once you submit a clean BOL and
-              broker invoice? Apex&apos;s blynk® instant-payment service
-              moves money 24/7/365 in minutes. eCapital is roughly an hour
-              during business hours. Timing for the rest of the list is in the table above. For an owner-operator who actually depends on the
-              advance to make fuel and lumper money this week, speed is not
-              optional.
+              Two things differ between factors. First, onboarding: how much verification stands between a signed contract and your first invoice, which is lighter for a single truck than for a larger fleet. Second, payment options once you submit a clean BOL and broker invoice: Apex&apos;s blynk® rail pays out around the clock, including weekends; eCapital funds during business hours; the rest of the list pays by standard ACH or wire on the factor&apos;s own cutoffs. Ask each factor for its cutoff schedule in writing — timing depends on the factor and your invoices.
             </p>
 
-            <h3>Bad-credit and new-authority acceptance</h3>
+            <h3>Credit and new-authority acceptance</h3>
             <p>
               Truckers with lower credit profiles, recent bankruptcies, or MC numbers
               less than 90 days old struggle with most working-capital
-              lenders. Factoring is one of the few products that underwrites
-              the broker&apos;s credit, not the trucker&apos;s — which is
-              why factoring is often the only working-capital tool available
-              to brand-new authorities. Porter Freight Funding and TBS
+              lenders. Factoring underwrites mainly on the broker&apos;s credit, with a review of the carrier — which is why factoring is often a working-capital tool open to brand-new authorities. Porter Freight Funding and TBS
               specialize here. Both accept operators with credit profiles
-              that other factors decline. Porter explicitly offers a
-              no-personal-credit-check option. TBS is one of the
-              fastest-onboarding factors for brand-new MC numbers and is
-              supportive of post-bankruptcy operators.
+              that other factors decline. Porter advertises underwriting without a personal credit pull. TBS onboards brand-new MC numbers and is supportive of post-bankruptcy operators. Each factor sets its own requirements, and approval is not guaranteed.
             </p>
 
             <h3>
@@ -416,14 +398,13 @@ export default function BestTruckingFactoring2026Page() {
             </h3>
             <p>
               Customer reviews on factoring companies are noisy. Operators
-              praise factors when invoices fund fast and complain about
+              praise factors when funding goes smoothly and complain about
               factors when they get caught in a contract exit. We pulled
               public reviews from Trustpilot, BBB, and Google and weighted
               recency over volume. Apex and Triumph have the strongest
               long-run review profiles — both have hundreds of multi-year
               five-star reviews and visible BBB Torch Award recognition.
-              eCapital&apos;s reviews are mixed — strong on funding speed
-              and product depth, weaker on contract-exit complaints. Porter
+              eCapital&apos;s reviews are mixed — strong on payment options and product depth, weaker on contract-exit complaints. Porter
               and TBS skew positive but have lower review volume. Truckstop
               Go gets dinged on personalized service. We are reporting what
               operators actually said, not what each factor wants you to
@@ -466,9 +447,7 @@ export default function BestTruckingFactoring2026Page() {
               <strong>What they do well.</strong> Apex has been factoring
               for trucking businesses since 1995 and has built the
               owner-operator product more deliberately than any factor on
-              this list. Their blynk® instant-payment service moves the
-              advance into your account in minutes, 24/7/365 — including
-              weekends and federal holidays. The fuel program is the
+              this list. Their blynk® payment rail runs around the clock, including weekends and federal holidays. The fuel program is the
               category-leader: operator-reported savings approaching 51¢
               per gallon at participating chains, which on a tractor
               burning 8,000 gallons per year is roughly $4,000 in offset
@@ -509,8 +488,7 @@ export default function BestTruckingFactoring2026Page() {
               roughly 16,000 locations with operator-reported savings
               around 20¢ per gallon — narrower than Apex&apos;s discount
               but broader in network coverage, which matters more for
-              fleets that run dispersed routes. Funding speed is roughly
-              one hour during business hours for clean invoices. eCapital
+              fleets that run dispersed routes. Clean invoices fund during business hours. eCapital
               also offers asset-based lending and equipment financing
               alongside factoring, so a growing fleet does not have to
               shop a separate lender for the next truck or trailer.
@@ -539,15 +517,10 @@ export default function BestTruckingFactoring2026Page() {
 
             <h3>Best for new authority — TBS Factoring</h3>
             <p>
-              <strong>What they do well.</strong> TBS is one of the
-              fastest-onboarding factors in the country for brand-new MC
-              numbers. They will fund operators inside their first 30 days
-              of authority where most factors require 90+ days of
-              broker-history before approving. They are also explicitly
+              <strong>What they do well.</strong> TBS is built around onboarding brand-new MC numbers. They will consider operators in their first weeks of authority, where many factors want a longer broker history first. They are also explicitly
               supportive of post-bankruptcy operators — Chapter 7
               dischargees re-entering trucking find TBS willing to look at
-              the file where most factors decline. Funding is same-day for
-              clean invoices. The TBS rate range (1.2–3%) is mid-tier but
+              the file where many factors decline. The TBS rate range (1.2–3%) is mid-tier but
               very competitive given the borrower profile they accept.
               They include a fuel card and dispatching support in the
               core product.
@@ -558,8 +531,7 @@ export default function BestTruckingFactoring2026Page() {
               to a larger factor inside the first year. The fuel-card
               network is smaller than Apex or eCapital. Reviews note that
               the customer-service experience is functional rather than
-              high-touch — TBS is built around volume and speed, not
-              account-management depth.
+              high-touch — TBS is built around volume, not account-management depth.
             </p>
             <p>
               <strong>Who should pick them.</strong> Brand-new MC numbers
@@ -568,24 +540,16 @@ export default function BestTruckingFactoring2026Page() {
               declined by Apex or Triumph for thin authority history, TBS
               is the next call. See our{" "}
               <Link href="/factoring/no-credit-check">
-                no-credit-check factoring page
-              </Link>{" "}
-              for the related credit-acceptance product profile.
+                broker-credit factoring page </Link>{" "} for how factors treat carrier credit.
             </p>
 
             <h3>Best for bad credit — Porter Freight Funding</h3>
             <p>
-              <strong>What they do well.</strong> Porter is one of the few
-              factors that explicitly offers a no-personal-credit-check
-              option — they underwrite the broker, not the trucker. That
-              makes them the right pick for operators with lower credit profiles,
-              recent bankruptcies, or thin credit files where the personal
-              credit profile would shut other factors down. Porter is also
+              <strong>What they do well.</strong> Porter advertises underwriting without a personal credit pull — the decision rests mainly on the broker. That makes them a fit for operators with lower credit profiles, recent bankruptcies, or thin credit files; approval is not guaranteed. Porter is also
               tolerant of low-volume operators where Apex and eCapital
               would push for higher invoice volume to make the
               relationship economical. There is no minimum-volume
               contract — you factor what you want, when you want.
-              Funding is typically inside 24 hours.
             </p>
             <p>
               <strong>Watch-outs.</strong> Porter does not run a fuel
@@ -615,9 +579,8 @@ export default function BestTruckingFactoring2026Page() {
               individual loads selectively, not your full ledger. Most
               factors require an all-ledger commitment: every invoice you
               generate goes through the factor. OTR does not. You can
-              factor the specific loads where you need cash quickly and
-              keep slow-pay relationships in-house. There is no minimum
-              volume and no minimum contract. Funding is same-day. Their
+              factor the specific loads you choose and keep slow-pay relationships in-house. There is no minimum
+              volume and no minimum contract. Their
               broker-credit tool is solid and their customer service is
               transactional but responsive.
             </p>
@@ -634,8 +597,7 @@ export default function BestTruckingFactoring2026Page() {
             </p>
             <p>
               <strong>Who should pick them.</strong> Operators who want
-              factoring optionality — fast cash on the loads where they
-              need it, in-house collection on everything else. Operators
+              factoring optionality — an advance on the loads they choose, in-house collection on everything else. Operators
               with a mix of brokered and direct-shipper loads where the
               direct-shipper invoices are not worth factoring. Operators
               who already have a banking relationship and only need the
@@ -687,8 +649,7 @@ export default function BestTruckingFactoring2026Page() {
               broker files bankruptcy or otherwise becomes credit-event
               insolvent — Triumph&apos;s product is built around
               broker-credit risk and underwrites it as the core product,
-              not a bolt-on. The funding speed is solid (24 hours
-              typical), the fuel program is functional, and the
+              not a bolt-on. Payment is by standard ACH or wire, the fuel program is functional, and the
               broker-credit tooling helps you avoid the bad shippers
               before you book the load. Triumph also offers asset-based
               lending and equipment financing for fleets that want a
@@ -754,8 +715,7 @@ export default function BestTruckingFactoring2026Page() {
               relative to Apex, eCapital, and Truckstop Go. Riviera is
               the right pick if you specifically value an in-person
               branch relationship — they are the only factor on this list
-              with that footprint. For everyone else, the lack of
-              instant-payment and modern document-capture tooling means
+              with that footprint. For everyone else, the lack of an around-the-clock payment rail and modern document-capture tooling means
               there are better choices.
             </p>
           </section>
@@ -840,7 +800,7 @@ export default function BestTruckingFactoring2026Page() {
                         borderBottom: "2px solid var(--color-border)",
                       }}
                     >
-                      Funding speed
+                      Payment options
                     </th>
                     <th
                       scope="col"
@@ -850,7 +810,7 @@ export default function BestTruckingFactoring2026Page() {
                         borderBottom: "2px solid var(--color-border)",
                       }}
                     >
-                      Credit minimum
+                      Credit approach
                     </th>
                     <th
                       scope="col"
@@ -1130,7 +1090,7 @@ export default function BestTruckingFactoring2026Page() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  No-credit-check factoring
+                  Factoring that underwrites your brokers
                 </Link>{" "}
                 — the bad-credit-acceptance product profile.
               </li>

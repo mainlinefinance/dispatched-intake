@@ -107,7 +107,7 @@ const CARDS: ReadonlyArray<{
     discount: "Cost-plus pricing; ~51¢/gal average savings at in-network truck stops (Q1 2026, TCS-reported)",
     network: "Pilot, Love's, TA Petro, AMBest network",
     monthlyFee: "$0 in-network transaction fee; $3 per out-of-network transaction",
-    creditType: "Prepaid; no credit check",
+    creditType: "Prepaid; no credit line",
     bestFor: "Owner-ops with no or rebuilding credit; high-volume cost-plus fuelers",
   },
 ];
@@ -341,9 +341,7 @@ export default function FuelCardsPage() {
               factoring with RTS Financial. Standalone discounts run
               $0.05–$0.20/gal across the Pilot Flying J Travel Center
               and One9 Fuel Network (850+ locations). Bundled factoring
-              customers see 5–10¢ extra per gallon. No annual fees, no
-              contracts. Same-day funding on verified invoices when you
-              submit through the RTS Pro app.
+              customers see 5–10¢ extra per gallon. No annual fees, no contracts. Invoices can be submitted for funding through the RTS Pro app.
             </p>
 
             <h3 className="product-h3">Shell Card Business</h3>
@@ -460,7 +458,7 @@ export default function FuelCardsPage() {
               </li>
             </ul>
             <p className="ins-hero-sub">
-              When fuel is eating cash flow faster than the card
+              When fuel is eating more cash flow than the card
               discount can fix, the answer is not a different card. It
               is a <Link href="/factoring">fuel advance via factoring</Link> or short-term{" "}
               <Link href="/trucking-working-capital">trucking working capital</Link>. Dispatched introduces
