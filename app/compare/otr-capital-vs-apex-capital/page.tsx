@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title: "OTR Solutions vs Apex Capital — 2026 Comparison | Dispatched",
   description:
     "OTR Solutions (formerly OTR Capital) vs Apex Capital: rates, all-in pricing, non-recourse, instant pay, and customer reviews compared. Best owner-op factor for 2026?",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "OTR Solutions (formerly OTR Capital) vs Apex Capital: rates, all-in pricing, non-recourse, instant pay, and customer reviews compared. Best owner-op factor for 2026?",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/otr-capital-vs-apex-capital";

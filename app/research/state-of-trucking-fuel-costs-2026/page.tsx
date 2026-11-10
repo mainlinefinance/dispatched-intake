@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "State of Trucking Fuel Costs 2026 — Dispatched Research",
   description:
-    "Annual report on commercial trucking fuel: 2026 diesel pricing, IFTA dynamics, factor fuel programs (Apex/eCapital/RTS), fuel surcharge math, and the alternative-fuel landscape.",
+    "Annual report on trucking fuel: 2026 diesel pricing, IFTA dynamics, factor fuel programs, fuel surcharge math, and the alternative-fuel landscape.",
   alternates: {
     canonical: "/research/state-of-trucking-fuel-costs-2026",
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     title: "State of Trucking Fuel Costs 2026 — Dispatched Research",
     description:
-      "Annual report on commercial trucking fuel: 2026 diesel pricing, IFTA dynamics, factor fuel programs (Apex/eCapital/RTS), fuel surcharge math, and the alternative-fuel landscape.",
+      "Annual report on trucking fuel: 2026 diesel pricing, IFTA dynamics, factor fuel programs, fuel surcharge math, and the alternative-fuel landscape.",
     url: "/research/state-of-trucking-fuel-costs-2026",
     type: "article",
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "State of Trucking Fuel Costs 2026 — Dispatched Research",
     description:
-      "Annual report on commercial trucking fuel: 2026 diesel pricing, IFTA dynamics, factor fuel programs (Apex/eCapital/RTS), fuel surcharge math, and the alternative-fuel landscape.",
+      "Annual report on trucking fuel: 2026 diesel pricing, IFTA dynamics, factor fuel programs, fuel surcharge math, and the alternative-fuel landscape.",
   },
 };
 

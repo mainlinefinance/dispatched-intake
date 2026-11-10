@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title: "Triumph vs RTS Financial — 2026 Comparison | Dispatched",
   description:
     "Triumph Business Capital vs RTS Financial: rates, non-recourse, advance, fuel programs, and contracts compared. Bank-owned non-recourse vs fleet-volume specialist.",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Triumph Business Capital vs RTS Financial: rates, non-recourse, advance, fuel programs, and contracts compared. Bank-owned non-recourse vs fleet-volume specialist.",
   },
-};
+});
 
 const PAGE_URL = "https://dispatched.finance/compare/triumph-vs-rts-financial";
 

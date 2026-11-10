@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title:
     "Progressive Commercial vs Sentry Insurance — 2026 Trucking Comparison | Dispatched",
   description:
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Progressive Commercial vs Sentry Insurance for trucking: broad SMB carrier vs trucking-specialty carrier. Coverage, claim handling, AM Best ratings, premium dynamics compared.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/progressive-commercial-vs-sentry-insurance";

@@ -20,16 +20,16 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Semi truck repair loan with bad credit — sub-580 FICO, truck-down options | Dispatched",
+    "Semi Truck Repair Loans With Bad Credit | Dispatched",
   description:
-    "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, repair financing after sign-off.",
+    "Semi truck repair loan options with bad credit. Financing partners weigh revenue alongside credit. Soft pull to start; approval is not guaranteed.",
   alternates: { canonical: "/bad-credit-truck-repair-financing" },
   openGraph: {
     images: ["/opengraph-image"],
     title:
-      "Semi truck repair loan with bad credit — sub-580 FICO, truck-down options | Dispatched",
+      "Semi Truck Repair Loans With Bad Credit | Dispatched",
     description:
-      "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, repair financing after sign-off.",
+      "Semi truck repair loan options with bad credit. Financing partners weigh revenue alongside credit. Soft pull to start; approval is not guaranteed.",
     url: "/bad-credit-truck-repair-financing",
     type: "website",
   },
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
-      "Semi truck repair loan with bad credit — sub-580 FICO, truck-down options | Dispatched",
+      "Semi Truck Repair Loans With Bad Credit | Dispatched",
     description:
-      "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, repair financing after sign-off.",
+      "Semi truck repair loan options with bad credit. Financing partners weigh revenue alongside credit. Soft pull to start; approval is not guaranteed.",
   },
 };
 

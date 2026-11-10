@@ -21,16 +21,16 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Truck repair line of credit — revolving capital for ongoing repair spend | Dispatched",
+    "Truck Repair Line of Credit | Dispatched",
   description:
-    "A revolving line of credit for trucking repairs — draw, repay, draw again. When ongoing repair patterns make a single installment loan the wrong product. How the line compares to a term loan and a fuel card.",
+    "A revolving line of credit for truck repairs: draw, repay, draw again. When it beats a single installment loan, and how it compares to a term loan or fuel card.",
   alternates: { canonical: "/truck-repair-line-of-credit" },
   openGraph: {
     images: ["/opengraph-image"],
     title:
-      "Truck repair line of credit — revolving capital for ongoing repair spend | Dispatched",
+      "Truck Repair Line of Credit | Dispatched",
     description:
-      "A revolving line of credit for trucking repairs — draw, repay, draw again. When ongoing repair patterns make a single installment loan the wrong product. How the line compares to a term loan and a fuel card.",
+      "A revolving line of credit for truck repairs: draw, repay, draw again. When it beats a single installment loan, and how it compares to a term loan or fuel card.",
     url: "/truck-repair-line-of-credit",
     type: "website",
   },
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
-      "Truck repair line of credit — revolving capital for ongoing repair spend | Dispatched",
+      "Truck Repair Line of Credit | Dispatched",
     description:
-      "A revolving line of credit for trucking repairs — draw, repay, draw again. When ongoing repair patterns make a single installment loan the wrong product. How the line compares to a term loan and a fuel card.",
+      "A revolving line of credit for truck repairs: draw, repay, draw again. When it beats a single installment loan, and how it compares to a term loan or fuel card.",
   },
 };
 

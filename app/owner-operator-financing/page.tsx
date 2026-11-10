@@ -35,13 +35,13 @@ const TOC_ITEMS = [
 export const metadata: Metadata = {
   title: "Owner-operator financing — single truck up | Dispatched",
   description:
-    "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, timing depends on the lender and your documents. Get matched.",
+    "Financing for owner-operators: working capital, equipment loans, and repair loans. Soft pull to start; timing depends on the lender and your documents.",
   alternates: { canonical: "/owner-operator-financing" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "Owner-operator financing — single truck up | Dispatched",
     description:
-      "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, timing depends on the lender and your documents. Get matched.",
+      "Financing for owner-operators: working capital, equipment loans, and repair loans. Soft pull to start; timing depends on the lender and your documents.",
     url: "/owner-operator-financing",
     type: "website",
   },
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Owner-operator financing — single truck up | Dispatched",
     description:
-      "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, timing depends on the lender and your documents. Get matched.",
+      "Financing for owner-operators: working capital, equipment loans, and repair loans. Soft pull to start; timing depends on the lender and your documents.",
   },
 };
 

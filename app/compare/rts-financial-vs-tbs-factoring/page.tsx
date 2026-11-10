@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title: "RTS Financial vs TBS Factoring — 2026 Comparison | Dispatched",
   description:
     "RTS Financial vs TBS Factoring (now Love's-owned): fleet-volume specialist vs new-authority specialist with free MC# filings. Rates, contracts, and reviews compared.",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "RTS Financial vs TBS Factoring (now Love's-owned): fleet-volume specialist vs new-authority specialist with free MC# filings. Rates, contracts, and reviews compared.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/rts-financial-vs-tbs-factoring";

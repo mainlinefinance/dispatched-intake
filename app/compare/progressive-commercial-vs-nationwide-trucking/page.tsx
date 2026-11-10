@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title:
     "Progressive Commercial vs Nationwide Trucking — 2026 Comparison | Dispatched",
   description:
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Progressive Commercial vs Nationwide Trucking: largest commercial auto insurer vs trucking-specialty division. Coverage, claim handling, and underwriting compared for 2026.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/progressive-commercial-vs-nationwide-trucking";

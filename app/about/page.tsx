@@ -23,7 +23,7 @@ const FOUNDER_BIO_SHORT =
 export const metadata: Metadata = {
   title: "About — Angelo Orru Neto, Founder | Dispatched",
   description:
-    "Meet the founder of Dispatched. Operator-engineer background in clinical-data infrastructure, applied to a matching marketplace for trucking finance and insurance.",
+    "Meet the founder of Dispatched: an operator-engineer background in clinical-data infrastructure, applied to trucking finance and insurance.",
   alternates: { canonical: "/about" },
   openGraph: {
     images: ["/opengraph-image"],

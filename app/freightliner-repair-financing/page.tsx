@@ -20,16 +20,16 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Freightliner repair financing — same-day funds for Cascadia, M2, Argosy | Dispatched",
+    "Freightliner Repair Financing: Cascadia, M2 | Dispatched",
   description:
-    "Freightliner down? Match with trucking-friendly lenders for $5K–$150K. Soft pull, FICO from 500. Funds after lender sign-off; timing depends on documents. Cascadia, M2, Argosy, Coronado, Columbia.",
+    "Freightliner down? Get introduced to trucking-friendly lenders for repair financing. Soft pull to start; timing depends on the lender and your documents.",
   alternates: { canonical: "/freightliner-repair-financing" },
   openGraph: {
     images: ["/opengraph-image"],
     title:
-      "Freightliner repair financing — same-day funds for Cascadia, M2, Argosy | Dispatched",
+      "Freightliner Repair Financing: Cascadia, M2 | Dispatched",
     description:
-      "Freightliner down? Match with trucking-friendly lenders for $5K–$150K. Soft pull, FICO from 500. Funds after lender sign-off; timing depends on documents. Cascadia, M2, Argosy, Coronado, Columbia.",
+      "Freightliner down? Get introduced to trucking-friendly lenders for repair financing. Soft pull to start; timing depends on the lender and your documents.",
     url: "/freightliner-repair-financing",
     type: "website",
   },
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
-      "Freightliner repair financing — same-day funds for Cascadia, M2, Argosy | Dispatched",
+      "Freightliner Repair Financing: Cascadia, M2 | Dispatched",
     description:
-      "Freightliner down? Match with trucking-friendly lenders for $5K–$150K. Soft pull, FICO from 500. Funds after lender sign-off; timing depends on documents. Cascadia, M2, Argosy, Coronado, Columbia.",
+      "Freightliner down? Get introduced to trucking-friendly lenders for repair financing. Soft pull to start; timing depends on the lender and your documents.",
   },
 };
 

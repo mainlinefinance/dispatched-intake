@@ -18,14 +18,14 @@ import { HAS_SUPPORT_PHONE, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title:
-    "Commercial Trucking Insurance Quotes | 30+ Carriers | Dispatched",
+    "Commercial Trucking Insurance Quotes | Dispatched",
   description:
     "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quote in 3 minutes via our producer.",
   alternates: { canonical: "/insurance" },
   openGraph: {
     images: ["/opengraph-image"],
     title:
-      "Commercial Trucking Insurance Quotes | 30+ Carriers | Dispatched",
+      "Commercial Trucking Insurance Quotes | Dispatched",
     description:
       "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quote in 3 minutes via our producer.",
     url: "/insurance",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
-      "Commercial Trucking Insurance Quotes | 30+ Carriers | Dispatched",
+      "Commercial Trucking Insurance Quotes | Dispatched",
     description:
       "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quotes in 3 minutes.",
   },

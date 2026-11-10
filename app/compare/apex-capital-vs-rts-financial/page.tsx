@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title:
     "Apex Capital vs RTS Financial — Honest 2026 Comparison | Dispatched",
   description:
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     description:
       "Apex vs RTS: rates, contracts, advance rates, fuel programs, and customer reviews compared. Owner-operator vs fleet — which factor fits in 2026?",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/apex-capital-vs-rts-financial";

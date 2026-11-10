@@ -266,7 +266,7 @@ const POSTS: ReadonlyArray<BlogPost> = [
   {
     slug: "picking-first-factoring-company",
     title: "Picking your first factoring company: a decision framework",
-    metaTitle: "Picking Your First Factoring Company: 2026 Decision Framework | Dispatched",
+    metaTitle: "Picking Your First Factoring Company: A 2026 Framework | Dispatched",
     metaDescription:
       "Stop comparing rates alone. The 6-factor framework for picking the right factor: contract terms, advance rate, fuel program, recourse structure, customer service tier, and growth fit.",
     subhead:

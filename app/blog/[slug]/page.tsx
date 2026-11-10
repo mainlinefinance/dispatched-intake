@@ -1,3 +1,4 @@
+import { fitDescription, fitTitle } from "@/lib/seo/meta";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -38,8 +39,8 @@ export async function generateMetadata({
   if (!p) return {};
   const canonical = `/blog/${p.slug}`;
   return {
-    title: p.metaTitle,
-    description: p.metaDescription,
+    title: fitTitle(p.metaTitle),
+    description: fitDescription(p.metaDescription),
     alternates: { canonical },
     openGraph: {
       images: ["/opengraph-image"],

@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title:
     "Apex Capital vs Porter Freight Funding — 2026 Comparison | Dispatched",
   description:
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Apex vs Porter Freight Funding: premium owner-op factor vs no-credit-check bad-credit specialist. Rates, credit pull policies, contracts, and use cases compared.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/apex-capital-vs-porter-freight-funding";

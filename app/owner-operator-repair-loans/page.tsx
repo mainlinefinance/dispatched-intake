@@ -19,16 +19,16 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Owner-operator repair loans — same-day funds for the one-truck operation | Dispatched",
+    "Owner-Operator Truck Repair Loans | Dispatched",
   description:
-    "Repair financing built around how owner-operators actually run. Schedule C income fits. Sole-prop and LLC both fit. Underwriting accounts for revenue interruption while the truck is down. Same-banking-day funds.",
+    "Repair financing built around how owner-operators run: Schedule C income, sole props and LLCs. Timing depends on the lender and your documents.",
   alternates: { canonical: "/owner-operator-repair-loans" },
   openGraph: {
     images: ["/opengraph-image"],
     title:
-      "Owner-operator repair loans — same-day funds for the one-truck operation | Dispatched",
+      "Owner-Operator Truck Repair Loans | Dispatched",
     description:
-      "Repair financing built around how owner-operators actually run. Schedule C income fits. Sole-prop and LLC both fit. Underwriting accounts for revenue interruption while the truck is down. Same-banking-day funds.",
+      "Repair financing built around how owner-operators run: Schedule C income, sole props and LLCs. Timing depends on the lender and your documents.",
     url: "/owner-operator-repair-loans",
     type: "website",
   },
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
-      "Owner-operator repair loans — same-day funds for the one-truck operation | Dispatched",
+      "Owner-Operator Truck Repair Loans | Dispatched",
     description:
-      "Repair financing built around how owner-operators actually run. Schedule C income fits. Sole-prop and LLC both fit. Underwriting accounts for revenue interruption while the truck is down. Same-banking-day funds.",
+      "Repair financing built around how owner-operators run: Schedule C income, sole props and LLCs. Timing depends on the lender and your documents.",
   },
 };
 

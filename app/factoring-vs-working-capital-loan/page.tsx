@@ -34,16 +34,16 @@ const TOC_ITEMS = [
 
 export const metadata: Metadata = {
   title:
-    "Factoring vs Working Capital Loan for Truckers: Side-by-Side | Dispatched",
+    "Factoring vs Working Capital Loan for Truckers | Dispatched",
   description:
-    "Factoring sells specific invoices for a fee; a working capital loan delivers a lump sum at fixed APR. Side-by-side for trucking operations choosing between them — and when to use both.",
+    "Factoring sells specific invoices for a fee; a working capital loan is a lump sum at a fixed APR. A side-by-side for trucking operations, and when to use both.",
   alternates: { canonical: "/factoring-vs-working-capital-loan" },
   openGraph: {
     images: ["/opengraph-image"],
     title:
-      "Factoring vs Working Capital Loan for Truckers: Side-by-Side | Dispatched",
+      "Factoring vs Working Capital Loan for Truckers | Dispatched",
     description:
-      "Factoring sells specific invoices for a fee; a working capital loan delivers a lump sum at fixed APR. Side-by-side for trucking operations choosing between them — and when to use both.",
+      "Factoring sells specific invoices for a fee; a working capital loan is a lump sum at a fixed APR. A side-by-side for trucking operations, and when to use both.",
     url: "/factoring-vs-working-capital-loan",
     type: "website",
   },
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
-      "Factoring vs Working Capital Loan for Truckers: Side-by-Side | Dispatched",
+      "Factoring vs Working Capital Loan for Truckers | Dispatched",
     description:
-      "Factoring sells specific invoices for a fee; a working capital loan delivers a lump sum at fixed APR. Side-by-side for trucking operations choosing between them — and when to use both.",
+      "Factoring sells specific invoices for a fee; a working capital loan is a lump sum at a fixed APR. A side-by-side for trucking operations, and when to use both.",
   },
 };
 

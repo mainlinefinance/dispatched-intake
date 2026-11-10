@@ -1,3 +1,4 @@
+import { DESCRIPTION_MAX, fitDescription, fitTitle } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -34,11 +35,18 @@ export async function generateMetadata({
   const { slug } = await params;
   const t = getTerm(slug);
   if (!t) return {};
-  const titleBase =
+  const titleBase = fitTitle(
     t.abbreviation && t.abbreviation !== t.term
       ? `${t.term} (${t.abbreviation}) — Trucking Glossary | Dispatched`
-      : `${t.term} — Trucking Glossary | Dispatched`;
-  const description = `${t.shortDefinition} | Dispatched trucking glossary`;
+      : `${t.term} — Trucking Glossary | Dispatched`,
+  );
+  // The definition is the answer; the site name only rides along when the
+  // whole thing still fits.
+  const branded = `${t.shortDefinition} | Dispatched trucking glossary`;
+  const description =
+    branded.length <= DESCRIPTION_MAX
+      ? branded
+      : fitDescription(t.shortDefinition);
   const canonical = `/glossary/${t.slug}`;
   return {
     title: titleBase,

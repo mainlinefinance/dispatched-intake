@@ -19,7 +19,7 @@ const PAGE_URL =
 export const metadata: Metadata = withSocial({
   title: "How Much Can I Borrow for a Semi Truck? | Dispatched",
   description:
-    "Calculator + guide. What FICO, down payment, revenue, and truck age unlock on the Dispatched panel — and the typical loan amount range for first-time vs established owner-operators.",
+    "Calculator and guide: what credit, down payment, revenue, and truck age mean for the loan amount, for first-time and established owner-operators.",
   alternates: {
     canonical: "/calculators/how-much-can-i-borrow-for-a-truck",
   },

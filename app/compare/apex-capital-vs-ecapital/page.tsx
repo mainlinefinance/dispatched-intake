@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title: "Apex Capital vs eCapital — Honest 2026 Comparison | Dispatched",
   description:
     "Apex vs eCapital: rates, contracts, funding speed, fuel programs, and customer reviews compared head-to-head. Which one fits owner-operators vs fleets in 2026?",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Apex vs eCapital: rates, contracts, funding speed, fuel programs, and customer reviews compared head-to-head. Which one fits owner-operators vs fleets in 2026?",
   },
-};
+});
 
 const PAGE_URL = "https://dispatched.finance/compare/apex-capital-vs-ecapital";
 

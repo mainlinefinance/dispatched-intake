@@ -26,7 +26,7 @@ export const metadata: Metadata = withSocial({
   title:
     "Commercial Trucking Insurance Premium Estimator — Dispatched",
   description:
-    "Indicative annual premium band for commercial trucking primary liability — anchored to a real sampled rate observation, then adjusted for claims history, coverage limits, and operating radius. Each modifier is shown.",
+    "Indicative annual premium band for trucking primary liability, anchored to a sampled rate observation and adjusted for claims, limits, and operating radius.",
   alternates: { canonical: "/insurance/tools/premium-estimator" },
 }, "/insurance/tools/premium-estimator");
 

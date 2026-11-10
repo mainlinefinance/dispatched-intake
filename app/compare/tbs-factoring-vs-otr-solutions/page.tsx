@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title: "TBS Factoring vs OTR Solutions — 2026 Comparison | Dispatched",
   description:
     "TBS Factoring (now Love's-owned) vs OTR Solutions: new-authority specialist with free MC# filings vs transparency-first true non-recourse. Use cases compared.",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "TBS Factoring (now Love's-owned) vs OTR Solutions: new-authority specialist with free MC# filings vs transparency-first true non-recourse. Use cases compared.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/tbs-factoring-vs-otr-solutions";

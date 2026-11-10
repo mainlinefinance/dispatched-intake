@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title:
     "Triumph vs OTR Solutions — 2026 Non-Recourse Comparison | Dispatched",
   description:
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     description:
       "Triumph Business Capital vs OTR Solutions: bank-owned non-recourse vs transparency-first non-recourse. Rates, ABL, contracts, and customer service compared for 2026.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/triumph-vs-otr-capital";

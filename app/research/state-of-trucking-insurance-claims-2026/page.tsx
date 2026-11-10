@@ -10,7 +10,7 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "State of Trucking Insurance Claims 2026 — Dispatched Research",
+  title: "Trucking Insurance Claims 2026 — Dispatched Research",
   description:
     "Annual report on commercial trucking insurance claims: nuclear verdict trends, premium dynamics, CSA correlation, claim severity, and 2026 carrier-side outlook.",
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: ["/opengraph-image"],
-    title: "State of Trucking Insurance Claims 2026 — Dispatched Research",
+    title: "Trucking Insurance Claims 2026 — Dispatched Research",
     description:
       "Annual report on commercial trucking insurance claims: nuclear verdict trends, premium dynamics, CSA correlation, claim severity, and 2026 carrier-side outlook.",
     url: "/research/state-of-trucking-insurance-claims-2026",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "State of Trucking Insurance Claims 2026 — Dispatched Research",
+    title: "Trucking Insurance Claims 2026 — Dispatched Research",
     description:
       "Annual report on commercial trucking insurance claims: nuclear verdict trends, premium dynamics, CSA correlation, claim severity, and 2026 carrier-side outlook.",
   },

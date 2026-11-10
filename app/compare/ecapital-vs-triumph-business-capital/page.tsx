@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title: "eCapital vs Triumph Business Capital — 2026 Comparison | Dispatched",
   description:
     "eCapital vs Triumph: rates, non-recourse strength, ABL options, contracts, and customer service compared. Which fits fleets and brokers in 2026?",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     description:
       "eCapital vs Triumph: rates, non-recourse strength, ABL options, contracts, and customer service compared. Which fits fleets and brokers in 2026?",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/ecapital-vs-triumph-business-capital";

@@ -1,3 +1,4 @@
+import { fitDescription, fitTitle } from "@/lib/seo/meta";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -41,8 +42,10 @@ export async function generateMetadata({
   const { padd } = await params;
   if (!isPaddPathSlug(padd)) return {};
   const label = PADD_LABELS[padd];
-  const title = `${label} Diesel Prices This Week — Dispatched Pulse`;
-  const description = PADD_DESCRIPTIONS[padd];
+  const title = fitTitle(
+    `${label} Diesel Prices This Week — Dispatched Pulse`,
+  );
+  const description = fitDescription(PADD_DESCRIPTIONS[padd]);
   const canonical = `/pulse/diesel/${padd}`;
   return {
     title,

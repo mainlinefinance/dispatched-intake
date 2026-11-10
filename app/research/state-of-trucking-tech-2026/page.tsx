@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "State of Trucking Tech 2026 — Dispatched Research",
   description:
-    "Annual report on commercial trucking technology adoption: ELD evolution, AI dash cams, fleet management platforms, telematics insurance integration, and 2026 outlook.",
+    "Annual report on trucking technology adoption: ELDs, AI dash cams, fleet management platforms, telematics insurance integration, and the 2026 outlook.",
   alternates: {
     canonical: "/research/state-of-trucking-tech-2026",
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     title: "State of Trucking Tech 2026 — Dispatched Research",
     description:
-      "Annual report on commercial trucking technology adoption: ELD evolution, AI dash cams, fleet management platforms, telematics insurance integration, and 2026 outlook.",
+      "Annual report on trucking technology adoption: ELDs, AI dash cams, fleet management platforms, telematics insurance integration, and the 2026 outlook.",
     url: "/research/state-of-trucking-tech-2026",
     type: "article",
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "State of Trucking Tech 2026 — Dispatched Research",
     description:
-      "Annual report on commercial trucking technology adoption: ELD evolution, AI dash cams, fleet management platforms, telematics insurance integration, and 2026 outlook.",
+      "Annual report on trucking technology adoption: ELDs, AI dash cams, fleet management platforms, telematics insurance integration, and the 2026 outlook.",
   },
 };
 

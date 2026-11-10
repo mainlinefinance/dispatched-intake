@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title: "OTR Solutions vs eCapital — 2026 Comparison | Dispatched",
   description:
     "OTR Solutions (formerly OTR Capital) vs eCapital: transparency-first all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "OTR Solutions (formerly OTR Capital) vs eCapital: transparency-first all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
   },
-};
+});
 
 const PAGE_URL = "https://dispatched.finance/compare/otr-capital-vs-ecapital";
 

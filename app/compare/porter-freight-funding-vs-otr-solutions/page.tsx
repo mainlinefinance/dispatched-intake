@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title:
     "Porter Freight Funding vs OTR Solutions — Bad Credit Factoring 2026 | Dispatched",
   description:
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Porter Freight Funding vs OTR Solutions: which bad-credit/non-traditional factor wins in 2026? Rates, no-credit-check policies, contracts, and reviews compared.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/porter-freight-funding-vs-otr-solutions";
