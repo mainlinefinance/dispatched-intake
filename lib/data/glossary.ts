@@ -62,7 +62,7 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
       {
         h2: "What it is",
         body:
-          "An MC Number — short for Motor Carrier Authority Number — is the federal operating-authority identifier issued by the Federal Motor Carrier Safety Administration (FMCSA). It is required for any for-hire interstate motor carrier or broker transporting regulated commodities.\n\nThe MC# is distinct from the DOT Number. A DOT Number identifies any vehicle requiring federal safety oversight; an MC# identifies the operating-authority entity legally permitted to haul for hire across state lines. A carrier needs both — DOT for safety, MC for authority.\n\nThe FMCSA charges a $300 filing fee for a new MC#. After filing, the application enters a published-availability period during which protests can be filed against the applicant. Activation typically takes 21 days after that period closes. New entrants also complete the FMCSA New Entrant Safety Assurance Program over the first 18 months of operation.",
+          "An MC Number — short for Motor Carrier Authority Number — is the federal operating-authority identifier issued by the Federal Motor Carrier Safety Administration (FMCSA). It is required for any for-hire interstate motor carrier or broker transporting regulated commodities.\n\nThe MC# is distinct from the DOT Number. A DOT Number identifies any vehicle requiring federal safety oversight; an MC# identifies the operating-authority entity legally permitted to haul for hire across state lines. A carrier needs both — DOT for safety, MC for authority.\n\nThe FMCSA charges a $300 filing fee for a new MC#. After filing, the application enters a published-availability period during which protests can be filed against the applicant. Activation typically follows about three weeks after that period ends. New entrants also complete the FMCSA New Entrant Safety Assurance Program over the first 18 months of operation.",
       },
       {
         h2: "Why it matters for trucking finance",
@@ -126,7 +126,7 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["mc-number", "dot-number"],
     relatedProducts: [
       { url: "/new-authority-truck-financing", label: "New authority truck financing" },
-      { url: "/factoring/no-credit-check", label: "No credit check factoring" },
+      { url: "/factoring/broker-credit", label: "Factoring that underwrites your brokers" },
     ],
   },
   {
@@ -228,7 +228,7 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["non-recourse-factoring", "owner-operator"],
     relatedProducts: [
       { url: "/factoring", label: "Invoice factoring for truckers" },
-      { url: "/factoring/no-credit-check", label: "No credit check factoring" },
+      { url: "/factoring/broker-credit", label: "Factoring that underwrites your brokers" },
     ],
   },
   {
@@ -252,7 +252,7 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["recourse-factoring"],
     relatedProducts: [
       { url: "/factoring", label: "Invoice factoring for truckers" },
-      { url: "/factoring/no-credit-check", label: "No credit check factoring" },
+      { url: "/factoring/broker-credit", label: "Factoring that underwrites your brokers" },
     ],
   },
   {

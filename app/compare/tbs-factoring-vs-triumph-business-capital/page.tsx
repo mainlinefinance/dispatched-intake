@@ -99,7 +99,7 @@ export default function TbsVsTriumphPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               TBS Factoring vs Triumph Business Capital — new authority
@@ -128,7 +128,7 @@ export default function TbsVsTriumphPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No spam from both at once.
+              Soft-pull match. · No spam from both at once.
             </p>
           </div>
         </section>
@@ -149,9 +149,7 @@ export default function TbsVsTriumphPage() {
               truck-stop network. Triumph &mdash; founded 2004,
               acquired by Triumph Bancorp 2012 (NASDAQ: TFIN) &mdash;
               is the bank-backed mid-fleet factor: lower headline
-              rates, real non-recourse depth, a $20M ceiling, ABL
-              graduation through the parent bank, and same-day funding
-              decisions. The decision usually isn&rsquo;t which is
+              rates, real non-recourse depth, a $20M ceiling, and ABL graduation through the parent bank. The decision usually isn&rsquo;t which is
               cheaper on rate &mdash; Triumph is, by ~100 basis points
               &mdash; it&rsquo;s which structural fit matches your
               stage: brand-new authority needing onboarding, or
@@ -160,7 +158,7 @@ export default function TbsVsTriumphPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              matches you in two minutes.
+              matches you.
             </p>
 
             <table className="ins-carrier-table">
@@ -245,10 +243,10 @@ export default function TbsVsTriumphPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
-                  <td data-label="TBS Factoring">24h typical</td>
-                  <td data-label="Triumph">Same-day decisions</td>
+                  <td data-label="TBS Factoring">Business-day funding</td>
+                  <td data-label="Triumph">Business-hours funding</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -641,43 +639,24 @@ export default function TbsVsTriumphPage() {
 
         <section className="ins-sunken">
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              TBS 24h typical; Triumph same-day decisions.
+              Both fund on business days; neither runs an after-hours rail.
             </h2>
 
-            <h3>TBS &mdash; 24-hour typical, business-day cadence.</h3>
+            <h3>TBS &mdash; funding on business days.</h3>
             <p className="ins-hero-sub">
-              TBS funds verified invoices within roughly 24 hours of
-              submission during business days. That&rsquo;s the
-              baseline freight-factoring cadence &mdash; competitive
-              against the broader market, but a tier behind
-              Triumph&rsquo;s same-day decisions. Submissions outside
-              business hours wait for the next morning; weekends slide
-              to Monday.
+              TBS funds verified invoices on business days, the standard freight-factoring arrangement. Submissions outside business hours wait until business resumes.
             </p>
 
-            <h3>Triumph &mdash; same-day funding decisions.</h3>
+            <h3>Triumph &mdash; business-hours funding with bank-grade verification.</h3>
             <p className="ins-hero-sub">
-              Verified invoices submitted during business hours get
-              funded same-day; late-day submissions fund next morning.
-              Bank-grade documentation discipline means verification is
-              more rigorous than at non-bank factors &mdash; broker NOA
-              validation, signed BOL confirmation, credit-limit checks
-              all happen before the wire goes out. For mid-fleets with
-              established broker relationships and clean paperwork,
-              same-day is the norm.
+              Triumph funds verified invoices submitted during business hours. Bank-grade documentation discipline means verification is more rigorous than at non-bank factors &mdash; broker NOA validation, signed BOL confirmation, credit-limit checks all happen before the wire goes out. Clean paperwork and established broker relationships keep that process smooth.
             </p>
 
-            <h3>Winner: Triumph on speed; neither is instant.</h3>
+            <h3>No real difference on payment options.</h3>
             <p className="ins-hero-sub">
-              Triumph wins on speed &mdash; same-day beats 24-hour
-              typical. But neither factor here is the instant-funding
-              choice. For operators where weekend funding is genuinely
-              load-bearing &mdash; team drivers, dedicated lanes,
-              high-mileage OTR &mdash; the right answer isn&rsquo;t TBS
-              or Triumph but Apex Capital&rsquo;s 24/7/365 blynk&reg;
-              product.
+              Neither factor here offers an after-hours payment rail. For operators who regularly deliver outside banking hours &mdash; team drivers, dedicated lanes, high-mileage over-the-road work &mdash; Apex Capital&rsquo;s blynk&reg; around-the-clock payment option is the relevant alternative.
             </p>
           </div>
         </section>
@@ -813,8 +792,7 @@ export default function TbsVsTriumphPage() {
             <p className="ins-hero-sub">
               TBS&rsquo;s public reviews cluster in the mixed band:
               positive on bookkeeping and authority-filing experience,
-              more critical on factoring service speed and contract
-              clarity. Common complaints: slow customer-service
+              more critical on factoring service responsiveness and contract clarity. Common complaints: slow customer-service
               response, billing disputes around membership-tier changes
               (particularly downgrades), and friction when canceling.
               The Love&rsquo;s acquisition may stabilize these signals
@@ -865,30 +843,23 @@ export default function TbsVsTriumphPage() {
               TBS &mdash; brand-new authority is the core customer.
             </h3>
             <p className="ins-hero-sub">
-              TBS approves new authorities and bad-credit profiles
-              routinely &mdash; the segment the company was built
+              TBS works with new authorities and lower credit profiles &mdash; the segment the company was built
               around. The structural advantage comes before the
               underwriting decision: TBS files the authority, processes
               the BOC-3, sets up IFTA, and walks the operator through
               permits. By the time the operator reaches the factoring
               underwriting decision, TBS has already absorbed the
-              highest-friction setup steps. Sub-580 FICO is approvable;
-              prior bankruptcy isn&rsquo;t an automatic decline; the
-              volume floor is low enough that single-truck owner-ops
+              highest-friction setup steps. TBS says it considers lower credit profiles and does not treat a prior bankruptcy as an automatic decline; the volume floor is low enough that single-truck owner-ops
               with irregular early-stage volume fit.
             </p>
 
             <h3>
-              Triumph &mdash; accepts new authority, conservative
-              underwriting.
+              Triumph &mdash; considers new authority, conservative underwriting.
             </h3>
             <p className="ins-hero-sub">
-              Triumph accepts new authority and bad-credit profiles,
-              but underwriting is more conservative because the credit
+              Triumph considers new authority and lower credit profiles, but underwriting is more conservative because the credit
               decision flows from a bank-regulated risk framework.
-              Sub-580 FICO is approvable in principle but harder in
-              practice; prior bankruptcy is a more meaningful flag than
-              at TBS. The minimum monthly volume floor is higher.
+              Lower credit profiles face a harder review, and a prior bankruptcy is a more meaningful flag than at TBS. The minimum monthly volume floor is higher.
               Triumph also expects the operator to arrive with
               authority filed and primary liability insurance bound
               &mdash; no equivalent of TBS&rsquo;s onboarding-services
@@ -1040,9 +1011,8 @@ export default function TbsVsTriumphPage() {
             <h3>For owner-op service quality: Apex Capital.</h3>
             <p className="ins-hero-sub">
               Apex is the dominant choice for owner-operators running
-              1&ndash;10 trucks where service and instant funding
-              matter more than TBS&rsquo;s bundle or Triumph&rsquo;s
-              bank backing. 24/7/365 blynk&reg; funding,
+              1&ndash;10 trucks where service and an after-hours payment option matter more than TBS&rsquo;s bundle or Triumph&rsquo;s
+              bank backing. The blynk&reg; around-the-clock payment option,
               ~51&cent;/gal fuel discount on a broader network, and
               700+ five-star reviews.
             </p>
@@ -1088,9 +1058,7 @@ export default function TbsVsTriumphPage() {
             <p className="ins-hero-sub">
               TBS and Triumph are both legitimate factors with
               legitimate use cases &mdash; they just don&rsquo;t serve
-              the same operator. The question isn&rsquo;t whether
-              either will fund you; in most cases, both will. The
-              question is which fits the specific shape of your
+              the same operator. Approval is not guaranteed with either. The question is which fits the specific shape of your
               operation: whether you have an active MC# or are about
               to file one, whether you&rsquo;re in your first year or
               your fifth, how much you spend on outsourced bookkeeping
@@ -1110,8 +1078,7 @@ export default function TbsVsTriumphPage() {
               exists for. One application, profile-aware match, no
               double-pull on your credit, no spam from the one
               that isn&rsquo;t the fit. If you&rsquo;d rather check fit
-              first, <Link href="/qualify">/qualify</Link> takes 30
-              seconds and pulls no credit.
+              first, <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

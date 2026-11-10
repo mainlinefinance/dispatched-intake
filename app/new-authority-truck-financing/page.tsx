@@ -15,13 +15,13 @@ import {
 export const metadata: Metadata = {
   title: "New authority truck financing — under 12mo | Dispatched",
   description:
-    "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match. Apply now.",
+    "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. Soft-pull match. Approval is not guaranteed.",
   alternates: { canonical: "/new-authority-truck-financing" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "New authority truck financing — under 12mo | Dispatched",
     description:
-      "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match. Apply now.",
+      "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. Soft-pull match. Approval is not guaranteed.",
     url: "/new-authority-truck-financing",
     type: "website",
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "New authority truck financing — under 12mo | Dispatched",
     description:
-      "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match. Apply now.",
+      "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. Soft-pull match. Approval is not guaranteed.",
   },
 };
 
@@ -90,7 +90,7 @@ export default function NewAuthorityFinancingPage() {
       <JsonLd payload={financialProduct({
         name: "New authority truck financing",
         description:
-          "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match.",
+          "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. Soft-pull match.",
         url: PAGE_URL,
         category: "Commercial trucking financing",
       })} />
@@ -122,7 +122,7 @@ export default function NewAuthorityFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -135,8 +135,7 @@ export default function NewAuthorityFinancingPage() {
             </h2>
             <p className="ins-hero-sub">
               Two products dominate the new-authority segment on our
-              panel: invoice factoring (where the factor underwrites the
-              broker&rsquo;s credit, not yours) and higher-down-payment{" "}
+              panel: invoice factoring (where the factor underwrites mainly on the broker&rsquo;s credit) and higher-down-payment{" "}
               <Link href="/glossary/equipment-loan">equipment loan</Link> financing
               (where the truck itself is the lender&rsquo;s primary collateral).{" "}
               <Link href="/glossary/working-capital">Working capital</Link> lines
@@ -176,11 +175,11 @@ export default function NewAuthorityFinancingPage() {
             </h2>
             <p className="ins-hero-sub">
               Factoring sells your outstanding invoices to a factor for
-              an immediate cash advance — usually 90–98% of face value,
+              a cash advance — usually 90–98% of face value,
               minus a per-invoice fee. The factor underwrites the
               broker&rsquo;s credit (the entity paying the invoice),
               which means a new-authority trucker working with strong
-              brokers can get factored at competitive fees from day one.
+              brokers may be able to factor at competitive fees early on; approval is not guaranteed.
             </p>
             <p className="ins-hero-sub">
               For a deeper read on factoring mechanics, recourse vs
@@ -209,7 +208,7 @@ export default function NewAuthorityFinancingPage() {
               <li>
                 <strong>Down payment expectation: 15%–25%.</strong> Higher
                 than seasoned-operator equipment loans. Stronger credit
-                (680+) and newer equipment can push the requirement
+                and newer equipment can push the requirement
                 lower.
               </li>
               <li>
@@ -251,7 +250,7 @@ export default function NewAuthorityFinancingPage() {
                 <span className="product-example-value">
                   Owner-operator, 1 truck (financed), 4 months under own
                   MC authority, 6 years prior driving experience as a
-                  company driver, FICO 640.
+                  company driver, fair credit.
                 </span>
               </div>
               <div className="product-example-meta">
@@ -288,11 +287,11 @@ export default function NewAuthorityFinancingPage() {
             <span className="ins-eyebrow">How the money moves</span>
             <h2 className="ins-hero-title">From application to first advance.</h2>
             <ol className="product-process">
-              <li><strong>Application.</strong> Two minutes inside <Link href="/apply">/apply</Link>. MC authority date, your <Link href="/glossary/dot-number">DOT number</Link>, the truck, brokers (if you have them). Soft-pull only.</li>
+              <li><strong>Application.</strong> Start inside <Link href="/apply">/apply</Link>. MC authority date, your <Link href="/glossary/dot-number">DOT number</Link>, the truck, brokers (if you have them). Soft-pull only.</li>
               <li><strong>Soft-pull match.</strong> Redacted profile to the panel subset that funds new-authority operators (factors and the equipment-finance subset).</li>
               <li><strong>Offers.</strong> Factor agreements + equipment loan term sheets, side by side, before any hard pull or factoring agreement signature.</li>
               <li><strong>One commitment.</strong> Pick a factor or a lender. Factoring agreements aren&rsquo;t loans, but they are commitments — read the recourse clause.</li>
-              <li><strong>Onboarding + advance.</strong> Factoring: Notice of Assignment + first invoice within days. Equipment: title work + dealer wire.</li>
+              <li><strong>Onboarding + advance.</strong> Factoring: Notice of Assignment + first invoice. Equipment: title work + dealer wire.</li>
             </ol>
           </div>
         </section>

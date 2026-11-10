@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "How old does my LLC have to be to qualify?",
-    a: "The panel floor is one month of formation with active EIN and a state-issued certificate of formation in good standing. LLCs at 3 to 6 months see a slightly wider lender mix; at 12 months with consistent business bank deposits the full product set opens. Below one month, the lender will typically wait for the certificate to be filed and the EIN to populate IRS records — which is days, not weeks.",
+    a: "The panel floor is one month of formation with active EIN and a state-issued certificate of formation in good standing. LLCs at 3 to 6 months see a slightly wider lender mix; at 12 months with consistent business bank deposits the full product set opens. Below one month, the lender will typically wait for the certificate to be filed and the EIN to populate IRS records — which depends on state and IRS processing.",
   },
   {
     q: "Do I need an MC number before applying with a new LLC?",
@@ -74,11 +74,11 @@ const faqs = [
   },
   {
     q: "Is a new LLC better or worse than running as a sole proprietor for truck financing?",
-    a: "Slightly better in the equipment-secured product set, neutral-to-worse in working capital. An LLC adds limited liability and looks more institutional to a lender; the panel quotes a fractionally lower APR on equipment loans to LLCs than to sole props at the same FICO and revenue band. On working capital, the LLC needs 6+ months of business bank statements to qualify at all — a sole prop with 12 months of Schedule C activity in the same depository can sometimes qualify faster because the deposit history is longer.",
+    a: "Slightly better in the equipment-secured product set, neutral-to-worse in working capital. An LLC adds limited liability and looks more institutional to a lender; the panel quotes a fractionally lower APR on equipment loans to LLCs than to sole props at the same FICO and revenue band. On working capital, the LLC needs 6+ months of business bank statements to qualify at all — a sole prop with 12 months of Schedule C activity in the same depository can sometimes be an easier file because the deposit history is longer.",
   },
   {
-    q: "How fast can a new LLC get funded after applying?",
-    a: "Soft approval and lender match: after application. Equipment loans on a new LLC fund in 3 to 5 banking days after the lender countersigns — slower than a seasoned operation because the title work and lien recording on a brand-new entity need verification. Working capital, when available, funds after lender sign-off; timing depends on documents. If the LLC formation paperwork is in process (filed but not yet returned by the Secretary of State), the lender will hold until the certificate lands; that adds 5 to 15 days depending on the state.",
+    q: "What affects funding timing for a new LLC?",
+    a: "Soft approval and lender match: after application. Equipment loans on a new LLC fund after the lender countersigns — slower than a seasoned operation because the title work and lien recording on a brand-new entity need verification. Working capital, when available, funds after lender sign-off; timing depends on documents. If the LLC formation paperwork is in process (filed but not yet returned by the Secretary of State), the lender will hold until the certificate lands; how long that takes depends on the state.",
   },
 ];
 
@@ -179,14 +179,9 @@ export default function NewLlcTruckFinancingPage() {
                 <strong>
                   Invoice factoring (no LLC age minimum at all).
                 </strong>{" "}
-                The factor underwrites the broker who owes the invoice — not
-                the LLC. A one-week-old LLC with a freshly issued MC# and
-                one signed load is fundable on the same day the invoice
-                clears.{" "}
-                <Link href="/factoring/no-credit-check">
-                  Factoring with no credit check on you
-                </Link>{" "}
-                is the standard structure here.
+                The factor underwrites mainly on the broker who owes the invoice. A new LLC with an active MC# and a delivered load can be eligible; the factor still reviews the carrier, and approval is not guaranteed.{" "}
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers </Link>{" "} is the usual structure here.
               </li>
               <li>
                 <strong>
@@ -236,9 +231,9 @@ export default function NewLlcTruckFinancingPage() {
                 <strong>Personal credit (carries more weight here).</strong>{" "}
                 FICO matters more on a new-LLC equipment loan than on a
                 seasoned-operator loan because the personal guarantee is
-                doing more of the underwriting work. The panel floor is
-                still 500 FICO, but new-LLC borrowers below 580 see a
-                tighter lender subset and rates at the high end of the
+                doing more of the underwriting work. Credit requirements
+                are set by each financing partner; new-LLC borrowers with
+                lower credit profiles see a tighter lender subset and rates at the high end of the
                 12% to 18% equipment range.
               </li>
               <li>
@@ -273,7 +268,7 @@ export default function NewLlcTruckFinancingPage() {
               <li>
                 <strong>IRS EIN confirmation letter (CP 575).</strong> The
                 IRS-issued employer identification number letter — applied
-                for at irs.gov, returned in minutes for SSN-eligible
+                for at irs.gov; issued online for SSN-eligible
                 operators. The EIN is the LLC&rsquo;s tax ID and is required on
                 every lender application.
               </li>
@@ -322,7 +317,7 @@ export default function NewLlcTruckFinancingPage() {
             <ul className="product-list">
               <li>
                 <strong>Operator:</strong> 4 years W-2 driving for a major
-                carrier, $72K average annual income, 640 FICO, CDL Class A
+                carrier, $72K average annual income, fair credit, CDL Class A
                 with hazmat endorsement.
               </li>
               <li>
@@ -341,10 +336,7 @@ export default function NewLlcTruckFinancingPage() {
                 trucking-specialty equipment finance company on the panel.
               </li>
               <li>
-                <strong>Funding timeline:</strong> Day 0 application, Day 1
-                lender match + soft approval, Day 4 term sheet
-                countersigned, Day 5 title verification, Day 7 wire to
-                dealer. Truck on the road Day 8.
+                <strong>Sequence:</strong> application, lender match and soft approval, term sheet countersigned, title verification, wire to dealer. Timing depended on the lender and the documents.
               </li>
             </ul>
           </div>
@@ -388,17 +380,15 @@ export default function NewLlcTruckFinancingPage() {
                 — operators with an MC# under 12 months old.
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  Factoring with no credit check on you
-                </Link>{" "}
-                — the working-capital substitute for any new LLC with at
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers </Link>{" "} — the working-capital substitute for a new LLC with at
                 least one signed load.
               </li>
               <li>
                 <Link href="/bad-credit-truck-financing">
                   Bad credit truck financing
                 </Link>{" "}
-                — for new-LLC operators with sub-580 personal FICO.
+                — for new-LLC operators with challenged personal credit.
               </li>
               <li>
                 <Link href="/methodology">Methodology</Link> — how the

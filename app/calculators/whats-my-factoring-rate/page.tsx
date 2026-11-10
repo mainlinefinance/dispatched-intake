@@ -40,11 +40,11 @@ const faqs = [
   },
   {
     q: "Does my personal credit affect my factoring rate?",
-    a: "Less than people think. Factoring rates are primarily driven by your broker mix's credit, not yours. Some factors do a soft pull on you for fraud prevention but don't price based on it. This is why factoring works for operators with sub-580 FICO who can't access traditional financing.",
+    a: "Less than people think. Factoring rates are driven mainly by your broker mix's credit. Many factors also review the carrier, sometimes with a soft pull, and each sets its own requirements. That is why some operators with lower credit profiles use factoring; approval is not guaranteed.",
   },
   {
     q: "What's the effective annualized rate of factoring?",
-    a: "Factoring at 3% per 30 days is roughly 36% APR-equivalent. That sounds high compared to a 14% working capital loan, but the math is different — factoring isn't borrowing, it's selling the invoice. The 36% is the implied cost of accelerating cash flow by 30–60 days. For operators with broker payment terms of Net 60+, factoring almost always beats waiting.",
+    a: "Factoring at 3% per 30 days is roughly 36% APR-equivalent. That sounds high compared to a 14% working capital loan, but the math is different — factoring isn't borrowing, it's selling the invoice. The 36% is the implied cost of being paid 30–60 days ahead of the broker's terms. For operators with broker payment terms of Net 60+, factoring almost always beats waiting.",
   },
 ];
 
@@ -237,7 +237,7 @@ export default function WhatsMyFactoringRatePage() {
               <li>
                 <strong>ACH fees.</strong> Some factors charge $5 – $25 per
                 ACH wire on top of the rate. At 20 wires a month, that&rsquo;s
-                $100 – $500 — material on a small-volume account. Same-day
+                $100 – $500 — material on a small-volume account. Expedited
                 wires often carry an additional $15 – $30 premium. Negotiate
                 a flat ACH allowance or fee waiver before signing.
               </li>
@@ -340,8 +340,8 @@ export default function WhatsMyFactoringRatePage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  Factoring without a credit check →
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>
@@ -371,7 +371,7 @@ export default function WhatsMyFactoringRatePage() {
             <h2>Get matched with the right factor</h2>
             <p>
               The calculator shows you the math. The application shows you
-              the panel. Two minutes, no credit pull, no obligation — and a
+              the panel. No credit pull, no obligation — and a
               factor that prices your specific broker mix, volume, and
               history.
             </p>

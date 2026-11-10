@@ -247,6 +247,34 @@ export default async function PremiumEstimatorPage({
           </section>
 
           <section className="estimator-foot">
+            <h2>How the band is built</h2>
+            <p>
+              The estimator starts from a rate observation for the state,
+              product, and DOT class you pick. That observation is a low
+              and high annual premium, and it is the only part of the
+              result that comes from sampled data. If we do not hold an
+              observation for your combination, the tool says so and shows
+              no number; it does not fill the gap with a guess.
+            </p>
+            <p>
+              Three modifiers are then multiplied onto that base: claims
+              history over the last 36 months, the liability limit you
+              choose, and operating radius. Each one appears in the result
+              with its factor and the reason for it. The factors reflect
+              typical rate-class spreads, not a filed rating plan from any
+              state or carrier, which is why the result is a band and not a
+              price.
+            </p>
+            <h2>How to use the result</h2>
+            <p>
+              Use the band to sanity-check a quote and to see which input
+              moves it most. If a quote lands far outside the band, ask the
+              producer what is driving it: driver records, equipment age
+              and value, commodities, and time in business all sit outside
+              this tool and all affect a real premium. Change one input at
+              a time to see the cost of a higher limit or the weight a
+              claim carries.
+            </p>
             <p className="estimator-compliance">
               Estimates are indicative. Your actual premium depends on MVR,
               equipment, operations specifics, and underwriter appetite at

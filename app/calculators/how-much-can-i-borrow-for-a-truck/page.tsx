@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "Can I borrow more if I have a higher FICO?",
-    a: "Yes, but indirectly. Higher FICO unlocks lower APR and longer terms, both of which make a given monthly payment service more loan principal. A 700+ FICO operator can typically borrow 20–30% more than a 580 FICO operator at the same monthly-payment capacity.",
+    a: "Yes, but indirectly. Higher FICO unlocks lower APR and longer terms, both of which make a given monthly payment service more loan principal. An operator with strong credit can typically borrow 20–30% more than one with challenged credit at the same monthly-payment capacity.",
   },
   {
     q: "Does the truck age affect how much I can borrow?",
@@ -116,17 +116,18 @@ export default function HowMuchCanIBorrowForATruckPage() {
               The calculator boils down to a payment-capacity question: how big
               a loan can a given monthly payment service at your APR and term?
               Five inputs move that number, and they move it in compounding
-              ways. A 40-point FICO jump doesn&rsquo;t just lower the rate — it
+              ways. A meaningful FICO improvement doesn&rsquo;t just lower the rate — it
               unlocks a longer term, which extends the loan amount the same
               payment can carry. Here&rsquo;s how each variable actually shifts
               the borrowable amount.
             </p>
             <ul className="calc-explainer-list">
               <li>
-                <strong>FICO.</strong> The single largest lever. Below 580, the
-                panel narrows to specialty lenders running 18 – 28% APR on
-                36 – 48 month terms — borrowable principal at a $1,500/mo
-                payment is roughly $55K. At 680+, the same payment carries
+                <strong>FICO.</strong> The single largest lever. With
+                challenged credit, the panel narrows to specialty lenders
+                running 18 – 28% APR on 36 – 48 month terms — borrowable
+                principal at a $1,500/mo payment is roughly $55K. With
+                strong credit, the same payment carries
                 $95K – $110K because APR drops to 9 – 14% and term extends to
                 60 – 72 months. FICO doesn&rsquo;t directly cap the loan amount;
                 it caps the rate and term, and those compound into the loan
@@ -182,15 +183,15 @@ export default function HowMuchCanIBorrowForATruckPage() {
             </p>
             <ul className="calc-explainer-list">
               <li>
-                <strong>First-time owner-op, 580 FICO, 10% down, 6-year
-                truck.</strong> Typical loan amount: <strong>$60K – $90K</strong>.
+                <strong>First-time owner-op, challenged credit, 10% down,
+                6-year truck.</strong> Typical loan amount: <strong>$60K – $90K</strong>.
                 The panel narrows here. Expect 16 – 22% APR on a 48-month term.
                 Down payment north of 15% widens the panel and pulls the APR
                 toward the bottom of the range.
               </li>
               <li>
-                <strong>First-time with 700 FICO, MC# 6+ months, 15% down,
-                newer truck.</strong> Typical loan amount:{" "}
+                <strong>First-time with strong credit, MC# 6+ months, 15%
+                down, newer truck.</strong> Typical loan amount:{" "}
                 <strong>$110K – $150K</strong>. APR runs 10 – 14% on a 60 – 72
                 month term. The combination of clean credit and any documented
                 operating history is the inflection point — the panel
@@ -198,8 +199,8 @@ export default function HowMuchCanIBorrowForATruckPage() {
                 profile.
               </li>
               <li>
-                <strong>Established owner-op, 720 FICO, 20% down, premium
-                truck.</strong> Typical loan amount: <strong>$160K – $200K</strong>.
+                <strong>Established owner-op, strong credit, 20% down,
+                premium truck.</strong> Typical loan amount: <strong>$160K – $200K</strong>.
                 APR runs 8 – 12% on a 72-month term. The full panel is
                 available; pricing competes. This profile borrows close to the
                 appraised truck value, with the lender comfortable on
@@ -272,8 +273,8 @@ export default function HowMuchCanIBorrowForATruckPage() {
             </p>
             <ul className="calc-explainer-list">
               <li>
-                <strong>Improve FICO.</strong> Even a 30 – 40 point increase
-                from 580 to 620 shifts you into a new APR band on the panel.
+                <strong>Improve FICO.</strong> Even a modest increase can
+                shift you into a new APR band on the panel.
                 Pay down revolving balances below 30% utilization, dispute
                 inaccurate collections, and avoid opening new credit lines for
                 90 days before applying. Most operators can move 20 – 50
@@ -283,8 +284,8 @@ export default function HowMuchCanIBorrowForATruckPage() {
                 <strong>Save more down payment.</strong> Past the minimum, each
                 additional 5% down doesn&rsquo;t raise the loan ceiling, but
                 it lowers APR by 0.5 – 1.5%, which lets the same monthly
-                payment carry more principal. A 25% down deal on a 700 FICO
-                profile often hits an APR floor 2% lower than the 10% down
+                payment carry more principal. A 25% down deal on a
+                strong-credit profile often hits an APR floor 2% lower than the 10% down
                 version of the same deal.
               </li>
               <li>
@@ -365,7 +366,7 @@ export default function HowMuchCanIBorrowForATruckPage() {
             <h2>Get matched with the right lender</h2>
             <p>
               The calculator gives you a directional answer. The application
-              gives you a real one. Two minutes, soft-pull only, with a panel
+              gives you a real one. Soft-pull only, with a panel
               that funds your truck make, age, and credit profile.
             </p>
             <p>

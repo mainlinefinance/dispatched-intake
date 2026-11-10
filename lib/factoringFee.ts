@@ -6,8 +6,7 @@
      - A carrier hauls a load and invoices the broker for, say, $5,000.
      - Instead of waiting 30–60 days for broker pay, the carrier sells
        the invoice to a factor.
-     - The factor wires an "advance" (typically 90–97% of face) within
-       24 hours.
+     - The factor wires an "advance" (typically 90–97% of face) inside 24 hours.
      - The remainder is held as a reserve until the broker actually pays
        the factor.
      - When the broker pays, the factor deducts its fee from the reserve

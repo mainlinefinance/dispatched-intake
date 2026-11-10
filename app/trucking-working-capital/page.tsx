@@ -13,13 +13,13 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Trucking working capital — fuel & payroll fast | Dispatched",
+  title: "Trucking working capital — Fuel & Payroll | Dispatched",
   description:
     "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, timing depends on the lender and your documents.",
   alternates: { canonical: "/trucking-working-capital" },
   openGraph: {
     images: ["/opengraph-image"],
-    title: "Trucking working capital — fuel & payroll fast | Dispatched",
+    title: "Trucking working capital — Fuel & Payroll | Dispatched",
     description:
       "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, timing depends on the lender and your documents.",
     url: "/trucking-working-capital",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "Trucking working capital — fuel & payroll fast | Dispatched",
+    title: "Trucking working capital — Fuel & Payroll | Dispatched",
     description:
       "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, timing depends on the lender and your documents.",
   },
@@ -42,8 +42,8 @@ const faqs = [
     a: "Small fleets in the 2 to 5 truck range typically access working-capital lines from $50K to $125K through lenders that underwrite on fleet revenue, deposit consistency, and settlement-statement quality. APRs run 18% to 28% for fleets with 12 to 24 months of operating history; 14% to 22% for fleets above 24 months. Revolving lines of credit (interest only on drawn balance) usually price 2 to 4 APR points lower than equivalent term loans and are the right structure when the capital need is recurring fuel-and-payroll bridging rather than a one-time gap.",
   },
   {
-    q: "How fast can I get a trucking working capital loan?",
-    a: "Soft approval and lender match depend on underwriting review of finishing the application. Funds hit your account the after the chosen lender countersigns, provided the wire instruction lands before that bank's cutoff. Wires that miss the cutoff settle the next banking day; weekend and federal-holiday wires settle the next banking day. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
+    q: "What affects funding timing for a working capital loan?",
+    a: "Soft approval and lender match depend on underwriting review after you finish the application. Funds are released after the chosen lender countersigns; timing depends on the lender, your documents, and bank wire cutoffs. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
   },
   {
     q: "What can I use a trucking working capital loan for?",
@@ -51,11 +51,11 @@ const faqs = [
   },
   {
     q: "How is working capital different from invoice factoring?",
-    a: "Working capital is a loan you pay back from operations over time; factoring is selling specific outstanding invoices for an immediate cash advance. Working capital costs more in APR but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring settles in days rather than weeks but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems.",
+    a: "Working capital is a loan you pay back from operations over time; factoring is selling specific outstanding invoices for a cash advance. Working capital costs more in APR but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring pays out ahead of the broker's terms but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems.",
   },
   {
     q: "What APR can I expect on a trucking working capital loan?",
-    a: "The observed panel range is 14% to 34% APR for working capital. The exact APR depends on credit band, time in business, monthly revenue, and the chosen lender's underwriting. Higher credit bands and longer operating histories quote toward the lower end; sub-580 borrowers quote toward the high end. You see the exact APR, term length, and total cost on the term sheet before signing.",
+    a: "The observed panel range is 14% to 34% APR for working capital. The exact APR depends on credit band, time in business, monthly revenue, and the chosen lender's underwriting. Higher credit bands and longer operating histories quote toward the lower end; borrowers with lower credit profiles quote toward the high end. You see the exact APR, term length, and total cost on the term sheet before signing.",
   },
   {
     q: "How much can a trucking operation borrow?",
@@ -126,7 +126,7 @@ export default function TruckingWorkingCapitalPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -166,7 +166,8 @@ export default function TruckingWorkingCapitalPage() {
             <h2 className="ins-hero-title">Eligibility floors.</h2>
             <ul className="product-list">
               <li>
-                <strong>500+ FICO panel floor.</strong> Below 580 expect
+                <strong>Credit.</strong> Credit requirements are set by
+                each financing partner. With a lower credit profile expect
                 rates on the higher end of the 14%–34% range and a tighter
                 maximum.
               </li>
@@ -195,9 +196,7 @@ export default function TruckingWorkingCapitalPage() {
                 <strong>Operational tooling (helpful, not required).</strong>{" "}
                 Operators running a <Link href="/glossary/tms">TMS</Link>,
                 a <Link href="/glossary/fleet-management-platform">fleet management platform</Link>,
-                or basic <Link href="/glossary/vehicle-telematics">vehicle telematics</Link> tend
-                to underwrite faster because revenue, miles, and uptime
-                are documented rather than self-reported.
+                or basic <Link href="/glossary/vehicle-telematics">vehicle telematics</Link> tend to be easier files to underwrite because revenue, miles, and uptime are documented rather than self-reported.
               </li>
             </ul>
           </div>
@@ -267,7 +266,7 @@ export default function TruckingWorkingCapitalPage() {
                 <span className="product-example-label">Operator</span>
                 <span className="product-example-value">
                   Fleet owner, 4 trucks, 3.5 years operating, primarily
-                  Ohio Valley dedicated van freight, FICO 670, $90K
+                  Ohio Valley dedicated van freight, good credit, $90K
                   monthly revenue.
                 </span>
               </div>
@@ -302,11 +301,11 @@ export default function TruckingWorkingCapitalPage() {
             <span className="ins-eyebrow">How the money moves</span>
             <h2 className="ins-hero-title">From application to wire.</h2>
             <ol className="product-process">
-              <li><strong>Application.</strong> Two minutes inside <Link href="/apply">/apply</Link>. Revenue, time in business, what you&rsquo;re covering. Soft-pull only.</li>
+              <li><strong>Application.</strong> Start inside <Link href="/apply">/apply</Link>. Revenue, time in business, what you&rsquo;re covering. Soft-pull only.</li>
               <li><strong>Soft-pull match.</strong> Redacted profile to the panel subset that funds your credit band and revenue range.</li>
               <li><strong>Offers.</strong> APR, term, total cost on each term sheet, side by side, before any hard pull.</li>
               <li><strong>One hard pull.</strong> Only after you pick a specific lender and decide to move forward.</li>
-              <li><strong>Wire.</strong> After the chosen lender signs off, before the bank&rsquo;s cutoff.</li>
+              <li><strong>Wire.</strong> After the chosen lender signs off; timing depends on the lender and your documents.</li>
             </ol>
           </div>
         </section>

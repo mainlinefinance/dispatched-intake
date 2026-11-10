@@ -74,7 +74,7 @@ const PRODUCTS: Record<FinancingProductSlug, FinancingProduct> = {
     slug: "truck-repair-loans",
     name: "Truck repair loans",
     oneLine:
-      "Short-term financing for a specific repair — engine, transmission, brakes, after-treatment, accident damage. Same-banking-day funds.",
+      "Short-term financing for a specific repair — engine, transmission, brakes, after-treatment, accident damage. Timing depends on the lender and your documents.",
     url: "/truck-repair-loans",
     category: "Repair",
     rangeLabel: "$5K–$150K",
@@ -83,7 +83,7 @@ const PRODUCTS: Record<FinancingProductSlug, FinancingProduct> = {
     slug: "invoice-factoring",
     name: "Invoice factoring",
     oneLine:
-      "Sell broker or carrier invoices for an immediate cash advance instead of waiting 30–60 days. Not a loan: no APR, no monthly payment.",
+      "Sell broker or carrier invoices for a cash advance instead of waiting 30–60 days. Not a loan: no APR, no monthly payment.",
     url: "/factoring",
     category: "Cashflow",
     rangeLabel: "Recourse and non-recourse",
@@ -115,7 +115,7 @@ const PRODUCTS: Record<FinancingProductSlug, FinancingProduct> = {
       "Built around the 1099 sole-prop profile. Lenders underwrite ELD miles and settlement statements, not bank-grade DSCR worksheets.",
     url: "/owner-operator-financing",
     category: "Operator profile",
-    rangeLabel: "FICO 500+",
+    rangeLabel: "1099 & sole-prop",
   },
   "new-authority-financing": {
     slug: "new-authority-financing",
@@ -130,10 +130,10 @@ const PRODUCTS: Record<FinancingProductSlug, FinancingProduct> = {
     slug: "bad-credit-financing",
     name: "Bad-credit truck financing",
     oneLine:
-      "Same panel, same products — different routing. Lenders that underwrite revenue and equipment, not just FICO. Panel floor is 500.",
+      "Same panel, same products — different routing. Lenders that underwrite revenue and equipment, not just FICO. Approval is not guaranteed.",
     url: "/bad-credit-truck-financing",
     category: "Operator profile",
-    rangeLabel: "FICO 500–650",
+    rangeLabel: "Lower credit profiles",
   },
 };
 

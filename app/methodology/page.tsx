@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "What underwriting signals do the panel lenders weight most?",
-    a: "For working capital and repair loans: monthly business deposits, deposit consistency over the trailing 3 to 6 months, debt service coverage ratio (DSCR), and time in business. FICO is secondary. For equipment loans: the asset's appraised value and remaining useful life, the operator's down payment, and revenue. For factoring: the broker's credit, not the operator's.",
+    a: "For working capital and repair loans: monthly business deposits, deposit consistency over the trailing 3 to 6 months, debt service coverage ratio (DSCR), and time in business. FICO is secondary. For equipment loans: the asset's appraised value and remaining useful life, the operator's down payment, and revenue. For factoring: mainly the broker's credit, with a review of the carrier.",
   },
   {
     q: "Is Dispatched a direct lender?",
@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     q: "How often are the rate ranges and program rules updated?",
-    a: "The panel APR ranges are reviewed quarterly against the trailing 12 months of funded-loan data. Program rules (FICO floors, loan amount bands, document requirements) are updated within 14 days of a material panel change — for example, if a lender exits the panel or changes their FICO floor. Updates are reflected on this page and on the affected money pages.",
+    a: "The panel APR ranges are reviewed quarterly against the trailing 12 months of funded-loan data. Program rules (FICO floors, loan amount bands, document requirements) are updated inside 14 days of a material panel change — for example, if a lender exits the panel or changes their FICO floor. Updates are reflected on this page and on the affected money pages.",
   },
 ];
 
@@ -172,10 +172,10 @@ export default function MethodologyPage() {
               </li>
               <li>
                 <strong>Timing depends on the lender and your documents.</strong>{" "}
-                Same-banking-day wires occur when the chosen lender signs off
-                and the wire instruction lands before the partner bank&apos;s
-                cutoff. Wires that miss the cutoff settle the next banking day;
-                weekend and federal-holiday wires settle the next banking day.
+                Funds are released after the chosen lender signs off, and
+                when they arrive depends on the wire instruction and the
+                partner bank&apos;s cutoff; weekends and federal holidays
+                push settlement later.
                 This is constrained by the Federal Reserve&apos;s wire window
                 and partner banking cutoffs, not a Dispatched-controlled
                 throughput target.

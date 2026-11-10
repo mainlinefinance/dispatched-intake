@@ -568,7 +568,7 @@ export default function StateOfTruckingFuelCosts2026() {
               economics, and in exchange offers the operator a
               materially discounted per-gallon price at network
               locations plus operational integration (advance
-              against next-day fuel, single-statement reconciliation,
+              against upcoming fuel, single-statement reconciliation,
               IFTA mileage capture). The major factor fuel programs
               advertise headline discount numbers that are real but
               concentrated in specific operational conditions; the
@@ -623,7 +623,7 @@ export default function StateOfTruckingFuelCosts2026() {
               extending to a broad independent footprint. RTS
               positions the program toward small fleets specifically
               and offers a fuel-advance feature integrated with the
-              factoring product (advance against next-day fuel
+              factoring product (advance against upcoming fuel
               against pending invoices). The realized discount
               average across the customer base, like the other
               programs, is below the $0.40/gallon headline; the
@@ -675,7 +675,7 @@ export default function StateOfTruckingFuelCosts2026() {
               <Link href="/glossary/fuel-advance">fuel advance</Link>{" "}
               glossary entry for the financing-side mechanic that
               several of these programs offer (advance against
-              next-day fuel purchases against pending factored
+              upcoming fuel purchases against pending factored
               invoices), and our{" "}
               <Link href="/research/best-trucking-factoring-2026">
                 Best Trucking Factoring 2026
@@ -1419,7 +1419,7 @@ export default function StateOfTruckingFuelCosts2026() {
               >
                 <h3>Fuel advance</h3>
                 <p>
-                  Advance against next-day fuel purchases against
+                  Advance against upcoming fuel purchases against
                   pending factored invoices. Integrated with
                   several factor-bundled fuel programs.
                 </p>

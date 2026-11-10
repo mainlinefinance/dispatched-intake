@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = {
   title: "Semi truck loan after Chapter 7 discharge | Dispatched",
   description:
-    "Discharged Chapter 7 bankruptcy and trying to finance a truck? The Dispatched panel funds post-discharge operators from month 13. What lenders need.",
+    "Discharged Chapter 7 bankruptcy and trying to finance a truck? How panel lenders look at post-discharge operators. What lenders need.",
   alternates: {
     canonical: "/bad-credit-truck-financing/chapter-7-discharge",
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     title: "Semi truck loan after Chapter 7 discharge | Dispatched",
     description:
-      "Discharged Chapter 7 bankruptcy and trying to finance a truck? The Dispatched panel funds post-discharge operators from month 13. What lenders need.",
+      "Discharged Chapter 7 bankruptcy and trying to finance a truck? How panel lenders look at post-discharge operators. What lenders need.",
     url: "/bad-credit-truck-financing/chapter-7-discharge",
     type: "website",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Semi truck loan after Chapter 7 discharge | Dispatched",
     description:
-      "Discharged Chapter 7 bankruptcy and trying to finance a truck? The Dispatched panel funds post-discharge operators from month 13. What lenders need.",
+      "Discharged Chapter 7 bankruptcy and trying to finance a truck? How panel lenders look at post-discharge operators. What lenders need.",
   },
 };
 
@@ -46,15 +46,15 @@ const PAGE_URL =
 const faqs = [
   {
     q: "Can I get a semi truck loan after a Chapter 7 discharge?",
-    a: "Yes, after the 12-month post-discharge window. Active Chapter 7 cases — between filing and discharge — are typically declined across the panel because the trustee can claw back asset purchases. Once the discharge order is final and 12 months have passed, the panel reopens. Equipment-secured loans are the first product to come back; unsecured working capital takes longer (typically 24 to 36 months post-discharge).",
+    a: "It can be, generally after about a year post-discharge; approval is not guaranteed. Active Chapter 7 cases — between filing and discharge — are typically declined across the panel because the trustee can claw back asset purchases. Once the discharge order is final and about a year has passed, some panel lenders will consider an application. Equipment-secured loans are the first product to come back; unsecured working capital takes longer (typically 24 to 36 months post-discharge).",
   },
   {
     q: "How long after Chapter 7 discharge do I have to wait?",
-    a: "The panel floor for equipment-secured truck financing is 12 months from the discharge date (not the filing date). At month 13, a narrower lender subset will quote — usually trucking-specialty equipment finance companies that underwrite the asset more aggressively than the credit. By month 24, the lender mix widens and APR comes down. By month 36, most operators see the same lender pool as a non-BK applicant at the same FICO band.",
+    a: "Lenders generally count from the discharge date (not the filing date), and most want about a year of history after it. After that, a narrower lender subset may quote — usually trucking-specialty equipment finance companies that underwrite the asset more aggressively than the credit. By month 24, the lender mix widens and APR comes down. By month 36, most operators see the same lender pool as a non-BK applicant with a similar credit profile.",
   },
   {
-    q: "What FICO do I need to qualify after Chapter 7?",
-    a: "The panel floor is still 500 FICO post-discharge, but the practical underwriting floor for post-BK operators is closer to 560 because the discharge plus a sub-560 score signals a credit profile that has not recovered enough for any lender to underwrite. Operators who have actively rebuilt — secured credit card, on-time payments, low utilization — and score 580 to 620 at month 13 see real quotes. Above 620, the discharge effectively becomes a footnote rather than the headline of the file.",
+    q: "What credit score do I need after Chapter 7?",
+    a: "Dispatched does not set a minimum score; credit requirements are set by each financing partner, and approval is not guaranteed. In practice lenders expect more recovery from a post-BK operator than from a non-BK one: a discharge plus a score that has not moved signals a credit profile that has not recovered enough to underwrite. Operators who have actively rebuilt — secured credit card, on-time payments, low utilization — are the ones who tend to see quotes earliest. With stronger credit, the discharge effectively becomes a footnote rather than the headline of the file.",
   },
   {
     q: "Do lenders care if the bankruptcy was personal vs. business?",
@@ -62,7 +62,7 @@ const faqs = [
   },
   {
     q: "What loan amount can I get post-discharge?",
-    a: "Reduced relative to a non-BK applicant at the same credit and revenue. A 600-FICO operator with 24 months post-discharge and $25K monthly deposits will typically qualify for an equipment loan up to about 70% to 80% of what a clean-file applicant at the same metrics would see. The structure compensates with a larger down payment requirement (typically 15% to 25%) and a shorter maximum term. The trade-off is the panel approves the loan at all — most banks decline post-BK regardless of recovery signals.",
+    a: "Reduced relative to a non-BK applicant at the same credit and revenue. An operator with fair credit, 24 months post-discharge and $25K monthly deposits will typically see an equipment loan offer of about 70% to 80% of what a clean-file applicant at the same metrics would see. The structure compensates with a larger down payment requirement (typically 15% to 25%) and a shorter maximum term. The trade-off is that panel lenders will consider the file at all — most banks decline post-BK regardless of recovery signals.",
   },
   {
     q: "Will my bankruptcy show on the application?",
@@ -74,7 +74,7 @@ const faqs = [
   },
   {
     q: "What about factoring after Chapter 7?",
-    a: "Available immediately after discharge — the 12-month wait does not apply. Invoice factoring underwrites the broker who owes the invoice, not the operator's credit history. A discharge that is 30 days old is not a barrier to factoring as long as the operator has an active MC#, a load on the books, and the broker on the load is on the factor's approved list.{' '} See factoring with no credit check for the specific product structure.",
+    a: "The 12-month wait does not apply to factoring. Invoice factoring underwrites mainly on the broker who owes the invoice. A recent discharge is not always a barrier to factoring when the operator has an active MC#, a load on the books, and the broker on the load is on the factor's approved list. Each factor reviews the carrier and decides for itself; approval is not guaranteed. See the broker-credit factoring page for the product structure.",
   },
 ];
 
@@ -96,7 +96,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
         payload={article({
           headline: "Semi truck loan after Chapter 7 discharge",
           description:
-            "When the panel reopens after a Chapter 7 discharge, what FICO and recovery signals lenders actually need, and how loan structure changes for post-BK operators.",
+            "When the panel reopens after a Chapter 7 discharge, what credit and recovery signals lenders actually look for, and how loan structure changes for post-BK operators.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -107,7 +107,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
         payload={financialProduct({
           name: "Truck financing after Chapter 7 discharge",
           description:
-            "Equipment financing for operators with a discharged Chapter 7 bankruptcy. Panel reopens at 12 months post-discharge. 500 FICO floor, 14% to 22% APR equipment band. Soft-pull pre-qualification.",
+            "Equipment financing for operators with a discharged Chapter 7 bankruptcy. Lenders generally look for about a year of history after discharge. 14% to 22% APR equipment band. Soft-pull pre-qualification.",
           url: PAGE_URL,
           category: "Commercial trucking financing",
         })}
@@ -128,7 +128,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               The bank says no for seven years. The Dispatched panel
-              reopens at month 13 post-discharge — equipment-secured loans
+              generally reopens about a year after discharge — equipment-secured loans
               first, then working capital and the full product set as the
               recovery signal compounds. No omission required, no
               indefinite wait.
@@ -145,7 +145,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft pull only · Panel floor: 12 months post-discharge.
+              Soft pull only · Approval is not guaranteed.
             </p>
           </div>
         </section>
@@ -167,16 +167,14 @@ export default function Chapter7DischargeTruckFinancingPage() {
               </li>
               <li>
                 <strong>Months 0 to 12 post-discharge:</strong> Equipment
-                financing closed. Working capital closed. Factoring open
-                from day one. This is the rebuilding window — the right
+                financing closed. Working capital closed. Factoring may be open during this window. This is the rebuilding window — the right
                 move is to operate via factoring while accumulating 6 to
                 12 months of clean business bank statements that
                 demonstrate the recovery.
               </li>
               <li>
-                <strong>Months 13 to 24 post-discharge:</strong> Equipment
-                financing opens to a trucking-specialty lender subset.
-                APR runs 14% to 22% in this band for 580 to 620 FICO.
+                <strong>The second year after discharge:</strong> Equipment financing may open with a trucking-specialty lender subset.
+                APR runs 14% to 22% in this band for rebuilt credit.
                 Down payment requirement: 15% to 25%. Working capital
                 still closed for most operators in this window unless the
                 business deposit history is exceptional.
@@ -184,14 +182,14 @@ export default function Chapter7DischargeTruckFinancingPage() {
               <li>
                 <strong>Months 25 to 36 post-discharge:</strong> Equipment
                 lender mix widens. APR comes down a meaningful 200 to 400
-                bps in the same FICO band. Working capital opens at a
+                bps for the same credit profile. Working capital opens at a
                 narrower lender subset, typically 24% to 34% APR with
                 shorter terms than a clean-file operator would see.
               </li>
               <li>
                 <strong>36+ months post-discharge:</strong> Most operators
-                see the same lender pool as a non-BK applicant at the
-                same FICO. The discharge becomes a footnote on the
+                see the same lender pool as a non-BK applicant with a
+                similar credit profile. The discharge becomes a footnote on the
                 application rather than the headline of the file.
               </li>
             </ul>
@@ -211,12 +209,11 @@ export default function Chapter7DischargeTruckFinancingPage() {
             </p>
             <ul className="product-list">
               <li>
-                <strong>FICO trajectory.</strong> The score at month 13
+                <strong>Score trajectory.</strong> The score at month 13
                 matters less than the slope from month 1 to month 13. An
-                operator who scored 480 at discharge and 600 at month 13
-                is a stronger file than an operator who scored 580 at
-                discharge and 600 at month 13. Bureau data shows the
-                slope; underwriters read it.
+                operator whose score has climbed steadily since discharge
+                is a stronger file than one whose score has stayed flat.
+                Bureau data shows the slope; underwriters read it.
               </li>
               <li>
                 <strong>Secured credit utilization.</strong> A secured
@@ -266,8 +263,8 @@ export default function Chapter7DischargeTruckFinancingPage() {
               <li>
                 <strong>Operator:</strong> 14 months past Chapter 7
                 discharge, prior bankruptcy driven by a cargo-claim
-                judgment from a previous owner-operation, 590 FICO
-                (up from 470 at discharge), 9 months of W-2 driving
+                judgment from a previous owner-operation, a credit score
+                rebuilt well above its level at discharge, 9 months of W-2 driving
                 history since discharge, one secured credit card at 18%
                 utilization paid in full monthly.
               </li>
@@ -285,7 +282,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
                 <strong>What changed the decision:</strong> The W-2
                 driving history during the post-discharge window plus
                 the clean secured tradeline. Without those, the file
-                would have been declined despite the FICO score
+                would have been declined despite the score
                 recovery.
               </li>
             </ul>
@@ -321,16 +318,12 @@ export default function Chapter7DischargeTruckFinancingPage() {
                 <Link href="/bad-credit-truck-financing">
                   Bad credit truck financing (the pillar)
                 </Link>{" "}
-                — broader pillar for sub-650 FICO operators across all
+                — broader pillar for operators with lower credit profiles across all
                 credit-event categories.
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  Factoring with no credit check on you
-                </Link>{" "}
-                — the immediate-availability product for any operator
-                with an active MC# and a load on the books, regardless
-                of credit history.
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers </Link>{" "} — a product for operators with an active MC# and a load on the books, because the factor underwrites mainly on the broker.
               </li>
               <li>
                 <Link href="/owner-operator-financing/first-time">

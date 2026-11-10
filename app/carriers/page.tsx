@@ -2,6 +2,8 @@ import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllCarriers, type Carrier } from "@/lib/data/carriers";
+import { getAllProducts } from "@/lib/data/products";
+import { getProductGuide } from "@/lib/data/productGuides";
 import {
   JsonLd,
   article,
@@ -19,13 +21,13 @@ import {
 export const metadata: Metadata = {
   title: "Commercial truck insurance companies — AM Best | Dispatched",
   description:
-    "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears. Get matched today.",
+    "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears.",
   alternates: { canonical: "/carriers" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "Commercial truck insurance companies — AM Best | Dispatched",
     description:
-      "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears. Get matched today.",
+      "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears.",
     url: "/carriers",
     type: "website",
   },
@@ -34,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Commercial truck insurance companies — AM Best | Dispatched",
     description:
-      "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears. Get matched today.",
+      "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears.",
   },
 };
 
@@ -128,8 +130,124 @@ export default function CarriersIndexPage() {
           </div>
         </section>
 
-        <section className="ins-sunken">
+        <section>
           <div className="ins-container">
+            <span className="ins-eyebrow">How to use this list</span>
+            <h2 className="ins-hero-title">Reading a carrier review</h2>
+            <p className="ins-hero-sub">
+              The tag next to each name is the carrier&apos;s AM Best
+              Financial Strength Rating as we last verified it. Open a review
+              to see the date of that check, the trucking lines the carrier
+              writes, and the states where we list it. A rating tells you
+              whether an insurer is expected to be able to pay its claims; it
+              does not tell you whether the carrier will write your
+              operation, or at what price. That depends on your equipment,
+              radius, commodities, and loss history, and the answer comes
+              from a quote.
+            </p>
+            <dl className="ins-faq">
+              {faqs.map((qa) => (
+                <div key={qa.q} className="ins-faq-item">
+                  <dt>{qa.q}</dt>
+                  <dd>{qa.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
+        <section className="ins-sunken" id="ratings">
+          <div className="ins-container">
+            <span className="ins-eyebrow">Financial strength</span>
+            <h2 className="ins-hero-title">What the AM Best categories mean</h2>
+            <p className="ins-hero-sub">
+              The letter grades on these pages are AM Best Financial Strength
+              Ratings: AM Best&apos;s opinion of an insurer&apos;s ability to
+              meet its ongoing policy and claim obligations. A rating says
+              nothing about price or about how claims are handled.
+            </p>
+            <dl className="ins-faq">
+              <div className="ins-faq-item">
+                <dt>A++ and A+ (Superior)</dt>
+                <dd>
+                  The highest of AM Best&apos;s rating groups. It clears the
+                  minimum rating most broker and shipper agreements set.
+                </dd>
+              </div>
+              <div className="ins-faq-item">
+                <dt>A and A- (Excellent)</dt>
+                <dd>
+                  The second group. Many broker and shipper agreements name
+                  A- as the lowest rating they accept, so compare the rating
+                  with the wording in your own contracts.
+                </dd>
+              </div>
+              <div className="ins-faq-item">
+                <dt>Not Rated</dt>
+                <dd>
+                  AM Best has not assigned the company a Financial Strength
+                  Rating. It is a statement about the rating, not a judgment
+                  that the company is weak, but an unrated insurer may not
+                  satisfy a contract that names a minimum.
+                </dd>
+              </div>
+              <div className="ins-faq-item">
+                <dt>Pending</dt>
+                <dd>
+                  We have not completed our own check. Look the company up on{" "}
+                  <a href="https://web.ambest.com/" rel="noopener" target="_blank">
+                    ambest.com
+                  </a>{" "}
+                  before relying on it.
+                </dd>
+              </div>
+              <div className="ins-faq-item">
+                <dt>How we verify</dt>
+                <dd>
+                  Ratings change over time. We display one only after a
+                  person has confirmed it on ambest.com, and we show the date
+                  of that check on the carrier&apos;s review.{" "}
+                  <Link href="/methodology">Read our methodology.</Link>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section id="lines">
+          <div className="ins-container">
+            <span className="ins-eyebrow">Trucking lines</span>
+            <h2 className="ins-hero-title">What each line covers, in brief</h2>
+            <dl className="ins-faq">
+              {getAllProducts().map((p) => (
+                <div key={p.slug} className="ins-faq-item">
+                  <dt>
+                    <Link href={`/insurance/${p.slug}`}>{p.name}</Link>
+                  </dt>
+                  <dd>{getProductGuide(p.slug).inBrief}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
+        <section className="ins-sunken" id="how-listed">
+          <div className="ins-container">
+            <span className="ins-eyebrow">How carriers are listed</span>
+            <p className="ins-compliance-note">
+              Dispatched is a comparison and matching platform. We are not
+              appointed by every carrier we list. Coverage is placed by
+              licensed producers and bound by carriers. Where we accept your
+              contact information for a quote, that consent is one-to-one
+              with the named producer partner identified at submission.
+            </p>
+            <p className="ins-compliance-note">
+              The states shown on a carrier&apos;s review reflect
+              Dispatched&apos;s editorial pick of the carriers to list on
+              each state page. A carrier&apos;s actual license footprint may
+              be broader; we display the licensure list separately once we
+              have completed direct verification with the carrier.
+            </p>
             <p className="ins-compliance-note">
               AM Best ratings are populated only when verified directly
               against ambest.com and stamped with the verification date in

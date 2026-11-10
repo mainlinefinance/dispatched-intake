@@ -12,65 +12,65 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Trucking factoring with no credit check — 2026 | Dispatched",
+  title: "Broker-Credit Factoring for Truckers | Dispatched",
   description:
-    "Most freight factors approve without a credit pull on you; they check your brokers. How bad credit, new authority, and a prior bankruptcy are treated.",
+    "How freight factors underwrite the brokers who owe your invoices, what they still review about the carrier, and how weak credit or new authority is treated.",
   alternates: {
-    canonical: "/factoring/no-credit-check",
+    canonical: "/factoring/broker-credit",
   },
   openGraph: {
     images: ["/opengraph-image"],
-    title: "Trucking factoring with no credit check — 2026 | Dispatched",
+    title: "Broker-Credit Factoring for Truckers | Dispatched",
     description:
-      "Most freight factors approve without a credit pull on you; they check your brokers. How bad credit, new authority, and a prior bankruptcy are treated.",
-    url: "/factoring/no-credit-check",
+      "How freight factors underwrite the brokers who owe your invoices, what they still review about the carrier, and how weak credit or new authority is treated.",
+    url: "/factoring/broker-credit",
     type: "website",
   },
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "Trucking factoring with no credit check — 2026 | Dispatched",
+    title: "Broker-Credit Factoring for Truckers | Dispatched",
     description:
-      "Most freight factors approve without a credit pull on you; they check your brokers. How bad credit, new authority, and a prior bankruptcy are treated.",
+      "How freight factors underwrite the brokers who owe your invoices, what they still review about the carrier, and how weak credit or new authority is treated.",
   },
 };
 
 const PAGE_URL =
-  "https://dispatched.finance/factoring/no-credit-check";
+  "https://dispatched.finance/factoring/broker-credit";
 
 const faqs = [
   {
     q: "Do trucking factoring companies check my personal credit?",
-    a: "Most don't run a hard pull on you. Factoring companies underwrite the broker who owes the invoice — that's where the credit risk lives. Some factors do a soft pull on the operator for fraud prevention (no FICO impact, no record on your report). The Dispatched panel includes factors that don't pull personal credit at all.",
+    a: "It depends on the factor. Factoring companies underwrite mainly on the broker who owes the invoice, because that is where most of the credit risk sits. Many still review the carrier: fraud history, active bankruptcies, and sometimes a soft pull, which does not affect your score. Each factor sets its own requirements, and approval is not guaranteed.",
   },
   {
     q: "Can I get freight factoring with bad credit?",
-    a: "Yes. Operators with sub-580 FICO routinely qualify because factoring approval depends on broker credit, not yours. Bad credit factoring is mainstream in trucking — it's not a \"subprime\" product, it's how the industry works. Rates may be 0.5–1% higher than for operators with strong credit, but approval is the rule, not the exception.",
+    a: "Sometimes. Operators with lower credit profiles do use factoring, because factors weigh broker credit most heavily. Your own profile can still affect whether a factor takes the account and at what rate, which may be 0.5–1% higher than for operators with strong credit. Requirements are set by each factor, and approval is not guaranteed.",
   },
   {
     q: "What if I have a prior bankruptcy?",
-    a: "Bankruptcy isn't a disqualifier. The factor is buying your invoices, not lending you money. As long as the bankruptcy is resolved (no active proceedings), and you have an active MC# and a load to invoice, the panel can match you. Some factors are specifically structured for post-BK operators.",
+    a: "A resolved bankruptcy is not always a disqualifier, because the factor is buying invoices rather than lending. Active proceedings usually are. Factors ask about bankruptcies at onboarding and each decides for itself; approval is not guaranteed.",
   },
   {
-    q: "How is no-credit-check factoring different from no-credit-check truck loans?",
-    a: "\"No credit check truck loans\" usually refer to predatory lease-purchase programs run by carriers — high failure rates, no equity built. No-credit-check factoring is a legitimate, mainstream financial product used by tens of thousands of trucking companies. Different mechanism, different risk profile, different outcomes.",
+    q: "How is this different from truck loans advertised without a credit check?",
+    a: "Truck loans advertised that way usually refer to predatory lease-purchase programs run by carriers — high failure rates, no equity built. Factoring is a mainstream product in trucking that underwrites mainly on broker credit and still reviews the carrier. Different mechanism, different risk profile, different outcomes.",
   },
   {
-    q: "Do I need to factor every load if I sign up for no-credit-check factoring?",
+    q: "Do I need to factor every load once I sign up?",
     a: "Depends on the contract. Some factors require all loads from approved brokers go through them (\"all-in\" or whole-ledger factoring); others allow you to factor selectively (\"spot factoring\"). The Dispatched panel includes both structures — pick based on whether you want simplicity or flexibility.",
   },
   {
-    q: "What's the catch with no-credit-check factoring?",
-    a: "The catch is rate. No-credit-check factoring runs 1.5% to 5% per invoice; recourse factoring with broker credit pulled is at the lower end, non-recourse without broker credit is at the higher end. There's also the contract trap — many factors require 12-month auto-renewal. Read the exit clause before signing.",
+    q: "What's the catch with broker-credit factoring?",
+    a: "The catch is rate. Factoring runs 1.5% to 5% per invoice; recourse factoring with broker credit pulled is at the lower end, non-recourse without broker credit is at the higher end. There's also the contract trap — many factors require 12-month auto-renewal. Read the exit clause before signing.",
   },
   {
-    q: "How fast can I get funded after signing up for no-credit-check factoring?",
-    a: "Setup typically takes 24–72 hours (account, broker verification, first invoice review). After that, same-day funding is standard once the invoice + POD upload. Some factors on the panel offer instant funding through a Visa commercial card 24/7, including weekends.",
+    q: "When does the first invoice fund after signing up?",
+    a: "Setup comes first (account, broker verification, first invoice review). After that, advance timing depends on the factor and your invoices; each factor publishes its own cutoffs and payout options.",
   },
 ];
 
 export default function NoCreditCheckFactoringPage() {
-  const { published, modified: today } = contentDates("app/factoring/no-credit-check/page.tsx");
+  const { published, modified: today } = contentDates("app/factoring/broker-credit/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -80,14 +80,14 @@ export default function NoCreditCheckFactoringPage() {
             name: "Invoice factoring for truckers",
             url: "https://dispatched.finance/factoring",
           },
-          { name: "No credit check", url: PAGE_URL },
+          { name: "Broker-credit factoring", url: PAGE_URL },
         ])}
       />
       <JsonLd
         payload={article({
-          headline: "Trucking factoring with no credit check on you",
+          headline: "Trucking factoring that underwrites your brokers",
           description:
-            "How freight factoring evaluates broker credit instead of personal credit — bad credit, new authority, and prior bankruptcy operators all qualify.",
+            "How freight factoring weighs broker credit, what factors still review about the carrier, and how weak credit, new authority, and a prior bankruptcy are treated.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -95,9 +95,9 @@ export default function NoCreditCheckFactoringPage() {
       />
       <JsonLd
         payload={financialProduct({
-          name: "No credit check trucking factoring",
+          name: "Broker-credit trucking factoring",
           description:
-            "Freight factoring for owner-operators with bad credit, prior bankruptcy, or new authority. Approval based on broker credit, not personal FICO. Rates 1.5%–5% per invoice; same-day funding after onboarding.",
+            "Freight factoring underwritten mainly on the credit of the brokers who owe the invoices. Factors still review the carrier, and approval is not guaranteed. Rates 1.5%–5% per invoice; timing depends on the factor and your invoices.",
           url: PAGE_URL,
           category: "Invoice factoring",
         })}
@@ -109,29 +109,26 @@ export default function NoCreditCheckFactoringPage() {
       <main id="main-content" className="ins-page product-page">
         <section className="ins-hero product-hero">
           <div className="ins-container">
-            <span className="ins-eyebrow">No credit check factoring</span>
+            <span className="ins-eyebrow">Broker-credit factoring</span>
             <h1 className="ins-hero-title">
-              Trucking factoring with no credit check on you.
+              Trucking factoring that underwrites your brokers.
             </h1>
             <p className="ins-hero-sub">
-              Freight factoring underwrites the broker who owes the
-              invoice — not you. That&rsquo;s why operators with bad
-              credit, new authority, or a prior bankruptcy still get
-              funded. Here&rsquo;s how it actually works.
+              Freight factors underwrite mainly on the broker who owes the invoice. This is what people usually mean when they search for factoring without a credit check &mdash; though many factors still review the carrier, and approval is not guaranteed. Here&rsquo;s how it actually works.
             </p>
             <div className="product-hero-ctas">
               <Link
                 href="/apply?useCase=factoring&creditPull=soft"
                 className="btn btn--primary btn--lg"
               >
-                See no-credit-check factors →
+                See factoring options →
               </Link>
               <Link href="#recourse" className="btn btn--secondary btn--lg">
                 Compare recourse vs. non-recourse →
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft pull only · same-day funding after onboarding.
+              Soft pull only · Approval is not guaranteed.
             </p>
           </div>
         </section>
@@ -157,14 +154,14 @@ export default function NoCreditCheckFactoringPage() {
               </Link>{" "}
               is structurally different. You&rsquo;re selling a paid
               load&rsquo;s receivable to a third party. The factor pays
-              you 90%–97% of the invoice face value today — the{" "}
+              you 90%–97% of the invoice face value up front — the{" "}
               <Link href="/glossary/advance-rate">advance rate</Link> — and waits to
               collect the full amount from your broker on the broker&rsquo;s
               normal payment terms. There&rsquo;s no loan, no APR, no
               balance owed by you. The cash you got is yours.
             </p>
             <h3 className="ins-hero-sub">
-              <strong>The factor evaluates the broker, not you.</strong>
+              <strong>The factor looks first at the broker.</strong>
             </h3>
             <p className="ins-hero-sub">
               Because the broker is the entity actually paying the
@@ -172,22 +169,19 @@ export default function NoCreditCheckFactoringPage() {
               factor. Trucking factors keep internal credit files on
               every major broker in the country — DAT, Carrier411,
               broker-to-broker reference databases, payment history
-              going back years. That&rsquo;s the credit decision. Your
-              FICO is largely beside the point.
+              going back years. That is the main credit decision. Your own profile is a secondary input, not an irrelevant one.
             </p>
             <h3 className="ins-hero-sub">
-              <strong>When a soft credit pull does happen (and why it&rsquo;s not a denial trigger).</strong>
+              <strong>When a soft credit pull happens.</strong>
             </h3>
             <p className="ins-hero-sub">
-              A subset of factors run a soft pull on the operator at
-              onboarding. It&rsquo;s a fraud-prevention check — they
-              want to see that you exist, that the SSN matches the
+              Many factors run a soft pull on the operator at
+              onboarding. It is largely a fraud-prevention check — they want to see that you exist, that the SSN matches the
               business owner, that there&rsquo;s no active fraud alert.
               A soft pull does not affect your FICO and doesn&rsquo;t
               show up on the credit report lenders see. Even when a
-              soft pull happens, sub-580 operators still routinely
-              qualify. The pull is a verification step, not an approval
-              gate.
+              soft pull happens, operators with lower credit profiles
+              may still be considered. Where a factor runs one, the pull is mainly a verification step; approval is not guaranteed.
             </p>
           </div>
         </section>
@@ -196,35 +190,27 @@ export default function NoCreditCheckFactoringPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Who qualifies</span>
             <h2 className="ins-hero-title">
-              Who gets approved for no-credit-check trucking factoring.
+              Who broker-credit factoring fits.
             </h2>
             <h3 className="ins-hero-sub">
-              <strong>Bad credit operators (sub-580 FICO).</strong>
+              <strong>Operators with challenged credit.</strong>
             </h3>
             <p className="ins-hero-sub">
-              Sub-580 is the band where most unsecured working-capital
+              Challenged credit is where most unsecured working-capital
               products start declining or pricing toward 30%+ APR.
-              Factoring doesn&rsquo;t care. The Dispatched panel
-              routinely funds operators in the 480–580 range at the
-              same fee tier as 700+ FICO peers, because the broker
-              behind the invoice is the credit risk. If you&rsquo;ve
+              Factoring weighs it less: factors underwrite mainly on the broker behind the invoice, because that is where most of the credit risk sits. They still review the carrier, and approval is not guaranteed. If you&rsquo;ve
               been rejected for{" "}
               <Link href="/bad-credit-truck-financing">
                 bad credit truck financing
               </Link>
-              , factoring is the path most operators in your shoes
-              actually use.
+              , factoring is a path many operators in that position look at.
             </p>
             <h3 className="ins-hero-sub">
               <strong>New authority operators (no business credit yet).</strong>
             </h3>
             <p className="ins-hero-sub">
               Most lenders want 6–24 months of operating history before
-              they&rsquo;ll quote. Factors don&rsquo;t. As soon as your
-              MC# is active and you&rsquo;ve hauled a load for a
-              broker the factor recognizes, you can factor that
-              invoice. This is exactly why factoring is the de facto
-              first product for{" "}
+              they&rsquo;ll quote. Many factors do not. With an active MC# and a delivered load for a broker the factor recognizes, that invoice can be eligible. This is why factoring is often the first product for{" "}
               <Link href="/new-authority-truck-financing">
                 new authority operators
               </Link>{" "}
@@ -239,24 +225,18 @@ export default function NoCreditCheckFactoringPage() {
               <strong>Operators with prior bankruptcy or judgments.</strong>
             </h3>
             <p className="ins-hero-sub">
-              Chapter 7 or Chapter 13 in your past doesn&rsquo;t
-              disqualify you. Active proceedings can — a factor
-              doesn&rsquo;t want to be in line behind a trustee — but
-              once the BK is discharged, the door reopens. Same with
+              A past Chapter 7 or Chapter 13 does not always disqualify you. Active proceedings usually do — a factor doesn&rsquo;t want to be in line behind a trustee — and after discharge each factor decides for itself. Same with
               old judgments and tax liens: they show up in onboarding
               diligence, and the factor will ask about them, but
-              they&rsquo;re rarely deal-breakers if the broker mix is
-              clean.
+              they&rsquo;re not always deal-breakers if the broker mix is clean.
             </p>
             <h3 className="ins-hero-sub">
-              <strong>When you don&rsquo;t qualify (broker credit failures, double-brokering history).</strong>
+              <strong>What most often blocks an account (broker credit, double-brokering history).</strong>
             </h3>
             <p className="ins-hero-sub">
-              The two real disqualifiers are on the freight side, not
-              the personal side. First, if your brokers have weak
+              The two most common blockers are on the freight side. First, if your brokers have weak
               credit or are on factor blacklists, the factor
-              can&rsquo;t take the receivable — the credit decision
-              fails on the broker, not you. Second, any history of
+              can&rsquo;t take the receivable — the credit decision fails on the broker. Second, any history of
               double-brokering (taking a load and re-brokering it under
               the table) is a hard stop across the entire factoring
               industry. Factors share that data.
@@ -293,11 +273,11 @@ export default function NoCreditCheckFactoringPage() {
               two-question fit check first.
             </p>
             <h3 className="ins-hero-sub">
-              <strong>First load funded — typical timeline 24–72 hours from setup.</strong>
+              <strong>First load funded — after setup clears.</strong>
             </h3>
             <p className="ins-hero-sub">
-              From the moment the factoring agreement is signed, the
-              first invoice typically funds within 24–72 hours. The
+              After the factoring agreement is signed, the first
+              invoice funds once setup clears. The
               gating items are broker verification (the factor
               confirms the broker has a good credit file and accepts
               factor relationships), filing of a <Link href="/glossary/ucc-1">UCC-1</Link> against
@@ -307,16 +287,13 @@ export default function NoCreditCheckFactoringPage() {
               invoice advance hits your account by <Link href="/glossary/ach">ACH</Link>.
             </p>
             <h3 className="ins-hero-sub">
-              <strong>Funding speed thereafter — same-day on most loads.</strong>
+              <strong>Funding timing after that — set by the factor.</strong>
             </h3>
             <p className="ins-hero-sub">
-              Once the relationship is live, ongoing invoices fund
-              same-day if you submit before the factor&rsquo;s daily
-              cutoff (usually 11am–1pm Eastern). Late-cutoff and
-              weekend invoices fund the next banking day. Several
-              factors on the panel offer 24/7 instant funding through
-              a Visa commercial card — invoice approves at midnight
-              Saturday, you have the cash on the card immediately.
+              Once the relationship is live, advance timing depends on
+              the factor and your invoices. Each factor has a daily
+              submission cutoff, and late or weekend submissions roll
+              to a later cycle. Ask for the payout schedule in writing before you sign.
             </p>
           </div>
         </section>
@@ -378,21 +355,19 @@ export default function NoCreditCheckFactoringPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Honest tradeoffs</span>
             <h2 className="ins-hero-title">
-              The real cost of no-credit-check factoring.
+              The real cost of factoring.
             </h2>
             <h3 className="ins-hero-sub">
-              <strong>Rates run 1.5–5%, higher than working-capital APRs equivalent.</strong>
+              <strong>Rates run 1.5–5% per invoice, which works out higher than a working-capital APR.</strong>
             </h3>
             <p className="ins-hero-sub">
               A 3% factoring fee on a Net-30 invoice is roughly
               equivalent to a 36%+ effective APR if you ran the same
               cashflow through a working-capital line. Factoring
-              isn&rsquo;t cheap — you&rsquo;re paying for speed, for
-              broker-credit underwriting, and for not putting debt on
+              isn&rsquo;t cheap — you&rsquo;re paying for earlier access to your receivables, for broker-credit underwriting, and for not putting debt on
               your books. For operators who can qualify for clean
               working-capital pricing, that&rsquo;s the cheaper path.
-              For operators who can&rsquo;t, factoring is the only
-              realistic source of next-day cash.
+              For operators who can&rsquo;t, factoring is often the realistic alternative.
             </p>
             <h3 className="ins-hero-sub">
               <strong>Some factors require minimum monthly volume.</strong>
@@ -426,7 +401,7 @@ export default function NoCreditCheckFactoringPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">FAQ</span>
             <h2 className="ins-hero-title">
-              No credit check trucking factoring — questions.
+              Broker-credit trucking factoring — questions.
             </h2>
             <dl className="product-faq">
               {faqs.map((qa) => (
@@ -442,18 +417,17 @@ export default function NoCreditCheckFactoringPage() {
         <section className="ins-sunken">
           <div className="ins-container">
             <h2 className="ins-hero-title">
-              See your factoring options without a credit pull.
+              See your factoring options with a soft pull.
             </h2>
             <p className="ins-hero-sub">
-              Soft-pull match. Same-day funding after onboarding. The
-              factor checks your brokers, not your FICO.
+              Soft-pull match. Factors underwrite mainly on your brokers and may still review you; approval is not guaranteed.
             </p>
             <div className="product-hero-ctas">
               <Link
                 href="/apply?useCase=factoring&creditPull=soft"
                 className="btn btn--primary btn--lg"
               >
-                See no-credit-check factors →
+                See factoring options →
               </Link>
               <Link href="/qualify" className="btn btn--secondary btn--lg">
                 Or check my fit first →

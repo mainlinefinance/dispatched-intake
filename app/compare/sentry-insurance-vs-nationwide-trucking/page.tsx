@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: "Which is better for owner-operators?",
-    a: "Nationwide has slightly broader owner-operator access through its retail network. Sentry typically prefers fleets with some operating history — single-truck owner-ops with under 12 months of MC authority sometimes don't clear Sentry's underwriting filter, while Nationwide's retail channel will quote them more readily. That said, neither carrier is the cheapest entry point for a brand-new authority; both price for the established mid-fleet customer they're built around.",
+    a: "Nationwide has slightly broader owner-operator access through its retail network. Sentry typically prefers fleets with some operating history — single-truck owner-ops with under 12 months of MC authority sometimes don't clear Sentry's underwriting filter, while Nationwide's retail channel is more open to quoting them. That said, neither carrier is the cheapest entry point for a brand-new authority; both price for the established mid-fleet customer they're built around.",
   },
   {
     q: "Which handles hazmat better?",
@@ -105,7 +105,7 @@ export default function SentryVsNationwidePage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               Sentry Insurance vs Nationwide Trucking — best specialty
@@ -130,7 +130,7 @@ export default function SentryVsNationwidePage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Two minutes. · No spam from every carrier at once. · Quotes
+              No spam from every carrier at once. · Quotes
               placed by a licensed producer partner.
             </p>
           </div>
@@ -164,8 +164,7 @@ export default function SentryVsNationwidePage() {
               the line-by-line breakdown and a verdict by use case. If
               you&rsquo;d rather skip the read and get a side-by-side
               quote from both through an independent producer,{" "}
-              <Link href="/qualify">/qualify</Link> takes 30 seconds and
-              pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
 
             <table className="ins-carrier-table">
@@ -250,13 +249,13 @@ export default function SentryVsNationwidePage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Quoting speed</strong>
+                    <strong>Quoting channel</strong>
                   </td>
                   <td data-label="Sentry Insurance">
-                    Slower (agent-driven)
+                    Agent-driven
                   </td>
                   <td data-label="Nationwide Trucking">
-                    Mid-tier (agent + online assist)
+                    Agent + online assist
                   </td>
                 </tr>
                 <tr>
@@ -341,8 +340,7 @@ export default function SentryVsNationwidePage() {
               distribution model leans agent-mediated &mdash; Sentry
               works through a curated network of specialty trucking
               brokers and producers, not retail walk-in agencies, and
-              the underwriting cadence reflects that. Quotes take
-              longer; the relationship with the producer matters more.
+              the underwriting process reflects that. Quotes involve more steps; the relationship with the producer matters more.
               (See{" "}
               <a
                 href="https://www.sentry.com"
@@ -474,12 +472,7 @@ export default function SentryVsNationwidePage() {
               producers and tend to spend more time on individual
               accounts &mdash; pulling CSA scores, MVRs, prior-loss
               runs, and discussing risk-control measures before
-              issuing a quote. The quote turnaround is longer &mdash;
-              days, sometimes a week or more for complex accounts.
-              Nationwide&rsquo;s underwriting moves faster on the
-              standard end of the spectrum; the broader retail-agent
-              network can pull quotes through Nationwide&rsquo;s
-              online assist tools in hours for cleaner profiles, and
+              issuing a quote. That means more steps before a quote, especially for complex accounts. Nationwide&rsquo;s underwriting is more streamlined on the standard end of the spectrum; the broader retail-agent network can pull quotes through Nationwide&rsquo;s online assist tools for cleaner profiles, and
               the trucking-division underwriters handle the complex
               end through the specialty broker channel.
             </p>
@@ -523,13 +516,10 @@ export default function SentryVsNationwidePage() {
               spill &mdash; the adjuster on the file usually has years
               of experience on the line and isn&rsquo;t a rotating
               first-touch resource. Producers report that escalations
-              get resolved faster, that reserve decisions are made by
+              get resolved with fewer handoffs, that reserve decisions are made by
               people with line-specific authority, and that the
               relationship to the agency means context isn&rsquo;t
-              re-explained at every interaction. The trade-off is on
-              speed for routine claims, where Sentry&rsquo;s
-              relationship-driven cadence can feel slower than a
-              volume-driven shop.
+              re-explained at every interaction. The trade-off is on routine claims, where Sentry&rsquo;s relationship-driven process involves more steps than a volume-driven shop.
             </p>
 
             <h3>
@@ -543,8 +533,7 @@ export default function SentryVsNationwidePage() {
               online intake, mobile-app filing, drive-through windshield
               repair networks) is built for scale. The practical
               outcome: routine claims (single-vehicle physical damage,
-              low-dollar cargo, standard glass) move faster through the
-              system, often without an agent intermediary &mdash; the
+              low-dollar cargo, standard glass) move through the system with less friction, often without an agent intermediary &mdash; the
               policyholder can file directly through the app or web.
               For complex claims, Nationwide&rsquo;s deeper resource
               pool means more adjuster availability, but operator
@@ -596,8 +585,7 @@ export default function SentryVsNationwidePage() {
               an operator: you can&rsquo;t walk into a Sentry storefront
               and bind a policy; you go through an agent who runs your
               submission to Sentry&rsquo;s underwriting team. The quote
-              cadence is producer-paced rather than online-paced &mdash;
-              days, not hours &mdash; and the relationship to the
+              process is producer-paced rather than online-paced, and the relationship to the
               producer matters more than the relationship to the
               carrier directly.
             </p>
@@ -612,9 +600,7 @@ export default function SentryVsNationwidePage() {
               That broader retail footprint is the practical reason
               Nationwide quotes more frequently on owner-op profiles
               than Sentry does &mdash; the retail agents have direct
-              access to the underwriting tools and can pull a quote in
-              hours rather than days. For a small-fleet operator who
-              wants the speed of a retail experience but the
+              access to the underwriting tools and can pull a quote themselves. For a small-fleet operator who wants the convenience of a retail experience but the
               underwriting depth of a trucking specialist, Nationwide
               is the hybrid play.
             </p>
@@ -656,7 +642,7 @@ export default function SentryVsNationwidePage() {
               certificate access, online claim filing, ACH-based
               premium-finance integration, certificate-of-insurance
               self-service issuance, repair-shop network locators,
-              and 24/7 phone intake. For an operator who runs without
+              and around-the-clock phone intake. For an operator who runs without
               dedicated office staff &mdash; the single-truck owner-op,
               the husband-and-wife fleet, the dispatcher juggling
               compliance from a laptop &mdash; the difference between
@@ -686,10 +672,7 @@ export default function SentryVsNationwidePage() {
               The clearest day-to-day difference shows up on the
               routine claim. A driver clips a mirror at a dock at 9pm
               on a Friday. Through Nationwide&rsquo;s app: photo, claim
-              number, repair-shop scheduling, all done before the
-              driver gets back on the road. Through Sentry: the claim
-              goes through the producer in the morning, the adjuster
-              calls the driver the next business day, and the
+              number, repair-shop scheduling, all handled in the app. Through Sentry: the claim goes through the producer, the adjuster calls the driver, and the
               repair-shop network gets engaged through the agent. Same
               outcome; different cadence. Both work; the operator
               should know which cadence fits the operation before
@@ -769,8 +752,7 @@ export default function SentryVsNationwidePage() {
                 underwriting team is sized for this fleet profile and
                 the specialty-broker distribution channel is built
                 around it. Quote spreads at this scale are large
-                enough to make the producer-mediated cadence worth
-                the slower turnaround.
+                enough to make the producer-mediated process worth the extra steps.
               </li>
               <li>
                 <strong>Specialty-risk profiles: hazmat, heavy haul,
@@ -815,8 +797,7 @@ export default function SentryVsNationwidePage() {
               <li>
                 <strong>Owner-operators and small fleets (1&ndash;5
                 trucks).</strong> The retail-agent network has broader
-                access on the small-fleet end of the market, quote
-                turnaround is faster, and new-authority underwriting
+                access on the small-fleet end of the market, quoting is more direct, and new-authority underwriting
                 is more elastic than Sentry&rsquo;s.
               </li>
               <li>
@@ -830,8 +811,7 @@ export default function SentryVsNationwidePage() {
                 <strong>Routine-claim-heavy operations.</strong> If
                 your loss profile is dominated by light damage, glass,
                 and low-dollar cargo, Nationwide&rsquo;s volume-driven
-                claim infrastructure moves faster on the routine end
-                than Sentry&rsquo;s relationship-driven cadence.
+                claim infrastructure handles the routine end with less friction than Sentry&rsquo;s relationship-driven process.
               </li>
               <li>
                 <strong>Fleets that value balance-sheet
@@ -868,9 +848,7 @@ export default function SentryVsNationwidePage() {
             <h3>Progressive Commercial &mdash; the volume specialist.</h3>
             <p className="ins-hero-sub">
               Progressive Commercial is the largest single writer of
-              commercial auto insurance in the US and quotes faster
-              than either Sentry or Nationwide on standard-risk
-              profiles. The trade-off is on the complex end: Progressive
+              commercial auto insurance in the US and offers direct online quoting, which neither Sentry nor Nationwide matches on standard-risk profiles. The trade-off is on the complex end: Progressive
               prices for the standard-risk book and is less flexible
               on specialty-risk profiles than the specialty mutual
               carriers. For a clean owner-op or small fleet on standard
@@ -920,10 +898,7 @@ export default function SentryVsNationwidePage() {
             <p className="ins-hero-sub">
               Sentry and Nationwide Trucking are both on the producer
               panel that Dispatched routes commercial-trucking
-              insurance traffic to. Both are credible markets; both
-              will quote a mid-fleet renewal. The question isn&rsquo;t
-              whether either one will write the business &mdash; in
-              most cases, both will &mdash; it&rsquo;s which one is the
+              insurance traffic to. Both are credible markets for a mid-fleet renewal. Neither is guaranteed to write the business; the question is which one is the
               better fit for your specific operation given your CSA
               scores, your equipment mix, your lane radius, your loss
               history, and the cycle each carrier&rsquo;s underwriting

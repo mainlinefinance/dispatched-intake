@@ -64,7 +64,7 @@ const faqs = [
   },
   {
     q: "Which is better for new owner-operators?",
-    a: "Apex. Apex runs a dedicated startup program for new authorities with structured pre-approvals — an operator can be pre-qualified before MC activation and start factoring from invoice one. Sub-580 FICO is approvable, prior bankruptcy isn't an automatic decline, and minimum monthly volume is set low enough for single-truck owner-ops. Triumph accepts new authority but bank-owned underwriting prices conservatively: a new MC lands near the top of the 1.5–3.5% range and at 85% advance until volume proves out.",
+    a: "Apex. Apex runs a dedicated startup program for new authorities that can begin before MC activation. Lower credit profiles are considered, prior bankruptcy isn't an automatic decline, and minimum monthly volume is set low enough for single-truck owner-ops. Triumph accepts new authority but bank-owned underwriting prices conservatively: a new MC lands near the top of the 1.5–3.5% range and at 85% advance until volume proves out.",
   },
   {
     q: "Should I just pick whichever has the lowest rate?",
@@ -105,7 +105,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               Apex Capital vs Triumph Business Capital — premium owner-op
@@ -134,7 +134,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No spam from both at once.
+              Soft-pull match. · No spam from both at once.
             </p>
           </div>
         </section>
@@ -152,7 +152,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               Worth, and laser-focused on owner-operators and small
               fleets &mdash; the segment most factors treat as an
               afterthought. The product set is the deepest in the
-              owner-op category: blynk&reg; instant funding 24/7/365, a
+              owner-op category: the around-the-clock blynk&reg; payment rail, a
               ~51&cent;/gal fuel discount that&rsquo;s the largest in
               the industry, 700+ five-star reviews, and the BBB Torch
               Award for Marketplace Ethics. Triumph is bank-owned
@@ -160,7 +160,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               &mdash; with a non-recourse program backed by federally
               regulated reserves, a $20M factoring ceiling, and a
               direct path into bank ABL for fleets that scale past the
-              factoring window. Both will fund mid-sized carriers. The
+              factoring window. Both serve mid-sized carriers. The
               right answer depends on whether you optimize for service
               quality, fuel economics, and contract clarity (Apex) or
               for non-recourse depth and future ABL graduation
@@ -168,7 +168,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              matches you in two minutes.
+              matches you.
             </p>
 
             <table className="ins-carrier-table">
@@ -222,12 +222,12 @@ export default function ApexVsTriumphBusinessCapitalPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
                   <td data-label="Apex Capital">
-                    Minutes (blynk®) 24/7/365
+                    Around-the-clock rail (blynk®)
                   </td>
-                  <td data-label="Triumph">Same-day decisions</td>
+                  <td data-label="Triumph">Business-hours ACH</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -319,8 +319,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               U.S.-based, all specialized in trucking. The company was
               built around owner-operators &mdash; the segment most
               factors treat as an afterthought &mdash; and the product
-              set reflects that focus: the blynk&reg; instant-funding
-              rail, a fuel card with the deepest network discount in
+              set reflects that focus: the blynk&reg; around-the-clock payment rail, a fuel card with the deepest network discount in
               the industry, equipment financing, dispatch and roadside
               add-ons, and a structured startup program for new
               authorities. Apex doesn&rsquo;t cross-sell asset-based
@@ -606,57 +605,37 @@ export default function ApexVsTriumphBusinessCapitalPage() {
 
         <section className="ins-sunken">
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              Apex pays in minutes. Triumph pays same-day, business
-              hours.
+              Apex pays around the clock. Triumph pays on business hours.
             </h2>
 
             <h3>
-              Apex blynk&reg; &mdash; minutes-level funding, 24/7/365.
+              Apex blynk&reg; &mdash; a payment rail that runs around the clock.
             </h3>
             <p className="ins-hero-sub">
-              Apex&rsquo;s blynk&reg; funding system is genuinely
-              differentiated. Verified invoices submitted through the
-              app fund in minutes, around the clock, including weekends
-              and holidays. For a driver who delivers Friday at 6pm and
-              needs fuel money before a Saturday morning departure,
-              this is the product feature that ends the conversation.
-              No business-hours dependency, no ACH cutoff, no
-              &ldquo;next banking day.&rdquo; The infrastructure was
+              Apex&rsquo;s blynk&reg; is a payment option that operates outside banking hours. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was
               built in-house and has been running at scale for several
-              years. blynk&reg; is the single most differentiated
-              owner-op funding rail in the category, full stop.
+              years.
             </p>
 
             <h3>
-              Triumph &mdash; same-day decisions, business-hours rail.
+              Triumph &mdash; a business-hours ACH rail.
             </h3>
             <p className="ins-hero-sub">
-              Triumph funds verified invoices same-day during business
-              hours, on standard ACH cutoffs. There&rsquo;s no 24/7
-              instant-payout product. Bank-grade verification means
-              Triumph will sometimes pause an invoice for additional
-              broker credit review, pushing same-day into next-day.
-              The pause protects the non-recourse program &mdash; a
-              feature, not a bug &mdash; but for weekend or
-              after-hours funding needs, Triumph doesn&rsquo;t fit.
+              Triumph pays verified invoices during business hours, on standard ACH cutoffs. There&rsquo;s no around-the-clock payout product. Bank-grade verification means Triumph will sometimes pause an invoice for additional broker credit review. The pause protects the non-recourse program &mdash; a feature, not a bug &mdash; and Triumph does not offer a payment option outside banking hours.
             </p>
 
-            <h3>Winner: Apex for weekend funding, tie for steady-state.</h3>
+            <h3>Difference: when each payment option operates.</h3>
             <p className="ins-hero-sub">
               <strong>
-                Operators who need weekend or after-hours funding: Apex,
-                decisively.
+                Outside banking hours:
               </strong>{" "}
-              blynk&reg; is best-in-class for the owner-op profile that
-              cares about Friday-night funding.{" "}
+              Apex offers blynk&reg;; Triumph does not offer an equivalent.{" "}
               <strong>
-                Day-to-day steady-state operators: roughly a tie.
+                During business hours:
               </strong>{" "}
-              Both fund same-day during business hours, and the gap
-              shrinks to almost nothing for operators who don&rsquo;t
-              need cash before Monday morning.
+              both pay on standard cutoffs. Timing on any invoice depends on the factor and your paperwork.
             </p>
           </div>
         </section>
@@ -778,43 +757,35 @@ export default function ApexVsTriumphBusinessCapitalPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Bad credit and new authority</span>
+            <span className="ins-eyebrow">Lower credit profiles and new authority</span>
             <h2 className="ins-hero-title">
-              Both accept. Apex is built for it.
+              Two program structures: a startup program and bank-owned underwriting.
             </h2>
 
             <h3>Apex &mdash; structured startup program.</h3>
             <p className="ins-hero-sub">
               Apex runs a dedicated startup program for new authorities
-              with structured pre-approvals: an operator can be
-              pre-qualified before MC activation and start factoring
-              from invoice one. Sub-580 FICO is approvable; prior
+              that can begin before MC activation. Lower credit profiles are considered; prior
               bankruptcy isn&rsquo;t an automatic decline; minimum
               monthly volume is set low enough that single-truck
               owner-ops fit. This is the segment Apex was built for, and
-              the underwriting reflects that. For a brand-new owner-op
-              activating MC# this week, Apex is the right call.
+              the underwriting reflects that. Approval is not guaranteed.
             </p>
 
             <h3>
-              Triumph &mdash; accepts, priced conservatively.
+              Triumph &mdash; considered, priced conservatively.
             </h3>
             <p className="ins-hero-sub">
-              Triumph factors bad credit and new authority, but bank-
-              owned underwriting prices them conservatively. Sub-580
-              FICO is approvable; prior bankruptcy isn&rsquo;t an
+              Triumph considers lower credit profiles and new authorities; approval is not guaranteed, and bank-owned underwriting prices them conservatively. Lower credit profiles are considered; prior bankruptcy isn&rsquo;t an
               automatic decline; but a new MC will land near the top
               of the 1.5&ndash;3.5% range and at 85% advance until
-              volume and broker mix prove out. The program works
-              &mdash; Triumph isn&rsquo;t turning new authorities away
-              &mdash; but the pricing penalty is real, and the
+              volume and broker mix prove out. The program is open to new authorities, but the pricing penalty is real, and the
               relationship economics are tilted toward established
               mid-fleets rather than week-one operators. For the
               broader category and what to expect when factoring with
               a thin or damaged file, see{" "}
-              <Link href="/factoring/no-credit-check">
-                no credit check trucking factoring
-              </Link>
+              <Link href="/factoring/broker-credit">
+                factoring that underwrites your brokers </Link>
               .
             </p>
           </div>
@@ -844,21 +815,15 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               </li>
               <li>
                 <strong>
-                  Operators who need weekend or 24/7 funding.
+                  Operators who need payments outside banking hours.
                 </strong>{" "}
-                blynk&reg; pays in minutes, 24/7/365. If you deliver
-                Friday night and need fuel by Saturday morning, this is
-                the product. Triumph&rsquo;s business-hours rail
-                doesn&rsquo;t fit this use case.
+                blynk&reg; operates outside banking hours, including weekends; Triumph&rsquo;s rail operates during business hours.
               </li>
               <li>
                 <strong>
-                  New authorities and bad-credit operators.
+                  New authorities and operators rebuilding credit.
                 </strong>{" "}
-                The structured startup program clears underwriting
-                paths and prices in a way Triumph&rsquo;s bank-grade
-                conservative posture doesn&rsquo;t for week-one
-                operators.
+                Apex runs a structured startup program; Triumph&rsquo;s bank-grade underwriting prices new authorities conservatively. Approval is not guaranteed with either.
               </li>
               <li>
                 <strong>
@@ -970,11 +935,11 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               is the only panel option at that scale.
             </p>
 
-            <h3>For brand-new authority, week one: TBS Factoring.</h3>
+            <h3>For brand-new authority: TBS Factoring.</h3>
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
               startup program is the deepest in the industry &mdash;
-              you can be approved before your MC is even active &mdash;
+              onboarding can start before your MC is active &mdash;
               and free authority filings sweeten the package for
               week-one operators who want a one-stop intake.
             </p>
@@ -1000,10 +965,8 @@ export default function ApexVsTriumphBusinessCapitalPage() {
             <p className="ins-hero-sub">
               Apex Capital and Triumph Business Capital are both on
               Dispatched&rsquo;s panel, and both are legitimate
-              factors. The question isn&rsquo;t whether either will
-              fund you &mdash; in most cases, both will. The question
-              is which structural lever matters most: premium service,
-              the deepest fuel program, the 24/7 instant-funding rail,
+              factors. Approval is not guaranteed with either. The question is which structural lever matters most: premium service,
+              the deepest fuel program, the around-the-clock payment rail,
               and the cleanest contract exit (Apex), or bank-grade
               non-recourse reserves and a direct path into ABL through
               a NASDAQ-listed parent (Triumph). Apply to both directly
@@ -1014,12 +977,11 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              does in two minutes &mdash; one application,
+              does &mdash; one application,
               profile-aware match, no double-pull, and no spam from
               the one that isn&rsquo;t the fit. To check fit before
               applying, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes 30 seconds
-              and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>
@@ -1077,8 +1039,8 @@ export default function ApexVsTriumphBusinessCapitalPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

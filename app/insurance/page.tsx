@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   title:
     "Commercial Trucking Insurance Quotes | Dispatched",
   description:
-    "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quote in 3 minutes via our producer.",
+    "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL.",
   alternates: { canonical: "/insurance" },
   openGraph: {
     images: ["/opengraph-image"],
     title:
       "Commercial Trucking Insurance Quotes | Dispatched",
     description:
-      "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quote in 3 minutes via our producer.",
+      "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL.",
     url: "/insurance",
     type: "website",
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title:
       "Commercial Trucking Insurance Quotes | Dispatched",
     description:
-      "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quotes in 3 minutes.",
+      "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL.",
   },
 };
 
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "How do I get a commercial trucking insurance quote?",
-    a: "Submit your DOT number, equipment list, lane footprint, and prior loss runs through the quote engine on this page. The producer pulls quotes from the carriers appointed for your equipment type and operating radius and returns side-by-side options, typically within 1 to 3 business days. You bind directly with the producer once you pick a quote.",
+    a: "Submit your DOT number, equipment list, lane footprint, and prior loss runs through the quote engine on this page. The producer pulls quotes from the carriers appointed for your equipment type and operating radius and returns side-by-side options, on the producer's and carriers' timeline. You bind directly with the producer once you pick a quote.",
   },
   {
     q: "Which insurance carriers will my quote come from?",
@@ -81,8 +81,8 @@ const faqs = [
     a: "Yes. Premium financing is standard for commercial trucking policies. The producer offers premium-finance options through the major premium-finance companies (typically 25% down and 9 monthly payments). You can also pay annual or use a working-capital line to fund the premium directly — see /trucking-working-capital.",
   },
   {
-    q: "How fast can I get a Certificate of Insurance?",
-    a: "Once a policy is bound by the producer, COIs are available the same day, often within minutes of binding. The producer can also issue COIs to specific shippers, brokers, or terminal facilities on request.",
+    q: "How do I get a Certificate of Insurance?",
+    a: "The producer issues COIs once a policy is bound; timing depends on the producer and the carrier. The producer can also issue COIs to specific shippers, brokers, or terminal facilities on request.",
   },
 ];
 
@@ -193,8 +193,7 @@ function Hero({ today }: { today: string }) {
         <p className="ins-hero-sub">
           Primary liability, cargo, physical damage, and the rest of the
           coverage stack — quoted by our licensed producer partner across the
-          carriers writing your DOT class and your state. Quote in minutes,
-          bind the same day.
+          carriers writing your DOT class and your state. Compare quotes, then bind with the producer.
         </p>
         <div className="ins-hero-ctas">
           <a
@@ -228,12 +227,11 @@ function Hero({ today }: { today: string }) {
             <span>States licensed</span>
           </li>
           <li>
-            <strong>1–3 days</strong>
+            <strong>Side by side</strong>
             <span>Quotes returned</span>
           </li>
           <li>
-            <strong>Same day</strong>
-            <span>Bind &amp; COI</span>
+            <strong>Producer-issued</strong> <span>Bind &amp; COI</span>
           </li>
         </ul>
       </div>
@@ -263,15 +261,14 @@ function ThreeStepRibbon() {
             <p>
               Our producer partner pulls quotes from the carriers appointed
               for your DOT class and state. You see side-by-side limits,
-              deductibles, and premium — typically within 1–3 business days.
+              deductibles, and premium — on the producer&apos;s and carriers&apos; timeline.
             </p>
           </li>
           <li>
             <span className="ins-three-step-num">3</span>
             <h3>Bind and get your COI</h3>
             <p>
-              Pick the quote you want, e-sign with the producer, and the COI
-              is issued the same day. Premium financing available — 25% down
+              Pick the quote you want, e-sign with the producer, and the producer issues the COI. Premium financing available — 25% down
               with 9 monthly payments is standard.
             </p>
           </li>
@@ -286,7 +283,7 @@ function QuoteSection({ anchorId }: { anchorId: string }) {
     <section id={anchorId} className="ins-quote-section">
       <div className="ins-container">
         <span className="ins-eyebrow">Get a quote</span>
-        <h2 className="ins-hero-title">Quote in minutes.</h2>
+        <h2 className="ins-hero-title">Compare quotes.</h2>
         <p className="ins-hero-sub">
           Quotes are placed by our licensed producer partner. They pull from
           the carrier panel writing your DOT class in your state and return

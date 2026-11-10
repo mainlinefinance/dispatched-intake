@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "Which has higher advance rates?",
-    a: "RTS, decisively. RTS advances up to 97% of invoice face value — among the highest in the industry. Triumph advances 85–95%, with the percentage tied to broker credit and program tier. On a $50K outstanding receivable, the difference between 97% and 90% is $3,500 in immediate working capital.",
+    a: "RTS, decisively. RTS advances up to 97% of invoice face value — among the highest in the industry. Triumph advances 85–95%, with the percentage tied to broker credit and program tier. On a $50K outstanding receivable, the difference between 97% and 90% is $3,500 in additional working capital.",
   },
   {
     q: "Which has lower headline rates?",
@@ -91,7 +91,7 @@ export default function TriumphVsRtsFinancialPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               Triumph Business Capital vs RTS Financial — bank-backed
@@ -113,7 +113,7 @@ export default function TriumphVsRtsFinancialPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No spam from both at once.
+              Soft-pull match. · No spam from both at once.
             </p>
           </div>
         </section>
@@ -137,7 +137,7 @@ export default function TriumphVsRtsFinancialPage() {
               1.5% at 30+ loads/month, the advance hits 97% (the
               industry leader), and the fuel program lands up to
               $0.40/gallon at the truck stops fleets actually use.
-              Both will fund mid-fleets. The right answer depends on
+              Both serve mid-fleets. The right answer depends on
               whether you optimize for non-recourse depth and future
               ABL (Triumph) or for headline rate, advance rate, and
               fuel economics (RTS). If you&rsquo;d rather skip the
@@ -145,7 +145,7 @@ export default function TriumphVsRtsFinancialPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              matches you in two minutes.
+              matches you.
             </p>
 
             <table className="ins-carrier-table">
@@ -222,10 +222,10 @@ export default function TriumphVsRtsFinancialPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
-                  <td data-label="Triumph">Same-day decisions</td>
-                  <td data-label="RTS Financial">Same-day on most loads</td>
+                  <td data-label="Triumph">Business-hours funding</td>
+                  <td data-label="RTS Financial">Business-hours funding</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -493,7 +493,7 @@ export default function TriumphVsRtsFinancialPage() {
               the highest published advance rate in trucking
               factoring. For cash-flow-tight operators &mdash; and
               that&rsquo;s most growing fleets &mdash; the difference
-              between a 90% advance and a 97% advance compounds fast.
+              between a 90% advance and a 97% advance compounds.
               On $300K of monthly factored volume, the 7-point delta
               is $21,000 in extra working capital sitting in the
               operating account every month, before broker payment
@@ -517,8 +517,7 @@ export default function TriumphVsRtsFinancialPage() {
               regulatory constraint. Bank-owned factors carry capital
               requirements on uncovered receivables, so the held-back
               reserve has to be larger to satisfy regulatory ratios.
-              For carriers who don&rsquo;t need every dollar of
-              working capital on day one &mdash; established mid-
+              For carriers who don&rsquo;t need every dollar of working capital advanced &mdash; established mid-
               fleets with steady cash positions and clean broker
               mixes &mdash; the lower advance is a non-issue. For
               carriers running tight, the gap shows up in the
@@ -661,41 +660,30 @@ export default function TriumphVsRtsFinancialPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              Both fund same-day. Neither runs instant payouts.
+              Both fund during business hours. Neither runs an after-hours rail.
             </h2>
 
-            <h3>Triumph &mdash; same-day decisions, business-hours rail.</h3>
+            <h3>Triumph &mdash; a business-hours rail.</h3>
             <p className="ins-hero-sub">
-              Triumph funds verified invoices same-day on most
-              submissions during business hours, on standard ACH
-              cutoffs. There&rsquo;s no 24/7 instant-payout product.
-              Bank-grade verification means Triumph will sometimes
-              pause an invoice for additional broker credit review,
-              pushing a same-day fund into next-day. The pause
+              Triumph funds verified invoices submitted during business hours, on standard ACH cutoffs. There&rsquo;s no after-hours payout product. Bank-grade verification means Triumph will sometimes pause an invoice for additional broker credit review. The pause
               protects the non-recourse program; it&rsquo;s a feature,
               not a bug, but plan around it.
             </p>
 
-            <h3>RTS &mdash; same-day on most loads.</h3>
+            <h3>RTS &mdash; funding during business hours.</h3>
             <p className="ins-hero-sub">
-              RTS funds verified invoices same-day on most loads
-              during business hours, also without a 24/7 rail. The
+              RTS funds verified invoices submitted during business hours, also without an after-hours rail. The
               RTS Pro app handles submission, status, and reporting
               cleanly, and ProTransport TMS integration reduces
               double-entry for back-office fleets. Underwriting is
-              less conservative than Triumph&rsquo;s &mdash; slightly
-              faster pass-through, slightly more chargeback risk on
-              non-recourse.
+              less conservative than Triumph&rsquo;s &mdash; fewer invoices paused for review, slightly more chargeback risk on non-recourse.
             </p>
 
-            <h3>Winner: tie for steady-state funding.</h3>
+            <h3>No real difference on payment options.</h3>
             <p className="ins-hero-sub">
-              For weekend or after-hours funding, neither factor
-              fits &mdash; both run business-hours cutoffs. For day-
-              to-day fleet steady-state, the speed gap isn&rsquo;t
-              the deciding factor. Pick on structural levers:
+              Neither factor offers an after-hours payment option &mdash; both run business-hours cutoffs &mdash; so payment options should not decide this comparison. Pick on structural levers:
               non-recourse depth and ABL bridge (Triumph) versus
               advance rate and fuel economics (RTS).
             </p>
@@ -757,26 +745,23 @@ export default function TriumphVsRtsFinancialPage() {
               Neither is the first call for new authority.
             </h2>
 
-            <h3>Triumph &mdash; accepts, priced conservatively.</h3>
+            <h3>Triumph &mdash; considers them, priced conservatively.</h3>
             <p className="ins-hero-sub">
-              Triumph factors bad credit and new authority, but bank-
-              owned underwriting prices them conservatively. Sub-580
-              FICO is approvable; prior bankruptcy isn&rsquo;t an
-              automatic decline; but a new MC will land near the top
+              Triumph considers lower credit profiles and new authority, but bank- owned underwriting prices them conservatively. A prior bankruptcy isn&rsquo;t an automatic decline, but a new MC will land near the top
               of the 1.5&ndash;3.5% range and at 85% advance until
               volume and broker mix prove out.
             </p>
 
             <h3>RTS &mdash; volume tiers punish sub-30 loads/month.</h3>
             <p className="ins-hero-sub">
-              RTS accepts new authority, but the volume-tiered rate
+              RTS works with new authority, but the volume-tiered rate
               that makes it attractive to fleets works against new
               authorities by definition: 8 loads in month one sits at
               the top of the rate band. Underwriting is fine; the
               pricing penalty is real until volume scales. For the
               broader category, see{" "}
-              <Link href="/factoring/no-credit-check">
-                no credit check trucking factoring
+              <Link href="/factoring/broker-credit">
+                factoring that underwrites your brokers
               </Link>
               .
             </p>
@@ -866,7 +851,7 @@ export default function TriumphVsRtsFinancialPage() {
                 The 97% advance versus Triumph&rsquo;s 85&ndash;95%
                 is a 2&ndash;12 percentage point swing on every
                 invoice. On $400K/month, that&rsquo;s $8K&ndash;$48K
-                more cash on day one.
+                more cash advanced.
               </li>
               <li>
                 <strong>
@@ -915,8 +900,7 @@ export default function TriumphVsRtsFinancialPage() {
             <h3>For owner-op service quality: Apex Capital.</h3>
             <p className="ins-hero-sub">
               Apex is the dominant choice for owner-operators and
-              small fleets running 1&ndash;10 trucks. The 24/7/365
-              instant funding (blynk&reg;), the ~51&cent;/gal fuel
+              small fleets running 1&ndash;10 trucks. The around-the-clock payment option (blynk&reg;), the ~51&cent;/gal fuel
               discount, and the 700+ five-star review base genuinely
               differentiate it. Effective rates run 30&ndash;60 basis
               points lower than either factor on this page for the
@@ -928,8 +912,7 @@ export default function TriumphVsRtsFinancialPage() {
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
               startup program is the deepest in the industry &mdash;
-              you can be approved before your MC is even active
-              &mdash; and the per-load fee structure works for
+              TBS says it can start onboarding before your MC is active &mdash; and the per-load fee structure works for
               operators with irregular early-stage volume. Free
               authority filings and broker-credit-check inclusion
               sweeten the package for week-one operators.
@@ -967,10 +950,7 @@ export default function TriumphVsRtsFinancialPage() {
             <p className="ins-hero-sub">
               Triumph Business Capital and RTS Financial are both on
               Dispatched&rsquo;s panel, and both are legitimate
-              factors with real product behind the marketing. The
-              question isn&rsquo;t whether either will fund you
-              &mdash; in most mid-fleet cases, both will. The
-              question is which structural lever matters most for
+              factors with real product behind the marketing. Approval is not guaranteed with either. The question is which structural lever matters most for
               your operation: non-recourse reserve depth and an
               integrated bank path to ABL (Triumph), or headline rate
               plus 97% advance plus a deep fuel program (RTS).
@@ -984,12 +964,11 @@ export default function TriumphVsRtsFinancialPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              does in two minutes &mdash; one application, profile-
+              does &mdash; one application, profile-
               aware match, no double-pull, and no spam from the one
               that isn&rsquo;t the fit. To check fit before applying,
               the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes 30 seconds
-              and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>
@@ -1036,7 +1015,7 @@ export default function TriumphVsRtsFinancialPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li><Link href="/factoring">Invoice factoring for truckers →</Link></li>
-              <li><Link href="/factoring/no-credit-check">No credit check trucking factoring →</Link></li>
+              <li><Link href="/factoring/broker-credit">Factoring that underwrites your brokers →</Link></li>
               <li><Link href="/research/best-trucking-factoring-2026">Best trucking factoring 2026 →</Link></li>
               <li><Link href="/qualify">Two-question fit →</Link></li>
               <li><Link href="/methodology">How we describe rates →</Link></li>

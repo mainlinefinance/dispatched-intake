@@ -182,7 +182,7 @@ export default function StateOfTruckingInsurance2026() {
               continued unwinding of nuclear-verdict pricing in tort-reform
               states, (2) a shift in cargo-theft frequency from West Coast
               to inland intermodal hubs, (3) the AM Best commercial-auto
-              line continuing to run at sub-100% combined ratios after a
+              line continuing to run at below-100% combined ratios after a
               decade of 105–110% performance, (4) the persistent gap between
               admitted-market appetite and surplus-lines placement
               economics, and (5) a slow but real shift in how leads are

@@ -317,7 +317,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "29",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "Gulf humidity and hurricane-season routing shifts hit tire and brake wear harder than the national average",
+        "Gulf humidity and hurricane-season routing shifts add to tire and brake wear",
       cityCostPressure:
         "a higher maintenance line and more Aug–Sep revenue volatility",
       citySeasonalMonth: "September",
@@ -399,7 +399,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "29",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "Alliance Texas intermodal volume and Permian oilfield support runs spike Q1 and Q4 maintenance demand",
+        "Alliance Texas intermodal volume and Permian oilfield support runs add seasonal maintenance demand",
       cityCostPressure:
         "uneven weekly revenue tied to oilfield activity and intermodal surge windows",
       citySeasonalMonth: "October",
@@ -440,7 +440,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "30",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "I-35 cross-border drayage to Laredo and South Texas heat extend tire and DPF maintenance cycles",
+        "I-35 cross-border drayage to Laredo and South Texas heat shorten tire and DPF maintenance cycles",
       cityCostPressure:
         "border-staging dwell time and increased after-treatment service intervals",
       citySeasonalMonth: "August",
@@ -522,7 +522,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "32",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "Border-staging dwell on the Bridge of the Americas and Santa Teresa, plus desert dust load, drive higher cabin-filter and brake replacement frequency",
+        "Border-staging dwell at the Bridge of the Americas and Ysleta-Zaragoza crossings, plus desert dust load, drive higher cabin-filter and brake replacement frequency",
       cityCostPressure:
         "long border-wait delays and elevated wear from desert routing on I-10",
       citySeasonalMonth: "July",
@@ -567,7 +567,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       cityWeatherContext:
         "Hurricane season staging and Port of Jax container surges compress your schedule June–October",
       cityCostPressure:
-        "Q3 revenue lumpiness and above-average tire replacement",
+        "late-summer revenue lumpiness and frequent tire replacement",
       citySeasonalMonth: "October",
       cityAvgRepairCost: "2,610",
       proofCards: [
@@ -647,7 +647,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "31",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "Port Tampa Bay drayage and I-4 produce/construction freight peaks add maintenance load Q1 and Q4",
+        "Port Tampa Bay drayage and I-4 produce/construction freight peaks add maintenance load in winter",
       cityCostPressure:
         "I-4 corridor congestion costs and seasonal tire wear from peak produce hauls",
       citySeasonalMonth: "March",
@@ -690,7 +690,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       cityWeatherContext:
         "Central Florida construction and theme-park supply freight push consistent year-round demand with hurricane-season disruption windows",
       cityCostPressure:
-        "elevated downtime risk during Q3 storms and high last-mile fuel burn around I-4 and SR-417",
+        "elevated downtime risk during storm season and high last-mile fuel burn around I-4 and SR-417",
       citySeasonalMonth: "September",
       cityAvgRepairCost: "2,580",
       proofCards: [
@@ -731,7 +731,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "34",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "Valley fog and Central Valley produce-season peaks push a huge chunk of your revenue into a 10-week window",
+        "Valley fog and Central Valley produce-season peaks push much of the year's revenue into a short harvest window",
       cityCostPressure:
         "seasonal revenue swings and CARB-compliance maintenance overhead",
       citySeasonalMonth: "November",
@@ -772,7 +772,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "33",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "Ports of LA/Long Beach drayage volume and CARB Clean Truck program enforcement compress equipment age and push retrofit cycles",
+        "Ports of LA/Long Beach drayage volume and port clean-truck program requirements compress equipment age and push retrofit cycles",
       cityCostPressure:
         "high lease/lease-purchase exposure and CARB compliance overhead",
       citySeasonalMonth: "October",
@@ -938,7 +938,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "31",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "Port of Savannah container surges (now the largest single-terminal container facility in North America) drive intense intermodal dispatch windows",
+        "Port of Savannah container surges drive intense intermodal dispatch windows",
       cityCostPressure:
         "container-surge dwell, hurricane-season disruption, and salt-air component wear",
       citySeasonalMonth: "October",
@@ -1024,7 +1024,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "30",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "FedEx World Hub volume, BNSF intermodal terminals, and the Mississippi River barge transfers make Memphis one of the densest freight hubs in the country",
+        "FedEx World Hub volume, BNSF intermodal terminals, and the Mississippi River barge transfers make Memphis a dense freight hub",
       cityCostPressure:
         "tight intermodal dispatch windows and elevated overnight-load demand",
       citySeasonalMonth: "November",
@@ -1192,7 +1192,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "30",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "Indianapolis is the 'Crossroads of America' — I-65, I-70, I-69, I-74 converge — plus FedEx Express national hub volume drives overnight-cycle demand",
+        "Indianapolis is the 'Crossroads of America' — I-65, I-70, I-69, I-74 converge — plus a major FedEx hub drive overnight-cycle demand",
       cityCostPressure:
         "tight overnight FedEx hub cycles and winter brine corrosion exposure",
       citySeasonalMonth: "January",
@@ -1235,7 +1235,7 @@ const CITY_CORES: Record<string, CityData[]> = {
       localStatMedianHours: "30",
       dataRefreshDate: "Apr 14, 2026",
       cityWeatherContext:
-        "UPS Worldport — the world's largest fully-automated air-cargo facility — drives intense overnight pickup and delivery windows from SDF",
+        "UPS Worldport drives intense overnight pickup and delivery windows from SDF",
       cityCostPressure:
         "tight UPS overnight hub cycles and winter brine corrosion exposure",
       citySeasonalMonth: "January",

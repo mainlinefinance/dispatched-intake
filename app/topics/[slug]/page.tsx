@@ -1,4 +1,4 @@
-import { fitDescription, fitTitle } from "@/lib/seo/meta";
+import { fitTitle } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -17,6 +17,7 @@ import {
   type ContentTopic,
   type TopicContentItem,
   type TopicContentType,
+  TOPIC_META_DESCRIPTIONS,
 } from "@/lib/topics";
 
 const ABS_BASE = "https://dispatched.finance/topics";
@@ -36,7 +37,7 @@ export async function generateMetadata({
   }
   const info = getTopicInfo(slug);
   const title = fitTitle(`${info.label} — Dispatched Topic`);
-  const description = fitDescription(info.description);
+  const description = TOPIC_META_DESCRIPTIONS[slug];
   return {
     title,
     description,
@@ -169,7 +170,7 @@ export default async function TopicPage({
             </p>
             <div className="research-cta-grid">
               <Link href="/qualify" className="research-cta-card">
-                <h3>Qualify in 3 minutes</h3>
+                <h3>Check your funding fit</h3>
                 <p>
                   Soft pull, no credit impact. We route you to the lender
                   panel matching your authority age, credit profile, and

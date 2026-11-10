@@ -119,7 +119,7 @@ export default function HowItWorks() {
             <ul>
               <li>No broker points. Zero to you</li>
               <li>Flat fee, disclosed on every term sheet</li>
-              <li>Lenders compete on rate and speed, not commission</li>
+              <li>Lenders compete on rate, not commission</li>
               <li>One contact. No 7am calls from seven desks</li>
             </ul>
           </div>

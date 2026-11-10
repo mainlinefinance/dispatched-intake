@@ -25,13 +25,13 @@ import {
 export const metadata: Metadata = {
   title: "Box truck financing — 16ft to 26ft loans | Dispatched",
   description:
-    "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. FICO from 500, panel APR 9%–18%. Soft-pull match. Apply now.",
+    "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. Panel APR 9%–18%. Soft-pull match. Approval is not guaranteed.",
   alternates: { canonical: "/box-truck-financing" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "Box truck financing — 16ft to 26ft loans | Dispatched",
     description:
-      "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. FICO from 500, panel APR 9%–18%. Soft-pull match. Apply now.",
+      "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. Panel APR 9%–18%. Soft-pull match. Approval is not guaranteed.",
     url: "/box-truck-financing",
     type: "website",
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Box truck financing — 16ft to 26ft loans | Dispatched",
     description:
-      "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. FICO from 500, panel APR 9%–18%. Soft-pull match. Apply now.",
+      "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. Panel APR 9%–18%. Soft-pull match. Approval is not guaranteed.",
   },
 };
 
@@ -57,11 +57,11 @@ const faqs = [
   },
   {
     q: "What APR should I expect on a box truck loan?",
-    a: "The observed equipment-loan panel range is 9% to 18% APR for box trucks. Newer trucks, 600+ FICO, and a 15%+ down payment quote toward the low end. Older units, sub-580 FICO, or zero-down structures quote toward the high end. The exact APR is on the term sheet before you sign.",
+    a: "The observed equipment-loan panel range is 9% to 18% APR for box trucks. Newer trucks, stronger credit, and a 15%+ down payment quote toward the low end. Older units, lower credit profiles, or zero-down structures quote toward the high end. The exact APR is on the term sheet before you sign.",
   },
   {
     q: "Can I finance a box truck with bad credit?",
-    a: "Yes. Programs route from a 500 FICO. The truck is collateral, so sub-650 borrowers see higher approval rates on box trucks than on unsecured working capital. Sub-580 borrowers should plan for a higher APR, a larger down payment requirement, and a shorter maximum term.",
+    a: "Options may be available; credit requirements are set by each financing partner and approval is not guaranteed. The truck is collateral, so borrowers with lower credit profiles are easier to underwrite on box trucks than on unsecured working capital. They should plan for a higher APR, a larger down payment requirement, and a shorter maximum term.",
   },
   {
     q: "How long can I finance a box truck for?",
@@ -102,7 +102,7 @@ export default function BoxTruckFinancingPage() {
         payload={financialProduct({
           name: "Box truck financing",
           description:
-            "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. FICO from 500, panel APR 9%–18%. Soft-pull match.",
+            "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. Panel APR 9%–18%. Soft-pull match.",
           url: PAGE_URL,
           category: "Equipment financing",
         })}
@@ -140,7 +140,7 @@ export default function BoxTruckFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -191,11 +191,12 @@ export default function BoxTruckFinancingPage() {
             </h2>
             <ul className="product-list">
               <li>
-                <strong>500+ FICO.</strong> The marketing FAQ states the
-                panel accepts applications starting at a 500 FICO. Below
-                580, expect rates on the higher end of the observed panel
-                range and a tighter maximum loan amount; 680+ unlocks the
-                panel&rsquo;s full product set.
+                <strong>Credit.</strong> Credit requirements are set by
+                each financing partner, and approval is not guaranteed.
+                With a lower credit profile, expect rates on the higher end
+                of the observed panel range and a tighter maximum loan
+                amount; stronger credit unlocks the panel&rsquo;s full
+                product set.
               </li>
               <li>
                 <strong>6+ months of operating history.</strong> Includes
@@ -342,7 +343,7 @@ export default function BoxTruckFinancingPage() {
             <h2 className="ins-hero-title">From application to wire.</h2>
             <ol className="product-process">
               <li>
-                <strong>Application.</strong> Two minutes inside{" "}
+                <strong>Application.</strong> Start inside{" "}
                 <Link href="/apply">/apply</Link>. Revenue, time in
                 business, what you&rsquo;re financing, the truck.
                 Soft-pull only.
@@ -434,7 +435,7 @@ export default function BoxTruckFinancingPage() {
               </li>
               <li>
                 <Link href="/qualify">
-                  Two-question funding fit (no credit check) →
+                  Two-question funding fit (no credit pull) →
                 </Link>
               </li>
               <li>

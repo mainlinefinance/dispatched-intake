@@ -50,12 +50,12 @@ const faqs = [
     a: "TBS. The free MC#/DOT#/BOC-3 filing service plus free bookkeeping bundle saves a first-year operator $700–$1,500+ in out-of-pocket setup costs, and the integrated path means TBS handles the regulatory paperwork end-to-end. OTR is built for established operators with active authority; it doesn't file authority for you.",
   },
   {
-    q: "Which has faster funding?",
-    a: "OTR. BOLT instant payment funds verified invoices in minutes, 24/7/365, including weekends and holidays. TBS funds within 24 hours typical during business days. For day-to-day cadence the gap is small; for weekend-emergency cash flow the gap is decisive.",
+    q: "How do their payment options differ?",
+    a: "OTR offers BOLT, a payment option for verified invoices that also operates outside banking hours, including weekends and holidays. TBS funds on business days and does not advertise an after-hours rail. Timing on any invoice depends on the factor and your invoices.",
   },
   {
     q: "Which has better pricing transparency?",
-    a: "OTR. The all-in pricing model means rate × invoice equals total cost — no ACH fees, no monthly minimums, no per-invoice processing charges, no credit-check fees per broker. TBS uses membership-tier pricing where the rate depends on which tier you sign into and additional bundled-service fees can apply. OTR is easier to plan against.",
+    a: "OTR. The all-in pricing model means rate × invoice equals total cost — no ACH fees, no monthly minimums, no per-invoice processing charges, no fees for credit-checking a broker. TBS uses membership-tier pricing where the rate depends on which tier you sign into and additional bundled-service fees can apply. OTR is easier to plan against.",
   },
   {
     q: "What changed with Love's acquisition of TBS?",
@@ -83,7 +83,7 @@ export default function TbsVsOtrSolutionsPage() {
           headline:
             "TBS Factoring vs OTR Solutions — new-authority specialist vs transparency-first in 2026?",
           description:
-            "Head-to-head comparison of TBS Factoring (now Love's-owned) and OTR Solutions across rates, bundled services, funding speed, non-recourse, and customer service for 2026.",
+            "Head-to-head comparison of TBS Factoring (now Love's-owned) and OTR Solutions across rates, bundled services, payment options, non-recourse, and customer service for 2026.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -97,7 +97,7 @@ export default function TbsVsOtrSolutionsPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               TBS Factoring vs OTR Solutions — new-authority specialist vs
@@ -126,7 +126,7 @@ export default function TbsVsOtrSolutionsPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No spam from both at once.
+              Soft-pull match. · No spam from both at once.
             </p>
           </div>
         </section>
@@ -147,7 +147,7 @@ export default function TbsVsOtrSolutionsPage() {
               ~660-stop network. OTR Solutions &mdash; founded 2011 as OTR
               Capital, rebranded ~2022 &mdash; is the transparency-first
               owner-op factor: all-in pricing, true non-recourse as the
-              primary product, BOLT instant payment 24/7/365, and Google
+              primary product, the BOLT around-the-clock payment option, and Google
               4.7 across 883+ reviews. Headline rates overlap at
               2.5&ndash;5% but the effective economics diverge sharply.
               TBS wins when you don&rsquo;t have an MC# yet. OTR wins once
@@ -156,7 +156,7 @@ export default function TbsVsOtrSolutionsPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              does it in two minutes.
+              does it.
             </p>
 
             <table className="ins-carrier-table">
@@ -228,11 +228,11 @@ export default function TbsVsOtrSolutionsPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
-                  <td data-label="TBS Factoring">24h typical</td>
+                  <td data-label="TBS Factoring">Business-day funding</td>
                   <td data-label="OTR Solutions">
-                    BOLT 24/7/365 instant
+                    Around-the-clock rail (BOLT)
                   </td>
                 </tr>
                 <tr>
@@ -406,7 +406,7 @@ export default function TbsVsOtrSolutionsPage() {
               tiers, no add-ons. Pricing is one calculation &mdash; rate
               &times; invoice equals total cost. No ACH fees, no
               processing fees, no monthly fees, no minimum-volume
-              penalties, no credit-check fees per broker. For an
+              penalties, no fees for credit-checking a broker. For an
               established operator who already has a CPA, an IFTA cadence,
               and active authority, OTR&rsquo;s stripped-down model is
               cheaper in both absolute dollars and cognitive overhead.
@@ -468,8 +468,7 @@ export default function TbsVsOtrSolutionsPage() {
               feature is what isn&rsquo;t there: no ACH fees, no
               per-invoice processing fees, no monthly fees, no
               minimum-volume penalties, no membership tier. The math is
-              clean &mdash; rate &times; invoice equals total cost. BOLT
-              instant payment is included on the standard line with no
+              clean &mdash; rate &times; invoice equals total cost. The BOLT payment option is included on the standard line with no
               surcharge. For operators with variable monthly volume,
               single-number pricing makes cash-flow planning materially
               easier than tier-dependent membership pricing.
@@ -554,44 +553,24 @@ export default function TbsVsOtrSolutionsPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              How fast does the cash hit?
+              How does each one pay out?
             </h2>
 
-            <h3>OTR BOLT &mdash; minutes-level, 24/7/365.</h3>
+            <h3>OTR BOLT &mdash; a payment option outside banking hours.</h3>
             <p className="ins-hero-sub">
-              OTR&rsquo;s BOLT instant payment funds verified invoices in
-              minutes, around the clock, including weekends and holidays.
-              Submissions hit the portal, the credit check clears, and
-              payment lands in minutes. Included on the standard line at
-              no additional rate. For an owner-op who delivers Friday at
-              6pm and needs fuel money before Saturday departure, BOLT
-              ends the conversation: no business-hours dependency, no ACH
-              cutoff, no &ldquo;next banking day.&rdquo;
+              OTR&rsquo;s BOLT is a payment option for verified invoices that also operates outside banking hours, including weekends and holidays. It is included on the standard line at no additional rate. Timing on any given invoice still depends on verification and the receiving bank.
             </p>
 
-            <h3>TBS &mdash; 24-hour typical.</h3>
+            <h3>TBS &mdash; funding on business days.</h3>
             <p className="ins-hero-sub">
-              TBS funds verified invoices within roughly 24 hours during
-              business days. Baseline freight-factoring cadence &mdash;
-              competitive against the broader market, but a tier behind
-              BOLT. Submissions outside business hours wait for the next
-              morning; weekends slide to Monday. For home-on-weekends
-              operators, 24-hour funding is fine. For cash-tight first-year
-              operators needing fuel money Saturday morning, the delta
-              matters.
+              TBS funds verified invoices on business days, the standard freight-factoring arrangement, and does not advertise an after-hours rail. Submissions outside business hours wait until business resumes. For operators who are home on weekends, that fits the operating rhythm.
             </p>
 
-            <h3>Winner: OTR on speed.</h3>
+            <h3>The difference: OTR has an after-hours payment option.</h3>
             <p className="ins-hero-sub">
-              On funding speed alone OTR wins clearly. The question is how
-              often weekend funding actually matters. For team drivers,
-              dedicated lanes, and high-mileage OTR profiles, BOLT pays
-              for itself in fuel flexibility. For regional
-              Monday&ndash;Friday operators, the speed advantage is real
-              but less load-bearing &mdash; TBS&rsquo;s bundled services
-              may still outweigh the speed gap for a first-year operator.
+              The question is how often you deliver outside banking hours. For team drivers, dedicated lanes, and high-mileage over-the-road profiles, an after-hours payment option adds flexibility. For regional Monday&ndash;Friday operators it matters less &mdash; TBS&rsquo;s bundled services may outweigh it for a first-year operator.
             </p>
           </div>
         </section>
@@ -680,7 +659,7 @@ export default function TbsVsOtrSolutionsPage() {
             <p className="ins-hero-sub">
               TBS&rsquo;s public reviews cluster in the mixed band:
               positive on bookkeeping and authority-filing, more critical
-              on factoring service speed and contract clarity. Common
+              on factoring service responsiveness and contract clarity. Common
               pre-acquisition complaints were slow response times, billing
               disputes around tier changes, and friction when downgrading
               memberships. The Love&rsquo;s acquisition may stabilize
@@ -860,10 +839,9 @@ export default function TbsVsOtrSolutionsPage() {
               </li>
               <li>
                 <strong>
-                  Operators who don&rsquo;t need weekend funding.
+                  Operators who don&rsquo;t need an after-hours payment option.
                 </strong>{" "}
-                Monday&ndash;Friday with home weekends &mdash; 24-hour
-                funding is fine, no speed premium earned.
+                Monday&ndash;Friday with home weekends &mdash; business-day funding fits the schedule.
               </li>
             </ul>
           </div>
@@ -989,9 +967,7 @@ export default function TbsVsOtrSolutionsPage() {
             </h2>
             <p className="ins-hero-sub">
               TBS and OTR are both on Dispatched&rsquo;s panel and both are
-              legitimate factors. The question isn&rsquo;t whether either
-              will fund you &mdash; in most cases, both will. The question
-              is which fits your operation right now: whether you have an
+              legitimate factors. Approval is not guaranteed with either. The question is which fits your operation right now: whether you have an
               active MC#, whether you&rsquo;re in your first year or your
               fifth, how concentrated your broker risk is, whether your
               routes concentrate at Love&rsquo;s, and how comfortable you
@@ -1005,8 +981,7 @@ export default function TbsVsOtrSolutionsPage() {
               </Link>{" "}
               exists: one application, profile-aware match, no double-pull
               on credit. If you&rsquo;d rather check fit first,{" "}
-              <Link href="/qualify">/qualify</Link> takes 30 seconds with
-              no credit pull. First-time operators: the capital-strategy
+              <Link href="/qualify">/qualify</Link> runs with no credit pull. First-time operators: the capital-strategy
               primer at{" "}
               <Link href="/owner-operator-financing/first-time">
                 first-time owner-operator financing

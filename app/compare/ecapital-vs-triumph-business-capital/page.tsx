@@ -99,7 +99,7 @@ export default function EcapitalVsTriumphPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               eCapital vs Triumph Business Capital — which factor for fleets
@@ -127,7 +127,7 @@ export default function EcapitalVsTriumphPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No spam from both at once.
+              Soft-pull match. · No spam from both at once.
             </p>
           </div>
         </section>
@@ -161,7 +161,7 @@ export default function EcapitalVsTriumphPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              does in two minutes.
+              does.
             </p>
 
             <table className="ins-carrier-table">
@@ -217,12 +217,12 @@ export default function EcapitalVsTriumphPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
                   <td data-label="eCapital">
-                    InstaPay (1 hour, business hours)
+                    InstaPay (business hours)
                   </td>
-                  <td data-label="Triumph">Same-day decisions</td>
+                  <td data-label="Triumph">Standard ACH/wire</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -395,8 +395,7 @@ export default function EcapitalVsTriumphPage() {
               tier volume on long-tenured accounts. Most mid-fleets quote
               2&ndash;2.75% recourse and 2.5&ndash;3.25% non-recourse. The
               advance rate is conservative: 85&ndash;95% versus
-              eCapital&rsquo;s up-to-100%. That&rsquo;s the trade-off &mdash;
-              less per invoice, but less up front. The $20M ceiling is
+              eCapital&rsquo;s up-to-100%. That&rsquo;s the trade-off: a lower advance on each invoice. The $20M ceiling is
               structural: above that, Triumph routes you into ABL through
               the parent bank.
             </p>
@@ -478,8 +477,7 @@ export default function EcapitalVsTriumphPage() {
               Run the math: a 12-truck fleet doing $400K/month with one
               broker at $200K. If that broker files Chapter 11,
               you&rsquo;re looking at ~$150K of receivables in dispute. On
-              non-recourse, the factor absorbs it &mdash; the question is
-              how quickly and cleanly. Triumph&rsquo;s bank-regulated
+              non-recourse, the factor absorbs it &mdash; the question is how cleanly. Triumph&rsquo;s bank-regulated
               reserve structure makes that more predictable.
               eCapital&rsquo;s program is real and well-capitalized, but
               the claim-payment documentation is less standardized.{" "}
@@ -537,8 +535,7 @@ export default function EcapitalVsTriumphPage() {
               invoice-by-invoice advances. Both factors offer ABL; the
               choice is bank vs non-bank. If you want treasury services
               and a long-term banking partner, Triumph wins. If you want
-              maximum covenant flexibility and faster approvals, eCapital
-              wins.
+              maximum covenant flexibility, eCapital wins.
             </p>
           </div>
         </section>
@@ -751,7 +748,7 @@ export default function EcapitalVsTriumphPage() {
                 The up-to-100% advance rate vs Triumph&rsquo;s 85&ndash;95%
                 is a 5&ndash;15 percentage point swing on every invoice.
                 For a fleet doing $400K/month, that&rsquo;s $20&ndash;60K
-                more cash in your account on day one.
+                more cash advanced.
               </li>
               <li>
                 <strong>Brokers with deep technology needs.</strong>{" "}
@@ -846,8 +843,7 @@ export default function EcapitalVsTriumphPage() {
             <h3>For owner-op service quality: Apex Capital.</h3>
             <p className="ins-hero-sub">
               Apex is the dominant choice for owner-operators and small
-              fleets running 1&ndash;10 trucks. The 24/7/365 instant
-              funding (blynk&reg;), the ~51&cent;/gal fuel discount, and
+              fleets running 1&ndash;10 trucks. The around-the-clock payment rail (blynk&reg;), the ~51&cent;/gal fuel discount, and
               the 700+ five-star review base genuinely differentiate it.
               Effective rates run 30&ndash;60 basis points lower than
               eCapital at the single-truck profile, and the contract
@@ -858,8 +854,7 @@ export default function EcapitalVsTriumphPage() {
             <h3>For new authority + free filings: TBS Factoring.</h3>
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
-              startup program is the deepest in the industry &mdash; you
-              can be approved before your MC is even active &mdash; and
+              startup program is the deepest in the industry &mdash; onboarding can start before your MC is active &mdash; and
               the per-load fee structure works for operators with
               irregular early-stage volume. Free authority filings and
               broker-credit-check inclusion sweeten the package.
@@ -868,7 +863,7 @@ export default function EcapitalVsTriumphPage() {
             <h3>For volume + advance rate: RTS Financial.</h3>
             <p className="ins-hero-sub">
               RTS is the right call for high-volume fleets that prioritize
-              advance rate and same-day funding without the cross-border
+              advance rate without the cross-border
               footprint eCapital charges for. Pricing is competitive,
               the fuel program is meaningful, and the factoring product
               is cleaner (fewer cross-sells, more focus on the factoring
@@ -895,9 +890,7 @@ export default function EcapitalVsTriumphPage() {
             <p className="ins-hero-sub">
               eCapital and Triumph Business Capital are both on
               Dispatched&rsquo;s panel, and they&rsquo;re both legitimate
-              factors with deep books and real non-recourse programs. The
-              question isn&rsquo;t whether either one will fund you
-              &mdash; in most mid-fleet cases, both will. The question is
+              factors with deep books and real non-recourse programs. Approval is not guaranteed with either. The question is
               which one fits the specific shape of your operation: how
               much non-recourse depth you actually need, whether you
               operate cross-border, whether you want a bank relationship
@@ -916,7 +909,7 @@ export default function EcapitalVsTriumphPage() {
               and no spam from the one that isn&rsquo;t the fit. If
               you&rsquo;d rather check fit before going further, the
               two-question tool at <Link href="/qualify">/qualify</Link>{" "}
-              takes about 30 seconds and pulls no credit.
+              pulls no credit.
             </p>
           </div>
         </section>
@@ -974,8 +967,8 @@ export default function EcapitalVsTriumphPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

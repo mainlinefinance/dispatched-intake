@@ -277,7 +277,7 @@ export default function OwnerOperatorPLCalculator() {
   return (
     <form className="calc-form" onSubmit={handleSubmit}>
       <div className="calc-steps">
-        8 INPUTS · NO CREDIT CHECK · NO PERSONAL INFO
+        8 INPUTS · NO CREDIT PULL · NO PERSONAL INFO
       </div>
 
       <fieldset className="calc-fieldset">

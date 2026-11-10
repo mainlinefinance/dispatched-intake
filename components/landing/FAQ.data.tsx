@@ -64,16 +64,15 @@ export const homepageFaqs: HomepageFaqItem[] = [
         and equipment alongside credit history. Lower credit profiles may see
         higher rates and tighter maximums; stronger profiles may see a broader
         product set. For operators rebuilding credit,{" "}
-        <a href="/factoring/no-credit-check">
+        <a href="/factoring/broker-credit">
           factoring focused on broker receivables
         </a>{" "}
-        can be an option — the factor underwrites the broker who owes the
-        invoice, not a consumer credit score alone. Approval is not guaranteed.
+        can be an option — the factor underwrites mainly on the broker who owes the invoice and still reviews the carrier. Approval is not guaranteed.
       </>
     ),
   },
   {
-    q: "How long does funding take?",
+    q: "What affects funding timing?",
     aText:
       "Timing depends on the lender and your documents. Soft matches and term sheets arrive after underwriting review; wires settle after the chosen financing partner signs off and banking cutoffs clear. Individual results vary.",
     aJsx: (

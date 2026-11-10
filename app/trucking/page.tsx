@@ -63,15 +63,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Which trucking loan should I apply for?",
-    a: "Pick by situation, not by loan name. Cash gap for fuel or payroll: working capital. Truck broken down: a truck repair loan. Buying a tractor or trailer: equipment financing. Slow-paying broker invoices: invoice factoring. Class 8 tractor: semi-truck financing. Straight or box truck: box-truck financing. FICO under 600 or under 12 months MC: the bad-credit and new-authority routes inside the same panel. The decision matrix on this page maps each situation to the right product page; the application then routes to the lenders that fund that product for your profile.",
+    a: "Pick by situation, not by loan name. Cash gap for fuel or payroll: working capital. Truck broken down: a truck repair loan. Buying a tractor or trailer: equipment financing. Slow-paying broker invoices: invoice factoring. Class 8 tractor: semi-truck financing. Straight or box truck: box-truck financing. Challenged credit or under 12 months MC: the bad-credit and new-authority routes inside the same panel. The decision matrix on this page maps each situation to the right product page; the application then routes to the lenders that fund that product for your profile.",
   },
   {
     q: "Do I need good credit to qualify for trucking financing?",
-    a: "No. The published panel floor is a 500 FICO. Below 580 the lender mix narrows and APRs sit on the high end of the observed band, but routing exists. The lenders we match to underwrite revenue and equipment, not just FICO — three months of bank statements, time in business, and the operation itself carry meaningful weight. We do not invent a panel floor under 500: below that score there is no routing on this panel.",
+    a: "No. Credit requirements are set by each financing partner, and approval is not guaranteed. With a lower credit profile the lender mix narrows and APRs sit on the high end of the observed band. The lenders we introduce you to underwrite revenue and equipment, not just credit — three months of bank statements, time in business, and the operation itself carry meaningful weight.",
   },
   {
-    q: "How fast can I get funded?",
-    a: "Soft approval and lender match depend on underwriting review of finishing the application. Funds hit your account the after the chosen lender countersigns and the wire instruction lands before that bank's cutoff. Wires after the cutoff settle the next banking day; weekend and federal-holiday wires settle the next banking day. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
+    q: "What affects funding timing?",
+    a: "Soft approval and lender match depend on underwriting review after you finish the application. Funds are released after the chosen lender countersigns; timing depends on the lender, your documents, and bank wire cutoffs. We do not publish a median time-to-funds figure until the data layer can derive it from real signed-application and ACH-settled funding events.",
   },
   {
     q: "Can I apply for more than one product at the same time?",
@@ -83,7 +83,7 @@ const faqs = [
   },
   {
     q: "What's the difference between a working-capital loan and invoice factoring?",
-    a: "Working capital is a loan you pay back from operations over a fixed term; factoring is selling specific outstanding invoices for an immediate cash advance. Working capital costs more in APR (the panel range is 14%–34% APR) but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring settles in days rather than weeks but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems — both live on this panel.",
+    a: "Working capital is a loan you pay back from operations over a fixed term; factoring is selling specific outstanding invoices for a cash advance. Working capital costs more in APR (the panel range is 14%–34% APR) but gives you cash that is not tied to specific receivables and does not require notifying the broker or shipper. Factoring pays out ahead of the broker's terms but eats into the margin on every invoice you sell. Different cost structures for different cashflow problems — both live on this panel.",
   },
   {
     q: "Does Dispatched fund the loans, or who does?",
@@ -148,7 +148,7 @@ export default function TruckingHubPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -214,7 +214,7 @@ export default function TruckingHubPage() {
                 <Link href="/factoring">
                   invoice factoring
                 </Link>
-                . Sell specific invoices for immediate cash. Recourse and
+                . Sell specific invoices for cash. Recourse and
                 non-recourse routes available.
               </li>
               <li>
@@ -230,11 +230,12 @@ export default function TruckingHubPage() {
                 and Amazon Relay operators.
               </li>
               <li>
-                <strong>FICO under 600 →</strong>{" "}
+                <strong>Challenged credit →</strong>{" "}
                 <Link href="/bad-credit-truck-financing">
                   bad-credit truck financing
                 </Link>
-                . Same panel, narrower lender mix; 500 is the panel floor.
+                . Same panel, narrower lender mix; credit requirements are set by each
+                financing partner.
               </li>
               <li>
                 <strong>Under 12 months MC →</strong>{" "}

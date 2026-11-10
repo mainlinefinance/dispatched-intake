@@ -156,7 +156,7 @@ export default function LendersIndexPage() {
             <p className="research-subhead">
               12 curated trucking lenders covering factoring, equipment
               financing, working capital, and asset-based lending. Filterable
-              by state and use case. Updated May 2026.
+              by state and use case.
             </p>
             <p className="research-meta">
               {lenders.length} lenders · {STATE_INFO.length} state pages ·
@@ -239,7 +239,7 @@ export default function LendersIndexPage() {
             </p>
             <div className="research-cta-grid">
               <Link href="/qualify" className="research-cta-card">
-                <h3>Qualify in 3 minutes</h3>
+                <h3>See your funding options</h3>
                 <p>
                   Soft pull, no credit impact. Routed to the lender panel
                   matching your authority age, credit profile, and capital

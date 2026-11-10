@@ -14,13 +14,13 @@ import {
 export const metadata: Metadata = fitMeta({
   title: "OTR Solutions vs eCapital — 2026 Comparison | Dispatched",
   description:
-    "OTR Solutions (formerly OTR Capital) vs eCapital: transparency-first all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
+    "OTR Solutions (formerly OTR Capital) vs eCapital: all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
   alternates: { canonical: "/compare/otr-capital-vs-ecapital" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "OTR Solutions vs eCapital — 2026 Comparison | Dispatched",
     description:
-      "OTR Solutions (formerly OTR Capital) vs eCapital: transparency-first all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
+      "OTR Solutions (formerly OTR Capital) vs eCapital: all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
     url: "/compare/otr-capital-vs-ecapital",
     type: "website",
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = fitMeta({
     card: "summary_large_image",
     title: "OTR Solutions vs eCapital — 2026 Comparison | Dispatched",
     description:
-      "OTR Solutions (formerly OTR Capital) vs eCapital: transparency-first all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
+      "OTR Solutions (formerly OTR Capital) vs eCapital: all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
   },
 });
 
@@ -45,8 +45,8 @@ const faqs = [
     a: "OTR. True non-recourse is OTR's primary factoring product — broker insolvency risk is fully transferred on clean deliveries. eCapital offers non-recourse but defaults to recourse, with non-recourse adding 0.5–1% to the rate. For operators with concentrated broker risk, OTR's non-recourse-first structure is the cleaner choice.",
   },
   {
-    q: "Which has faster instant funding?",
-    a: "OTR. BOLT instant payment runs 24/7/365. eCapital's InstaPay funds within an hour but during business hours only. For weekend or holiday emergencies, OTR wins. For day-to-day funding, both are competitive.",
+    q: "How do their payment options differ?",
+    a: "OTR offers BOLT, a payment option that runs outside banking hours, including weekends and holidays. eCapital offers InstaPay, a payment option that runs during business hours only. Operators who need payment options outside business hours will find that at OTR; timing on any invoice depends on the factor and your paperwork.",
   },
   {
     q: "Which serves cross-border carriers?",
@@ -82,7 +82,7 @@ export default function OtrVsEcapitalPage() {
           headline:
             "OTR Solutions vs eCapital — transparency-first vs largest-factor in 2026?",
           description:
-            "Head-to-head comparison of OTR Solutions and eCapital across rates, pricing structure, non-recourse, funding speed, geography, and ABL for 2026.",
+            "Head-to-head comparison of OTR Solutions and eCapital across rates, pricing structure, non-recourse, payment options, geography, and ABL for 2026.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -96,7 +96,7 @@ export default function OtrVsEcapitalPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               OTR Solutions vs eCapital — transparency-first vs largest-factor
@@ -125,7 +125,7 @@ export default function OtrVsEcapitalPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No spam from both at once.
+              Soft-pull match. · No spam from both at once.
             </p>
           </div>
         </section>
@@ -158,7 +158,7 @@ export default function OtrVsEcapitalPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              matches you in two minutes.
+              matches you.
             </p>
 
             <table className="ins-carrier-table">
@@ -225,13 +225,13 @@ export default function OtrVsEcapitalPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
                   <td data-label="OTR Solutions">
-                    BOLT (24/7/365 instant)
+                    Around-the-clock rail (BOLT)
                   </td>
                   <td data-label="eCapital">
-                    InstaPay (1 hour business hours)
+                    InstaPay (business hours)
                   </td>
                 </tr>
                 <tr>
@@ -405,8 +405,7 @@ export default function OtrVsEcapitalPage() {
               top of a 2.5% rate is more expensive than a flat 3% factor on
               small invoices, but the headline rate looks lower. OTR&rsquo;s
               &ldquo;rate is the cost&rdquo; structure removes that math
-              entirely. Same-day funding and BOLT instant payment are both
-              included without surcharge.
+              entirely. Standard funding and the BOLT payment option are both included without surcharge.
             </p>
 
             <h3>eCapital&rsquo;s 1.95&ndash;4.5% range with layered fees.</h3>
@@ -455,8 +454,7 @@ export default function OtrVsEcapitalPage() {
               OTR&rsquo;s pricing is structurally one number. The rate is
               the rate &mdash; against invoice face value &mdash; and
               that&rsquo;s the total cost. No ACH fee. No processing fee.
-              No monthly minimum penalty. No credit-check fee on new
-              brokers. No surcharge for BOLT. Monthly factoring expense
+              No monthly minimum penalty. No fee for credit-checking new brokers. No surcharge for BOLT. Monthly factoring expense
               becomes a one-line calculation: invoiced volume &times; rate.
               The same operator at eCapital tracks wire fees, ACH fees,
               processing fees by program tier, credit-check fees per
@@ -539,42 +537,36 @@ export default function OtrVsEcapitalPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              BOLT 24/7 vs InstaPay business hours.
+              BOLT around the clock vs InstaPay in business hours.
             </h2>
 
-            <h3>OTR BOLT &mdash; instant payment, 24/7/365.</h3>
+            <h3>OTR BOLT &mdash; a payment option that runs around the clock.</h3>
             <p className="ins-hero-sub">
-              OTR&rsquo;s BOLT instant payment funds verified invoices in
-              minutes, around the clock, including weekends and holidays.
-              The product is included on the standard factoring line at no
-              additional rate; no surcharge tier. For a driver who delivers
-              Friday at 6pm and needs fuel money before a Saturday morning
-              departure, this is the product feature that ends the
-              conversation. No business-hours dependency, no ACH cutoff.
+              OTR&rsquo;s BOLT is a payment option for verified invoices
+              that runs outside banking hours, including weekends and
+              holidays. The product is included on the standard factoring
+              line at no additional rate; no surcharge tier. It has no
+              business-hours dependency and no ACH cutoff.
             </p>
 
-            <h3>eCapital InstaPay &mdash; 1-hour funding, business hours.</h3>
+            <h3>eCapital InstaPay &mdash; a business-hours payment option.</h3>
             <p className="ins-hero-sub">
-              eCapital&rsquo;s InstaPay funds verified invoices within an
-              hour during business hours. That&rsquo;s competitive against
-              the broader factoring market, but a tier behind BOLT.
-              Submissions outside business hours wait for the next morning.
-              For day-to-day steady-state funding, InstaPay is fine; for
-              weekend emergencies, it isn&rsquo;t. The platform compensates
-              with up-to-100% advance rates &mdash; more cash up front per
-              invoice, which can matter more than instant funding for
-              mid-fleets managing weekly payroll.
+              eCapital&rsquo;s InstaPay is a payment option for verified
+              invoices that runs during business hours. Submissions outside
+              business hours are handled once business hours resume. The
+              platform compensates with up-to-100% advance rates &mdash;
+              more cash up front per invoice, which can matter more than
+              payment options for mid-fleets managing weekly payroll.
             </p>
 
-            <h3>Winner: OTR on weekends, practical tie on weekdays.</h3>
+            <h3>The difference: around-the-clock vs business hours.</h3>
             <p className="ins-hero-sub">
-              For weekend or holiday funding, BOLT is the structural
-              answer. Inside business hours, the difference is small. The
-              24/7 capability is a real advantage for owner-ops on
-              unpredictable schedules; for steady-state mid-fleets, advance
-              rate matters more.
+              BOLT runs outside business hours; InstaPay does not. That
+              matters most for owner-ops on unpredictable schedules; for
+              steady-state mid-fleets, advance rate matters more. Timing on
+              any invoice depends on the factor and your paperwork.
             </p>
           </div>
         </section>
@@ -796,11 +788,9 @@ export default function OtrVsEcapitalPage() {
               </li>
               <li>
                 <strong>
-                  Operators who need weekend funding.
+                  Operators who want payment options outside business hours.
                 </strong>{" "}
-                BOLT runs 24/7/365 instant. Friday-night delivery, Saturday
-                morning fuel money &mdash; the product feature that ends
-                the conversation for owner-ops on unpredictable schedules.
+                BOLT runs around the clock, including weekends and holidays &mdash; a product feature that matters for owner-ops on unpredictable schedules.
               </li>
               <li>
                 <strong>
@@ -842,7 +832,7 @@ export default function OtrVsEcapitalPage() {
                 Up-to-100% advance vs OTR&rsquo;s up-to-95% is a
                 meaningful working-capital swing on every invoice. For a
                 fleet doing $400K/month, that&rsquo;s an extra
-                $15&ndash;20K cash in your account on day one.
+                $15&ndash;20K cash advanced against the same invoices.
               </li>
               <li>
                 <strong>High-mileage operators where fuel dominates.</strong>{" "}
@@ -881,8 +871,7 @@ export default function OtrVsEcapitalPage() {
             <h3>For owner-op service quality + deep fuel: Apex Capital.</h3>
             <p className="ins-hero-sub">
               Apex is the dominant choice for owner-operators and small
-              fleets running 1&ndash;10 trucks. The 24/7/365 blynk&reg;
-              instant funding, the ~51&cent;/gal fuel discount, and the
+              fleets running 1&ndash;10 trucks. The around-the-clock blynk&reg; payment rail, the ~51&cent;/gal fuel discount, and the
               BBB Torch Award genuinely differentiate it. Effective rates
               run competitive to OTR, and the U.S.-based dedicated account
               exec model is the service feature OTR can&rsquo;t match on
@@ -929,9 +918,7 @@ export default function OtrVsEcapitalPage() {
             </h2>
             <p className="ins-hero-sub">
               OTR Solutions and eCapital are both on Dispatched&rsquo;s
-              panel and both legitimate factors. The question isn&rsquo;t
-              whether either will fund you &mdash; in most cases, both
-              will. The question is which one fits your operation: do you
+              panel and both legitimate factors. Approval is not guaranteed with either. The question is which one fits your operation: do you
               operate cross-border, do you anticipate graduating into ABL,
               how concentrated is your broker risk, how predictable do you
               need monthly factoring expense to be. Apply to both directly
@@ -945,14 +932,13 @@ export default function OtrVsEcapitalPage() {
               exists. One application, profile-aware match, no double-pull
               on credit, no spam from the one that isn&rsquo;t the fit. To
               check fit before going further, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30 seconds
-              and pulls no credit. For the broader category, see{" "}
+              <Link href="/qualify">/qualify</Link> pulls no credit. For the broader category, see{" "}
               <Link href="/factoring">
                 invoice factoring for truckers
               </Link>{" "}
               and{" "}
-              <Link href="/factoring/no-credit-check">
-                no credit check trucking factoring
+              <Link href="/factoring/broker-credit">
+                factoring that underwrites your brokers
               </Link>.
             </p>
           </div>
@@ -1011,8 +997,8 @@ export default function OtrVsEcapitalPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

@@ -97,7 +97,7 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               eCapital vs Truckstop Go Capital — largest factor vs load-board
@@ -125,7 +125,7 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No spam from both at once.
+              Soft-pull match. · No spam from both at once.
             </p>
           </div>
         </section>
@@ -160,7 +160,7 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              does in two minutes.
+              does.
             </p>
 
             <table className="ins-carrier-table">
@@ -214,12 +214,12 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
                   <td data-label="eCapital">
-                    InstaPay (1-hr business hours)
+                    InstaPay (business hours)
                   </td>
-                  <td data-label="Truckstop Go Capital">Standard same-day</td>
+                  <td data-label="Truckstop Go Capital">Standard ACH/wire</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -528,41 +528,36 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              How fast does the cash actually hit?
+              How do the payment options differ?
             </h2>
 
-            <h3>eCapital InstaPay &mdash; 1-hour funding, business hours.</h3>
+            <h3>eCapital InstaPay &mdash; a business-hours payment option.</h3>
             <p className="ins-hero-sub">
-              eCapital&rsquo;s InstaPay funds verified invoices within
-              roughly an hour during business hours. That is competitive
-              against the broader factoring market — most factors fund the
-              next banking day at best — but submissions outside business
-              hours wait for the next morning. For day-to-day steady-state
-              funding, InstaPay is fine. For Friday-night-to-Saturday-morning
-              fuel needs, it is not the product.
+              eCapital&rsquo;s InstaPay is a separate payment option for
+              verified invoices that runs during business hours.
+              Submissions outside business hours are handled once business
+              hours resume. It is not an around-the-clock product.
             </p>
 
-            <h3>Truckstop Go &mdash; standard same-day.</h3>
+            <h3>Truckstop Go &mdash; standard funding.</h3>
             <p className="ins-hero-sub">
-              Truckstop Go funds verified invoices same-day during business
-              hours. The funding speed is not the headline feature;
-              integration is. There is no minutes-level product equivalent
-              to Apex&rsquo;s blynk&reg;, and the platform does not market
-              after-hours instant funding. For operators who want
-              best-in-class funding speed independent of integration, neither
-              eCapital nor Truckstop wins outright — Apex Capital&rsquo;s
-              24/7/365 product is a tier above both.
+              Truckstop Go funds verified invoices through its standard
+              process during business hours. Payment options are not the
+              headline feature; integration is. The platform does not
+              market an around-the-clock payment rail of the kind Apex
+              Capital runs with blynk&reg;.
             </p>
 
-            <h3>Winner: eCapital on a typical business-day basis.</h3>
+            <h3>The difference: one extra payment option at eCapital.</h3>
             <p className="ins-hero-sub">
-              InstaPay&rsquo;s 1-hour window during business hours is
-              modestly faster than Truckstop&rsquo;s standard same-day
-              flow. Neither product is built for after-hours emergencies.
-              If weekend funding matters, both are the wrong product and
-              the right answer is a different factor.
+              eCapital offers InstaPay on top of its standard process;
+              Truckstop Go offers its standard process only. Neither runs
+              outside business hours. If after-hours payment matters to
+              your operation, a factor with an around-the-clock rail is the
+              better fit. Timing on any invoice depends on the factor and
+              your paperwork.
             </p>
           </div>
         </section>
@@ -594,7 +589,7 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
               Truckstop Go operates within the U.S. market only. For
               operators whose freight runs domestically, this is irrelevant.
               For operators with any meaningful Canadian volume, it
-              eliminates Truckstop from the consideration set immediately.
+              eliminates Truckstop from the consideration set.
               The Truckstop load board itself surfaces Canadian and
               cross-border loads, but the factoring product does not extend
               into those jurisdictions.
@@ -846,21 +841,17 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
               panel. A few specific cases route to other factors first:
             </p>
 
-            <h3>Owner-operator wanting best-in-class fuel and 24/7 funding: Apex Capital.</h3>
+            <h3>Owner-operator wanting a deep fuel program and a payment option outside banking hours: Apex Capital.</h3>
             <p className="ins-hero-sub">
               Apex is the owner-operator-native factor. The ~51&cent;/gal
-              fuel discount and the blynk&reg; 24/7/365 instant funding
-              system are both materially better than what eCapital or
-              Truckstop offer for the single-truck profile. If you are an
-              owner-op who runs 8,000+ miles per month and needs weekend
-              funding, Apex is the structural choice.
+              fuel discount and the blynk&reg; around-the-clock payment rail are both features eCapital and Truckstop do not offer in the same form. If you are an
+              owner-op who runs 8,000+ miles per month and wants a payment option that operates outside banking hours, Apex offers one. Timing on any invoice depends on the factor and your paperwork.
             </p>
 
-            <h3>Brand-new authority, week one: TBS Factoring.</h3>
+            <h3>Brand-new authority: TBS Factoring.</h3>
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
-              startup program is the deepest in the industry — you can be
-              approved before your MC is even active — and the per-load
+              startup program is the deepest in the industry — onboarding can start before your MC is active — and the per-load
               fee structure works for operators with irregular early-stage
               volume.
             </p>
@@ -895,8 +886,7 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
             <p className="ins-hero-sub">
               eCapital and Truckstop Go Capital are both on
               Dispatched&rsquo;s panel, and they are both legitimate
-              factors. The question is not whether either one will fund you
-              — in most cases, both will. The question is which one fits
+              factors. Approval is not guaranteed with either. The question is which one fits
               the specific shape of your operation: how many trucks you
               run, how much you factor monthly, where your freight comes
               from, whether you run any Canadian volume, whether you want
@@ -914,8 +904,7 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
               factor for your operation, no double-pull on your credit, and
               no spam from the one that is not the fit. If you would
               rather check fit before going further, the two-question tool
-              at <Link href="/qualify">/qualify</Link> takes about 30
-              seconds and pulls no credit.
+              at <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>
@@ -970,8 +959,8 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

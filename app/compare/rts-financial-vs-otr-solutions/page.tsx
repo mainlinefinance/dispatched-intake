@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "How do the tech stacks compare?",
-    a: "RTS is deeper. RTS Inc owns ProTransport (a real TMS used by mid-sized fleets), the RTS Pro driver portal, in-house fuel card systems, and integrates with DAT for load-board workflows. OTR runs a factoring portal plus BOLT instant payment — clean, well-built, but a tighter surface. For fleets that want one vendor for factoring + TMS + driver app, RTS does that. For operators who just want clean factoring + instant pay, OTR is enough.",
+    a: "RTS is deeper. RTS Inc owns ProTransport (a real TMS used by mid-sized fleets), the RTS Pro driver portal, in-house fuel card systems, and integrates with DAT for load-board workflows. OTR runs a factoring portal plus the BOLT payment option — clean, well-built, but a tighter surface. For fleets that want one vendor for factoring + TMS + driver app, RTS does that. For operators who just want clean factoring and a simple payment option, OTR is enough.",
   },
   {
     q: "Which should I pick if I'm undecided?",
@@ -97,7 +97,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               RTS Financial vs OTR Solutions — fleet-volume vs
@@ -127,7 +127,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No spam from both at once.
+              Soft-pull match. · No spam from both at once.
             </p>
           </div>
         </section>
@@ -154,8 +154,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
               monthly minimums, no add-on processing) with true
               non-recourse as the headline product. OTR carries
               Google 4.7 across 883+ reviews and Trustpilot 4.5
-              across 323+. Both run instant-or-same-day funding
-              &mdash; but RTS optimizes for high-volume fleets that
+              across 323+. RTS optimizes for high-volume fleets that
               can commit, OTR for transparency-first owner-ops that
               want flexibility. The rest of this page is the
               line-by-line comparison. If you&rsquo;d rather skip the
@@ -163,7 +162,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              matches you in two minutes.
+              matches you.
             </p>
 
             <table className="ins-carrier-table">
@@ -228,11 +227,11 @@ export default function RtsFinancialVsOtrSolutionsPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
-                  <td data-label="RTS Financial">Same-day</td>
+                  <td data-label="RTS Financial">Business-hours funding</td>
                   <td data-label="OTR Solutions">
-                    BOLT 24/7/365 instant
+                    Around-the-clock rail (BOLT)
                   </td>
                 </tr>
                 <tr>
@@ -473,13 +472,11 @@ export default function RtsFinancialVsOtrSolutionsPage() {
             <h3>OTR &mdash; all-in single-number pricing.</h3>
             <p className="ins-hero-sub">
               OTR&rsquo;s headline rate is the total cost. No ACH, no
-              per-invoice processing, no monthly, no credit-check
-              fees per broker, no minimums. A factor that charges
+              per-invoice processing, no monthly, no fees for credit-checking a broker, no minimums. A factor that charges
               $15/invoice processing on a 3% rate is materially more
               expensive than a flat 3.25% factor on small invoices,
               but the headline looks lower. &ldquo;Rate is the
-              cost&rdquo; removes that arithmetic. BOLT instant
-              payment is included on the standard line with no
+              cost&rdquo; removes that arithmetic. The BOLT payment option is included on the standard line with no
               surcharge.
             </p>
 
@@ -677,52 +674,33 @@ export default function RtsFinancialVsOtrSolutionsPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              BOLT 24/7/365 vs same-day same-week.
+              An around-the-clock rail vs business-hours funding.
             </h2>
 
             <h3>
-              OTR BOLT &mdash; 24/7/365 instant payment.
+              OTR BOLT &mdash; a payment option outside banking hours.
             </h3>
             <p className="ins-hero-sub">
-              OTR&rsquo;s BOLT funds verified invoices in minutes,
-              around the clock, including weekends and holidays.
-              Submissions hit the portal, the credit check clears
-              (most broker IDs pre-cached), payment lands. Included
-              on the standard line at no additional rate. For an
-              owner-op delivering Friday 6pm who needs fuel by
-              Saturday morning, BOLT ends the conversation &mdash;
-              no business-hours dependency, no ACH cutoff.
+              OTR&rsquo;s BOLT is a payment option for verified invoices that also operates outside banking hours, including weekends and holidays. It is included on the standard line at no additional rate. Timing on any given invoice still depends on verification and the receiving bank.
             </p>
 
             <h3>
-              RTS &mdash; same-day funding, business-hours dependent.
+              RTS &mdash; funding during business hours.
             </h3>
             <p className="ins-hero-sub">
-              RTS funds verified invoices same-day on most loads
-              submitted during business hours. Competitive against
-              the broader market &mdash; most non-instant factors
-              run next-banking-day &mdash; but a tier behind BOLT for
-              weekend or evening emergencies. For fleets running
-              predictable Monday-Friday delivery, same-day is
-              sufficient. For owner-ops with irregular schedules,
-              BOLT wins.
+              RTS funds verified invoices submitted during business hours and does not advertise an around-the-clock rail. For fleets running predictable Monday-Friday delivery, that fits the operating rhythm. Owner-ops with irregular schedules may prefer a payment option that operates outside banking hours.
             </p>
 
             <h3>
-              Winner for weekend funding: OTR. Steady-state
-              business-hours: tie.
+              The difference: OTR has an after-hours payment option; RTS funds during business hours.
             </h3>
             <p className="ins-hero-sub">
               <strong>
-                If your bottleneck is Friday-night fuel money or
-                weekend cash, BOLT is best-in-class.
+                If you regularly deliver outside banking hours, BOLT is the relevant feature.
               </strong>{" "}
-              For owner-ops with irregular delivery schedules, this
-              ends the conversation. For fleets with structured
-              weekday operations, RTS&rsquo;s same-day is functionally
-              equivalent and the gap doesn&rsquo;t matter in practice.
+              For fleets with structured weekday operations, the difference rarely matters in practice. Either way, timing depends on the factor and your invoices.
             </p>
           </div>
         </section>
@@ -866,8 +844,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
             </p>
 
             <h3>
-              OTR &mdash; clean factoring portal plus BOLT instant
-              payment.
+              OTR &mdash; clean factoring portal plus the BOLT payment option.
             </h3>
             <p className="ins-hero-sub">
               OTR runs a focused portal plus BOLT. The portal handles
@@ -877,8 +854,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
               integrated with no separate app or surcharge. Tighter
               surface than RTS &mdash; no TMS, no deep DAT
               integration, no bundled dispatch &mdash; but for
-              owner-ops who just want clean factoring with instant
-              pay, OTR&rsquo;s stack is enough.
+              owner-ops who just want clean factoring with a simple payment option, OTR&rsquo;s stack is enough.
             </p>
 
             <h3>
@@ -995,9 +971,9 @@ export default function RtsFinancialVsOtrSolutionsPage() {
               </li>
               <li>
                 <strong>
-                  Operators who need weekend or after-hours funding.
+                  Operators who deliver outside banking hours.
                 </strong>{" "}
-                BOLT pays in minutes, 24/7/365.
+                BOLT is a payment option that operates around the clock.
               </li>
             </ul>
           </div>
@@ -1031,8 +1007,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
             </h3>
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment &mdash;
-              approval before MC activation, authority filings
-              bundled. Day-one owner-ops are often better served at
+              onboarding that can start before MC activation, authority filings bundled. Day-one owner-ops are often better served at
               TBS than at RTS (penalized sub-30 loads) or OTR (no
               startup specialization).
             </p>
@@ -1069,9 +1044,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
             <p className="ins-hero-sub">
               RTS Financial and OTR Solutions are both on
               Dispatched&rsquo;s factoring panel, and they&rsquo;re
-              both legitimate factors. The question isn&rsquo;t
-              whether either will fund you &mdash; in most cases, both
-              will. The question is which one fits the shape of your
+              both legitimate factors. Approval is not guaranteed with either. The question is which one fits the shape of your
               operation: how many loads/month, whether non-recourse is
               a hard requirement, how much fuel you burn, whether you
               can commit to 12&ndash;24 months or need flexibility,
@@ -1088,8 +1061,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
               double-pull on credit, no spam from the one that
               isn&rsquo;t the fit. If you&rsquo;d rather check fit
               first, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes 30 seconds
-              and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>
@@ -1144,8 +1116,8 @@ export default function RtsFinancialVsOtrSolutionsPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

@@ -1,3 +1,6 @@
+import Byline, { EDITORIAL_AUTHOR } from "@/components/editorial/Byline";
+import Sources from "@/components/editorial/Sources";
+import { citationsForGlossaryTerm } from "@/lib/seo/citations";
 import { DESCRIPTION_MAX, fitDescription, fitTitle } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
@@ -79,6 +82,7 @@ export default async function GlossaryTermPage({
 
   const { published, modified: today } = contentDates("app/glossary/[slug]/page.tsx");
   const url = `${ORIGIN}/glossary/${t.slug}`;
+  const citations = citationsForGlossaryTerm(t);
   const relatedTerms = t.relatedTerms
     .map((rs) => getTerm(rs))
     .filter((x): x is GlossaryTerm => Boolean(x));
@@ -99,6 +103,8 @@ export default async function GlossaryTermPage({
           url,
           datePublished: published,
           dateModified: today,
+          authorName: EDITORIAL_AUTHOR,
+          citations,
         })}
       />
       <JsonLd
@@ -125,6 +131,7 @@ export default async function GlossaryTermPage({
               .
             </h1>
             <p className="research-subhead">{t.shortDefinition}</p>
+            <Byline published={published} updated={today} />
             <p className="research-meta">
               <Link href="/glossary">All glossary terms</Link>
             </p>
@@ -138,6 +145,8 @@ export default async function GlossaryTermPage({
               ))}
             </section>
           ))}
+
+          <Sources citations={citations} />
 
           {relatedTerms.length > 0 ? (
             <section className="research-section">
@@ -184,7 +193,7 @@ export default async function GlossaryTermPage({
             </p>
             <div className="research-cta-grid">
               <Link href="/qualify" className="research-cta-card">
-                <h3>Qualify in 3 minutes</h3>
+                <h3>Check your funding fit</h3>
                 <p>
                   Soft pull, no credit impact. Routed to the lender panel
                   matching your authority age, credit profile, and capital

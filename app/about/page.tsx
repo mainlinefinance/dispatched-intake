@@ -194,9 +194,7 @@ export default function AboutPage() {
                 <dt>What we are not</dt>
                 <dd>
                   We do not extend credit directly. We do not bill the
-                  trucker. We do not gate qualification on FICO alone &mdash;
-                  panel underwriting weighs revenue, deposit flow, and
-                  equipment alongside credit.
+                  trucker. Panel underwriting weighs revenue, deposit flow, and equipment alongside credit; approval is not guaranteed.
                 </dd>
               </div>
             </dl>

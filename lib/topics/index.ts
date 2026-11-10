@@ -41,13 +41,13 @@ export const TOPIC_INFO: Record<ContentTopic, TopicInfo> = {
     slug: "factoring",
     label: "Factoring & Cash Flow",
     description:
-      "Invoice factoring is how most owner-operators turn 30-60 day broker pay into same-day cash. This topic covers recourse vs non-recourse, advance rates, broker credit, factoring contracts, chargebacks, fuel-card programs, and head-to-head comparisons of the major trucking-factoring desks. If your revenue is hostage to broker payment cycles, the playbook here is the one you actually need — built around the math of the rate spread, the broker-credit infrastructure, and the contract terms that decide whether factoring helps you or eats your margin.",
+      "Invoice factoring is how most owner-operators turn 30-60 day broker pay into working cash ahead of the broker's terms. This topic covers recourse vs non-recourse, advance rates, broker credit, factoring contracts, chargebacks, fuel-card programs, and head-to-head comparisons of the major trucking-factoring desks. If your revenue is hostage to broker payment cycles, the playbook here is the one you actually need — built around the math of the rate spread, the broker-credit infrastructure, and the contract terms that decide whether factoring helps you or eats your margin.",
   },
   "equipment-financing": {
     slug: "equipment-financing",
     label: "Equipment Financing",
     description:
-      "Equipment financing is how truckers buy their next tractor, trailer, or specialized unit without writing a six-figure check up front. This topic covers semi-truck loans, box-truck financing, balloon payments, down-payment strategy, lease-vs-buy math, refinancing, SBA loans for owner-operators, and the bad-credit and no-money-down programs that actually fund. Built for owner-operators and small fleets making the most expensive purchase of their career — with the diligence the truck dealer is not going to do for you.",
+      "Equipment financing is how truckers buy their next tractor, trailer, or specialized unit without writing a six-figure check up front. This topic covers semi-truck loans, box-truck financing, balloon payments, down-payment strategy, lease-vs-buy math, refinancing, SBA loans for owner-operators, and how bad-credit and no-money-down programs work. Built for owner-operators and small fleets making the most expensive purchase of their career — with the diligence the truck dealer is not going to do for you.",
   },
   "working-capital": {
     slug: "working-capital",
@@ -89,7 +89,7 @@ export const TOPIC_INFO: Record<ContentTopic, TopicInfo> = {
     slug: "new-authority",
     label: "New Authority",
     description:
-      "New authority is the first 18 months of operation — the FMCSA New Entrant Safety Assurance Program, the financing programs sized to first-time owner-operators, the insurance carriers that will write a brand-new MC#, and the compliance calendar that keeps you out of trouble. This topic covers MC# activation, BOC-3, UCR, CDL classes and endorsements, ELDT, EIN, the medical card, no-money-down truck financing, no-credit-check factoring, and the playbook that takes a CDL holder from authority application to a profitable first year.",
+      "New authority is the first 18 months of operation — the FMCSA New Entrant Safety Assurance Program, the financing programs sized to first-time owner-operators, the insurance carriers that will write a brand-new MC#, and the compliance calendar that keeps you out of trouble. This topic covers MC# activation, BOC-3, UCR, CDL classes and endorsements, ELDT, EIN, the medical card, no-money-down truck financing, factoring that underwrites your brokers, and the playbook that takes a CDL holder from authority application to a profitable first year.",
   },
   "industry-trends": {
     slug: "industry-trends",
@@ -590,9 +590,9 @@ const STATIC_CONTENT: ReadonlyArray<StaticContentItem> = [
     topics: ["factoring"],
   },
   {
-    url: "/factoring/no-credit-check",
-    title: "No Credit Check Factoring",
-    description: "Factoring programs that approve on broker credit, not personal FICO — built for new authority and credit-rebuilding owners.",
+    url: "/factoring/broker-credit",
+    title: "Broker-Credit Factoring",
+    description: "Factoring programs that underwrite mainly on broker credit — used by new authorities and credit-rebuilding owners.",
     contentType: "vertical",
     topics: ["factoring", "new-authority"],
   },
@@ -627,14 +627,14 @@ const STATIC_CONTENT: ReadonlyArray<StaticContentItem> = [
   {
     url: "/bad-credit-truck-financing",
     title: "Bad Credit Truck Financing",
-    description: "Truck financing programs that approve on revenue and authority strength when FICO is the obstacle.",
+    description: "Truck financing programs that weigh revenue and authority strength alongside credit.",
     contentType: "vertical",
     topics: ["equipment-financing"],
   },
   {
     url: "/truck-repair-loans",
     title: "Truck Repair Loans",
-    description: "Emergency capital for major truck repairs — engine, transmission, after-market — to keep the truck earning.",
+    description: "Capital for major truck repairs — engine, transmission, after-market — to keep the truck earning.",
     contentType: "vertical",
     topics: ["working-capital", "equipment-financing"],
   },
@@ -783,3 +783,29 @@ export function getContentByTopic(
 
   return items;
 }
+
+/* Search-result descriptions for the topic hubs. The `description` above is
+   the page's opening paragraph and runs far past what a result shows, so
+   each hub gets a short one written to fit (see lib/seo/meta.ts). */
+export const TOPIC_META_DESCRIPTIONS: Record<ContentTopic, string> = {
+  factoring:
+    "Recourse vs non-recourse, advance rates, broker credit, contracts, chargebacks and fuel-card programs: the factoring guides, terms and comparisons.",
+  "equipment-financing":
+    "Semi-truck and box-truck loans, balloon payments, down payments, lease-vs-buy math, refinancing and SBA loans: guides, terms and calculators.",
+  "working-capital":
+    "Term loans, lines of credit, asset-based lending and MCAs, and how to choose between working capital, factoring and an MCA.",
+  insurance:
+    "Primary liability, cargo, physical damage, non-trucking liability, occupational accident, premium financing and deductibles for truckers.",
+  "owner-operator-life":
+    "Pay models, settlement statements, deductions, taxes, hometime, and lease-on versus own authority: the working life of an owner-operator.",
+  compliance:
+    "MC and DOT numbers, BOC-3, UCR, IRP, IFTA, MCS-150, CSA scores, HOS rules, ELDs and the Clearinghouse: what keeps authority active.",
+  operations:
+    "Freight types, accessorials like detention and layover, dispatch, broker vetting, rate confirmations, and BOL and POD paperwork.",
+  "tech-and-telematics":
+    "ELDs, AI dash cams, TMS and dispatch software, load boards, fleet-management platforms, IFTA software and driver scorecards.",
+  "new-authority":
+    "The first 18 months of a new MC: the New Entrant program, financing and insurance for new authorities, and the compliance calendar.",
+  "industry-trends":
+    "Annual research reports on trucking finance, insurance, capital, fuel, regulation, broker relations and technology. Source-cited.",
+};

@@ -71,7 +71,7 @@ const CARDS: ReadonlyArray<{
     discount: "Avg 42¢/gal at partner truck stops (H2 2025); up to $2.00/gal at select locations",
     network: "4,200+ truck stops; any Mastercard merchant (99%+ acceptance)",
     monthlyFee: "Not published as a flat per-card fee on standard plans",
-    creditType: "Charge card; no hard credit pull on some plans",
+    creditType: "Charge card",
     bestFor: "OTR owner-ops wanting large discounts plus broad acceptance",
   },
   {
@@ -80,7 +80,7 @@ const CARDS: ReadonlyArray<{
     discount: "$0.05–$0.20/gal; bundle with RTS factoring adds 5–10¢/gal",
     network: "850+ Pilot Flying J and One9 Fuel Network locations",
     monthlyFee: "No annual fee per RTS published terms",
-    creditType: "Credit card; decisioned at sign-up",
+    creditType: "Credit card",
     bestFor: "Carriers factoring with RTS; Pilot-heavy lanes",
   },
   {
@@ -107,8 +107,8 @@ const CARDS: ReadonlyArray<{
     discount: "Cost-plus pricing; ~51¢/gal average savings at in-network truck stops (Q1 2026, TCS-reported)",
     network: "Pilot, Love's, TA Petro, AMBest network",
     monthlyFee: "$0 in-network transaction fee; $3 per out-of-network transaction",
-    creditType: "Prepaid; no credit check",
-    bestFor: "Owner-ops with no or rebuilding credit; high-volume cost-plus fuelers",
+    creditType: "Prepaid; no credit line",
+    bestFor: "Owner-ops who prefer a prepaid card; high-volume cost-plus fuelers",
   },
 ];
 
@@ -119,7 +119,7 @@ const faqs = [
   },
   {
     q: "Do fuel cards require a credit check?",
-    a: "It depends on the product. Charge or credit-style cards (WEX, Shell Card Business, RTS Pro, parts of AtoB) typically run a credit check. Prepaid cards like TCS do not, because you fund the balance before fueling — the issuer is not taking credit risk on you.",
+    a: "It depends on the product. Charge or credit-style cards (WEX, Shell Card Business, RTS Pro, parts of AtoB) typically run a credit check. Prepaid cards like TCS work differently: you fund the balance before fueling. Each issuer sets its own application requirements.",
   },
   {
     q: "Can I use a fuel card for repairs, tires, or tolls?",
@@ -143,7 +143,7 @@ const faqs = [
   },
   {
     q: "Can I get a fuel card if I have bad credit?",
-    a: "Yes. TCS and similar prepaid cards are designed for operators with low FICO or no business credit history. They are funded in advance, so the issuer is not taking credit risk and the application is essentially open to any active DOT-registered carrier.",
+    a: "Possibly. Prepaid cards such as TCS are funded in advance rather than extending a credit line, so they are a common starting point for operators rebuilding credit. Each issuer sets its own requirements, and approval is not guaranteed.",
   },
   {
     q: "Should I use a fuel card or pay for diesel with my regular business credit card?",
@@ -220,7 +220,7 @@ export default function FuelCardsPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -331,8 +331,7 @@ export default function FuelCardsPage() {
               takes the AtoB card, which covers 99%+ of US gas stations
               and truck stops. Useful for non-fuel spend too (tires,
               tolls, maintenance) with category-level spending controls.
-              Sign-up does not require a hard credit pull on certain
-              plans.
+              Check the issuer&apos;s current sign-up requirements for each plan.
             </p>
 
             <h3 className="product-h3">RTS Pro</h3>
@@ -341,9 +340,7 @@ export default function FuelCardsPage() {
               factoring with RTS Financial. Standalone discounts run
               $0.05–$0.20/gal across the Pilot Flying J Travel Center
               and One9 Fuel Network (850+ locations). Bundled factoring
-              customers see 5–10¢ extra per gallon. No annual fees, no
-              contracts. Same-day funding on verified invoices when you
-              submit through the RTS Pro app.
+              customers see 5–10¢ extra per gallon. No annual fees, no contracts. Invoices can be submitted for funding through the RTS Pro app.
             </p>
 
             <h3 className="product-h3">Shell Card Business</h3>
@@ -377,9 +374,7 @@ export default function FuelCardsPage() {
               TCS uses cost-plus pricing — the card pays the truck
               stop&rsquo;s wholesale price plus a fixed markup, which
               TCS reports lands at roughly 51¢/gal average savings at
-              in-network truck stops in Q1 2026. Prepaid model, no credit
-              pull, so it works for newer operators or operators
-              rebuilding credit. In-network transactions carry $0
+              in-network truck stops in Q1 2026. Prepaid model, so there is no credit line to manage; a common starting point for newer operators. In-network transactions carry $0
               transaction fees; out-of-network transactions carry $3
               each, and out-of-network acceptance is narrower than
               Mastercard-accepted cards.
@@ -460,12 +455,12 @@ export default function FuelCardsPage() {
               </li>
             </ul>
             <p className="ins-hero-sub">
-              When fuel is eating cash flow faster than the card
+              When fuel is eating more cash flow than the card
               discount can fix, the answer is not a different card. It
               is a <Link href="/factoring">fuel advance via factoring</Link> or short-term{" "}
-              <Link href="/trucking-working-capital">trucking working capital</Link>. Dispatched matches
-              owner-operators to lenders that fund both in 24–48 hours,
-              soft-pull first.
+              <Link href="/trucking-working-capital">trucking working capital</Link>. Dispatched introduces
+              owner-operators to financing partners for both, soft-pull
+              first; timing depends on the lender and your documents.
             </p>
             <div className="product-hero-ctas">
               <Link

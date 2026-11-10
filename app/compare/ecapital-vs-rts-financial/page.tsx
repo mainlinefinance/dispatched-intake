@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "Which has higher advance rates?",
-    a: "eCapital, marginally. eCapital advances up to 100% on top-tier programs; RTS advances up to 97%. The 3-percentage-point gap on a $50K outstanding receivable is $1,500 in immediate working capital. On lower-tier programs both can fall to 90%, so verify your specific advance percentage at intake.",
+    a: "eCapital, marginally. eCapital advances up to 100% on top-tier programs; RTS advances up to 97%. The 3-percentage-point gap on a $50K outstanding receivable is $1,500 in additional working capital. On lower-tier programs both can fall to 90%, so verify your specific advance percentage at intake.",
   },
   {
     q: "Which fuel program is better?",
@@ -97,7 +97,7 @@ export default function EcapitalVsRtsFinancialPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               eCapital vs RTS Financial — largest factor vs fleet-volume
@@ -126,7 +126,7 @@ export default function EcapitalVsRtsFinancialPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No double sales pitch.
+              Soft-pull match. · No double sales pitch.
             </p>
           </div>
         </section>
@@ -139,14 +139,14 @@ export default function EcapitalVsRtsFinancialPage() {
             </h2>
             <p className="ins-hero-sub">
               eCapital and RTS Financial both sit on the Dispatched
-              factoring panel, and both will fund mid-sized fleets and
+              factoring panel, and both serve mid-sized fleets and
               brokers in the US. The DNA is different. eCapital was
               assembled through acquisition starting in 2006 &mdash;
               most recently LSQ &mdash; and claims the title of largest
               freight factoring company in North America, with 30,000+
               businesses across the US, Canada, and the UK and a broad
               product set (factoring, asset-based lending, broker
-              financing, InstaPay 1-hour funding). RTS Financial was
+              financing, the InstaPay payment option). RTS Financial was
               founded in 1995 in Overland Park, Kansas and grew
               organically inside RTS Inc, a wider trucking-services
               parent that also owns the ProTransport TMS and the RTS
@@ -164,7 +164,7 @@ export default function EcapitalVsRtsFinancialPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              does it in two minutes.
+              does it.
             </p>
 
             <table className="ins-carrier-table">
@@ -216,10 +216,10 @@ export default function EcapitalVsRtsFinancialPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
-                  <td data-label="eCapital">InstaPay (1 hour)</td>
-                  <td data-label="RTS Financial">Same-day</td>
+                  <td data-label="eCapital">InstaPay (business hours)</td>
+                  <td data-label="RTS Financial">Standard ACH/wire</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -509,7 +509,7 @@ export default function EcapitalVsRtsFinancialPage() {
               eCapital&rsquo;s ceiling. Lower-tier RTS programs can
               fall to 90% depending on broker credit and program
               election. On a $50K outstanding receivable, the 100% vs
-              97% gap is $1,500 in immediate working capital per
+              97% gap is $1,500 in additional working capital per
               invoice; on $300K monthly factored volume, that&rsquo;s
               $9K of additional working-capital headroom each month at
               eCapital&rsquo;s ceiling versus RTS&rsquo;s.
@@ -642,57 +642,43 @@ export default function EcapitalVsRtsFinancialPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              InstaPay vs same-day &mdash; both competitive, neither
-              instant.
+              InstaPay vs standard funding &mdash; different mechanics.
             </h2>
 
             <h3>
-              eCapital InstaPay &mdash; 1-hour funding, business hours.
+              eCapital InstaPay &mdash; a business-hours payment option.
             </h3>
             <p className="ins-hero-sub">
-              eCapital&rsquo;s InstaPay funds verified invoices within
-              roughly an hour during business hours &mdash; competitive
-              versus the broader market (most factors fund next
-              banking day at best), a tier faster than RTS&rsquo;s
-              same-day standard. Submissions outside business hours
-              wait for next morning. For day-to-day funding, InstaPay
-              is a clear improvement; for weekend or evening
-              emergencies, it&rsquo;s still business-hours-bound and
-              Apex Capital&rsquo;s 24/7 blynk&reg; is in a different
-              category.
+              eCapital&rsquo;s InstaPay is a separate payment option for verified invoices that runs during business hours. Submissions outside business hours are handled once business hours resume. It is business-hours-bound, which
+              is a different design from the around-the-clock rails some
+              other factors run, such as Apex Capital&rsquo;s
+              blynk&reg;.
             </p>
 
             <h3>
-              RTS &mdash; same-day funding on verified invoices.
+              RTS &mdash; standard funding on verified invoices.
             </h3>
             <p className="ins-hero-sub">
-              RTS funds verified invoices same-day on most loads. The
-              structural feature is consistency rather than speed
-              &mdash; carriers know cash will arrive within the
-              business day, every business day. The trade-off is
-              roughly an hour&rsquo;s lag versus eCapital&rsquo;s
-              InstaPay. For operators who optimize cash velocity, that
-              hour matters; for operators who optimize predictability,
-              it doesn&rsquo;t.
+              RTS funds verified invoices through its standard process.
+              The structural feature is consistency &mdash; the process
+              is the same on every business day. Operators who want a separate payment option on individual loads will find that at eCapital; operators who optimize for predictability may
+              not need it.
             </p>
 
             <h3>
-              Winner: eCapital on speed, RTS on consistency, both
-              behind specialist instant-pay competitors.
+              The difference: an extra payment option vs one consistent process.
             </h3>
             <p className="ins-hero-sub">
-              On the funding-speed dimension neither factor leads the
-              broader market. eCapital&rsquo;s InstaPay is a tier above
-              RTS&rsquo;s same-day, but both trail Apex Capital&rsquo;s
-              minutes-level blynk&reg; product on the 24/7 dimension.
-              If weekend or after-hours cash is a real constraint for
-              your operation, see the{" "}
+              Neither factor runs an around-the-clock payment rail. If
+              after-hours payment is a real constraint for your
+              operation, see the{" "}
               <Link href="/research/best-trucking-factoring-2026">
                 2026 factoring ranking
               </Link>{" "}
-              for the names that lead that category.
+              for the factors that offer one. Timing on any invoice
+              depends on the factor and your paperwork.
             </p>
           </div>
         </section>
@@ -781,8 +767,7 @@ export default function EcapitalVsRtsFinancialPage() {
             </h3>
             <p className="ins-hero-sub">
               RTS&rsquo;s reviews split. Google sits at 4.6 &mdash;
-              favorable, with established fleets praising same-day
-              funding and the ProTransport TMS integration. Trustpilot
+              favorable, with established fleets praising the funding process and the ProTransport TMS integration. Trustpilot
               lands at 3.7, materially lower, with critical reviews
               clustering around three themes: contract surprises
               (fees or termination terms operators say weren&rsquo;t
@@ -939,10 +924,7 @@ export default function EcapitalVsRtsFinancialPage() {
               fleets running 1&ndash;10 trucks: 30 years in the
               business, 4.7+ average review score, the deepest fuel
               discount on the market at roughly 51&cent;/gal, and the
-              24/7/365 blynk&reg; instant-funding product that pays in
-              minutes. Neither eCapital nor RTS competes with Apex on
-              the owner-operator profile or on after-hours funding
-              speed.
+              blynk&reg; payment rail, which runs around the clock. Neither eCapital nor RTS is built around the owner-operator profile the way Apex is, and neither offers a comparable payment option outside banking hours.
             </p>
 
             <h3>
@@ -958,12 +940,12 @@ export default function EcapitalVsRtsFinancialPage() {
             </p>
 
             <h3>
-              For new authority, week one &mdash; TBS Factoring.
+              For new authority: TBS Factoring.
             </h3>
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
               startup program is the deepest in the industry &mdash;
-              approval before MC activation &mdash; and TBS bundles
+              onboarding that can start before MC activation &mdash; and TBS bundles
               authority filings into the relationship. Neither
               eCapital nor RTS targets the brand-new owner-operator
               the way TBS does.
@@ -989,10 +971,7 @@ export default function EcapitalVsRtsFinancialPage() {
             </h2>
             <p className="ins-hero-sub">
               eCapital and RTS Financial are both on Dispatched&rsquo;s
-              factoring panel, and both are legitimate factors. The
-              question isn&rsquo;t whether either will fund you
-              &mdash; in most fleet and broker cases, both will. The
-              question is which one fits the specific shape of your
+              factoring panel, and both are legitimate factors. Approval is not guaranteed with either. The question is which one fits the specific shape of your
               operation: how many loads per month you run, whether
               you cross the Canadian border, whether you want a single
               specialist or a multi-product platform, whether the
@@ -1013,8 +992,7 @@ export default function EcapitalVsRtsFinancialPage() {
               credit, no double sales pitch, and no spam from the one
               that isn&rsquo;t the fit. If you&rsquo;d rather check
               fit before going further, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30
-              seconds and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>
@@ -1072,8 +1050,8 @@ export default function EcapitalVsRtsFinancialPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

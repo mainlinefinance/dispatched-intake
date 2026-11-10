@@ -97,7 +97,7 @@ const STATIC_ITEMS: ReadonlyArray<StaticItem> = [
     ],
     productRefs: [
       "/factoring",
-      "/factoring/no-credit-check",
+      "/factoring/broker-credit",
     ],
     topic: "factoring-and-cash-flow",
   },
@@ -455,7 +455,7 @@ function factoringComparison(
       url: `/compare/${slug}`,
       title,
       description:
-        "Rate, contract, advance, funding speed, fuel program, and recourse posture compared side by side.",
+        "Rate, contract, advance, payment options, fuel program, and recourse posture compared side by side.",
       type: "comparison",
       glossaryRefs: [
         "recourse-factoring",
@@ -464,7 +464,7 @@ function factoringComparison(
       ],
       productRefs: [
         "/factoring",
-        "/factoring/no-credit-check",
+        "/factoring/broker-credit",
       ],
       topic: "factoring-and-cash-flow",
     },

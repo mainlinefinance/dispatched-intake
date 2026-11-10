@@ -20,13 +20,13 @@ import {
 export const metadata: Metadata = {
   title: "Semi truck engine rebuild financing | Dispatched",
   description:
-    "In-frame or out-of-frame engine rebuild quote in hand? The Dispatched panel funds rebuilds $15K–$40K, 500 FICO, soft pull, wired to your shop. See lenders.",
+    "In-frame or out-of-frame engine rebuild quote in hand? The Dispatched panel funds rebuilds of $15K–$40K. Soft pull to start, wired to your shop.",
   alternates: { canonical: "/truck-repair-loans/engine-rebuild" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "Semi truck engine rebuild financing | Dispatched",
     description:
-      "In-frame or out-of-frame engine rebuild quote in hand? The Dispatched panel funds rebuilds $15K–$40K, 500 FICO, soft pull, wired to your shop. See lenders.",
+      "In-frame or out-of-frame engine rebuild quote in hand? The Dispatched panel funds rebuilds of $15K–$40K. Soft pull to start, wired to your shop.",
     url: "/truck-repair-loans/engine-rebuild",
     type: "website",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Semi truck engine rebuild financing | Dispatched",
     description:
-      "In-frame or out-of-frame engine rebuild quote in hand? The Dispatched panel funds rebuilds $15K–$40K, 500 FICO, soft pull, wired to your shop. See lenders.",
+      "In-frame or out-of-frame engine rebuild quote in hand? The Dispatched panel funds rebuilds of $15K–$40K. Soft pull to start, wired to your shop.",
   },
 };
 
@@ -49,15 +49,15 @@ const faqs = [
   },
   {
     q: "What APR should I expect on an engine rebuild loan?",
-    a: "The repair-loan band on the panel runs 18% to 30% APR. Engine rebuild loans typically land in the middle of that range — lower than emergency same-day repair (where the speed premium is the trade-off) but higher than equipment-secured truck financing (because the repair-loan structure is shorter-term and the collateral is the partially-rebuilt engine in your existing truck, not a free-standing asset). Operators with 600+ FICO and 12+ months of consistent business deposits see the low end; sub-580 operators with a real shop quote in hand still fund.",
+    a: "The repair-loan band on the panel runs 18% to 30% APR. Engine rebuild loans typically land in the middle of that range — lower than emergency repair (where urgency is priced in) but higher than equipment-secured truck financing (because the repair-loan structure is shorter-term and the collateral is the partially-rebuilt engine in your existing truck, not a free-standing asset). Operators with stronger credit and 12+ months of consistent business deposits see the low end; operators with lower credit profiles should expect the high end. Credit requirements are set by each financing partner and approval is not guaranteed.",
   },
   {
     q: "Can I get financing for a major-component rebuild on a high-mileage truck?",
     a: "Yes, with one underwriting nuance. The panel funds rebuilds on trucks at any mileage — there is no panel-level mileage cutoff because the rebuild itself is what restores the asset value. The lender does ask the shop to confirm the post-rebuild expected remaining life (typically 400K to 600K miles for a quality in-frame on an ISX or DD15). Trucks over 1.2M total miles, especially those on a second or third rebuild, see a tighter lender mix and the loan term shortens to keep payments aligned with the realistic remaining service life of the truck.",
   },
   {
-    q: "How long does engine rebuild financing take to fund?",
-    a: "Soft approval and lender match: after underwriting review of the application. The chosen lender countersigns a term sheet when underwriting is complete. The wire to the shop releases after lender sign-off; timing depends on documents and bank cutoffs. Engine rebuilds add a verification step that emergency repair does not — the lender typically calls the shop directly to confirm the scope of work, the parts list, and the expected completion timeline. That call adds 30 to 60 minutes to the funding clock but is non-negotiable on rebuilds because the dollar figure justifies the verification.",
+    q: "What affects when engine rebuild financing funds?",
+    a: "Soft approval and lender match: after underwriting review of the application. The chosen lender countersigns a term sheet when underwriting is complete. The wire to the shop releases after lender sign-off; timing depends on documents and bank cutoffs. Engine rebuilds add a verification step that emergency repair does not — the lender typically calls the shop directly to confirm the scope of work, the parts list, and the expected completion timeline. That call is an extra step but is non-negotiable on rebuilds because the dollar figure justifies the verification.",
   },
   {
     q: "Does the lender pay the shop or pay me?",
@@ -65,11 +65,11 @@ const faqs = [
   },
   {
     q: "Can I rebuild at my own shop or do I need a dealer or specialty shop?",
-    a: "Either works, with a small documentation difference. Dealer-shop and certified specialty-shop rebuilds (Cummins ReCon, Detroit Reman dealers, OEM-certified independents) are the fastest underwriting path because the lender already has the shop's W-9 and banking on file. Independent shop rebuilds fund equally well — the lender just needs the shop's W-9, banking instructions, and a brief credentials check (state contractor license or DOT registration) before the wire releases. Owner-rebuilds (rebuilding your own engine at your own facility) do not fund through the repair-loan product — that pivots into a parts-only structure with no labor financing.",
+    a: "Either works, with a small documentation difference. Dealer-shop and certified specialty-shop rebuilds (Cummins ReCon, Detroit Reman dealers, OEM-certified independents) are the simplest underwriting path because the lender already has the shop's W-9 and banking on file. Independent shop rebuilds fund equally well — the lender just needs the shop's W-9, banking instructions, and a brief credentials check (state contractor license or DOT registration) before the wire releases. Owner-rebuilds (rebuilding your own engine at your own facility) do not fund through the repair-loan product — that pivots into a parts-only structure with no labor financing.",
   },
   {
     q: "What if my engine is the second rebuild on this truck?",
-    a: "Funds, but the term shortens. A first rebuild on a 700K-mile truck typically funds with a 24 to 48 month term because the post-rebuild service life supports the payment schedule. A second rebuild on the same truck (now 1.4M+ miles) typically funds with a 12 to 24 month term so the loan amortizes inside the realistic remaining service life. The APR is similar to a first rebuild; the structure is what changes. Some operators in this situation pivot to a used-truck purchase financed via equipment financing instead — see semi-truck-financing for that path.",
+    a: "It can be financed, but the term shortens. A first rebuild on a 700K-mile truck typically funds with a 24 to 48 month term because the post-rebuild service life supports the payment schedule. A second rebuild on the same truck (now 1.4M+ miles) typically funds with a 12 to 24 month term so the loan amortizes inside the realistic remaining service life. The APR is similar to a first rebuild; the structure is what changes. Some operators in this situation pivot to a used-truck purchase financed via equipment financing instead — see semi-truck-financing for that path.",
   },
   {
     q: "What about rebuild financing if my truck is still under a previous loan?",
@@ -106,7 +106,7 @@ export default function EngineRebuildFinancingPage() {
         payload={financialProduct({
           name: "Semi truck engine rebuild financing",
           description:
-            "Repair loans for in-frame and out-of-frame engine rebuilds on Cummins, Detroit, Volvo, and Paccar platforms. $15K to $40K typical invoice. 18% to 30% APR. 500 FICO floor. Wired to the rebuild shop.",
+            "Repair loans for in-frame and out-of-frame engine rebuilds on Cummins, Detroit, Volvo, and Paccar platforms. $15K to $40K typical invoice. 18% to 30% APR. Wired to the rebuild shop.",
           url: PAGE_URL,
           category: "Truck repair financing",
         })}
@@ -128,9 +128,10 @@ export default function EngineRebuildFinancingPage() {
             <p className="ins-hero-sub">
               In-frame or out-of-frame, Cummins ISX or Detroit DD15, $18K
               quote or $40K quote &mdash; the Dispatched panel funds
-              rebuilds in the same day-or-two window as smaller repairs.
-              Soft pull, 500 FICO floor, wired directly to your rebuild
-              shop on the shop&rsquo;s W-9.
+              rebuilds through the same process as smaller repairs.
+              Soft pull to start, wired directly to your rebuild
+              shop on the shop&rsquo;s W-9. Timing depends on the lender
+              and your documents; approval is not guaranteed.
             </p>
             <div className="product-hero-ctas">
               <Link
@@ -206,7 +207,7 @@ export default function EngineRebuildFinancingPage() {
               Why engine rebuild underwriting takes a phone call.
             </h2>
             <p className="ins-hero-sub">
-              Emergency repair loans fund without a shop call &mdash; the
+              Smaller repair loans may not involve a shop call &mdash; the
               invoice and the operator&rsquo;s application are enough at
               that dollar figure. Engine rebuilds add one verification
               step: the lender calls the rebuild shop directly to confirm
@@ -237,10 +238,9 @@ export default function EngineRebuildFinancingPage() {
               </li>
             </ul>
             <p className="ins-hero-sub">
-              The call typically takes 15 to 30 minutes and adds an hour
-              to the funding clock. Operators applying after 11 AM local
-              should expect funds to land at the shop next morning
-              rather than same-day funding.
+              The call is one more step before the wire. Timing depends
+              on the lender, your documents, and how soon the shop can
+              take the call.
             </p>
           </div>
         </section>
@@ -258,7 +258,7 @@ export default function EngineRebuildFinancingPage() {
             <ul className="product-list">
               <li>
                 <strong>Operator:</strong> Two-truck small fleet, 4 years
-                of MC authority, 640 FICO, $52K average monthly business
+                of MC authority, fair credit, $52K average monthly business
                 deposits across both trucks.
               </li>
               <li>
@@ -269,19 +269,17 @@ export default function EngineRebuildFinancingPage() {
                 service, all bearings.
               </li>
               <li>
-                <strong>Application:</strong> Monday 9:15 AM soft
+                <strong>Application:</strong> Soft
                 pre-qualification, 3-lender match, picked the
                 trucking-specialty repair lender with a 22.5% APR quote.
               </li>
               <li>
-                <strong>Verification call:</strong> Monday 10:30 AM
-                lender to shop, 22 minute call, scope confirmed, shop
-                W-9 on file by 11:15 AM.
+                <strong>Verification call:</strong> Lender to shop,
+                scope confirmed, shop W-9 on file.
               </li>
               <li>
-                <strong>Funding:</strong> Monday 1:40 PM term sheet
-                countersigned, wire instruction released at 2:15 PM,
-                funds at shop 3:50 PM same day.
+                <strong>Funding:</strong> Term sheet countersigned,
+                then the wire to the shop once the lender signed off.
               </li>
               <li>
                 <strong>Loan terms:</strong> $35,600 principal (invoice
@@ -329,7 +327,7 @@ export default function EngineRebuildFinancingPage() {
                 <Link href="/truck-repair-loans/emergency">
                   Emergency truck repair loan
                 </Link>{" "}
-                &mdash; same-banking-day funding for breakdowns and
+                &mdash; repair financing for breakdowns and
                 roadside events.
               </li>
               <li>
@@ -343,8 +341,8 @@ export default function EngineRebuildFinancingPage() {
                 <Link href="/bad-credit-truck-repair-financing">
                   Bad credit truck repair financing
                 </Link>{" "}
-                &mdash; rebuild and repair financing for sub-580 FICO
-                operators.
+                &mdash; rebuild and repair financing for operators with
+                lower credit profiles.
               </li>
               <li>
                 <Link href="/semi-truck-financing">

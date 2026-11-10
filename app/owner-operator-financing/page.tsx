@@ -78,8 +78,8 @@ const faqs = [
     a: "Three months of business bank statements, your EIN or SSN, DOT and MC number, and a driver's license. For loans above $75K the chosen lender also asks for the most recent Schedule C or 1120 and current settlement statements from your carrier or broker. No business plan, no tax preparer letter.",
   },
   {
-    q: "How long does owner-operator financing take to fund?",
-    a: "Soft approval and lender match depend on underwriting review of submitting the application. Working capital and repair loans fund after lender sign-off after the chosen lender countersigns and the wire lands before cutoff. Equipment loans take 2 to 5 banking days because the lender has to verify the title and record the lien before funds release.",
+    q: "What affects when owner-operator financing funds?",
+    a: "Soft approval and lender match depend on underwriting review of submitting the application. Working capital and repair loans fund after the chosen lender countersigns; timing depends on the lender and your documents. Equipment loans take longer because the lender has to verify the title and record the lien before funds release.",
   },
   {
     q: "Will applying as an owner-operator hurt my credit?",
@@ -112,7 +112,7 @@ export default function OwnerOperatorFinancingPage() {
         payload={financialProduct({
           name: "Owner-operator financing",
           description:
-            "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, timing depends on the lender and your documents.",
+            "Financing built for owner-operators: working capital, equipment loans, repair loans. Soft-pull match; timing depends on the lender and your documents.",
           url: PAGE_URL,
           category: "Commercial trucking financing",
         })}
@@ -153,7 +153,7 @@ export default function OwnerOperatorFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -197,8 +197,7 @@ export default function OwnerOperatorFinancingPage() {
               </li>
               <li>
                 <strong>Invoice factoring.</strong> Cash advance against
-                outstanding invoices from your carrier or broker. Settles
-                in days, not weeks. Different cost structure from a loan —
+                outstanding invoices from your carrier or broker. Paid ahead of the broker&rsquo;s terms. Different cost structure from a loan —
                 see <Link href="/glossary/recourse-factoring">recourse factoring</Link>{" "}
                 for the typical fee and chargeback structure.
               </li>
@@ -215,10 +214,12 @@ export default function OwnerOperatorFinancingPage() {
             </h2>
             <ul className="product-list">
               <li>
-                <strong>500+ FICO panel floor.</strong> Below 580, expect
-                rates on the higher end of the observed panel range and a
-                tighter maximum loan amount; 680+ unlocks the panel&rsquo;s
-                full product set.
+                <strong>Credit.</strong> Credit requirements are set by
+                each financing partner, and approval is not guaranteed.
+                With a lower credit profile, expect rates on the higher end
+                of the observed panel range and a tighter maximum loan
+                amount; stronger credit unlocks the panel&rsquo;s full
+                product set.
               </li>
               <li>
                 <strong>6+ months of operating history.</strong> Drivers
@@ -321,7 +322,7 @@ export default function OwnerOperatorFinancingPage() {
                 <span className="product-example-value">
                   <Link href="/glossary/owner-operator">Owner-operator</Link>, 1 Class 8 tractor, 4 years under own
                   authority with an active <Link href="/glossary/mc-number">MC number</Link>,
-                  primarily Texas–Midwest van freight, 660 FICO,
+                  primarily Texas–Midwest van freight, fair credit,
                   $55K monthly revenue.
                 </span>
               </div>
@@ -362,7 +363,7 @@ export default function OwnerOperatorFinancingPage() {
             <h2 className="ins-hero-title">From application to wire.</h2>
             <ol className="product-process">
               <li>
-                <strong>Application.</strong> Two minutes inside{" "}
+                <strong>Application.</strong> Start inside{" "}
                 <Link href="/apply">/apply</Link>. Revenue, time in
                 business, DOT number, what you&rsquo;re financing.
                 Soft-pull only.
@@ -473,7 +474,7 @@ export default function OwnerOperatorFinancingPage() {
       <StickyCTABar
         text="Get matched with the right lender"
         primaryCtaHref="/qualify"
-        primaryCtaLabel="Start — 2 minutes →"
+        primaryCtaLabel="Start →"
       />
 
       <Footer />

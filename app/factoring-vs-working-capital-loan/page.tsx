@@ -86,8 +86,8 @@ const faqs = [
     a: "Mechanically yes, but it rarely saves money. The factoring fees on enough invoices to retire a $50K working capital loan are roughly the same as the remaining interest on the loan. Factoring's value comes from the off-balance-sheet treatment and the receivables-timing smoothing, not from being a cheaper alternative for an already-issued loan. Operators looking to retire a working capital loan early are usually better off making lump-sum prepayments out of normal operating cash.",
   },
   {
-    q: "How fast can I get either product?",
-    a: "Working capital on the Dispatched panel funding timing depends on the lender and your documents — soft-pull match after underwriting review, hard pull only at lender selection, then wire after lender sign-off. Factoring relationships take longer to set up initially (3 to 7 business days for the broker verifications, UCC-1 filing, and onboarding) but fund individual invoices same or next banking day once the relationship is live. For a money-today need, working capital is faster on day one; for an ongoing cashflow mechanism, factoring is faster over the life of the relationship.",
+    q: "What affects funding timing for each product?",
+    a: "Working capital on the Dispatched panel funding timing depends on the lender and your documents — soft-pull match after underwriting review, hard pull only at lender selection, then wire after lender sign-off. Factoring relationships take longer to set up initially (broker verifications, UCC-1 filing, and onboarding) but once the relationship is live, invoice funding timing depends on the factor and your invoices. For a one-off need, a working capital loan avoids the factoring setup; for an ongoing cashflow mechanism, factoring keeps working over the life of the relationship.",
   },
   {
     q: "What about equipment financing — where does it fit?",
@@ -131,7 +131,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               Both products solve cashflow gaps. The difference is the shape
               of the gap. Factoring smooths a timing problem — you have
               invoiced loads sitting on Net-30, Net-45, or Net-60 terms and
-              need the money now. A working capital loan funds a scale
+              need the money before the broker pays. A working capital loan funds a scale
               problem — you need cash for something that hasn&rsquo;t been
               invoiced yet, like a repair, an equipment down payment, or a
               buffer through a slow stretch. Most operators end up using
@@ -152,7 +152,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Takes about 2 minutes.
+              Soft-pull match.
             </p>
           </div>
         </section>
@@ -169,7 +169,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               <Link href="/factoring">Factoring</Link> is the sale of a
               specific outstanding invoice. The factor advances 85% to 97%
               of the face value of the invoice to the operator&rsquo;s
-              account the same or next banking day; the factor collects from
+              account on timing set by the factor; the factor collects from
               the broker on the original payment terms; the factor releases
               the reserve (the 3% to 15% held back) minus the factoring fee
               when the broker pays. The fee on the Dispatched panel
@@ -227,13 +227,14 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               subsequent application because legally it is not one. Second,
               the cost is a fixed fee per invoice; there is no compounding
               and no early-payoff penalty, because there is no schedule.
-              Third, the underwriting is on the broker&rsquo;s credit, not
-              yours. A factor cares whether the broker will pay; they do
-              not care much about your{" "}
-              <Link href="/glossary/fico">FICO</Link> score. This is why
-              factoring is often the only product available to operators in
+              Third, the underwriting is mainly on the broker&rsquo;s
+              credit. A factor cares most about whether the broker will pay,
+              though many still review the carrier and its{" "}
+              <Link href="/glossary/fico">FICO</Link> profile, and approval
+              is not guaranteed. This is why
+              factoring is often the product considered first by operators in
               their first six months after authority, post-bankruptcy
-              operators, and sub-580 FICO owner-operators.
+              operators, and owner-operators with lower credit profiles.
             </p>
             <p className="ins-hero-sub">
               Factoring scales with revenue. The more you haul, the more
@@ -322,11 +323,11 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                 FICO, time in business, deposit history, and DSCR.
               </li>
               <li>
-                <strong>Speed to funding.</strong> Factoring funds the same
-                or next banking day for invoices submitted before cutoff,
-                once the initial relationship is set up (initial setup runs
-                3 to 7 days). Working capital funding timing depends on the lender and your documents
-                after sign-off in many cases on the panel.
+                <strong>Funding timing.</strong> Factoring needs an
+                initial setup before the first invoice funds; after that,
+                timing depends on the factor and your invoices. Working
+                capital funding timing depends on the lender and your
+                documents.
               </li>
               <li>
                 <strong>Use of proceeds.</strong> Factoring proceeds become
@@ -374,8 +375,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
             <p className="ins-hero-sub">
               <strong>Solved with factoring.</strong> Assume the operator
               has roughly $250,000 in outstanding receivables across two
-              brokers paying on Net-45. The factor advances 92% on
-              submission — about $230,000 of cash on day one, against a
+              brokers paying on Net-45. The factor advances 92% of the receivables — about $230,000 of cash, against a
               $50,000 actual cashflow need. The fee at 3% across that
               $250,000 is $7,500, paid out of the reserve over the next 45
               days as the brokers pay. Net cost for solving the $50,000
@@ -439,10 +439,9 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                 is.
               </li>
               <li>
-                <strong>You are credit-constrained.</strong> Sub-580 FICO,
-                post-bankruptcy, less than six months of operating
-                authority — factoring underwrites the broker, not the
-                operator.
+                <strong>You are credit-constrained.</strong> A lower credit
+                profile, post-bankruptcy, less than six months of operating
+                authority — factoring underwrites mainly on the broker, though the factor still reviews the operator.
               </li>
               <li>
                 <strong>You want to keep debt off the balance sheet.</strong>{" "}
@@ -452,7 +451,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               </li>
               <li>
                 <strong>Your problem is timing, not scale.</strong>{" "}
-                I&rsquo;ll be paid eventually, I just need it now is the
+                I&rsquo;ll be paid eventually, I need it before the broker pays is the
                 factoring use case. Factoring smooths receivables. It does
                 not enlarge the business.
               </li>
@@ -480,8 +479,8 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               </li>
               <li>
                 <strong>You have strong credit and stable revenue.</strong>{" "}
-                The 14% to 34% APR range works in your favor when the FICO
-                is 680+. At that band, the working capital loan can be
+                The 14% to 34% APR range works in your favor when your
+                credit is strong. At that band, the working capital loan can be
                 cheaper than factoring for one-off needs that don&rsquo;t
                 justify factoring an entire receivables book.
               </li>
@@ -547,14 +546,14 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               with the factor&rsquo;s receivables claim. Operators with an
               active MCA usually need the MCA paid off before a factor will
               fund — or the working capital loan needs to be sized to cover
-              both the immediate cash need and the MCA payoff. The
+              both the current cash need and the MCA payoff. The
               Dispatched panel handles this routing automatically when the
               application discloses an active MCA.
             </p>
             <p className="ins-hero-sub">
               For new operators setting up the cashflow stack from scratch,
               the sequence is: establish the factoring relationship first
-              (lower bar to set up; funds in 3-7 days), use factoring to
+              (lower bar to set up), use factoring to
               smooth receivables for the first 90 to 180 days, then add a
               working capital relationship when an actual scale event
               creates the need. Reverse-sequencing — taking a working
@@ -580,7 +579,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                 <span className="product-example-label">Operator</span>
                 <span className="product-example-value">
                   Small fleet, two 2020 Cascadias, LLC, 2.5 years operating
-                  authority. 660 FICO on the managing member. Three
+                  authority. Fair credit on the managing member. Three
                   brokers, two on Net-45, one on Net-30. Monthly revenue
                   $52K average.
                 </span>
@@ -608,8 +607,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
                 <span className="product-example-label">Match output</span>
                 <span className="product-example-value">
                   Two products: (1) factoring relationship at 2.8% per
-                  invoice across all three brokers, set up over 5 business
-                  days, advancing 92% on submission going forward. (2)
+                  invoice across all three brokers, advancing 92% of each invoice going forward. (2)
                   working capital loan of $35,000 at 21% APR over 18
                   months, $2,260 monthly, funding timing varies for the
                   repair scope.
@@ -618,7 +616,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
               <div className="product-example-meta">
                 <span className="product-example-label">Outcome</span>
                 <span className="product-example-value mono">
-                  Engine work funded immediately by the working capital
+                  Engine work funded by the working capital
                   loan. Ongoing receivables timing smoothed by the
                   factoring relationship. Monthly cashflow becomes
                   predictable instead of swinging with Net-45 payment

@@ -5,7 +5,6 @@ import {
   getStateMoneyPages,
   getDeepMoneyPages,
 } from "@/lib/data/moneyPageIndex";
-import { getAllCities, LOW_COVERAGE_THRESHOLD } from "@/lib/cities";
 import { getAllTerms } from "@/lib/data/glossary";
 import { getAllPosts } from "@/lib/data/blog";
 import { getAllStateSlugs as getAllLenderStateSlugs } from "@/lib/data/lenders";
@@ -105,7 +104,7 @@ function buildMoneyEntries(today: Date): MetadataRoute.Sitemap {
     "/owner-operator-financing/no-business-history",
     "/truck-repair-loans/emergency",
     "/truck-repair-loans/engine-rebuild",
-    "/factoring/no-credit-check",
+    "/factoring/broker-credit",
     "/equipment-financing",
     "/trucking-working-capital",
     "/fuel-cards",
@@ -328,7 +327,7 @@ async function buildProgrammaticEntries(
     });
   }
 
-  // Lender directory (state + high-coverage city pages).
+  // Lender directory (state pages; city pages were folded into them).
   entries.push({
     url: `${ORIGIN}/lenders`,
     lastModified: today,
@@ -341,16 +340,6 @@ async function buildProgrammaticEntries(
       lastModified: today,
       changeFrequency: "monthly",
       priority: 0.6,
-    });
-  }
-  for (const c of getAllCities()) {
-    // Skip low-coverage cities (matching the redirect in [city]/page.tsx).
-    if (c.stateLenderPanelCount < LOW_COVERAGE_THRESHOLD) continue;
-    entries.push({
-      url: `${ORIGIN}/lenders/${c.stateSlug}/${c.citySlug}`,
-      lastModified: today,
-      changeFrequency: "monthly",
-      priority: 0.5,
     });
   }
 

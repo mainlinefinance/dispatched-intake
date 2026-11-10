@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "What does the lender look at when there are no business bank statements?",
-    a: "Four signals replace the missing business statements: (1) the operator's W-2 driving history — pay stubs, employer verification, last 12 to 24 months of income, (2) personal bank statements showing actual cash flow discipline — at least 3 months, ideally 6, (3) personal credit profile with the panel floor at 500 FICO, and (4) the truck itself as collateral with the appraised value and down payment driving loan-to-value math. A new operator with strong signals across those four can fund the same week.",
+    a: "Four signals replace the missing business statements: (1) the operator's W-2 driving history — pay stubs, employer verification, last 12 to 24 months of income, (2) personal bank statements showing actual cash flow discipline — at least 3 months, ideally 6, (3) personal credit profile, with requirements set by each financing partner, and (4) the truck itself as collateral with the appraised value and down payment driving loan-to-value math.",
   },
   {
     q: "How is this different from new LLC truck financing or first-time owner-operator financing?",
@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "Do I need to have an MC number to apply?",
-    a: "No for soft pre-qualification at /qualify — the application accepts MC pending or MC not yet filed. Yes for funding on equipment loans where the loan structure assumes the truck will be moving freight under your authority. The standard sequence: soft pre-qualification first to confirm fit and max budget, MC filing and DOT number registration in parallel, then funding when the MC becomes active. The total timeline is typically 3 to 6 weeks from soft pre-qualification to truck on the road. Operators leasing on to a carrier's authority can fund without their own MC; the carrier's authority and the operator's CDL substitute.",
+    a: "No for soft pre-qualification at /qualify — the application accepts MC pending or MC not yet filed. Yes for funding on equipment loans where the loan structure assumes the truck will be moving freight under your authority. The standard sequence: soft pre-qualification first to confirm fit and max budget, MC filing and DOT number registration in parallel, then funding when the MC becomes active. The total timeline depends on the lender, your documents, and how long the MC takes to become active. Operators leasing on to a carrier's authority can fund without their own MC; the carrier's authority and the operator's CDL substitute.",
   },
   {
     q: "What documents do I need with no business history?",
@@ -186,11 +186,12 @@ export default function NoBusinessHistoryTruckFinancingPage() {
                 see consistent monthly inflows of at least $4K to $6K.
               </li>
               <li>
-                <strong>Personal credit (FICO floor 500).</strong>{" "}
+                <strong>Personal credit.</strong>{" "}
                 Credit matters more at no-history than at seasoned
                 because the personal guarantee is doing more of the
-                underwriting work. The panel floor stays at 500 FICO,
-                but no-history operators below 580 see a tighter lender
+                underwriting work. Credit requirements are set by each
+                financing partner; no-history operators with lower credit
+                profiles see a tighter lender
                 subset and rates at the high end of the 14% to 22%
                 equipment band.
               </li>
@@ -225,15 +226,11 @@ export default function NoBusinessHistoryTruckFinancingPage() {
               </li>
               <li>
                 <strong>
-                  Invoice factoring &mdash; available immediately.
+                  Invoice factoring &mdash; open to new authorities.
                 </strong>{" "}
-                Available as soon as the operator has an active MC#
-                and one signed load. The factor underwrites the broker
-                who owes the invoice, not the operator&rsquo;s history.{" "}
-                <Link href="/factoring/no-credit-check">
-                  Factoring with no credit check on you
-                </Link>{" "}
-                is the right link for the structural detail.
+                Open to operators with an active MC# and one signed load. The factor underwrites mainly on the broker who owes the invoice and still reviews the carrier.{" "}
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers </Link>{" "} is the right link for the structural detail.
               </li>
               <li>
                 <strong>
@@ -250,8 +247,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
                 <strong>
                   Repair loans &mdash; available, narrowly.
                 </strong>{" "}
-                Some repair lenders on the panel will fund an emergency
-                repair for a no-history operator, particularly when the
+                Some repair lenders on the panel will consider a repair loan for a no-history operator, particularly when the
                 operator can show they are actively running loads under
                 a carrier&rsquo;s authority. See{" "}
                 <Link href="/truck-repair-loans/emergency">
@@ -300,7 +296,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
               </li>
               <li>
                 <strong>IRS EIN confirmation letter (CP 575).</strong>{" "}
-                Once applied for. Returned by the IRS in minutes for
+                Once applied for. Issued online by the IRS for
                 SSN-eligible operators.
               </li>
               <li>
@@ -331,8 +327,8 @@ export default function NoBusinessHistoryTruckFinancingPage() {
             <ul className="product-list">
               <li>
                 <strong>Operator:</strong> 4 years W-2 driving for a
-                regional carrier, $68K average annual income, 620
-                FICO, CDL Class A with tanker and doubles
+                regional carrier, $68K average annual income, fair
+                credit, CDL Class A with tanker and doubles
                 endorsements.
               </li>
               <li>
@@ -357,11 +353,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
                 underwrites driver-to-operator transitions.
               </li>
               <li>
-                <strong>Timeline:</strong> Day 0 soft pre-qualification,
-                Day 2 truck selected and VIN submitted, Day 5 lender
-                term sheet countersigned, Day 8 title verification,
-                Day 10 wire to dealer. MC went active Day 14. First
-                load Day 17.
+                <strong>Sequence:</strong> soft pre-qualification, truck selected and VIN submitted, lender term sheet countersigned, title verification, wire to dealer. The MC went active after that, then the first load.
               </li>
             </ul>
           </div>
@@ -420,11 +412,8 @@ export default function NoBusinessHistoryTruckFinancingPage() {
                 &mdash; for operators with an MC# under 12 months old.
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  Factoring with no credit check on you
-                </Link>{" "}
-                &mdash; the cash-flow product for any new operator
-                with an active MC# and a load on the books.
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers </Link>{" "} &mdash; a cash-flow product for a new operator with an active MC# and a load on the books.
               </li>
               <li>
                 <Link href="/methodology">Methodology</Link> &mdash;

@@ -113,8 +113,8 @@ export default function FactoringFeeCalculatorPage() {
                 factoring runs 4 – 5%, long-term contract factoring 1.5 – 2.5%.
               </li>
               <li>
-                <strong>Advance rate</strong> — the percent the factor wires to
-                you within 24 hours of invoice upload. The rest is held back
+                <strong>Advance rate</strong> — the percent the factor advances to
+                you up front after invoice upload. The rest is held back
                 until the broker actually pays.
               </li>
               <li>
@@ -163,8 +163,7 @@ export default function FactoringFeeCalculatorPage() {
               that can&rsquo;t qualify for a line yet, or for carriers running
               brokers with 60-day pay cycles, factoring is the only realistic
               tool that bridges the cash-flow gap. The right framing isn&rsquo;t
-              &ldquo;is factoring expensive&rdquo; — it&rsquo;s &ldquo;is the
-              cash-flow speedup worth the spread.&rdquo;
+              &ldquo;is factoring expensive&rdquo; — it&rsquo;s &ldquo;is getting paid ahead of the broker&rsquo;s terms worth the spread.&rdquo;
             </p>
             <p>
               The 0.5 – 1% non-recourse premium is, in this frame, cheap
@@ -187,7 +186,7 @@ export default function FactoringFeeCalculatorPage() {
               </li>
               <li>
                 <strong>No contract-specific fees.</strong> ACH fees,
-                same-day-funding upcharges, fuel-advance fees, lockbox fees,
+                expedited-funding upcharges, fuel-advance fees, lockbox fees,
                 and monthly minimums are not modeled. Read the contract.
               </li>
               <li>
@@ -197,8 +196,7 @@ export default function FactoringFeeCalculatorPage() {
               </li>
               <li>
                 <strong>Reserve release timing varies.</strong> Most factors
-                release the reserve within 1 – 2 business days of broker pay;
-                some hold for 5 – 10 days. Cash-flow modeling should add a
+                release the reserve shortly after the broker pays; others hold it longer. Cash-flow modeling should add a
                 buffer.
               </li>
               <li>
@@ -219,8 +217,8 @@ export default function FactoringFeeCalculatorPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  Factoring without a credit check →
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

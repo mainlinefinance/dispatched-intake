@@ -49,8 +49,8 @@ const faqs = [
     a: "Love's Financial acquired TBS in December 2025, integrating it into Love's broader truck-stop network (~660 locations). Existing TBS customers continue without disruption, but operators considering TBS should monitor 2026 for changes in pricing, contract terms, and product bundling as the integration completes. Apex remains independent.",
   },
   {
-    q: "Which has faster funding?",
-    a: "Apex's blynk® system funds in minutes, 24/7/365. TBS funds within 24 hours typical. For weekend or holiday emergencies, Apex wins. For day-to-day funding, both are competitive; the difference matters most for cash-tight first-year operators.",
+    q: "How do their payment options differ?",
+    a: "Apex's blynk® is a payment rail that runs around the clock, including weekends and holidays. TBS pays on a standard business-day schedule. Timing on any invoice depends on the factor and your paperwork.",
   },
   {
     q: "I have a brand-new MC#. Which should I use?",
@@ -92,7 +92,7 @@ export default function ApexVsTbsFactoringPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               Apex Capital vs TBS Factoring — which trucking factor for
@@ -102,7 +102,7 @@ export default function ApexVsTbsFactoringPage() {
               TBS bundles free MC#/DOT#/BOC-3 filings with factoring —
               built for brand-new authority operators. Apex is the
               established owner-operator factor with premium service
-              and instant payment tech. They&rsquo;re aimed at very
+              and an around-the-clock payment rail. They&rsquo;re aimed at very
               different operators. Here&rsquo;s how to pick.
             </p>
             <div className="product-hero-ctas">
@@ -114,7 +114,7 @@ export default function ApexVsTbsFactoringPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No spam from both at once.
+              Soft-pull match. · No spam from both at once.
             </p>
           </div>
         </section>
@@ -135,7 +135,7 @@ export default function ApexVsTbsFactoringPage() {
               Financial, plugs into Love&rsquo;s ~660-stop network.
               Apex Capital, founded in 1995, is the established
               owner-op factor: 30 years of focused freight factoring,
-              ~400 employees, blynk&reg; instant-funding 24/7/365, a
+              ~400 employees, the around-the-clock blynk&reg; payment rail, a
               ~51&cent;/gal fuel discount, 700+ 5-star reviews, and
               the BBB Torch Award. The headline question is whether
               the TBS bundle is worth the rate premium for a
@@ -145,7 +145,7 @@ export default function ApexVsTbsFactoringPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              does it in two minutes.
+              does it.
             </p>
 
             <table className="ins-carrier-table">
@@ -226,10 +226,10 @@ export default function ApexVsTbsFactoringPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
-                  <td data-label="Apex Capital">Minutes (blynk®)</td>
-                  <td data-label="TBS Factoring">24h typical</td>
+                  <td data-label="Apex Capital">Around-the-clock rail (blynk®)</td>
+                  <td data-label="TBS Factoring">Business-day funding</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -273,8 +273,7 @@ export default function ApexVsTbsFactoringPage() {
               U.S.-based, all specialized in trucking. The company
               was built around owner-operators &mdash; the segment
               most factors treat as an afterthought &mdash; and the
-              product reflects that focus: fuel cards, instant
-              payouts via blynk&reg;, dispatch software, startup
+              product reflects that focus: fuel cards, around-the-clock payouts via blynk&reg;, dispatch software, startup
               programs for new authorities. Apex doesn&rsquo;t
               cross-sell ABL or healthcare receivables. They factor
               freight invoices. The concentration is the point. Apex
@@ -363,10 +362,7 @@ export default function ApexVsTbsFactoringPage() {
               release one from a prior factor. If you&rsquo;re still
               in the &ldquo;haven&rsquo;t filed anything yet&rdquo;
               phase, Apex isn&rsquo;t structured to help you get
-              there. Apex&rsquo;s startup program accelerates
-              underwriting for new authorities &mdash; a new MC#
-              isn&rsquo;t a decline reason &mdash; but it
-              doesn&rsquo;t replace the filing services. For what
+              there. Apex&rsquo;s startup program structures underwriting for new authorities &mdash; a new MC# is considered, though approval is not guaranteed &mdash; but it doesn&rsquo;t replace the filing services. For what
               new authorities should prepare before approaching any
               factor, see{" "}
               <Link href="/new-authority-truck-financing">
@@ -488,48 +484,26 @@ export default function ApexVsTbsFactoringPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              How fast does the cash hit?
+              How does each one pay out?
             </h2>
 
-            <h3>Apex blynk&reg; instant — minutes, 24/7/365.</h3>
+            <h3>Apex blynk&reg; — a payment rail that runs around the clock.</h3>
             <p className="ins-hero-sub">
-              Apex&rsquo;s blynk&reg; funding system is the
-              differentiated piece of the product set. Verified
-              invoices submitted through the app fund in minutes,
-              around the clock, including weekends and holidays. For
-              a driver who delivers Friday at 6pm and needs fuel money
-              before a Saturday morning departure, this is the product
-              feature that ends the conversation. No business-hours
-              dependency, no ACH cutoff, no &ldquo;next banking
-              day.&rdquo; The infrastructure was built in-house and
+              Apex&rsquo;s blynk&reg; is a payment option that operates outside banking hours. Verified
+              invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was built in-house and
               has been running at scale for several years.
             </p>
 
-            <h3>TBS 24-hour typical.</h3>
+            <h3>TBS — business-day funding.</h3>
             <p className="ins-hero-sub">
-              TBS funds verified invoices within roughly 24 hours of
-              submission during business days. That&rsquo;s the
-              baseline freight-factoring cadence &mdash; competitive
-              against the broader market &mdash; but a tier behind
-              blynk&reg;. Submissions outside business hours wait for
-              the next morning; weekends slide to Monday. For
-              day-to-day cadence with predictable broker payment
-              cycles, 24-hour funding is fine. For weekend
-              emergencies and cash-tight first-year operators, the
-              delta matters.
+              TBS pays verified invoices on a standard business-day schedule. Submissions outside business hours are processed when the business day resumes, and weekend submissions wait until business resumes. With predictable broker payment cycles that covers the need. It does not operate on weekends the way blynk&reg; does.
             </p>
 
-            <h3>Winner: Apex on speed.</h3>
+            <h3>Difference: when each payment option operates.</h3>
             <p className="ins-hero-sub">
-              On funding speed alone Apex wins clearly. The question
-              is how often weekend funding actually matters in your
-              operation. For team drivers, dedicated lanes, and
-              high-mileage OTR, blynk&reg; pays for itself in fuel
-              flexibility alone. For regional operators who deliver
-              Monday&ndash;Friday and are home for the weekend, the
-              speed advantage is real but less load-bearing.
+              Apex offers blynk&reg;, a payment option that operates outside banking hours; TBS pays on a business-day schedule. Whether that difference matters depends on when your loads deliver. Timing on any invoice depends on the factor and your paperwork.
             </p>
           </div>
         </section>
@@ -656,8 +630,7 @@ export default function ApexVsTbsFactoringPage() {
             <p className="ins-hero-sub">
               TBS&rsquo;s public reviews cluster in the mixed band:
               positive on the bookkeeping and authority-filing
-              experience, more critical on factoring service speed
-              and contract clarity. Common complaints are slow
+              experience, more critical on factoring service and contract clarity. Common complaints are slow
               customer-service response, billing disputes around
               membership-tier changes, and friction when downgrading
               or canceling. The Love&rsquo;s Financial acquisition
@@ -679,29 +652,25 @@ export default function ApexVsTbsFactoringPage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Bad credit and new authority</span>
+            <span className="ins-eyebrow">Lower credit profiles and new authority</span>
             <h2 className="ins-hero-title">
-              Bad credit and new authority acceptance.
+              How each handles lower credit profiles and new authority.
             </h2>
 
-            <h3>Apex — yes, with the right structure; dedicated startup program.</h3>
+            <h3>Apex — a dedicated startup program.</h3>
             <p className="ins-hero-sub">
               Apex runs a dedicated startup program for new authorities
-              with structured pre-approvals: an operator can be
-              pre-qualified before MC activation and start factoring
-              from invoice one. Sub-580 FICO is approvable; prior
+              that can begin before MC activation. Lower credit profiles are considered; prior
               bankruptcy isn&rsquo;t an automatic decline; minimum
               monthly volume is set low enough that single-truck
               owner-ops fit. The catch is that Apex still expects the
               operator to arrive with the authority filed and
-              insurance bound &mdash; the program accelerates
-              underwriting, not the regulatory paperwork.
+              insurance bound &mdash; the program structures underwriting, not the regulatory paperwork.
             </p>
 
-            <h3>TBS — yes, and the free authority filing is the strongest new-authority value-add in the market.</h3>
+            <h3>TBS — free authority filing is the strongest new-authority value-add in the market.</h3>
             <p className="ins-hero-sub">
-              TBS approves new authorities and bad-credit profiles
-              routinely. The structural advantage is what comes
+              TBS works with new authorities and considers lower credit profiles; approval is not guaranteed. The structural advantage is what comes
               before the underwriting decision: TBS files the
               authority for the operator, processes the BOC-3, and
               walks them through IFTA. By the time the operator
@@ -723,7 +692,7 @@ export default function ApexVsTbsFactoringPage() {
               MC# at the moment they apply. No MC# yet &mdash; TBS,
               decisively. Active MC#, especially with 6+ months of
               operating history &mdash; Apex&rsquo;s underwriting and
-              pricing both improve faster, and the rate savings
+              pricing both improve, and the rate savings
               compound over the contract term.
             </p>
           </div>
@@ -747,10 +716,8 @@ export default function ApexVsTbsFactoringPage() {
                 like a partner, Apex is the clearer track record.
               </li>
               <li>
-                <strong>Operators who need weekend or holiday funding.</strong>{" "}
-                blynk&reg; pays in minutes, 24/7/365. For team drivers,
-                dedicated lanes, and high-mileage OTR profiles, the
-                instant-funding capability ends the conversation.
+                <strong>Operators who need payments on weekends or holidays.</strong>{" "}
+                blynk&reg; operates outside banking hours, including weekends and holidays.
               </li>
               <li>
                 <strong>High-mileage operators with broad fueling networks.</strong>{" "}
@@ -805,11 +772,9 @@ export default function ApexVsTbsFactoringPage() {
                 one.
               </li>
               <li>
-                <strong>Operators who don&rsquo;t need weekend funding.</strong>{" "}
+                <strong>Operators who don&rsquo;t need weekend payments.</strong>{" "}
                 If your delivery cadence is Monday&ndash;Friday with
-                home weekends, 24-hour funding is fine and the rate
-                premium for blynk&reg;-class speed isn&rsquo;t
-                justified.
+                home weekends, business-day funding covers the need.
               </li>
             </ul>
           </div>
@@ -877,9 +842,7 @@ export default function ApexVsTbsFactoringPage() {
             </h2>
             <p className="ins-hero-sub">
               Apex and TBS are both legitimate factors with
-              legitimate use cases. The question isn&rsquo;t whether
-              either will fund you &mdash; in most cases, both will.
-              The question is which fits the specific shape of your
+              legitimate use cases. Approval is not guaranteed with either. The question is which fits the specific shape of your
               operation right now: whether you have an active MC#,
               whether you&rsquo;re in your first year or your fifth,
               how much you spend on outsourced bookkeeping today,
@@ -895,8 +858,7 @@ export default function ApexVsTbsFactoringPage() {
               exists. One application, profile-aware match, no
               double-pull on your credit. If you&rsquo;d rather check
               fit before going further,{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30
-              seconds and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

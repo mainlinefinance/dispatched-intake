@@ -56,7 +56,7 @@ Each spoke should:
 - Use `/owner-operator-financing/new-llc` as the structural template.
 - Open with the substitute-signal framing — what the panel underwrites when the obvious signal is absent.
 - Include the document checklist that's specific to the scenario (e.g., MC pending vs MC active changes what paperwork the lender needs).
-- Cross-link to `/factoring/no-credit-check` since that's the working-capital substitute for every startup operator.
+- Cross-link to `/factoring/broker-credit` since that's the working-capital substitute for every startup operator.
 
 ---
 
@@ -78,7 +78,7 @@ Each spoke should:
 - Lead with the panel-timeline (when each product reopens). This is the single most useful framing for credit-event landing pages.
 - Distinguish "active event" from "post-event recovery" — different lender mix, different terms.
 - NEVER use the words "guaranteed", "guaranteed approval", "100% approval" — UDAAP / CFPB risk on lead-gen pages.
-- Cross-link to `/factoring/no-credit-check` — it's the immediate-availability product for every credit-event operator with a load on the books.
+- Cross-link to `/factoring/broker-credit` — it's the immediate-availability product for every credit-event operator with a load on the books.
 
 ---
 

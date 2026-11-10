@@ -50,8 +50,8 @@ describe("content dates", () => {
     expect(contentDatesForPath("/factoring")).toEqual(
       dates["app/factoring/page.tsx"],
     );
-    expect(contentDatesForPath("/lenders/texas/houston")).toEqual(
-      dates["app/lenders/[state]/[city]/page.tsx"],
+    expect(contentDatesForPath("/lenders/texas")).toEqual(
+      dates["app/lenders/[state]/page.tsx"],
     );
     // A static route wins over a dynamic sibling.
     expect(contentDatesForPath("/insurance/tools")).toEqual(
@@ -86,7 +86,9 @@ describe("legacy /trucking-loans family", () => {
     expect(PAGES.filter((f) => f.startsWith("app/trucking-loans"))).toEqual([]);
     const config = readFileSync(join(ROOT, "next.config.ts"), "utf8");
     expect(config).toContain('source: "/trucking-loans/:state/:city"');
-    expect(config).toContain('destination: "/lenders/:state/:city"');
+    expect(config).toContain('destination: "/lenders/:state"');
+    // City pages were folded into their state page.
+    expect(config).toContain('source: "/lenders/:state/:city"');
   });
 });
 

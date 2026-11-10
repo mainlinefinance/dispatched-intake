@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: "Why do MCA funders target trucking?",
-    a: "Three reasons. First, owner-operators run uneven cashflow against fixed expenses (fuel, settlements, insurance, repair), which creates an irresistible 'just need it this week' frame that MCA sales scripts exploit. Second, trucking has visible revenue — broker payments are documented and predictable, which lets MCA funders model future receipts confidently. Third, the industry has a high concentration of credit-constrained operators (new authorities, post-bankruptcy operators, sub-580 FICO) who get declined by conventional lenders and are funneled toward MCAs as a 'next-best' option. Factoring is the actual next-best option for most of them.",
+    a: "Three reasons. First, owner-operators run uneven cashflow against fixed expenses (fuel, settlements, insurance, repair), which creates an irresistible 'just need it this week' frame that MCA sales scripts exploit. Second, trucking has visible revenue — broker payments are documented and predictable, which lets MCA funders model future receipts confidently. Third, the industry has a high concentration of credit-constrained operators (new authorities, post-bankruptcy operators, lower credit profiles) who get declined by conventional lenders and are funneled toward MCAs as a 'next-best' option. Factoring is the actual next-best option for most of them.",
   },
   {
     q: "Can I use factoring to pay off an MCA?",
@@ -110,8 +110,7 @@ export default function FactoringVsMcaPage() {
             </h1>
             <EditorialByline updated={today} format="iso" />
             <p className="ins-hero-sub">
-              Invoice factoring and merchant cash advances both put cash
-              in your account in a few days, but they are not the same
+              Invoice factoring and merchant cash advances both put cash in your account, but they are not the same
               product class and the real cost difference is enormous.
               Factoring sells specific receivables for a flat fee in the
               1%–4% range. An MCA advances cash against future revenue at
@@ -130,7 +129,7 @@ export default function FactoringVsMcaPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Takes about 2 minutes.
+              Soft-pull match.
             </p>
           </div>
         </section>
@@ -144,15 +143,15 @@ export default function FactoringVsMcaPage() {
             <p className="ins-hero-sub">
               <Link href="/factoring">Invoice factoring</Link>{" "}
               is the sale of a specific outstanding invoice at a discount.
-              You get 85% to 97% of the invoice face value the same or
-              next banking day; the factor collects from your broker on
+              You get 85% to 97% of the invoice face value up front, on
+              timing set by the factor; the factor collects from your broker on
               the original payment terms; you receive the reserve minus
               the factoring fee when the broker pays. There is no APR
               because it is not a loan — it is a receivables transaction.
             </p>
             <p className="ins-hero-sub">
               A merchant cash advance is the sale of a percentage of
-              future revenue at a discount. You receive a lump sum today
+              future revenue at a discount. You receive a lump sum up front
               and repay it by handing over a fixed percentage of every
               future deposit (or a fixed daily or weekly ACH debit) until
               you have delivered the full agreed payback amount. The
@@ -168,7 +167,7 @@ export default function FactoringVsMcaPage() {
               face value. The same need solved by an MCA at a 1.35 factor
               rate costs $17,500 of cash repayment over 6 to 9 months.
               That is not a typo. The two products are routinely framed
-              as equivalent by sales reps because both fund quickly with
+              as equivalent by sales reps because both rely on
               minimal credit underwriting — but the cost gap is roughly
               an order of magnitude.
             </p>
@@ -196,13 +195,10 @@ export default function FactoringVsMcaPage() {
               loan on any subsequent application because legally it is
               not one. Second, the cost is a fixed fee per invoice; there
               is no compounding and no early-payoff penalty, because
-              there is no schedule. Third, the underwriting is on the
-              broker&rsquo;s credit, not yours. A factor cares whether the
-              broker will pay; they do not care much about your{" "}
-              <Link href="/glossary/fico">FICO</Link> score. This is why
-              factoring is often the only product available to
+              there is no schedule. Third, the underwriting is mainly on the broker&rsquo;s credit. A factor cares most about whether the broker will pay, though many still review the carrier and its{" "} <Link href="/glossary/fico">FICO</Link> profile. This is why factoring is often a product open to
               operators in their first six months after authority, post-
-              bankruptcy operators, and sub-580 FICO owner-operators.
+              bankruptcy operators, and owner-operators with lower credit
+              profiles.
             </p>
             <p className="ins-hero-sub">
               Factoring scales with revenue. The more you haul, the more
@@ -225,7 +221,7 @@ export default function FactoringVsMcaPage() {
             <p className="ins-hero-sub">
               A merchant cash advance is a contract in which the funder
               buys a percentage of your future revenue at a discount, in
-              exchange for a lump sum delivered today. The two key
+              exchange for a lump sum paid up front. The two key
               numbers in any MCA are the <em>factor rate</em> and the{" "}
               <em>holdback</em>. The factor rate (typically 1.20 to 1.50)
               multiplies against the advance amount to determine the
@@ -241,7 +237,7 @@ export default function FactoringVsMcaPage() {
               because trucker deposits are lumpy and a percentage model
               would be unpredictable. A $67,500 payback at $556 per
               business day works out to roughly 121 business days, or
-              just under six months. That speed is exactly what makes
+              just under six months. That short payback is exactly what makes
               the effective APR so brutal: the funder collects their
               fixed dollar return on an aggressive timeline, which means
               the borrowed money is outstanding for a short window, which
@@ -287,11 +283,10 @@ export default function FactoringVsMcaPage() {
                 deposits — typically 3 to 6 months of bank statements.
               </li>
               <li>
-                <strong>Speed to funding.</strong> Factoring funds the
-                same banking day for invoices submitted before cutoff
-                once the relationship is set up; initial setup runs 3–7
-                days. MCA funds in 24–72 hours including setup, which is
-                why it appeals when cashflow is already in crisis.
+                <strong>Funding timing.</strong> Factoring needs an
+                initial setup (broker verification, onboarding) before
+                the first invoice funds; after that, timing depends on
+                the factor and your invoices. MCAs are marketed to operators whose cashflow is already in crisis.
               </li>
               <li>
                 <strong>Repayment.</strong> Factoring &ldquo;repays&rdquo; itself —
@@ -354,11 +349,10 @@ export default function FactoringVsMcaPage() {
               Now run the same $50,000 cash need through factoring.
               Assume the operator has roughly $250,000 in outstanding
               receivables across two brokers paying on net-45. A factor
-              advances 92% on submission — about $230,000 of cash on day
-              one, against a $50,000 actual cashflow need. The fee at
+              advances 92% of the receivables — about $230,000 of cash, against a $50,000 actual cashflow need. The fee at
               3% across that $250,000 is $7,500, paid out of the reserve
               over the next 45 days as the brokers pay. The operator
-              gets more cash, faster, at less than half the dollar cost
+              gets more cash at less than half the dollar cost
               of the MCA, with no daily ACH debit and no second-position
               filing against receivables. That is the structural reason
               factoring should be tried first whenever the operator has
@@ -386,8 +380,8 @@ export default function FactoringVsMcaPage() {
                 the financing benefit of factoring relative to the fee.
               </li>
               <li>
-                <strong>You are credit-constrained.</strong> Sub-580
-                FICO, post-bankruptcy, less than six months of operating
+                <strong>You are credit-constrained.</strong> A lower
+                credit profile, post-bankruptcy, less than six months of operating
                 authority, or a recent <Link href="/glossary/ucc-1">UCC-1</Link>{" "}
                 filing against the business — these typically lock you
                 out of conventional working capital and equipment loans.
@@ -408,7 +402,7 @@ export default function FactoringVsMcaPage() {
                 <strong>Your problem is timing, not scale.</strong>{" "}
                 Factoring smooths receivables. It does not enlarge the
                 business. If your cashflow problem is &ldquo;I will be paid
-                eventually, I just need it now,&rdquo; factoring is the
+                eventually, I need it before the broker pays,&rdquo; factoring is the
                 surgical fit.
               </li>
             </ul>
@@ -439,7 +433,7 @@ export default function FactoringVsMcaPage() {
               <li>
                 <Link href="/truck-repair-loans">Truck repair financing</Link>{" "}
                 — direct-to-shop financing for repair invoices, typically
-                with same-day funding and 6–36 month amortization.
+                with 6–36 month amortization.
                 Suitable when the truck is off the road and the operator
                 cannot front the repair from cash. Direct-to-shop
                 structure means the operator never touches the cash,

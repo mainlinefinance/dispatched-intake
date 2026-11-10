@@ -30,8 +30,7 @@ export default async function InsuranceThanksPage({
             <p className="ins-hero-sub">
               Your operation profile is on its way to{" "}
               <strong>{BROKER_PARTNER_NAME}</strong>, our named producer
-              partner. Expect contact within 1 business hour during weekday
-              business hours, or first thing the next business day otherwise.
+              partner. Expect contact during weekday business hours.
             </p>
             {id ? (
               <p className="ins-compliance-note">

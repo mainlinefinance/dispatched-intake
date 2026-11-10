@@ -8,7 +8,7 @@
   {
     "url": "/trucking",
     "title": "Trucking capital — match with trucking-friendly lenders",
-    "description": "Working capital, equipment financing, repair loans, and factoring for owner-operators and small fleets. Match in minutes.",
+    "description": "Working capital, equipment financing, repair loans, and factoring for owner-operators and small fleets. Soft pull to start.",
     "type": "vertical"
   },
   {
@@ -38,7 +38,7 @@
   {
     "url": "/bad-credit-truck-financing",
     "title": "Bad credit truck financing",
-    "description": "Truck financing options for sub-580 FICO borrowers and recent bankruptcies. Honest about trade-offs in rate and down payment.",
+    "description": "Truck financing options for borrowers with lower credit profiles and recent bankruptcies. Honest about trade-offs in rate and down payment.",
     "type": "vertical"
   },
   {
@@ -72,9 +72,9 @@
     "type": "vertical"
   },
   {
-    "url": "/factoring/no-credit-check",
-    "title": "No credit check factoring for truckers",
-    "description": "Factoring options with no personal credit pull. The factor underwrites the broker, not the trucker — useful for thin-file and bad-credit operators.",
+    "url": "/factoring/broker-credit",
+    "title": "Broker-credit factoring for truckers",
+    "description": "Factoring that underwrites mainly on the brokers who owe your invoices. Factors still review the carrier; approval is not guaranteed.",
     "type": "vertical"
   },
   {
@@ -103,7 +103,7 @@
   },
   {
     "url": "/qualify",
-    "title": "Qualify in 3 minutes — see your funding options",
+    "title": "Check your funding fit — see your options",
     "description": "Soft pull, no credit impact. Match with the lender panel that fits your authority age, credit profile, and capital need.",
     "type": "vertical"
   },
@@ -286,7 +286,7 @@
   {
     "url": "/glossary/cdl-class-a",
     "title": "CDL Class A (CDL-A)",
-    "description": "Commercial Driver's License Class A — required for combination vehicles over 26,001 lbs GCWR with a towed unit over 10,000 lbs; the standard CDL for OTR trucking.",
+    "description": "Commercial Driver's License Class A: required for combination vehicles over 26,001 lbs GCWR with a towed unit over 10,000 lbs. The standard CDL for OTR.",
     "type": "glossary",
     "category": "Operating Authority & Compliance"
   },
@@ -517,7 +517,7 @@
   {
     "url": "/glossary/mca",
     "title": "Merchant Cash Advance (MCA)",
-    "description": "Lump-sum cash advance against future business revenue, typically with daily ACH deductions; high effective APR but easier qualification than term loans.",
+    "description": "Lump-sum cash advance against future business revenue, typically with daily ACH deductions; high effective APR, underwritten mainly on deposit history.",
     "type": "glossary",
     "category": "Trucking Finance"
   },
@@ -580,7 +580,7 @@
   {
     "url": "/glossary/fico",
     "title": "FICO",
-    "description": "Fair Isaac Corporation consumer credit score (300–850); the dominant US credit metric. In trucking finance, FICO is a secondary underwriting signal — revenue, debt-service coverage, and equipment value lead.",
+    "description": "Fair Isaac Corporation consumer credit score; the dominant US credit metric. The scale runs from 300 to 850. In trucking finance, FICO is a secondary underwriting signal — revenue, debt-service coverage, and equipment value lead.",
     "type": "glossary",
     "category": "Trucking Finance"
   },
@@ -1119,7 +1119,7 @@
   {
     "url": "/glossary/carrier-deduction",
     "title": "Carrier Deduction",
-    "description": "Any deduction taken by a motor carrier from a lease-on owner-operator's settlement; includes fuel, escrow, insurance, dispatch, communications, and miscellaneous.",
+    "description": "Any deduction a motor carrier takes from a lease-on owner-operator's settlement: fuel, escrow, insurance, dispatch, communications, and miscellaneous.",
     "type": "glossary",
     "category": "Driver Life & Work"
   },
@@ -1132,14 +1132,14 @@
   {
     "url": "/blog/true-cost-per-mile",
     "title": "How to calculate true cost per mile for your trucking operation",
-    "description": "Stop guessing. Calculate your real cost per mile in 8 steps, including fuel, fixed costs, factoring, depreciation, and deadhead. Plus the diagnostic number that tells you if you're profitable.",
+    "description": "Calculate your real cost per mile in 8 steps: fuel, fixed costs, factoring, depreciation, and deadhead. Plus the one number that shows if you're profitable.",
     "type": "blog",
     "category": "Owner-Operator Economics"
   },
   {
     "url": "/blog/new-owner-operator-insurance-mistakes",
     "title": "What new owner-operators get wrong about commercial trucking insurance",
-    "description": "Insurance is 4-8% of revenue for owner-operators — and most new operators get it wrong. Coverage gaps, broker assumptions, premium financing traps, and CSA score impact.",
+    "description": "Insurance runs 4-8% of revenue for owner-operators, and most new operators get it wrong: coverage gaps, broker assumptions, premium financing traps, CSA impact.",
     "type": "blog",
     "category": "Insurance & Risk"
   },
@@ -1153,35 +1153,35 @@
   {
     "url": "/blog/picking-first-factoring-company",
     "title": "Picking your first factoring company: a decision framework",
-    "description": "Stop comparing rates alone. The 6-factor framework for picking the right factor: contract terms, advance rate, fuel program, recourse structure, customer service tier, and growth fit.",
+    "description": "A 6-factor framework for picking your first factor: contract terms, advance rate, fuel program, recourse structure, customer service tier, and growth fit.",
     "type": "blog",
     "category": "Factoring & Cash Flow"
   },
   {
     "url": "/blog/reading-broker-rate-confirmation",
     "title": "How to read a freight broker rate confirmation",
-    "description": "Rate cons hide details that matter. Detention windows, fuel surcharges, accessorial pay, lumper reimbursement, and the clauses that decide if a load is profitable.",
+    "description": "What rate cons hide: detention windows, fuel surcharges, accessorial pay, lumper reimbursement, and the clauses that decide whether a load is profitable.",
     "type": "blog",
     "category": "Operations & Compliance"
   },
   {
     "url": "/blog/mc-number-deactivation-recovery",
     "title": "What to do when your MC# is deactivated",
-    "description": "MC# deactivation stops your revenue overnight. The five causes, the recovery process, and how to avoid it. Plus how factoring and lending react to the deactivation event.",
+    "description": "MC# deactivation stops your revenue cold. The five causes, the recovery process, how to avoid it, and how factors and lenders react when it happens.",
     "type": "blog",
     "category": "Operations & Compliance"
   },
   {
     "url": "/blog/hidden-cost-of-low-rate-freight",
     "title": "The hidden costs of accepting low-rate spot freight",
-    "description": "Accepting a $1.80/mile load to fill the truck looks like revenue. The math says it's a loss. Operating costs, deadhead, opportunity cost, and the rate floor every operator should know.",
+    "description": "A $1.80/mile load that fills the truck looks like revenue; the math says it's a loss. Operating costs, deadhead, opportunity cost, and your real rate floor.",
     "type": "blog",
     "category": "Owner-Operator Economics"
   },
   {
     "url": "/blog/building-business-credit-owner-operator",
     "title": "Building business credit as an owner-operator",
-    "description": "Business credit takes 18-24 months to build properly. The 6-step path from MC# activation to a real Paydex score and the SBA loan that unlocks. Practical playbook.",
+    "description": "Business credit takes 18-24 months to build properly. The 6-step path from MC# activation to a real Paydex score and the SBA loan that it unlocks.",
     "type": "blog",
     "category": "Equipment & Financing"
   },
@@ -1195,14 +1195,14 @@
   {
     "url": "/blog/factoring-vs-working-capital",
     "title": "Factoring vs working capital: when to use which",
-    "description": "Factoring accelerates broker payments. Working capital loans bridge cash flow. Which one to use, when to use both, and when to use neither.",
+    "description": "Factoring advances broker payments. Working capital loans bridge cash flow. Which one to use, when to use both, and when to use neither.",
     "type": "blog",
     "category": "Factoring & Cash Flow"
   },
   {
     "url": "/blog/truck-down-payment-strategy",
     "title": "How much down payment do you actually need on a truck?",
-    "description": "10%, 15%, 20% down? Zero down? The right down payment depends on credit, revenue history, and truck age. Plus the trade-off between lower monthly and total interest cost.",
+    "description": "How much to put down on a truck: how credit, revenue history, and truck age set the number, and the trade-off between monthly payment and total interest.",
     "type": "blog",
     "category": "Equipment & Financing"
   },
@@ -1230,28 +1230,28 @@
   {
     "url": "/blog/motor-truck-cargo-insurance-explained",
     "title": "Motor truck cargo insurance: what you actually need",
-    "description": "$100K minimum is the default but rarely the right answer. Coverage limits by freight type, what's excluded, claim filing mechanics, and reefer breakdown gotchas.",
+    "description": "A $100K cargo limit is the default but rarely the right answer. Limits by freight type, what's excluded, how claims are filed, and reefer breakdown gotchas.",
     "type": "blog",
     "category": "Insurance & Risk"
   },
   {
     "url": "/blog/freight-broker-vetting",
     "title": "How to vet a freight broker before booking the load",
-    "description": "Most broker disputes start with brokers you shouldn't have booked with. The pre-booking checks, MC# verification, factoring-company broker credit, and red flags.",
+    "description": "Most broker disputes start with brokers you shouldn't have booked. The pre-booking checks: MC# verification, your factor's broker credit, and the red flags.",
     "type": "blog",
     "category": "Operations & Compliance"
   },
   {
     "url": "/blog/insurance-claim-filing-for-truckers",
     "title": "Insurance claim filing for owner-operators: a step-by-step playbook",
-    "description": "When a claim happens, the next 48 hours matter most. The 7-step filing process, what to document, when to involve an attorney, and the mistakes that hurt your premium.",
+    "description": "When a claim happens, the next 48 hours matter most. The 7-step filing process, what to document, when to call an attorney, and the mistakes that cost you.",
     "type": "blog",
     "category": "Operations & Compliance"
   },
   {
     "url": "/blog/factoring-contract-walk-through",
     "title": "Factoring contract walk-through: what every line actually means",
-    "description": "Most factoring contracts use the same boilerplate. The 12 sections that matter, the clauses that trap operators, and the negotiation language that gets you better terms.",
+    "description": "Most factoring contracts share the same boilerplate. The 12 sections that matter, the clauses that trap operators, and the language that wins better terms.",
     "type": "blog",
     "category": "Operations & Compliance"
   },
@@ -1272,21 +1272,21 @@
   {
     "url": "/blog/new-authority-year-1-compliance-calendar",
     "title": "The new-authority Year 1 compliance calendar",
-    "description": "Day 1, Month 1, Month 6, Year 1. The compliance milestones every new MC# operator must hit. Filing deadlines, renewals, and the things that trip up first-year carriers.",
+    "description": "Day 1, Month 1, Month 6, Year 1: the compliance milestones every new MC# operator must hit, with filing deadlines, renewals, and common first-year mistakes.",
     "type": "blog",
     "category": "Operations & Compliance"
   },
   {
     "url": "/blog/equipment-buyback-math",
     "title": "Equipment buyback offers: when to take them and when to walk",
-    "description": "Dealer or carrier buyback offers feel like an easy exit. The math reveals when they're fair and when they're undercutting your equity. The framework, plus 3 worked examples.",
+    "description": "Dealer and carrier buyback offers feel like an easy exit. The math that shows when an offer is fair and when it undercuts your equity, with 3 worked examples.",
     "type": "blog",
     "category": "Equipment & Financing"
   },
   {
     "url": "/blog/working-capital-vs-factoring-vs-mca-decision-matrix",
     "title": "Working capital vs factoring vs MCA: the decision matrix",
-    "description": "Three cash-flow tools, three completely different products. The decision matrix that tells you which to use when, and the trap of using all three simultaneously.",
+    "description": "Three cash-flow tools, three very different products. A decision matrix for which to use when, and the trap of running all three at the same time.",
     "type": "blog",
     "category": "Factoring & Cash Flow"
   },
@@ -1300,84 +1300,84 @@
   {
     "url": "/blog/sba-loan-for-owner-operators",
     "title": "SBA loans for owner-operators: eligibility, timeline, and the trade-off",
-    "description": "SBA loans offer the lowest commercial rates available — but the 60-90 day timeline and paperwork burden disqualify them for emergency needs. The eligibility, the math, the path.",
+    "description": "SBA loans carry the lowest commercial rates, but the 60-90 day timeline and paperwork rule them out for emergencies. The eligibility, the math, and the path.",
     "type": "blog",
     "category": "Equipment & Financing"
   },
   {
     "url": "/blog/reading-your-settlement-statement",
     "title": "Reading your settlement statement: what every line means",
-    "description": "Your weekly settlement statement has 30+ line items. The categories that matter, the deductions that get miscoded, and the math that reveals whether your carrier is treating you fairly.",
+    "description": "Your weekly settlement has 30+ line items. Which categories matter, which deductions get miscoded, and the math that shows if your carrier is paying you fairly.",
     "type": "blog",
     "category": "Factoring & Cash Flow"
   },
   {
     "url": "/blog/nuclear-verdict-defense",
     "title": "Nuclear verdict defense: what your dash cam needs to capture",
-    "description": "Trucking nuclear verdicts (over $10M) grew 800%+ since 2014. The dash cam evidence that defends carriers, the 7 angles to capture, and the storage rules that protect the evidence.",
+    "description": "Trucking nuclear verdicts (over $10M) grew 800%+ since 2014. The dash cam evidence that defends carriers, the 7 angles to capture, and how to store footage.",
     "type": "blog",
     "category": "Insurance & Risk"
   },
   {
     "url": "/blog/cargo-claim-filing-playbook",
     "title": "Cargo claim filing: the playbook that protects your factoring relationship",
-    "description": "Cargo claims hit your motor truck cargo policy AND your factoring relationship. The 6-step filing process, settlement math, and how to avoid the chargeback trap.",
+    "description": "Cargo claims hit your motor truck cargo policy and your factoring relationship. The 6-step filing process, settlement math, and avoiding the chargeback trap.",
     "type": "blog",
     "category": "Insurance & Risk"
   },
   {
     "url": "/blog/premium-financing-math",
     "title": "Premium financing math: when monthly payments beat paying cash",
-    "description": "Premium financing spreads annual insurance into monthly payments at 8-15% APR. The math comparing premium financing vs cash pay, plus the cancellation risk most operators don't model.",
+    "description": "Premium financing spreads annual insurance into monthly payments at 8-15% APR. The math against paying cash, and the cancellation risk most operators miss.",
     "type": "blog",
     "category": "Insurance & Risk"
   },
   {
     "url": "/blog/bobtail-non-trucking-liability-decoded",
     "title": "Bobtail and non-trucking liability decoded for lease-on operators",
-    "description": "Lease-on operators have coverage gaps the carrier's primary doesn't fill. NTL/bobtail coverage, what it does and doesn't cover, and the $400/year decision that protects $1M of exposure.",
+    "description": "Lease-on operators have gaps the carrier's primary policy doesn't fill. What NTL and bobtail coverage do and don't cover, and why $400 a year is worth it.",
     "type": "blog",
     "category": "Insurance & Risk"
   },
   {
     "url": "/blog/hot-shot-vs-class-8-insurance-pricing",
     "title": "Hot-shot vs Class 8 insurance pricing — what actually drives the difference",
-    "description": "Hot-shot insurance can be 30-50% cheaper than Class 8. Or it can be more expensive. The variables that drive the pricing gap, and the underwriting logic behind it.",
+    "description": "Hot-shot insurance can run 30-50% below Class 8, or above it. The variables that drive the pricing gap and the underwriting logic behind them.",
     "type": "blog",
     "category": "Insurance & Risk"
   },
   {
-    "url": "/blog/same-day-truck-repair-loan",
-    "title": "How do I get emergency truck repair money the same day?",
-    "description": "Same-day truck repair funding from $5K–$150K. Soft-pull match; timing depends on the lender and your documents. APR 14%–34% working capital. No shop assignment.",
+    "url": "/blog/truck-repair-loan-how-it-works",
+    "title": "How do I get truck repair financing when the truck is down?",
+    "description": "Truck repair financing from $5K–$150K. Soft-pull match; timing depends on the lender and your documents. APR 14%–34% working capital.",
     "type": "blog",
     "category": "Factoring & Cash Flow"
   },
   {
     "url": "/blog/owner-operator-trucking-loan-bad-credit",
     "title": "Can an owner-operator with bad credit get a trucking loan?",
-    "description": "Yes — owner-operators with FICO 500–650 qualify for trucking loans through lenders that underwrite on bank deposits, DSCR, and equipment first. APR 14%–34% working capital, 9%–18% equipment.",
+    "description": "Owner-operators with bad credit can still get trucking loans from lenders that underwrite on deposits, DSCR, and equipment first. Approval is not guaranteed.",
     "type": "blog",
     "category": "Factoring & Cash Flow"
   },
   {
     "url": "/blog/trucking-loan-under-12-months-mc-authority",
     "title": "How do I finance a truck with less than 12 months of MC authority?",
-    "description": "Equipment-secured loans and small working-capital lines for new-authority owner-operators (under 12 months MC). Lenders that accept new authority as standard, not exception. APR ranges, down payment, what changes at month 12.",
+    "description": "Equipment loans and small working-capital lines for owner-operators under 12 months of MC authority: APR ranges, down payments, and what changes at month 12.",
     "type": "blog",
     "category": "Equipment & Financing"
   },
   {
     "url": "/blog/small-fleet-working-capital-options",
     "title": "What are the best working capital options for a small trucking fleet?",
-    "description": "Working capital for 2–10 truck fleets: $50K–$250K lines, 14%–24% APR, underwritten on fleet revenue and settlement statements. The decision matrix vs lines of credit, factoring, and term loans.",
+    "description": "Working capital for 2–10 truck fleets: $50K–$250K lines at 14%–24% APR, underwritten on fleet revenue. How it compares with lines of credit and factoring.",
     "type": "blog",
     "category": "Factoring & Cash Flow"
   },
   {
     "url": "/blog/how-dispatched-matches-trucking-loans",
     "title": "How does Dispatched.finance match owner-operators with lenders?",
-    "description": "Dispatched routes a single soft-pull application to 2–4 matched lenders from a vetted panel. Operators see APR, term, and total cost side by side before any hard pull. The mechanics, the panel curation, and what makes it different from a broker.",
+    "description": "Dispatched routes one soft-pull application to 2–4 matched lenders. You see APR, term, and total cost side by side before any hard pull. How the panel works.",
     "type": "blog",
     "category": "Owner-Operator Economics"
   },
@@ -1390,7 +1390,7 @@
   {
     "url": "/lenders/apex-capital",
     "title": "Apex Capital",
-    "description": "Three decades of owner-operator factoring with instant 24/7/365 funding via blynk® and the deepest fuel discount in the market (operator-reported ~51¢/gal at participating chains). 12-month auto-renewing contract with a 30-day cancellation window is the main trade-off.",
+    "description": "Three decades of owner-operator factoring with the blynk® around-the-clock payment rail and the deepest fuel discount in the market (operator-reported ~51¢/gal at participating chains). 12-month auto-renewing contract with a 30-day cancellation window is the main trade-off.",
     "type": "lender",
     "category": "factoring · equipment"
   },
@@ -1418,7 +1418,7 @@
   {
     "url": "/lenders/tbs-factoring",
     "title": "TBS Factoring",
-    "description": "Funds brand-new MC numbers in their first 30 days where most factors require 90+ days of broker history. Supportive of post-bankruptcy operators and includes a fuel card plus dispatch support; customer service is functional rather than high-touch.",
+    "description": "Works with brand-new MC numbers, where most factors look for 90+ days of broker history. Supportive of post-bankruptcy operators and includes a fuel card plus dispatch support; customer service is functional rather than high-touch.",
     "type": "lender",
     "category": "factoring"
   },
@@ -1432,7 +1432,7 @@
   {
     "url": "/lenders/porter-freight-funding",
     "title": "Porter Freight Funding",
-    "description": "Explicit no-personal-credit-check option for sub-580 FICOs, recent bankruptcies, and thin-file operators — they underwrite the broker, not the trucker. No fuel program and a 90% advance cap raise the effective cost vs. Apex or eCapital.",
+    "description": "Underwrites mainly on broker credit, which is why operators with lower credit profiles, recent bankruptcies, or thin files often start here; approval is not guaranteed. No fuel program and a 90% advance cap raise the effective cost vs. Apex or eCapital.",
     "type": "lender",
     "category": "factoring"
   },
@@ -1453,14 +1453,14 @@
   {
     "url": "/lenders/riviera-finance",
     "title": "Riviera Finance",
-    "description": "Legacy factor since 1969 with a national branch network — the only major factor on this list with in-person branch relationships. Technology stack (instant payment, mobile capture) is dated relative to Apex, eCapital, and Truckstop Go.",
+    "description": "Legacy factor since 1969 with a national branch network — the only major factor on this list with in-person branch relationships. Technology stack (payment rails, mobile capture) is dated relative to Apex, eCapital, and Truckstop Go.",
     "type": "lender",
     "category": "factoring · working-capital"
   },
   {
     "url": "/lenders/bluevine",
     "title": "Bluevine",
-    "description": "Tech-forward online lender offering revolving lines of credit up to $250K with same-day decisioning for clean files. Not trucking-native — works for owner-operators with strong personal credit and clean bank statements, but the underwriting does not flex for thin-file or new-authority profiles.",
+    "description": "Tech-forward online lender offering revolving lines of credit up to $250K with online decisioning for clean files. Not trucking-native — works for owner-operators with strong personal credit and clean bank statements, but the underwriting does not flex for thin-file or new-authority profiles.",
     "type": "lender",
     "category": "working-capital · abl"
   },
@@ -1915,7 +1915,7 @@
   {
     "url": "/compare/bluevine-vs-ondeck",
     "title": "Bluevine vs OnDeck",
-    "description": "Online working-capital lines for SMB owner-operators — same-day decisioning compared on file profile and ceiling.",
+    "description": "Online working-capital lines for SMB owner-operators — underwriting, file profile, and ceiling compared.",
     "type": "comparison"
   },
   {
@@ -1951,7 +1951,7 @@
   {
     "url": "/compare/apex-capital-vs-porter-freight-funding",
     "title": "Apex Capital vs Porter Freight Funding",
-    "description": "Clean-file owner-operator factoring (Apex) vs sub-580 FICO factoring (Porter).",
+    "description": "Clean-file owner-operator factoring (Apex) vs bad-credit factoring (Porter).",
     "type": "comparison"
   },
   {

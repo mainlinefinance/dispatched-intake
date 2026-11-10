@@ -22,13 +22,13 @@ import {
 export const metadata: Metadata = {
   title: "First-Time Owner-Operator Truck Financing 2026 | Dispatched",
   description:
-    "Buying your first truck as a new owner-operator? Programs from $0 down and 500 FICO. What lenders need before MC#, after MC#, and pre-revenue. Soft pull.",
+    "Buying your first truck as a new owner-operator? What lenders need before MC#, after MC#, and pre-revenue. Soft pull.",
   alternates: { canonical: "/owner-operator-financing/first-time" },
   openGraph: {
     images: ["/opengraph-image"],
     title: "First-Time Owner-Operator Truck Financing 2026 | Dispatched",
     description:
-      "Buying your first truck as a new owner-operator? Programs from $0 down and 500 FICO. What lenders need before MC#, after MC#, and pre-revenue. Soft pull.",
+      "Buying your first truck as a new owner-operator? What lenders need before MC#, after MC#, and pre-revenue. Soft pull.",
     url: "/owner-operator-financing/first-time",
     type: "website",
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "First-Time Owner-Operator Truck Financing 2026 | Dispatched",
     description:
-      "Buying your first truck as a new owner-operator? Programs from $0 down and 500 FICO. What lenders need before MC#, after MC#, and pre-revenue. Soft pull.",
+      "Buying your first truck as a new owner-operator? What lenders need before MC#, after MC#, and pre-revenue. Soft pull.",
   },
 };
 
@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "Can I get a truck loan as a first-time owner-operator?",
-    a: "Yes. The Dispatched panel underwrites from a 500 FICO with no minimum business history requirement. Lenders weight your personal credit, down payment, and the truck's value when business history is thin. Plan for 10–20% down on your first deal.",
+    a: "Options may be available; credit requirements are set by each financing partner and approval is not guaranteed. Lenders weight your personal credit, down payment, and the truck's value when business history is thin. Plan for 10–20% down on your first deal.",
   },
   {
     q: "Do I need an MC# to finance my first truck?",
@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "How much down payment do I need for my first truck?",
-    a: "Plan for 10 to 20% down for a first-time deal. Operators with 600+ FICO and an active MC# sometimes qualify for as low as 10%. Operators below 580 FICO or pre-authority typically need 20% or higher. Larger down payments lower APR by 2–4 points.",
+    a: "Plan for 10 to 20% down for a first-time deal. Operators with stronger credit and an active MC# sometimes qualify for as low as 10%. Operators with lower credit profiles or pre-authority typically need 20% or higher. Larger down payments lower APR by 2–4 points.",
   },
   {
     q: "Is lease-purchase a good way to get my first truck?",
@@ -67,15 +67,15 @@ const faqs = [
   },
   {
     q: "Can a co-signer help me qualify?",
-    a: "Yes, but be cautious. A co-signer with 700+ FICO can drop your APR by 3–5 points and unlock larger loan amounts. The co-signer is fully liable if you default, and the loan reports on their credit. Use a co-signer when the math works for both parties; never to qualify for a deal you can't service.",
+    a: "Yes, but be cautious. A co-signer with strong credit can drop your APR by 3–5 points and unlock larger loan amounts. The co-signer is fully liable if you default, and the loan reports on their credit. Use a co-signer when the math works for both parties; never to qualify for a deal you can't service.",
   },
   {
     q: "What truck should I buy as a first-time owner-operator?",
     a: "Lenders fund Class 8 sleeper and day-cab tractors most readily. Avoid trucks over 10 years old (term caps short, monthly is high) and avoid sticker prices above appraised value. The lender appraises and finances up to that value minus down — if the dealer is 20% over market, you cover the gap or walk away.",
   },
   {
-    q: "How fast can I get funded for my first truck?",
-    a: "Pre-qualification on the Dispatched panel takes 6 to 9 minutes (soft pull). After you accept a term sheet, hard pull and underwriting take 1–3 days; title work and inspection add another 2–5 days for private-party deals (faster from dealers). Plan for 5–10 business days from match to keys.",
+    q: "What affects funding timing for a first truck?",
+    a: "Pre-qualification on the Dispatched panel is a soft pull. After you accept a term sheet come the hard pull and underwriting, then title work and inspection, which take longer on private-party deals than from dealers. Timing depends on the lender and your documents.",
   },
 ];
 
@@ -87,11 +87,11 @@ const STEP_1_TEXT =
 const STEP_2_TEXT =
   "Pull your free credit report from annualcreditreport.com so you know your FICO before the lender does. Dispute any errors first — a 20-point swing changes your APR band. Then export 90 days of personal bank statements as PDFs (most online banks do this in two clicks). If you've been driving company for a year, include W-2s. The Dispatched panel reads bank deposits as proxy revenue when business history is thin.";
 const STEP_3_TEXT =
-  "Submit the application at /qualify or /apply?useCase=equipment&firstTime=1. The form takes 6 to 9 minutes and triggers only a soft pull — no impact on your credit score, no score visible to other lenders. A redacted profile (no name, no contact info) goes to the panel subset that funds first-time operators in your credit band. Term sheets come back with APR, down payment, term length, and monthly payment side by side, before any hard pull.";
+  "Submit the application at /qualify or /apply?useCase=equipment&firstTime=1. The form triggers only a soft pull — no impact on your credit score, no score visible to other lenders. A redacted profile (no name, no contact info) goes to the panel subset that funds first-time operators in your credit band. Term sheets come back with APR, down payment, term length, and monthly payment side by side, before any hard pull.";
 const STEP_4_TEXT =
   "Once you have a term sheet, shop trucks the lender will actually fund: Class 8 tractors (Cascadia, T680, 579, VNL, Anthem) under 10 years old with under 700K miles, clean title, and a sticker price at or below appraised value. Avoid auction trucks unless the lender pre-approves the auction house. Bring the VIN to your lender before signing anything with the seller — five minutes of validation prevents a deal that falls apart at funding.";
 const STEP_5_TEXT =
-  "The lender orders a third-party inspection (typically $250–$450, often rolled into the loan) and an appraisal. Private-party deals also need a title pull and lien recording, which takes 2–5 banking days depending on the state. Dealer deals are faster because the dealer holds the title and processes the lien in-house. Expect to sign a pre-funding checklist confirming proof of insurance, IFTA registration, and a binding bill of sale.";
+  "The lender orders a third-party inspection (typically $250–$450, often rolled into the loan) and an appraisal. Private-party deals also need a title pull and lien recording, which takes longer in some states than others. Dealer deals involve fewer steps because the dealer holds the title and processes the lien in-house. Expect to sign a pre-funding checklist confirming proof of insurance, IFTA registration, and a binding bill of sale.";
 const STEP_6_TEXT =
   "After inspection clears and title work is recorded, you sign final loan documents (often electronically) and the lender wires funds to the seller or dealer. The truck is yours subject to the lien. First payment typically lands 30 days after funding. Set up auto-pay from the same business account you used on the application — missed payments in the first 6 months hurt your credit hardest and damage your standing with the lender for refinance later.";
 
@@ -124,7 +124,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
         payload={financialProduct({
           name: "First-time owner-operator truck financing",
           description:
-            "Class 8 truck financing for new owner-operators with limited or no business history. Panel from 500 FICO, 10–20% down, 12–18% APR typical. MC# helpful but not required.",
+            "Class 8 truck financing for new owner-operators with limited or no business history. 10–20% down, 12–18% APR typical. MC# helpful but not required.",
           url: PAGE_URL,
           category: "Equipment financing",
         })}
@@ -134,7 +134,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
           name: "How to finance your first truck as a new owner-operator",
           description:
             "Step-by-step process from CDL to a funded first truck on the Dispatched lender panel.",
-          totalTime: "P10D",
+          
           steps: [
             {
               name: "Get your authority filed (or know your timing)",
@@ -199,7 +199,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft pull only · 6–9 minutes to pre-qualify.
+              Soft pull only · Approval is not guaranteed.
             </p>
           </div>
         </section>
@@ -285,7 +285,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               have insurance, you&rsquo;re ready to dispatch — you just
               don&rsquo;t own a truck yet. This is the cleanest first-time
               profile. The panel reads your file as a real motor carrier
-              with intent. Expect 12–15% APR with 600+ FICO, 10–15% down,
+              with intent. Expect 12–15% APR with stronger credit, 10–15% down,
               60-month term on a 2019 or newer Class 8 tractor. This
               scenario also unlocks the broader{" "}
               <Link href="/new-authority-truck-financing">
@@ -318,7 +318,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               — fewer lenders write pre-authority deals — and pricing
               moves up. Expect 16–18% APR, 20%+ down, term capped at 48
               months. The strongest version of this scenario pairs a
-              co-signer (700+ FICO, often a parent or spouse) with a
+              co-signer (strong credit, often a parent or spouse) with a
               committed authority filing date. Without a co-signer, the
               path narrows further; consider driving company for 3–6
               months to build deposits before applying.
@@ -341,15 +341,16 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               sheet.
             </p>
 
-            <h3>Personal credit (FICO floor: 500 on Dispatched panel)</h3>
+            <h3>Personal credit</h3>
             <p>
-              The Dispatched panel writes first-time deals from a 500
-              FICO floor. Below 580, you&rsquo;re in the higher end of
-              the APR band (16–18%) and down-payment expectations climb
-              to 20%+. 580–620 unlocks broader lender participation;
-              620–680 hits the typical first-time pricing range; 700+
-              gets the best available pricing and the largest loan caps.
-              If you&rsquo;re below 580 and the deal isn&rsquo;t urgent,
+              Credit requirements are set by each financing partner, and
+              approval is not guaranteed. With a lower credit profile,
+              you&rsquo;re in the higher end of the APR band (16–18%) and
+              down-payment expectations climb to 20%+. Fair credit
+              unlocks broader lender participation and the typical
+              first-time pricing range; strong credit gets the best
+              available pricing and the largest loan caps. If your credit
+              is challenged and the deal isn&rsquo;t urgent,
               90 days of credit-building work — paying down revolving
               balances, disputing errors — can move you a band and save
               real money over 60 months. Lenders also expect a current{" "}
@@ -364,8 +365,8 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               Down payment is the lever you control most directly.
               Lenders use it to reduce loan-to-value risk. The panel
               standard for first-time deals is 10–20%; 10% is achievable
-              with a strong file (active MC#, 620+ FICO, settlement
-              history); 20%+ is typical for sub-580 or pre-authority
+              with a strong file (active MC#, solid credit, settlement
+              history); 20%+ is typical for challenged-credit or pre-authority
               deals. Every additional 5% down typically drops APR by 1–2
               points. On a $70K truck over 60 months, 10% down vs. 20%
               down is a difference of roughly $4K in total interest.
@@ -377,7 +378,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               who attaches their name to the loan. The co-signer is fully
               liable: if you default, the lender pursues them, and the
               loan reports on their credit for the life of the term. The
-              upside is real — a 700+ FICO co-signer can drop a
+              upside is real — a strong-credit co-signer can drop a
               first-time deal&rsquo;s APR by 3–5 points and unlock a
               loan amount the borrower alone wouldn&rsquo;t qualify for.
               Use a co-signer when the math works for both parties (you
@@ -417,11 +418,11 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
             <p>
               The observed APR band for first-time owner-operator
               equipment loans on the Dispatched panel runs 12–18%. The
-              low end (12–14%) requires 600+ FICO, an active MC#, 15%+
+              low end (12–14%) requires stronger credit, an active MC#, 15%+
               down, and a newer truck under 5 years old. The middle
-              (14–16%) is typical: 580–620 FICO, fresh MC# or strong
+              (14–16%) is typical: fair credit, fresh MC# or strong
               co-signer, 15% down, truck 5–8 years old. The high end
-              (16–18%) is sub-580 or pre-authority deals with 20%+ down
+              (16–18%) is challenged-credit or pre-authority deals with 20%+ down
               and a shorter term. Final APR sits on the lender&rsquo;s
               term sheet before you sign — no surprises.
             </p>
@@ -547,7 +548,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               Step-by-step: from CDL to your first funded truck.
             </h2>
             <p className="ins-hero-sub">
-              Six steps, roughly 5–10 business days end to end. Each step
+              Six steps; timing depends on the lender and your documents. Each step
               has a specific deliverable; missing one stalls the deal.
               Run them in order.
             </p>
@@ -568,7 +569,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               <li>
                 <strong>
                   Step 3 — Pre-qualify with the Dispatched panel (soft
-                  pull, 6–9 minutes).
+                  pull).
                 </strong>{" "}
                 {STEP_3_TEXT}
               </li>
@@ -616,7 +617,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
               First truck. Real ownership. Real path.
             </h2>
             <p className="ins-hero-sub">
-              Soft-pull match in 6–9 minutes. If the panel can fund your
+              Soft-pull match first. If the panel can fund your
               first deal, you&rsquo;ll see term sheets before any hard
               pull. If it can&rsquo;t yet, you&rsquo;ll know what to fix
               before you waste a hard inquiry.

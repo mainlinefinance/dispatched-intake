@@ -24,24 +24,24 @@ const TOC_ITEMS = [
 ] as const;
 
 export const metadata: Metadata = {
-  title: "Invoice factoring for truckers — same-day | Dispatched",
+  title: "Invoice Factoring for Truckers | Dispatched",
   description:
-    "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum. Get matched today.",
+    "Turn broker and shipper invoices into working cash. Recourse and non-recourse factoring matched to your lanes; factors underwrite your brokers' credit.",
   alternates: { canonical: "/factoring" },
   openGraph: {
     images: ["/opengraph-image"],
-    title: "Invoice factoring for truckers — same-day | Dispatched",
+    title: "Invoice Factoring for Truckers | Dispatched",
     description:
-      "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum. Get matched today.",
+      "Turn broker and shipper invoices into working cash. Recourse and non-recourse factoring matched to your lanes; factors underwrite your brokers' credit.",
     url: "/factoring",
     type: "website",
   },
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "Invoice factoring for truckers — same-day | Dispatched",
+    title: "Invoice Factoring for Truckers | Dispatched",
     description:
-      "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum. Get matched today.",
+      "Turn broker and shipper invoices into working cash. Recourse and non-recourse factoring matched to your lanes; factors underwrite your brokers' credit.",
   },
 };
 
@@ -50,7 +50,7 @@ const PAGE_URL = "https://dispatched.finance/factoring";
 const faqs = [
   {
     q: "How does invoice factoring for truckers work?",
-    a: "You submit a paid load's bill of lading and broker invoice to the factoring company. The factor advances 85% to 97% of the invoice face value the same or next banking day, then collects the full payment from the broker on net-30 to net-90 terms. Once the broker pays, the factor releases the reserve (the 3% to 15% held back) minus their fee. You get cash on the day you deliver, not 60 days later.",
+    a: "You submit a paid load's bill of lading and broker invoice to the factoring company. The factor advances 85% to 97% of the invoice face value, then collects the full payment from the broker on net-30 to net-90 terms. Once the broker pays, the factor releases the reserve (the 3% to 15% held back) minus their fee. You get most of the invoice up front instead of waiting out the broker's payment terms; advance timing depends on the factor and your invoices.",
   },
   {
     q: "How much does invoice factoring cost?",
@@ -62,11 +62,11 @@ const faqs = [
   },
   {
     q: "Can I factor invoices with bad credit?",
-    a: "Yes. Factoring underwrites the broker's credit, not the operator's, because the broker is the entity actually paying the invoice. Operators with sub-600 FICO routinely factor with no rate impact. The factor checks the operator for fraud history and active bankruptcies, but FICO score itself is not the underwriting driver.",
+    a: "Sometimes. Factors underwrite mainly on the broker's credit, because the broker is the entity actually paying the invoice, and operators with lower credit profiles do use factoring. The factor still reviews the operator, including fraud history and active bankruptcies, and each factor sets its own requirements. Approval is not guaranteed.",
   },
   {
-    q: "How fast does invoice factoring fund?",
-    a: "Same banking day for invoices submitted before the factor's daily cutoff (typically 11am to 1pm Eastern), next banking day for late-cutoff or weekend submissions. Once the factoring relationship is set up, ongoing invoices fund within hours of submission. Initial setup with a new factor takes 3 to 7 business days for credit checks, broker verification, and notice of assignment.",
+    q: "When does invoice factoring fund?",
+    a: "Advance timing depends on the factor and your invoices. Each factor has a daily submission cutoff, and late or weekend submissions roll to a later cycle. Initial setup with a new factor takes longer because of credit checks, broker verification, and notice of assignment.",
   },
   {
     q: "Do I have to factor every load?",
@@ -74,7 +74,7 @@ const faqs = [
   },
   {
     q: "How is factoring different from a working-capital loan?",
-    a: "Factoring is selling specific receivables for an immediate advance; working capital is borrowing a lump sum you repay from operations over time. Factoring scales with revenue (the more you haul, the more cash you can pull) and has no APR — it has a flat fee per invoice. Working capital is fixed-amount, has a payment schedule, and reports as debt on the balance sheet. Different cost structures for different cashflow problems.",
+    a: "Factoring is selling specific receivables for an advance; working capital is borrowing a lump sum you repay from operations over time. Factoring scales with revenue (the more you haul, the more cash you can pull) and has no APR — it has a flat fee per invoice. Working capital is fixed-amount, has a payment schedule, and reports as debt on the balance sheet. Different cost structures for different cashflow problems.",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function InvoiceFactoringPage() {
       <JsonLd payload={financialProduct({
         name: "Invoice factoring for truckers",
         description:
-          "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum.",
+          "Turn broker and shipper invoices into working cash. Recourse and non-recourse factoring matched to your lanes; factors underwrite your brokers' credit.",
         url: PAGE_URL,
         category: "Invoice factoring",
       })} />
@@ -114,8 +114,7 @@ export default function InvoiceFactoringPage() {
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
-              Sell broker or carrier invoices for an immediate cash
-              advance instead of waiting 30–60 days for payment.
+              Sell broker or carrier invoices for a cash advance instead of waiting 30–60 days for payment.
               Different product class than a loan: no APR, no monthly
               payment, no debt on the books — but the fee comes out of
               the invoice. <Link href="/glossary/recourse-factoring">Recourse</Link>{" "}
@@ -131,7 +130,7 @@ export default function InvoiceFactoringPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Takes about 2 minutes.
+              Soft-pull match.
             </p>
           </div>
         </section>
@@ -145,7 +144,7 @@ export default function InvoiceFactoringPage() {
             <p className="ins-hero-sub">
               Invoice factoring is the sale of a specific outstanding
               invoice to a third party (the factor) at a discount, in
-              exchange for an immediate cash advance. The factor collects
+              exchange for a cash advance. The factor collects
               the full invoice amount from your broker or carrier when
               the invoice matures; you keep the difference between the
               <Link href="/glossary/advance-rate">{" "}advance rate</Link> and the face value, minus the factoring fee.
@@ -173,8 +172,7 @@ export default function InvoiceFactoringPage() {
             <ul className="product-list">
               <li>
                 <strong>Brokers paying on long terms (Net-30, Net-45, Net-60).</strong>{" "}
-                Factoring trades a 1%–4% fee for getting paid in days
-                instead of weeks. The longer the broker&rsquo;s
+                Factoring trades a 1%–4% fee for getting paid ahead of the broker&rsquo;s terms. The longer the broker&rsquo;s
                 payment terms, the more factoring is worth.
               </li>
               <li>
@@ -190,13 +188,9 @@ export default function InvoiceFactoringPage() {
                 <strong>New authorities (under 6 months).</strong>{" "}
                 Factoring is sometimes the only product available to
                 operators with under six months of operating history,
-                because the factor underwrites the broker&rsquo;s credit
-                rather than the trucker&rsquo;s. This is also why{" "}
-                <Link href="/factoring/no-credit-check">
-                  no credit check trucking factoring
-                </Link>{" "}
-                is the standard path for sub-580 FICO and post-BK
-                operators.
+                because the factor underwrites mainly on the broker&rsquo;s credit. This is also why{" "}
+                <Link href="/factoring/broker-credit">
+                  factoring that underwrites your brokers </Link>{" "} is a path challenged-credit and post-BK operators often look at; approval is not guaranteed.
               </li>
               <li>
                 <strong>Operators who don&rsquo;t want debt.</strong>{" "}
@@ -231,10 +225,9 @@ export default function InvoiceFactoringPage() {
                 works at the operation level.
               </li>
               <li>
-                <strong>Brokers paying quickly.</strong> If your brokers
+                <strong>Brokers on short payment terms.</strong> If your brokers
                 are 7-day or QuickPay terms, the factoring fee may
-                exceed the financing benefit of getting paid even
-                faster.
+                exceed the benefit of being paid earlier.
               </li>
               <li>
                 <strong>Equipment purchases or repairs.</strong>{" "}
@@ -307,10 +300,10 @@ export default function InvoiceFactoringPage() {
             <span className="ins-eyebrow">How the relationship moves</span>
             <h2 className="ins-hero-title">Onboarding to first advance.</h2>
             <ol className="product-process">
-              <li><strong>Application.</strong> Two minutes inside <Link href="/apply">/apply</Link>. Brokers, payment terms, average invoice size, time in business. Soft-pull where applicable.</li>
+              <li><strong>Application.</strong> Start inside <Link href="/apply">/apply</Link>. Brokers, payment terms, average invoice size, time in business. Soft-pull where applicable.</li>
               <li><strong>Factor match.</strong> A redacted profile goes to the trucking factors most likely to fund your broker mix and ticket size.</li>
               <li><strong>Onboarding.</strong> Notice of Assignment goes to your brokers; account setup; factoring agreement signed. The factor files a <Link href="/glossary/ucc-1">UCC-1</Link> against your receivables and may route broker payments through a <Link href="/glossary/lockbox">lockbox</Link>.</li>
-              <li><strong>First invoice.</strong> Submit a verified invoice; factor advances 90–98% of face value within 24 hours, typically wired via <Link href="/glossary/ach">ACH</Link>.</li>
+              <li><strong>First invoice.</strong> Submit a verified invoice; the factor advances 90–98% of face value, typically sent via <Link href="/glossary/ach">ACH</Link>.</li>
               <li><strong>Ongoing.</strong> Submit invoices as they&rsquo;re generated; factor advances and collects from the broker on the original payment terms. Operators running a{" "}
                 <Link href="/glossary/tms">TMS</Link> can often auto-export the
                 BOL and invoice on delivery.</li>
@@ -336,7 +329,7 @@ export default function InvoiceFactoringPage() {
         <section className="ins-sunken">
           <div className="ins-container">
             <h2 className="ins-hero-title">
-              Trade waiting for invoice age for cashflow today.
+              Trade waiting on invoice age for cashflow.
             </h2>
             <p className="ins-hero-sub">
               Soft-pull match. One factoring agreement only with the

@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: "Can I roll the repair into my existing Freightliner equipment loan?",
-    a: "Sometimes, with the original equipment lender, depending on the remaining loan balance and the residual value of the tractor. The Dispatched panel does not handle that re-amortization directly — it is a conversation between the operator and the original lender. The Dispatched product class is short-term unsecured working-capital financing that funds same-banking-day; the equipment-secured rewrite is a slower process that fits when the timeline is not urgent and the equity in the truck is sufficient.",
+    a: "Sometimes, with the original equipment lender, depending on the remaining loan balance and the residual value of the tractor. The Dispatched panel does not handle that re-amortization directly — it is a conversation between the operator and the original lender. The Dispatched product class is short-term unsecured working-capital financing; the equipment-secured rewrite is a longer process that fits when the timeline is not urgent and the equity in the truck is sufficient.",
   },
   {
     q: "My Cascadia is still under Freightliner extended warranty — does that affect financing?",
@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     q: "Can I finance the repair if my truck is currently sitting at the shop?",
-    a: "Yes. The Dispatched workflow is built specifically for the case where the truck is at the shop and the operator needs the wire today. There is no requirement that the truck be roadworthy or inspected at the time of application. Soft approval and lender match depend on underwriting review of submitting; the wire lands the after the chosen lender countersigns, provided it clears before the bank's cutoff.",
+    a: "Yes. The Dispatched workflow is built specifically for the case where the truck is at the shop. There is no requirement that the truck be roadworthy or inspected at the time of application. Soft approval and lender match depend on underwriting review of the application; the wire goes out after the chosen lender countersigns, and timing depends on the lender, your documents and the bank's cutoff.",
   },
   {
     q: "What about a Freightliner with an active recall — does the repair financing change?",
@@ -94,7 +94,7 @@ export default function FreightlinerRepairFinancingPage() {
         payload={article({
           headline: "Freightliner repair financing for owner-operators and small fleets",
           description:
-            "How Freightliner repair financing works on the Dispatched panel: soft-pull match, brand-specific repair lines (DD15, DT12, after-treatment), eligibility floors, and the application-to-wire flow.",
+            "How Freightliner repair financing works on the Dispatched panel: soft-pull match, brand-specific repair lines (DD15, DT12, after-treatment), eligibility, and the application-to-wire flow.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -104,7 +104,7 @@ export default function FreightlinerRepairFinancingPage() {
         payload={financialProduct({
           name: "Freightliner repair financing",
           description:
-            "Freightliner repair financing of $5K–$150K for owner-operators and small fleets running Cascadia, M2, Argosy, Coronado, and Columbia tractors. Same-banking-day funds, soft-pull match, FICO from 500.",
+            "Freightliner repair financing of $5K–$150K for owner-operators and small fleets running Cascadia, M2, Argosy, Coronado, and Columbia tractors. Soft-pull match; timing depends on the lender and your documents.",
           url: PAGE_URL,
           category: "Commercial trucking financing",
         })}
@@ -119,17 +119,18 @@ export default function FreightlinerRepairFinancingPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Freightliner repair financing</span>
             <h1 className="ins-hero-title">
-              Same-day Freightliner repair financing for owner-operators and small fleets.
+              Freightliner repair financing for owner-operators and small fleets.
             </h1>
             <EditorialByline updated={today} />
             <p className="ins-hero-sub">
               Whether it&rsquo;s a Cascadia with a DD15 EGR cooler leak, an M2
               box truck with after-treatment fault codes, or an older Columbia
               with transmission work, the Dispatched panel funds Freightliner
-              repairs from $5K to $150K with same-banking-day wires after the
-              chosen lender signs off. Underwriting is on revenue and deposit
-              history, not FICO alone — programs route from a 500 FICO floor.
-              No hard pull until you pick a lender.
+              repairs from $5K to $150K, wired after the chosen lender signs
+              off. Underwriting is on revenue and deposit history, not credit
+              score alone; credit requirements are set by each financing
+              partner and approval is not guaranteed. No hard pull until you
+              pick a lender.
             </p>
             <div className="product-hero-ctas">
               <Link
@@ -146,7 +147,7 @@ export default function FreightlinerRepairFinancingPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              No hard credit pull to start. · Takes about 2 minutes.
+              No hard credit pull to start.
             </p>
           </div>
         </section>
@@ -183,8 +184,7 @@ export default function FreightlinerRepairFinancingPage() {
               against the operation&rsquo;s cashflow. There is no lien against
               the Cascadia, no{" "}
               <Link href="/glossary/ucc-1">UCC-1</Link> filing, no equipment
-              appraisal in the way of a wire. That is what lets the money
-              move the after lender sign-off; timing depends on documents. Existing financing on
+              appraisal in the way of a wire. Funds move after lender sign-off; timing depends on the lender and your documents. Existing financing on
               the tractor — most Cascadias under five years old are still on
               an equipment loan — does not block the repair financing,
               because the repair financing is not secured against the
@@ -263,7 +263,7 @@ export default function FreightlinerRepairFinancingPage() {
         <section className="ins-sunken">
           <div className="ins-container">
             <span className="ins-eyebrow">Who qualifies</span>
-            <h2 className="ins-hero-title">Eligibility floors on our panel.</h2>
+            <h2 className="ins-hero-title">What lenders on our panel look at.</h2>
             <ul className="product-list">
               <li>
                 <strong>Active <Link href="/glossary/dot-number">DOT number</Link>.</strong>{" "}
@@ -273,10 +273,11 @@ export default function FreightlinerRepairFinancingPage() {
                 subset of the panel.
               </li>
               <li>
-                <strong>500+ FICO.</strong> Programs route from 500. Sub-580
-                borrowers should expect rates toward the high end of the
-                observed 14% to 34% APR panel range and tighter loan amounts.
-                680+ unlocks the full product set.
+                <strong>Credit profile.</strong> Credit requirements are set by
+                each financing partner. Borrowers with lower credit profiles
+                should expect rates toward the high end of the observed 14%
+                to 34% APR panel range and tighter loan amounts. Stronger
+                credit opens more of the product set.
               </li>
               <li>
                 <strong>6+ months of business history.</strong> Under six
@@ -384,7 +385,7 @@ export default function FreightlinerRepairFinancingPage() {
                 <span className="product-example-label">Match output</span>
                 <span className="product-example-value">
                   $25,000 at 22% APR, 18-month term, $1,545 monthly. Funded
-                  the after lender sign-off; timing depends on documents.
+                  after lender sign-off; timing depends on documents.
                 </span>
               </div>
               <div className="product-example-meta">
@@ -405,7 +406,7 @@ export default function FreightlinerRepairFinancingPage() {
             <h2 className="ins-hero-title">From application to wire.</h2>
             <ol className="product-process">
               <li>
-                <strong>Application.</strong> Two minutes inside{" "}
+                <strong>Application.</strong> Inside{" "}
                 <Link href="/apply">/apply</Link>. Revenue, time in business,
                 DOT number, the Cascadia or M2 details, repair amount, shop.
                 Soft-pull only.

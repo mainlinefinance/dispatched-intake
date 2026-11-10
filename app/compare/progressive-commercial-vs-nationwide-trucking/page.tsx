@@ -51,8 +51,8 @@ const faqs = [
     a: "Nationwide, decisively. Progressive Commercial is broad — taxi, livery, contractor pickups, food trucks, dump trucks, and trucking all sit under one commercial auto umbrella with a unified underwriting engine tuned for the broad SMB profile. Nationwide Trucking is a dedicated industry vertical inside Nationwide with trucking-specific underwriters, trucking-specialty claim adjusters, and product depth (NTL, occ-acc, hazmat, oversized) that Progressive limits or excludes outright. For operators where trucking is the only business, the specialty depth pulls Nationwide ahead.",
   },
   {
-    q: "Which is faster to quote?",
-    a: "Progressive — direct online quoting returns indicative numbers in minutes for clean profiles, and bindable quotes typically clear same-day. Nationwide is agent-mediated, meaning the quote flows through an independent agent or a Nationwide retail office, and turnaround is 24–48 hours typical for a complete trucking program. The Progressive speed advantage matters more for shopping season (renewal week, multi-quote comparison) than for actual binding; both carriers bind same-day once the underwriting is complete.",
+    q: "How does quoting work at each?",
+    a: "Progressive offers direct online quoting that returns indicative numbers for clean profiles without an agent. Nationwide is agent-mediated, meaning the quote flows through an independent agent or a Nationwide retail office and wants a complete trucking submission first. The difference matters more for shopping season (renewal week, multi-quote comparison) than for binding; timing at either carrier depends on the submission and underwriting.",
   },
   {
     q: "Which handles hazmat better?",
@@ -105,7 +105,7 @@ export default function ProgressiveVsNationwidePage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               Progressive Commercial vs Nationwide Trucking — broad market
@@ -156,7 +156,7 @@ export default function ProgressiveVsNationwidePage() {
               you&rsquo;d rather skip the read and have our producer
               partner quote both alongside the specialty panel,
               that&rsquo;s what{" "}
-              <Link href="/insurance">/insurance</Link> does in two minutes.
+              <Link href="/insurance">/insurance</Link> does.
             </p>
 
             <table className="ins-carrier-table">
@@ -244,12 +244,12 @@ export default function ProgressiveVsNationwidePage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Quoting speed</strong>
+                    <strong>Quoting channel</strong>
                   </td>
                   <td data-label="Progressive Commercial">
-                    Fast (online minutes)
+                    Direct online
                   </td>
-                  <td data-label="Nationwide Trucking">Mid-tier</td>
+                  <td data-label="Nationwide Trucking">Agent-mediated</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -332,8 +332,7 @@ export default function ProgressiveVsNationwidePage() {
               covers the core: primary, MTC, physical damage, GL. Depth on
               trucking-only endorsements (NTL, occ-acc, hazmat with proper
               specialty layers) is narrower than the specialty markets
-              &mdash; Progressive&rsquo;s strength is scale, speed, and
-              price, not specialty depth. AM Best A+ (Superior). (See{" "}
+              &mdash; Progressive&rsquo;s strength is scale, accessibility, and price, not specialty depth. AM Best A+ (Superior). (See{" "}
               <a
                 href="https://www.progressivecommercial.com"
                 target="_blank"
@@ -443,10 +442,9 @@ export default function ProgressiveVsNationwidePage() {
             <p className="ins-hero-sub">
               Progressive Commercial&rsquo;s underwriting is a unified
               commercial-auto engine scoring risk across the SMB book.
-              The advantage is speed and accessibility: it accepts a
+              The advantage is accessibility: it accepts a
               wide range of DOT classes, lane radii, equipment types,
-              and operator profiles, returning indicative pricing in
-              minutes from direct online inputs. New authorities under
+              and operator profiles, returning indicative pricing from direct online inputs. New authorities under
               12 months clear with reasonable surcharges where specialty
               markets decline. Prior accidents, moving violations, and
               CSA variations are absorbed into the rating model rather
@@ -468,21 +466,17 @@ export default function ProgressiveVsNationwidePage() {
               Vehicle Maintenance vs Unsafe Driving spikes mean for
               future loss frequency. New authorities clear with
               structured pricing; seasoned operations with clean
-              three-year loss runs get credible discounts. The trade-off
-              is speed: agent-mediated quoting runs 24&ndash;48 hours
-              typical and wants a complete submission (loss runs,
+              three-year loss runs get credible discounts. The trade-off is process: agent-mediated quoting wants a complete submission (loss runs,
               equipment list, lane breakdown, driver MVRs) before
-              bindable numbers. Operators who want a number in minutes
-              find this slower than Progressive; operators who want an
+              bindable numbers. Operators who want a self-serve indicative number find this heavier than Progressive; operators who want an
               underwriter who actually understands trucking find it
-              worth the wait.
+              worth the extra steps.
             </p>
 
             <h3>Where each one wins.</h3>
             <p className="ins-hero-sub">
-              <strong>Clean profile, fast quote needed: Progressive.</strong>{" "}
-              Direct online quoting and broad underwriting win the
-              shopping race.{" "}
+              <strong>Clean profile, self-serve quote wanted: Progressive.</strong>{" "}
+              Direct online quoting and broad underwriting suit comparison shopping.{" "}
               <strong>Complex profile, specialty exposure, growth
               trajectory: Nationwide.</strong> Specialty underwriting
               depth and CSA-aware risk scoring win the long-term cost
@@ -501,11 +495,9 @@ export default function ProgressiveVsNationwidePage() {
             <h3>Progressive&rsquo;s claim model.</h3>
             <p className="ins-hero-sub">
               Progressive Commercial runs a high-volume, technology-
-              forward claim model: online or phone reporting with 24/7
-              first-notice intake, and simple losses (parking lot
+              forward claim model: online or phone reporting with around-the-clock first-notice intake, and simple losses (parking lot
               fender-bender, minor cargo damage, single-vehicle physical
-              damage) move quickly. Digital photo intake, automated
-              rental coordination, fast settlement on parts and labor.
+              damage) are handled through a streamlined process: digital photo intake, automated rental coordination, and settlement on parts and labor.
               The model shows its limits on complex commercial losses
               &mdash; multi-vehicle accidents with bodily injury, freight
               loss with cargo subrogation, FMCSA-reportable violations.
@@ -564,14 +556,12 @@ export default function ProgressiveVsNationwidePage() {
             <h3>Progressive &mdash; direct + agent, online-first.</h3>
             <p className="ins-hero-sub">
               Progressive&rsquo;s distribution is dual-channel: a direct
-              online quoting funnel returning indicative pricing in
-              minutes, plus an independent-agent channel for operators
+              online quoting funnel returning indicative pricing, plus an independent-agent channel for operators
               who want a producer in the loop. The direct funnel is
               industry-leading &mdash; it&rsquo;s why Progressive
               competes on price against carriers with higher
               acquisition costs baked into commission loads. For an
-              owner-op who knows what they need and wants a number
-              fast, the direct channel is hard to beat. The agent
+              owner-op who knows what they need and wants a self-serve number, the direct channel is hard to beat. The agent
               channel serves operators wanting consultative quoting
               (multi-carrier shopping, endorsement advice, claim
               advocacy) and is the channel through which most programs
@@ -597,7 +587,7 @@ export default function ProgressiveVsNationwidePage() {
 
             <h3>Verdict on distribution.</h3>
             <p className="ins-hero-sub">
-              <strong>Simple risk, fast quote: Progressive direct.</strong>{" "}
+              <strong>Simple risk, self-serve quote: Progressive direct.</strong>{" "}
               The online channel compresses acquisition cost and the
               underwriting accepts a wide profile.{" "}
               <strong>Complex risk, growing fleet: Nationwide via
@@ -740,8 +730,7 @@ export default function ProgressiveVsNationwidePage() {
               <li>
                 <strong>Single-truck owner-ops with clean MVRs.</strong>{" "}
                 Progressive&rsquo;s pricing engine is optimized for this
-                profile and the direct online channel returns
-                competitive quotes in minutes. For general freight on
+                profile and the direct online channel returns competitive quotes. For general freight on
                 authorized operation with no prior accidents, this is
                 often the cheapest legitimate market.
               </li>
@@ -754,11 +743,7 @@ export default function ProgressiveVsNationwidePage() {
                 competitive position tightens.
               </li>
               <li>
-                <strong>Operators who need a quote today, not next
-                week.</strong> Direct online quoting compresses the
-                shopping cycle. For renewal-week emergencies, lost
-                COIs, or new MC activations needing same-day binding,
-                Progressive&rsquo;s speed advantage is real.
+                <strong>Operators who want a self-serve quote.</strong> Direct online quoting shortens the shopping steps. For renewal week, lost COIs, or new MC activations, Progressive&rsquo;s self-serve channel is the practical advantage.
               </li>
               <li>
                 <strong>Operators with mixed commercial auto needs.</strong>{" "}
@@ -895,9 +880,7 @@ export default function ProgressiveVsNationwidePage() {
             <p className="ins-hero-sub">
               Progressive Commercial and Nationwide Trucking are both
               quoted by our producer partner, and they&rsquo;re both
-              legitimate AM Best A+ carriers. The question isn&rsquo;t
-              whether either one will write you &mdash; in most cases,
-              both will. The question is which one fits the specific
+              legitimate AM Best A+ carriers. Neither is guaranteed to write your risk. The question is which one fits the specific
               shape of your operation: how many trucks you run, what
               you haul, what your three-year loss run looks like,
               what your CSA BASIC scores look like, whether you
@@ -916,8 +899,7 @@ export default function ProgressiveVsNationwidePage() {
               real bindable numbers side-by-side with the same
               limits, deductibles, and endorsements. If you&rsquo;d
               rather check fit before going further, the two-question
-              tool at <Link href="/qualify">/qualify</Link> takes
-              about 30 seconds and pulls no credit.
+              tool at <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>

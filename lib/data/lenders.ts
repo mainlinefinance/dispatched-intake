@@ -122,7 +122,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     rateFloor: "1%",
     contractMin: "12 months",
     blurb:
-      "Three decades of owner-operator factoring with instant 24/7/365 funding via blynk® and the deepest fuel discount in the market (operator-reported ~51¢/gal at participating chains). 12-month auto-renewing contract with a 30-day cancellation window is the main trade-off.",
+      "Three decades of owner-operator factoring with the blynk® around-the-clock payment rail and the deepest fuel discount in the market (operator-reported ~51¢/gal at participating chains). 12-month auto-renewing contract with a 30-day cancellation window is the main trade-off.",
   },
   {
     slug: "ecapital",
@@ -177,7 +177,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     rateFloor: "1.2%",
     contractMin: "12 months",
     blurb:
-      "Funds brand-new MC numbers in their first 30 days where most factors require 90+ days of broker history. Supportive of post-bankruptcy operators and includes a fuel card plus dispatch support; customer service is functional rather than high-touch.",
+      "Works with brand-new MC numbers, where most factors look for 90+ days of broker history. Supportive of post-bankruptcy operators and includes a fuel card plus dispatch support; customer service is functional rather than high-touch.",
   },
   {
     slug: "otr-solutions",
@@ -202,7 +202,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     rateFloor: "1.5%",
     contractMin: "month-to-month",
     blurb:
-      "Explicit no-personal-credit-check option for sub-580 FICOs, recent bankruptcies, and thin-file operators — they underwrite the broker, not the trucker. No fuel program and a 90% advance cap raise the effective cost vs. Apex or eCapital.",
+      "Underwrites mainly on broker credit, which is why operators with lower credit profiles, recent bankruptcies, or thin files often start here; approval is not guaranteed. No fuel program and a 90% advance cap raise the effective cost vs. Apex or eCapital.",
   },
   {
     slug: "truckstop-go-capital",
@@ -240,7 +240,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     rateFloor: "2%",
     contractMin: "month-to-month",
     blurb:
-      "Legacy factor since 1969 with a national branch network — the only major factor on this list with in-person branch relationships. Technology stack (instant payment, mobile capture) is dated relative to Apex, eCapital, and Truckstop Go.",
+      "Legacy factor since 1969 with a national branch network — the only major factor on this list with in-person branch relationships. Technology stack (payment rails, mobile capture) is dated relative to Apex, eCapital, and Truckstop Go.",
   },
   {
     slug: "bluevine",
@@ -252,7 +252,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     bestFor: "tech-forward SMB owner-operators",
     contractMin: "revolving line",
     blurb:
-      "Tech-forward online lender offering revolving lines of credit up to $250K with same-day decisioning for clean files. Not trucking-native — works for owner-operators with strong personal credit and clean bank statements, but the underwriting does not flex for thin-file or new-authority profiles.",
+      "Tech-forward online lender offering revolving lines of credit up to $250K with online decisioning for clean files. Not trucking-native — works for owner-operators with strong personal credit and clean bank statements, but the underwriting does not flex for thin-file or new-authority profiles.",
   },
   {
     slug: "lendio",

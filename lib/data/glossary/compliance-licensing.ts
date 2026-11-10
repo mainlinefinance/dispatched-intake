@@ -12,7 +12,7 @@ export const COMPLIANCE_LICENSING_TERMS: ReadonlyArray<GlossaryTerm> = [
     termCode: "CDL-A",
     category: "operating-authority-compliance",
     shortDefinition:
-      "Commercial Driver's License Class A — required for combination vehicles over 26,001 lbs GCWR with a towed unit over 10,000 lbs; the standard CDL for OTR trucking.",
+      "Commercial Driver's License Class A: required for combination vehicles over 26,001 lbs GCWR with a towed unit over 10,000 lbs. The standard CDL for OTR.",
     sections: [
       {
         h2: "What it is",
@@ -22,7 +22,7 @@ export const COMPLIANCE_LICENSING_TERMS: ReadonlyArray<GlossaryTerm> = [
       {
         h2: "Why it matters for trucking finance",
         body:
-          "CDL Class A is the entry credential for nearly every OTR trucking operation — without it, the operator can't legally drive a Class 8 tractor pulling a trailer. Insurance underwriting heavily weights years of CDL-A experience: sub-2-year experience pushes primary liability rates up materially, sometimes 30–50%.\n\nLenders sometimes verify CDL status as part of underwriting for owner-operator financing, particularly for first-time operators. A CDL suspension — DUI, hazmat-endorsement issues, accumulated violations — instantly stops revenue and triggers factoring and working-capital exposure on any outstanding advances.",
+          "CDL Class A is the entry credential for nearly every OTR trucking operation — without it, the operator can't legally drive a Class 8 tractor pulling a trailer. Insurance underwriting heavily weights years of CDL-A experience: sub-2-year experience pushes primary liability rates up materially, sometimes 30–50%.\n\nLenders sometimes verify CDL status as part of underwriting for owner-operator financing, particularly for first-time operators. A CDL suspension — DUI, hazmat-endorsement issues, accumulated violations — immediately stops revenue and triggers factoring and working-capital exposure on any outstanding advances.",
       },
     ],
     relatedTerms: ["eldt", "hazmat-endorsement", "medc-card", "dot-number"],

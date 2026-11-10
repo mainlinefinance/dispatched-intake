@@ -68,6 +68,8 @@ export function article(args: {
   authorName?: string;
   reviewerName?: string;
   reviewerCredential?: string;
+  /* Primary sources the article rests on (see lib/seo/citations.ts). */
+  citations?: ReadonlyArray<{ name: string; publisher: string; url: string }>;
 }): JsonLdPayload {
   const author: JsonLdPayload["author"] =
     args.authorName === FOUNDER_NAME_CANONICAL
@@ -90,6 +92,14 @@ export function article(args: {
       url: "https://dispatched.finance",
     },
   };
+  if (args.citations && args.citations.length > 0) {
+    payload.citation = args.citations.map((c) => ({
+      "@type": "CreativeWork",
+      name: c.name,
+      url: c.url,
+      publisher: { "@type": "Organization", name: c.publisher },
+    }));
+  }
   if (args.reviewerName) {
     payload.reviewedBy =
       args.reviewerName === FOUNDER_NAME_CANONICAL

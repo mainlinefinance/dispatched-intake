@@ -97,7 +97,7 @@ export default function RtsVsTbsFactoringPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               RTS Financial vs TBS Factoring — fleet-volume specialist vs
@@ -126,7 +126,7 @@ export default function RtsVsTbsFactoringPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No double sales pitch.
+              Soft-pull match. · No double sales pitch.
             </p>
           </div>
         </section>
@@ -154,7 +154,7 @@ export default function RtsVsTbsFactoringPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              matches you in two minutes.
+              matches you.
             </p>
 
             <table className="ins-carrier-table">
@@ -235,10 +235,10 @@ export default function RtsVsTbsFactoringPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
-                  <td data-label="RTS Financial">Same-day on most loads</td>
-                  <td data-label="TBS Factoring">24h typical</td>
+                  <td data-label="RTS Financial">Business-hours funding</td>
+                  <td data-label="TBS Factoring">Business-day funding</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -600,41 +600,24 @@ export default function RtsVsTbsFactoringPage() {
 
         <section className="ins-sunken">
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed</span>
+            <span className="ins-eyebrow">Payment options</span>
             <h2 className="ins-hero-title">
-              Same-day at RTS, 24h at TBS.
+              Both fund on business days; neither runs an after-hours rail.
             </h2>
 
-            <h3>RTS &mdash; same-day on most loads.</h3>
+            <h3>RTS &mdash; funding during business hours.</h3>
             <p className="ins-hero-sub">
-              RTS funds verified invoices same-day on most loads
-              submitted during business hours. Competitive against the
-              broader market (most non-instant factors run
-              next-banking-day at best), but a tier behind instant-funding
-              rails. Submissions outside business hours wait for the
-              next morning. Fine for steady-state factoring; not the
-              right tool for Friday-night fuel emergencies.
+              RTS funds verified invoices submitted during business hours and does not advertise an around-the-clock rail. That fits steady-state weekday factoring; operators who deliver outside banking hours should ask how after-hours submissions are handled.
             </p>
 
-            <h3>TBS &mdash; 24-hour typical.</h3>
+            <h3>TBS &mdash; funding on business days.</h3>
             <p className="ins-hero-sub">
-              TBS funds verified invoices within roughly 24 hours during
-              business days. Baseline freight-factoring cadence &mdash;
-              competitive industry-wide, but a tier behind RTS&rsquo;s
-              same-day. Weekends slide to Monday. For first-year
-              operators with irregular broker payment cycles, 24-hour
-              is fine; for established operators with high invoice
-              frequency, the extra cycle time becomes real friction.
+              TBS funds verified invoices on business days, the standard freight-factoring arrangement. Weekend submissions wait until business resumes. Timing on any invoice depends on the factor and your invoices.
             </p>
 
-            <h3>Winner: RTS on speed, neither is best-in-class.</h3>
+            <h3>No real difference on payment options.</h3>
             <p className="ins-hero-sub">
-              RTS holds the speed advantage, but both companies are a
-              tier behind instant-funding factors. For operators where
-              weekend funding is critical, neither is the right pick on
-              funding speed alone. RTS&rsquo;s real structural advantage
-              is the working-capital math from the 97% advance, not the
-              funding cycle.
+              Neither company offers an after-hours payment rail, so payment options should not decide this comparison. RTS&rsquo;s real structural advantage is the working-capital math from the 97% advance.
             </p>
           </div>
         </section>
@@ -756,7 +739,7 @@ export default function RtsVsTbsFactoringPage() {
             <p className="ins-hero-sub">
               TBS&rsquo;s pre-acquisition reviews cluster in the mixed
               band: positive on bookkeeping and authority-filing,
-              critical on factoring service speed and contract clarity.
+              critical on factoring service responsiveness and contract clarity.
               Common complaints are slow response times, billing
               disputes around tier changes, and downgrade friction. The
               Love&rsquo;s acquisition may stabilize these signals,
@@ -789,15 +772,14 @@ export default function RtsVsTbsFactoringPage() {
 
             <h3>TBS &mdash; strongest new-authority value-add in the market.</h3>
             <p className="ins-hero-sub">
-              TBS approves new authorities and bad-credit profiles
-              routinely. The structural advantage is what happens before
+              TBS works with new authorities and lower credit profiles. The structural advantage is what happens before
               underwriting: TBS files the authority, processes the BOC-3
               with its registered process agent, and walks the operator
               through IFTA setup. By the time the operator reaches
               factoring underwriting, TBS has already absorbed the
               highest-friction setup steps. That integrated path is the
               strongest new-authority value-add in the factoring market
-              &mdash; not just on price, but on time-to-first-load. For
+              &mdash; not just on price, but on setup burden. For
               broader first-year strategy, see{" "}
               <Link href="/owner-operator-financing/first-time">
                 first-time owner-operator financing
@@ -805,9 +787,9 @@ export default function RtsVsTbsFactoringPage() {
               .
             </p>
 
-            <h3>RTS &mdash; accepts new authority, but pricing penalizes it.</h3>
+            <h3>RTS &mdash; works with new authority, but pricing penalizes it.</h3>
             <p className="ins-hero-sub">
-              RTS factors bad-credit and new-authority operators, but
+              RTS considers lower-credit and new-authority operators, but
               the program isn&rsquo;t built around them. The volume-tier
               structure that makes RTS attractive to high-volume fleets
               works against new authorities by definition: a brand-new
@@ -934,9 +916,7 @@ export default function RtsVsTbsFactoringPage() {
             <h3>For owner-op premium service &mdash; Apex Capital.</h3>
             <p className="ins-hero-sub">
               Apex is the service-quality benchmark: 700+ 5-star
-              reviews, BBB Torch Award, blynk&reg; instant funding
-              24/7/365, ~$0.51/gal fuel discount. For operators
-              prioritizing service responsiveness and weekend funding,
+              reviews, BBB Torch Award, the blynk&reg; around-the-clock payment option, ~$0.51/gal fuel discount. For operators prioritizing service responsiveness and an after-hours payment option,
               Apex is the clearer pick over both RTS and TBS.
             </p>
 
@@ -979,9 +959,7 @@ export default function RtsVsTbsFactoringPage() {
             <p className="ins-hero-sub">
               RTS Financial and TBS Factoring are both legitimate
               factors &mdash; they just don&rsquo;t share an operator
-              profile. The question isn&rsquo;t whether either will
-              fund you; in most cases, both will. The question is
-              which fits the specific shape of your operation right
+              profile. Approval is not guaranteed with either. The question is which fits the specific shape of your operation right
               now: whether you&rsquo;ve filed authority yet, whether
               projected volume hits 30+ loads/month, how much you
               spend on outsourced bookkeeping, whether routes
@@ -997,8 +975,7 @@ export default function RtsVsTbsFactoringPage() {
               </Link>{" "}
               exists. One application, profile-aware match, no
               double-pull on your credit. Or check fit first at{" "}
-              <Link href="/qualify">/qualify</Link> &mdash; 30 seconds,
-              no credit pull.
+              <Link href="/qualify">/qualify</Link> &mdash; no credit pull.
             </p>
           </div>
         </section>

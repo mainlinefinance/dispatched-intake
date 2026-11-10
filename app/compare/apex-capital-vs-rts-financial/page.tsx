@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "Which is better for new owner-operators?",
-    a: "Apex. It has a dedicated startup program for new MC# operators with structured pre-approvals and the fastest path to first funding. RTS accepts new authority but its volume-tiered rates work against operators running fewer than 30 loads per month.",
+    a: "Apex. It has a dedicated startup program for new MC# operators and a structured onboarding path. RTS accepts new authority but its volume-tiered rates work against operators running fewer than 30 loads per month.",
   },
   {
     q: "Which fuel discount program is better?",
@@ -100,7 +100,7 @@ export default function ApexVsRtsFinancialPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               Apex Capital vs RTS Financial — which trucking factor wins in
@@ -109,7 +109,7 @@ export default function ApexVsRtsFinancialPage() {
             <p className="ins-hero-sub">
               Both are 1995-vintage factoring companies with strong
               reputations and very different DNA. Apex is owner-operator
-              native with instant payment tech; RTS is fleet-friendly with
+              native with an around-the-clock payment rail; RTS is fleet-friendly with
               the highest advance rate in the industry. Here&rsquo;s the
               honest head-to-head.
             </p>
@@ -128,7 +128,7 @@ export default function ApexVsRtsFinancialPage() {
               </Link>
             </div>
             <p className="product-hero-note">
-              Soft-pull match. · Two minutes. · No double sales pitch.
+              Soft-pull match. · No double sales pitch.
             </p>
           </div>
         </section>
@@ -145,8 +145,7 @@ export default function ApexVsRtsFinancialPage() {
               both regularly named on best-of lists. The DNA, however,
               is different. Apex was built around owner-operators in
               Fort Worth, Texas: 400 employees, one product (freight
-              factoring) done deep, a 24/7/365 instant-funding rail
-              called blynk&reg; that pays in minutes, the deepest fuel
+              factoring) done deep, an around-the-clock payment rail called blynk&reg;, the deepest fuel
               program in the industry at roughly 51&cent;/gal, and
               700+ five-star aggregate reviews backed by a 2018 BBB
               Torch Award. RTS Financial sits inside RTS Inc &mdash; a
@@ -155,7 +154,7 @@ export default function ApexVsRtsFinancialPage() {
               driver portal &mdash; and the factoring product is
               fleet-tilted: rates drop to 1.5% once you cross 30 loads
               per month, the advance rate hits 97% (industry-leading
-              alongside Apex), funding clears same-day, and contracts
+              alongside Apex), and contracts
               run 12&ndash;24 months with a 2% / 1% early-termination
               fee structure. Both are real options; the right one
               depends on your volume, your contract tolerance, and
@@ -167,7 +166,7 @@ export default function ApexVsRtsFinancialPage() {
               <Link href="/apply?useCase=factoring">
                 /apply?useCase=factoring
               </Link>{" "}
-              does in two minutes.
+              does.
             </p>
 
             <table className="ins-carrier-table">
@@ -240,10 +239,10 @@ export default function ApexVsRtsFinancialPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
-                  <td data-label="Apex Capital">Minutes (blynk®)</td>
-                  <td data-label="RTS Financial">Same-day</td>
+                  <td data-label="Apex Capital">Around-the-clock rail (blynk®)</td>
+                  <td data-label="RTS Financial">Business-hours funding</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -312,8 +311,7 @@ export default function ApexVsRtsFinancialPage() {
               U.S.-based, all specialized in trucking. The company was
               built around owner-operators &mdash; the segment most
               factors treat as an afterthought &mdash; and the product
-              set reflects that focus: the blynk&reg; instant-funding
-              rail, a fuel card with the deepest network discount in
+              set reflects that focus: the blynk&reg; around-the-clock payment rail, a fuel card with the deepest network discount in
               the industry, equipment financing, dispatch and roadside
               add-ons, and a startup program for new authorities. Apex
               doesn&rsquo;t cross-sell asset-based lending, healthcare
@@ -491,37 +489,25 @@ export default function ApexVsRtsFinancialPage() {
 
         <section className="ins-sunken">
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed and advance</span>
+            <span className="ins-eyebrow">Payment options and advance</span>
             <h2 className="ins-hero-title">
-              Cash hits faster at Apex. RTS pays a higher percentage.
+              Apex pays around the clock. RTS pays a higher percentage.
             </h2>
 
             <h3>
-              Apex blynk&reg; &mdash; minutes-level funding, 24/7/365.
+              Apex blynk&reg; &mdash; a payment rail that runs around the clock.
             </h3>
             <p className="ins-hero-sub">
-              Apex&rsquo;s blynk&reg; funding system is genuinely
-              differentiated. Verified invoices submitted through the
-              app fund in minutes, around the clock, including weekends
-              and holidays. For a driver who delivers Friday at 6pm
-              and needs fuel money before a Saturday morning departure,
-              this is the product feature that ends the conversation.
-              No business-hours dependency, no ACH cutoff, no
-              &ldquo;next banking day.&rdquo; The infrastructure was
+              Apex&rsquo;s blynk&reg; is a payment option that operates outside banking hours. Verified invoices submitted through the app can be paid around the clock, including weekends and holidays, without depending on ACH cutoffs. The infrastructure was
               built in-house and has been running at scale for several
               years.
             </p>
 
             <h3>
-              RTS &mdash; same-day funding, 97% advance rate.
+              RTS &mdash; business-hours funding, 97% advance rate.
             </h3>
             <p className="ins-hero-sub">
-              RTS funds verified invoices same-day on most loads. For
-              day-to-day steady-state factoring, that&rsquo;s
-              competitive against the broader market &mdash; most
-              non-instant factors still run next-banking-day at best
-              &mdash; but it&rsquo;s a tier behind blynk&reg; for
-              weekend or evening emergencies. The structural advantage
+              RTS pays verified invoices on a business-hours schedule. For steady weekday factoring that covers the need; it does not cover weekends or evenings the way blynk&reg; does. The structural advantage
               RTS holds is on the advance rate: up to 97% of invoice
               face value on factoring, the highest in the industry
               alongside Apex. For cash-flow-tight operators &mdash;
@@ -533,15 +519,13 @@ export default function ApexVsRtsFinancialPage() {
             </p>
 
             <h3>
-              Winner: Apex on speed, RTS on advance, tie depending on
-              what you optimize.
+              Payment options differ and so do advance rates; it depends on what you optimize.
             </h3>
             <p className="ins-hero-sub">
               <strong>
-                If your bottleneck is Friday-night fuel money or
-                weekend cash, Apex.
+                If you need a payment option that operates outside banking hours, Apex offers one.
               </strong>{" "}
-              Blynk&reg; is genuinely best-in-class for that use case.{" "}
+              RTS does not. Timing on any invoice depends on the factor and your paperwork.{" "}
               <strong>
                 If your bottleneck is working-capital headroom inside a
                 growing fleet, RTS.
@@ -665,36 +649,31 @@ export default function ApexVsRtsFinancialPage() {
         <section>
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Bad credit and new authority
+              Lower credit profiles and new authority
             </span>
             <h2 className="ins-hero-title">
-              Both work. Apex is built for it.
+              Two program structures: a startup program and volume tiers.
             </h2>
 
             <h3>Apex &mdash; dedicated startup program.</h3>
             <p className="ins-hero-sub">
               Apex runs a dedicated startup program for new authorities
-              with structured pre-approvals: an operator can be
-              pre-qualified before MC activation and start factoring
-              from invoice one. Sub-580 FICO is approvable; prior
+              that can begin before MC activation. Lower credit profiles are considered; prior
               bankruptcy isn&rsquo;t an automatic decline; minimum
               monthly volume is set low enough that single-truck
               owner-ops fit. This is the segment Apex was built for,
               and the underwriting reflects that. For the broader
               category, see{" "}
-              <Link href="/factoring/no-credit-check">
-                no credit check trucking factoring
-              </Link>
+              <Link href="/factoring/broker-credit">
+                factoring that underwrites your brokers </Link>
               .
             </p>
 
             <h3>
-              RTS &mdash; accepts new authority, but volume tiers
-              penalize sub-30-loads/month.
+              RTS &mdash; considers new authority, but volume tiers penalize sub-30-loads/month.
             </h3>
             <p className="ins-hero-sub">
-              RTS factors operators with bad credit or new authority,
-              but the program isn&rsquo;t built around them. The
+              RTS considers lower credit profiles and new authorities; approval is not guaranteed, and the program isn&rsquo;t built around them. The
               volume-tiered rate structure that makes RTS attractive
               to high-volume fleets works against new authorities by
               definition: a brand-new MC running 8 loads in month one
@@ -742,18 +721,15 @@ export default function ApexVsRtsFinancialPage() {
               </li>
               <li>
                 <strong>
-                  Operators who need weekend or after-hours funding.
+                  Operators who need payments outside banking hours.
                 </strong>{" "}
-                Blynk&reg; pays in minutes, 24/7/365. If you deliver
-                Friday night and need fuel by Saturday morning, this is
-                the product.
+                Blynk&reg; runs around the clock, including weekends.
               </li>
               <li>
                 <strong>
-                  New authorities and bad-credit operators.
+                  New authorities and operators rebuilding credit.
                 </strong>{" "}
-                The structured startup program clears underwriting
-                paths that RTS&rsquo;s volume-tier pricing penalizes.
+                Apex runs a structured startup program; RTS&rsquo;s volume-tier pricing penalizes low early volume. Approval is not guaranteed with either.
               </li>
               <li>
                 <strong>
@@ -795,13 +771,11 @@ export default function ApexVsRtsFinancialPage() {
               </li>
               <li>
                 <strong>
-                  Fleets prioritizing working-capital headroom over
-                  funding speed.
+                  Fleets prioritizing working-capital headroom over payment options.
                 </strong>{" "}
                 The 97% advance is structural. On a $300K/month
                 factored volume, that&rsquo;s $21K extra monthly
-                working capital versus a 90% advance &mdash; real
-                money, real fast.
+                working capital versus a 90% advance &mdash; real money.
               </li>
               <li>
                 <strong>
@@ -858,7 +832,7 @@ export default function ApexVsRtsFinancialPage() {
             <p className="ins-hero-sub">
               TBS is purpose-built for the new-authority segment. The
               startup program is the deepest in the industry &mdash;
-              you can be approved before your MC is even active
+              onboarding can start before your MC is active
               &mdash; and TBS bundles authority filings into the
               relationship. If you&rsquo;re a week from MC activation,
               TBS is a stronger first stop than RTS.
@@ -897,9 +871,7 @@ export default function ApexVsRtsFinancialPage() {
             <p className="ins-hero-sub">
               Apex Capital and RTS Financial are both on Dispatched&rsquo;s
               factoring panel, and they&rsquo;re both legitimate
-              factors. The question isn&rsquo;t whether either one will
-              fund you &mdash; in most cases, both will. The question
-              is which one fits the specific shape of your operation:
+              factors. Approval is not guaranteed with either. The question is which one fits the specific shape of your operation:
               how many loads you run per month, what your contract
               tolerance looks like, how much fuel you burn, whether you
               prefer recourse or non-recourse, and whether you
@@ -918,8 +890,7 @@ export default function ApexVsRtsFinancialPage() {
               credit, no double sales pitch, and no spam from the one
               that isn&rsquo;t the fit. If you&rsquo;d rather check
               fit before going further, the two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30
-              seconds and pulls no credit.
+              <Link href="/qualify">/qualify</Link> pulls no credit.
             </p>
           </div>
         </section>
@@ -977,8 +948,8 @@ export default function ApexVsRtsFinancialPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                <Link href="/factoring/broker-credit">
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

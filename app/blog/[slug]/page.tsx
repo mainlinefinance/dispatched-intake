@@ -1,3 +1,6 @@
+import Byline, { EDITORIAL_AUTHOR } from "@/components/editorial/Byline";
+import Sources from "@/components/editorial/Sources";
+import { citationsForPost } from "@/lib/seo/citations";
 import { fitDescription, fitTitle } from "@/lib/seo/meta";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -70,6 +73,7 @@ export default async function BlogPostPage({
   if (!p) notFound();
 
   const url = `${ORIGIN}/blog/${p.slug}`;
+  const citations = citationsForPost(p);
   const relatedPosts = p.relatedPosts
     .map((rs) => getPost(rs))
     .filter((x): x is BlogPost => Boolean(x));
@@ -103,6 +107,8 @@ export default async function BlogPostPage({
           url,
           datePublished: p.publishedDate,
           dateModified: p.updatedDate,
+          authorName: EDITORIAL_AUTHOR,
+          citations,
         })}
       />
       {p.faqs && p.faqs.length > 0 ? (
@@ -118,6 +124,7 @@ export default async function BlogPostPage({
             </p>
             <h1 className="research-h1">{p.title}</h1>
             <p className="research-subhead">{p.subhead}</p>
+            <Byline published={p.publishedDate} updated={p.updatedDate} />
             <p className="research-meta">
               <Link href="/blog">All blog posts</Link>
             </p>
@@ -143,6 +150,8 @@ export default async function BlogPostPage({
               ))}
             </section>
           ) : null}
+
+          <Sources citations={citations} />
 
           {relatedGlossaryTerms.length > 0 ? (
             <section className="research-section">
@@ -211,7 +220,7 @@ export default async function BlogPostPage({
             </p>
             <div className="research-cta-grid">
               <Link href="/qualify" className="research-cta-card">
-                <h3>Qualify in 3 minutes</h3>
+                <h3>Check your funding fit</h3>
                 <p>
                   Soft pull, no credit impact. Routed to the lender panel
                   matching your authority age, credit profile, and capital

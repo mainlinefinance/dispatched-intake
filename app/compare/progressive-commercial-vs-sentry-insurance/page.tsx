@@ -44,7 +44,7 @@ const PAGE_URL =
 const faqs = [
   {
     q: "Which is better for new owner-operators?",
-    a: "Progressive Commercial. New owner-operators with clean MVRs and basic CDL-A operations get competitive quotes faster through Progressive's direct online channels. Sentry's agent-mediated process and specialty-risk focus is overkill for a single-truck new operator. Most owner-ops graduate from Progressive at 5+ truck scale or when developing specialty freight needs.",
+    a: "Progressive Commercial. New owner-operators with clean MVRs and basic CDL-A operations get competitive quotes through Progressive's direct online channels. Sentry's agent-mediated process and specialty-risk focus is overkill for a single-truck new operator. Most owner-ops graduate from Progressive at 5+ truck scale or when developing specialty freight needs.",
   },
   {
     q: "Which is better for mid-fleets (5-25 trucks)?",
@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: "Which has better claim handling?",
-    a: "Mixed reputation. Progressive's scale produces both excellent (fast online claim filing, quick property damage settlements) and frustrating (escalation can be slow, complex commercial claims sometimes routed to consumer-trained adjusters) experiences. Sentry's trucking-specialty claim handlers understand the industry-specific dynamics (CSA correlation, broker dispute risk, FMCSA reporting), often producing cleaner outcomes on complex claims. For straightforward not-at-fault claims, both are competitive.",
+    a: "Mixed reputation. Progressive's scale produces both excellent (online claim filing, smooth property damage settlements) and frustrating (escalation can be difficult, complex commercial claims sometimes routed to consumer-trained adjusters) experiences. Sentry's trucking-specialty claim handlers understand the industry-specific dynamics (CSA correlation, broker dispute risk, FMCSA reporting), often producing cleaner outcomes on complex claims. For straightforward not-at-fault claims, both are competitive.",
   },
   {
     q: "Which handles hazmat and specialty freight better?",
@@ -64,7 +64,7 @@ const faqs = [
   },
   {
     q: "How do CSA scores affect pricing on each?",
-    a: "Both price on CSA, but with different sensitivity. Progressive's broader market means operators with mid-tier CSA percentiles can still get competitive rates — Progressive will write the policy and price it. Sentry's specialty focus means CSA percentile thresholds matter more — operators in higher-risk CSA territories may face declines or surplus-lines redirects. Both carriers re-rate annually based on the rolling 24-month CSA window.",
+    a: "Both price on CSA, but with different sensitivity. Progressive's broader market means operators with mid-tier CSA percentiles can still get competitive rates — Progressive's broader appetite prices more of those profiles rather than declining them. Sentry's specialty focus means CSA percentile thresholds matter more — operators in higher-risk CSA territories may face declines or surplus-lines redirects. Both carriers re-rate annually based on the rolling 24-month CSA window.",
   },
   {
     q: "Should I switch from Progressive to Sentry as my fleet grows?",
@@ -105,7 +105,7 @@ export default function ProgressiveVsSentryPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               Progressive Commercial vs Sentry Insurance — broad SMB vs
@@ -148,8 +148,7 @@ export default function ProgressiveVsSentryPage() {
               Dispatched insurance panel, but they target different
               operators. Progressive Commercial is the largest commercial
               auto insurer in the United States, serving everyone from
-              landscapers to long-haul fleets, with a direct-online
-              quoting engine that returns numbers in minutes and a rate
+              landscapers to long-haul fleets, with a direct-online quoting engine and a rate
               structure built around clean-MVR, single-truck and small-
               fleet profiles. Sentry Insurance is a trucking-specialty
               carrier founded in 1904, sold primarily through agents, with
@@ -157,15 +156,14 @@ export default function ProgressiveVsSentryPage() {
               specialty-freight terms first and SMB framing second. Both
               hold AM Best A+ (Superior) ratings, so the financial-
               strength threshold isn&rsquo;t the differentiator. The real
-              fork: Progressive wins on quoting speed and clean-MVR
+              fork: Progressive wins on direct online quoting and clean-MVR
               owner-operator pricing; Sentry wins on mid-fleet underwriting,
               specialty endorsements, and complex-claim handling depth.
               The rest of this page is the line-by-line comparison and a
               verdict by use case. If you&rsquo;d rather skip the read and
               have us match you to the right carrier based on your DOT
               profile, that&rsquo;s what{" "}
-              <Link href="/insurance">/insurance</Link> does in two
-              minutes.
+              <Link href="/insurance">/insurance</Link> does.
             </p>
 
             <table className="ins-carrier-table">
@@ -253,13 +251,13 @@ export default function ProgressiveVsSentryPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Quoting speed</strong>
+                    <strong>Quoting channel</strong>
                   </td>
                   <td data-label="Progressive Commercial">
-                    Fast (online minutes)
+                    Direct online
                   </td>
                   <td data-label="Sentry Insurance">
-                    Slower (agent-driven)
+                    Agent-driven
                   </td>
                 </tr>
                 <tr>
@@ -315,7 +313,7 @@ export default function ProgressiveVsSentryPage() {
               commercial auto insurance in the United States by direct
               premium. That position was built on direct-to-customer
               distribution &mdash; the website, the call center, the
-              quoting engine that returns a real number in minutes &mdash;
+              quoting engine that returns a real number online &mdash;
               and on the broad-criteria underwriting model that lets a
               landscaping company, a contractor with two pickup trucks,
               and a five-truck OTR fleet all get bound through the same
@@ -441,8 +439,7 @@ export default function ProgressiveVsSentryPage() {
               percentiles, lane radius, equipment value) layered on top.
               That breadth produces real upside on the quoting side
               &mdash; the system absorbs more operator profiles and
-              returns numbers faster than agent-mediated carriers can
-              &mdash; but the trade-off is that trucking-specific edge
+              returns numbers without an agent in the loop &mdash; but the trade-off is that trucking-specific edge
               cases (high-mileage long-haul, specialty freight, prior
               FMCSA conditional ratings, complex multi-state filings) get
               evaluated by underwriters who also handle non-trucking
@@ -518,8 +515,7 @@ export default function ProgressiveVsSentryPage() {
               operator with zero at-fault incidents in the trailing 36
               months &mdash; Progressive Commercial is consistently among
               the most competitive primary auto liability quotes in the
-              market. The direct-online funnel produces a real bindable
-              number in minutes; the underlying actuarial model rewards
+              market. The direct-online funnel produces a real bindable number online; the underlying actuarial model rewards
               the profile heavily because the loss ratio on clean-MVR
               single trucks is what Progressive built the book around.
               For a typical OTR owner-op running 100K+ miles a year on dry
@@ -571,9 +567,7 @@ export default function ProgressiveVsSentryPage() {
             <h3>Progressive claim handling reputation.</h3>
             <p className="ins-hero-sub">
               Progressive&rsquo;s claim reputation runs both ways. The
-              upside: scale produces fast first-notice-of-loss intake,
-              robust online and mobile claim filing, quick property-
-              damage settlements on straightforward not-at-fault claims,
+              upside: scale produces app-based first-notice-of-loss intake, robust online and mobile claim filing, smooth property- damage settlements on straightforward not-at-fault claims,
               and aggressive subrogation pursuit on third-party fault
               claims that recovers deductible dollars cleanly. The
               downside: the same scale routes some complex commercial
@@ -594,17 +588,14 @@ export default function ProgressiveVsSentryPage() {
               commercial counterparties all sit inside the handler&rsquo;s
               normal workflow. The trade-off is throughput: agent-
               mediated relationships and human-driven workflow mean
-              first-notice-of-loss intake isn&rsquo;t instant the way
-              Progressive&rsquo;s app makes it. For a Sunday-afternoon
-              roadside incident, the Progressive app filing experience is
-              faster. For the complex two-month liability dispute that
+              first-notice-of-loss intake goes through a person rather than an app. For a Sunday-afternoon roadside incident, the Progressive app filing experience is more convenient. For the complex two-month liability dispute that
               follows, the Sentry handler is more equipped.
             </p>
 
             <h3>The honest verdict on claims.</h3>
             <p className="ins-hero-sub">
               For straightforward not-at-fault claims with clear third-
-              party fault, fast settlement, and minimal cargo
+              party fault and minimal cargo
               implications, both carriers handle the claim competently.
               For complex claims involving cargo damage allocation,
               broker contract disputes, FMCSA enforcement implications,
@@ -633,7 +624,7 @@ export default function ProgressiveVsSentryPage() {
               equipment list, MVR, lane radius, prior claims), runs them
               through a multi-variable model that handles every
               commercial vehicle class Progressive writes, and returns a
-              bindable quote in minutes. The model handles the standard
+              bindable quote online. The model handles the standard
               trucking profile well &mdash; clean MVR, 1 to 5 trucks,
               general freight, standard radius &mdash; and absorbs some
               variation around that profile. What the model handles less
@@ -677,30 +668,24 @@ export default function ProgressiveVsSentryPage() {
               Direct online quote vs agent-mediated bind.
             </h2>
 
-            <h3>Progressive &mdash; direct, online, fast.</h3>
+            <h3>Progressive &mdash; direct and online.</h3>
             <p className="ins-hero-sub">
               Progressive Commercial&rsquo;s primary distribution is
               direct to operator through progressivecommercial.com and
               its commercial call center. Independent agents also sell
               Progressive commercial auto in many markets, but the
               flagship experience is the operator typing the DOT number
-              into the website and walking out with a bindable quote in
-              minutes. That speed is genuinely differentiated &mdash; no
-              other major commercial auto carrier delivers an
-              operator-driven quote experience at the same latency.
-              Quote, compare endorsements, choose deductibles, and bind
-              the same day is possible for the clean-MVR profile.
+              into the website and walking out with a bindable quote. That self-serve experience is genuinely differentiated among major commercial auto carriers. The operator can quote, compare endorsements, choose deductibles, and bind online.
             </p>
 
-            <h3>Sentry &mdash; agent-mediated, slower, deeper.</h3>
+            <h3>Sentry &mdash; agent-mediated and deeper.</h3>
             <p className="ins-hero-sub">
               Sentry distributes primarily through appointed independent
               agents and brokers. The quote workflow runs through an
               agent who knows Sentry&rsquo;s underwriting appetite,
               submits the application package, dialogues with the
               underwriter on edge cases, and brings the bindable program
-              back to the operator. That cycle takes days, not minutes
-              &mdash; sometimes a week or more for complex submissions.
+              back to the operator. That cycle takes longer than a self-serve quote, especially for complex submissions.
               The trade-off is real: the agent is doing actual work
               shaping the program, the underwriter is engaged at a
               human level, and the bound policy reflects more
@@ -728,15 +713,14 @@ export default function ProgressiveVsSentryPage() {
                 <strong>Small fleets (1-5 trucks) on general freight.</strong>{" "}
                 Standard dry van, flatbed, or reefer operations on
                 conventional radius patterns fit Progressive&rsquo;s
-                core book cleanly. Speed-to-bind is the structural
-                advantage.
+                core book cleanly. Self-serve online binding is the structural advantage.
               </li>
               <li>
-                <strong>Operators who need a quote today.</strong>{" "}
+                <strong>Operators who want a self-serve quote.</strong>{" "}
                 Brokers who require proof of insurance before issuing
                 load tenders, dispatchers prepping for a new contract,
                 or operators recovering from a prior carrier non-renewal
-                can quote and bind Progressive within hours.
+                can quote and bind Progressive online.
               </li>
               <li>
                 <strong>Mixed-vehicle commercial operations.</strong>{" "}
@@ -873,13 +857,10 @@ export default function ProgressiveVsSentryPage() {
               Progressive Commercial and Sentry Insurance are both on
               Dispatched&rsquo;s producer-mediated carrier panel, and
               they&rsquo;re both legitimate options for commercial
-              trucking insurance. The question isn&rsquo;t whether either
-              one will write you &mdash; in most cases at least one will
-              &mdash; it&rsquo;s which one fits the specific shape of
+              trucking insurance. Neither is guaranteed to write you; the question is which one fits the specific shape of
               your operation: DOT class, equipment list, lane footprint,
               CSA percentile profile, prior loss runs, specialty
-              endorsement needs, and whether speed-to-bind or
-              underwriting depth is the binding constraint. Apply to
+              endorsement needs, and whether self-serve convenience or underwriting depth is the binding constraint. Apply to
               both directly and you&rsquo;ll spend the next two weeks
               fielding sales contact from Progressive&rsquo;s call center
               and from a Sentry-appointed agent, comparing quotes in two
@@ -892,8 +873,7 @@ export default function ProgressiveVsSentryPage() {
               producer placing the policy with the right market. If
               you&rsquo;d rather check fit before going further, the
               two-question tool at{" "}
-              <Link href="/qualify">/qualify</Link> takes about 30 seconds
-              and pulls no MVR.
+              <Link href="/qualify">/qualify</Link> pulls no MVR.
             </p>
           </div>
         </section>

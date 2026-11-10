@@ -132,7 +132,7 @@ export default function QualificationCalc() {
     <form className="qual" onSubmit={handleSubmit} id="qual">
       <div className="qual-header">
         <div>
-          <div className="qual-steps">2 QUESTIONS · NO CREDIT CHECK</div>
+          <div className="qual-steps">2 QUESTIONS · NO CREDIT PULL</div>
           <div className="title">Check your funding fit.</div>
         </div>
         <div className="safe">

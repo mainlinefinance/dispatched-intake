@@ -15,9 +15,9 @@ export const BRAND = {
 
 export const SCREEN1 = {
   kicker: "AI Capital Advisor",
-  heroTitle: "Working capital, matched in minutes",
+  heroTitle: "Working capital, matched to your operation",
   question:
-    "Hey — tell me what you need the money for and I'll see who can fund it fastest.",
+    "Hey — tell me what you need the money for and I'll see who may be able to fund it.",
 };
 
 export const USE_CASE_OPTIONS: { value: UseCase; label: string }[] = [
@@ -261,7 +261,7 @@ export const SUBMITTED = {
   eyebrow: "Request received",
   title: "We\u2019re pulling matches now.",
   body: (maskedPhone: string) =>
-    `You\u2019ll get a text at ${maskedPhone} within 10 minutes with your match list. Keep your phone handy.`,
+    `You\u2019ll get a text at ${maskedPhone} with your match list once it is ready. Keep your phone handy.`,
 };
 
 export const PROGRESS_BY_SCREEN: Record<number, number> = {
