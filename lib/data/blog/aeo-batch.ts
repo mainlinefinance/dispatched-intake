@@ -11,7 +11,7 @@ import type { BlogPost } from "../blog";
 
 export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
   {
-    slug: "same-day-truck-repair-loan",
+    slug: "truck-repair-loan-how-it-works",
     title: "How do I get truck repair financing when the truck is down?",
     metaTitle: "Truck Repair Loan: How It Works | Dispatched",
     metaDescription:
@@ -174,7 +174,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
       },
     ],
     relatedPosts: [
-      "same-day-truck-repair-loan",
+      "truck-repair-loan-how-it-works",
       "trucking-loan-under-12-months-mc-authority",
       "building-business-credit-owner-operator",
       "how-dispatched-matches-trucking-loans",
@@ -265,7 +265,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
     ],
     relatedPosts: [
       "owner-operator-trucking-loan-bad-credit",
-      "same-day-truck-repair-loan",
+      "truck-repair-loan-how-it-works",
       "how-dispatched-matches-trucking-loans",
       "new-authority-year-1-compliance-calendar",
     ],
@@ -357,7 +357,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
     ],
     relatedPosts: [
       "owner-operator-trucking-loan-bad-credit",
-      "same-day-truck-repair-loan",
+      "truck-repair-loan-how-it-works",
       "how-dispatched-matches-trucking-loans",
       "factoring-vs-working-capital",
     ],
@@ -447,7 +447,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
       },
     ],
     relatedPosts: [
-      "same-day-truck-repair-loan",
+      "truck-repair-loan-how-it-works",
       "owner-operator-trucking-loan-bad-credit",
       "trucking-loan-under-12-months-mc-authority",
       "small-fleet-working-capital-options",

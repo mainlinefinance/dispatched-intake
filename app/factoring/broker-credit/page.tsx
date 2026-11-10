@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   description:
     "How freight factors underwrite the brokers who owe your invoices, what they still review about the carrier, and how weak credit or new authority is treated.",
   alternates: {
-    canonical: "/factoring/no-credit-check",
+    canonical: "/factoring/broker-credit",
   },
   openGraph: {
     images: ["/opengraph-image"],
     title: "Broker-Credit Factoring for Truckers | Dispatched",
     description:
       "How freight factors underwrite the brokers who owe your invoices, what they still review about the carrier, and how weak credit or new authority is treated.",
-    url: "/factoring/no-credit-check",
+    url: "/factoring/broker-credit",
     type: "website",
   },
   twitter: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 };
 
 const PAGE_URL =
-  "https://dispatched.finance/factoring/no-credit-check";
+  "https://dispatched.finance/factoring/broker-credit";
 
 const faqs = [
   {
@@ -70,7 +70,7 @@ const faqs = [
 ];
 
 export default function NoCreditCheckFactoringPage() {
-  const { published, modified: today } = contentDates("app/factoring/no-credit-check/page.tsx");
+  const { published, modified: today } = contentDates("app/factoring/broker-credit/page.tsx");
   return (
     <div className="landing">
       <JsonLd

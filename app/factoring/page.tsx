@@ -189,7 +189,7 @@ export default function InvoiceFactoringPage() {
                 Factoring is sometimes the only product available to
                 operators with under six months of operating history,
                 because the factor underwrites mainly on the broker&rsquo;s credit. This is also why{" "}
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   factoring that underwrites your brokers </Link>{" "} is a path challenged-credit and post-BK operators often look at; approval is not guaranteed.
               </li>
               <li>

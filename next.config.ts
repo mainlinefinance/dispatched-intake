@@ -67,6 +67,18 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        // These two slugs promised what the pages no longer claim (no credit
+        // check, same-day funding). The pages were reframed; the URLs follow.
+        source: "/factoring/no-credit-check",
+        destination: "/factoring/broker-credit",
+        permanent: true,
+      },
+      {
+        source: "/blog/same-day-truck-repair-loan",
+        destination: "/blog/truck-repair-loan-how-it-works",
+        permanent: true,
+      },
+      {
         // Canonical money-page slug is /trucking-working-capital. /working-capital
         // is the slug external citers and AI tools default to — redirect it in
         // so the URL is reachable without a 404.

@@ -209,7 +209,7 @@ export const COMPLIANCE_EXTENDED_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["bol", "recourse-factoring", "non-recourse-factoring"],
     relatedProducts: [
       { url: "/factoring", label: "Invoice factoring for truckers" },
-      { url: "/factoring/no-credit-check", label: "Factoring that underwrites your brokers" },
+      { url: "/factoring/broker-credit", label: "Factoring that underwrites your brokers" },
     ],
   },
   {

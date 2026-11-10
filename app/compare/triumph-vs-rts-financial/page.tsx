@@ -760,7 +760,7 @@ export default function TriumphVsRtsFinancialPage() {
               the top of the rate band. Underwriting is fine; the
               pricing penalty is real until volume scales. For the
               broader category, see{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers
               </Link>
               .
@@ -1015,7 +1015,7 @@ export default function TriumphVsRtsFinancialPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li><Link href="/factoring">Invoice factoring for truckers →</Link></li>
-              <li><Link href="/factoring/no-credit-check">Factoring that underwrites your brokers →</Link></li>
+              <li><Link href="/factoring/broker-credit">Factoring that underwrites your brokers →</Link></li>
               <li><Link href="/research/best-trucking-factoring-2026">Best trucking factoring 2026 →</Link></li>
               <li><Link href="/qualify">Two-question fit →</Link></li>
               <li><Link href="/methodology">How we describe rates →</Link></li>

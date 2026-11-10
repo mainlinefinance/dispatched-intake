@@ -104,7 +104,7 @@ function buildMoneyEntries(today: Date): MetadataRoute.Sitemap {
     "/owner-operator-financing/no-business-history",
     "/truck-repair-loans/emergency",
     "/truck-repair-loans/engine-rebuild",
-    "/factoring/no-credit-check",
+    "/factoring/broker-credit",
     "/equipment-financing",
     "/trucking-working-capital",
     "/fuel-cards",

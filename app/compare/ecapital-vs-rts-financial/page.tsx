@@ -1050,7 +1050,7 @@ export default function EcapitalVsRtsFinancialPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers →
                 </Link>
               </li>

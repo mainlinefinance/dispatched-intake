@@ -336,7 +336,7 @@ export default function ApexVsPorterPage() {
                 porterfreightfunding.com
               </a>{" "}
               for company-stated details; for the broader category, see{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers </Link>
               .)
             </p>
@@ -377,7 +377,7 @@ export default function ApexVsPorterPage() {
               For operators with credit in good standing &mdash; solid credit, no recent BK &mdash; Apex&rsquo;s soft pull
               is a non-event and the credit profile gets rewarded with
               better effective pricing. For operators rebuilding credit, or carrying a lower credit profile or recent BK on file, Porter&rsquo;s broker-credit underwriting is the closer fit. The broader category context is in{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers </Link>{" "}
               and{" "}
               <Link href="/bad-credit-truck-financing">
@@ -904,7 +904,7 @@ export default function ApexVsPorterPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers →
                 </Link>
               </li>

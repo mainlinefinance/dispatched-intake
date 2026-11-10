@@ -322,7 +322,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
                 credit-event categories.
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers </Link>{" "} — a product for operators with an active MC# and a load on the books, because the factor underwrites mainly on the broker.
               </li>
               <li>

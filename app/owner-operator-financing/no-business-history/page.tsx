@@ -229,7 +229,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
                   Invoice factoring &mdash; open to new authorities.
                 </strong>{" "}
                 Open to operators with an active MC# and one signed load. The factor underwrites mainly on the broker who owes the invoice and still reviews the carrier.{" "}
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers </Link>{" "} is the right link for the structural detail.
               </li>
               <li>
@@ -412,7 +412,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
                 &mdash; for operators with an MC# under 12 months old.
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers </Link>{" "} &mdash; a cash-flow product for a new operator with an active MC# and a load on the books.
               </li>
               <li>

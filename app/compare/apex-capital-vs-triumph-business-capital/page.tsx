@@ -784,7 +784,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
               mid-fleets rather than week-one operators. For the
               broader category and what to expect when factoring with
               a thin or damaged file, see{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers </Link>
               .
             </p>
@@ -1039,7 +1039,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers →
                 </Link>
               </li>

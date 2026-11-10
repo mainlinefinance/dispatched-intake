@@ -610,7 +610,7 @@ export default function OtrVsApexPage() {
               cost, but it&rsquo;s a commitment, not a month-to-month.
               For one comparison angle on commitment-free factoring
               broadly, see{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers
               </Link>{" "}
               &mdash; many of the same flexibility tradeoffs apply.
@@ -1073,7 +1073,7 @@ export default function OtrVsApexPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers →
                 </Link>
               </li>

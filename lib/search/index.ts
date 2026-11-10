@@ -134,7 +134,7 @@ const STATIC_VERTICALS: ReadonlyArray<SearchableItem> = [
     type: "vertical",
   },
   {
-    url: "/factoring/no-credit-check",
+    url: "/factoring/broker-credit",
     title: "Broker-credit factoring for truckers",
     description:
       "Factoring that underwrites mainly on the brokers who owe your invoices. Factors still review the carrier; approval is not guaranteed.",

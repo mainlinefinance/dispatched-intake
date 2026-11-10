@@ -194,7 +194,7 @@ export default function BadCreditTruckFinancingPage() {
                 at the high end and the maximum loan amount is tighter.
                 Operators with active credit events or very low scores
                 may still find cash flow through{" "}
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   factoring that underwrites your brokers </Link> {" "}— the factor underwrites mainly on the broker who owes the invoice, and approval is not guaranteed.
               </li>
               <li>

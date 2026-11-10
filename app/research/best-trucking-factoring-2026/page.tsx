@@ -169,7 +169,7 @@ export default function BestTruckingFactoring2026Page() {
     ],
     productUrls: [
       "/factoring",
-      "/factoring/no-credit-check",
+      "/factoring/broker-credit",
     ],
     topic: "factoring-and-cash-flow",
     type: "research",
@@ -538,7 +538,7 @@ export default function BestTruckingFactoring2026Page() {
               re-entering trucking after a layoff. If you have been
               declined by Apex or Triumph for thin authority history, TBS
               is the next call. See our{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 broker-credit factoring page </Link>{" "} for how factors treat carrier credit.
             </p>
 
@@ -1085,7 +1085,7 @@ export default function BestTruckingFactoring2026Page() {
                 — the product page that maps to this listicle.
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers
                 </Link>{" "}
                 — the bad-credit-acceptance product profile.

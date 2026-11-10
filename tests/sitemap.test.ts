@@ -36,7 +36,7 @@ describe("sitemap shards (Next 16 generateSitemaps integration)", () => {
     expect(urls).toContain("https://dispatched.finance/insurance");
     expect(urls).toContain("https://dispatched.finance/factoring");
     expect(urls).toContain(
-      "https://dispatched.finance/factoring/no-credit-check",
+      "https://dispatched.finance/factoring/broker-credit",
     );
   });
 

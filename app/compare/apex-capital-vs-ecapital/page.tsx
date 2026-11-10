@@ -561,7 +561,7 @@ export default function ApexVsEcapitalPage() {
               history or fleet scale, not the day-one single-truck
               owner-op. For the broader category and what to expect
               when factoring with a thin or damaged file, see{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers </Link>.
             </p>
           </div>
@@ -763,7 +763,7 @@ export default function ApexVsEcapitalPage() {
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
               <li><Link href="/factoring">Invoice factoring for truckers →</Link></li>
-              <li><Link href="/factoring/no-credit-check">Factoring that underwrites your brokers →</Link></li>
+              <li><Link href="/factoring/broker-credit">Factoring that underwrites your brokers →</Link></li>
               <li><Link href="/research/best-trucking-factoring-2026">Best trucking factoring 2026 →</Link></li>
               <li><Link href="/qualify">Two-question fit →</Link></li>
               <li><Link href="/methodology">How we describe rates →</Link></li>

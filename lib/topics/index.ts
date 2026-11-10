@@ -590,7 +590,7 @@ const STATIC_CONTENT: ReadonlyArray<StaticContentItem> = [
     topics: ["factoring"],
   },
   {
-    url: "/factoring/no-credit-check",
+    url: "/factoring/broker-credit",
     title: "Broker-Credit Factoring",
     description: "Factoring programs that underwrite mainly on broker credit — used by new authorities and credit-rebuilding owners.",
     contentType: "vertical",

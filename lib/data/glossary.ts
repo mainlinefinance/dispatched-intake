@@ -126,7 +126,7 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["mc-number", "dot-number"],
     relatedProducts: [
       { url: "/new-authority-truck-financing", label: "New authority truck financing" },
-      { url: "/factoring/no-credit-check", label: "Factoring that underwrites your brokers" },
+      { url: "/factoring/broker-credit", label: "Factoring that underwrites your brokers" },
     ],
   },
   {
@@ -228,7 +228,7 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["non-recourse-factoring", "owner-operator"],
     relatedProducts: [
       { url: "/factoring", label: "Invoice factoring for truckers" },
-      { url: "/factoring/no-credit-check", label: "Factoring that underwrites your brokers" },
+      { url: "/factoring/broker-credit", label: "Factoring that underwrites your brokers" },
     ],
   },
   {
@@ -252,7 +252,7 @@ const CORE_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["recourse-factoring"],
     relatedProducts: [
       { url: "/factoring", label: "Invoice factoring for truckers" },
-      { url: "/factoring/no-credit-check", label: "Factoring that underwrites your brokers" },
+      { url: "/factoring/broker-credit", label: "Factoring that underwrites your brokers" },
     ],
   },
   {

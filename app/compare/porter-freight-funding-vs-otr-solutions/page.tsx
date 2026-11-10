@@ -120,7 +120,7 @@ export default function PorterVsOtrPage() {
                 See my factoring options →
               </Link>
               <Link
-                href="/factoring/no-credit-check"
+                href="/factoring/broker-credit"
                 className="btn btn--secondary btn--lg"
               >
                 Read about broker-credit factoring →
@@ -324,7 +324,7 @@ export default function PorterVsOtrPage() {
                 porterfreightfunding.com
               </a>{" "}
               for company-stated details; for the broader category, see{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers
               </Link>
               .)
@@ -402,7 +402,7 @@ export default function PorterVsOtrPage() {
               survive a single broker insolvency, OTR&rsquo;s
               non-recourse-first model is the structural protection. Both factors work with operators rebuilding credit; approval is not guaranteed. For the broader
               product profile of broker-credit factoring, see{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers
               </Link>
               {" "}and{" "}
@@ -575,7 +575,7 @@ export default function PorterVsOtrPage() {
               12-month structure is acceptable for stable operators
               willing to lock in for the lower rate. For one related angle
               on commitment-free factoring broadly, see{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers
               </Link>{" "}
               &mdash; many of the same flexibility tradeoffs apply across this segment.
@@ -837,7 +837,7 @@ export default function PorterVsOtrPage() {
                 best trucking factoring 2026
               </Link>
               ,{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers
               </Link>
               , and{" "}
@@ -926,7 +926,7 @@ export default function PorterVsOtrPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers →
                 </Link>
               </li>

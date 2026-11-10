@@ -64,7 +64,7 @@ export const homepageFaqs: HomepageFaqItem[] = [
         and equipment alongside credit history. Lower credit profiles may see
         higher rates and tighter maximums; stronger profiles may see a broader
         product set. For operators rebuilding credit,{" "}
-        <a href="/factoring/no-credit-check">
+        <a href="/factoring/broker-credit">
           factoring focused on broker receivables
         </a>{" "}
         can be an option — the factor underwrites mainly on the broker who owes the invoice and still reviews the carrier. Approval is not guaranteed.

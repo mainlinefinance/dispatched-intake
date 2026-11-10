@@ -350,7 +350,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
                 porterfreightfunding.com
               </a>{" "}
               for company-stated details; for the broader category, see{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers
               </Link>
               .)
@@ -786,7 +786,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
                 Porter&rsquo;s onboarding for new MCs is built around the brokers you haul for. eCapital onboards new authorities
                 but at scale-driven pricing that penalizes day-one
                 operators. For new-authority context, see{" "}
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   factoring that underwrites your brokers
                 </Link>
                 .
@@ -964,7 +964,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers →
                 </Link>
               </li>

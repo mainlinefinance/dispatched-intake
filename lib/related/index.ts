@@ -97,7 +97,7 @@ const STATIC_ITEMS: ReadonlyArray<StaticItem> = [
     ],
     productRefs: [
       "/factoring",
-      "/factoring/no-credit-check",
+      "/factoring/broker-credit",
     ],
     topic: "factoring-and-cash-flow",
   },
@@ -464,7 +464,7 @@ function factoringComparison(
       ],
       productRefs: [
         "/factoring",
-        "/factoring/no-credit-check",
+        "/factoring/broker-credit",
       ],
       topic: "factoring-and-cash-flow",
     },

@@ -772,7 +772,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
               Apex&rsquo;s startup program builds in by default. For
               the broader category and what to expect when factoring
               with a thin or damaged file, see{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers </Link>
               .
             </p>
@@ -1020,7 +1020,7 @@ export default function ApexVsTruckstopGoCapitalPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers →
                 </Link>
               </li>

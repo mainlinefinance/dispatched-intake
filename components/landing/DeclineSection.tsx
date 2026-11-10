@@ -42,7 +42,7 @@ const declineReasons: DeclineReason[] = [
         <strong>One soft check. One application.</strong> We route to the
         lenders most likely to fund it — declines don&rsquo;t stack against you
         here. When credit is the wall,{" "}
-        <Link href="/factoring/no-credit-check">
+        <Link href="/factoring/broker-credit">
           factoring that underwrites your brokers </Link>{" "} is a path many operators look at — the factor underwrites mainly on your brokers and receivables, and approval is not guaranteed.
       </>
     ),

@@ -180,7 +180,7 @@ export default function NewLlcTruckFinancingPage() {
                   Invoice factoring (no LLC age minimum at all).
                 </strong>{" "}
                 The factor underwrites mainly on the broker who owes the invoice. A new LLC with an active MC# and a delivered load can be eligible; the factor still reviews the carrier, and approval is not guaranteed.{" "}
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers </Link>{" "} is the usual structure here.
               </li>
               <li>
@@ -380,7 +380,7 @@ export default function NewLlcTruckFinancingPage() {
                 — operators with an MC# under 12 months old.
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers </Link>{" "} — the working-capital substitute for a new LLC with at
                 least one signed load.
               </li>

@@ -940,7 +940,7 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Trucking factoring that underwrites your brokers →
                 </Link>
               </li>

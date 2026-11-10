@@ -27,7 +27,7 @@ export const FINANCE_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["recourse-factoring", "non-recourse-factoring"],
     relatedProducts: [
       { url: "/factoring", label: "Invoice factoring for truckers" },
-      { url: "/factoring/no-credit-check", label: "Factoring that underwrites your brokers" },
+      { url: "/factoring/broker-credit", label: "Factoring that underwrites your brokers" },
     ],
   },
   {
@@ -303,7 +303,7 @@ export const FINANCE_TERMS: ReadonlyArray<GlossaryTerm> = [
     relatedTerms: ["working-capital", "equipment-loan", "mca", "sba-loan", "recourse-factoring"],
     relatedProducts: [
       { url: "/bad-credit-truck-financing", label: "Bad credit truck financing" },
-      { url: "/factoring/no-credit-check", label: "Factoring that underwrites your brokers" },
+      { url: "/factoring/broker-credit", label: "Factoring that underwrites your brokers" },
       { url: "/owner-operator-financing/first-time", label: "First-time owner-operator financing" },
       { url: "/trucking-working-capital", label: "Trucking working capital" },
     ],

@@ -664,7 +664,7 @@ export default function ApexVsRtsFinancialPage() {
               owner-ops fit. This is the segment Apex was built for,
               and the underwriting reflects that. For the broader
               category, see{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers </Link>
               .
             </p>
@@ -948,7 +948,7 @@ export default function ApexVsRtsFinancialPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers →
                 </Link>
               </li>

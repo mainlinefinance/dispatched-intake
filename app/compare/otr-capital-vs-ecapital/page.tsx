@@ -937,7 +937,7 @@ export default function OtrVsEcapitalPage() {
                 invoice factoring for truckers
               </Link>{" "}
               and{" "}
-              <Link href="/factoring/no-credit-check">
+              <Link href="/factoring/broker-credit">
                 factoring that underwrites your brokers
               </Link>.
             </p>
@@ -997,7 +997,7 @@ export default function OtrVsEcapitalPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/factoring/no-credit-check">
+                <Link href="/factoring/broker-credit">
                   Factoring that underwrites your brokers →
                 </Link>
               </li>
