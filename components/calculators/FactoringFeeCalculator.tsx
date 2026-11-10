@@ -110,7 +110,7 @@ export default function FactoringFeeCalculator() {
         aria-describedby="factoring-result-heading"
       >
         <div className="calc-steps">
-          5 INPUTS · NO SIGNUP · NO CREDIT CHECK
+          5 INPUTS · NO SIGNUP · NO CREDIT PULL
         </div>
 
         <div className="field">

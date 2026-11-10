@@ -565,7 +565,7 @@ export default function TbsVsOtrSolutionsPage() {
 
             <h3>TBS &mdash; funding on business days.</h3>
             <p className="ins-hero-sub">
-              TBS funds verified invoices on business days, the standard freight-factoring arrangement, and does not advertise an after-hours rail. Submissions outside business hours are handled the next business day. For operators who are home on weekends, that fits the operating rhythm.
+              TBS funds verified invoices on business days, the standard freight-factoring arrangement, and does not advertise an after-hours rail. Submissions outside business hours wait until business resumes. For operators who are home on weekends, that fits the operating rhythm.
             </p>
 
             <h3>The difference: OTR has an after-hours payment option.</h3>

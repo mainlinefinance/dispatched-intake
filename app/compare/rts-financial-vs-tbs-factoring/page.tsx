@@ -612,7 +612,7 @@ export default function RtsVsTbsFactoringPage() {
 
             <h3>TBS &mdash; funding on business days.</h3>
             <p className="ins-hero-sub">
-              TBS funds verified invoices on business days, the standard freight-factoring arrangement. Weekend submissions are handled the next business day. Timing on any invoice depends on the factor and your invoices.
+              TBS funds verified invoices on business days, the standard freight-factoring arrangement. Weekend submissions wait until business resumes. Timing on any invoice depends on the factor and your invoices.
             </p>
 
             <h3>No real difference on payment options.</h3>

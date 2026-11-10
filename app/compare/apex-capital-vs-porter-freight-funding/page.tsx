@@ -15,7 +15,7 @@ export const metadata: Metadata = fitMeta({
   title:
     "Apex Capital vs Porter Freight Funding — 2026 Comparison | Dispatched",
   description:
-    "Apex vs Porter Freight Funding: premium owner-op factor vs no-credit-check bad-credit specialist. Rates, credit pull policies, contracts, and use cases compared.",
+    "Apex vs Porter Freight Funding: premium owner-op factor vs broker-credit specialist. Rates, credit pull policies, contracts, and use cases compared.",
   alternates: {
     canonical: "/compare/apex-capital-vs-porter-freight-funding",
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = fitMeta({
     title:
       "Apex Capital vs Porter Freight Funding — 2026 Comparison | Dispatched",
     description:
-      "Apex vs Porter Freight Funding: premium owner-op factor vs no-credit-check bad-credit specialist. Rates, credit pull policies, contracts, and use cases compared.",
+      "Apex vs Porter Freight Funding: premium owner-op factor vs broker-credit specialist. Rates, credit pull policies, contracts, and use cases compared.",
     url: "/compare/apex-capital-vs-porter-freight-funding",
     type: "website",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = fitMeta({
     title:
       "Apex Capital vs Porter Freight Funding — 2026 Comparison | Dispatched",
     description:
-      "Apex vs Porter Freight Funding: premium owner-op factor vs no-credit-check bad-credit specialist. Rates, credit pull policies, contracts, and use cases compared.",
+      "Apex vs Porter Freight Funding: premium owner-op factor vs broker-credit specialist. Rates, credit pull policies, contracts, and use cases compared.",
   },
 });
 
@@ -86,7 +86,7 @@ export default function ApexVsPorterPage() {
       <JsonLd
         payload={article({
           headline:
-            "Apex Capital vs Porter Freight Funding — premium service vs no-credit-check specialist in 2026?",
+            "Apex Capital vs Porter Freight Funding — premium service vs broker-credit specialist in 2026?",
           description:
             "Head-to-head comparison of Apex Capital and Porter Freight Funding across credit pull policy, rates, service quality, payment options, fuel, contracts, and use cases for 2026.",
           url: PAGE_URL,
@@ -105,8 +105,7 @@ export default function ApexVsPorterPage() {
               Dispatched · Updated May 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
-              Apex Capital vs Porter Freight Funding — premium service vs
-              no-credit-check specialist in 2026?
+              Apex Capital vs Porter Freight Funding — premium service vs broker-credit specialist in 2026?
             </h1>
             <p className="ins-hero-sub">
               Apex Capital is the established owner-op factor with premium

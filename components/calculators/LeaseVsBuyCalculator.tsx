@@ -266,7 +266,7 @@ export default function LeaseVsBuyCalculator() {
       style={{ maxWidth: 920 }}
     >
       <div className="calc-steps">
-        8 INPUTS · NO CREDIT CHECK · NO PERSONAL INFO
+        8 INPUTS · NO CREDIT PULL · NO PERSONAL INFO
       </div>
 
       <div

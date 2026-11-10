@@ -202,7 +202,7 @@ export default function TruckRepairCalculator() {
   return (
     <form className="calc-form" onSubmit={handleSubmit}>
       <div className="calc-steps">
-        5 INPUTS · NO CREDIT CHECK · NO PERSONAL INFO
+        5 INPUTS · NO CREDIT PULL · NO PERSONAL INFO
       </div>
 
       <div className="field">

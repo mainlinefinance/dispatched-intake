@@ -7,7 +7,7 @@ import { JsonLd, breadcrumbList, faqPage } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Check your trucking funding fit — soft pull | Dispatched",
   description:
-    "Two questions, no credit check. See the lender type most likely to fund your operation and the typical APR range for your profile. No commitment.",
+    "Two questions, no credit pull. See the lender type most likely to fund your operation and the typical APR range for your profile. No commitment.",
   // Conversion endpoint — QualificationCalc owns the chrome and the page
   // exists to drive funnel completion, not capture search intent. Indexing
   // it would split ranking signals with the money pages (working capital,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     title: "Check your trucking funding fit — soft pull | Dispatched",
     description:
-      "Two questions, no credit check. See the lender type most likely to fund your operation and the typical APR range for your profile. No commitment.",
+      "Two questions, no credit pull. See the lender type most likely to fund your operation and the typical APR range for your profile. No commitment.",
     url: "/qualify",
     type: "website",
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Check your trucking funding fit — soft pull | Dispatched",
     description:
-      "Two questions, no credit check. See the lender type most likely to fund your operation and the typical APR range for your profile. No commitment.",
+      "Two questions, no credit pull. See the lender type most likely to fund your operation and the typical APR range for your profile. No commitment.",
   },
 };
 

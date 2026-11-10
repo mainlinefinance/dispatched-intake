@@ -435,7 +435,7 @@ export default function BoxTruckFinancingPage() {
               </li>
               <li>
                 <Link href="/qualify">
-                  Two-question funding fit (no credit check) →
+                  Two-question funding fit (no credit pull) →
                 </Link>
               </li>
               <li>

@@ -646,7 +646,7 @@ export default function TbsVsTriumphPage() {
 
             <h3>TBS &mdash; funding on business days.</h3>
             <p className="ins-hero-sub">
-              TBS funds verified invoices on business days, the standard freight-factoring arrangement. Submissions outside business hours are handled the next business day.
+              TBS funds verified invoices on business days, the standard freight-factoring arrangement. Submissions outside business hours wait until business resumes.
             </p>
 
             <h3>Triumph &mdash; business-hours funding with bank-grade verification.</h3>

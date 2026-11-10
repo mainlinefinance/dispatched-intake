@@ -502,7 +502,7 @@ export default function ApexVsTbsFactoringPage() {
 
             <h3>TBS — business-day funding.</h3>
             <p className="ins-hero-sub">
-              TBS pays verified invoices on a standard business-day schedule. Submissions outside business hours are processed when the business day resumes, and weekend submissions carry to the next business day. With predictable broker payment cycles that covers the need. For weekends and cash-tight first-year operators, the difference from blynk&reg; matters.
+              TBS pays verified invoices on a standard business-day schedule. Submissions outside business hours are processed when the business day resumes, and weekend submissions wait until business resumes. With predictable broker payment cycles that covers the need. For weekends and cash-tight first-year operators, the difference from blynk&reg; matters.
             </p>
 
             <h3>Apex has the wider payment window.</h3>

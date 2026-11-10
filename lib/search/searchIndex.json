@@ -73,8 +73,8 @@
   },
   {
     "url": "/factoring/no-credit-check",
-    "title": "No credit check factoring for truckers",
-    "description": "Factoring options with no personal credit pull. The factor underwrites the broker, not the trucker — useful for thin-file and bad-credit operators.",
+    "title": "Broker-credit factoring for truckers",
+    "description": "Factoring that underwrites mainly on the brokers who owe your invoices. Factors still review the carrier; approval is not guaranteed.",
     "type": "vertical"
   },
   {
@@ -517,7 +517,7 @@
   {
     "url": "/glossary/mca",
     "title": "Merchant Cash Advance (MCA)",
-    "description": "Lump-sum cash advance against future business revenue, typically with daily ACH deductions; high effective APR but easier qualification than term loans.",
+    "description": "Lump-sum cash advance against future business revenue, typically with daily ACH deductions; high effective APR, underwritten mainly on deposit history.",
     "type": "glossary",
     "category": "Trucking Finance"
   },
@@ -1195,7 +1195,7 @@
   {
     "url": "/blog/factoring-vs-working-capital",
     "title": "Factoring vs working capital: when to use which",
-    "description": "Factoring accelerates broker payments. Working capital loans bridge cash flow. Which one to use, when to use both, and when to use neither.",
+    "description": "Factoring advances broker payments. Working capital loans bridge cash flow. Which one to use, when to use both, and when to use neither.",
     "type": "blog",
     "category": "Factoring & Cash Flow"
   },
@@ -1348,8 +1348,8 @@
   },
   {
     "url": "/blog/same-day-truck-repair-loan",
-    "title": "How do I get emergency truck repair financing when the truck is down?",
-    "description": "Emergency truck repair financing from $5K–$150K. Soft-pull match; timing depends on the lender and your documents. APR 14%–34% working capital.",
+    "title": "How do I get truck repair financing when the truck is down?",
+    "description": "Truck repair financing from $5K–$150K. Soft-pull match; timing depends on the lender and your documents. APR 14%–34% working capital.",
     "type": "blog",
     "category": "Factoring & Cash Flow"
   },
@@ -1390,7 +1390,7 @@
   {
     "url": "/lenders/apex-capital",
     "title": "Apex Capital",
-    "description": "Three decades of owner-operator factoring with instant 24/7/365 funding via blynk® and the deepest fuel discount in the market (operator-reported ~51¢/gal at participating chains). 12-month auto-renewing contract with a 30-day cancellation window is the main trade-off.",
+    "description": "Three decades of owner-operator factoring with the blynk® around-the-clock payment rail and the deepest fuel discount in the market (operator-reported ~51¢/gal at participating chains). 12-month auto-renewing contract with a 30-day cancellation window is the main trade-off.",
     "type": "lender",
     "category": "factoring · equipment"
   },
@@ -1453,7 +1453,7 @@
   {
     "url": "/lenders/riviera-finance",
     "title": "Riviera Finance",
-    "description": "Legacy factor since 1969 with a national branch network — the only major factor on this list with in-person branch relationships. Technology stack (instant payment, mobile capture) is dated relative to Apex, eCapital, and Truckstop Go.",
+    "description": "Legacy factor since 1969 with a national branch network — the only major factor on this list with in-person branch relationships. Technology stack (payment rails, mobile capture) is dated relative to Apex, eCapital, and Truckstop Go.",
     "type": "lender",
     "category": "factoring · working-capital"
   },
@@ -1915,7 +1915,7 @@
   {
     "url": "/compare/bluevine-vs-ondeck",
     "title": "Bluevine vs OnDeck",
-    "description": "Online working-capital lines for SMB owner-operators — decision speed, file profile, and ceiling compared.",
+    "description": "Online working-capital lines for SMB owner-operators — underwriting, file profile, and ceiling compared.",
     "type": "comparison"
   },
   {
