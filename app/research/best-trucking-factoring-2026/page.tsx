@@ -90,7 +90,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     contract: "12-mo auto-renew",
     advance: "100%",
     speed: "Minutes (blynk®)",
-    credit: "500 FICO",
+    credit: "Lower credit considered",
     fuel: "~51¢/gal off",
     recourse: "Both",
   },
@@ -100,7 +100,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     contract: "Varies",
     advance: "Up to 100%",
     speed: "~1 hour",
-    credit: "500 FICO",
+    credit: "Lower credit considered",
     fuel: "~20¢/gal, 16K stops",
     recourse: "Both",
   },
@@ -110,7 +110,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     contract: "12-mo",
     advance: "90–95%",
     speed: "Same-day",
-    credit: "500 FICO",
+    credit: "Lower credit considered",
     fuel: "Yes",
     recourse: "Recourse default",
   },
@@ -130,7 +130,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     contract: "No minimum",
     advance: "95%",
     speed: "Same-day",
-    credit: "500 FICO",
+    credit: "Lower credit considered",
     fuel: "Yes",
     recourse: "Recourse",
   },
@@ -140,7 +140,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     contract: "Cancel anytime",
     advance: "95%",
     speed: "24h",
-    credit: "500 FICO",
+    credit: "Lower credit considered",
     fuel: "Via WEX",
     recourse: "Recourse default",
   },
@@ -150,7 +150,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
     contract: "12-mo typical",
     advance: "90–95%",
     speed: "24h",
-    credit: "500 FICO",
+    credit: "Lower credit considered",
     fuel: "Yes",
     recourse: "Both (strong non-recourse)",
   },
@@ -373,8 +373,7 @@ export default function BestTruckingFactoring2026Page() {
               advance hit your account once you submit a clean BOL and
               broker invoice? Apex&apos;s blynk® instant-payment service
               moves money 24/7/365 in minutes. eCapital is roughly an hour
-              during business hours. The rest of the list runs same-day to
-              24 hours. For an owner-operator who actually depends on the
+              during business hours. Timing for the rest of the list is in the table above. For an owner-operator who actually depends on the
               advance to make fuel and lumper money this week, speed is not
               optional.
             </p>
@@ -579,7 +578,7 @@ export default function BestTruckingFactoring2026Page() {
               <strong>What they do well.</strong> Porter is one of the few
               factors that explicitly offers a no-personal-credit-check
               option — they underwrite the broker, not the trucker. That
-              makes them the right pick for operators with sub-580 FICOs,
+              makes them the right pick for operators with lower credit profiles,
               recent bankruptcies, or thin credit files where the personal
               credit profile would shut other factors down. Porter is also
               tolerant of low-volume operators where Apex and eCapital
@@ -601,7 +600,7 @@ export default function BestTruckingFactoring2026Page() {
               polished.
             </p>
             <p>
-              <strong>Who should pick them.</strong> Sub-580 FICO, recent
+              <strong>Who should pick them.</strong> Lower credit profile, recent
               BK, or thin-file operators who have been declined by other
               factors. Lower-volume operators who want pay-as-you-go
               factoring without a minimum-volume commitment. If your
