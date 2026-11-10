@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+/* Rendered after the closing apply CTA, as an "also" for visitors who are
+   done with the funding pitch. The button is the secondary variant so it
+   does not compete with the apply CTA directly above it. */
 export default function InsuranceCrossSell() {
   return (
     <section className="section sunken">
@@ -15,7 +18,7 @@ export default function InsuranceCrossSell() {
           </p>
         </div>
         <div className="cross-sell-actions">
-          <Link href="/insurance" className="btn btn--primary">
+          <Link href="/insurance" className="btn btn--secondary">
             See trucking insurance
           </Link>
           <Link href="/methodology" className="cross-sell-secondary">

@@ -7,6 +7,8 @@
 // storage and puts the five utm fields back on the frame as their own
 // query keys, which is the shape the live widget copies onto the lead.
 
+import { type QuickStartAnswers, widgetPrefillEntries } from "@/lib/quickStart";
+
 export const UTM_KEYS = [
   "utm_source",
   "utm_medium",
@@ -271,6 +273,9 @@ const VARIANT = "standard";
 export function buildMainlineWidgetSrc(input: {
   widgetHost: string;
   attribution: AdsAttribution;
+  /* Answers given before the application (home hero, /qualify), already
+     reduced to known slugs by parseQuickStartAnswers. */
+  prefill?: QuickStartAnswers;
 }): string | null {
   const origin = widgetOriginForHost(input.widgetHost);
   if (!origin) return null;
@@ -289,6 +294,11 @@ export function buildMainlineWidgetSrc(input: {
   for (const key of CLICK_KEYS) {
     const value = input.attribution[key];
     if (value) params.set(key, value);
+  }
+  if (input.prefill) {
+    for (const [key, value] of widgetPrefillEntries(input.prefill)) {
+      params.set(key, value);
+    }
   }
   return `${origin}/w/${PARTNER_SLUG}?${params.toString()}`;
 }

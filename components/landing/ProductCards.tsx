@@ -2,7 +2,6 @@ import Link from "next/link";
 import {
   IconArrowRight,
   IconDollarCircle,
-  IconShieldCheck,
   IconTruckBox,
   IconWrench,
 } from "./icons";
@@ -15,6 +14,9 @@ type Product = {
   icon: React.ReactNode;
 };
 
+/* Funding products only. Insurance is a separate funnel and has its own
+   block under the FAQ (InsuranceCrossSell); a card for it here would send
+   funding visitors off the page mid-pitch. */
 const products: Product[] = [
   {
     label: "Repair",
@@ -44,13 +46,6 @@ const products: Product[] = [
     href: "/factoring",
     icon: <IconDollarCircle />,
   },
-  {
-    label: "Insurance",
-    title: "Commercial truck insurance",
-    copy: "Compare trucking coverage options.",
-    href: "/insurance",
-    icon: <IconShieldCheck />,
-  },
 ];
 
 export default function ProductCards() {
@@ -63,7 +58,7 @@ export default function ProductCards() {
             Funding for the moments that keep your wheels turning.
           </h2>
           <p className="product-cards-sub">
-            Repair, cash flow, equipment, factoring, and insurance options in one place.
+            Repair, cash flow, equipment, and factoring options in one place.
           </p>
         </header>
         <ul className="product-cards-grid">

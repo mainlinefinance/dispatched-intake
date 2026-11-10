@@ -1,4 +1,4 @@
-/* Domain-literacy band that sits between the hero and the offer cards.
+/* Domain-literacy band that sits right under the hero.
    Says, in seven words, that we know what trucking actually means — DOT
    numbers, ELD miles, settlement statements, factoring agreements, repair
    shops, fuel float, broker delays. Lighter visual weight than the
