@@ -52,3 +52,6 @@ next-env.d.ts
 # Untracked from b1ad1b5 onward; those files remain in history.
 cowork.dispatched.finance/
 .gstack/
+
+# outbound prospect lists (contact data about real businesses)
+prospects*.csv
