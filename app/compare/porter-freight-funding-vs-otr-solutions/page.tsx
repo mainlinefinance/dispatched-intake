@@ -88,7 +88,7 @@ export default function PorterVsOtrPage() {
           headline:
             "Porter Freight Funding vs OTR Solutions — bad-credit factoring in 2026?",
           description:
-            "Head-to-head comparison of Porter Freight Funding and OTR Solutions across no-credit-pull policies, rates, non-recourse coverage, and contracts for 2026.",
+            "Head-to-head comparison of Porter Freight Funding and OTR Solutions across credit policies, rates, non-recourse coverage, and contracts for 2026.",
           url: PAGE_URL,
           datePublished: published,
           dateModified: today,
@@ -311,7 +311,7 @@ export default function PorterVsOtrPage() {
             </h2>
 
             <h3>
-              Porter Freight Funding &mdash; the no-credit-pull specialist.
+              Porter Freight Funding &mdash; the broker-credit specialist.
             </h3>
             <p className="ins-hero-sub">
               Porter Freight Funding is a smaller, owner-operator-focused

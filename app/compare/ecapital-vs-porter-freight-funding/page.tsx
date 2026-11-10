@@ -15,7 +15,7 @@ export const metadata: Metadata = fitMeta({
   title:
     "eCapital vs Porter Freight Funding — 2026 Comparison | Dispatched",
   description:
-    "eCapital vs Porter: largest North American factor vs a broker-credit underwriting specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
+    "eCapital vs Porter: largest North American factor vs a broker-credit specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
   alternates: {
     canonical: "/compare/ecapital-vs-porter-freight-funding",
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = fitMeta({
     title:
       "eCapital vs Porter Freight Funding — 2026 Comparison | Dispatched",
     description:
-      "eCapital vs Porter: largest North American factor vs a broker-credit underwriting specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
+      "eCapital vs Porter: largest North American factor vs a broker-credit specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
     url: "/compare/ecapital-vs-porter-freight-funding",
     type: "website",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = fitMeta({
     title:
       "eCapital vs Porter Freight Funding — 2026 Comparison | Dispatched",
     description:
-      "eCapital vs Porter: largest North American factor vs a broker-credit underwriting specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
+      "eCapital vs Porter: largest North American factor vs a broker-credit specialist. Scale vs niche credit policy. Rates and use cases compared for 2026.",
   },
 });
 
@@ -86,7 +86,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
       <JsonLd
         payload={article({
           headline:
-            "eCapital vs Porter Freight Funding — scale vs no-credit-check niche in 2026?",
+            "eCapital vs Porter Freight Funding — scale vs broker-credit niche in 2026?",
           description:
             "Head-to-head comparison of eCapital and Porter Freight Funding across credit policy, rates, scale, ABL, geography, and use cases for 2026.",
           url: PAGE_URL,
@@ -105,8 +105,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               Dispatched · Updated May 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
-              eCapital vs Porter Freight Funding — scale vs no-credit-check
-              niche in 2026?
+              eCapital vs Porter Freight Funding — scale vs broker-credit niche in 2026?
             </h1>
             <p className="ins-hero-sub">
               eCapital is the largest freight factoring company in North
@@ -206,7 +205,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
                     Mid-fleets, cross-border, ABL graduation
                   </td>
                   <td data-label="Porter Freight Funding">
-                    Bad credit, no-credit-pull, post-BK
+                    Bad credit, broker-side underwriting, post-BK
                   </td>
                 </tr>
                 <tr>
@@ -335,8 +334,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
             </p>
 
             <h3>
-              Porter Freight Funding &mdash; the no-credit-pull
-              specialist.
+              Porter Freight Funding &mdash; the broker-credit specialist.
             </h3>
             <p className="ins-hero-sub">
               Porter Freight Funding is a smaller, owner-operator-focused
@@ -546,8 +544,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
               financing, fuel cards, and healthcare receivables. For
               mid-fleets and brokers consolidating financial services
               under one provider, bundled-relationship leverage compounds.
-              Porter is single-product by design &mdash; deeper on the
-              no-credit-check policy than any multi-product competitor,
+              Porter is single-product by design &mdash; deeper on broker-side underwriting than any multi-product competitor,
               but the breadth doesn&rsquo;t exist.
             </p>
           </div>
