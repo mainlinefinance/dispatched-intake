@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
   alternates: { canonical: "/apply" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Apply for trucking funding — soft pull | Dispatched",
     description:
       "Apply for trucking working capital, equipment, or repair financing. Soft-pull match — no impact to your credit. No upfront fees.",
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Apply for trucking funding — soft pull | Dispatched",
     description:

@@ -1,3 +1,4 @@
+import { withSocial } from "@/lib/seo/social";
 import type { Metadata } from "next";
 import ClosingCta from "@/components/landing/ClosingCta";
 import DeclineSection from "@/components/landing/DeclineSection";
@@ -18,7 +19,7 @@ import { JsonLd, faqPage } from "@/components/seo/JsonLd";
    every route. Don't re-render them here — duplicates confuse entity graphs
    in some validators. The FAQPage payload IS page-specific (it describes the
    homepage's visible FAQ section), so it stays here. */
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   // Keyword-first per 2026-05-23 SEO audit. Brand at the end keeps brand
   // recognition while letting the head terms (trucking capital, equipment,
   // repair, factoring) land in the first 30 chars where Google clips SERP
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   description:
     "Capital and insurance for truckers. Soft pull, lender-paid. Match with trucking-friendly lenders for working capital, equipment, repair, factoring.",
   alternates: { canonical: "/" },
-};
+}, "/");
 
 /* Section order is the funnel, top to bottom:
      offer (Hero) → how it works → why a bank said no → products and example

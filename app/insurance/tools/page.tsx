@@ -1,3 +1,5 @@
+import { withSocial } from "@/lib/seo/social";
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -6,12 +8,12 @@ import {
   breadcrumbList,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "Insurance Tools — Dispatched",
   description:
     "Calculators and decision tools for commercial trucking insurance shoppers.",
   alternates: { canonical: "/insurance/tools" },
-};
+}, "/insurance/tools");
 
 const TOOLS = [
   {
@@ -23,7 +25,7 @@ const TOOLS = [
 ] as const;
 
 export default function ToolsIndexPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/insurance/tools/page.tsx");
   return (
     <div className="ins-page">
       <JsonLd
@@ -39,7 +41,7 @@ export default function ToolsIndexPage() {
           description:
             "Calculators and decision tools for commercial trucking insurance shoppers.",
           url: "https://dispatched.finance/insurance/tools",
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

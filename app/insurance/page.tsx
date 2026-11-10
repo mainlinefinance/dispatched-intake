@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quote in 3 minutes via our producer.",
   alternates: { canonical: "/insurance" },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Commercial Trucking Insurance Quotes | 30+ Carriers | Dispatched",
     description:
@@ -30,6 +32,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Commercial Trucking Insurance Quotes | 30+ Carriers | Dispatched",
@@ -128,7 +131,7 @@ const PRODUCT_ROW_OVERRIDES: Record<string, Pick<ProductRow, "required" | "typic
 export default function InsurancePillarPage() {
   const products = getAllProducts();
   const states = getAllInsuranceStates();
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/insurance/page.tsx");
 
   return (
     <div className="ins-page">
@@ -149,7 +152,7 @@ export default function InsurancePillarPage() {
           description:
             "Compare primary liability, motor truck cargo, physical damage, NTL, GL, occ-acc, and reefer breakdown across 30+ carriers in all 50 states.",
           url: "https://dispatched.finance/insurance",
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />
@@ -488,6 +491,11 @@ function Methodology() {
         <p className="ins-compliance-note">
           <Link href="/methodology" className="ins-link">
             Read the full rate methodology →
+          </Link>
+        </p>
+        <p className="ins-compliance-note">
+          <Link href="/insurance/tools" className="ins-link">
+            Insurance calculators and tools →
           </Link>
         </p>
       </div>

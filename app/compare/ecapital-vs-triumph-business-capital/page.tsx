@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     canonical: "/compare/ecapital-vs-triumph-business-capital",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "eCapital vs Triumph Business Capital — 2026 Comparison | Dispatched",
     description:
       "eCapital vs Triumph: rates, non-recourse strength, ABL options, contracts, and customer service compared. Which fits fleets and brokers in 2026?",
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "eCapital vs Triumph Business Capital — 2026 Comparison | Dispatched",
     description:
@@ -66,7 +69,7 @@ const faqs = [
 ];
 
 export default function EcapitalVsTriumphPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/ecapital-vs-triumph-business-capital/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -83,7 +86,7 @@ export default function EcapitalVsTriumphPage() {
           description:
             "Head-to-head comparison of eCapital and Triumph Business Capital across rates, non-recourse strength, ABL, contracts, and customer service for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

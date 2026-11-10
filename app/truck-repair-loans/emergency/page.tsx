@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     "Truck down, repair invoice in hand? Emergency repair loans fund after lender sign-off on the Dispatched panel. $5K–$150K, 500 FICO floor, soft pull.",
   alternates: { canonical: "/truck-repair-loans/emergency" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Emergency semi truck repair loan — same day | Dispatched",
     description:
       "Truck down, repair invoice in hand? Emergency repair loans fund after lender sign-off on the Dispatched panel. $5K–$150K, 500 FICO floor, soft pull.",
@@ -28,6 +30,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Emergency semi truck repair loan — same day | Dispatched",
     description:
@@ -73,7 +76,7 @@ const faqs = [
 ];
 
 export default function EmergencyTruckRepairLoanPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/truck-repair-loans/emergency/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -92,7 +95,7 @@ export default function EmergencyTruckRepairLoanPage() {
           description:
             "How emergency truck repair loans work on the Dispatched panel: same-day funding mechanics, the wire-to-shop structure, APR band, and what the application actually asks for.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
           authorName: "Angelo Orru Neto",
         })}

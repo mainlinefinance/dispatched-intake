@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     "Refrigeration breakdown coverage explained: how the cargo endorsement works, what perishables get reimbursed, what the policy excludes, and the financing gap when the reefer unit itself needs an emergency rebuild.",
   alternates: { canonical: "/reefer-breakdown-coverage" },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Reefer breakdown coverage — what it covers, what it doesn't, what to do mid-haul | Dispatched",
     description:
@@ -32,6 +34,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Reefer breakdown coverage — what it covers, what it doesn't, what to do mid-haul | Dispatched",
@@ -78,7 +81,7 @@ const faqs = [
 ];
 
 export default function ReeferBreakdownCoveragePage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/reefer-breakdown-coverage/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -94,7 +97,7 @@ export default function ReeferBreakdownCoveragePage() {
           description:
             "How reefer breakdown coverage works as a motor truck cargo endorsement, what it covers, what it excludes, the mid-haul playbook when the unit fails, and how to fund the unit repair when the load is already gone.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

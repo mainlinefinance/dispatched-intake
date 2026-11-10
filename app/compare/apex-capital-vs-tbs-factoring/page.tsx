@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "Apex vs TBS: rates, authority filing services, free MC#/DOT# processing, contracts, and customer reviews compared. Owner-op vs brand-new authority — which fits in 2026?",
   alternates: { canonical: "/compare/apex-capital-vs-tbs-factoring" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Apex Capital vs TBS Factoring — 2026 Comparison | Dispatched",
     description:
       "Apex vs TBS: rates, authority filing services, free MC#/DOT# processing, contracts, and customer reviews compared. Owner-op vs brand-new authority — which fits in 2026?",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Apex Capital vs TBS Factoring — 2026 Comparison | Dispatched",
     description:
@@ -63,7 +66,7 @@ const faqs = [
 ];
 
 export default function ApexVsTbsFactoringPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/apex-capital-vs-tbs-factoring/page.tsx");
   return (
     <div className="landing">
       <JsonLd payload={breadcrumbList([
@@ -77,7 +80,7 @@ export default function ApexVsTbsFactoringPage() {
         description:
           "Head-to-head comparison of Apex Capital and TBS Factoring across rates, authority filing services, contracts, and customer service for 2026.",
         url: PAGE_URL,
-        datePublished: today,
+        datePublished: published,
         dateModified: today,
       })} />
       <JsonLd payload={faqPage(faqs)} />

@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     "Apex vs RTS: rates, contracts, advance rates, fuel programs, and customer reviews compared. Owner-operator vs fleet — which factor fits in 2026?",
   alternates: { canonical: "/compare/apex-capital-vs-rts-financial" },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Apex Capital vs RTS Financial — Honest 2026 Comparison | Dispatched",
     description:
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Apex Capital vs RTS Financial — Honest 2026 Comparison | Dispatched",
@@ -67,7 +70,7 @@ const faqs = [
 ];
 
 export default function ApexVsRtsFinancialPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/apex-capital-vs-rts-financial/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -84,7 +87,7 @@ export default function ApexVsRtsFinancialPage() {
           description:
             "Head-to-head comparison of Apex Capital and RTS Financial across rates, contracts, advance rates, fuel programs, and customer service for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

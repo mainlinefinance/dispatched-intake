@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -69,7 +70,7 @@ export default async function CarrierReviewPage({
   const products = c.productLines
     .map((slug) => getProduct(slug))
     .filter((p): p is NonNullable<ReturnType<typeof getProduct>> => p !== null);
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/carriers/[carrier]/page.tsx");
   const url = `https://dispatched.finance/carriers/${c.slug}`;
   const breadcrumbs: BreadcrumbItem[] = [
     { name: "Dispatched", url: "https://dispatched.finance/" },
@@ -85,7 +86,7 @@ export default async function CarrierReviewPage({
           headline: `${c.name} — Commercial Trucking Insurance Review`,
           description: c.notes ?? `${c.name} commercial trucking insurance review.`,
           url,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     canonical: "/compare/tbs-factoring-vs-triumph-business-capital",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "TBS Factoring vs Triumph — 2026 Comparison | Dispatched",
     description:
       "TBS Factoring vs Triumph: free MC#/DOT# filings, bookkeeping bundles, non-recourse strength, ABL options compared. New authority vs bank-backed for 2026.",
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "TBS Factoring vs Triumph — 2026 Comparison | Dispatched",
     description:
@@ -66,7 +69,7 @@ const faqs = [
 ];
 
 export default function TbsVsTriumphPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/tbs-factoring-vs-triumph-business-capital/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -83,7 +86,7 @@ export default function TbsVsTriumphPage() {
           description:
             "Head-to-head comparison of TBS Factoring (now Love's-owned) and Triumph Business Capital across rates, authority filing, non-recourse, ABL, and contracts for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

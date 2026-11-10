@@ -1,3 +1,5 @@
+import { withSocial } from "@/lib/seo/social";
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import OwnerOperatorPLCalculator from "@/components/calculators/OwnerOperatorPLCalculator";
@@ -17,15 +19,15 @@ import { getRelatedContent } from "@/lib/related";
 const PAGE_URL =
   "https://dispatched.finance/calculators/owner-operator-pl";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "Owner-operator P&L calculator — Dispatched",
   description:
     "Estimate weekly net income for owner-operators. Inputs: rate per mile, miles, fuel, fixed costs, factoring fee. Outputs: net per week, cost per mile, breakeven miles.",
   alternates: { canonical: "/calculators/owner-operator-pl" },
-};
+}, "/calculators/owner-operator-pl");
 
 export default function OwnerOperatorPLCalculatorPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/calculators/owner-operator-pl/page.tsx");
   const relatedItems = getRelatedContent({
     currentUrl: "/calculators/owner-operator-pl",
     glossarySlugs: [
@@ -67,7 +69,7 @@ export default function OwnerOperatorPLCalculatorPage() {
           description:
             "Estimate weekly net income for owner-operators. Eight inputs return weekly revenue, total operating cost, net income, cost per mile, and breakeven loaded miles — the numbers that show whether the lane and the rate actually work.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

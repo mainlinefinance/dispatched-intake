@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     canonical: "/compare/ecapital-vs-porter-freight-funding",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "eCapital vs Porter Freight Funding — 2026 Comparison | Dispatched",
     description:
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "eCapital vs Porter Freight Funding — 2026 Comparison | Dispatched",
@@ -69,7 +72,7 @@ const faqs = [
 ];
 
 export default function EcapitalVsPorterFreightFundingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/ecapital-vs-porter-freight-funding/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -86,7 +89,7 @@ export default function EcapitalVsPorterFreightFundingPage() {
           description:
             "Head-to-head comparison of eCapital and Porter Freight Funding across credit policy, rates, scale, ABL, geography, and use cases for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

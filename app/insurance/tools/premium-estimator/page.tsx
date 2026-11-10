@@ -1,3 +1,5 @@
+import { withSocial } from "@/lib/seo/social";
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllProducts, getProduct } from "@/lib/data/products";
@@ -20,13 +22,13 @@ import {
   breadcrumbList,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title:
     "Commercial Trucking Insurance Premium Estimator — Dispatched",
   description:
     "Indicative annual premium band for commercial trucking primary liability — anchored to a real sampled rate observation, then adjusted for claims history, coverage limits, and operating radius. Each modifier is shown.",
   alternates: { canonical: "/insurance/tools/premium-estimator" },
-};
+}, "/insurance/tools/premium-estimator");
 
 type SP = {
   state?: string;
@@ -120,7 +122,7 @@ export default async function PremiumEstimatorPage({
     result = estimatePremiumBand(input);
   }
 
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/insurance/tools/premium-estimator/page.tsx");
   const url = "https://dispatched.finance/insurance/tools/premium-estimator";
 
   return (
@@ -138,7 +140,7 @@ export default async function PremiumEstimatorPage({
           description:
             "Indicative annual premium band, anchored to a sampled rate observation and adjusted for claims history, coverage limits, and operating radius.",
           url,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

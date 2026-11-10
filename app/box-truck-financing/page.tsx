@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
     "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. FICO from 500, panel APR 9%–18%. Soft-pull match. Apply now.",
   alternates: { canonical: "/box-truck-financing" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Box truck financing — 16ft to 26ft loans | Dispatched",
     description:
       "Box truck loans from $20K–$120K for last-mile, expediting, and Amazon Relay operators. FICO from 500, panel APR 9%–18%. Soft-pull match. Apply now.",
@@ -34,6 +36,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Box truck financing — 16ft to 26ft loans | Dispatched",
     description:
@@ -75,7 +78,7 @@ const faqs = [
 ];
 
 export default function BoxTruckFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/box-truck-financing/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -91,7 +94,7 @@ export default function BoxTruckFinancingPage() {
           description:
             "How box truck financing works on the Dispatched panel: who qualifies, how it differs from Class 8 financing, and what to expect from the application flow for last-mile, hot-shot, and expediting operators.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

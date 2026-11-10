@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -20,12 +21,14 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: CANONICAL },
   openGraph: {
+    images: ["/opengraph-image"],
     title: TITLE,
     description: DESCRIPTION,
     url: CANONICAL,
     type: "article",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
@@ -33,7 +36,7 @@ export const metadata: Metadata = {
 };
 
 export default function GlossaryIndexPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/glossary/page.tsx");
   const groups = getTermsByCategory();
   const allTerms = getAllTerms();
 
@@ -50,7 +53,7 @@ export default function GlossaryIndexPage() {
           headline: "Trucking Finance Glossary",
           description: DESCRIPTION,
           url: ABS_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

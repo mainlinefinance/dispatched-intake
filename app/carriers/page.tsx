@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllCarriers, type Carrier } from "@/lib/data/carriers";
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears. Get matched today.",
   alternates: { canonical: "/carriers" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Commercial truck insurance companies — AM Best | Dispatched",
     description:
       "Compare commercial truck insurance companies — AM Best ratings, products written, and the state pages where each carrier appears. Get matched today.",
@@ -28,6 +30,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Commercial truck insurance companies — AM Best | Dispatched",
     description:
@@ -70,7 +73,7 @@ function amBestLabel(c: Carrier): string {
 
 export default function CarriersIndexPage() {
   const carriers = getAllCarriers();
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/carriers/page.tsx");
 
   return (
     <div className="ins-page">
@@ -87,7 +90,7 @@ export default function CarriersIndexPage() {
           description:
             "Index of carriers Dispatched lists across its commercial-trucking insurance money pages.",
           url: "https://dispatched.finance/carriers",
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "OTR Solutions (formerly OTR Capital) vs Apex Capital: rates, all-in pricing, non-recourse, instant pay, and customer reviews compared. Best owner-op factor for 2026?",
   alternates: { canonical: "/compare/otr-capital-vs-apex-capital" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "OTR Solutions vs Apex Capital — 2026 Comparison | Dispatched",
     description:
       "OTR Solutions (formerly OTR Capital) vs Apex Capital: rates, all-in pricing, non-recourse, instant pay, and customer reviews compared. Best owner-op factor for 2026?",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "OTR Solutions vs Apex Capital — 2026 Comparison | Dispatched",
     description:
@@ -64,7 +67,7 @@ const faqs = [
 ];
 
 export default function OtrVsApexPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/otr-capital-vs-apex-capital/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -81,7 +84,7 @@ export default function OtrVsApexPage() {
           description:
             "Head-to-head comparison of OTR Solutions (formerly OTR Capital) and Apex Capital across rates, all-in pricing, non-recourse, instant pay, and customer service for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

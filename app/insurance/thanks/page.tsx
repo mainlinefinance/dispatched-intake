@@ -1,13 +1,14 @@
+import { withSocial } from "@/lib/seo/social";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BROKER_PARTNER_NAME } from "@/lib/insuranceLeadStore";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "Quote request received — Dispatched",
   description:
     "Your insurance quote request has been received and is being routed to our broker partner.",
   robots: { index: false, follow: false },
-};
+}, "/insurance/thanks");
 
 type SP = { id?: string };
 

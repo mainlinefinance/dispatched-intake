@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     "In-frame or out-of-frame engine rebuild quote in hand? The Dispatched panel funds rebuilds $15K–$40K, 500 FICO, soft pull, wired to your shop. See lenders.",
   alternates: { canonical: "/truck-repair-loans/engine-rebuild" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Semi truck engine rebuild financing | Dispatched",
     description:
       "In-frame or out-of-frame engine rebuild quote in hand? The Dispatched panel funds rebuilds $15K–$40K, 500 FICO, soft pull, wired to your shop. See lenders.",
@@ -29,6 +31,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Semi truck engine rebuild financing | Dispatched",
     description:
@@ -75,7 +78,7 @@ const faqs = [
 ];
 
 export default function EngineRebuildFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/truck-repair-loans/engine-rebuild/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -94,7 +97,7 @@ export default function EngineRebuildFinancingPage() {
           description:
             "How engine rebuild financing works on the Dispatched panel: in-frame vs out-of-frame cost bands, APR range, lender verification process, and what happens on a second rebuild.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
           authorName: "Angelo Orru Neto",
         })}

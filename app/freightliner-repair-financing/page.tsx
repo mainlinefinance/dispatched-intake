@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     "Freightliner down? Match with trucking-friendly lenders for $5K–$150K. Soft pull, FICO from 500. Funds after lender sign-off; timing depends on documents. Cascadia, M2, Argosy, Coronado, Columbia.",
   alternates: { canonical: "/freightliner-repair-financing" },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Freightliner repair financing — same-day funds for Cascadia, M2, Argosy | Dispatched",
     description:
@@ -32,6 +34,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Freightliner repair financing — same-day funds for Cascadia, M2, Argosy | Dispatched",
@@ -78,7 +81,7 @@ const faqs = [
 ];
 
 export default function FreightlinerRepairFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/freightliner-repair-financing/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -93,7 +96,7 @@ export default function FreightlinerRepairFinancingPage() {
           description:
             "How Freightliner repair financing works on the Dispatched panel: soft-pull match, brand-specific repair lines (DD15, DT12, after-treatment), eligibility floors, and the application-to-wire flow.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

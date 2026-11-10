@@ -1,3 +1,5 @@
+import { withSocial } from "@/lib/seo/social";
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import FactoringFeeCalculator from "@/components/calculators/FactoringFeeCalculator";
@@ -13,15 +15,15 @@ import {
 
 const PAGE_URL = "https://dispatched.finance/calculators/factoring-fee";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "Factoring fee calculator — Dispatched",
   description:
     "Estimate the all-in cost of factoring an invoice. Five inputs, no signup. Get the fee, advance, hold-back, and effective annualized rate in seconds.",
   alternates: { canonical: "/calculators/factoring-fee" },
-};
+}, "/calculators/factoring-fee");
 
 export default function FactoringFeeCalculatorPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/calculators/factoring-fee/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -40,7 +42,7 @@ export default function FactoringFeeCalculatorPage() {
           description:
             "Estimate the all-in cost of factoring an invoice — fee, advance, hold-back reserve, and effective annualized rate.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

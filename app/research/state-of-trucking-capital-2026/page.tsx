@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/landing/EmailCapture";
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     canonical: "/research/state-of-trucking-capital-2026",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "State of Trucking Capital 2026 — Dispatched Research",
     description:
       "Annual report on commercial trucking financing: rate environment, lender landscape, factoring market consolidation, regulatory shifts, and 2026 funding trends.",
@@ -25,6 +27,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "State of Trucking Capital 2026 — Dispatched Research",
     description:
@@ -96,7 +99,7 @@ const SOURCES: ReadonlyArray<{ label: string; url: string }> = [
 ];
 
 export default function StateOfTruckingCapital2026() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published } = contentDates("app/research/state-of-trucking-capital-2026/page.tsx");
   const url =
     "https://dispatched.finance/research/state-of-trucking-capital-2026";
   const relatedItems = getRelatedContent({
@@ -140,7 +143,7 @@ export default function StateOfTruckingCapital2026() {
           description:
             "Annual Dispatched Research report on commercial trucking financing — 2026 rate environment, lender landscape, factoring market consolidation (Love's/TBS, eCapital/LSQ), and regulatory shifts.",
           url,
-          datePublished: today,
+          datePublished: published,
           dateModified: "2026-05-11",
           authorName: "Angelo Orru Neto",
         })}
@@ -167,7 +170,7 @@ export default function StateOfTruckingCapital2026() {
               owner-operators and small fleets should expect through 2026.
             </p>
             <ResearchByline
-              publishedDate={today}
+              publishedDate={published}
               sourceCount={12}
               methodologyNote="Data through April 2026."
             />

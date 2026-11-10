@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, timing depends on the lender and your documents.",
   alternates: { canonical: "/trucking-working-capital" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Trucking working capital — fuel & payroll fast | Dispatched",
     description:
       "Working capital for trucking: $25K–$250K to cover fuel, payroll, tolls, and slow-month gaps. Soft-pull match, timing depends on the lender and your documents.",
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Trucking working capital — fuel & payroll fast | Dispatched",
     description:
@@ -73,7 +76,7 @@ const faqs = [
 ];
 
 export default function TruckingWorkingCapitalPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/trucking-working-capital/page.tsx");
   return (
     <div className="landing">
       <JsonLd payload={breadcrumbList([
@@ -85,7 +88,7 @@ export default function TruckingWorkingCapitalPage() {
         description:
           "How working-capital financing works on the Dispatched panel: the loan range, observed APR band, who qualifies, and what the funds typically cover.",
         url: PAGE_URL,
-        datePublished: today,
+        datePublished: published,
         dateModified: today,
       })} />
       <JsonLd payload={financialProduct({

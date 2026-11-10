@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match. Apply now.",
   alternates: { canonical: "/new-authority-truck-financing" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "New authority truck financing — under 12mo | Dispatched",
     description:
       "Truck financing for operators with new MC authority (under 12 months). Equipment loans and working capital. FICO from 500. Soft-pull match. Apply now.",
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "New authority truck financing — under 12mo | Dispatched",
     description:
@@ -69,7 +72,7 @@ const faqs = [
 ];
 
 export default function NewAuthorityFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/new-authority-truck-financing/page.tsx");
   return (
     <div className="landing">
       <JsonLd payload={breadcrumbList([
@@ -81,7 +84,7 @@ export default function NewAuthorityFinancingPage() {
         description:
           "Financing options for trucking owner-operators in the first year under their own MC authority: factoring, equipment financing, and the panel routing for under-12-month operators.",
         url: PAGE_URL,
-        datePublished: today,
+        datePublished: published,
         dateModified: today,
       })} />
       <JsonLd payload={financialProduct({

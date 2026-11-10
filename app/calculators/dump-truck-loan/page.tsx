@@ -1,3 +1,5 @@
+import { withSocial } from "@/lib/seo/social";
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EquipmentLoanCalculator from "@/components/calculators/EquipmentLoanCalculator";
@@ -5,15 +7,15 @@ import Footer from "@/components/landing/Footer";
 import Nav from "@/components/landing/Nav";
 import { JsonLd, article, breadcrumbList } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "Dump truck loan calculator — Dispatched",
   description:
     "Estimate the monthly payment on a dump truck loan — single-axle, tandem, tri-axle, articulated. Five inputs, no credit pull, no personal info.",
   alternates: { canonical: "/calculators/dump-truck-loan" },
-};
+}, "/calculators/dump-truck-loan");
 
 export default function DumpTruckLoanCalculatorPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/calculators/dump-truck-loan/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -35,7 +37,7 @@ export default function DumpTruckLoanCalculatorPage() {
           description:
             "Estimate monthly payments on a dump truck loan — single-axle, tandem, tri-axle, and articulated dump configurations. Returns the indicative payment and APR band drawn from the Dispatched lender panel.",
           url: "https://dispatched.finance/calculators/dump-truck-loan",
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

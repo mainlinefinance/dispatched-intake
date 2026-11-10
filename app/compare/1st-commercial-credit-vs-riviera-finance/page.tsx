@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     canonical: "/compare/1st-commercial-credit-vs-riviera-finance",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "1st Commercial Credit vs Riviera Finance — 2026 Comparison | Dispatched",
     description:
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "1st Commercial Credit vs Riviera Finance — 2026 Comparison | Dispatched",
@@ -69,7 +72,7 @@ const faqs = [
 ];
 
 export default function FirstCommercialCreditVsRivieraFinancePage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/1st-commercial-credit-vs-riviera-finance/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -89,7 +92,7 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
           description:
             "Head-to-head comparison of 1st Commercial Credit and Riviera Finance across rates, ABL availability, industry focus, geographic reach, and service tenure for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

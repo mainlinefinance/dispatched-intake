@@ -5,7 +5,6 @@ import {
   getStateMoneyPages,
   getDeepMoneyPages,
 } from "@/lib/data/moneyPageIndex";
-import { getAllStates as getAllFinancingStates } from "@/lib/cities";
 import { getAllCities, LOW_COVERAGE_THRESHOLD } from "@/lib/cities";
 import { getAllTerms } from "@/lib/data/glossary";
 import { getAllPosts } from "@/lib/data/blog";
@@ -18,6 +17,7 @@ import { PADD_SLUGS } from "@/lib/validation/pulseSchema";
    and Next does NOT create a /sitemap.xml index — robots.txt is the only
    pointer to the shards, so the two files must not drift. */
 import { SITEMAP_SHARDS, type SitemapId } from "@/lib/seo/sitemapShards";
+import { contentDatesForPath } from "@/lib/seo/contentDates";
 
 const ORIGIN = "https://dispatched.finance";
 
@@ -38,15 +38,16 @@ export const revalidate = 3600;
        per-lead success pages (/insurance/thanks) are excluded — they have
        no value as crawl targets and the thanks page already noindexes
        itself via metadata.
-     - lastModified is staggered per-URL via deterministic hash so Google
-       sees real per-URL freshness (not a single build-time stamp across
-       hundreds of URLs, which Google discounts as a freshness signal).
-       Blog posts override with their real `updatedDate` from frontmatter.
+     - lastModified is each page's real edit date (lib/seo/contentDates),
+       never a build-time stamp or a synthetic spread: Google ignores
+       <lastmod> site-wide once it catches it being wrong. Blog posts use
+       their `updatedDate`, Pulse pages their snapshot date.
+     - noindex pages (/apply, /qualify, /search, legal) are never listed.
 
    Split sitemap architecture (added 2026-05-31, crawl-budget triage):
      - generateSitemaps() returns three IDs: money, content, programmatic.
-     - Next emits a sitemap index at /sitemap.xml that points to each child
-       at /sitemap/<id>.xml. GSC can be told to crawl money first.
+     - app/sitemap-index.xml/route.ts serves the index at /sitemap.xml that
+       points to each child at /sitemap/<id>.xml (Next does not emit one).
      - The split is a PRIORITY SIGNAL, not a content cull — every URL still
        ships. The diagnostic value (indexation rate per bucket) and the
        crawl-budget routing are the wins. Bucket assignments:
@@ -55,25 +56,18 @@ export const revalidate = 3600;
                        pages we defend on commercial-intent queries.
          content:      blog + glossary + topics + carriers — editorial
                        and knowledge-graph content.
-         programmatic: insurance state/dotClass + lenders + trucking-loans
+         programmatic: insurance state/dotClass + lenders
                        — geo-templated pages whose value compounds at
                        scale rather than per-URL.
    =========================================================================== */
 
-/* Deterministic per-URL last-modified date. Same URL always returns the same
-   date across builds (stable for Google's freshness model). 60-day window
-   means crawl recency varies across the sitemap rather than being identical
-   for every URL — which is what causes Google to discount the lastmod signal
-   entirely. Blog posts use their real editorial updatedDate; everything else
-   uses this hash. */
-function lastModFor(url: string, override?: string): Date {
+/* Last-modified date for a URL: the real edit date of the page (or of the
+   template that renders it) from lib/seo/contentDates. Blog posts and Pulse
+   pages pass their own editorial / snapshot date as the override. */
+function lastModFor(url: string, override?: string): Date | undefined {
   if (override) return new Date(override);
-  let h = 0;
-  for (let i = 0; i < url.length; i++) {
-    h = (h * 31 + url.charCodeAt(i)) >>> 0;
-  }
-  const daysAgo = h % 60;
-  return new Date(Date.now() - daysAgo * 86400000);
+  const dates = contentDatesForPath(new URL(url).pathname);
+  return dates ? new Date(dates.modified) : undefined;
 }
 
 export async function generateSitemaps(): Promise<{ id: SitemapId }[]> {
@@ -114,6 +108,7 @@ function buildMoneyEntries(today: Date): MetadataRoute.Sitemap {
     "/factoring/no-credit-check",
     "/equipment-financing",
     "/trucking-working-capital",
+    "/fuel-cards",
     "/factoring",
     "/new-authority-truck-financing",
   ];
@@ -128,7 +123,6 @@ function buildMoneyEntries(today: Date): MetadataRoute.Sitemap {
 
   // Conversion + trust pages.
   entries.push(
-    { url: `${ORIGIN}/qualify`, lastModified: today, changeFrequency: "monthly", priority: 0.7 },
     { url: `${ORIGIN}/about`, lastModified: today, changeFrequency: "monthly", priority: 0.6 },
     { url: `${ORIGIN}/methodology`, lastModified: today, changeFrequency: "monthly", priority: 0.5 },
   );
@@ -360,24 +354,6 @@ async function buildProgrammaticEntries(
     });
   }
 
-  // Trucking-loans geo: the per-CITY pages carry real content (~1500 words
-   // each) and stay in the sitemap. The per-STATE hub pages are essentially
-   // city directories (~170 words rendered) and are noindexed at the page
-   // level (see app/trucking-loans/[state]/page.tsx). Omitting them from
-   // the sitemap keeps GSC's submitted/indexed ratio honest.
-  for (const c of getAllCities()) {
-    entries.push({
-      url: `${ORIGIN}/trucking-loans/${c.stateSlug}/${c.citySlug}`,
-      lastModified: today,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    });
-  }
-  // Intentionally unused import — kept so the structural intent is visible
-  // in code review when we later decide to expand the state hubs to merit
-  // re-indexing. See task #29.
-  void getAllFinancingStates;
-
   // Dispatched Pulse — operational intelligence (diesel snapshot).
   const pulseDates = new Map<string, string>();
   try {
@@ -440,10 +416,7 @@ export default async function sitemap({
     pulseDates = built.pulseDates;
   }
 
-  /* Per-URL lastmod stagger. Replaces the uniform build-time `today` with
-     a deterministic per-URL date so Google sees real freshness variance.
-     Override with real blog editorial dates and real Pulse snapshot dates
-     where available. */
+  /* Replace the placeholder with each URL's real last-modified date. */
   const blogDates = new Map<string, string>();
   if (resolvedId === "content") {
     for (const post of getAllPosts()) {

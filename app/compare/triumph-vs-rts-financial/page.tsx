@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "Triumph Business Capital vs RTS Financial: rates, non-recourse, advance, fuel programs, and contracts compared. Bank-owned non-recourse vs fleet-volume specialist.",
   alternates: { canonical: "/compare/triumph-vs-rts-financial" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Triumph vs RTS Financial — 2026 Comparison | Dispatched",
     description:
       "Triumph Business Capital vs RTS Financial: rates, non-recourse, advance, fuel programs, and contracts compared. Bank-owned non-recourse vs fleet-volume specialist.",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Triumph vs RTS Financial — 2026 Comparison | Dispatched",
     description:
@@ -63,7 +66,7 @@ const faqs = [
 ];
 
 export default function TriumphVsRtsFinancialPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/triumph-vs-rts-financial/page.tsx");
   return (
     <div className="landing">
       <JsonLd payload={breadcrumbList([
@@ -76,7 +79,7 @@ export default function TriumphVsRtsFinancialPage() {
         description:
           "Head-to-head comparison of Triumph Business Capital and RTS Financial across rates, non-recourse strength, advance rate, fuel programs, and contracts for 2026.",
         url: PAGE_URL,
-        datePublished: today,
+        datePublished: published,
         dateModified: today,
       })} />
       <JsonLd payload={faqPage(faqs)} />

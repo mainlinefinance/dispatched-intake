@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     canonical: "/bad-credit-truck-financing/chapter-7-discharge",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Semi truck loan after Chapter 7 discharge | Dispatched",
     description:
       "Discharged Chapter 7 bankruptcy and trying to finance a truck? The Dispatched panel funds post-discharge operators from month 13. What lenders need.",
@@ -30,6 +32,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Semi truck loan after Chapter 7 discharge | Dispatched",
     description:
@@ -76,7 +79,7 @@ const faqs = [
 ];
 
 export default function Chapter7DischargeTruckFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/bad-credit-truck-financing/chapter-7-discharge/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -95,7 +98,7 @@ export default function Chapter7DischargeTruckFinancingPage() {
           description:
             "When the panel reopens after a Chapter 7 discharge, what FICO and recovery signals lenders actually need, and how loan structure changes for post-BK operators.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
           authorName: "Angelo Orru Neto",
         })}

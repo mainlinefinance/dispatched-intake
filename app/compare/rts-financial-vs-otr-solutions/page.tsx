@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "RTS Financial vs OTR Solutions: fleet-volume specialist vs transparency-first true non-recourse. Rates, advance, fuel, contracts, customer service compared.",
   alternates: { canonical: "/compare/rts-financial-vs-otr-solutions" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "RTS Financial vs OTR Solutions — 2026 Comparison | Dispatched",
     description:
       "RTS Financial vs OTR Solutions: fleet-volume specialist vs transparency-first true non-recourse. Rates, advance, fuel, contracts, customer service compared.",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "RTS Financial vs OTR Solutions — 2026 Comparison | Dispatched",
     description:
@@ -64,7 +67,7 @@ const faqs = [
 ];
 
 export default function RtsFinancialVsOtrSolutionsPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/rts-financial-vs-otr-solutions/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -81,7 +84,7 @@ export default function RtsFinancialVsOtrSolutionsPage() {
           description:
             "Head-to-head comparison of RTS Financial and OTR Solutions across rates, pricing structure, advance, fuel, non-recourse, contracts, customer service, and tech for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

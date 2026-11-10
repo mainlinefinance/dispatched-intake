@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. Get matched today.",
   alternates: { canonical: "/equipment-financing" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Trucking equipment financing 9–18% APR | Dispatched",
     description:
       "Equipment loans for tractors, trailers, reefers, and lift gates. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. Get matched today.",
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Trucking equipment financing 9–18% APR | Dispatched",
     description:
@@ -65,7 +68,7 @@ const faqs = [
 ];
 
 export default function EquipmentFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/equipment-financing/page.tsx");
   return (
     <div className="landing">
       <JsonLd payload={breadcrumbList([
@@ -77,7 +80,7 @@ export default function EquipmentFinancingPage() {
         description:
           "How equipment financing works on the Dispatched panel: which equipment types are funded, how it differs from working capital, and what to expect from the application flow.",
         url: PAGE_URL,
-        datePublished: today,
+        datePublished: published,
         dateModified: today,
       })} />
       <JsonLd payload={financialProduct({

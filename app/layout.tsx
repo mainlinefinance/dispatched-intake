@@ -46,8 +46,9 @@ const plexMono = localFont({
    - metadataBase resolves relative URLs (canonical, openGraph.url, twitter
      image paths). Falls back to the production origin when NEXT_PUBLIC_SITE_URL
      is unset (preview builds, local dev without .env.local).
-   - openGraph.images and twitter.images are NOT set here on purpose — Next 16
-     auto-populates them from app/opengraph-image.tsx for every route.
+   - openGraph.images and twitter.images point at app/opengraph-image.tsx.
+     A page that defines its own openGraph/twitter object replaces this one
+     wholesale, so each of those lists the image too (see lib/seo/social.ts).
    - alternates.canonical is NOT set here on purpose — every page-level
      metadata MUST set its own canonical. Setting one in the root layout
      would silently canonicalize every uninstrumented child route to "/",
@@ -92,6 +93,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ["/opengraph-image"],
     type: "website",
     locale: "en_US",
     siteName: "Dispatched",
@@ -100,6 +102,7 @@ export const metadata: Metadata = {
       "Capital and insurance built for owner-operators and small fleets. Soft pull first; no credit impact to start.",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     site: "@dispatchedfin",
     creator: "@dispatchedfin",

@@ -1,3 +1,5 @@
+import { withSocial } from "@/lib/seo/social";
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EquipmentLoanCalculator from "@/components/calculators/EquipmentLoanCalculator";
@@ -14,14 +16,14 @@ import {
 const PAGE_URL =
   "https://dispatched.finance/calculators/how-much-can-i-borrow-for-a-truck";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "How Much Can I Borrow for a Semi Truck? | Dispatched",
   description:
     "Calculator + guide. What FICO, down payment, revenue, and truck age unlock on the Dispatched panel — and the typical loan amount range for first-time vs established owner-operators.",
   alternates: {
     canonical: "/calculators/how-much-can-i-borrow-for-a-truck",
   },
-};
+}, "/calculators/how-much-can-i-borrow-for-a-truck");
 
 const faqs = [
   {
@@ -47,7 +49,7 @@ const faqs = [
 ];
 
 export default function HowMuchCanIBorrowForATruckPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/calculators/how-much-can-i-borrow-for-a-truck/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -69,7 +71,7 @@ export default function HowMuchCanIBorrowForATruckPage() {
           description:
             "Calculator + guide to understanding loan amount on the Dispatched panel based on FICO, business history, down payment, truck age, and revenue.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

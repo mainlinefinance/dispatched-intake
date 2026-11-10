@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "eCapital vs Truckstop Go Capital: largest factor with cross-border reach vs load-board native tech integration. Rates, contracts, and reviews compared for 2026.",
   alternates: { canonical: "/compare/ecapital-vs-truckstop-go-capital" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "eCapital vs Truckstop Go Capital — 2026 Comparison | Dispatched",
     description:
       "eCapital vs Truckstop Go Capital: largest factor with cross-border reach vs load-board native tech integration. Rates, contracts, and reviews compared for 2026.",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "eCapital vs Truckstop Go Capital — 2026 Comparison | Dispatched",
     description:
@@ -64,7 +67,7 @@ const faqs = [
 ];
 
 export default function EcapitalVsTruckstopGoCapitalPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/ecapital-vs-truckstop-go-capital/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -81,7 +84,7 @@ export default function EcapitalVsTruckstopGoCapitalPage() {
           description:
             "Head-to-head comparison of eCapital and Truckstop Go Capital across rates, load-board integration, contracts, geography, and ABL availability for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "Meet the founder of Dispatched. Operator-engineer background in clinical-data infrastructure, applied to a matching marketplace for trucking finance and insurance.",
   alternates: { canonical: "/about" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "About Dispatched — Founder Angelo Orru Neto",
     description:
       "Operator-engineer background in clinical-data infrastructure, applied to a matching marketplace for U.S. trucking finance and insurance.",
@@ -32,6 +34,7 @@ export const metadata: Metadata = {
     type: "profile",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "About Dispatched — Founder Angelo Orru Neto",
     description:
@@ -45,7 +48,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 ];
 
 export default function AboutPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { modified: today } = contentDates("app/about/page.tsx");
   return (
     <div className="about-page">
       <JsonLd payload={breadcrumbList(breadcrumbs)} />

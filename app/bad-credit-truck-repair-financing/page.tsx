@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     "Semi truck repair loan options with bad credit. Programs route from 500 FICO on the Dispatched panel. Revenue-based underwriting, not FICO-first. Soft pull, repair financing after sign-off.",
   alternates: { canonical: "/bad-credit-truck-repair-financing" },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Semi truck repair loan with bad credit — sub-580 FICO, truck-down options | Dispatched",
     description:
@@ -32,6 +34,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Semi truck repair loan with bad credit — sub-580 FICO, truck-down options | Dispatched",
@@ -79,7 +82,7 @@ const faqs = [
 ];
 
 export default function BadCreditTruckRepairFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/bad-credit-truck-repair-financing/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -94,7 +97,7 @@ export default function BadCreditTruckRepairFinancingPage() {
           description:
             "How the Dispatched panel routes bad-credit truck-repair financing applications: three FICO tiers, what changes at each tier, what the panel underwrites instead of FICO, and the decline-handling routes.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

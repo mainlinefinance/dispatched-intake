@@ -1,3 +1,4 @@
+import { withSocial } from "@/lib/seo/social";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -21,13 +22,13 @@ const EFFECTIVE_DATE = "2026-11-08";
 const EFFECTIVE_DATE_DISPLAY = "November 8, 2026";
 const CONTACT_EMAIL = "angelo@mainline.finance";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "Privacy policy — Dispatched",
   description:
     "How Dispatched, Inc. collects, uses, shares, and protects information from operators using the dispatched.finance intake and matching service.",
   robots: { index: false, follow: false },
   alternates: { canonical: "/privacy" },
-};
+}, "/privacy");
 
 export default function PrivacyPage() {
   return (

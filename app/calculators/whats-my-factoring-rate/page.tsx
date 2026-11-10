@@ -1,3 +1,5 @@
+import { withSocial } from "@/lib/seo/social";
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import FactoringFeeCalculator from "@/components/calculators/FactoringFeeCalculator";
@@ -14,14 +16,14 @@ import {
 const PAGE_URL =
   "https://dispatched.finance/calculators/whats-my-factoring-rate";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "What's My Factoring Rate? | Dispatched",
   description:
     "Calculator + guide. What volume, broker credit, recourse type, and contract length actually drive your factoring rate. Run the math and see the effective annualized cost.",
   alternates: {
     canonical: "/calculators/whats-my-factoring-rate",
   },
-};
+}, "/calculators/whats-my-factoring-rate");
 
 const faqs = [
   {
@@ -47,7 +49,7 @@ const faqs = [
 ];
 
 export default function WhatsMyFactoringRatePage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/calculators/whats-my-factoring-rate/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -66,7 +68,7 @@ export default function WhatsMyFactoringRatePage() {
           description:
             "Calculator + guide to understanding factoring rates on the Dispatched panel, including volume, broker credit, recourse type, contract length, and operating history drivers.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

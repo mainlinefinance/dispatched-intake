@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     canonical: "/owner-operator-financing/no-business-history",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Semi truck loan with no business history | Dispatched",
     description:
       "No business bank statements, no tax returns, no operating history — the Dispatched panel still routes truck financing. What lenders use instead. Soft pull.",
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Semi truck loan with no business history | Dispatched",
     description:
@@ -77,7 +80,7 @@ const faqs = [
 ];
 
 export default function NoBusinessHistoryTruckFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/owner-operator-financing/no-business-history/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -97,7 +100,7 @@ export default function NoBusinessHistoryTruckFinancingPage() {
           description:
             "What the panel funds when the operator has no business bank statements, no tax returns, and no operating history — substitute signals, document checklist, and the arc to seasoned-operator pricing.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
           authorName: "Angelo Orru Neto",
         })}

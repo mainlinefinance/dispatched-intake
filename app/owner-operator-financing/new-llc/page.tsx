@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     canonical: "/owner-operator-financing/new-llc",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Semi truck loan with a new LLC — 1–12 mo old | Dispatched",
     description:
       "Brand-new LLC, no business history yet, trying to finance a truck? The Dispatched panel underwrites new entities from 1 month old. Soft pull. See what funds.",
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Semi truck loan with a new LLC — 1–12 mo old | Dispatched",
     description:
@@ -80,7 +83,7 @@ const faqs = [
 ];
 
 export default function NewLlcTruckFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/owner-operator-financing/new-llc/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -99,7 +102,7 @@ export default function NewLlcTruckFinancingPage() {
           description:
             "What the panel funds when an LLC is under 12 months old and there is no business history yet — substitute signals, document checklist, and the product set that actually quotes.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
           authorName: "Angelo Orru Neto",
         })}

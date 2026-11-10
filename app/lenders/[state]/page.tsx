@@ -1,5 +1,7 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getAllCities, LOW_COVERAGE_THRESHOLD } from "@/lib/cities";
 import { notFound } from "next/navigation";
 import {
   JsonLd,
@@ -50,12 +52,14 @@ export async function generateMetadata({
     description,
     alternates: { canonical },
     openGraph: {
+      images: ["/opengraph-image"],
       title,
       description,
       url: canonical,
       type: "article",
     },
     twitter: {
+      images: ["/opengraph-image"],
       card: "summary_large_image",
       title,
       description,
@@ -131,10 +135,17 @@ export default async function LendersStatePage({
   const s = getStateBySlug(state);
   if (!s) notFound();
 
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/lenders/[state]/page.tsx");
   const url = `${ORIGIN}/lenders/${s.slug}`;
   const lenders = getLendersByState(s.code);
   const ctx = getStateContext(s.slug);
+  // City pages under this state. Same coverage floor the city route and the
+  // sitemap use, so nothing links to a page that redirects away.
+  const cities = getAllCities().filter(
+    (c) =>
+      c.stateSlug === s.slug &&
+      c.stateLenderPanelCount >= LOW_COVERAGE_THRESHOLD,
+  );
   const faqs = stateFAQs(s, ctx);
 
   const ownerOpLenders = filterByBestFor(lenders, ["owner-operator"]);
@@ -160,7 +171,7 @@ export default async function LendersStatePage({
           headline: `Best Trucking Lenders in ${s.name} 2026`,
           description: `Curated trucking lenders serving ${s.name} carriers: factoring, equipment financing, working capital, and ABL.`,
           url,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />
@@ -196,6 +207,21 @@ export default async function LendersStatePage({
               <Link href="/lenders">All states</Link>
             </p>
           </header>
+
+          {cities.length > 0 ? (
+            <section className="research-section" id="cities">
+              <h2>Trucking lenders by city in {s.name}</h2>
+              <ul className="research-list">
+                {cities.map((c) => (
+                  <li key={c.citySlug}>
+                    <Link href={`/lenders/${s.slug}/${c.citySlug}`}>
+                      Trucking lenders in {c.city}, {c.stateAbbr}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
 
           {ctx?.curated ? (
             <section className="research-section" id="state-market">

@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
     "Class 8 semi truck loans for owner-operators and small fleets. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. See your rate today.",
   alternates: { canonical: "/semi-truck-financing" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Semi truck financing — Class 8 truck loans | Dispatched",
     description:
       "Class 8 semi truck loans for owner-operators and small fleets. Panel APR 9%–18%, terms to 72 months, FICO from 500. Soft-pull match. See your rate today.",
@@ -35,6 +37,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Semi truck financing — Class 8 truck loans | Dispatched",
     description:
@@ -76,7 +79,7 @@ const faqs = [
 ];
 
 export default function SemiTruckFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/semi-truck-financing/page.tsx");
   return (
     <div className="landing">
       <JsonLd payload={breadcrumbList([
@@ -88,7 +91,7 @@ export default function SemiTruckFinancingPage() {
         description:
           "How Class 8 semi truck financing works on the Dispatched panel: which makes are funded, used vs new, down payment expectations, and what to expect from the application flow.",
         url: PAGE_URL,
-        datePublished: today,
+        datePublished: published,
         dateModified: today,
       })} />
       <JsonLd payload={financialProduct({

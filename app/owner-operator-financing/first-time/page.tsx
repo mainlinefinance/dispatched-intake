@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     "Buying your first truck as a new owner-operator? Programs from $0 down and 500 FICO. What lenders need before MC#, after MC#, and pre-revenue. Soft pull.",
   alternates: { canonical: "/owner-operator-financing/first-time" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "First-Time Owner-Operator Truck Financing 2026 | Dispatched",
     description:
       "Buying your first truck as a new owner-operator? Programs from $0 down and 500 FICO. What lenders need before MC#, after MC#, and pre-revenue. Soft pull.",
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "First-Time Owner-Operator Truck Financing 2026 | Dispatched",
     description:
@@ -93,7 +96,7 @@ const STEP_6_TEXT =
   "After inspection clears and title work is recorded, you sign final loan documents (often electronically) and the lender wires funds to the seller or dealer. The truck is yours subject to the lien. First payment typically lands 30 days after funding. Set up auto-pay from the same business account you used on the application — missed payments in the first 6 months hurt your credit hardest and damage your standing with the lender for refinance later.";
 
 export default function FirstTimeOwnerOperatorFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/owner-operator-financing/first-time/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -113,7 +116,7 @@ export default function FirstTimeOwnerOperatorFinancingPage() {
           description:
             "How first-time owner-operators get financed without two years of business history: panel terms, scenarios, lease-purchase math, and the step-by-step process.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />
