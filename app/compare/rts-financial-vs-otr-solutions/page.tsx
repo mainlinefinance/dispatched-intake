@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title: "RTS Financial vs OTR Solutions — 2026 Comparison | Dispatched",
   description:
     "RTS Financial vs OTR Solutions: fleet-volume specialist vs transparency-first true non-recourse. Rates, advance, fuel, contracts, customer service compared.",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "RTS Financial vs OTR Solutions: fleet-volume specialist vs transparency-first true non-recourse. Rates, advance, fuel, contracts, customer service compared.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/rts-financial-vs-otr-solutions";

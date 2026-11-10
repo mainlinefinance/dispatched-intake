@@ -20,16 +20,16 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Reefer breakdown coverage — what it covers, what it doesn't, what to do mid-haul | Dispatched",
+    "Reefer Breakdown Coverage: What It Covers | Dispatched",
   description:
-    "Refrigeration breakdown coverage explained: how the cargo endorsement works, what perishables get reimbursed, what the policy excludes, and the financing gap when the reefer unit itself needs an emergency rebuild.",
+    "Reefer breakdown coverage explained: how the cargo endorsement works, which perishables are reimbursed, what is excluded, and what to do when the unit fails.",
   alternates: { canonical: "/reefer-breakdown-coverage" },
   openGraph: {
     images: ["/opengraph-image"],
     title:
-      "Reefer breakdown coverage — what it covers, what it doesn't, what to do mid-haul | Dispatched",
+      "Reefer Breakdown Coverage: What It Covers | Dispatched",
     description:
-      "Refrigeration breakdown coverage explained: how the cargo endorsement works, what perishables get reimbursed, what the policy excludes, and the financing gap when the reefer unit itself needs an emergency rebuild.",
+      "Reefer breakdown coverage explained: how the cargo endorsement works, which perishables are reimbursed, what is excluded, and what to do when the unit fails.",
     url: "/reefer-breakdown-coverage",
     type: "website",
   },
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
-      "Reefer breakdown coverage — what it covers, what it doesn't, what to do mid-haul | Dispatched",
+      "Reefer Breakdown Coverage: What It Covers | Dispatched",
     description:
-      "Refrigeration breakdown coverage explained: how the cargo endorsement works, what perishables get reimbursed, what the policy excludes, and the financing gap when the reefer unit itself needs an emergency rebuild.",
+      "Reefer breakdown coverage explained: how the cargo endorsement works, which perishables are reimbursed, what is excluded, and what to do when the unit fails.",
   },
 };
 

@@ -37,14 +37,14 @@ const PAGE_URL = "https://dispatched.finance/trucking";
 
 export const metadata: Metadata = {
   title:
-    "Trucking financing — working capital, equipment, repair loans — Dispatched",
+    "Trucking Financing: Capital, Equipment, Repair | Dispatched",
   description:
     "Compare 9 trucking financing products: working capital, equipment, repair, factoring, semi-truck, owner-op, new-authority, bad-credit. Soft pull first.",
   alternates: { canonical: "/trucking" },
   openGraph: {
     images: ["/opengraph-image"],
     title:
-      "Trucking financing — working capital, equipment, repair loans — Dispatched",
+      "Trucking Financing: Capital, Equipment, Repair | Dispatched",
     description:
       "Compare 9 trucking financing products: working capital, equipment, repair, factoring, semi-truck, owner-op, new-authority, bad-credit. Soft pull first.",
     url: "/trucking",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
-      "Trucking financing — working capital, equipment, repair loans — Dispatched",
+      "Trucking Financing: Capital, Equipment, Repair | Dispatched",
     description:
       "Compare 9 trucking financing products: working capital, equipment, repair, factoring, semi-truck, owner-op, new-authority, bad-credit. Soft pull first.",
   },

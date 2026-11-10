@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "State of Owner-Operator Economics 2026 — Dispatched Research",
   description:
-    "Annual report on owner-operator profitability: revenue per mile, cost per mile, broker spread dynamics, lease-purchase failure rates, regulatory impact, and 2026 outlook.",
+    "Annual report on owner-operator profitability: revenue and cost per mile, broker spreads, lease-purchase failure rates, regulation, and the 2026 outlook.",
   alternates: {
     canonical: "/research/state-of-owner-operator-economics-2026",
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title:
       "State of Owner-Operator Economics 2026 — Dispatched Research",
     description:
-      "Annual report on owner-operator profitability: revenue per mile, cost per mile, broker spread dynamics, lease-purchase failure rates, regulatory impact, and 2026 outlook.",
+      "Annual report on owner-operator profitability: revenue and cost per mile, broker spreads, lease-purchase failure rates, regulation, and the 2026 outlook.",
     url: "/research/state-of-owner-operator-economics-2026",
     type: "article",
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title:
       "State of Owner-Operator Economics 2026 — Dispatched Research",
     description:
-      "Annual report on owner-operator profitability: revenue per mile, cost per mile, broker spread dynamics, lease-purchase failure rates, regulatory impact, and 2026 outlook.",
+      "Annual report on owner-operator profitability: revenue and cost per mile, broker spreads, lease-purchase failure rates, regulation, and the 2026 outlook.",
   },
 };
 

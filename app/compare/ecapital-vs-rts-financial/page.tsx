@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title: "eCapital vs RTS Financial — 2026 Comparison | Dispatched",
   description:
     "eCapital vs RTS Financial: rates, advance, contracts, fuel programs, geography, and customer service compared. Largest factor vs fleet-volume specialist for 2026.",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "eCapital vs RTS Financial: rates, advance, contracts, fuel programs, geography, and customer service compared. Largest factor vs fleet-volume specialist for 2026.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/ecapital-vs-rts-financial";

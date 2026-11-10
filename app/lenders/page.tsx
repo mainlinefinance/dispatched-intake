@@ -23,7 +23,7 @@ const CANONICAL = "/lenders";
 
 const TITLE = "Trucking Lenders Directory 2026 | Dispatched";
 const DESCRIPTION =
-  "12 curated trucking lenders covering factoring, equipment financing, working capital, and asset-based lending. Filterable by state and use case. Updated May 2026.";
+  "12 curated trucking lenders covering factoring, equipment financing, working capital, and asset-based lending. Filterable by state and use case.";
 
 export const metadata: Metadata = {
   title: TITLE,

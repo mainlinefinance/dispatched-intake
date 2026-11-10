@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title:
     "Bluevine vs OnDeck — 2026 SMB Lender Comparison for Truckers | Dispatched",
   description:
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     description:
       "Bluevine vs OnDeck: which SMB working-capital lender fits trucking businesses? Rates, lines of credit, and underwriting compared. Plus why factoring usually beats both.",
   },
-};
+});
 
 const PAGE_URL = "https://dispatched.finance/compare/bluevine-vs-ondeck";
 

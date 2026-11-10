@@ -29,13 +29,13 @@ import {
    links keep the user inside Dispatched for the financing intent. */
 
 export const metadata: Metadata = {
-  title: "Best fuel cards for independent truck drivers (2026) | Dispatched",
+  title: "Best Fuel Cards for Independent Truckers 2026 | Dispatched",
   description:
     "Compare AtoB, WEX, Shell, RTS Pro, TCS. Discount per gallon, network, fees, and credit terms for owner-operators and small fleets — sourced from each issuer.",
   alternates: { canonical: "/fuel-cards" },
   openGraph: {
     images: ["/opengraph-image"],
-    title: "Best fuel cards for independent truck drivers (2026) | Dispatched",
+    title: "Best Fuel Cards for Independent Truckers 2026 | Dispatched",
     description:
       "Compare AtoB, WEX, Shell, RTS Pro, TCS. Discount per gallon, network, fees, and credit terms for owner-operators and small fleets — sourced from each issuer.",
     url: "/fuel-cards",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "Best fuel cards for independent truck drivers (2026) | Dispatched",
+    title: "Best Fuel Cards for Independent Truckers 2026 | Dispatched",
     description:
       "Compare AtoB, WEX, Shell, RTS Pro, TCS. Discount per gallon, network, fees, and credit terms for owner-operators and small fleets — sourced from each issuer.",
   },

@@ -19,7 +19,7 @@ const PAGE_URL =
 export const metadata: Metadata = withSocial({
   title: "What's My Factoring Rate? | Dispatched",
   description:
-    "Calculator + guide. What volume, broker credit, recourse type, and contract length actually drive your factoring rate. Run the math and see the effective annualized cost.",
+    "Calculator and guide: how volume, broker credit, recourse type, and contract length drive your factoring rate. See the effective annualized cost.",
   alternates: {
     canonical: "/calculators/whats-my-factoring-rate",
   },

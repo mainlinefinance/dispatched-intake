@@ -18,7 +18,7 @@ const ABS_URL = "https://dispatched.finance/topics";
 
 const TITLE = "Topics — Browse Dispatched by subject";
 const DESCRIPTION =
-  "10 topics covering trucking finance, operations, compliance, and insurance. Each topic aggregates relevant glossary terms, blog posts, comparisons, research reports, and calculators.";
+  "10 topics covering trucking finance, operations, compliance, and insurance, each gathering the related glossary terms, guides, comparisons, and calculators.";
 
 export const metadata: Metadata = {
   title: TITLE,

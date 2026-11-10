@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title:
     "Apex Capital vs Triumph Business Capital — 2026 Comparison | Dispatched",
   description:
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Apex vs Triumph: premium owner-op service vs bank-owned non-recourse. Rates, customer reviews, ABL graduation, contracts, and 2026 trade-offs compared.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/apex-capital-vs-triumph-business-capital";

@@ -24,7 +24,7 @@ const CONTACT_EMAIL = "angelo@dispatched.finance";
 export const metadata: Metadata = withSocial({
   title: "Accessibility statement — Dispatched",
   description:
-    "Dispatched, Inc.'s commitment to WCAG 2.2 Level AA conformance on dispatched.finance, the known gaps we are working on, and how to report an accessibility barrier.",
+    "Dispatched's commitment to WCAG 2.2 Level AA conformance on dispatched.finance, the known gaps we are working on, and how to report a barrier.",
   alternates: { canonical: "/accessibility" },
 }, "/accessibility");
 

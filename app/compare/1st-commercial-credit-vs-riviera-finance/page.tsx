@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title:
     "1st Commercial Credit vs Riviera Finance — 2026 Comparison | Dispatched",
   description:
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Mid-tier factoring head-to-head: 1st Commercial Credit (Austin TX, ABL + factoring) vs Riviera Finance (1969, established service). Rates, contracts, and ABL compared.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/1st-commercial-credit-vs-riviera-finance";

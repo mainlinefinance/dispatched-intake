@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = withSocial({
   title: "Dispatched Research — Commercial Trucking Insurance",
   description:
-    "Dispatched Research publishes annual reports and quarterly updates on the commercial-trucking insurance market. Source-cited, regulator-anchored, no proprietary feeds.",
+    "Dispatched Research publishes annual reports and quarterly updates on the commercial trucking insurance market. Source-cited and regulator-anchored.",
   alternates: { canonical: "/research" },
 }, "/research");
 

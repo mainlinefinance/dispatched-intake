@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "State of Trucking Regulation 2026 — Dispatched Research",
   description:
-    "Annual report on the regulatory environment for commercial trucking: FMCSA rules, state-level laws (AB 5, CARB Phase 3, MCA disclosure), broker transparency, and 2026 outlook.",
+    "Annual report on trucking regulation: FMCSA rules, state laws (AB 5, CARB Phase 3, MCA disclosure), broker transparency, and the 2026 outlook.",
   alternates: {
     canonical: "/research/state-of-trucking-regulation-2026",
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     title: "State of Trucking Regulation 2026 — Dispatched Research",
     description:
-      "Annual report on the regulatory environment for commercial trucking: FMCSA rules, state-level laws (AB 5, CARB Phase 3, MCA disclosure), broker transparency, and 2026 outlook.",
+      "Annual report on trucking regulation: FMCSA rules, state laws (AB 5, CARB Phase 3, MCA disclosure), broker transparency, and the 2026 outlook.",
     url: "/research/state-of-trucking-regulation-2026",
     type: "article",
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "State of Trucking Regulation 2026 — Dispatched Research",
     description:
-      "Annual report on the regulatory environment for commercial trucking: FMCSA rules, state-level laws (AB 5, CARB Phase 3, MCA disclosure), broker transparency, and 2026 outlook.",
+      "Annual report on trucking regulation: FMCSA rules, state laws (AB 5, CARB Phase 3, MCA disclosure), broker transparency, and the 2026 outlook.",
   },
 };
 

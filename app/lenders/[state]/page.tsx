@@ -1,3 +1,4 @@
+import { fitTitle } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -44,8 +45,10 @@ export async function generateMetadata({
   const { state } = await params;
   const s = getStateBySlug(state);
   if (!s) return {};
-  const title = `Best Trucking Lenders in ${s.name} 2026 | Dispatched`;
-  const description = `Curated trucking lenders serving ${s.name} carriers: factoring, equipment financing, working capital, and ABL. State-specific compliance context. Updated May 2026.`;
+  const title = fitTitle(
+    `Best Trucking Lenders in ${s.name} 2026 | Dispatched`,
+  );
+  const description = `Trucking lenders serving ${s.name} carriers: factoring, equipment financing, working capital, and ABL, with state compliance context.`;
   const canonical = `/lenders/${s.slug}`;
   return {
     title,

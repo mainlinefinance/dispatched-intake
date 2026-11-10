@@ -1,3 +1,4 @@
+import { fitDescription, fitTitle } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -48,8 +49,12 @@ export async function generateMetadata({
   const { state, city } = await params;
   const entry = getCity(state, city);
   if (!entry) return {};
-  const title = `Trucking Lenders in ${entry.city}, ${entry.state} 2026 | Dispatched`;
-  const description = `Curated trucking lenders serving ${entry.city}, ${entry.state} carriers: factoring, equipment, working capital, and ABL. City freight context and state compliance.`;
+  const title = fitTitle(
+    `Trucking Lenders in ${entry.city}, ${entry.state} 2026 | Dispatched`,
+  );
+  const description = fitDescription(
+    `Curated trucking lenders serving ${entry.city}, ${entry.state} carriers: factoring, equipment, working capital, and ABL. City freight context and state compliance.`,
+  );
   const canonical = `/lenders/${entry.stateSlug}/${entry.citySlug}`;
   return {
     title,

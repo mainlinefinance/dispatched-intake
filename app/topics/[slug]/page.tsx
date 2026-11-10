@@ -1,3 +1,4 @@
+import { fitDescription, fitTitle } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -34,8 +35,8 @@ export async function generateMetadata({
     return {};
   }
   const info = getTopicInfo(slug);
-  const title = `${info.label} — Dispatched Topic`;
-  const description = info.description;
+  const title = fitTitle(`${info.label} — Dispatched Topic`);
+  const description = fitDescription(info.description);
   return {
     title,
     description,

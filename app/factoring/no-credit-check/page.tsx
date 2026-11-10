@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "Trucking factoring with no credit check — 2026 | Dispatched",
   description:
-    "Most freight factoring approves without a credit pull on you — they check your brokers. Bad credit, new authority, and prior bankruptcy still qualify. Same-day funding.",
+    "Most freight factors approve without a credit pull on you; they check your brokers. How bad credit, new authority, and a prior bankruptcy are treated.",
   alternates: {
     canonical: "/factoring/no-credit-check",
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
     title: "Trucking factoring with no credit check — 2026 | Dispatched",
     description:
-      "Most freight factoring approves without a credit pull on you — they check your brokers. Bad credit, new authority, and prior bankruptcy still qualify. Same-day funding.",
+      "Most freight factors approve without a credit pull on you; they check your brokers. How bad credit, new authority, and a prior bankruptcy are treated.",
     url: "/factoring/no-credit-check",
     type: "website",
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Trucking factoring with no credit check — 2026 | Dispatched",
     description:
-      "Most freight factoring approves without a credit pull on you — they check your brokers. Bad credit, new authority, and prior bankruptcy still qualify. Same-day funding.",
+      "Most freight factors approve without a credit pull on you; they check your brokers. How bad credit, new authority, and a prior bankruptcy are treated.",
   },
 };
 

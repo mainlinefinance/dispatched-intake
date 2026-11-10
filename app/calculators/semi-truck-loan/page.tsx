@@ -10,7 +10,7 @@ import { JsonLd, article, breadcrumbList } from "@/components/seo/JsonLd";
 export const metadata: Metadata = withSocial({
   title: "Semi truck loan calculator — Dispatched",
   description:
-    "Estimate the monthly payment on a semi truck loan in seconds. Five inputs, no credit pull, no personal info. APR bands match the observed Dispatched lender panel.",
+    "Estimate the monthly payment on a semi truck loan in seconds. Five inputs, no credit pull, no personal info. APR bands match the Dispatched lender panel.",
   alternates: { canonical: "/calculators/semi-truck-loan" },
 }, "/calculators/semi-truck-loan");
 

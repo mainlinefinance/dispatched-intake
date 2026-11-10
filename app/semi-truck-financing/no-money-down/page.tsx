@@ -12,13 +12,13 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "No Money Down Semi Truck Financing — Honest Terms | Dispatched",
+  title: "No Money Down Semi Truck Financing | Dispatched",
   description:
     "Zero-down and first-payment-deferred Class 8 financing on Dispatched's panel. What credit, revenue, and history actually qualify. Soft pull, no impact.",
   alternates: { canonical: "/semi-truck-financing/no-money-down" },
   openGraph: {
     images: ["/opengraph-image"],
-    title: "No Money Down Semi Truck Financing — Honest Terms | Dispatched",
+    title: "No Money Down Semi Truck Financing | Dispatched",
     description:
       "Zero-down and first-payment-deferred Class 8 financing on Dispatched's panel. What credit, revenue, and history actually qualify. Soft pull, no impact.",
     url: "/semi-truck-financing/no-money-down",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     images: ["/opengraph-image"],
     card: "summary_large_image",
-    title: "No Money Down Semi Truck Financing — Honest Terms | Dispatched",
+    title: "No Money Down Semi Truck Financing | Dispatched",
     description:
       "Zero-down and first-payment-deferred Class 8 financing on Dispatched's panel. What credit, revenue, and history actually qualify. Soft pull, no impact.",
   },

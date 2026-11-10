@@ -22,7 +22,7 @@ const PAGE_URL =
 export const metadata: Metadata = withSocial({
   title: "Owner-operator P&L calculator — Dispatched",
   description:
-    "Estimate weekly net income for owner-operators. Inputs: rate per mile, miles, fuel, fixed costs, factoring fee. Outputs: net per week, cost per mile, breakeven miles.",
+    "Estimate weekly net income for owner-operators from rate per mile, miles, fuel, fixed costs, and factoring fee. See cost per mile and breakeven miles.",
   alternates: { canonical: "/calculators/owner-operator-pl" },
 }, "/calculators/owner-operator-pl");
 

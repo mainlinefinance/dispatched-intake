@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title:
     "Sentry Insurance vs Nationwide Trucking — 2026 Specialty Carriers Compared | Dispatched",
   description:
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Sentry Insurance vs Nationwide Trucking: two trucking specialty carriers compared on coverage, AM Best, claim handling, hazmat depth, and underwriting for 2026.",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/sentry-insurance-vs-nationwide-trucking";

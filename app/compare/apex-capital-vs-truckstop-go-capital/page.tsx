@@ -1,3 +1,4 @@
+import { fitMeta } from "@/lib/seo/meta";
 import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +11,7 @@ import {
   faqPage,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = fitMeta({
   title:
     "Apex Capital vs Truckstop Go Capital — 2026 Comparison | Dispatched",
   description:
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Apex vs Truckstop Go Capital: rates, instant pay tech, load-board integration, contracts, and customer service compared. Best owner-op factor for 2026?",
   },
-};
+});
 
 const PAGE_URL =
   "https://dispatched.finance/compare/apex-capital-vs-truckstop-go-capital";
