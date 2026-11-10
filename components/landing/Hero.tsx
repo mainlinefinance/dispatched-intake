@@ -1,10 +1,10 @@
 import Form from "next/form";
 import Image from "next/image";
 import {
-  MONTHLY_REVENUE_OPTIONS,
-  MONTHLY_REVENUE_PARAM,
-  TIME_IN_BUSINESS_OPTIONS,
-  TIME_IN_BUSINESS_PARAM,
+  FUNDING_AMOUNT_OPTIONS,
+  FUNDING_AMOUNT_PARAM,
+  QUIZ_REVENUE_OPTIONS,
+  QUIZ_REVENUE_PARAM,
 } from "@/lib/quickStart";
 import { APPLY_HREF, CTA_LABEL, HERO_CTA_ID, ctaPlacement } from "./cta";
 import {
@@ -23,7 +23,10 @@ import SpecialistLink from "./SpecialistLink";
    visitor might want from here is in the nav.
 
    The apply CTA is the submit button of a two-question form, so the first
-   step of the application happens here instead of one click away. It is a
+   step of the application happens here instead of one click away. The two
+   questions are the quiz's own (funding amount, monthly revenue) in the
+   quiz's own bands: asking anything else here would make the visitor answer
+   twice. It is a
    plain GET form: /apply receives the answers as query params (see
    lib/quickStart.ts), it works before hydration, and next/form upgrades it
    to a client-side navigation. Both questions are optional — an unanswered
@@ -90,17 +93,17 @@ export default function Hero() {
                 Start here · 2 quick questions
               </p>
               <div className="hero-start-field">
-                <label htmlFor="hero-monthly-revenue">Monthly revenue</label>
+                <label htmlFor="hero-funding-amount">How much do you need?</label>
                 <select
-                  id="hero-monthly-revenue"
-                  name={MONTHLY_REVENUE_PARAM}
+                  id="hero-funding-amount"
+                  name={FUNDING_AMOUNT_PARAM}
                   className="select"
                   defaultValue=""
                 >
                   <option value="" disabled>
                     Pick a range
                   </option>
-                  {MONTHLY_REVENUE_OPTIONS.map((o) => (
+                  {FUNDING_AMOUNT_OPTIONS.map((o) => (
                     <option key={o.value} value={o.value}>
                       {o.label}
                     </option>
@@ -108,17 +111,17 @@ export default function Hero() {
                 </select>
               </div>
               <div className="hero-start-field">
-                <label htmlFor="hero-time-in-business">Time in business</label>
+                <label htmlFor="hero-monthly-revenue">Monthly revenue</label>
                 <select
-                  id="hero-time-in-business"
-                  name={TIME_IN_BUSINESS_PARAM}
+                  id="hero-monthly-revenue"
+                  name={QUIZ_REVENUE_PARAM}
                   className="select"
                   defaultValue=""
                 >
                   <option value="" disabled>
                     Pick a range
                   </option>
-                  {TIME_IN_BUSINESS_OPTIONS.map((o) => (
+                  {QUIZ_REVENUE_OPTIONS.map((o) => (
                     <option key={o.value} value={o.value}>
                       {o.label}
                     </option>

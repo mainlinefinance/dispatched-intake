@@ -2,9 +2,11 @@
 
 import { useSearchParams } from "next/navigation";
 import {
+  fundingAmountLabel,
   hasQuickStartAnswers,
   monthlyRevenueLabel,
   parseQuickStartAnswers,
+  quizRevenueLabel,
   timeInBusinessLabel,
 } from "@/lib/quickStart";
 
@@ -27,6 +29,18 @@ export default function ApplyAnswers() {
         Your answers so far
       </h2>
       <dl className="apply-answers-list">
+        {answers.fundingAmount ? (
+          <div className="apply-answers-item">
+            <dt>Funding amount</dt>
+            <dd>{fundingAmountLabel(answers.fundingAmount)}</dd>
+          </div>
+        ) : null}
+        {answers.revenue ? (
+          <div className="apply-answers-item">
+            <dt>Monthly revenue</dt>
+            <dd>{quizRevenueLabel(answers.revenue)}</dd>
+          </div>
+        ) : null}
         {answers.monthlyRevenue ? (
           <div className="apply-answers-item">
             <dt>Monthly revenue</dt>

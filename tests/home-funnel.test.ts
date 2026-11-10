@@ -81,8 +81,8 @@ describe("apply CTA placement on the home", () => {
 describe("quick-start answers reach /apply", () => {
   it("the hero is a GET form to /apply named with the shared params", () => {
     expect(HERO).toContain("action={APPLY_HREF}");
-    expect(HERO).toContain("name={MONTHLY_REVENUE_PARAM}");
-    expect(HERO).toContain("name={TIME_IN_BUSINESS_PARAM}");
+    expect(HERO).toContain("name={FUNDING_AMOUNT_PARAM}");
+    expect(HERO).toContain("name={QUIZ_REVENUE_PARAM}");
     // Optional on purpose: the CTA must work with nothing picked.
     expect(HERO).not.toMatch(/\brequired\b/);
   });
