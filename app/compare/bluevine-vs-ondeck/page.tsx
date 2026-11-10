@@ -99,7 +99,7 @@ export default function BluevineVsOnDeckPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               Bluevine vs OnDeck — best SMB lender for trucking businesses in

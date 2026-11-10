@@ -100,7 +100,7 @@ export default function ApexVsRtsFinancialPage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               Apex Capital vs RTS Financial — which trucking factor wins in

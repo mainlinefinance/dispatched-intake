@@ -105,7 +105,7 @@ export default function SentryVsNationwidePage() {
         <section className="ins-hero product-hero">
           <div className="ins-container">
             <span className="ins-eyebrow">
-              Dispatched · Updated May 2026 · Independent comparison
+              Dispatched · Updated November 2026 · Independent comparison
             </span>
             <h1 className="ins-hero-title">
               Sentry Insurance vs Nationwide Trucking — best specialty
