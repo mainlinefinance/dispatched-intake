@@ -217,12 +217,12 @@ export default function EcapitalVsTriumphPage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
                   <td data-label="eCapital">
-                    InstaPay (1 hour, business hours)
+                    InstaPay (business hours)
                   </td>
-                  <td data-label="Triumph">Same-day decisions</td>
+                  <td data-label="Triumph">Standard ACH/wire</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -478,8 +478,7 @@ export default function EcapitalVsTriumphPage() {
               Run the math: a 12-truck fleet doing $400K/month with one
               broker at $200K. If that broker files Chapter 11,
               you&rsquo;re looking at ~$150K of receivables in dispute. On
-              non-recourse, the factor absorbs it &mdash; the question is
-              how quickly and cleanly. Triumph&rsquo;s bank-regulated
+              non-recourse, the factor absorbs it &mdash; the question is how cleanly. Triumph&rsquo;s bank-regulated
               reserve structure makes that more predictable.
               eCapital&rsquo;s program is real and well-capitalized, but
               the claim-payment documentation is less standardized.{" "}
@@ -537,8 +536,7 @@ export default function EcapitalVsTriumphPage() {
               invoice-by-invoice advances. Both factors offer ABL; the
               choice is bank vs non-bank. If you want treasury services
               and a long-term banking partner, Triumph wins. If you want
-              maximum covenant flexibility and faster approvals, eCapital
-              wins.
+              maximum covenant flexibility, eCapital wins.
             </p>
           </div>
         </section>
@@ -846,8 +844,7 @@ export default function EcapitalVsTriumphPage() {
             <h3>For owner-op service quality: Apex Capital.</h3>
             <p className="ins-hero-sub">
               Apex is the dominant choice for owner-operators and small
-              fleets running 1&ndash;10 trucks. The 24/7/365 instant
-              funding (blynk&reg;), the ~51&cent;/gal fuel discount, and
+              fleets running 1&ndash;10 trucks. The around-the-clock payment rail (blynk&reg;), the ~51&cent;/gal fuel discount, and
               the 700+ five-star review base genuinely differentiate it.
               Effective rates run 30&ndash;60 basis points lower than
               eCapital at the single-truck profile, and the contract
@@ -868,7 +865,7 @@ export default function EcapitalVsTriumphPage() {
             <h3>For volume + advance rate: RTS Financial.</h3>
             <p className="ins-hero-sub">
               RTS is the right call for high-volume fleets that prioritize
-              advance rate and same-day funding without the cross-border
+              advance rate without the cross-border
               footprint eCapital charges for. Pricing is competitive,
               the fuel program is meaningful, and the factoring product
               is cleaner (fewer cross-sells, more focus on the factoring
@@ -974,7 +971,7 @@ export default function EcapitalVsTriumphPage() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                  Factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

@@ -86,7 +86,6 @@ function lenderCard(l: LenderEntry) {
         {l.founded ? ` · Founded ${l.founded}` : ""}
         {l.hqState ? ` · HQ ${l.hqState}` : ""}
       </p>
-      <p>{l.blurb}</p>
       <p>
         <strong>Products:</strong> {types}
       </p>
@@ -296,37 +295,23 @@ export default async function LendersStatePage({
               ramping into multi-state operations.
             </p>
             <p>
-              Lender appetite in {s.name} does not differ materially from
-              the national picture because the 12 lenders in this
-              directory all underwrite nationally. The practical
-              difference between operating out of {s.name} versus a
-              neighboring state is your IRP base state, your IFTA filing
-              jurisdiction, and any state-level commercial-financing
-              disclosure rules that bind contracts signed in {s.name}.
-              California, New York, Utah, Virginia, and Georgia all have
-              commercial-financing disclosure laws on the books (with
-              California SB 1235 being the most prescriptive); other
-              states have not yet legislated comparable rules.
-            </p>
-            <p>
-              For owner-operators with new authority in {s.name}, the
-              critical first six months are about establishing clean
-              broker-payment history and getting the MCS-150 biennial
-              update and BOC-3 filings correct before the FMCSA New
-              Entrant Safety Assurance Program closes. Once you cross
-              the 90-day broker-history threshold, the lender panel that
-              underwrites owner-operators inside the first year opens
-              up materially.
+              The 12 lenders in this directory all underwrite nationally,
+              so what changes in {s.name} is your IRP base state, your
+              IFTA filing jurisdiction, and any state commercial-financing
+              disclosure rules. The{" "}
+              <Link href="/lenders">directory overview</Link> covers the
+              national picture.
             </p>
           </section>
 
           <section className="research-section" id="lenders">
             <h2>Lenders serving {s.name}</h2>
             <p>
-              All 12 directory lenders serve {s.name} carriers. Each card
-              names the lender&apos;s strength and the trade-off you accept
-              by choosing them. Links open the lender&apos;s own site in a
-              new tab; we do not get paid for these placements.
+              All 12 directory lenders serve {s.name} carriers. The{" "}
+              <Link href="/lenders#lenders">national directory</Link> has
+              the full write-up on each one, including the trade-off you
+              accept by choosing them. Links open the lender&apos;s own
+              site in a new tab; we do not get paid for these placements.
             </p>
             <div className="research-cta-grid">
               {lenders.map((l) => lenderCard(l))}
@@ -346,7 +331,7 @@ export default async function LendersStatePage({
               <ul className="research-list">
                 {ownerOpLenders.map((l) => (
                   <li key={l.slug}>
-                    <strong>{l.name}</strong> — {l.blurb}
+                    <strong>{l.name}</strong> — best for {l.bestFor}
                   </li>
                 ))}
               </ul>
@@ -366,7 +351,7 @@ export default async function LendersStatePage({
               <ul className="research-list">
                 {fleetLenders.map((l) => (
                   <li key={l.slug}>
-                    <strong>{l.name}</strong> — {l.blurb}
+                    <strong>{l.name}</strong> — best for {l.bestFor}
                   </li>
                 ))}
               </ul>
@@ -380,13 +365,12 @@ export default async function LendersStatePage({
                 First-year MC# operators (under 90 days of broker history)
                 struggle with most working-capital lenders. Factoring is
                 often the only working-capital tool available, and a small
-                subset of factors specializes in funding brand-new authority
-                inside the first 30 days.
+                subset of factors specializes in brand-new authority.
               </p>
               <ul className="research-list">
                 {newAuthorityLenders.map((l) => (
                   <li key={l.slug}>
-                    <strong>{l.name}</strong> — {l.blurb}
+                    <strong>{l.name}</strong> — best for {l.bestFor}
                   </li>
                 ))}
               </ul>
@@ -406,7 +390,7 @@ export default async function LendersStatePage({
               <ul className="research-list">
                 {badCreditLenders.map((l) => (
                   <li key={l.slug}>
-                    <strong>{l.name}</strong> — {l.blurb}
+                    <strong>{l.name}</strong> — best for {l.bestFor}
                   </li>
                 ))}
               </ul>

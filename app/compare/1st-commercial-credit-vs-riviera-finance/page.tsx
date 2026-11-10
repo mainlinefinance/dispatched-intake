@@ -228,10 +228,10 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
-                    <strong>Funding speed</strong>
+                    <strong>Payment options</strong>
                   </td>
-                  <td data-label="1st Commercial Credit">Same-day typical</td>
-                  <td data-label="Riviera Finance">Standard same-day</td>
+                  <td data-label="1st Commercial Credit">Standard ACH</td>
+                  <td data-label="Riviera Finance">Standard ACH</td>
                 </tr>
                 <tr>
                   <td className="ins-carrier-name" data-label="Dimension">
@@ -578,7 +578,7 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
               relationship managers by name, multi-decade payment-history
               context, and willingness to work through difficult periods
               (recession volume drops, broker insolvencies) without the
-              immediate covenant-violation hammer. For carriers who
+              covenant-violation hammer. For carriers who
               think of their factor as a strategic partner, Riviera is
               the more aligned choice.
             </p>
@@ -595,28 +595,23 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
 
         <section>
           <div className="ins-container">
-            <span className="ins-eyebrow">Funding speed and tech</span>
+            <span className="ins-eyebrow">Payment options and tech</span>
             <h2 className="ins-hero-title">
-              Both fund same-day. The gap is on tech stack depth.
+              Both pay by standard ACH. The gap is on tech stack depth.
             </h2>
 
             <h3>1st Commercial Credit funding and tech.</h3>
             <p className="ins-hero-sub">
-              1CC funds verified invoices same-day under normal
-              conditions. The platform is functional but not
+              1CC pays verified invoices by ACH. The platform is functional but not
               category-leading: BOL imaging, portal-based load
-              submission, ACH disbursement. No instant-payment product
-              in the Apex blynk&reg; tier. For steady-state weekday
-              operations, same-day is enough. For weekend or holiday
-              cash-flow timing, the lack of 24/7 instant funding is a
-              real gap relative to owner-op-focused factors.
+              submission, ACH disbursement. It has no around-the-clock payment rail comparable to Apex&rsquo;s blynk&reg;, so payments follow banking days. Operators who need payments outside banking hours should weigh that against owner-op-focused factors.
             </p>
 
             <h3>Riviera Finance funding and tech.</h3>
             <p className="ins-hero-sub">
-              Riviera also funds same-day on verified invoices. Tech
+              Riviera also pays verified invoices by ACH. Tech
               stack is comparable on funding mechanics &mdash; both run
-              standard ACH rather than instant-payment rails &mdash;
+              standard ACH rather than an around-the-clock payment rail &mdash;
               but lighter on integrations and broker-credit query
               tools. Riviera&rsquo;s legacy is relationship-driven
               workflow, not tech-driven workflow.
@@ -624,8 +619,7 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
 
             <h3>Winner by use case.</h3>
             <p className="ins-hero-sub">
-              <strong>Same-day funding: both work.</strong>{" "}
-              Funding-speed gap is negligible in normal operations.{" "}
+              <strong>Payment options: no real difference.</strong>{" "} Both run standard ACH on banking days.{" "}
               <strong>Tech-stack depth: neither is the answer.</strong>{" "}
               Tech-first factoring workflows are better served by
               eCapital or Truckstop Go.
@@ -827,7 +821,7 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
               Single-truck and small-fleet owner-operators benefit more
               from an owner-op-native factor than either 1st Commercial
               Credit or Riviera. Apex Capital&rsquo;s ~51&cent;/gal fuel
-              discount and 24/7 blynk&reg; instant funding are
+              discount and around-the-clock blynk&reg; payment rail are
               specifically built for that profile. TBS is the leader for
               brand-new authorities with thin track records.
             </p>
@@ -948,7 +942,7 @@ export default function FirstCommercialCreditVsRivieraFinancePage() {
               </li>
               <li>
                 <Link href="/factoring/no-credit-check">
-                  No credit check trucking factoring →
+                  Trucking factoring that underwrites your brokers →
                 </Link>
               </li>
               <li>

@@ -122,7 +122,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     rateFloor: "1%",
     contractMin: "12 months",
     blurb:
-      "Three decades of owner-operator factoring with instant 24/7/365 funding via blynk® and the deepest fuel discount in the market (operator-reported ~51¢/gal at participating chains). 12-month auto-renewing contract with a 30-day cancellation window is the main trade-off.",
+      "Three decades of owner-operator factoring with the blynk® around-the-clock payment rail and the deepest fuel discount in the market (operator-reported ~51¢/gal at participating chains). 12-month auto-renewing contract with a 30-day cancellation window is the main trade-off.",
   },
   {
     slug: "ecapital",
@@ -240,7 +240,7 @@ const LENDERS: ReadonlyArray<LenderEntry> = [
     rateFloor: "2%",
     contractMin: "month-to-month",
     blurb:
-      "Legacy factor since 1969 with a national branch network — the only major factor on this list with in-person branch relationships. Technology stack (instant payment, mobile capture) is dated relative to Apex, eCapital, and Truckstop Go.",
+      "Legacy factor since 1969 with a national branch network — the only major factor on this list with in-person branch relationships. Technology stack (payment rails, mobile capture) is dated relative to Apex, eCapital, and Truckstop Go.",
   },
   {
     slug: "bluevine",
