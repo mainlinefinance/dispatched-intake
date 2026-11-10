@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   title:
     "Commercial Trucking Insurance Quotes | Dispatched",
   description:
-    "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quote in 3 minutes via our producer.",
+    "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL.",
   alternates: { canonical: "/insurance" },
   openGraph: {
     images: ["/opengraph-image"],
     title:
       "Commercial Trucking Insurance Quotes | Dispatched",
     description:
-      "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quote in 3 minutes via our producer.",
+      "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL.",
     url: "/insurance",
     type: "website",
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title:
       "Commercial Trucking Insurance Quotes | Dispatched",
     description:
-      "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL. Quotes in 3 minutes.",
+      "Compare commercial trucking insurance from 30+ carriers — primary liability, motor truck cargo, physical damage, NTL, GL.",
   },
 };
 
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "How do I get a commercial trucking insurance quote?",
-    a: "Submit your DOT number, equipment list, lane footprint, and prior loss runs through the quote engine on this page. The producer pulls quotes from the carriers appointed for your equipment type and operating radius and returns side-by-side options, typically within 1 to 3 business days. You bind directly with the producer once you pick a quote.",
+    a: "Submit your DOT number, equipment list, lane footprint, and prior loss runs through the quote engine on this page. The producer pulls quotes from the carriers appointed for your equipment type and operating radius and returns side-by-side options, on the producer's and carriers' timeline. You bind directly with the producer once you pick a quote.",
   },
   {
     q: "Which insurance carriers will my quote come from?",
@@ -227,7 +227,7 @@ function Hero({ today }: { today: string }) {
             <span>States licensed</span>
           </li>
           <li>
-            <strong>1–3 days</strong>
+            <strong>Side by side</strong>
             <span>Quotes returned</span>
           </li>
           <li>
@@ -261,7 +261,7 @@ function ThreeStepRibbon() {
             <p>
               Our producer partner pulls quotes from the carriers appointed
               for your DOT class and state. You see side-by-side limits,
-              deductibles, and premium — typically within 1–3 business days.
+              deductibles, and premium — on the producer&apos;s and carriers&apos; timeline.
             </p>
           </li>
           <li>

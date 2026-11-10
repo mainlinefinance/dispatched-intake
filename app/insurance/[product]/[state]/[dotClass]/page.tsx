@@ -381,7 +381,7 @@ function QuoteCard({
 }) {
   return (
     <div className="quote-card">
-      <p className="quote-eyebrow">Free quote · No credit pull · 1 minute</p>
+      <p className="quote-eyebrow">Free quote · No credit pull</p>
       <h2 id="quote-h2" className="quote-h2">
         Send your operator profile to {BROKER_PARTNER_NAME}.
       </h2>

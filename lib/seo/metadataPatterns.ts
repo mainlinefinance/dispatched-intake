@@ -57,10 +57,10 @@ export function metaInsuranceProductHub(productName: string): TitleAndDescriptio
     `${productName} for Truckers · Compare Quotes | Dispatched`,
   ]);
   const description = descRange([
-    `Compare ${lower} for commercial trucking from carriers writing your DOT class. One intake, named producer partner. Quote in under 3 minutes.`,
-    `Compare ${lower} for commercial trucking from carriers writing your DOT class. Soft pull, named producer partner. Quote in 3 minutes.`,
-    `Compare ${lower} for commercial trucking from carriers writing your DOT class. One intake to a named producer partner. Quote in 3 minutes.`,
-    `Compare ${lower} for commercial trucking from carriers writing your DOT class. Soft pull, no credit impact. Quote in under 3 minutes.`,
+    `Compare ${lower} for commercial trucking from carriers writing your DOT class. One intake, named producer partner.`,
+    `Compare ${lower} for commercial trucking from carriers writing your DOT class. Soft pull, named producer partner.`,
+    `Compare ${lower} for commercial trucking from carriers writing your DOT class. One intake to a named producer partner.`,
+    `Compare ${lower} for commercial trucking from carriers writing your DOT class. Soft pull, no credit impact.`,
   ]);
   return { title, description };
 }
@@ -82,13 +82,13 @@ export function metaInsuranceProductState(args: {
   const lower = args.productNameLower;
   const description = descRange(
     [
-      `Compare ${lower} in ${args.stateName} for commercial trucking. Carriers writing your DOT class, soft pull, no credit impact. Quote in 3 minutes.`,
+      `Compare ${lower} in ${args.stateName} for commercial trucking. Carriers writing your DOT class, soft pull, no credit impact.`,
       !/(insurance|coverage)$/.test(lower)
-        ? `Compare ${lower} coverage in ${args.stateName} for commercial trucking. Carriers writing your DOT class, soft pull, no credit impact. Quote in 3 minutes.`
+        ? `Compare ${lower} coverage in ${args.stateName} for commercial trucking. Carriers writing your DOT class, soft pull, no credit impact.`
         : "",
-      `Compare ${lower} in ${args.stateName} for commercial trucking. Carriers writing your DOT class, soft pull, no credit impact. Quote in 3 min.`,
-      `Compare ${lower} in ${args.stateName}. Carriers writing your DOT class, soft pull, no credit impact. Quote in under 3 minutes.`,
-      `Compare ${lower} in ${args.stateName} for commercial trucking owner-operators. Carriers writing your DOT class, soft pull. Quote in 3 minutes.`,
+      `Compare ${lower} in ${args.stateName} for commercial trucking. Carriers writing your DOT class, soft pull, no credit impact.`,
+      `Compare ${lower} in ${args.stateName}. Carriers writing your DOT class, soft pull, no credit impact.`,
+      `Compare ${lower} in ${args.stateName} for commercial trucking owner-operators. Carriers writing your DOT class, soft pull.`,
     ].filter((s) => s.length > 0),
   );
   return { title, description };
@@ -116,11 +116,11 @@ export function metaInsuranceDeep(args: {
       ? args.productName
       : args.productShortLabel;
   const description = descRange([
-    `${usePN} for ${dcLower} owner-operators in ${args.stateName}. Compare carriers writing your class today. Soft pull, no credit impact. Quote in 3 minutes.`,
-    `${usePN} for ${dcLower} owner-operators in ${args.stateName}. Compare carriers writing your class. Soft pull, no credit impact. Quote in 3 minutes.`,
-    `${args.productShortLabel} for ${dcLower} owner-operators in ${args.stateName}. Compare carriers writing your class today. Soft pull, no credit impact. Quote in 3 minutes.`,
-    `${args.productShortLabel} for ${dcLower} operators in ${args.stateName}. Compare carriers writing your class. Soft pull, no credit impact. Quote in under 3 minutes.`,
-    `${usePN} for ${dcLower} operators in ${args.stateName}. Compare carriers writing your class. Soft pull, no credit impact. Quote in 3 minutes.`,
+    `${usePN} for ${dcLower} owner-operators in ${args.stateName}. Compare carriers writing your class today. Soft pull, no credit impact.`,
+    `${usePN} for ${dcLower} owner-operators in ${args.stateName}. Compare carriers writing your class. Soft pull, no credit impact.`,
+    `${args.productShortLabel} for ${dcLower} owner-operators in ${args.stateName}. Compare carriers writing your class today. Soft pull, no credit impact.`,
+    `${args.productShortLabel} for ${dcLower} operators in ${args.stateName}. Compare carriers writing your class. Soft pull, no credit impact.`,
+    `${usePN} for ${dcLower} operators in ${args.stateName}. Compare carriers writing your class. Soft pull, no credit impact.`,
   ]);
   return { title, description };
 }
@@ -164,11 +164,11 @@ export function metaCarrier(carrierName: string): TitleAndDescription {
     `${carrierName} Trucking Insurance | Dispatched`,
     `${carrierName}: Commercial Trucking Insurance | Dispatched`,
     `${carrierName} Trucking Insurance Review | Dispatched`,
-    `${carrierName} Trucking Insurance · Quote in 3 min | Dispatched`,
+    `${carrierName} Trucking Insurance | Dispatched`,
   ]);
   const description = descRange([
     `Compare ${carrierName} commercial trucking insurance against the rest of our panel — same producer, same intake, written by your DOT class.`,
-    `${carrierName} commercial trucking insurance: compare against our panel — same producer, same intake, written by your DOT class. Quote in 3 minutes.`,
+    `${carrierName} commercial trucking insurance: compare against our panel — same producer, same intake, written by your DOT class.`,
     `${carrierName} commercial trucking insurance review: AM Best rating, products written, state footprint, plus quote intake routed by your DOT class.`,
   ]);
   return { title, description };
