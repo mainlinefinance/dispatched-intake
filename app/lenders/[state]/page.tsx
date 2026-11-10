@@ -12,13 +12,10 @@ import {
   itemList,
 } from "@/components/seo/JsonLd";
 import {
-  LENDER_TYPE_LABELS,
   STATE_INFO,
   getAllStateSlugs,
   getLendersByState,
   getStateBySlug,
-  type LenderEntry,
-  type LenderType,
   type StateInfo,
 } from "@/lib/data/lenders";
 import { getStateContext } from "@/lib/data/lenderStateContext";
@@ -69,30 +66,6 @@ export async function generateMetadata({
       description,
     },
   };
-}
-
-function lenderCard(l: LenderEntry) {
-  const types = l.types
-    .map((t) => LENDER_TYPE_LABELS[t as LenderType])
-    .join(" · ");
-  return (
-    <article key={l.slug} className="research-cta-card">
-      <h3>{l.name}</h3>
-      <p>
-        <strong>Best for:</strong> {l.bestFor}
-        {l.founded ? ` · Founded ${l.founded}` : ""}
-        {l.hqState ? ` · HQ ${l.hqState}` : ""}
-      </p>
-      <p>
-        <strong>Products:</strong> {types}
-      </p>
-      <p>
-        <a href={l.url} target="_blank" rel="noopener noreferrer">
-          {l.name} website →
-        </a>
-      </p>
-    </article>
-  );
 }
 
 function stateFAQs(s: StateInfo) {
@@ -268,12 +241,10 @@ export default async function LendersStatePage({
               All 12 directory lenders serve {s.name} carriers. The{" "}
               <Link href="/lenders#lenders">national directory</Link> has
               the full write-up on each one, including the trade-off you
-              accept by choosing them. Links open the lender&apos;s own
-              site in a new tab; we do not get paid for these placements.
+              accept by choosing them. We do not get paid for these
+              placements.
             </p>
-            <div className="research-cta-grid">
-              {lenders.map((l) => lenderCard(l))}
-            </div>
+            <p>{lenders.map((l) => l.name).join(", ")}.</p>
           </section>
 
           <section className="research-section" id="compliance">
