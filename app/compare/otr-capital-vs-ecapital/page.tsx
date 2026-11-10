@@ -833,7 +833,7 @@ export default function OtrVsEcapitalPage() {
                 Up-to-100% advance vs OTR&rsquo;s up-to-95% is a
                 meaningful working-capital swing on every invoice. For a
                 fleet doing $400K/month, that&rsquo;s an extra
-                $15&ndash;20K cash in your account on day one.
+                $15&ndash;20K cash advanced against the same invoices.
               </li>
               <li>
                 <strong>High-mileage operators where fuel dominates.</strong>{" "}

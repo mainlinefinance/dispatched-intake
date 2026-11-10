@@ -517,8 +517,7 @@ export default function TriumphVsRtsFinancialPage() {
               regulatory constraint. Bank-owned factors carry capital
               requirements on uncovered receivables, so the held-back
               reserve has to be larger to satisfy regulatory ratios.
-              For carriers who don&rsquo;t need every dollar of
-              working capital on day one &mdash; established mid-
+              For carriers who don&rsquo;t need every dollar of working capital advanced &mdash; established mid-
               fleets with steady cash positions and clean broker
               mixes &mdash; the lower advance is a non-issue. For
               carriers running tight, the gap shows up in the
@@ -852,7 +851,7 @@ export default function TriumphVsRtsFinancialPage() {
                 The 97% advance versus Triumph&rsquo;s 85&ndash;95%
                 is a 2&ndash;12 percentage point swing on every
                 invoice. On $400K/month, that&rsquo;s $8K&ndash;$48K
-                more cash on day one.
+                more cash advanced.
               </li>
               <li>
                 <strong>

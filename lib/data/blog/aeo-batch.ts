@@ -109,7 +109,7 @@ export const AEO_BATCH_POSTS: ReadonlyArray<BlogPost> = [
     metaDescription:
       "Owner-operators with bad credit can still get trucking loans from lenders that underwrite on deposits, DSCR, and equipment first. Approval is not guaranteed.",
     subhead:
-      "The bank declined and the operator is being told the credit score makes them uninvestable. The bank is using the wrong underwriting model — and the lenders that fund owner-operators do not.",
+      "The bank declined and the operator is being told the credit score makes them uninvestable. A bank's model is not the only one — some lenders weigh revenue and equipment alongside credit, though approval is not guaranteed.",
     publishedDate: "2026-05-16",
     updatedDate: "2026-05-16",
     topic: "factoring-and-cash-flow",
