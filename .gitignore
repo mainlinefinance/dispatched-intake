@@ -52,3 +52,6 @@ next-env.d.ts
 # Untracked from b1ad1b5 onward; those files remain in history.
 cowork.dispatched.finance/
 .gstack/
+
+# outreach lists (contact data) — never commit
+/outreach-data/
