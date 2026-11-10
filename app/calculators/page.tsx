@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "Fit estimators and decision tools for trucking owner-operators and small fleets. No credit pull, no personal info collected. Try a calculator now.",
   alternates: { canonical: "/calculators" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Trucking finance calculators — fit tools | Dispatched",
     description:
       "Fit estimators and decision tools for trucking owner-operators and small fleets. No credit pull, no personal info collected. Try a calculator now.",
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Trucking finance calculators — fit tools | Dispatched",
     description:

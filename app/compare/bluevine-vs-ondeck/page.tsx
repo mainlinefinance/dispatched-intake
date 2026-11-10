@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     "Bluevine vs OnDeck: which SMB working-capital lender fits trucking businesses? Rates, lines of credit, and underwriting compared. Plus why factoring usually beats both.",
   alternates: { canonical: "/compare/bluevine-vs-ondeck" },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Bluevine vs OnDeck — 2026 SMB Lender Comparison for Truckers | Dispatched",
     description:
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Bluevine vs OnDeck — 2026 SMB Lender Comparison for Truckers | Dispatched",
@@ -66,7 +69,7 @@ const faqs = [
 ];
 
 export default function BluevineVsOnDeckPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/bluevine-vs-ondeck/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -83,7 +86,7 @@ export default function BluevineVsOnDeckPage() {
           description:
             "Head-to-head comparison of Bluevine and OnDeck across rates, underwriting, products, and trucking-fit for 2026 — including when trucking factoring beats both.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

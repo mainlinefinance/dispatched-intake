@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import OutboundLink from "@/components/OutboundLink";
@@ -29,12 +30,14 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: CANONICAL },
   openGraph: {
+    images: ["/opengraph-image"],
     title: TITLE,
     description: DESCRIPTION,
     url: CANONICAL,
     type: "article",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
@@ -110,7 +113,7 @@ function groupByUseCase(
 }
 
 export default function LendersIndexPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/lenders/page.tsx");
   const lenders = getAllLenders();
   const useCases = groupByUseCase(lenders);
 
@@ -127,7 +130,7 @@ export default function LendersIndexPage() {
           headline: "Trucking Lenders Directory 2026",
           description: DESCRIPTION,
           url: ABS_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

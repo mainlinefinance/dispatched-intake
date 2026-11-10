@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { FactoringFlowDiagram } from "@/components/diagrams/FactoringFlowDiagram";
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     canonical: "/research/best-trucking-factoring-2026",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Best Trucking Factoring Companies 2026 | Dispatched",
     description:
       "We reviewed 12 trucking factors on rate, contract terms, funding speed, and bad-credit acceptance. Here's the honest 2026 ranking by use case — not a paid list.",
@@ -28,6 +30,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Best Trucking Factoring Companies 2026 | Dispatched",
     description:
@@ -154,7 +157,7 @@ const TABLE_ROWS: ReadonlyArray<Row> = [
 ];
 
 export default function BestTruckingFactoring2026Page() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published } = contentDates("app/research/best-trucking-factoring-2026/page.tsx");
   const relatedItems = getRelatedContent({
     currentUrl: "/research/best-trucking-factoring-2026",
     glossarySlugs: [
@@ -187,7 +190,7 @@ export default function BestTruckingFactoring2026Page() {
           description:
             "Honest 2026 ranking of 12 freight factoring companies for trucking businesses by use case — owner-operators, fleets, new authority, bad credit, non-recourse, and tech integration.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: "2026-05-11",
           authorName: "Angelo Orru Neto",
         })}
@@ -253,7 +256,7 @@ export default function BestTruckingFactoring2026Page() {
               placements. Updated Q2 2026.
             </p>
             <ResearchByline
-              publishedDate={today}
+              publishedDate={published}
               sourceCount={12}
               methodologyNote="No paid placements."
             />

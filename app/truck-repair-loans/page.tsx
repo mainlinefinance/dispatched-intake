@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -30,6 +31,7 @@ export const metadata: Metadata = {
     "Truck down? Get matched with repair lenders for $5K–$150K in repair financing. Soft pull, FICO from 500. Apply now.",
   alternates: { canonical: "/truck-repair-loans" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Truck repair loans — same-day funding | Dispatched",
     description:
       "Truck down? Get matched with repair lenders for $5K–$150K in repair financing. Soft pull, FICO from 500. Apply now.",
@@ -37,6 +39,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Truck repair loans — same-day funding | Dispatched",
     description:
@@ -87,7 +90,7 @@ const faqs = [
 ];
 
 export default function TruckRepairLoansPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/truck-repair-loans/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -103,7 +106,7 @@ export default function TruckRepairLoansPage() {
           description:
             "How truck repair financing works on the Dispatched panel: soft-pull match, one hard pull only with the chosen lender, direct-to-shop disbursement, and what to expect from the application flow.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />
@@ -445,6 +448,11 @@ export default function TruckRepairLoansPage() {
               <li>
                 <Link href="/trucking">
                   All trucking financing products →
+                </Link>
+              </li>
+              <li>
+                <Link href="/truck-repair-loans/engine-rebuild">
+                  Engine rebuild financing →
                 </Link>
               </li>
               <li>

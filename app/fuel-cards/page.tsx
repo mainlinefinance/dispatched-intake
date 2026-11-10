@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -33,6 +34,7 @@ export const metadata: Metadata = {
     "Compare AtoB, WEX, Shell, RTS Pro, TCS. Discount per gallon, network, fees, and credit terms for owner-operators and small fleets — sourced from each issuer.",
   alternates: { canonical: "/fuel-cards" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Best fuel cards for independent truck drivers (2026) | Dispatched",
     description:
       "Compare AtoB, WEX, Shell, RTS Pro, TCS. Discount per gallon, network, fees, and credit terms for owner-operators and small fleets — sourced from each issuer.",
@@ -40,6 +42,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Best fuel cards for independent truck drivers (2026) | Dispatched",
     description:
@@ -153,7 +156,7 @@ const faqs = [
 ];
 
 export default function FuelCardsPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/fuel-cards/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -168,7 +171,7 @@ export default function FuelCardsPage() {
           description:
             "Comparison of AtoB, WEX, Shell, RTS Pro, and TCS for owner-operators and small fleets — discount per gallon, network, fees, and credit terms sourced from each issuer.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

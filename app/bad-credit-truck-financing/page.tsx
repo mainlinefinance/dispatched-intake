@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
     "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply.",
   alternates: { canonical: "/bad-credit-truck-financing" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Bad credit truck financing — FICO 500+ | Dispatched",
     description:
       "Truck financing for sub-650 FICO. Programs route from 500. Equipment loans, working capital, repair loans. Soft-pull match. Apply.",
@@ -35,6 +37,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Bad credit truck financing — FICO 500+ | Dispatched",
     description:
@@ -80,7 +83,7 @@ const faqs = [
 ];
 
 export default function BadCreditTruckFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/bad-credit-truck-financing/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -96,7 +99,7 @@ export default function BadCreditTruckFinancingPage() {
           description:
             "How sub-580-credit borrowers move on the Dispatched panel: which lenders fund them, what compensating factors matter, and what to expect from the application flow.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />
@@ -424,6 +427,11 @@ export default function BadCreditTruckFinancingPage() {
               <li>
                 <Link href="/trucking">
                   All trucking financing products →
+                </Link>
+              </li>
+              <li>
+                <Link href="/bad-credit-truck-financing/chapter-7-discharge">
+                  Truck financing after a Chapter 7 discharge →
                 </Link>
               </li>
               <li>

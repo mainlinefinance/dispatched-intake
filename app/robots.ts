@@ -48,7 +48,8 @@ export default function robots(): MetadataRoute.Robots {
           "/insurance/quote",
           "/insurance/thanks",
           "/healthz",
-          "/_next/",
+          // /_next/ is deliberately NOT disallowed: it serves the CSS, JS and
+          // optimized images Google needs to render the pages.
           "/admin/",
           "/*?utm_*",
           "/*?gclid=*",

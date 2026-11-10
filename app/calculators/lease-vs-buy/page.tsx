@@ -1,3 +1,5 @@
+import { withSocial } from "@/lib/seo/social";
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import LeaseVsBuyCalculator from "@/components/calculators/LeaseVsBuyCalculator";
@@ -13,15 +15,15 @@ import {
 
 const PAGE_URL = "https://dispatched.finance/calculators/lease-vs-buy";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "Lease vs buy calculator for truckers — Dispatched",
   description:
     "Compare leasing vs buying a Class 8 truck. See total cost, equity build, breakeven point, and the real cost of lease-purchase programs vs equipment financing.",
   alternates: { canonical: "/calculators/lease-vs-buy" },
-};
+}, "/calculators/lease-vs-buy");
 
 export default function LeaseVsBuyCalculatorPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/calculators/lease-vs-buy/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -43,7 +45,7 @@ export default function LeaseVsBuyCalculatorPage() {
           description:
             "Compare a lease-purchase program against equipment financing on total cost, equity build, and the failure-rate-adjusted expected cost. Inputs cover purchase price, down payment, term, APR, residual, weekly settlement, lease term, and stated completion equity.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

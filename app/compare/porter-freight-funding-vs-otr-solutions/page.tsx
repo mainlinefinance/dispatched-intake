@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     canonical: "/compare/porter-freight-funding-vs-otr-solutions",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Porter Freight Funding vs OTR Solutions — Bad Credit Factoring 2026 | Dispatched",
     description:
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Porter Freight Funding vs OTR Solutions — Bad Credit Factoring 2026 | Dispatched",
@@ -69,7 +72,7 @@ const faqs = [
 ];
 
 export default function PorterVsOtrPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/porter-freight-funding-vs-otr-solutions/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -86,7 +89,7 @@ export default function PorterVsOtrPage() {
           description:
             "Head-to-head comparison of Porter Freight Funding and OTR Solutions across no-credit-pull policies, rates, non-recourse coverage, and contracts for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

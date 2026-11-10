@@ -1,11 +1,13 @@
+import { withSocial } from "@/lib/seo/social";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { DISCLOSURES } from "@/lib/copy";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: `${DISCLOSURES.title} — Dispatched`,
   description: DISCLOSURES.subtitle,
-};
+  alternates: { canonical: "/disclosures" },
+}, "/disclosures");
 
 export default function DisclosuresPage() {
   return (

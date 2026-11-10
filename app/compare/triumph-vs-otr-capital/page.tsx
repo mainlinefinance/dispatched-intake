@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     "Triumph Business Capital vs OTR Solutions: bank-owned non-recourse vs transparency-first non-recourse. Rates, ABL, contracts, and customer service compared for 2026.",
   alternates: { canonical: "/compare/triumph-vs-otr-capital" },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Triumph vs OTR Solutions — 2026 Non-Recourse Comparison | Dispatched",
     description:
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Triumph vs OTR Solutions — 2026 Non-Recourse Comparison | Dispatched",
@@ -67,7 +70,7 @@ const faqs = [
 ];
 
 export default function TriumphVsOtrCapitalPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/triumph-vs-otr-capital/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -84,7 +87,7 @@ export default function TriumphVsOtrCapitalPage() {
           description:
             "Head-to-head comparison of Triumph Business Capital and OTR Solutions across non-recourse coverage, rates, pricing transparency, ABL, contracts, and customer service for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

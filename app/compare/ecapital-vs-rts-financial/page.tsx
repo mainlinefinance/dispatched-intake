@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "eCapital vs RTS Financial: rates, advance, contracts, fuel programs, geography, and customer service compared. Largest factor vs fleet-volume specialist for 2026.",
   alternates: { canonical: "/compare/ecapital-vs-rts-financial" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "eCapital vs RTS Financial — 2026 Comparison | Dispatched",
     description:
       "eCapital vs RTS Financial: rates, advance, contracts, fuel programs, geography, and customer service compared. Largest factor vs fleet-volume specialist for 2026.",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "eCapital vs RTS Financial — 2026 Comparison | Dispatched",
     description:
@@ -64,7 +67,7 @@ const faqs = [
 ];
 
 export default function EcapitalVsRtsFinancialPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/ecapital-vs-rts-financial/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -81,7 +84,7 @@ export default function EcapitalVsRtsFinancialPage() {
           description:
             "Head-to-head comparison of eCapital and RTS Financial across rates, advance rates, fuel programs, geography, and ABL availability for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

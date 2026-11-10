@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -24,12 +25,14 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: CANONICAL },
   openGraph: {
+    images: ["/opengraph-image"],
     title: TITLE,
     description: DESCRIPTION,
     url: CANONICAL,
     type: "article",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
@@ -37,7 +40,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogIndexPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/blog/page.tsx");
   const groups = getPostsByTopic();
   const allPosts = getAllPosts();
 
@@ -64,7 +67,7 @@ export default function BlogIndexPage() {
           headline: "Dispatched Blog",
           description: DESCRIPTION,
           url: ABS_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

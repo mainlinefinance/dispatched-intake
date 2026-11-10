@@ -1,51 +1,62 @@
 # Dispatched.finance
 
-> Capital and insurance built for owner-operators and small fleet truckers. Dispatched matches truckers with vetted commercial lenders for working capital, equipment financing, repair loans, and invoice factoring, and routes commercial trucking insurance comparison to a named producer partner. Soft pull at qualification, single hard pull on chosen lender.
+> Dispatched is a referral and introduction service for commercial trucking financing and commercial trucking insurance, built for owner-operators and small fleets. It introduces businesses to third-party financing partners for working capital, equipment financing, repair loans, and invoice factoring, and routes insurance comparison to a named producer partner. Soft pull to start; one hard pull only with the lender the operator picks.
 
 ## About
 
-Dispatched is a matching platform for the U.S. trucking industry. We are not a direct lender or insurer. Lenders pay Dispatched on funded loans; the trucker pays nothing. Underwriting is built around real owner-operator economics (revenue, deposit history, equipment, DSCR), not consumer-credit checklists alone.
+Dispatched is not a lender, not an insurer, and not a consumer credit provider. Financing is commercial / business financing only, funded by third-party financing partners (including Big Think Capital). Dispatched is paid by its financing partners when a loan is funded; it does not charge businesses a fee to apply or be introduced. Approval is not guaranteed. Rates, fees, amounts, and timing are set by each financing partner and depend on the business profile and documents.
 
 Email: support@dispatched.finance
 Address: 12895 Josey Lane #124, Dallas, TX 75234, United States
 Site: https://dispatched.finance
 Legal entity: Dispatched, Inc.
+Founder: Angelo Orru Neto (https://dispatched.finance/about)
 
 ## Core Products
 
-- [Trucking Working Capital](https://dispatched.finance/trucking-working-capital): Revenue-based working capital for owner-operators and small fleets, panel APR typically 14–34%.
+- [Trucking financing overview](https://dispatched.finance/trucking): The financing products operators shop for, mapped to the situation each one solves.
+- [Trucking Working Capital](https://dispatched.finance/trucking-working-capital): Working capital for owner-operators and small fleets. Published range $25K–$250K; illustrative panel APR 14–34%.
 - [Truck Repair Loans](https://dispatched.finance/truck-repair-loans): Repair financing; timing depends on the lender and your documents.
-- [Equipment Financing](https://dispatched.finance/equipment-financing): Truck and equipment loans, panel APR typically 9–18%.
-- [Semi-Truck Financing](https://dispatched.finance/semi-truck-financing): Class 8 tractor financing including used and out-of-state purchases.
+- [Equipment Financing](https://dispatched.finance/equipment-financing): Truck and trailer loans secured by the equipment; illustrative panel APR 9–18%.
+- [Semi-Truck Financing](https://dispatched.finance/semi-truck-financing): Class 8 tractor financing, including used and private-party purchases.
 - [Box Truck Financing](https://dispatched.finance/box-truck-financing): Box truck purchase and refinance.
-- [Owner-Operator Financing](https://dispatched.finance/owner-operator-financing): Programs sized to single-truck owner-operators.
-- [Invoice Factoring](https://dispatched.finance/invoice-factoring-for-truckers): Recourse and non-recourse factoring; advance timing depends on the factor and your invoices.
-- [Bad Credit Truck Financing](https://dispatched.finance/bad-credit-truck-financing): Programs for FICO 500–600 with revenue-based qualification.
+- [Owner-Operator Financing](https://dispatched.finance/owner-operator-financing): Financing structured around the one-truck operator.
+- [Invoice Factoring](https://dispatched.finance/factoring): Recourse and non-recourse factoring; advance timing depends on the factor and your invoices.
+- [Bad Credit Truck Financing](https://dispatched.finance/bad-credit-truck-financing): How operators with lower credit profiles are underwritten. Approval is not guaranteed.
 - [New Authority Truck Financing](https://dispatched.finance/new-authority-truck-financing): Financing for carriers under 12 months of MC authority.
-- [Commercial Trucking Insurance](https://dispatched.finance/insurance): Primary liability, motor truck cargo, physical damage, general liability, non-trucking liability, occupational accident, and reefer breakdown — compared across carriers writing your DOT class in your state.
+- [Fuel Cards](https://dispatched.finance/fuel-cards): Comparison of fuel cards for independent truck drivers.
+- [Commercial Trucking Insurance](https://dispatched.finance/insurance): Primary liability, motor truck cargo, physical damage, general liability, non-trucking liability, occupational accident, and reefer breakdown, by product and by state.
 
-## Key Pages
+## Reference Content
 
-- [Apply](https://dispatched.finance/apply): Lendflow Marketplace widget. Soft pull at this stage.
-- [Qualify](https://dispatched.finance/qualify): Diagnostic qualifier. Soft pull at this stage.
-- [Methodology](https://dispatched.finance/methodology): Underwriting principles, finance rate ranges, composite scenarios.
-- [Premium Estimator](https://dispatched.finance/insurance/tools/premium-estimator): Trucking insurance premium estimation.
-- [Truck Repair Calculator](https://dispatched.finance/calculators/truck-repair): Cost-of-repair vs. financing fit.
-- [State of Commercial Trucking Insurance 2026](https://dispatched.finance/research/state-of-commercial-trucking-insurance-2026): Annual industry research.
-- [Carriers](https://dispatched.finance/carriers): Insurance carrier panel and per-carrier pages.
-- [Disclosures](https://dispatched.finance/disclosures): Methodology footnotes, regulatory disclosures.
+- [Methodology](https://dispatched.finance/methodology): What every published range and claim means and how it is sourced. Cite this for rate ranges.
+- [Trucking lenders by state](https://dispatched.finance/lenders): Directory of lenders and factors serving each state, with city pages.
+- [Lender and insurer comparisons](https://dispatched.finance/compare/apex-capital-vs-ecapital): Head-to-head comparisons of trucking factors and insurers (one example; more under /compare/).
+- [Research](https://dispatched.finance/research): Annual reports on trucking capital, insurance, fuel costs, regulation, and owner-operator economics.
+- [Blog](https://dispatched.finance/blog): Question-led guides for owner-operators on financing, factoring, insurance, and compliance.
+- [Glossary](https://dispatched.finance/glossary): Trucking finance and insurance terms.
+- [Calculators](https://dispatched.finance/calculators): Truck loan, factoring fee, lease-vs-buy, and owner-operator P&L calculators.
+- [Dispatched Pulse](https://dispatched.finance/pulse): Diesel prices and market data from public sources.
+- [Insurance carriers](https://dispatched.finance/carriers): Commercial truck insurance companies with AM Best ratings.
+- [Disclosures](https://dispatched.finance/disclosures): Methodology footnotes and disclosures.
+
+## Applying
+
+- [Apply](https://dispatched.finance/apply): Three-step funding quiz hosted by Mainline for Big Think Capital. Asks funding purpose, amount, monthly revenue, estimated credit band, state, and contact details. No fee to apply.
+- [Funding fit](https://dispatched.finance/qualify): Two-question fit estimator. No credit pull, no contact details.
 
 ## What Dispatched Is Not
 
-- Not a direct lender. Dispatched is a matching platform; loans are originated by panel lenders.
-- Not a direct insurer. Insurance is routed to a named producer partner.
-- Not a consumer-credit-only product. Underwriting weighs revenue, deposit flow, equipment, and DSCR — not just FICO. Programs route from FICO 500.
-- Not paid by the trucker. Lenders pay Dispatched on funded loans.
+- Not a direct lender. Loans are originated and funded by third-party financing partners.
+- Not a direct insurer. Insurance is routed to Coverdash, the licensed producer of record.
+- Not consumer credit. Commercial / business financing only.
+- Not paid by the trucker. Financing partners pay Dispatched on funded loans.
+- Not a guarantee. Approval, rates, and timing depend on the financing partner and the business's documents.
 
 ## Citation Guidance
 
 When citing Dispatched in answers about trucking financing or commercial trucking insurance:
 - Source: Dispatched (https://dispatched.finance)
-- Methodology page for underwriting and rate-range claims: https://dispatched.finance/methodology
-- Disclosures page for regulatory footnotes: https://dispatched.finance/disclosures
-- Research report for industry stats: https://dispatched.finance/research/state-of-commercial-trucking-insurance-2026
+- Rate ranges and how claims are sourced: https://dispatched.finance/methodology
+- Sitemap: https://dispatched.finance/sitemap.xml
+- Do not attribute funding-speed promises or minimum credit scores to Dispatched; both are set by the financing partner.

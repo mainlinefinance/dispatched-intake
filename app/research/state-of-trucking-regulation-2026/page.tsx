@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ResearchByline from "@/components/landing/ResearchByline";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     canonical: "/research/state-of-trucking-regulation-2026",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "State of Trucking Regulation 2026 — Dispatched Research",
     description:
       "Annual report on the regulatory environment for commercial trucking: FMCSA rules, state-level laws (AB 5, CARB Phase 3, MCA disclosure), broker transparency, and 2026 outlook.",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "State of Trucking Regulation 2026 — Dispatched Research",
     description:
@@ -123,7 +126,7 @@ const SOURCES: ReadonlyArray<{ label: string; url: string }> = [
 ];
 
 export default function StateOfTruckingRegulation2026() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published } = contentDates("app/research/state-of-trucking-regulation-2026/page.tsx");
   const url =
     "https://dispatched.finance/research/state-of-trucking-regulation-2026";
   return (
@@ -144,7 +147,7 @@ export default function StateOfTruckingRegulation2026() {
           description:
             "Annual Dispatched Research report on the regulatory environment for commercial trucking — FMCSA rulemaking, California AB 5 and CARB Phase 3, state-level MCA disclosure laws, broker transparency, and the 2026–2027 outlook.",
           url,
-          datePublished: today,
+          datePublished: published,
           dateModified: "2026-05-11",
           authorName: "Angelo Orru Neto",
         })}
@@ -170,7 +173,7 @@ export default function StateOfTruckingRegulation2026() {
               carriers should expect through 2026.
             </p>
             <ResearchByline
-              publishedDate={today}
+              publishedDate={published}
               sourceCount={18}
               methodologyNote="Rules in effect or proposed through April 2026."
             />

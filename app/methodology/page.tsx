@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "How Dispatched defines, sources, and refreshes the rate ranges and structural promises it publishes. Finance and insurance methodology in one place.",
   alternates: { canonical: "/methodology" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Methodology — how Dispatched matches you | Dispatched",
     description:
       "How Dispatched defines, sources, and refreshes the rate ranges and structural promises it publishes. Finance and insurance methodology in one place.",
@@ -30,6 +31,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Methodology — how Dispatched matches you | Dispatched",
     description:

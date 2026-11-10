@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -70,12 +71,14 @@ export async function generateMetadata({
     description,
     alternates: { canonical },
     openGraph: {
+      images: ["/opengraph-image"],
       title,
       description,
       url: canonical,
       type: "website",
     },
     twitter: {
+      images: ["/opengraph-image"],
       card: "summary_large_image",
       title,
       description,
@@ -129,7 +132,7 @@ export default async function DeepMoneyPage({
   const carriers = s.topCarriers
     .map((slug) => getCarrier(slug))
     .filter((c): c is Carrier => c !== null);
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/insurance/[product]/[state]/[dotClass]/page.tsx");
   const url = `https://dispatched.finance/insurance/${p.slug}/${s.slug}/${dc.slug}`;
   const breadcrumbs: BreadcrumbItem[] = [
     { name: "Dispatched", url: "https://dispatched.finance/" },
@@ -153,7 +156,7 @@ export default async function DeepMoneyPage({
           headline: `${p.name} for ${dc.name} in ${s.name}`,
           description: `${p.shortLabel} carriers, sampling profile, and rate environment for ${dc.name.toLowerCase()} operators in ${s.name}.`,
           url,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

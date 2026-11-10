@@ -15,6 +15,19 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["framer-motion", "libphonenumber-js"],
   },
+  /* /sitemap.xml → the sitemap index route. app/sitemap.ts owns the
+     /sitemap.xml path as a metadata route but, with generateSitemaps(), only
+     serves the shards under /sitemap/<id>.xml, so a route handler cannot sit
+     at /sitemap.xml itself. beforeFiles lets the rewrite win. */
+  async rewrites() {
+    return {
+      beforeFiles: [
+        { source: "/sitemap.xml", destination: "/sitemap-index.xml" },
+      ],
+      afterFiles: [],
+      fallback: [],
+    };
+  },
   async redirects() {
     return [
       {
@@ -25,6 +38,24 @@ const nextConfig: NextConfig = {
       {
         source: "/invoice-factoring-for-truckers/:path*",
         destination: "/factoring/:path*",
+        permanent: true,
+      },
+      {
+        // The /trucking-loans geo family was an early template (placeholder
+        // phone, hard-coded stats, retired speed claims). /lenders covers the
+        // same states and cities, so every old URL maps one to one.
+        source: "/trucking-loans",
+        destination: "/lenders",
+        permanent: true,
+      },
+      {
+        source: "/trucking-loans/:state",
+        destination: "/lenders/:state",
+        permanent: true,
+      },
+      {
+        source: "/trucking-loans/:state/:city",
+        destination: "/lenders/:state/:city",
         permanent: true,
       },
       {

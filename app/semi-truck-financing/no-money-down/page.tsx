@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     "Zero-down and first-payment-deferred Class 8 financing on Dispatched's panel. What credit, revenue, and history actually qualify. Soft pull, no impact.",
   alternates: { canonical: "/semi-truck-financing/no-money-down" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "No Money Down Semi Truck Financing — Honest Terms | Dispatched",
     description:
       "Zero-down and first-payment-deferred Class 8 financing on Dispatched's panel. What credit, revenue, and history actually qualify. Soft pull, no impact.",
@@ -23,6 +25,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "No Money Down Semi Truck Financing — Honest Terms | Dispatched",
     description:
@@ -64,7 +67,7 @@ const faqs = [
 ];
 
 export default function NoMoneyDownSemiTruckFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/semi-truck-financing/no-money-down/page.tsx");
   return (
     <div className="landing">
       <JsonLd payload={breadcrumbList([
@@ -77,7 +80,7 @@ export default function NoMoneyDownSemiTruckFinancingPage() {
         description:
           "Zero-down and first-payment-deferred Class 8 financing on Dispatched's panel: who qualifies, what it costs in APR and term length, and the honest math vs. 10–15% down.",
         url: PAGE_URL,
-        datePublished: today,
+        datePublished: published,
         dateModified: today,
       })} />
       <JsonLd payload={financialProduct({

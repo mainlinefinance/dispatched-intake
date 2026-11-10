@@ -1,3 +1,4 @@
+import { withSocial } from "@/lib/seo/social";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/landing/Nav";
@@ -31,12 +32,12 @@ const TITLE = "Search — Dispatched.finance";
 const DESCRIPTION =
   "Search the Dispatched library — glossary, comparisons, research reports, calculators, blog, and lender directory.";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: "/search" },
   robots: { index: false, follow: true },
-};
+}, "/search");
 
 type Props = {
   searchParams: Promise<{ q?: string }>;

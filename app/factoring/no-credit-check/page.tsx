@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     canonical: "/factoring/no-credit-check",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Trucking factoring with no credit check — 2026 | Dispatched",
     description:
       "Most freight factoring approves without a credit pull on you — they check your brokers. Bad credit, new authority, and prior bankruptcy still qualify. Same-day funding.",
@@ -25,6 +27,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Trucking factoring with no credit check — 2026 | Dispatched",
     description:
@@ -67,7 +70,7 @@ const faqs = [
 ];
 
 export default function NoCreditCheckFactoringPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/factoring/no-credit-check/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -86,7 +89,7 @@ export default function NoCreditCheckFactoringPage() {
           description:
             "How freight factoring evaluates broker credit instead of personal credit — bad credit, new authority, and prior bankruptcy operators all qualify.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ResearchByline from "@/components/landing/ResearchByline";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     canonical: "/research/state-of-trucking-fuel-costs-2026",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "State of Trucking Fuel Costs 2026 — Dispatched Research",
     description:
       "Annual report on commercial trucking fuel: 2026 diesel pricing, IFTA dynamics, factor fuel programs (Apex/eCapital/RTS), fuel surcharge math, and the alternative-fuel landscape.",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "State of Trucking Fuel Costs 2026 — Dispatched Research",
     description:
@@ -118,7 +121,7 @@ const SOURCES: ReadonlyArray<{ label: string; url: string }> = [
 ];
 
 export default function StateOfTruckingFuelCosts2026() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published } = contentDates("app/research/state-of-trucking-fuel-costs-2026/page.tsx");
   const url =
     "https://dispatched.finance/research/state-of-trucking-fuel-costs-2026";
   return (
@@ -139,7 +142,7 @@ export default function StateOfTruckingFuelCosts2026() {
           description:
             "Annual Dispatched Research report on commercial trucking fuel: 2026 diesel pricing, fuel surcharge dynamics, factor fuel programs, IFTA reporting realities, idle reduction technology, and the slow ramp of alternative-fuel adoption.",
           url,
-          datePublished: today,
+          datePublished: published,
           dateModified: "2026-05-11",
           authorName: "Angelo Orru Neto",
         })}
@@ -162,7 +165,7 @@ export default function StateOfTruckingFuelCosts2026() {
               realities, and the slow ramp of alternative-fuel adoption.
             </p>
             <ResearchByline
-              publishedDate={today}
+              publishedDate={published}
               sourceCount={17}
               methodologyNote="Data through April 2026."
             />

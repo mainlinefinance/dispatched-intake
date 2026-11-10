@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ResearchByline from "@/components/landing/ResearchByline";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     canonical: "/research/state-of-broker-relations-2026",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "State of Broker Relations 2026 — Dispatched Research",
     description:
       "Annual report on carrier-broker dynamics: spread transparency, payment-time trends, broker concentration risk, FMCSA transparency rule, and 2026 outlook.",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "State of Broker Relations 2026 — Dispatched Research",
     description:
@@ -103,7 +106,7 @@ const SOURCES: ReadonlyArray<{ label: string; url: string }> = [
 ];
 
 export default function StateOfBrokerRelations2026() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published } = contentDates("app/research/state-of-broker-relations-2026/page.tsx");
   const url =
     "https://dispatched.finance/research/state-of-broker-relations-2026";
   return (
@@ -124,7 +127,7 @@ export default function StateOfBrokerRelations2026() {
           description:
             "Annual Dispatched Research report on carrier-broker dynamics: 2026 broker landscape, spread economics, payment-time trends, broker concentration risk, FMCSA broker transparency rule status, and 2026–2027 outlook.",
           url,
-          datePublished: today,
+          datePublished: published,
           dateModified: "2026-05-11",
           authorName: "Angelo Orru Neto",
         })}
@@ -149,7 +152,7 @@ export default function StateOfBrokerRelations2026() {
               2026–2027.
             </p>
             <ResearchByline
-              publishedDate={today}
+              publishedDate={published}
               sourceCount={14}
               methodologyNote="Data through April 2026."
             />

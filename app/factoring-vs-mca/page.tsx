@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
     "Factoring sells invoices for a flat fee; MCA advances cash against future receipts at brutal effective APRs. Side-by-side for trucking owner-operators.",
   alternates: { canonical: "/factoring-vs-mca" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Factoring vs MCA for Truckers: Side-by-Side | Dispatched",
     description:
       "Factoring sells invoices for a flat fee; MCA advances cash against future receipts at brutal effective APRs. Side-by-side for trucking owner-operators.",
@@ -38,6 +40,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Factoring vs MCA for Truckers: Side-by-Side | Dispatched",
     description:
@@ -79,7 +82,7 @@ const faqs = [
 ] as const;
 
 export default function FactoringVsMcaPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/factoring-vs-mca/page.tsx");
   return (
     <div className="landing">
       <JsonLd payload={breadcrumbList([
@@ -91,7 +94,7 @@ export default function FactoringVsMcaPage() {
         description:
           "Side-by-side comparison of invoice factoring and merchant cash advance products for trucking operations: how each is structured, what each costs in real APR terms, when each fits, and how the matching platform routes between them.",
         url: PAGE_URL,
-        datePublished: today,
+        datePublished: published,
         dateModified: today,
       })} />
       <JsonLd payload={faqPage(faqs.map((f) => ({ q: f.q, a: f.a })))} />
@@ -139,7 +142,7 @@ export default function FactoringVsMcaPage() {
             <span className="ins-eyebrow">The short answer</span>
             <h2 className="ins-hero-title">Different products. Different math.</h2>
             <p className="ins-hero-sub">
-              <Link href="/invoice-factoring-for-truckers">Invoice factoring</Link>{" "}
+              <Link href="/factoring">Invoice factoring</Link>{" "}
               is the sale of a specific outstanding invoice at a discount.
               You get 85% to 97% of the invoice face value the same or
               next banking day; the factor collects from your broker on
@@ -611,7 +614,7 @@ export default function FactoringVsMcaPage() {
           <div className="ins-container">
             <span className="ins-eyebrow">Related</span>
             <ul className="product-related">
-              <li><Link href="/invoice-factoring-for-truckers">Invoice factoring for truckers →</Link></li>
+              <li><Link href="/factoring">Invoice factoring for truckers →</Link></li>
               <li><Link href="/trucking-working-capital">Working capital →</Link></li>
               <li><Link href="/truck-repair-loans">Truck repair loans →</Link></li>
               <li><Link href="/new-authority-truck-financing">New authority financing →</Link></li>

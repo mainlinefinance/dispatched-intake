@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -38,6 +39,7 @@ export const metadata: Metadata = {
     "Factoring sells specific invoices for a fee; a working capital loan delivers a lump sum at fixed APR. Side-by-side for trucking operations choosing between them — and when to use both.",
   alternates: { canonical: "/factoring-vs-working-capital-loan" },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Factoring vs Working Capital Loan for Truckers: Side-by-Side | Dispatched",
     description:
@@ -46,6 +48,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Factoring vs Working Capital Loan for Truckers: Side-by-Side | Dispatched",
@@ -93,7 +96,7 @@ const faqs = [
 ] as const;
 
 export default function FactoringVsWorkingCapitalLoanPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/factoring-vs-working-capital-loan/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -108,7 +111,7 @@ export default function FactoringVsWorkingCapitalLoanPage() {
           description:
             "Side-by-side comparison of invoice factoring and working capital loans for trucking operations: how each is structured, what each costs in real APR terms, when each fits the cashflow problem, and how to use both together.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

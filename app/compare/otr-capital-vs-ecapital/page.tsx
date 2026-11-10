@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "OTR Solutions (formerly OTR Capital) vs eCapital: transparency-first all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
   alternates: { canonical: "/compare/otr-capital-vs-ecapital" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "OTR Solutions vs eCapital — 2026 Comparison | Dispatched",
     description:
       "OTR Solutions (formerly OTR Capital) vs eCapital: transparency-first all-in pricing vs largest-factor scale, non-recourse depth, contracts, and reviews compared.",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "OTR Solutions vs eCapital — 2026 Comparison | Dispatched",
     description:
@@ -63,7 +66,7 @@ const faqs = [
 ];
 
 export default function OtrVsEcapitalPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/otr-capital-vs-ecapital/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -80,7 +83,7 @@ export default function OtrVsEcapitalPage() {
           description:
             "Head-to-head comparison of OTR Solutions and eCapital across rates, pricing structure, non-recourse, funding speed, geography, and ABL for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

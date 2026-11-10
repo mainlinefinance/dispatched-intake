@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -40,12 +41,14 @@ export async function generateMetadata({
     description,
     alternates: { canonical: `/topics/${slug}` },
     openGraph: {
+      images: ["/opengraph-image"],
       title,
       description,
       url: `/topics/${slug}`,
       type: "article",
     },
     twitter: {
+      images: ["/opengraph-image"],
       card: "summary_large_image",
       title,
       description,
@@ -92,7 +95,7 @@ export default async function TopicPage({
   const info = getTopicInfo(slug);
   const items = getContentByTopic(slug);
   const groups = groupByContentType(items);
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/topics/[slug]/page.tsx");
   const absUrl = `${ABS_BASE}/${slug}`;
 
   return (
@@ -109,7 +112,7 @@ export default async function TopicPage({
           headline: info.label,
           description: info.description,
           url: absUrl,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

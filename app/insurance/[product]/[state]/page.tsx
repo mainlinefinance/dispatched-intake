@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -98,7 +99,7 @@ export default async function StateMoneyPage({
   const dotClasses = getAllDotClasses();
   const ratesPresent = hasAnyRates(s.abbr, p.slug);
   const editorial = getEditorial(p.slug, s.slug);
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/insurance/[product]/[state]/page.tsx");
   const url = `https://dispatched.finance/insurance/${p.slug}/${s.slug}`;
   const breadcrumbs: BreadcrumbItem[] = [
     { name: "Dispatched", url: "https://dispatched.finance/" },
@@ -118,7 +119,7 @@ export default async function StateMoneyPage({
           headline: `${p.name} in ${s.name} for Commercial Trucking`,
           description: `${p.shortLabel} carriers, regulatory context, and rate environment in ${s.name}.`,
           url,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -37,6 +38,7 @@ export const metadata: Metadata = {
     "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, timing depends on the lender and your documents. Get matched.",
   alternates: { canonical: "/owner-operator-financing" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Owner-operator financing — single truck up | Dispatched",
     description:
       "Financing built for owner-operators: working capital, equipment loans, repair loans. FICO from 500, soft-pull match, timing depends on the lender and your documents. Get matched.",
@@ -44,6 +46,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Owner-operator financing — single truck up | Dispatched",
     description:
@@ -85,7 +88,7 @@ const faqs = [
 ];
 
 export default function OwnerOperatorFinancingPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/owner-operator-financing/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -101,7 +104,7 @@ export default function OwnerOperatorFinancingPage() {
           description:
             "Trucking finance for 1099 owner-operators across the four products on the Dispatched panel. The default operator profile, not an exception.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />
@@ -435,6 +438,11 @@ export default function OwnerOperatorFinancingPage() {
             <ul className="product-related">
               <li>
                 <Link href="/trucking">All trucking financing products →</Link>
+              </li>
+              <li>
+                <Link href="/owner-operator-financing/no-business-history">
+                  Financing with no business history →
+                </Link>
               </li>
               <li>
                 <Link href="/truck-repair-loans">Truck repair loans →</Link>

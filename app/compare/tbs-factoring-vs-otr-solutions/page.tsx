@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "TBS Factoring (now Love's-owned) vs OTR Solutions: new-authority specialist with free MC# filings vs transparency-first true non-recourse. Use cases compared.",
   alternates: { canonical: "/compare/tbs-factoring-vs-otr-solutions" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "TBS Factoring vs OTR Solutions — 2026 Comparison | Dispatched",
     description:
       "TBS Factoring (now Love's-owned) vs OTR Solutions: new-authority specialist with free MC# filings vs transparency-first true non-recourse. Use cases compared.",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "TBS Factoring vs OTR Solutions — 2026 Comparison | Dispatched",
     description:
@@ -64,7 +67,7 @@ const faqs = [
 ];
 
 export default function TbsVsOtrSolutionsPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/tbs-factoring-vs-otr-solutions/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -81,7 +84,7 @@ export default function TbsVsOtrSolutionsPage() {
           description:
             "Head-to-head comparison of TBS Factoring (now Love's-owned) and OTR Solutions across rates, bundled services, funding speed, non-recourse, and customer service for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

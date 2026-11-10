@@ -1,3 +1,4 @@
+import { withSocial } from "@/lib/seo/social";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -20,12 +21,12 @@ const LAST_REVIEWED = "2026-11-08";
 const LAST_REVIEWED_DISPLAY = "November 8, 2026";
 const CONTACT_EMAIL = "angelo@dispatched.finance";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "Accessibility statement — Dispatched",
   description:
     "Dispatched, Inc.'s commitment to WCAG 2.2 Level AA conformance on dispatched.finance, the known gaps we are working on, and how to report an accessibility barrier.",
   alternates: { canonical: "/accessibility" },
-};
+}, "/accessibility");
 
 export default function AccessibilityPage() {
   return (

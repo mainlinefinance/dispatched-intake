@@ -1,3 +1,5 @@
+import { withSocial } from "@/lib/seo/social";
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -6,12 +8,12 @@ import {
   breadcrumbList,
 } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "Dispatched Research — Commercial Trucking Insurance",
   description:
     "Dispatched Research publishes annual reports and quarterly updates on the commercial-trucking insurance market. Source-cited, regulator-anchored, no proprietary feeds.",
   alternates: { canonical: "/research" },
-};
+}, "/research");
 
 const REPORTS = [
   {
@@ -25,7 +27,7 @@ const REPORTS = [
 ] as const;
 
 export default function ResearchIndexPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/research/page.tsx");
   return (
     <div className="research-page">
       <JsonLd
@@ -40,7 +42,7 @@ export default function ResearchIndexPage() {
           description:
             "Annual reports and quarterly updates on the commercial-trucking insurance market.",
           url: "https://dispatched.finance/research",
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

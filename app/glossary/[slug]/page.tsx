@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -44,12 +45,14 @@ export async function generateMetadata({
     description,
     alternates: { canonical },
     openGraph: {
+      images: ["/opengraph-image"],
       title: titleBase,
       description,
       url: canonical,
       type: "article",
     },
     twitter: {
+      images: ["/opengraph-image"],
       card: "summary_large_image",
       title: titleBase,
       description,
@@ -66,7 +69,7 @@ export default async function GlossaryTermPage({
   const t = getTerm(slug);
   if (!t) notFound();
 
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/glossary/[slug]/page.tsx");
   const url = `${ORIGIN}/glossary/${t.slug}`;
   const relatedTerms = t.relatedTerms
     .map((rs) => getTerm(rs))
@@ -86,7 +89,7 @@ export default async function GlossaryTermPage({
           headline: t.term,
           description: t.shortDefinition,
           url,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

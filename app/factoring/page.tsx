@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
     "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum. Get matched today.",
   alternates: { canonical: "/factoring" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Invoice factoring for truckers — same-day | Dispatched",
     description:
       "Convert broker and shipper invoices to cash in days. Recourse and non-recourse factoring matched to your lanes. No FICO minimum. Get matched today.",
@@ -35,6 +37,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Invoice factoring for truckers — same-day | Dispatched",
     description:
@@ -76,7 +79,7 @@ const faqs = [
 ];
 
 export default function InvoiceFactoringPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/factoring/page.tsx");
   return (
     <div className="landing">
       <JsonLd payload={breadcrumbList([
@@ -88,7 +91,7 @@ export default function InvoiceFactoringPage() {
         description:
           "How invoice factoring works for trucking operations: how it differs from a loan, recourse vs non-recourse, broker visibility, fee structures, and what to expect from the panel routing.",
         url: PAGE_URL,
-        datePublished: today,
+        datePublished: published,
         dateModified: today,
       })} />
       <JsonLd payload={financialProduct({
@@ -356,6 +359,7 @@ export default function InvoiceFactoringPage() {
             <ul className="product-related">
               <li><Link href="/trucking">All trucking financing products →</Link></li>
               <li><Link href="/trucking-working-capital">Working capital →</Link></li>
+              <li><Link href="/factoring-vs-working-capital-loan">Factoring vs a working capital loan →</Link></li>
               <li><Link href="/new-authority-truck-financing">New authority financing →</Link></li>
               <li><Link href="/owner-operator-financing">Owner-operator financing →</Link></li>
               <li><Link href="/methodology">Methodology →</Link></li>

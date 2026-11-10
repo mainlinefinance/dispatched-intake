@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ResearchByline from "@/components/landing/ResearchByline";
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     canonical: "/research/state-of-commercial-trucking-insurance-2026",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "State of commercial trucking insurance 2026 | Dispatched",
     description:
       "Annual research on commercial trucking insurance: state legal-environment shifts, commodity hotspots, AM Best context, and what we are watching for 2026.",
@@ -23,6 +25,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "State of commercial trucking insurance 2026 | Dispatched",
     description:
@@ -99,7 +102,7 @@ const SOURCES: ReadonlyArray<{ label: string; url: string }> = [
 ];
 
 export default function StateOfTruckingInsurance2026() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published } = contentDates("app/research/state-of-commercial-trucking-insurance-2026/page.tsx");
   const url =
     "https://dispatched.finance/research/state-of-commercial-trucking-insurance-2026";
   return (
@@ -141,7 +144,7 @@ export default function StateOfTruckingInsurance2026() {
               shifts mean for the 2026 book, and the commodity, geography,
               and rating dynamics moving premiums in the year ahead.
             </p>
-            <ResearchByline publishedDate={today} sourceCount={10} />
+            <ResearchByline publishedDate={published} sourceCount={10} />
           </header>
 
           <section className="research-section" id="q2-2026-update">

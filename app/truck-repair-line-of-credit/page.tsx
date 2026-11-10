@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "A revolving line of credit for trucking repairs — draw, repay, draw again. When ongoing repair patterns make a single installment loan the wrong product. How the line compares to a term loan and a fuel card.",
   alternates: { canonical: "/truck-repair-line-of-credit" },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Truck repair line of credit — revolving capital for ongoing repair spend | Dispatched",
     description:
@@ -33,6 +35,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Truck repair line of credit — revolving capital for ongoing repair spend | Dispatched",
@@ -79,7 +82,7 @@ const faqs = [
 ];
 
 export default function TruckRepairLineOfCreditPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/truck-repair-line-of-credit/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -94,7 +97,7 @@ export default function TruckRepairLineOfCreditPage() {
           description:
             "How a revolving line of credit for trucking repair spend works, when it beats a term loan, when a term loan still wins, the fuel-card alternative for small repairs, and the underwriting differences from one-shot repair financing.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

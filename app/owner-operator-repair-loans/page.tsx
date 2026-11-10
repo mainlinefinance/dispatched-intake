@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     "Repair financing built around how owner-operators actually run. Schedule C income fits. Sole-prop and LLC both fit. Underwriting accounts for revenue interruption while the truck is down. Same-banking-day funds.",
   alternates: { canonical: "/owner-operator-repair-loans" },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Owner-operator repair loans — same-day funds for the one-truck operation | Dispatched",
     description:
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Owner-operator repair loans — same-day funds for the one-truck operation | Dispatched",
@@ -77,7 +80,7 @@ const faqs = [
 ];
 
 export default function OwnerOperatorRepairLoansPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/owner-operator-repair-loans/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -92,7 +95,7 @@ export default function OwnerOperatorRepairLoansPage() {
           description:
             "How owner-operator repair financing differs from small-fleet repair financing on the Dispatched panel: revenue-interruption underwriting, Schedule C acceptance, broker-concentration pricing, and the application-to-wire flow.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

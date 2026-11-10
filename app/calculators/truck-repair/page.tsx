@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import TruckRepairCalculator from "@/components/calculators/TruckRepairCalculator";
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     "Estimate the right financing for a truck repair. Five inputs, no credit pull, no personal info. Returns the product fit and typical APR for your profile.",
   alternates: { canonical: "/calculators/truck-repair" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Truck repair financing calculator — fit | Dispatched",
     description:
       "Estimate the right financing for a truck repair. Five inputs, no credit pull, no personal info. Returns the product fit and typical APR for your profile.",
@@ -23,6 +25,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Truck repair financing calculator — fit | Dispatched",
     description:
@@ -54,7 +57,7 @@ const faqs = [
 ];
 
 export default function TruckRepairCalculatorPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/calculators/truck-repair/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -73,7 +76,7 @@ export default function TruckRepairCalculatorPage() {
           description:
             "A fit estimator for trucking owner-operators and small fleets that returns the most likely Dispatched product category for a given repair amount and operator profile.",
           url: "https://dispatched.finance/calculators/truck-repair",
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

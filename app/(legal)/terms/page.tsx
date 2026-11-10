@@ -1,3 +1,4 @@
+import { withSocial } from "@/lib/seo/social";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -23,13 +24,13 @@ const EFFECTIVE_DATE = "2026-11-08";
 const EFFECTIVE_DATE_DISPLAY = "November 8, 2026";
 const CONTACT_EMAIL = "angelo@mainline.finance";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocial({
   title: "Terms of service — Dispatched",
   description:
     "Terms governing use of dispatched.finance, the intake and matching service operated by Dispatched, Inc.",
   robots: { index: false, follow: false },
   alternates: { canonical: "/terms" },
-};
+}, "/terms");
 
 export default function TermsPage() {
   return (

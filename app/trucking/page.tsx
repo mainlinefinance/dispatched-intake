@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EditorialByline from "@/components/landing/EditorialByline";
@@ -41,6 +42,7 @@ export const metadata: Metadata = {
     "Compare 9 trucking financing products: working capital, equipment, repair, factoring, semi-truck, owner-op, new-authority, bad-credit. Soft pull first.",
   alternates: { canonical: "/trucking" },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Trucking financing — working capital, equipment, repair loans — Dispatched",
     description:
@@ -49,6 +51,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Trucking financing — working capital, equipment, repair loans — Dispatched",
@@ -90,7 +93,7 @@ const faqs = [
 
 export default function TruckingHubPage() {
   const products = getAllFinancingProducts();
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/trucking/page.tsx");
 
   return (
     <div className="landing">
@@ -108,7 +111,7 @@ export default function TruckingHubPage() {
           description:
             "Pillar overview of trucking financing on the Dispatched panel — nine products spanning working capital, equipment, repair loans, factoring, and operator-profile cuts.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

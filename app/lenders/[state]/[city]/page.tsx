@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
@@ -55,12 +56,14 @@ export async function generateMetadata({
     description,
     alternates: { canonical },
     openGraph: {
+      images: ["/opengraph-image"],
       title,
       description,
       url: canonical,
       type: "website",
     },
     twitter: {
+      images: ["/opengraph-image"],
       card: "summary_large_image",
       title,
       description,
@@ -139,7 +142,7 @@ export default async function CityLendersPage({
     redirect(`/lenders/${entry.stateSlug}`);
   }
 
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/lenders/[state]/[city]/page.tsx");
   const url = `${ORIGIN}/lenders/${entry.stateSlug}/${entry.citySlug}`;
   const stateUrl = `${ORIGIN}/lenders/${entry.stateSlug}`;
   const stateContext: StateContextEntry | undefined = getStateContext(
@@ -178,7 +181,7 @@ export default async function CityLendersPage({
           headline: `Trucking Lenders in ${entry.city}, ${entry.state} 2026`,
           description: `Curated trucking lenders serving ${entry.city}, ${entry.state} carriers: factoring, equipment financing, working capital, and ABL.`,
           url,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />

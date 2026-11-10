@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
   alternates: { canonical: "/qualify" },
   openGraph: {
+    images: ["/opengraph-image"],
     title: "Check your trucking funding fit — soft pull | Dispatched",
     description:
       "Two questions, no credit check. See the lender type most likely to fund your operation and the typical APR range for your profile. No commitment.",
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title: "Check your trucking funding fit — soft pull | Dispatched",
     description:

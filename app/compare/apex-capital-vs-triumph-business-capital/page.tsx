@@ -1,3 +1,4 @@
+import { contentDates } from "@/lib/seo/contentDates";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/landing/Footer";
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     canonical: "/compare/apex-capital-vs-triumph-business-capital",
   },
   openGraph: {
+    images: ["/opengraph-image"],
     title:
       "Apex Capital vs Triumph Business Capital — 2026 Comparison | Dispatched",
     description:
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: ["/opengraph-image"],
     card: "summary_large_image",
     title:
       "Apex Capital vs Triumph Business Capital — 2026 Comparison | Dispatched",
@@ -69,7 +72,7 @@ const faqs = [
 ];
 
 export default function ApexVsTriumphBusinessCapitalPage() {
-  const today = new Date().toISOString().slice(0, 10);
+  const { published, modified: today } = contentDates("app/compare/apex-capital-vs-triumph-business-capital/page.tsx");
   return (
     <div className="landing">
       <JsonLd
@@ -89,7 +92,7 @@ export default function ApexVsTriumphBusinessCapitalPage() {
           description:
             "Head-to-head comparison of Apex Capital and Triumph Business Capital across rates, non-recourse depth, customer service, ABL graduation, fuel programs, and contracts for 2026.",
           url: PAGE_URL,
-          datePublished: today,
+          datePublished: published,
           dateModified: today,
         })}
       />
