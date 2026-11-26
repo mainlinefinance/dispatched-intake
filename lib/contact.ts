@@ -1,7 +1,9 @@
-/* Support phone is optional. The former Cheyenne/TCopyCats (307) number was
-   removed for Google Ads entity consistency. Set NEXT_PUBLIC_SUPPORT_PHONE
-   (E.164, e.g. +1XXXXXXXXXX) only when Angelo confirms a replacement. */
-const RAW = (process.env.NEXT_PUBLIC_SUPPORT_PHONE ?? "").trim();
+/* Support phone, shown site-wide (nav, hero, footer, FAQ, sticky CTA) and in
+   the Organization JSON-LD. NEXT_PUBLIC_SUPPORT_PHONE (E.164, e.g.
+   +1XXXXXXXXXX) overrides the default; unset or blank uses it. */
+const DEFAULT_E164 = "+13073170801";
+
+const RAW = (process.env.NEXT_PUBLIC_SUPPORT_PHONE ?? "").trim() || DEFAULT_E164;
 
 export const SUPPORT_PHONE_E164 = RAW;
 export const HAS_SUPPORT_PHONE = RAW.length > 0;

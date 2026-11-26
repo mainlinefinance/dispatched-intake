@@ -1,4 +1,4 @@
-import { HAS_SUPPORT_PHONE, PHONE_TEL } from "@/lib/contact";
+import { HAS_SUPPORT_PHONE, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 import { ctaPlacement } from "./cta";
 import { IconPhone } from "./icons";
 
@@ -20,7 +20,10 @@ export default function SpecialistLink({
         {...ctaPlacement(`${placement}-call`)}
       >
         <IconPhone />
-        Call a funding specialist
+        <span>
+          Talk to a specialist{" "}
+          <span className="specialist-link-number">{PHONE_DISPLAY}</span>
+        </span>
       </a>
     );
   }
