@@ -7,10 +7,12 @@ import {
   QUIZ_REVENUE_PARAM,
 } from "@/lib/quickStart";
 import { APPLY_HREF, CTA_LABEL, HERO_CTA_ID, ctaPlacement } from "./cta";
+import { HAS_SUPPORT_PHONE, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 import {
   IconArrowRight,
   IconDollarCircle,
   IconLock,
+  IconPhone,
   IconShieldCheck,
 } from "./icons";
 import SpecialistLink from "./SpecialistLink";
@@ -71,10 +73,24 @@ export default function Hero() {
       </div>
       <div className="container">
         <div className="hero-content">
-          <span className="hero-pill">
-            <span className="dot" aria-hidden="true" />
-            Built for trucking
-          </span>
+          <div className="hero-toprow">
+            <span className="hero-pill">
+              <span className="dot" aria-hidden="true" />
+              Built for trucking
+            </span>
+            {/* A real number someone answers, right above the headline. */}
+            {HAS_SUPPORT_PHONE ? (
+              <a
+                href={PHONE_TEL}
+                className="hero-phone"
+                aria-label={`Call a funding specialist at ${PHONE_DISPLAY}`}
+                {...ctaPlacement("home-hero-phone")}
+              >
+                <IconPhone size={14} />
+                {PHONE_DISPLAY}
+              </a>
+            ) : null}
+          </div>
           <h1 className="hero-title">
             $25K–$250K in trucking capital, built for owner-operators.
           </h1>

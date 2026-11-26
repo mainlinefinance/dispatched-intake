@@ -229,6 +229,8 @@ describe("organization builder", () => {
     expect(obj(out.address)["@type"]).toBe("PostalAddress");
     expect(obj(out.address).addressCountry).toBe("US");
     expect(obj(out.contactPoint)["@type"]).toBe("ContactPoint");
+    expect(out.telephone).toBe("+13073170801");
+    expect(obj(out.contactPoint).telephone).toBe("+13073170801");
     expect(arr(out.sameAs).length).toBeGreaterThan(0);
   });
 
@@ -351,7 +353,7 @@ describe("insuranceAgency builder", () => {
       "https://dispatched.finance/#organization",
     );
     expect(obj(out.areaServed)["@type"]).toBe("Country");
-    expect(out.telephone).toBeUndefined();
+    expect(out.telephone).toBe("+13073170801");
   });
 
   it("does NOT emit the deprecated provider field", () => {

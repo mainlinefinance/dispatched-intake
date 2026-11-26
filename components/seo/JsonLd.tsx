@@ -15,6 +15,13 @@
    server-only literal or a typed slug.
    =========================================================================== */
 
+import { HAS_SUPPORT_PHONE, SUPPORT_PHONE_E164 } from "@/lib/contact";
+
+/* The support phone, when one is set (lib/contact.ts). Spread into a builder
+   so the schema states the same number the page shows. */
+const telephone = (): { telephone?: string } =>
+  HAS_SUPPORT_PHONE ? { telephone: SUPPORT_PHONE_E164 } : {};
+
 type JsonLdValue =
   | string
   | number
@@ -171,6 +178,7 @@ export function organization(): JsonLdPayload {
     },
     description:
       "A referral and introduction service for commercial trucking working capital and commercial trucking insurance. Operates two product lines: financing introductions to a panel of commercial financing partners, and insurance comparison routed to a named producer partner.",
+    ...telephone(),
     email: "support@dispatched.finance",
     foundingDate: "2026",
     founder: { "@id": FOUNDER_ID },
@@ -185,6 +193,7 @@ export function organization(): JsonLdPayload {
     areaServed: { "@type": "Country", name: "United States" },
     contactPoint: {
       "@type": "ContactPoint",
+      ...telephone(),
       email: "support@dispatched.finance",
       contactType: "customer service",
       areaServed: "US",
@@ -502,5 +511,6 @@ export function insuranceAgency(): JsonLdPayload {
     description:
       "Commercial trucking insurance comparison and matching: primary liability, motor truck cargo, physical damage, general liability, non-trucking liability, occupational accident, and reefer breakdown coverage from a panel of carriers writing your DOT class in your state.",
     areaServed: { "@type": "Country", name: "United States" },
+    ...telephone(),
   };
 }
